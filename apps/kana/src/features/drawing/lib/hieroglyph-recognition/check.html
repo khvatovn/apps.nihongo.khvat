@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Canvas Drawing</title>
+  </head>
+
+  <body>
+    <script>
+      function init() {}
+
+      function normalizeCoordinates(data) {
+        let minX = Infinity,
+          maxX = -Infinity,
+          minY = Infinity,
+          maxY = -Infinity;
+
+        data.forEach((path) => {
+          path.forEach((point) => {
+            minX = Math.min(minX, point.x);
+            maxX = Math.max(maxX, point.x);
+            minY = Math.min(minY, point.y);
+            maxY = Math.max(maxY, point.y);
+          });
+        });
+
+        return data.map((path) =>
+          path.map((point) => ({
+            x: (point.x - minX) / (maxX - minX),
+            y: (point.y - minY) / (maxY - minY),
+          })),
+        );
+      }
+
+      function drawLines(coordinates, color) {
+        const randomId = Math.random();
+
+        const canvasId = `canvas-${randomId}`;
+
+        const mewCanvas = document.createElement("canvas");
+        mewCanvas.id = canvasId;
+        mewCanvas.width = 500;
+        mewCanvas.height = 500;
+        mewCanvas.style.border = "1px solid red";
+
+        document.querySelector("body").appendChild(mewCanvas);
+
+        const canvas = document.getElementById(canvasId);
+        const ctx = canvas.getContext("2d");
+
+        const scaleX = canvas.width;
+        const scaleY = canvas.height;
+
+        ctx.strokeStyle = color;
+        ctx.lineWidth = 2;
+
+        coordinates.forEach((points) => {
+          ctx.beginPath();
+          points.forEach((point, index) => {
+            const x = point.x * scaleX;
+            const y = point.y * scaleY;
+
+            if (index === 0) {
+              ctx.moveTo(x, y);
+            } else {
+              ctx.lineTo(x, y);
+            }
+          });
+          ctx.stroke();
+        });
+      }
+
+      const roundCoordinates = (coordinates) => {
+        return coordinates.map((innerArray) =>
+          innerArray.map((coord) => ({
+            x: parseFloat(coord.x.toFixed(4)),
+            y: parseFloat(coord.y.toFixed(4)),
+          })),
+        );
+      };
+
+      const coordinates = [
+        [
+          { x: 0.19310240938911286, y: 0 },
+          { x: 0.5912069420798334, y: 0.01023531057694536 },
+          { x: 0.8768683193441424, y: 0.0023809435254043125 },
+          { x: 0.8465001269997481, y: 0.038095191773909735 },
+          { x: 0.7676096446009278, y: 0.08297758893752946 },
+          { x: 0.6275021387638139, y: 0.18389369810997944 },
+          { x: 0.3593481720894284, y: 0.38894390000761986 },
+          { x: 0.1565285785074914, y: 0.527608826409228 },
+          { x: 0.06325143046373305, y: 0.5876953685469979 },
+          { x: 0.02870954313740639, y: 0.6072149855818735 },
+          { x: 0, y: 0.629538691476697 },
+          { x: 0.0467459708373356, y: 0.5931873887240781 },
+          { x: 0.1107283181344214, y: 0.549632697070379 },
+          { x: 0.20471856216367737, y: 0.5085542210153791 },
+          { x: 0.3358065175872375, y: 0.4595238170169656 },
+          { x: 0.415821600314234, y: 0.4312314444762654 },
+          { x: 0.5011476101876127, y: 0.41904768171765155 },
+          { x: 0.6357319111318346, y: 0.4071428687231892 },
+          { x: 0.7191742573869249, y: 0.42142862524305585 },
+          { x: 0.7720618165377259, y: 0.4333333428700774 },
+          { x: 0.8278963149526662, y: 0.45476192996615694 },
+          { x: 0.8966784979625005, y: 0.4943220609972058 },
+          { x: 0.9653380316076847, y: 0.5635673106734572 },
+          { x: 1, y: 0.604985199450035 },
+          { x: 0.9997547012706999, y: 0.6965495773839547 },
+          { x: 0.9866688526906703, y: 0.737581418760435 },
+          { x: 0.9156043432131764, y: 0.8435872882449424 },
+          { x: 0.7881072886324271, y: 0.9625953638644565 },
+          { x: 0.6891970754101756, y: 0.9880952823729784 },
+          { x: 0.507989557821785, y: 1 },
+          { x: 0.3873394826440142, y: 0.9833333953221698 },
+          { x: 0.3402307003100513, y: 0.9360189376849115 },
+          { x: 0.31667625672881144, y: 0.8637836326392777 },
+          { x: 0.3552282017223535, y: 0.7530250313782721 },
+          { x: 0.3978081824737412, y: 0.7191383093965825 },
+          { x: 0.45070077339334835, y: 0.7071428973334215 },
+          { x: 0.5511674804329711, y: 0.7238095973786923 },
+          { x: 0.657494730532532, y: 0.7868653094163236 },
+          { x: 0.7537059239328641, y: 0.8761579395444812 },
+          { x: 0.7799133676171504, y: 0.9214286729267762 },
+        ],
+      ];
+
+      init();
+      drawLines(normalizeCoordinates(coordinates), "red");
+    </script>
+  </body>
+</html>

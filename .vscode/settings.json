@@ -1,0 +1,25 @@
+{
+  // ESLint читает flat-config eslint.config.mjs из корня монорепы.
+  // ESLint 9 использует flat-config по умолчанию; ставим явно на случай старого расширения.
+  "eslint.useFlatConfig": true,
+
+  // Линтим и JS, и TS/TSX.
+  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+
+  // Монорепа: рабочую директорию определяем по ближайшему package.json (apps/*, packages/*).
+  // Flat-config всё равно резолвится вверх до корневого eslint.config.mjs.
+  "eslint.workingDirectories": [{ "mode": "auto" }],
+
+  // Автофикс ESLint (import/order, no-unused-vars и т.п.) при сохранении файла.
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+
+  // Форматирование — Prettier (eslint-config-prettier отключает форматные правила ESLint).
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[typescript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[typescriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[javascript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[javascriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" }
+}

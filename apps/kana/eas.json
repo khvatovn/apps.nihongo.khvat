@@ -1,0 +1,61 @@
+{
+  "cli": {
+    "version": ">= 5.9.2",
+    "appVersionSource": "local"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal"
+    },
+    "production_google": {
+      "env": {
+        "APP_VARIANT": "production",
+        "NODE_ENV": "production",
+        "STORE": "Google Play"
+      },
+      "android": {
+        "buildType": "app-bundle"
+      }
+    },
+    "production_rustore": {
+      "env": {
+        "APP_VARIANT": "production",
+        "NODE_ENV": "production",
+        "STORE": "RuStore"
+      },
+      "android": {
+        "buildType": "app-bundle"
+      }
+    },
+    "production_huawei": {
+      "env": {
+        "APP_VARIANT": "production",
+        "NODE_ENV": "production",
+        "STORE": "Huawei AppGallery"
+      },
+      "android": {
+        "buildType": "app-bundle"
+      }
+    },
+    "production_ios": {
+      "env": {
+        "APP_VARIANT": "production",
+        "NODE_ENV": "production",
+        "STORE": "Apple App Store"
+      }
+    },
+    "production_apk": {
+      "env": {
+        "APP_VARIANT": "production",
+        "NODE_ENV": "production"
+      },
+      "android": {
+        "buildType": "apk"
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}

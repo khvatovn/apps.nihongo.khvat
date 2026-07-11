@@ -1,0 +1,11 @@
+# global
+node_modules
+
+.DS_Store
+
+.idea
+
+# ai 
+.claude
+
+*_push_example

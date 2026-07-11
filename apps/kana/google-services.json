@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "268156862431",
+    "project_id": "nihongo-kana",
+    "storage_bucket": "nihongo-kana.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:268156862431:android:dc9822953fb026a658ce6a",
+        "android_client_info": {
+          "package_name": "pro.khvat.learnjapanese"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgnqOtMhDGCKOyO6k8dX1eVjLh7nXQcmU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

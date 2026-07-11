@@ -1,0 +1,74 @@
+import { Lesson } from "@/pages/education/learning/model/types";
+import { PracticeResultData } from "@/pages/education/practice/education-practice/lib/types/questions";
+import { KanaAlphabet, PracticeType } from "@/shared/constants/kana";
+
+export enum ROUTES {
+  ROOT = "Root",
+  HOME = "HOME",
+
+  // Info kana and draw kana
+  KANA_INFO = "KANA_INFO",
+
+  // Select alphabet
+  KANA_SELECT = "KanaSelect",
+
+  // Lesson page
+  LESSON_PAGE = "LessonPage",
+
+  // practice
+  PRACTICE_TESTING = "EducationPractice",
+
+  // results of practice
+  RESULTS = "Results",
+
+  // bottom tab navigator
+  PRACTICE_ROOT = "Practice",
+  LEARNING_ROOT = "Learning",
+  KANA_TABLE_ROOT = "KanaTable",
+
+  PROFILE_ROOT = "Profile",
+  SETTINGS_ROOT = "Settings",
+
+  SETTINGS_LANGUAGE = "SettingLanguage",
+  SETTINGS_TRANSLITERATION = "SettingTransliterations",
+  SETTINGS_THEME = "SettingTheme",
+
+  // * Auth section
+  WELCOME = "WelcomePage",
+  AUTH_PREVIEW = "AUTH_PREVIEW",
+  SIGN_UP_PAGE = "SIGN_UP_PAGE",
+  SIGN_IN_PAGE = "SIGN_IN_PAGE",
+  SUBMIT_CODE = "SUBMIT_CODE",
+}
+
+export type RootStackParamList = {
+  [ROUTES.HOME]: undefined;
+  [ROUTES.ROOT]: undefined;
+  // Info kana and draw kana
+  [ROUTES.KANA_INFO]: { id: string; kana: KanaAlphabet; title: string };
+  // Select alphabet
+  [ROUTES.KANA_SELECT]: { title: string };
+  // Lesson page
+  [ROUTES.LESSON_PAGE]: { lesson: Lesson };
+  // practice
+  [ROUTES.PRACTICE_TESTING]: { mode: PracticeType[] };
+  // results of practice
+  [ROUTES.RESULTS]: PracticeResultData;
+  // bottom tab navigator
+  [ROUTES.PROFILE_ROOT]: undefined;
+  [ROUTES.PRACTICE_ROOT]: undefined;
+  // [ROUTES.LEARNING_ROOT]: undefined;
+  [ROUTES.SETTINGS_ROOT]: undefined;
+  [ROUTES.KANA_TABLE_ROOT]: undefined;
+
+  [ROUTES.SETTINGS_LANGUAGE]: undefined;
+  [ROUTES.SETTINGS_TRANSLITERATION]: undefined;
+  [ROUTES.SETTINGS_THEME]: undefined;
+
+  // * Auth section
+  [ROUTES.WELCOME]: undefined;
+  [ROUTES.AUTH_PREVIEW]: undefined;
+  [ROUTES.SIGN_UP_PAGE]: undefined;
+  [ROUTES.SIGN_IN_PAGE]: undefined;
+  [ROUTES.SUBMIT_CODE]: { email: string; region: string };
+};

@@ -1,0 +1,31 @@
+name: Lint
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  lint:
+    name: lint
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        # if you create new application, add there
+        workspace:
+          - apps/kana
+          - apps/memoboard
+          - packages/core
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+
+      - name: Install dependencies
+        run: bun install --frozen-lockfile
+
+      - name: Lint ${{ matrix.workspace }}
+        run: npm run lint
+        working-directory: ${{ matrix.workspace }}

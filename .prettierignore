@@ -1,0 +1,8 @@
+node_modules
+.expo
+dist
+build
+bun.lock
+*.lock
+
+push_example

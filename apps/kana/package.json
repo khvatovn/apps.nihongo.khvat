@@ -1,0 +1,86 @@
+{
+  "name": "kana",
+  "main": "src/app/App.tsx",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "expo start",
+    "reset-project": "node ./scripts/reset-project.js",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "lint": "expo lint"
+  },
+  "dependencies": {
+    "@expo/react-native-action-sheet": "^4.1.1",
+    "@nihongo/core": "workspace:*",
+    "@react-native-async-storage/async-storage": "2.2.0",
+    "@react-native/metro-config": "^0.84.1",
+    "@react-navigation/bottom-tabs": "^7.4.7",
+    "@react-navigation/native": "^7.1.17",
+    "@react-navigation/native-stack": "^7.3.26",
+    "@react-navigation/stack": "^7.4.8",
+    "babel-plugin-module-resolver": "^5.0.2",
+    "babel-preset-expo": "~56.0.0",
+    "expo": "~56.0.15",
+    "expo-application": "~56.0.3",
+    "expo-asset": "~56.0.19",
+    "expo-audio": "~56.0.12",
+    "expo-build-properties": "~56.0.22",
+    "expo-constants": "~56.0.20",
+    "expo-dev-client": "~56.0.22",
+    "expo-device": "~56.0.4",
+    "expo-font": "~56.0.7",
+    "expo-haptics": "~56.0.3",
+    "expo-keep-awake": "~56.0.3",
+    "expo-navigation-bar": "~56.0.3",
+    "expo-notifications": "~56.0.20",
+    "expo-splash-screen": "~56.0.12",
+    "expo-status-bar": "~56.0.4",
+    "expo-store-review": "~56.0.3",
+    "expo-system-ui": "~56.0.5",
+    "globals": "^16.4.0",
+    "i18next": "^25.5.2",
+    "nullthrows": "^1.1.1",
+    "phosphor-react-native": "^3.0.2",
+    "react": "19.2.3",
+    "react-i18next": "^15.7.3",
+    "react-native": "0.85.3",
+    "react-native-app-auth": "^8.4.0",
+    "react-native-country-flag": "^2.0.2",
+    "react-native-gesture-handler": "~2.31.1",
+    "react-native-in-app-review": "^4.4.2",
+    "react-native-rustore-review": "git+https://gitflic.ru/project/rustore/react-native-rustore-review-sdk.git",
+    "react-native-safe-area-context": "~5.7.0",
+    "react-native-screens": "4.25.2",
+    "react-native-svg": "15.15.4",
+    "react-native-worklets": "0.8.3",
+    "toggle-switch-react-native": "^3.3.0",
+    "typescript-eslint": "^8.43.0",
+    "vitest": "^4.0.18",
+    "ws": "^8.18.0",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@emnapi/core": "1.10.0",
+    "@emnapi/runtime": "1.10.0",
+    "@eslint/js": "^9.35.0",
+    "@types/react": "^19.2.10",
+    "@typescript-eslint/parser": "^8.43.0",
+    "dotenv": "^17.4.2",
+    "eslint-plugin-react": "^7.37.5",
+    "react-native-dotenv": "^3.4.11",
+    "react-native-svg-transformer": "^1.5.1",
+    "typescript": "~6.0.3"
+  },
+  "expo": {
+    "doctor": {
+      "reactNativeDirectoryCheck": {
+        "exclude": [
+          "i18next"
+        ],
+        "listUnknownPackages": false
+      }
+    }
+  },
+  "private": true
+}

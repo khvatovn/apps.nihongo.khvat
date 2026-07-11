@@ -1,0 +1,81 @@
+import React from "react";
+
+import { TABLET_WIDTH } from "@nihongo/core/shared/constants/sizes";
+import { useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
+import { Typography } from "@nihongo/core/shared/typography";
+import { useTranslation } from "react-i18next";
+import { View, Text, StyleSheet } from "react-native";
+
+import MatchWordsByField from "@/entities/education/practice/match-words-by-field/match-words-by-field";
+import { OnSubmit } from "@/pages/education/practice/education-practice/lib/types/questions";
+import { Kana, TEST_DELAY } from "@/shared/constants/kana";
+import { useFirstClickHandler } from "@/shared/helpers/firstClickHandler";
+
+interface EducationPracticeFindPairProps {
+  currentIndex: number;
+
+  kana: Kana;
+  words: {
+    kana: string;
+    translate: string;
+    transliteration: string;
+  }[];
+
+  onCompleted: OnSubmit;
+}
+const EducationPracticeFindPair: React.FC<EducationPracticeFindPairProps> = ({
+  currentIndex,
+  kana,
+  words,
+  onCompleted,
+}) => {
+  const { t } = useTranslation();
+  const { colors } = useThemeContext();
+
+  const onFinish = useFirstClickHandler(
+    (hasError) => onCompleted({ isCorrectAnswer: !hasError }),
+    TEST_DELAY,
+  );
+
+  return (
+    <View style={styles.container}>
+      <View style={styles.content}>
+        <Text style={[styles.question, { color: colors.TextPrimary, marginBottom: 32 }]}>
+          {kana === Kana.Hiragana
+            ? t("lesson.matchHiraganaWithTransliteration")
+            : t("lesson.matchKatakanaWithTransliteration")}
+        </Text>
+
+        <MatchWordsByField
+          key={words[0].toString() + currentIndex}
+          words={words}
+          by="kana"
+          onComplete={onFinish}
+        />
+      </View>
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  container: {
+    width: "100%",
+
+    flexDirection: "column",
+    alignItems: "center",
+  },
+  content: {
+    flexDirection: "column",
+    alignItems: "flex-start",
+
+    width: "100%",
+    maxWidth: TABLET_WIDTH,
+  },
+  question: {
+    width: "100%",
+    textAlign: "center",
+    ...Typography.boldDefault,
+  },
+});
+
+export default EducationPracticeFindPair;

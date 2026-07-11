@@ -1,0 +1,8 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./apps/kana" },
+    { "path": "./apps/memoboard" },
+    { "path": "./packages/core" }
+  ]
+}

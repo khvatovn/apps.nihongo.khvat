@@ -1,0 +1,35 @@
+{
+  "name": "apps.nihongo.khvat",
+  "devDependencies": {
+    "@eslint/js": "^9.37.0",
+    "@types/node": "^26.0.0",
+    "eslint": "^9.37.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "globals": "^17.6.0",
+    "prettier": "^3.8.4",
+    "typescript-eslint": "^8.61.1"
+  },
+  "overrides": {
+    "react-native": "0.85.3",
+    "react": "19.2.3",
+    "i18next": "25.10.10",
+    "react-i18next": "15.7.4"
+  },
+  "private": true,
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "dependencies": {
+    "expo-store-review": "~56.0.3"
+  }
+}

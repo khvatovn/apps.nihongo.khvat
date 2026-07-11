@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "379704510679",
+    "project_id": "memo-board-7e00c",
+    "storage_bucket": "memo-board-7e00c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:379704510679:android:296a64ee8c15658bc98892",
+        "android_client_info": {
+          "package_name": "pro.khvat.memoboard"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsayAbasQo4gSFFdZy75R54gn2pctrUHk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

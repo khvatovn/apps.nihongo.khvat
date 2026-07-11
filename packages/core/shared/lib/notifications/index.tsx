@@ -1,0 +1,31 @@
+import React, { createContext, ReactNode, useContext } from "react";
+
+import { isExpoGo } from "@nihongo/core/shared/constants/environment";
+import { z } from "zod";
+
+export const notificationDataSchema = z.object({
+  action: z.literal("openUrl"),
+  url: z.url({ protocol: /^https$/ }),
+});
+
+export type NotificationData = z.infer<typeof notificationDataSchema>;
+
+interface NotificationsContextType {
+  requestPushNotificationsToken: () => Promise<string | null>;
+}
+
+export const NotificationsContext = createContext<NotificationsContextType>({
+  requestPushNotificationsToken: async () => null,
+});
+
+export const useNotificationsContext = () => useContext(NotificationsContext);
+
+export const NotificationsWrapper: React.FC<{ children: ReactNode }> = ({ children }) => {
+  if (isExpoGo) return <>{children}</>;
+
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
+  const NotificationsWrapperInner = require("./notifications-inner").default;
+  return <NotificationsWrapperInner>{children}</NotificationsWrapperInner>;
+};
+
+export default NotificationsWrapper;
