@@ -29,16 +29,25 @@ const Furigana: React.FC<FuriganaProps> = ({ text, typography, typographyFurigan
   const elements: JSX.Element[] = [];
   let match;
 
+  // Разбиваем обычный текст на токены (слова + пробелы), чтобы flexWrap мог
+  // переносить между ними, а не уводить весь блок целиком на новую строку.
+  const pushPlainText = (chunk: string, keyPrefix: string) => {
+    chunk.split(/(\s+)/).forEach((token, i) => {
+      if (!token) return;
+      elements.push(
+        <Text key={`${keyPrefix}-${i}`} style={styles.regularText}>
+          {token}
+        </Text>,
+      );
+    });
+  };
+
   while ((match = furiganaRegex.exec(text)) !== null) {
     const [fullMatch, kanji, furigana] = match;
     const startIndex = match.index;
 
     if (startIndex > lastIndex) {
-      elements.push(
-        <Text key={`text-${lastIndex}`} style={styles.regularText}>
-          {text.slice(lastIndex, startIndex)}
-        </Text>,
-      );
+      pushPlainText(text.slice(lastIndex, startIndex), `text-${lastIndex}`);
     }
 
     elements.push(
@@ -52,11 +61,7 @@ const Furigana: React.FC<FuriganaProps> = ({ text, typography, typographyFurigan
   }
 
   if (lastIndex < text.length) {
-    elements.push(
-      <Text key={`text-${lastIndex}`} style={styles.regularText}>
-        {text.slice(lastIndex)}
-      </Text>,
-    );
+    pushPlainText(text.slice(lastIndex), `text-${lastIndex}`);
   }
 
   return <View style={styles.container}>{elements}</View>;

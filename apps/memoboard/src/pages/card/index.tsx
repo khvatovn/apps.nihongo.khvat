@@ -4,15 +4,18 @@ import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme
 import { Typography } from "@nihongo/core/shared/typography";
 import SecondaryButton from "@nihongo/core/shared/ui/buttons/Secondary/secondary-button";
 import { ModalHeader } from "@nihongo/core/shared/ui/modal-header/modal-header";
+import Tag from "@nihongo/core/shared/ui/tag/tag";
 import { RouteProp, useNavigation, useRoute } from "@react-navigation/native";
 import { StackNavigationProp } from "@react-navigation/stack";
-import { ArrowLeftIcon, ArrowRightIcon } from "phosphor-react-native";
+import { ArrowLeftIcon, ArrowRightIcon, BookIcon, TagIcon } from "phosphor-react-native";
 import { useTranslation } from "react-i18next";
 import { View, Text, StyleSheet, ImageBackground, Linking } from "react-native";
 import { ScrollView, Gesture, GestureDetector } from "react-native-gesture-handler";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 import { RootStackParamList, ROUTES } from "@/app/routes.types";
+import VerbForm from "@/features/card/verb-form/verb-form";
+import YetSeen from "@/features/card/yet-seen/yet-seen";
 import { useBoard } from "@/shared/contexts/board/board-context";
 import Furigana from "@/shared/ui/furigana/furigana";
 
@@ -23,11 +26,11 @@ const SWIPE_THRESHOLD = 20;
 
 const SWIPE_DISTANCE = 60;
 
-const WordPage = () => {
+const CardPage = () => {
   const navigation = useNavigation<BoardNavProp>();
   const { params } = useRoute<BoardRouteProp>();
 
-  const { currentCard, boardId, hasNext, hasPrev, next, prev } = useBoard();
+  const { currentCard, boardId, cards, selectCard, hasNext, hasPrev, next, prev } = useBoard();
 
   const card = currentCard ?? params.card;
 
@@ -42,12 +45,10 @@ const WordPage = () => {
   const openInDictionary = () => {
     if (!boardId) return;
 
-    Linking.openURL(`https://memoboard.khvat.org/${boardId}/${card.index}`);
+    Linking.openURL(`${process.env.MEMOBOARD_API}/${boardId}/${card.index}`);
   };
 
-  const image = card?.images?.length
-    ? `https://memoboard.khvat.org${card?.images?.[0]}`
-    : null;
+  const image = card?.images?.length ? `${process.env.MEMOBOARD_API}${card?.images?.[0]}` : null;
 
   const swipe = useMemo(
     () =>
@@ -95,6 +96,22 @@ const WordPage = () => {
             >
               <Furigana text={card.title} />
               <Text style={styles.card_subtitle}>{card.subtitleNoFurigana}</Text>
+
+              <View style={styles.tags}>
+                <Tag
+                  text={card.lessonTitle}
+                  icon={<BookIcon size={12} color={colors.TextPrimary} />}
+                />
+
+                {card.tags.map((tag) => (
+                  <Tag
+                    key={tag.label}
+                    isUpperCase={tag.label === "iii" || tag.label === "ii" || tag.label === "i"}
+                    text={tag.label}
+                    icon={<TagIcon size={12} color={colors.TextPrimary} />}
+                  />
+                ))}
+              </View>
             </View>
           </ImageBackground>
         )}
@@ -117,7 +134,23 @@ const WordPage = () => {
                 <Text style={styles.card_subtitle}>{card.subtitleNoFurigana}</Text>
               </View>
             )}
+            {!image && (
+              <View style={styles.tags}>
+                <Tag
+                  text={card.lessonTitle}
+                  icon={<BookIcon size={12} color={colors.TextPrimary} />}
+                />
 
+                {card.tags.map((tag) => (
+                  <Tag
+                    key={tag.label}
+                    isUpperCase={tag.label === "iii" || tag.label === "ii" || tag.label === "i"}
+                    text={tag.label}
+                    icon={<TagIcon size={12} color={colors.TextPrimary} />}
+                  />
+                ))}
+              </View>
+            )}
             {card.examples.length > 0 && (
               <View
                 style={{
@@ -129,20 +162,30 @@ const WordPage = () => {
                 }}
               />
             )}
-
             {card.examples.length > 0 && (
               <View>
-                <Text style={{ ...Typography.boldH3, color: colors.TextPrimary }}>Примеры</Text>
-                {card.examples.map((example) => (
-                  <Furigana
-                    key={example}
-                    text={`- ${example}`}
-                    typographyFurigana={Typography.regularCaption}
-                    typography={Typography.regularDefault}
-                  />
-                ))}
+                <View style={styles.header}>
+                  <Text style={{ ...Typography.boldDefault, color: colors.TextContrastPrimary }}>
+                    {t("card.examples")}
+                  </Text>
+                </View>
+                <View style={styles.list}>
+                  {card.examples.map((example) => (
+                    <View style={styles.item} key={example}>
+                      <Furigana
+                        text={example}
+                        typography={Typography.regularDefault}
+                        typographyFurigana={Typography.regularCaption}
+                      />
+                    </View>
+                  ))}
+                </View>
               </View>
             )}
+
+            <VerbForm tags={card.tags.map((i) => i.label)} title={card.title} />
+
+            <YetSeen title={card.title} cards={cards} openModal={selectCard} />
           </ScrollView>
         </View>
 
@@ -164,7 +207,7 @@ const WordPage = () => {
 
             <SecondaryButton
               isHapticFeedback
-              text={"Открыть"}
+              text={t("card.open")}
               isOutline
               isFullWidth
               isDisabled={!boardId}
@@ -236,6 +279,40 @@ const makeStyles = (colors: ColorsType) =>
       marginTop: 16,
       gap: 16,
     },
+    tags: {
+      flexDirection: "row",
+      marginTop: 16,
+      gap: 4,
+    },
+    header: {
+      backgroundColor: colors.BgContrast,
+      borderRadius: 6,
+      paddingHorizontal: 6,
+      paddingVertical: 4,
+
+      flexDirection: "row",
+      justifyContent: "space-between",
+      alignItems: "center",
+      marginBottom: 6,
+    },
+    list: {
+      flexDirection: "column",
+      gap: 6,
+    },
+    item: {
+      backgroundColor: colors.BgSecondary,
+      borderRadius: 6,
+      paddingHorizontal: 6,
+      paddingVertical: 4,
+    },
+    itemLabel: {
+      color: colors.TextSecondary,
+      ...Typography.regularLabel,
+    },
+    itemValue: {
+      color: colors.TextPrimary,
+      ...Typography.regularDefault,
+    },
   });
 
-export default WordPage;
+export default CardPage;

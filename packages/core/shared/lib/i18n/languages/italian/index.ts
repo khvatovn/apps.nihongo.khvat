@@ -13,6 +13,7 @@ const Italian = {
   },
 
   tabs: {
+    boards: "Boards",
     learning: "Lezioni",
     practice: "Pratica",
     kana: "Kana",
@@ -246,6 +247,51 @@ const Italian = {
     autoSelect: "Auto-select",
     addHost: "Add",
     removeData: "Remove data",
+  },
+  verbForm: {
+    title: "Verb forms:",
+    teForm: "て form:",
+    taForm: "た form:",
+    naiForm: "ない form:",
+    dictionaryForm: "Dictionary form:",
+    potentialForm: "Potential form:",
+    volitionalForm: "Volitional mood:",
+    imperativeForm: "Imperative mood:",
+    prohibitiveForm: "Prohibitive mood:",
+    conditionalForm: "Conditional form - ば:",
+    negativeConditionalForm: "Negative conditional form - ば:",
+    passiveForm: "Passive voice:",
+    verbCausative: "Causative form:",
+  },
+  boards: {
+    title: "Boards:",
+    createOwn: "Create own",
+  },
+  board: {
+    searchPlaceholder: "Search",
+    searchResults: "Search",
+    nothingFound: "Nothing found",
+    sectionsTitle: "Sections",
+  },
+  card: {
+    examples: "Examples:",
+    open: "Open",
+    alreadySeen: "Already seen",
+  },
+  promotionTelegram: {
+    title: "Congratulations, you've found a lucky bug!",
+    reasonSingle:
+      "Since there aren't that many bugs in the app anymore, far fewer people visit my Telegram channel to report issues, and far fewer people subscribe to me",
+    reasonMultiple:
+      "Since there aren't that many bugs in the app anymore, far fewer people visit our Telegram channels to report issues, and far fewer people subscribe to us",
+    instructionTitle: "Here's what you need to do:",
+    stepGo: "- Go to {{channel}}",
+    stepSubscribeSingle: "- Subscribe (I'll be posting lots of interesting stuff)",
+    stepSubscribeMultiple: "- Subscribe (we'll be posting lots of interesting stuff)",
+    dontMakeMe: "Don't make me add real bugs :)",
+    channelSingle: "My Telegram channel",
+    channelMultiple: "Our Telegram channels",
+    fixMyself: "I'll fix it myself",
   },
 };
 

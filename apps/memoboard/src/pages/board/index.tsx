@@ -8,6 +8,7 @@ import PageTitle from "@nihongo/core/shared/ui/page-title/page-title";
 import { RouteProp, useNavigation, useRoute } from "@react-navigation/native";
 import { StackNavigationProp } from "@react-navigation/stack";
 import { CaretLeftIcon, ListIcon, MagnifyingGlassIcon, XIcon } from "phosphor-react-native";
+import { useTranslation } from "react-i18next";
 import { View, Text, SectionList, useWindowDimensions, StyleSheet, Pressable } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
@@ -25,8 +26,22 @@ const SECTION_HEADER_HEIGHT = 48;
 
 const TITLE_MAX_LENGTH = 12;
 
-const truncate = (text: string) =>
-  text.length > TITLE_MAX_LENGTH ? `${text.slice(0, TITLE_MAX_LENGTH)}...` : text;
+const truncate = (text: string) => {
+  const title = text.length > TITLE_MAX_LENGTH ? `${text.slice(0, TITLE_MAX_LENGTH)}...` : text;
+
+  const newTitle = title
+    .toLowerCase()
+    .split("")
+    .map((item, index) => {
+      if (index === 0 || ["(", ")", "-", " ", ".", ","].includes(title.split("")[index - 1])) {
+        return item.toUpperCase();
+      }
+
+      return item;
+    });
+
+  return newTitle;
+};
 
 const BoardPage = () => {
   const navigation = useNavigation<BoardNavProp>();
@@ -38,6 +53,8 @@ const BoardPage = () => {
 
   const { colors } = useThemeContext();
   const styles = useMemo(() => makeStyles(colors), [colors]);
+
+  const { t } = useTranslation();
 
   const {
     sections,
@@ -117,7 +134,11 @@ const BoardPage = () => {
   const renderSectionHeader = useCallback(
     ({ section: { title } }: { section: { title: string } }) => (
       <View style={styles.nameContainer}>
-        <Text style={[Typography.boldH3, { color: colors.TextPrimary }]}>{title}</Text>
+        <Text
+          style={[Typography.boldH3, { color: colors.TextPrimary, textTransform: "capitalize" }]}
+        >
+          {title}
+        </Text>
       </View>
     ),
     [styles, colors],
@@ -137,7 +158,12 @@ const BoardPage = () => {
           ]}
         >
           <View style={styles.searchInput}>
-            <Input autoFocus placeholder={"Поиск по карточкам"} value={query} onChange={setQuery} />
+            <Input
+              autoFocus
+              placeholder={t("board.searchPlaceholder")}
+              value={query}
+              onChange={setQuery}
+            />
           </View>
 
           <Pressable onPress={closeSearch}>
@@ -188,7 +214,7 @@ const BoardPage = () => {
           ListEmptyComponent={
             hasQuery && cards.length === 0 ? (
               <View style={styles.empty}>
-                <Text style={styles.emptyText}>Ничего не найдено</Text>
+                <Text style={styles.emptyText}>{t("board.nothingFound")}</Text>
               </View>
             ) : null
           }

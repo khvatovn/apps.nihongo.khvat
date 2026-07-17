@@ -5,7 +5,8 @@ import { Typography } from "@nihongo/core/shared/typography";
 import PageTitle from "@nihongo/core/shared/ui/page-title/page-title";
 import { useNavigation } from "@react-navigation/native";
 import { StackNavigationProp } from "@react-navigation/stack";
-import { View, Text, StyleSheet, ScrollView, Pressable } from "react-native";
+import { useTranslation } from "react-i18next";
+import { View, Text, StyleSheet, ScrollView, Pressable, Linking } from "react-native";
 
 import { RootStackParamList, ROUTES } from "@/app/routes.types";
 
@@ -27,7 +28,7 @@ const BoardsPage: React.FC = () => {
   const [boards, setBoards] = useState<Boards>({ myBoards: [], publicBoards: [] });
 
   const getBoards = async () => {
-    const response = await fetch("https://memoboard.khvat.org/api/boards");
+    const response = await fetch(`${process.env.MEMOBOARD_API}/api/boards`);
 
     const body = await response.json();
 
@@ -44,13 +45,15 @@ const BoardsPage: React.FC = () => {
 
   const styles = makeStyles(colors);
 
+  const { t } = useTranslation();
+
   const goToBoards = (id: string, name: string) => {
     navigation.navigate(ROUTES.BOARD, { id, name });
   };
 
   return (
     <View style={styles.container}>
-      <PageTitle isSaveArea>Доски:</PageTitle>
+      <PageTitle isSaveArea>{t("boards.title")}</PageTitle>
 
       <ScrollView contentContainerStyle={styles.scroll}>
         {boards.myBoards.map((board) => (
@@ -72,6 +75,15 @@ const BoardsPage: React.FC = () => {
             <Text style={styles.boardTitle}>{board.title}</Text>
           </Pressable>
         ))}
+
+        <Pressable
+          style={styles.board}
+          onPress={() => {
+            Linking.openURL(`${process.env.MEMOBOARD_API}/`);
+          }}
+        >
+          <Text style={styles.boardTitle}>{t("boards.createOwn")}</Text>
+        </Pressable>
       </ScrollView>
     </View>
   );

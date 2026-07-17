@@ -13,6 +13,7 @@ const Russian = {
   },
 
   tabs: {
+    boards: "Доски",
     learning: "Обучение",
     practice: "Практика",
     kana: "Кана",
@@ -246,6 +247,51 @@ const Russian = {
     autoSelect: "Выбрать автоматически",
     addHost: "Добавить",
     removeData: "Очистить данные",
+  },
+  verbForm: {
+    title: "Формы глагола:",
+    teForm: "て форма:",
+    taForm: "た форма:",
+    naiForm: "ない форма:",
+    dictionaryForm: "Словарная форма:",
+    potentialForm: "Потенциальный залог глагола:",
+    volitionalForm: "Желательное наклонение:",
+    imperativeForm: "Повелительное наклонение:",
+    prohibitiveForm: "Запретительное наклонение:",
+    conditionalForm: "Условная форма - ば:",
+    negativeConditionalForm: "Условная негативная форма - ば:",
+    passiveForm: "Страдательный залог:",
+    verbCausative: "Побудительный залог:",
+  },
+  boards: {
+    title: "Доски:",
+    createOwn: "Создать свою",
+  },
+  board: {
+    searchPlaceholder: "Поиск",
+    searchResults: "Поиск",
+    nothingFound: "Ничего не найдено",
+    sectionsTitle: "Разделы",
+  },
+  card: {
+    examples: "Примеры:",
+    open: "Открыть",
+    alreadySeen: "Уже встречалось",
+  },
+  promotionTelegram: {
+    title: "Поздравляю, вам попался счастливый баг!",
+    reasonSingle:
+      "В связи с тем, что в приложении стало не так много багов, намного меньше людей заходят ко мне в тг-канал, чтобы сообщить о проблемах, и намного меньше людей стали подписываться на меня",
+    reasonMultiple:
+      "В связи с тем, что в приложении стало не так много багов, намного меньше людей заходят к нам в тг-каналы, чтобы сообщить о проблемах, и намного меньше людей стали подписываться на нас",
+    instructionTitle: "Инструкция, что вам нужно сделать:",
+    stepGo: "- Перейти на {{channel}}",
+    stepSubscribeSingle: "- Подписаться (я буду постить много чего интересного)",
+    stepSubscribeMultiple: "- Подписаться (мы будем постить много чего интересного)",
+    dontMakeMe: "Не заставляйте добавлять настоящие баги :)",
+    channelSingle: "Мой телеграм-канал",
+    channelMultiple: "Наши телеграм-каналы",
+    fixMyself: "Я починю сам",
   },
 };
 

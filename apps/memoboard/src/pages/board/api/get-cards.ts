@@ -189,7 +189,7 @@ const count = () => {
 };
 
 export const getCards = async (id: string): Promise<BoardLesson[]> => {
-  const response = await fetch(`https://memoboard.khvat.org/api/board/${id}`);
+  const response = await fetch(`${process.env.MEMOBOARD_API}/api/board/${id}`);
 
   if (!response.ok) {
     throw new Error(`Failed to fetch: ${response.status}`);

@@ -1,7 +1,5 @@
 import React, { useEffect } from "react";
 
-
-
 // * from packages/core
 
 import SettingsSection from "@nihongo/core/entities/setting/setting-section/settings-section";

@@ -1,7 +1,5 @@
 import React, { useCallback, useMemo } from "react";
 
-
-
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
 import { Typography } from "@nihongo/core/shared/typography";
 import { ModalHeader } from "@nihongo/core/shared/ui/modal-header/modal-header";
@@ -54,7 +52,7 @@ const SectionsPage: React.FC = () => {
           text: t("common.close"),
           onPress: goBack,
         }}
-        title={"Секции"}
+        title={t("board.sectionsTitle")}
       />
 
       <View style={styles.container}>

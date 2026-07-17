@@ -10,6 +10,8 @@ import React, {
   FunctionComponent,
 } from "react";
 
+import { useTranslation } from "react-i18next";
+
 import { BoardLesson, Card, getCards } from "@/pages/board/api/get-cards";
 
 export interface BoardSection {
@@ -47,8 +49,6 @@ const BoardContext = createContext<BoardContextType | null>(null);
 
 const CARDS_IN_ROW = 3;
 
-const SEARCH_SECTION_TITLE = "Поиск";
-
 const chunk = (cards: Card[], size: number): Card[][] =>
   cards.reduce<Card[][]>((result, card, index) => {
     if (index % size === 0) {
@@ -78,6 +78,8 @@ interface BoardProviderProps {
 }
 
 export const BoardProvider: FunctionComponent<BoardProviderProps> = ({ children }) => {
+  const { t } = useTranslation();
+
   const [lessons, setLessons] = useState<BoardLesson[]>([]);
   const [boardId, setBoardId] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(false);
@@ -129,7 +131,7 @@ export const BoardProvider: FunctionComponent<BoardProviderProps> = ({ children 
   const sections = useMemo(() => {
     if (search) {
       return cards.length > 0
-        ? [{ title: SEARCH_SECTION_TITLE, data: chunk(cards, CARDS_IN_ROW) }]
+        ? [{ title: t("board.searchResults"), data: chunk(cards, CARDS_IN_ROW) }]
         : [];
     }
 
@@ -137,7 +139,7 @@ export const BoardProvider: FunctionComponent<BoardProviderProps> = ({ children 
       title: lesson.title,
       data: chunk(lesson.cards, CARDS_IN_ROW),
     }));
-  }, [filteredLessons, cards, search]);
+  }, [filteredLessons, cards, search, t]);
 
   const cardsRef = useRef<Card[]>(cards);
   cardsRef.current = cards;

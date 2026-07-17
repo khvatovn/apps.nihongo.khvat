@@ -20,9 +20,9 @@ import { ROUTES } from "./routes.types";
 
 import BoardPage from "@/pages/board";
 import BoardsPage from "@/pages/boards";
+import CardPage from "@/pages/card";
 import SectionsPage from "@/pages/sections";
 import SettingsPage from "@/pages/settings/settings-page";
-import WordPage from "@/pages/word";
 
 const withModal = <P extends object>(Component: React.ComponentType<P>) => ({
   screen: Component,
@@ -44,7 +44,7 @@ const RootStack = {
           <TabBarButton
             {...props}
             tabs={{
-              [ROUTES.BOARDS]: { title: "boards", icon: SwatchesIcon },
+              [ROUTES.BOARDS]: { title: "tabs.boards", icon: SwatchesIcon },
               [ROUTES.PROFILE_ROOT]: { title: "tabs.profile", icon: UserIcon },
             }}
           />
@@ -61,7 +61,7 @@ const RootStack = {
     },
 
     [ROUTES.BOARD]: BoardPage,
-    [ROUTES.WORD]: withModal(WordPage),
+    [ROUTES.WORD]: withModal(CardPage),
     [ROUTES.SECTIONS]: withModal(SectionsPage),
 
     [ROUTES.SETTINGS_ROOT]: SettingsPage,

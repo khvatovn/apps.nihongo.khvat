@@ -7,6 +7,7 @@ import { useRemoteConfig } from "@nihongo/core/shared/contexts/remote-config/rem
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
 import { Typography } from "@nihongo/core/shared/typography";
 import SecondaryButton from "@nihongo/core/shared/ui/buttons/Secondary/secondary-button";
+import { useTranslation } from "react-i18next";
 import { StyleSheet, View, Text, ScrollView } from "react-native";
 import { z } from "zod";
 
@@ -34,6 +35,8 @@ export const PromotionTelegram = (props: ConfirmationModalProps) => {
   const { getField, isReady } = useRemoteConfig();
   const { hideModal } = useModal();
 
+  const { t } = useTranslation();
+
   const parsed = socialMediaLinksSchema.safeParse(getField("social_media"));
   const socialMediaLinks = parsed.success ? parsed.data : [];
 
@@ -45,11 +48,15 @@ export const PromotionTelegram = (props: ConfirmationModalProps) => {
   }, [hideModal, isReady, socialMediaLinks.length]);
 
   const hasMultiple = socialMediaLinks.length > 1;
-  const tg_channel_name = hasMultiple ? "Наши телеграм-каналы" : "Мой телеграм-канал";
-  const tg_channel_name_1 = hasMultiple ? "мы будем" : "я буду";
-  const tg_channel_name_2 = hasMultiple
-    ? "В связи с тем, что в приложении стало не так много багов, намного меньше людей заходят к нам в тг-каналы, чтобы сообщить о проблемах, и намного меньше людей стали подписываться на нас"
-    : "В связи с тем, что в приложении стало не так много багов, намного меньше людей заходят ко мне в тг-канал, чтобы сообщить о проблемах, и намного меньше людей стали подписываться на меня";
+  const channelName = hasMultiple
+    ? t("promotionTelegram.channelMultiple")
+    : t("promotionTelegram.channelSingle");
+  const subscribeStep = hasMultiple
+    ? t("promotionTelegram.stepSubscribeMultiple")
+    : t("promotionTelegram.stepSubscribeSingle");
+  const reason = hasMultiple
+    ? t("promotionTelegram.reasonMultiple")
+    : t("promotionTelegram.reasonSingle");
 
   return (
     <ScrollView style={styles.modal}>
@@ -59,7 +66,7 @@ export const PromotionTelegram = (props: ConfirmationModalProps) => {
           color: colors.TextPrimary,
         }}
       >
-        Поздравляю, вам попался счастливый баг!
+        {t("promotionTelegram.title")}
       </Text>
 
       <Text
@@ -69,7 +76,7 @@ export const PromotionTelegram = (props: ConfirmationModalProps) => {
           marginTop: 8,
         }}
       >
-        {tg_channel_name_2}
+        {reason}
       </Text>
 
       <Text
@@ -79,7 +86,7 @@ export const PromotionTelegram = (props: ConfirmationModalProps) => {
           marginTop: 12,
         }}
       >
-        Инструкция, что вам нужно сделать:
+        {t("promotionTelegram.instructionTitle")}
       </Text>
 
       <Text
@@ -89,7 +96,7 @@ export const PromotionTelegram = (props: ConfirmationModalProps) => {
           marginTop: 8,
         }}
       >
-        - Перейти на {tg_channel_name.toLowerCase()}
+        {t("promotionTelegram.stepGo", { channel: channelName.toLowerCase() })}
       </Text>
       <Text
         style={{
@@ -97,7 +104,7 @@ export const PromotionTelegram = (props: ConfirmationModalProps) => {
           color: colors.TextPrimary,
         }}
       >
-        - Подписаться ({tg_channel_name_1} постить много чего интересного)
+        {subscribeStep}
       </Text>
 
       <Text
@@ -107,11 +114,11 @@ export const PromotionTelegram = (props: ConfirmationModalProps) => {
           marginTop: 8,
         }}
       >
-        Не заставляйте добавлять настоящие баги :)
+        {t("promotionTelegram.dontMakeMe")}
       </Text>
 
       <View style={styles.contrastContent}>
-        {socialMediaLinks.length > 0 && <Text style={styles.title}>{tg_channel_name}</Text>}
+        {socialMediaLinks.length > 0 && <Text style={styles.title}>{channelName}</Text>}
 
         <View style={styles.items}>
           {socialMediaLinks.map((link, index) => (
@@ -130,7 +137,12 @@ export const PromotionTelegram = (props: ConfirmationModalProps) => {
       </View>
 
       <View style={styles.buttons}>
-        <SecondaryButton onClick={onPress} isOutline isFullWidth text={"Я починю сам"} />
+        <SecondaryButton
+          onClick={onPress}
+          isOutline
+          isFullWidth
+          text={t("promotionTelegram.fixMyself")}
+        />
       </View>
     </ScrollView>
   );

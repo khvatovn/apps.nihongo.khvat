@@ -6,23 +6,26 @@ import { ColorsType, useThemeContext } from "../../contexts/theme/theme-context"
 import { Typography } from "../../typography";
 
 interface TagProps {
-  icon?: string;
+  icon?: React.JSX.Element;
   text: string;
+
+  isUpperCase?: boolean;
 }
 
-const Tag: React.FC<TagProps> = ({ text, icon }) => {
+const Tag: React.FC<TagProps> = ({ text, icon, isUpperCase }) => {
   const { colors } = useThemeContext();
-  const styles = makeStyles(colors);
+
+  const styles = makeStyles(colors, isUpperCase || false);
 
   return (
     <View style={styles.tag}>
-      {icon && <View></View>}
+      {icon && <View>{icon}</View>}
       <Text style={styles.text}>{text}</Text>
     </View>
   );
 };
 
-const makeStyles = (colors: ColorsType) =>
+const makeStyles = (colors: ColorsType, isUpperCase: boolean) =>
   StyleSheet.create({
     tag: {
       width: "auto",
@@ -34,10 +37,19 @@ const makeStyles = (colors: ColorsType) =>
       paddingTop: 2,
 
       backgroundColor: colors.BgLightGray,
+
+      flexDirection: "row",
+      alignItems: "center",
+      gap: 2,
     },
     text: {
       color: colors.TextPrimary,
       ...Typography.regularCaption,
+
+      textTransform: isUpperCase ? "uppercase" : "capitalize",
+
+      marginHorizontal: 2,
+      marginVertical: 2,
     },
   });
 
