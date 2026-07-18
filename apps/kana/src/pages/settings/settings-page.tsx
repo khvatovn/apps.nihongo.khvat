@@ -13,6 +13,7 @@ import SettingsTransliterations from "@nihongo/core/features/settings/settings-t
 import StoreReviewLink from "@nihongo/core/features/settings/store-review-link/store-review-link";
 import TermsAndConditions from "@nihongo/core/features/settings/terms-and-conditions/terms-and-conditions";
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
+import { useIsLoggedIn } from "@nihongo/core/shared/lib/auth/use-is-logged-in";
 import PageTitle from "@nihongo/core/shared/ui/page-title/page-title";
 import { useNavigation } from "@react-navigation/native";
 import { StackNavigationProp } from "@react-navigation/stack";
@@ -32,6 +33,8 @@ const SettingsPage: React.FC = () => {
 
   const { t } = useTranslation();
   const { colors } = useThemeContext();
+
+  const isLoggedIn = useIsLoggedIn();
 
   const styles = makeStyles(colors);
 
@@ -86,10 +89,11 @@ const SettingsPage: React.FC = () => {
 
         <DebugInfo />
 
-        <SettingsSection>
-          <RemoveData />
-          <AccountActions />
-        </SettingsSection>
+        {/* Залогинен → Remove account + Log out (при выходе локальные данные и так сотрутся,
+            поэтому Clear app data прячем). Не залогинен → только Clear app data. */}
+        {isLoggedIn !== null && (
+          <SettingsSection>{isLoggedIn ? <AccountActions /> : <RemoveData />}</SettingsSection>
+        )}
       </ScrollView>
     </View>
   );

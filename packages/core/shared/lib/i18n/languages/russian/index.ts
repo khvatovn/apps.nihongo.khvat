@@ -81,6 +81,13 @@ const Russian = {
       title: "Выйти из аккаунта?",
       subtitle: "Вы выйдете из аккаунта, и все локальные данные на устройстве будут удалены.",
     },
+    deleteAccount: {
+      button: "Удалить аккаунт",
+      title: "Удалить аккаунт?",
+      subtitle:
+        "Введите 6-значный код из письма. Действие необратимо — аккаунт и все данные будут удалены.",
+      confirm: "Удалить аккаунт",
+    },
     displayStatistics: "Отображать статистику",
     hapticFeedback: "Виброотклик",
     theme: {
@@ -205,6 +212,12 @@ const Russian = {
       resend: "Отправить ещё код",
       resendCooldown: "Отправить ещё код ({{seconds}})",
     },
+    resetPassword: {
+      title: "Забыли пароль?",
+      subtitle: "Введите адрес эл. почты, чтобы получить код для сброса пароля.",
+      changeTitle: "Измените пароль",
+      confirm: "Подтвердить",
+    },
     errors: {
       nameRequired: "Введите имя",
       emailRequired: "Введите email",
@@ -230,6 +243,8 @@ const Russian = {
       invalidCredentials: "Неверный email или пароль",
       emailNotVerified: "Email не подтверждён",
       useGoogleToSignIn: "Этот аккаунт входит через Google",
+      invalidResetToken: "Сессия сброса истекла. Запросите код заново.",
+      accountMigrating: "Идёт перенос аккаунта. Попробуйте позже.",
     },
   },
   profile: {

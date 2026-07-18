@@ -39,6 +39,11 @@ export enum ROUTES {
   SIGN_UP_PAGE = "SIGN_UP_PAGE",
   SIGN_IN_PAGE = "SIGN_IN_PAGE",
   SUBMIT_CODE = "SUBMIT_CODE",
+
+  // ? reset password
+  RESET_PASSWORD_ASK_EMAIL = "RESET_PASSWORD_ASK_EMAIL",
+  RESET_PASSWORD_SUBMIT_CODE = "RESET_PASSWORD_SUBMIT_CODE",
+  RESET_PASSWORD_CONFIRM = "RESET_PASSWORD_CONFIRM",
 }
 
 export type RootStackParamList = {
@@ -71,4 +76,9 @@ export type RootStackParamList = {
   [ROUTES.SIGN_UP_PAGE]: undefined;
   [ROUTES.SIGN_IN_PAGE]: undefined;
   [ROUTES.SUBMIT_CODE]: { email: string; region: string };
+
+  // ? reset password
+  [ROUTES.RESET_PASSWORD_ASK_EMAIL]: undefined;
+  [ROUTES.RESET_PASSWORD_SUBMIT_CODE]: { email: string; region: string };
+  [ROUTES.RESET_PASSWORD_CONFIRM]: { email: string; region: string; resetToken: string };
 };

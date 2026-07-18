@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useState } from "react";
 
-import { signInWithEmail } from "@nihongo/core/features/auth/api";
+import { resetPassword } from "@nihongo/core/features/auth/api";
 import { completeAuth } from "@nihongo/core/features/auth/lib/completeAuth";
 import { AUTH_ROUTES, AuthParamList } from "@nihongo/core/features/auth/routes";
 import { useResetApp } from "@nihongo/core/shared/contexts/reset-context/reset-context";
@@ -8,28 +8,33 @@ import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme
 import { Typography } from "@nihongo/core/shared/typography";
 import PrimaryButton from "@nihongo/core/shared/ui/buttons/Primary/primary-button";
 import Input from "@nihongo/core/shared/ui/input";
-import { useNavigation } from "@react-navigation/native";
+import { RouteProp, useNavigation, useRoute } from "@react-navigation/native";
 import { StackNavigationProp } from "@react-navigation/stack";
 import { CaretLeftIcon } from "phosphor-react-native";
 import { useTranslation } from "react-i18next";
-import { View, StyleSheet, Pressable, Text } from "react-native";
+import { View, Text, StyleSheet, Pressable } from "react-native";
 import { EdgeInsets, useSafeAreaInsets } from "react-native-safe-area-context";
 import { z } from "zod";
 
-// * Messages are i18n keys (auth.errors.*); translated in the component via t().
-const signInSchema = z.object({
-  email: z
-    .string()
-    .trim()
-    .min(1, "emailRequired")
-    .regex(/^[^\s@]+@[^\s@]+\.[^\s@]+$/, "invalidEmail"),
-  password: z.string().min(1, "passwordRequired"),
-});
+// * i18n-ключи (auth.errors.*); переводятся в компоненте через t().
+const passwordSchema = z
+  .object({
+    password: z
+      .string()
+      .min(8, "passwordMin")
+      .regex(/[A-Za-z]/, "passwordLetter")
+      .regex(/\d/, "passwordDigit"),
+    password2: z.string().min(1, "passwordRepeat"),
+  })
+  .refine((d) => d.password === d.password2, {
+    path: ["password2"],
+    message: "passwordsMismatch",
+  });
 
-const validateSignIn = (d: Record<string, string>): Record<string, string> => {
-  const result = signInSchema.safeParse({
-    email: d.email ?? "",
+const validate = (d: Record<string, string>): Record<string, string> => {
+  const result = passwordSchema.safeParse({
     password: d.password ?? "",
+    password2: d.password2 ?? "",
   });
   if (result.success) return {};
 
@@ -41,30 +46,42 @@ const validateSignIn = (d: Record<string, string>): Record<string, string> => {
   return errors;
 };
 
-// * Backend error codes (docs/auth/auth_api.md) -> form fields.
-const mapSignInError = (code?: string): Record<string, string> => {
+// * Backend error codes (docs/auth/reset_password.md) -> поля формы.
+const mapServerError = (code?: string): Record<string, string> => {
   switch (code) {
-    case "invalid_credentials":
-      return { password: "invalidCredentials" };
-    case "email_not_verified":
-      return { email: "emailNotVerified" };
-    case "use_google_to_sign_in":
-      return { email: "useGoogleToSignIn" };
+    case "weak_password":
+      return { password: "weakPassword" };
+    case "invalid_reset_token":
+      // * reset_token истёк/невалиден — сессию сброса надо начинать заново (§7.1 доков).
+      return { password2: "invalidResetToken" };
     default:
-      return { email: "somethingWrong" };
+      return { password2: "somethingWrong" };
   }
 };
 
-type LoginNavigationProp = StackNavigationProp<AuthParamList, typeof AUTH_ROUTES.SIGN_IN>;
+type ResetPasswordNavProp = StackNavigationProp<
+  AuthParamList,
+  typeof AUTH_ROUTES.RESET_PASSWORD_CONFIRM
+>;
+type ResetPasswordRouteProp = RouteProp<AuthParamList, typeof AUTH_ROUTES.RESET_PASSWORD_CONFIRM>;
 
-export const SignInPage: React.FC = () => {
-  const navigation = useNavigation<LoginNavigationProp>();
+export const ResetPasswordPage: React.FC = () => {
+  const navigation = useNavigation<ResetPasswordNavProp>();
+  const { params } = useRoute<ResetPasswordRouteProp>();
+  const { email, region, resetToken } = params;
 
   const { t } = useTranslation();
 
   const { colors } = useThemeContext();
   const insets = useSafeAreaInsets();
   const styles = makeStyles(colors, insets);
+
+  const { forceReset } = useResetApp();
+
+  const [data, setData] = useState<Record<string, string>>({});
+  const [serverErrors, setServerErrors] = useState<Record<string, string>>({});
+  const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
 
   useEffect(() => {
     navigation.setOptions({
@@ -74,13 +91,6 @@ export const SignInPage: React.FC = () => {
   }, [navigation]);
 
   const goBack = () => navigation.goBack();
-
-  const { forceReset } = useResetApp();
-
-  const [data, setData] = useState<Record<string, string>>({});
-  const [serverErrors, setServerErrors] = useState<Record<string, string>>({});
-  const [submitted, setSubmitted] = useState(false);
-  const [submitting, setSubmitting] = useState(false);
 
   const setField = (name: string, val: string) => {
     setData((prev) => ({ ...prev, [name]: val }));
@@ -92,7 +102,7 @@ export const SignInPage: React.FC = () => {
     });
   };
 
-  const errors = useMemo(() => validateSignIn(data), [data]);
+  const errors = useMemo(() => validate(data), [data]);
   const isValid = Object.keys(errors).length === 0;
 
   const fieldError = (name: string): string | undefined => {
@@ -101,7 +111,7 @@ export const SignInPage: React.FC = () => {
     return key ? t(`auth.errors.${key}`) : undefined;
   };
 
-  const next = async () => {
+  const confirm = async () => {
     setSubmitted(true);
     setServerErrors({});
 
@@ -109,17 +119,17 @@ export const SignInPage: React.FC = () => {
 
     setSubmitting(true);
     try {
-      const { ok, body } = await signInWithEmail(data["email"].trim(), data["password"]);
+      const { ok, body } = await resetPassword(email, region, resetToken, data["password"]);
 
       if (ok && body.access_token && body.refresh_token) {
         await completeAuth(body.access_token, body.refresh_token);
-        forceReset(); // * exit the auth flow into the app
+        forceReset(); // * авто-логин: выходим из auth-флоу в приложение
         return;
       }
 
-      setServerErrors(mapSignInError(body.error));
+      setServerErrors(mapServerError(body.error));
     } catch {
-      setServerErrors({ email: "requestFailed" });
+      setServerErrors({ password2: "requestFailed" });
     } finally {
       setSubmitting(false);
     }
@@ -139,47 +149,30 @@ export const SignInPage: React.FC = () => {
       </Pressable>
 
       <View style={styles.header}>
-        <Text style={styles.title}>{t("auth.signIn.title")}</Text>
+        <Text style={styles.title}>{t("auth.resetPassword.changeTitle")}</Text>
       </View>
 
       <View style={styles.inputs}>
         <Input
-          placeholder={t("auth.fields.email")}
-          onChange={(val: string) => setField("email", val)}
-          error={fieldError("email")}
-        />
-        <Input
-          placeholder={t("auth.fields.password")}
+          placeholder={t("auth.fields.newPassword")}
           isSecure
           onChange={(val: string) => setField("password", val)}
           error={fieldError("password")}
         />
+        <Input
+          placeholder={t("auth.fields.repeatPassword")}
+          isSecure
+          onChange={(val: string) => setField("password2", val)}
+          error={fieldError("password2")}
+        />
       </View>
 
       <PrimaryButton
-        onClick={next}
+        onClick={confirm}
         isDisabled={(submitted && !isValid) || submitting}
         containerStyles={styles.submitButton}
-        text={t("auth.signIn.submit")}
+        text={t("auth.resetPassword.confirm")}
       />
-
-      <Pressable
-        onPress={() => {
-          navigation.navigate(AUTH_ROUTES.RESET_PASSWORD_ASK_EMAIL);
-        }}
-        style={{ height: 20, margin: 0, marginTop: 16, padding: 0, alignItems: "center" }}
-      >
-        {({ pressed }) => (
-          <Text
-            style={[
-              styles.link,
-              { color: pressed ? colors.TextPrimaryPressed : colors.TextPrimary },
-            ]}
-          >
-            Forgot password?
-          </Text>
-        )}
-      </Pressable>
     </View>
   );
 };
@@ -200,6 +193,7 @@ const makeStyles = (colors: ColorsType, insets: EdgeInsets) =>
     header: {
       width: "100%",
     },
+
     title: {
       ...Typography.boldH2,
 
@@ -221,26 +215,5 @@ const makeStyles = (colors: ColorsType, insets: EdgeInsets) =>
       width: "100%",
 
       marginTop: 44,
-    },
-
-    subtitle: {
-      ...Typography.regularLabel,
-
-      color: colors.TextPrimary,
-
-      marginTop: 16,
-
-      flexDirection: "row",
-      flexWrap: "wrap",
-      justifyContent: "center",
-
-      // textAlign: 'center',
-      // alignItems: 'center',
-
-      maxWidth: 360,
-    },
-    link: {
-      ...Typography.boldLabel,
-      color: colors.TextPrimary,
     },
   });

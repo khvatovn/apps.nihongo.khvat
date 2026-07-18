@@ -82,6 +82,13 @@ const French = {
       title: "Log out?",
       subtitle: "You will be logged out and all local data on this device will be cleared.",
     },
+    deleteAccount: {
+      button: "Remove account",
+      title: "Delete account?",
+      subtitle:
+        "Enter the 6-digit code we sent to your email. This action is permanent and cannot be undone.",
+      confirm: "Delete account",
+    },
     displayStatistics: "Afficher les statistiques",
     hapticFeedback: "Retour haptique",
     theme: {
@@ -206,6 +213,12 @@ const French = {
       resend: "Send another code",
       resendCooldown: "Send another code ({{seconds}})",
     },
+    resetPassword: {
+      title: "Forgot password?",
+      subtitle: "Enter your email address to receive a code to reset your password.",
+      changeTitle: "Change your password",
+      confirm: "Confirm",
+    },
     errors: {
       nameRequired: "Enter your name",
       emailRequired: "Enter your email",
@@ -231,6 +244,8 @@ const French = {
       invalidCredentials: "Invalid email or password",
       emailNotVerified: "Email is not verified",
       useGoogleToSignIn: "This account uses Google sign-in",
+      invalidResetToken: "Reset session expired. Request a new code.",
+      accountMigrating: "Account is being transferred. Please try again later.",
     },
   },
   profile: {

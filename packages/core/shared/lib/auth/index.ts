@@ -90,6 +90,32 @@ export const logout = async (): Promise<void> => {
   }
 };
 
+export type AccountActionResult = { ok: boolean; status: number; error?: string };
+
+const readError = async (res: Response): Promise<string | undefined> => {
+  if (res.status === 204) return undefined;
+  const body = await res.json().catch(() => ({}) as { error?: string });
+  return body.error;
+};
+
+export const requestAccountDeletion = async (): Promise<AccountActionResult> => {
+  const res = await authFetch("/api/v2/auth/account/request-deletion", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+  });
+  return { ok: res.ok, status: res.status, error: await readError(res) };
+};
+
+export const deleteAccount = async (code: string): Promise<AccountActionResult> => {
+  const res = await authFetch("/api/v2/auth/account", {
+    method: "DELETE",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ code }),
+  });
+  const error = await readError(res);
+  return { ok: res.ok || error === "user_not_found", status: res.status, error };
+};
+
 export type Profile = {
   name: string;
   email: string;

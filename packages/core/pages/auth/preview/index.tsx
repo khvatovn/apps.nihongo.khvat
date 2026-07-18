@@ -23,6 +23,8 @@ import googleIcon from "../../../shared/assets/auth/google.png";
 
 type LoginNavigationProp = StackNavigationProp<AuthParamList, typeof AUTH_ROUTES.PREVIEW>;
 
+// ! Нужно тут вынести компонент Google OAuth кнопка и логика, что бы я мог вставить кнопку входа по google и в другой экран
+
 export const LoginPage: React.FC = () => {
   const navigation = useNavigation<LoginNavigationProp>();
 

@@ -1,5 +1,8 @@
 import React from "react";
 
+import { ResetPasswordAskEmailPage } from "@nihongo/core/pages/auth/password-reset/ask-email";
+import { ResetPasswordPage } from "@nihongo/core/pages/auth/password-reset/reset-password";
+import { ResetPasswordSubmitCodePage } from "@nihongo/core/pages/auth/password-reset/submit-code";
 import { LoginPage } from "@nihongo/core/pages/auth/preview";
 import { SignInPage } from "@nihongo/core/pages/auth/sign-in";
 import { SignUpPage } from "@nihongo/core/pages/auth/sign-up";
@@ -93,6 +96,11 @@ const AuthStack = {
     [ROUTES.SIGN_IN_PAGE]: SignInPage,
 
     [ROUTES.SUBMIT_CODE]: SubmitCode,
+
+    // ? Reset password
+    [ROUTES.RESET_PASSWORD_ASK_EMAIL]: ResetPasswordAskEmailPage,
+    [ROUTES.RESET_PASSWORD_SUBMIT_CODE]: ResetPasswordSubmitCodePage,
+    [ROUTES.RESET_PASSWORD_CONFIRM]: ResetPasswordPage,
   },
 };
 

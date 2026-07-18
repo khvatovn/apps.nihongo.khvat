@@ -5,6 +5,7 @@ export type AuthResponseBody = {
   access_token?: string;
   refresh_token?: string;
   region?: string;
+  reset_token?: string;
   error?: string;
 };
 
@@ -46,3 +47,30 @@ export const resendVerification = (email: string, region: string) =>
 
 export const oauthGoogle = (idToken: string) =>
   postJson("/api/v2/auth/oauth/google", { id_token: idToken });
+
+// * Сброс пароля (docs/auth/reset_password.md). region приходит с forgot и прокидывается дальше.
+// * forgot всегда 200 { region } — анти-энумерация (не раскрываем, есть ли такой email).
+export const requestPasswordReset = (email: string) =>
+  postJson("/api/v2/auth/password/forgot", { email });
+
+// * Проверяет код и выдаёт одноразовый reset_token (TTL 10 мин).
+export const verifyResetCode = (email: string, code: string, region: string) =>
+  postJson("/api/v2/auth/password/verify-code", { email, code, region });
+
+// * Повторная отправка кода (cooldown 45с на сервере) → 204.
+export const resendResetCode = (email: string, region: string) =>
+  postJson("/api/v2/auth/password/resend", { email, region });
+
+// * Меняет пароль по reset_token и авто-логинит: 200 { access_token, refresh_token }.
+export const resetPassword = (
+  email: string,
+  region: string,
+  resetToken: string,
+  newPassword: string,
+) =>
+  postJson("/api/v2/auth/password/reset", {
+    email,
+    region,
+    reset_token: resetToken,
+    new_password: newPassword,
+  });
