@@ -154,7 +154,7 @@ const styles = StyleSheet.create({
   content: {
     marginRight: 10,
     marginLeft: 10,
-    marginBottom: 10,
+    marginBottom: 16,
     marginTop: 20,
 
     gap: 9,

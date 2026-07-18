@@ -59,7 +59,6 @@ const makeStyles = (colors: ColorsType) =>
       flexDirection: "row",
       justifyContent: "space-between",
       gap: 16,
-      marginTop: 16,
     },
     header: {
       display: "flex",

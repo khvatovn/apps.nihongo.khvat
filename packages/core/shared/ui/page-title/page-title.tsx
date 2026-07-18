@@ -66,7 +66,7 @@ const styles = StyleSheet.create({
   title: {
     ...Typography.boldH2,
     marginTop: 10,
-    marginBottom: 10,
+    marginBottom: 16,
   },
 
   line: {
