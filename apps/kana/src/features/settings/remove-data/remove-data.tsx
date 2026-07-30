@@ -30,7 +30,7 @@ const RemoveData: React.FC = () => {
     JSON.stringify(statisticsState),
   ]).size;
 
-  const langSizes = {
+  const langSizes: Record<string, string[]> = {
     en: ["B", "KB", "MB", "GB"],
     ru: ["Б", "КБ", "МБ", "ГБ"],
     de: ["B", "KB", "MB", "GB"],
@@ -38,7 +38,7 @@ const RemoveData: React.FC = () => {
     fr: ["o", "Ko", "Mo", "Go"],
     it: ["B", "KB", "MB", "GB"],
     pt: ["B", "KB", "MB", "GB"],
-    ch: ["字节", "千字节", "兆字节", "吉字节"],
+    zh: ["字节", "千字节", "兆字节", "吉字节"],
     ko: ["바이트", "킬로바이트", "메가바이트", "기가바이트"],
     id: ["B", "KB", "MB", "GB"],
   };
@@ -47,7 +47,7 @@ const RemoveData: React.FC = () => {
     if (bytes === 0) return "0";
 
     const k = 1024;
-    const sizes = langSizes[language as "en"];
+    const sizes = langSizes[language.split("-")[0]] ?? langSizes.en;
     const i = Math.floor(Math.log(bytes) / Math.log(k));
 
     return parseFloat((bytes / Math.pow(k, i)).toFixed(decimals)) + " " + sizes[i];

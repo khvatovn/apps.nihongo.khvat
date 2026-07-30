@@ -74,7 +74,7 @@ const SettingsThemePage: React.FC = () => {
 
   return (
     <ModelContainer>
-      <View>
+      <View style={{ flex: 1 }}>
         <ModalHeader
           title={t("settings.theme.title")}
           left={{
@@ -86,6 +86,7 @@ const SettingsThemePage: React.FC = () => {
         <Text style={styles.title}>Installed</Text>
         <View style={styles.list}>
           <FlatList
+            style={{ flexShrink: 1 }}
             data={themeOptions}
             renderItem={({ item, index }) => (
               <ThemeItem
@@ -124,6 +125,9 @@ const makeStyles = (colors: ColorsType) =>
       marginHorizontal: 18,
 
       borderRadius: 12,
+
+      flexShrink: 1,
+      overflow: "hidden",
     },
   });
 

@@ -10,15 +10,44 @@ import { useNavigation } from "@react-navigation/native";
 import { CheckIcon } from "phosphor-react-native";
 import { useTranslation } from "react-i18next";
 import { FlatList, View, StyleSheet, Text, Pressable } from "react-native";
+import CountryFlag from "react-native-country-flag";
 
-type ItemProps = { onPress: () => void; title: string; colors: ColorsType; active: boolean };
+type ItemProps = {
+  onPress: () => void;
+  title: string;
+  lang: string;
+  colors: ColorsType;
+  active: boolean;
+};
 
-const Item = ({ title, colors, onPress, active }: ItemProps) => {
+const Item = ({ title, lang, colors, onPress, active }: ItemProps) => {
   const styles = makeStyles(colors);
+
+  const getIsoCode = (key: ShortLanguage) => {
+    if (key === ShortLanguage.EN) return "us";
+    if (key === ShortLanguage.ES_ES) return "es";
+    if (key === ShortLanguage.ES_MX) return "mx";
+    if (key === ShortLanguage.PT_BR) return "br";
+    if (key === ShortLanguage.PT_PT) return "pt";
+    if (key === ShortLanguage.KO_KR) return "kr";
+
+    if (key === ShortLanguage.ZH_CN) return "cn";
+    if (key === ShortLanguage.ZH_HK) return "hk";
+    if (key === ShortLanguage.ZH_TW) return "tw";
+
+    return key;
+  };
 
   return (
     <Pressable onPress={onPress} style={styles.item}>
-      <Text style={styles.item__text}>{title}</Text>
+      <View style={styles.row}>
+        <CountryFlag
+          style={styles.languageFlag}
+          isoCode={getIsoCode((lang || "") as ShortLanguage)}
+          size={24}
+        />
+        <Text style={styles.item__text}>{title}</Text>
+      </View>
 
       {active && <CheckIcon color={colors.BgContrast} size={20} />}
     </Pressable>
@@ -44,7 +73,7 @@ const SettingsLanguagePage: React.FC = () => {
 
   return (
     <ModelContainer>
-      <View>
+      <View style={{ flex: 1 }}>
         <ModalHeader
           title={t("settings.language")}
           left={{
@@ -59,6 +88,7 @@ const SettingsLanguagePage: React.FC = () => {
         />
 
         <FlatList
+          style={{ flex: 1 }}
           data={languageList}
           renderItem={({ item }) => (
             <Item
@@ -66,6 +96,7 @@ const SettingsLanguagePage: React.FC = () => {
               onPress={() => setAppLanguage(item.key)}
               colors={colors}
               key={item.key}
+              lang={item.key}
               title={item.title}
             />
           )}
@@ -89,10 +120,23 @@ const makeStyles = (colors: ColorsType) =>
       alignItems: "center",
       justifyContent: "space-between",
     },
+    row: {
+      flexDirection: "row",
+      gap: 6,
+      alignItems: "center",
+    },
     item__text: {
       ...Typography.boldDefault,
       color: colors.TextPrimary,
       lineHeight: 24,
+    },
+    languageFlag: {
+      borderRadius: 24,
+      width: 24,
+      height: 24,
+
+      borderWidth: 1,
+      borderColor: colors.BorderDefault,
     },
   });
 

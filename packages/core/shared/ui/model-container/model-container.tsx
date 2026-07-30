@@ -1,7 +1,7 @@
 import React from "react";
 
 import { useFocusEffect } from "@react-navigation/native";
-import { StatusBar, View } from "react-native";
+import { StatusBar, StyleSheet, View } from "react-native";
 
 import { useThemeContext } from "../../contexts/theme/theme-context";
 
@@ -21,5 +21,13 @@ export const ModelContainer: React.FC<ModelContainerProps> = ({ children }) => {
     };
   });
 
-  return <View>{children}</View>;
+  // * flex: 1 обязателен — без него высота контейнера равна контенту, и вложенные
+  // * FlatList/ScrollView не получают границы, по которой могли бы скроллиться
+  return <View style={styles.container}>{children}</View>;
 };
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+});

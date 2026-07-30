@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 
 import ProfileItem from "@nihongo/core/entities/profile/profile-item/profile-item";
 import SocialMediaProfile from "@nihongo/core/entities/profile/social-media-profile/social-media-profile";
-import StatWidget from "@nihongo/core/entities/profile/stat-widget/stat-widget";
+// import StatWidget from "@nihongo/core/entities/profile/stat-widget/stat-widget";
 import { PROFILE_ROUTES, ProfileParamList } from "@nihongo/core/pages/profile/routes";
 import { IS_WELCOME_PAGE } from "@nihongo/core/shared/constants/storageKeys";
 import { useResetApp } from "@nihongo/core/shared/contexts/reset-context/reset-context";
@@ -105,7 +105,7 @@ const ProfilePage: React.FC = () => {
         )}
 
         {/* ! TODO: pull statistics from the account */}
-        <StatWidget daysCount={15} practiceCount={45} />
+        {/* <StatWidget daysCount={15} practiceCount={45} /> */}
       </View>
 
       <View style={styles.content}>

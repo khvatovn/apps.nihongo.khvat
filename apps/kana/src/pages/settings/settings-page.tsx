@@ -89,8 +89,6 @@ const SettingsPage: React.FC = () => {
 
         <DebugInfo />
 
-        {/* Залогинен → Remove account + Log out (при выходе локальные данные и так сотрутся,
-            поэтому Clear app data прячем). Не залогинен → только Clear app data. */}
         {isLoggedIn !== null && (
           <SettingsSection>{isLoggedIn ? <AccountActions /> : <RemoveData />}</SettingsSection>
         )}

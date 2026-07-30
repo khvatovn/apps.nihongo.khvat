@@ -121,7 +121,7 @@ const KanaTableChoiceLettersPage: React.FC = () => {
           setActiveTab={setActiveTab}
           options={[KanaAlphabet.Hiragana, KanaAlphabet.Katakana]}
           translate={
-            i18n.language === "ch"
+            i18n.language.startsWith("zh")
               ? [t("kana.hiragana"), t("kana.katakana")]
               : ["ひらがな", "カタカナ"]
           }

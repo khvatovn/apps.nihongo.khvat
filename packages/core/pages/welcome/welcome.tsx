@@ -13,8 +13,7 @@ import { View, Text, StyleSheet, Image, ScrollView, Pressable } from "react-nati
 import CountryFlag from "react-native-country-flag";
 import { EdgeInsets, useSafeAreaInsets } from "react-native-safe-area-context";
 
-import welcomeLogo from "../../shared/assets/auth/avatar.jpg";
-
+import welcomeLogo from "../../shared/assets/app/icon.png";
 
 type WelcomeNavigationProp = StackNavigationProp<AuthParamList, typeof AUTH_ROUTES.WELCOME>;
 
@@ -44,6 +43,21 @@ const WelcomePage: React.FC = () => {
     });
   }, [navigation]);
 
+  const getIsoCode = (key: ShortLanguage) => {
+    if (key === ShortLanguage.EN) return "us";
+    if (key === ShortLanguage.ES_ES) return "es";
+    if (key === ShortLanguage.ES_MX) return "mx";
+    if (key === ShortLanguage.PT_BR) return "br";
+    if (key === ShortLanguage.PT_PT) return "pt";
+    if (key === ShortLanguage.KO_KR) return "kr";
+
+    if (key === ShortLanguage.ZH_CN) return "cn";
+    if (key === ShortLanguage.ZH_HK) return "hk";
+    if (key === ShortLanguage.ZH_TW) return "tw";
+
+    return key;
+  };
+
   return (
     <View style={styles.page}>
       <View style={styles.header}>
@@ -63,20 +77,7 @@ const WelcomePage: React.FC = () => {
           >
             <View style={[styles.languageView, { justifyContent: "space-between", width: "100%" }]}>
               <View style={styles.languageView}>
-                <CountryFlag
-                  style={styles.languageFlag}
-                  isoCode={
-                    item.key === ShortLanguage.EN
-                      ? "us"
-                      : item.key === ShortLanguage.CH
-                        ? "cn"
-                        : item.key === ShortLanguage.KO
-                          ? "kr"
-                          : item.key
-                  }
-                  size={24}
-                />
-
+                <CountryFlag style={styles.languageFlag} isoCode={getIsoCode(item.key)} size={24} />
                 <Text style={styles.languageTitle}>{item.title}</Text>
               </View>
 
@@ -154,6 +155,7 @@ const makeStyles = (colors: ColorsType, insets: EdgeInsets) =>
     languageView: {
       flexDirection: "row",
       gap: 10,
+      alignItems: "center",
     },
     languageTitle: {
       ...Typography.boldDefault,

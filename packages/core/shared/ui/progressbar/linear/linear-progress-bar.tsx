@@ -1,5 +1,6 @@
 import React from "react";
 
+import { FeatureFlagsService } from "@nihongo/core/shared/services/feature-flags-service/feature-flags-service";
 import { XIcon } from "phosphor-react-native";
 import { useTranslation } from "react-i18next";
 import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
@@ -9,6 +10,7 @@ import { useModal } from "../../../contexts/modal/modal-context";
 import { ConfirmationModal } from "../../../contexts/modal/presets/confirmation";
 import { ColorsType, useThemeContext } from "../../../contexts/theme/theme-context";
 import { Typography } from "../../../typography/index";
+import SmallPrimaryButton from "../../buttons/small/primary";
 
 interface ProgressBarProp {
   close?: () => void;
@@ -93,9 +95,19 @@ const LinearProgressBar: React.FC<ProgressBarProp> = ({
         >
           <XIcon size={20} color={colors.BgContrast} />
         </TouchableOpacity>
+
         <Text style={styles.progressBarText}>
           {title ? title : t("practice.question")} {current + 1} / {all}
         </Text>
+
+        {FeatureFlagsService.isEnabled("askAI") && (
+          <SmallPrimaryButton
+            text={"Ask AI"}
+            onPress={() => {
+              console.log("Тест");
+            }}
+          />
+        )}
       </View>
     </View>
   );

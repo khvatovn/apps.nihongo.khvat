@@ -57,7 +57,7 @@ const SettingsTransliterationsPage: React.FC = () => {
 
   return (
     <ModelContainer>
-      <View>
+      <View style={{ flex: 1 }}>
         <ModalHeader
           title={t("transliterationSystems.romaji")}
           left={{

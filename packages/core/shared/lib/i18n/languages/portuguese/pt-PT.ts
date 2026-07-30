@@ -1,0 +1,315 @@
+const PortuguesePT = {
+  common: {
+    done: "Concluído",
+    close: "Fechar",
+    reset: "Repor",
+    back: "Voltar",
+    next: "Seguinte",
+    retry: "Tentar novamente",
+    complete: "Concluir",
+    start: "Começar",
+    check: "Verificar",
+    welcome: "Bem-vindo",
+  },
+
+  tabs: {
+    boards: "Quadros",
+    learning: "Lições",
+    practice: "Prática",
+    kana: "Kana",
+    settings: "Definições",
+    profile: "Perfil",
+  },
+
+  practice: {
+    question: "Pergunta",
+
+    modes: {
+      mixed: { title: "Misto", subtitle: "Tudo de uma vez" },
+      testing: { title: "Teste", subtitle: "Escolha uma resposta contra o tempo" },
+      drawing: { title: "Desenho", subtitle: "Desenhe o Hiragana/Katakana" },
+      listening: { title: "Audição", subtitle: "Selecione a resposta correta" },
+      multipleChoice: { title: "Seleção de palavra", subtitle: "Escolha a resposta correta" },
+      matchingPairs: { title: "Pares correspondentes", subtitle: "Associe pares de palavras" },
+      wordBuilding: { title: "Construção de palavras", subtitle: "Forme uma palavra" },
+      typing: { title: "Digitação", subtitle: "Escreva a sílaba" },
+    },
+
+    playAudio: "Reproduzir áudio",
+
+    selectCorrectTransliteration: "Selecione a transliteração correta.",
+    selectHiraganaForWord: "Selecione o Hiragana na ordem correta.",
+    selectKatakanaForWord: "Selecione o Katakana na ordem correta.",
+
+    alert: {
+      insufficientKanaSelected: {
+        title: "Caracteres insuficientes",
+        subtitle: "Selecione {count} caracteres de Hiragana ou {count} caracteres de Katakana.",
+      },
+      insufficientBaseKanaSelected: {
+        title: "Caracteres insuficientes",
+        subtitle:
+          "Selecione {count} caracteres básicos de Hiragana ou {count} caracteres básicos de Katakana (excluindo dakuon, handakuon e yōon).",
+      },
+      insufficientWordsAvailable: {
+        title: "Palavras insuficientes disponíveis",
+        subtitle:
+          "Há menos palavras disponíveis do que o necessário. Selecione mais sílabas de Katakana ou Hiragana.",
+      },
+    },
+  },
+
+  kana: {
+    hiragana: "Hiragana",
+    katakana: "Katakana",
+    romaji: "Romaji",
+
+    basic: "Básico",
+    dakuon: "Dakuon",
+    handakuon: "Handakuon",
+    yoon: "Yoon",
+  },
+
+  selectKana: {
+    words: "Palavras para prática",
+    nothingSelected: "Nada selecionado",
+  },
+
+  settings: {
+    logout: {
+      button: "Terminar sessão",
+      title: "Terminar sessão?",
+      subtitle: "Vai terminar a sessão e todos os dados locais neste dispositivo serão eliminados.",
+    },
+    deleteAccount: {
+      button: "Eliminar conta",
+      title: "Eliminar conta?",
+      subtitle:
+        "Introduza o código de 6 dígitos que enviámos para o seu e-mail. Esta ação é permanente e irreversível.",
+      confirm: "Eliminar conta",
+    },
+    displayStatistics: "Mostrar estatísticas",
+    hapticFeedback: "Feedback háptico",
+    theme: {
+      title: "Tema",
+      light: "Clara",
+      dark: "Escura",
+      auto: "Automática",
+    },
+    language: "Idioma",
+    termsAndConditions: "Termos e Condições",
+    privacyPolicy: "Política de Privacidade",
+    contactSupport: "Contactar o suporte",
+
+    rateApp: {
+      title: "Avaliar a aplicação",
+      subtitle: "Ajuda-nos muito",
+    },
+
+    joinOurCommunity: {
+      title: "Junte-se à nossa comunidade",
+    },
+
+    eraseData: {
+      button: "Limpar dados da aplicação",
+      dataTakesUp: "Dados ocupam",
+      title: "Tem a certeza de que pretende eliminar os dados?",
+      subtitle:
+        "Todos os dados, incluindo definições e progresso, serão eliminados. Esta ação é irreversível.",
+    },
+
+    sourceCode: {
+      title: "Código-fonte",
+      githubRepository: "Repositório GitHub",
+    },
+
+    version: "Versão",
+  },
+
+  result: {
+    title: "Prática concluída",
+    score: "Pontuação",
+
+    sec: "seg",
+    min: "min",
+
+    question: "pergunta",
+
+    done: "Concluir",
+  },
+
+  lessonsList: {
+    completed: "concluído",
+    failedToLoadLessons: "Não foi possível carregar as lições, tente novamente mais tarde.",
+  },
+
+  lesson: {
+    matchHiraganaWithTransliteration: "Associe o Hiragana com a transliteração.",
+    matchKatakanaWithTransliteration: "Associe o Katakana com a transliteração.",
+    practiceEveryDay: "Pratique diariamente para reforçar os seus conhecimentos.",
+    learningComplete: "Lição concluída!",
+  },
+
+  transliterationSystems: {
+    romaji: "Romaji",
+    transliterationSystems: "Sistemas de transliteração",
+    hepburn: "Hepburn",
+    kunreiShiki: "Kunrei-shiki",
+    nihonShiki: "Nihon-shiki",
+    polivanovSystem: "Sistema Polivanov",
+  },
+
+  alert: {
+    exitConformation: {
+      title: "Tem a certeza de que pretende sair?",
+      subtitle: "O seu progresso não será guardado se sair agora.",
+    },
+    newVersion: {
+      title: "Está disponível uma nova versão.",
+      subtitle:
+        "Esta lição foi criada para uma versão mais recente da aplicação. Atualize a aplicação, por favor.",
+    },
+    cancel: "Cancelar",
+    ok: "OK",
+    confirm: "Confirmar",
+  },
+
+  auth: {
+    welcome: {
+      firstStep: "O seu primeiro passo para aprender japonês!",
+    },
+    agreement: {
+      prefix: "Ao continuar, aceita: ",
+      terms: "Termos de Serviço",
+      privacy: "Política de Privacidade",
+    },
+    continueWithGoogle: "Continuar com Google",
+    signUpWithEmail: "Registar-se com e-mail",
+    alreadyHaveAccount: "Já tem uma conta?",
+    login: "Iniciar sessão",
+    continueWithoutLogin: "Continuar sem iniciar sessão",
+    fields: {
+      name: "Nome",
+      email: "Endereço de e-mail",
+      password: "Palavra-passe",
+      newPassword: "Nova palavra-passe",
+      repeatPassword: "Repita a nova palavra-passe",
+      birthDate: "Data de nascimento",
+      code: "Código",
+    },
+    signIn: {
+      title: "Iniciar sessão",
+      submit: "Iniciar sessão",
+    },
+    signUp: {
+      title: "Criar uma conta",
+      submit: "Criar conta",
+    },
+    verifyEmail: {
+      title: "Verifique o seu e-mail",
+      subtitle: "Introduza o código do e-mail. Enviámo-lo para {{email}}",
+      submit: "Seguinte",
+      resend: "Enviar outro código",
+      resendCooldown: "Enviar outro código ({{seconds}})",
+    },
+    resetPassword: {
+      title: "Esqueceu-se da palavra-passe?",
+      subtitle:
+        "Introduza o seu endereço de e-mail para receber um código para repor a palavra-passe.",
+      changeTitle: "Altere a sua palavra-passe",
+      confirm: "Confirmar",
+    },
+    errors: {
+      nameRequired: "Introduza o nome",
+      emailRequired: "Introduza o e-mail",
+      invalidEmail: "E-mail inválido",
+      dateRequired: "Selecione a data de nascimento",
+      tooYoung: "A idade mínima é 13 anos",
+      passwordMin: "Pelo menos 8 caracteres",
+      passwordLetter: "Adicione pelo menos uma letra",
+      passwordDigit: "Adicione pelo menos um dígito",
+      passwordRepeat: "Repita a palavra-passe",
+      passwordsMismatch: "As palavras-passe não coincidem",
+      emailTaken: "E-mail já registado",
+      weakPassword: "A palavra-passe é demasiado fraca",
+      invalidDate: "Data inválida ou idade inferior a 13",
+      requestFailed: "Não foi possível enviar o pedido. Tente novamente mais tarde.",
+      somethingWrong: "Algo correu mal. Tente novamente mais tarde.",
+      codeRequired: "Introduza o código de 6 dígitos",
+      invalidCode: "Código inválido",
+      codeExpired: "O código expirou",
+      tooManyAttempts: "Demasiadas tentativas, tente mais tarde",
+      resendCooldown: "Aguarde antes de solicitar um novo código",
+      passwordRequired: "Introduza a palavra-passe",
+      invalidCredentials: "E-mail ou palavra-passe inválidos",
+      emailNotVerified: "O e-mail não está verificado",
+      useGoogleToSignIn: "Esta conta utiliza o início de sessão com Google",
+      invalidResetToken: "A sessão de reposição expirou. Solicite um novo código.",
+      accountMigrating: "A conta está a ser transferida. Tente novamente mais tarde.",
+    },
+  },
+  profile: {
+    signInPrompt:
+      "Inicie sessão em {{app}} para sincronizar o seu progresso em todos os dispositivos.",
+    signInButton: "Iniciar sessão ou criar uma conta",
+  },
+  debug: {
+    store: "Loja",
+    deviceId: "ID do dispositivo",
+    apiServers: "Servidores API",
+    notificationToken: "Token de notificação",
+    checking: "A verificar…",
+    pinging: "A fazer ping…",
+    unreachable: "Indisponível",
+    autoSelect: "Seleção automática",
+    addHost: "Adicionar",
+    removeData: "Remover dados",
+  },
+  verbForm: {
+    title: "Formas verbais:",
+    teForm: "Forma て:",
+    taForm: "Forma た:",
+    naiForm: "Forma ない:",
+    dictionaryForm: "Forma de dicionário:",
+    potentialForm: "Forma potencial:",
+    volitionalForm: "Modo volitivo:",
+    imperativeForm: "Modo imperativo:",
+    prohibitiveForm: "Modo proibitivo:",
+    conditionalForm: "Forma condicional - ば:",
+    negativeConditionalForm: "Forma condicional negativa - ば:",
+    passiveForm: "Voz passiva:",
+    verbCausative: "Forma causativa:",
+  },
+  boards: {
+    title: "Quadros:",
+    createOwn: "Criar o seu",
+  },
+  board: {
+    searchPlaceholder: "Pesquisa",
+    searchResults: "Pesquisa",
+    nothingFound: "Nada encontrado",
+    sectionsTitle: "Secções",
+  },
+  card: {
+    examples: "Exemplos:",
+    open: "Abrir",
+    alreadySeen: "Já visto",
+  },
+  promotionTelegram: {
+    title: "Parabéns, encontrou um bug sortudo!",
+    reasonSingle:
+      "Como já não há tantos bugs na aplicação, muito menos pessoas visitam o meu canal de Telegram para reportar problemas, e muito menos pessoas se subscrevem a mim",
+    reasonMultiple:
+      "Como já não há tantos bugs na aplicação, muito menos pessoas visitam os nossos canais de Telegram para reportar problemas, e muito menos pessoas se subscrevem a nós",
+    instructionTitle: "Eis o que precisa de fazer:",
+    stepGo: "- Vá para {{channel}}",
+    stepSubscribeSingle: "- Subscreva (vou publicar muitas coisas interessantes)",
+    stepSubscribeMultiple: "- Subscreva (vamos publicar muitas coisas interessantes)",
+    dontMakeMe: "Não me obrigue a adicionar bugs reais :)",
+    channelSingle: "O meu canal de Telegram",
+    channelMultiple: "Os nossos canais de Telegram",
+    fixMyself: "Eu resolvo sozinho",
+  },
+};
+
+export default PortuguesePT;
