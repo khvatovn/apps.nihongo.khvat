@@ -29,8 +29,6 @@ const Furigana: React.FC<FuriganaProps> = ({ text, typography, typographyFurigan
   const elements: JSX.Element[] = [];
   let match;
 
-  // Разбиваем обычный текст на токены (слова + пробелы), чтобы flexWrap мог
-  // переносить между ними, а не уводить весь блок целиком на новую строку.
   const pushPlainText = (chunk: string, keyPrefix: string) => {
     chunk.split(/(\s+)/).forEach((token, i) => {
       if (!token) return;

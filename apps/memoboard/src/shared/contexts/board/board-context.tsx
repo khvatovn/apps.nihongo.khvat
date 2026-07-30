@@ -10,9 +10,12 @@ import React, {
   FunctionComponent,
 } from "react";
 
+import { removeFurigana } from "@nihongo/core/shared/lib/furigana/remove-furigana";
+import { replaceKanjiWithFurigana } from "@nihongo/core/shared/lib/furigana/replace-kanji-with-furigana";
 import { useTranslation } from "react-i18next";
+import { useWindowDimensions } from "react-native";
 
-import { BoardLesson, Card, getCards } from "@/pages/board/api/get-cards";
+import { BoardLesson, Card, getCards } from "@/shared/api/get-cards";
 
 export interface BoardSection {
   title: string;
@@ -47,7 +50,7 @@ interface BoardContextType {
 
 const BoardContext = createContext<BoardContextType | null>(null);
 
-const CARDS_IN_ROW = 3;
+// const CARDS_IN_ROW = 3;
 
 const chunk = (cards: Card[], size: number): Card[][] =>
   cards.reduce<Card[][]>((result, card, index) => {
@@ -59,16 +62,18 @@ const chunk = (cards: Card[], size: number): Card[][] =>
     return result;
   }, []);
 
+// * Все варианты написания одной строки: как есть (来(く)る), только кандзи (来る), только чтение (くる)
+const spellings = (text: string) => [text, removeFurigana(text), replaceKanjiWithFurigana(text)];
+
+// * Одна строка на карточку, по которой идёт поиск: title/subtitle в трёх написаниях,
+// * теги, примеры и все формы глагола
 const buildHaystack = (card: Card) =>
   [
-    card.title,
-    card.titleWithoutFurigana,
-    card.titleWithFurigana,
-    card.subtitle,
-    card.subtitleNoFurigana,
-    card.subtitleFurigana,
+    ...spellings(card.title),
+    ...spellings(card.subtitle),
     ...card.tags.map((tag) => tag.label),
     ...card.examples,
+    ...card.verbForms.flatMap((form) => spellings(form.value)),
   ]
     .join(" ")
     .toLowerCase();
@@ -79,6 +84,8 @@ interface BoardProviderProps {
 
 export const BoardProvider: FunctionComponent<BoardProviderProps> = ({ children }) => {
   const { t } = useTranslation();
+
+  const { width } = useWindowDimensions();
 
   const [lessons, setLessons] = useState<BoardLesson[]>([]);
   const [boardId, setBoardId] = useState<string | null>(null);
@@ -131,15 +138,15 @@ export const BoardProvider: FunctionComponent<BoardProviderProps> = ({ children 
   const sections = useMemo(() => {
     if (search) {
       return cards.length > 0
-        ? [{ title: t("board.searchResults"), data: chunk(cards, CARDS_IN_ROW) }]
+        ? [{ title: t("board.searchResults"), data: chunk(cards, Math.round(width / 120)) }]
         : [];
     }
 
     return filteredLessons.map((lesson) => ({
       title: lesson.title,
-      data: chunk(lesson.cards, CARDS_IN_ROW),
+      data: chunk(lesson.cards, Math.round(width / 120)),
     }));
-  }, [filteredLessons, cards, search, t]);
+  }, [search, filteredLessons, cards, t, width]);
 
   const cardsRef = useRef<Card[]>(cards);
   cardsRef.current = cards;

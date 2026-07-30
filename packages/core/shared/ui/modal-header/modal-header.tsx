@@ -9,6 +9,7 @@ import { Typography } from "../../typography";
 
 interface ModalHeaderProps {
   title: string;
+  titleColor?: string;
 
   left?: {
     onPress: () => void;
@@ -23,7 +24,7 @@ interface ModalHeaderProps {
   };
 }
 
-export const ModalHeader: React.FC<ModalHeaderProps> = ({ left, title, right }) => {
+export const ModalHeader: React.FC<ModalHeaderProps> = ({ left, title, titleColor, right }) => {
   const insets = useSafeAreaInsets();
 
   const { triggerHaptic } = useHaptic();
@@ -73,7 +74,7 @@ export const ModalHeader: React.FC<ModalHeaderProps> = ({ left, title, right }) 
         )}
       </Pressable>
 
-      <Text style={styles.title}>{title}</Text>
+      <Text style={[styles.title, titleColor && { color: titleColor }]}>{title}</Text>
 
       <Pressable
         style={[styles.buttonContainerStyles, { justifyContent: "flex-end" }]}

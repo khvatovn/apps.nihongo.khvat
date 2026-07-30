@@ -1,3 +1,5 @@
+import getVerbForm, { VerbForm } from "@/shared/helpers/verb/get-verb-form";
+
 export function removeFurigana(text: string) {
   return text.replace(/\([^)]+\)/g, "");
 }
@@ -48,6 +50,9 @@ export interface Card {
 
   subtitleNoFurigana: string;
   subtitleFurigana: string;
+
+  // * Пусто для всего, что не глагол I/II/III группы
+  verbForms: VerbForm[];
 }
 
 export interface BoardLesson {
@@ -201,27 +206,30 @@ export const getCards = async (id: string): Promise<BoardLesson[]> => {
   return lessons.map((lesson, i) => ({
     title: lesson.t,
     id: i,
-    cards: lesson.c.map((card) => ({
-      id: card.id,
-      title: card.t,
-      subtitle: card.s,
-      tags: decodeBitset(card.g, lesson.g).map((item) => ({
-        label: item.toLowerCase(),
-        color: colorUtil(item),
-      })),
-      examples: card.e || [],
-      index: index(),
+    cards: lesson.c.map((card) => {
+      const tags = decodeBitset(card.g, lesson.g).map((item) => item.toLowerCase());
 
-      lessonTitle: lesson.t,
-      lessonId: i,
+      return {
+        id: card.id,
+        title: card.t,
+        subtitle: card.s,
+        tags: tags.map((label) => ({ label, color: colorUtil(label) })),
+        examples: card.e || [],
+        index: index(),
 
-      images: card.i,
+        lessonTitle: lesson.t,
+        lessonId: i,
 
-      titleWithoutFurigana: removeFurigana(card.t),
-      titleWithFurigana: replaceKanjiWithFurigana(card.t),
+        images: card.i,
 
-      subtitleNoFurigana: removeFurigana(card.s),
-      subtitleFurigana: replaceKanjiWithFurigana(card.s),
-    })),
+        titleWithoutFurigana: removeFurigana(card.t),
+        titleWithFurigana: replaceKanjiWithFurigana(card.t),
+
+        subtitleNoFurigana: removeFurigana(card.s),
+        subtitleFurigana: replaceKanjiWithFurigana(card.s),
+
+        verbForms: getVerbForm({ tags, title: card.t }),
+      };
+    }),
   }));
 };

@@ -1,4 +1,4 @@
-import { Card } from "@/pages/board/api/get-cards";
+import { Card } from "@/shared/api/get-cards";
 
 export enum ROUTES {
   ROOT = "Root",
@@ -23,6 +23,11 @@ export enum ROUTES {
   SIGN_IN_PAGE = "SIGN_IN_PAGE",
 
   SUBMIT_CODE = "SUBMIT_CODE",
+
+  // ? reset password
+  RESET_PASSWORD_ASK_EMAIL = "RESET_PASSWORD_ASK_EMAIL",
+  RESET_PASSWORD_SUBMIT_CODE = "RESET_PASSWORD_SUBMIT_CODE",
+  RESET_PASSWORD_CONFIRM = "RESET_PASSWORD_CONFIRM",
 }
 
 export type RootStackParamList = {

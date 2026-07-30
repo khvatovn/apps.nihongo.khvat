@@ -1,11 +1,10 @@
 import React, { useMemo } from "react";
 
-
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
 import { Typography } from "@nihongo/core/shared/typography";
 import { View, Text, StyleSheet, Pressable } from "react-native";
 
-import { Card } from "@/pages/board/api/get-cards";
+import { Card } from "@/shared/api/get-cards";
 
 interface KanjiTableProps {
   cards: Card[];
@@ -60,7 +59,7 @@ const makeStyles = (colors: ColorsType) =>
       padding: 6,
     },
     title: {
-      ...Typography.boldH3,
+      ...Typography.boldDefault,
       color: colors.TextPrimary,
       lineHeight: 24,
     },

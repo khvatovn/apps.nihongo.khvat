@@ -10,12 +10,13 @@ import { HapticProvider } from "@nihongo/core/shared/contexts/haptic/haptic-cont
 import { ModalProvider } from "@nihongo/core/shared/contexts/modal/modal-context";
 import { RemoteConfigProvider } from "@nihongo/core/shared/contexts/remote-config/remote-config-context";
 import { ThemeProvider } from "@nihongo/core/shared/contexts/theme/theme-context";
+import { UiStateProvider } from "@nihongo/core/shared/contexts/ui-state/ui-state-context";
 import { ApiGatewayProvider } from "@nihongo/core/shared/lib/api-gateway";
 import NotificationsWrapper from "@nihongo/core/shared/lib/notifications";
 import AppWrapper from "@nihongo/core/shared/ui/layouts/app-wrapper";
 import { Providers } from "@nihongo/core/shared/ui/providers";
-import { View } from "react-native";
 import { AppRegistry } from "react-native";
+import { GestureHandlerRootView } from "react-native-gesture-handler";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import { enableScreens } from "react-native-screens";
 
@@ -27,7 +28,7 @@ enableScreens();
 const App: React.FC = () => {
   return (
     <StrictMode>
-      <View style={{ flex: 1 }}>
+      <GestureHandlerRootView style={{ flex: 1 }}>
         <Providers
           providers={[
             [ThemeProvider],
@@ -41,12 +42,13 @@ const App: React.FC = () => {
             [DeviceRegistrationProvider],
             [ActionSheetProvider],
             [HapticProvider],
+            [UiStateProvider],
             [BoardProvider],
           ]}
         >
           <Layout />
         </Providers>
-      </View>
+      </GestureHandlerRootView>
     </StrictMode>
   );
 };

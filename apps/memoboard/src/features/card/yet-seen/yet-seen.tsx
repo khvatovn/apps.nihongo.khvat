@@ -1,13 +1,15 @@
-import React, { useMemo, useState } from "react";
+import React, { useMemo } from "react";
 
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
+import { usePersistedState } from "@nihongo/core/shared/contexts/ui-state/ui-state-context";
 import { extractKanji } from "@nihongo/core/shared/lib/kanji/extract-kanji";
 import { Typography } from "@nihongo/core/shared/typography";
-import { EyeClosedIcon, EyeIcon } from "phosphor-react-native";
+import Section from "@nihongo/core/shared/ui/section";
+import { SelectionIcon, SelectionSlashIcon } from "phosphor-react-native";
 import { useTranslation } from "react-i18next";
 import { View, Text, StyleSheet, Pressable } from "react-native";
 
-import { Card } from "@/pages/board/api/get-cards";
+import { Card } from "@/shared/api/get-cards";
 import Furigana from "@/shared/ui/furigana/furigana";
 
 interface YetSeenProps {
@@ -17,7 +19,10 @@ interface YetSeenProps {
 }
 
 const YetSeen: React.FC<YetSeenProps> = ({ title, cards, openModal }) => {
-  const [isShow, setIsShow] = useState(false);
+  const [showFurigana, setShowFurigana] = usePersistedState(
+    "memoboard.card.yetSeen.furigana",
+    true,
+  );
 
   const { colors } = useThemeContext();
   const styles = makeStyles(colors);
@@ -42,20 +47,31 @@ const YetSeen: React.FC<YetSeenProps> = ({ title, cards, openModal }) => {
     [title, cards],
   );
 
+  const isFurigana = yetSeenKanji.some((section) =>
+    section.cards.every((card) => card.title !== card.titleWithFurigana),
+  );
+
   if (yetSeenKanji.length < 1) return null;
 
   return (
     <View style={styles.container}>
-      <View style={styles.divider} />
-
-      <View style={styles.header}>
-        <Text style={styles.headerTitle}>{t("card.alreadySeen")}</Text>
-        <Pressable onPress={() => setIsShow((prev) => !prev)}>
-          {isShow ? <EyeIcon /> : <EyeClosedIcon />}
-        </Pressable>
-      </View>
-
-      <View style={styles.content}>
+      <Section
+        title={t("card.alreadySeen")}
+        stateKey="memoboard.card.yetSeen.show"
+        buttons={[
+          isFurigana ? (
+            <Pressable key={"eye_btn"} onPress={() => setShowFurigana((prev) => !prev)}>
+              {showFurigana ? (
+                <SelectionSlashIcon color={colors.TextContrastPrimary} />
+              ) : (
+                <SelectionIcon color={colors.TextContrastPrimary} />
+              )}
+            </Pressable>
+          ) : (
+            <></>
+          ),
+        ]}
+      >
         {yetSeenKanji.map((group) => (
           <View key={group.key} style={styles.group}>
             <Text style={styles.groupLabel}>{group.key}</Text>
@@ -64,7 +80,7 @@ const YetSeen: React.FC<YetSeenProps> = ({ title, cards, openModal }) => {
               {group.cards.map((card) => (
                 <Pressable key={card.id} style={styles.item} onPress={() => openModal(card)}>
                   <View style={styles.itemInfo}>
-                    {isShow ? (
+                    {showFurigana ? (
                       <Furigana
                         text={card.title}
                         typography={Typography.regularDefault}
@@ -80,7 +96,7 @@ const YetSeen: React.FC<YetSeenProps> = ({ title, cards, openModal }) => {
             </View>
           </View>
         ))}
-      </View>
+      </Section>
     </View>
   );
 };
@@ -90,13 +106,6 @@ export default YetSeen;
 const makeStyles = (colors: ColorsType) =>
   StyleSheet.create({
     container: {},
-    divider: {
-      marginTop: 12,
-      marginBottom: 12,
-      height: 1,
-      width: "100%",
-      backgroundColor: colors.BorderDefault,
-    },
     header: {
       backgroundColor: colors.BgContrast,
       borderRadius: 6,

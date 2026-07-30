@@ -3,21 +3,20 @@ import React, { useMemo } from "react";
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
 import { Typography } from "@nihongo/core/shared/typography";
 import SecondaryButton from "@nihongo/core/shared/ui/buttons/Secondary/secondary-button";
-import { ModalHeader } from "@nihongo/core/shared/ui/modal-header/modal-header";
-import Tag from "@nihongo/core/shared/ui/tag/tag";
 import { RouteProp, useNavigation, useRoute } from "@react-navigation/native";
 import { StackNavigationProp } from "@react-navigation/stack";
-import { ArrowLeftIcon, ArrowRightIcon, BookIcon, TagIcon } from "phosphor-react-native";
+import { ArrowLeftIcon, ArrowRightIcon } from "phosphor-react-native";
 import { useTranslation } from "react-i18next";
-import { View, Text, StyleSheet, ImageBackground, Linking } from "react-native";
+import { View, StyleSheet, Linking } from "react-native";
 import { ScrollView, Gesture, GestureDetector } from "react-native-gesture-handler";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 import { RootStackParamList, ROUTES } from "@/app/routes.types";
+import CardHeader from "@/features/card/card-header";
+import Examples from "@/features/card/examples";
 import VerbForm from "@/features/card/verb-form/verb-form";
 import YetSeen from "@/features/card/yet-seen/yet-seen";
 import { useBoard } from "@/shared/contexts/board/board-context";
-import Furigana from "@/shared/ui/furigana/furigana";
 
 type BoardNavProp = StackNavigationProp<RootStackParamList, typeof ROUTES.WORD>;
 type BoardRouteProp = RouteProp<RootStackParamList, typeof ROUTES.WORD>;
@@ -48,8 +47,6 @@ const CardPage = () => {
     Linking.openURL(`${process.env.MEMOBOARD_API}/${boardId}/${card.index}`);
   };
 
-  const image = card?.images?.length ? `${process.env.MEMOBOARD_API}${card?.images?.[0]}` : null;
-
   const swipe = useMemo(
     () =>
       Gesture.Pan()
@@ -71,120 +68,12 @@ const CardPage = () => {
   return (
     <GestureDetector gesture={swipe}>
       <View style={styles.screen}>
-        {image && (
-          <ImageBackground
-            source={{ uri: image }}
-            style={{ width: "100%" }}
-            resizeMode="cover"
-            imageStyle={styles.image}
-          >
-            <View style={styles.overlay} />
-
-            <ModalHeader
-              left={{
-                text: t("common.close"),
-                onPress: goBack,
-              }}
-              title={card.titleWithoutFurigana}
-            />
-
-            <View
-              style={{
-                padding: 16,
-                minHeight: 200,
-              }}
-            >
-              <Furigana text={card.title} />
-              <Text style={styles.card_subtitle}>{card.subtitleNoFurigana}</Text>
-
-              <View style={styles.tags}>
-                <Tag
-                  text={card.lessonTitle}
-                  icon={<BookIcon size={12} color={colors.TextPrimary} />}
-                />
-
-                {card.tags.map((tag) => (
-                  <Tag
-                    key={tag.label}
-                    isUpperCase={tag.label === "iii" || tag.label === "ii" || tag.label === "i"}
-                    text={tag.label}
-                    icon={<TagIcon size={12} color={colors.TextPrimary} />}
-                  />
-                ))}
-              </View>
-            </View>
-          </ImageBackground>
-        )}
-
-        {!image && (
-          <ModalHeader
-            left={{
-              text: t("common.close"),
-              onPress: goBack,
-            }}
-            title={card.titleWithoutFurigana}
-          />
-        )}
+        <CardHeader goBack={goBack} card={card} />
 
         <View style={styles.container}>
           <ScrollView contentContainerStyle={styles.content}>
-            {!image && (
-              <View>
-                <Furigana text={card.title} />
-                <Text style={styles.card_subtitle}>{card.subtitleNoFurigana}</Text>
-              </View>
-            )}
-            {!image && (
-              <View style={styles.tags}>
-                <Tag
-                  text={card.lessonTitle}
-                  icon={<BookIcon size={12} color={colors.TextPrimary} />}
-                />
-
-                {card.tags.map((tag) => (
-                  <Tag
-                    key={tag.label}
-                    isUpperCase={tag.label === "iii" || tag.label === "ii" || tag.label === "i"}
-                    text={tag.label}
-                    icon={<TagIcon size={12} color={colors.TextPrimary} />}
-                  />
-                ))}
-              </View>
-            )}
-            {card.examples.length > 0 && (
-              <View
-                style={{
-                  marginTop: 12,
-                  marginBottom: 12,
-                  height: 1,
-                  width: "100%",
-                  backgroundColor: colors.BorderDefault,
-                }}
-              />
-            )}
-            {card.examples.length > 0 && (
-              <View>
-                <View style={styles.header}>
-                  <Text style={{ ...Typography.boldDefault, color: colors.TextContrastPrimary }}>
-                    {t("card.examples")}
-                  </Text>
-                </View>
-                <View style={styles.list}>
-                  {card.examples.map((example) => (
-                    <View style={styles.item} key={example}>
-                      <Furigana
-                        text={example}
-                        typography={Typography.regularDefault}
-                        typographyFurigana={Typography.regularCaption}
-                      />
-                    </View>
-                  ))}
-                </View>
-              </View>
-            )}
-
+            <Examples card={card} />
             <VerbForm tags={card.tags.map((i) => i.label)} title={card.title} />
-
             <YetSeen title={card.title} cards={cards} openModal={selectCard} />
           </ScrollView>
         </View>
@@ -247,6 +136,8 @@ const makeStyles = (colors: ColorsType) =>
     content: {
       paddingHorizontal: 16,
       paddingBottom: 16,
+
+      paddingTop: 16,
     },
     image: {
       resizeMode: "cover",

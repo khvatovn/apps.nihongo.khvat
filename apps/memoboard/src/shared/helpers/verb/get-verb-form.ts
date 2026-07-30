@@ -4,6 +4,8 @@ import { getVerbGroup, VerbGroup } from "@nihongo/core/shared/lib/verb/group";
 
 const verbEnd = "ます";
 
+const toWithoutMasu = (verb: string) => verb.replace("ます", "");
+
 const getVerb = (title: string) => {
   const verbs = title.split(/[ 【】、]/).filter((item) => item.includes(verbEnd));
   return verbs[0];
@@ -84,10 +86,8 @@ const beAbleToForm = (title: string, verbGroup: VerbGroup) => {
 
   if (verbGroup === VerbGroup.II) return verb.replace("ます", "られます");
 
-  if (verbGroup === VerbGroup.I) {
-    const verbWithoutMasu = verb.replace("ます", "");
-    return replaceKana(verbWithoutMasu, KanaIndex.I, KanaIndex.E) + "ます";
-  }
+  if (verbGroup === VerbGroup.I)
+    return replaceKana(toWithoutMasu(verb), KanaIndex.I, KanaIndex.E) + "ます";
 
   return null;
 };
@@ -105,10 +105,8 @@ const subjunctiveMoodForm = (title: string, verbGroup: VerbGroup) => {
 
   if (verbGroup === VerbGroup.II) return verb.replace("ます", "よう");
 
-  if (verbGroup === VerbGroup.I) {
-    const verbWithoutMasu = verb.replace("ます", "");
-    return replaceKana(verbWithoutMasu, KanaIndex.I, KanaIndex.O) + "う";
-  }
+  if (verbGroup === VerbGroup.I)
+    return replaceKana(toWithoutMasu(verb), KanaIndex.I, KanaIndex.O) + "う";
 
   return null;
 };
@@ -132,10 +130,7 @@ const imperativeMoodForm = (title: string, verbGroup: VerbGroup) => {
     return verb.replace("ます", "ろ");
   }
 
-  if (verbGroup === VerbGroup.I) {
-    const verbWithoutMasu = verb.replace("ます", "");
-    return replaceKana(verbWithoutMasu, KanaIndex.I, KanaIndex.E);
-  }
+  if (verbGroup === VerbGroup.I) return replaceKana(toWithoutMasu(verb), KanaIndex.I, KanaIndex.E);
 
   return null;
 };
@@ -155,10 +150,8 @@ const toConditionalForm = (title: string, verbGroup: VerbGroup) => {
     return verb.replace("ます", "れば");
   }
 
-  if (verbGroup === VerbGroup.I) {
-    const verbWithoutMasu = verb.replace("ます", "");
-    return replaceKana(verbWithoutMasu, KanaIndex.I, KanaIndex.E) + "ば";
-  }
+  if (verbGroup === VerbGroup.I)
+    return replaceKana(toWithoutMasu(verb), KanaIndex.I, KanaIndex.E) + "ば";
 
   return null;
 };
@@ -181,10 +174,8 @@ const passiveVoiceForm = (title: string, verbGroup: VerbGroup) => {
     return verb.replace("ます", "られます");
   }
 
-  if (verbGroup === VerbGroup.I) {
-    const verbWithoutMasu = verb.replace("ます", "");
-    return replaceKana(verbWithoutMasu, KanaIndex.I, KanaIndex.A) + "れます";
-  }
+  if (verbGroup === VerbGroup.I)
+    return replaceKana(toWithoutMasu(verb), KanaIndex.I, KanaIndex.A) + "れます";
 
   return null;
 };
@@ -203,14 +194,8 @@ const naiForm = (title: string, verbGroup: VerbGroup) => {
 
   if (verbGroup === VerbGroup.II) return verb.replace("ます", "ない");
 
-  if (verbGroup === VerbGroup.I) {
-    const verbWithoutMasu = verb.replace("ます", "");
-    const lastChar = verbWithoutMasu.at(-1);
-
-    if (lastChar === "い") return verbWithoutMasu.slice(0, -1) + "わない";
-
-    return replaceKana(verbWithoutMasu, KanaIndex.I, KanaIndex.A) + "ない";
-  }
+  if (verbGroup === VerbGroup.I)
+    return replaceKana(toWithoutMasu(verb), KanaIndex.I, KanaIndex.A) + "ない";
 
   return null;
 };
@@ -229,24 +214,23 @@ const toCausativeVerb = (title: string, verbGroup: VerbGroup) => {
     return verb.replace("ます", "させます");
   }
 
-  if (verbGroup === VerbGroup.I) {
-    const verbWithoutMasu = verb.replace("ます", "");
-    return replaceKana(verbWithoutMasu, KanaIndex.I, KanaIndex.A) + "せます";
-  }
+  if (verbGroup === VerbGroup.I)
+    return replaceKana(toWithoutMasu(verb), KanaIndex.I, KanaIndex.A) + "せます";
 
   return null;
 };
 
-const getVerbForm = ({
-  tags,
-  title,
-}: {
-  tags: string[];
-  title: string;
-}): { label: string; value: string }[] => {
+export interface VerbForm {
+  label: string;
+  value: string;
+}
+
+const getVerbForm = ({ tags, title }: { tags: string[]; title: string }): VerbForm[] => {
   const verbGroup = getVerbGroup(tags);
 
   if (verbGroup === null) return [];
+
+  if (!getVerb(title)) return [];
 
   const furigana = StoreFurigana();
   const wf = getWithFurigana(title, furigana);

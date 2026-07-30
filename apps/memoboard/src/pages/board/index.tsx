@@ -12,7 +12,7 @@ import { useTranslation } from "react-i18next";
 import { View, Text, SectionList, useWindowDimensions, StyleSheet, Pressable } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
-import { Card } from "./api/get-cards";
+import { Card } from "../../shared/api/get-cards";
 
 import { RootStackParamList, ROUTES } from "@/app/routes.types";
 import { KanjiTable } from "@/features/kanji-table/kanji-table";
@@ -20,9 +20,6 @@ import { BoardSection, useBoard } from "@/shared/contexts/board/board-context";
 
 type BoardNavProp = StackNavigationProp<RootStackParamList, typeof ROUTES.BOARD>;
 type BoardRouteProp = RouteProp<RootStackParamList, typeof ROUTES.BOARD>;
-
-const ROW_HEIGHT = 66;
-const SECTION_HEADER_HEIGHT = 48;
 
 const TITLE_MAX_LENGTH = 12;
 
@@ -48,7 +45,7 @@ const BoardPage = () => {
   const { params } = useRoute<BoardRouteProp>();
   const { id, name } = params;
 
-  const { width, height } = useWindowDimensions();
+  const { width } = useWindowDimensions();
   const insets = useSafeAreaInsets();
 
   const { colors } = useThemeContext();
@@ -94,8 +91,10 @@ const BoardPage = () => {
     [navigation, selectCard],
   );
 
-  const isHorizontal = width > height;
-  const cardWidth = (width - 24 - 4 * 3) / 3;
+  const cardWidth = (width - 24 - 4 * 3) / Math.round(width / 120);
+
+  const ROW_HEIGHT = 66;
+  const SECTION_HEADER_HEIGHT = 48;
 
   const getItemLayout = useMemo(() => {
     const lengths: number[] = [];
@@ -200,14 +199,13 @@ const BoardPage = () => {
           sections={sections}
           keyboardShouldPersistTaps="handled"
           showsVerticalScrollIndicator={false}
-          horizontal={isHorizontal}
           stickySectionHeadersEnabled={false}
           removeClippedSubviews={isAndroid}
           initialNumToRender={12}
           maxToRenderPerBatch={8}
           windowSize={7}
           updateCellsBatchingPeriod={50}
-          getItemLayout={isHorizontal ? undefined : getItemLayout}
+          getItemLayout={getItemLayout}
           keyExtractor={(row) => row[0].id}
           renderItem={renderItem}
           renderSectionHeader={renderSectionHeader}
