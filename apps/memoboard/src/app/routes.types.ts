@@ -6,6 +6,8 @@ export enum ROUTES {
 
   BOARDS = "BOARDS",
   BOARD = "BOARD",
+  CREATE_BOARD = "CREATE_BOARD",
+  BOARD_SETTINGS = "BOARD_SETTINGS",
   WORD = "WORD",
   SECTIONS = "SECTIONS",
 
@@ -36,6 +38,8 @@ export type RootStackParamList = {
 
   [ROUTES.BOARDS]: undefined;
   [ROUTES.BOARD]: { id: string; name: string };
+  [ROUTES.CREATE_BOARD]: undefined;
+  [ROUTES.BOARD_SETTINGS]: { id: string };
   [ROUTES.WORD]: { card: Card };
 
   [ROUTES.PROFILE_ROOT]: undefined;

@@ -1,3 +1,4 @@
+import { memoboardFetch } from "@/shared/api/memoboard-fetch";
 import getVerbForm, { VerbForm } from "@/shared/helpers/verb/get-verb-form";
 
 export function removeFurigana(text: string) {
@@ -194,7 +195,7 @@ const count = () => {
 };
 
 export const getCards = async (id: string): Promise<BoardLesson[]> => {
-  const response = await fetch(`${process.env.MEMOBOARD_API}/api/board/${id}`);
+  const response = await memoboardFetch(`/api/board/${id}`);
 
   if (!response.ok) {
     throw new Error(`Failed to fetch: ${response.status}`);

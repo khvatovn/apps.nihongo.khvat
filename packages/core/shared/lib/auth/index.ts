@@ -15,7 +15,7 @@ export const clearTokens = () => AsyncStorage.multiRemove([ACCESS_TOKEN, REFRESH
 
 let refreshing: Promise<string | null> | null = null;
 
-const doRefresh = (): Promise<string | null> => {
+export const refreshAccessToken = (): Promise<string | null> => {
   if (refreshing) return refreshing;
 
   refreshing = (async () => {
@@ -67,7 +67,7 @@ export const authFetch = async (path: string, init: RequestInit = {}): Promise<R
     .catch(() => ({}) as { error?: string });
   if (body.error !== "token_expired") return res;
 
-  const newToken = await doRefresh();
+  const newToken = await refreshAccessToken();
   if (!newToken) return res;
 
   return apiFetch(path, withAuth(init, newToken));

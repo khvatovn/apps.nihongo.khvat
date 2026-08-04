@@ -74,7 +74,9 @@ const YetSeen: React.FC<YetSeenProps> = ({ title, cards, openModal }) => {
       >
         {yetSeenKanji.map((group) => (
           <View key={group.key} style={styles.group}>
-            <Text style={styles.groupLabel}>{group.key}</Text>
+            <View style={styles.labelContainer}>
+              <Text style={styles.groupLabel}>{group.key}:</Text>
+            </View>
 
             <View style={styles.list}>
               {group.cards.map((card) => (
@@ -129,8 +131,14 @@ const makeStyles = (colors: ColorsType) =>
       gap: 6,
     },
     groupLabel: {
-      color: colors.TextSecondary,
-      ...Typography.regularLabel,
+      color: colors.TextContrastSecondary,
+      ...Typography.boldLabel,
+    },
+    labelContainer: {
+      backgroundColor: colors.BgAccent,
+      borderRadius: 6,
+      paddingHorizontal: 12,
+      paddingVertical: 4,
     },
     list: {
       flexDirection: "column",

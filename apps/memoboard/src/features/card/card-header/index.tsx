@@ -52,7 +52,11 @@ const ViewContainer: React.FC<ViewContainerProps> = ({ children }) => {
 };
 
 const CardHeader: React.FC<CardHeaderProps> = ({ card, goBack }) => {
-  const image = card?.images?.length ? `${process.env.MEMOBOARD_API}${card?.images?.[0]}` : null;
+  const image = card?.images?.length
+    ? card?.images?.[0].includes("https://") || card?.images?.[0].includes("http://")
+      ? card?.images?.[0]
+      : `${process.env.MEMOBOARD_API}${card?.images?.[0]}`
+    : null;
 
   const { t } = useTranslation();
 

@@ -14,6 +14,7 @@ import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { RootStackParamList, ROUTES } from "@/app/routes.types";
 import CardHeader from "@/features/card/card-header";
 import Examples from "@/features/card/examples";
+import KanjiOrder from "@/features/card/kanji-order/kanji-order";
 import VerbForm from "@/features/card/verb-form/verb-form";
 import YetSeen from "@/features/card/yet-seen/yet-seen";
 import { useBoard } from "@/shared/contexts/board/board-context";
@@ -73,51 +74,50 @@ const CardPage = () => {
         <View style={styles.container}>
           <ScrollView contentContainerStyle={styles.content}>
             <Examples card={card} />
+            <KanjiOrder title={card.title} />
             <VerbForm tags={card.tags.map((i) => i.label)} title={card.title} />
             <YetSeen title={card.title} cards={cards} openModal={selectCard} />
           </ScrollView>
         </View>
 
-        {
-          <View style={[styles.buttons, { paddingBottom: insets.bottom }]}>
-            <SecondaryButton
-              isHapticFeedback
-              icon={
-                <ArrowLeftIcon
-                  color={hasPrev ? colors.TextPrimary : colors.TextSecondary}
-                  size={24}
-                />
-              }
-              isOutline
-              isDisabled={!hasPrev}
-              width={50}
-              onClick={prev}
-            />
+        <View style={[styles.buttons, { paddingBottom: insets.bottom }]}>
+          <SecondaryButton
+            isHapticFeedback
+            icon={
+              <ArrowLeftIcon
+                color={hasPrev ? colors.TextPrimary : colors.TextSecondary}
+                size={24}
+              />
+            }
+            isOutline
+            isDisabled={!hasPrev}
+            width={50}
+            onClick={prev}
+          />
 
-            <SecondaryButton
-              isHapticFeedback
-              text={t("card.open")}
-              isOutline
-              isFullWidth
-              isDisabled={!boardId}
-              onClick={openInDictionary}
-            />
+          <SecondaryButton
+            isHapticFeedback
+            text={t("card.open")}
+            isOutline
+            isFullWidth
+            isDisabled={!boardId}
+            onClick={openInDictionary}
+          />
 
-            <SecondaryButton
-              isHapticFeedback
-              icon={
-                <ArrowRightIcon
-                  color={hasNext ? colors.TextPrimary : colors.TextSecondary}
-                  size={24}
-                />
-              }
-              isOutline
-              isDisabled={!hasNext}
-              width={50}
-              onClick={next}
-            />
-          </View>
-        }
+          <SecondaryButton
+            isHapticFeedback
+            icon={
+              <ArrowRightIcon
+                color={hasNext ? colors.TextPrimary : colors.TextSecondary}
+                size={24}
+              />
+            }
+            isOutline
+            isDisabled={!hasNext}
+            width={50}
+            onClick={next}
+          />
+        </View>
       </View>
     </GestureDetector>
   );

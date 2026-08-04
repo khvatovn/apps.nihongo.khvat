@@ -22,8 +22,10 @@ import { SwatchesIcon, UserIcon } from "phosphor-react-native";
 import { ROUTES } from "./routes.types";
 
 import BoardPage from "@/pages/board";
+import BoardSettingsPage from "@/pages/board-settings";
 import BoardsPage from "@/pages/boards";
 import CardPage from "@/pages/card";
+import CreateBoardPage from "@/pages/create-board";
 import SectionsPage from "@/pages/sections";
 import SettingsPage from "@/pages/settings/settings-page";
 
@@ -64,6 +66,8 @@ const RootStack = {
     },
 
     [ROUTES.BOARD]: BoardPage,
+    [ROUTES.CREATE_BOARD]: withModal(CreateBoardPage),
+    [ROUTES.BOARD_SETTINGS]: withModal(BoardSettingsPage),
     [ROUTES.WORD]: withModal(CardPage),
     [ROUTES.SECTIONS]: withModal(SectionsPage),
 
