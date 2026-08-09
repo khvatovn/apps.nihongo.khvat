@@ -15,7 +15,8 @@ import { replaceKanjiWithFurigana } from "@nihongo/core/shared/lib/furigana/repl
 import { useTranslation } from "react-i18next";
 import { useWindowDimensions } from "react-native";
 
-import { BoardLesson, Card, getCards } from "@/shared/api/get-cards";
+import { getBoardMeta } from "@/shared/api/board-settings";
+import { applyCardFields, BoardLesson, Card, CardFields, getCards } from "@/shared/api/get-cards";
 
 export interface BoardSection {
   title: string;
@@ -25,7 +26,9 @@ export interface BoardSection {
 interface BoardContextType {
   boardId: string | null;
   isLoading: boolean;
+  canEdit: boolean;
   loadBoard: (id: string) => Promise<void>;
+  patchCard: (cardId: string, fields: CardFields) => void;
 
   sections: BoardSection[];
   cards: Card[];
@@ -90,6 +93,7 @@ export const BoardProvider: FunctionComponent<BoardProviderProps> = ({ children 
   const [lessons, setLessons] = useState<BoardLesson[]>([]);
   const [boardId, setBoardId] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(false);
+  const [canEdit, setCanEdit] = useState(false);
 
   const [query, setQuery] = useState("");
   const [isSearchOpen, setIsSearchOpen] = useState(false);
@@ -102,12 +106,29 @@ export const BoardProvider: FunctionComponent<BoardProviderProps> = ({ children 
   const loadBoard = useCallback(async (id: string) => {
     setIsLoading(true);
     setBoardId(id);
+    setCanEdit(false);
 
     try {
       setLessons(await getCards(id));
+
+      const meta = await getBoardMeta(id).catch(() => null);
+
+      setCanEdit(Boolean(meta?.isOwner || meta?.isEditor));
     } finally {
       setIsLoading(false);
     }
+  }, []);
+
+  // * Обновляем карточку на месте, чтобы не перезагружать всю доску после редактирования
+  const patchCard = useCallback((cardId: string, fields: CardFields) => {
+    setLessons((prev) =>
+      prev.map((lesson) => ({
+        ...lesson,
+        cards: lesson.cards.map((card) =>
+          card.id === cardId ? applyCardFields(card, fields) : card,
+        ),
+      })),
+    );
   }, []);
 
   const haystacks = useMemo(() => {
@@ -193,7 +214,9 @@ export const BoardProvider: FunctionComponent<BoardProviderProps> = ({ children 
     () => ({
       boardId,
       isLoading,
+      canEdit,
       loadBoard,
+      patchCard,
 
       sections,
       cards,
@@ -218,7 +241,9 @@ export const BoardProvider: FunctionComponent<BoardProviderProps> = ({ children 
     [
       boardId,
       isLoading,
+      canEdit,
       loadBoard,
+      patchCard,
       sections,
       cards,
       search,

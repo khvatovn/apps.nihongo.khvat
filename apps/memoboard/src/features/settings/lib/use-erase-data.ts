@@ -1,4 +1,3 @@
-
 import {
   APP_LANG,
   IS_WELCOME_PAGE,

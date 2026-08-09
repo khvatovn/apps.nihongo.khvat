@@ -317,6 +317,12 @@ const French = {
     kanjiDescription: "Description :",
     kanjiRadicals: "Radicaux :",
     kanjiElements: "Éléments :",
+    edit: "Modifier",
+    save: "Enregistrer",
+    titlePlaceholder: "Titre",
+    subtitlePlaceholder: "Traduction",
+    examplePlaceholder: "Exemple",
+    saveError: "Impossible d'enregistrer la carte",
   },
   promotionTelegram: {
     title: "Félicitations, vous avez trouvé un bug chanceux !",

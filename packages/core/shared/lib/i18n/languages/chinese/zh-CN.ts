@@ -310,6 +310,12 @@ const ChineseCN = {
     kanjiDescription: "说明：",
     kanjiRadicals: "部首：",
     kanjiElements: "构成部件：",
+    edit: "编辑",
+    save: "保存",
+    titlePlaceholder: "标题",
+    subtitlePlaceholder: "释义",
+    examplePlaceholder: "例句",
+    saveError: "无法保存卡片",
   },
   promotionTelegram: {
     title: "恭喜，你发现了一个幸运的 bug！",

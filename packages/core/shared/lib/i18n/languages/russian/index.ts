@@ -314,6 +314,12 @@ const Russian = {
     kanjiDescription: "Описание:",
     kanjiRadicals: "Радикалы:",
     kanjiElements: "Элементы:",
+    edit: "Изменить",
+    save: "Сохранить",
+    titlePlaceholder: "Заголовок",
+    subtitlePlaceholder: "Перевод",
+    examplePlaceholder: "Пример",
+    saveError: "Не удалось сохранить карточку",
   },
   promotionTelegram: {
     title: "Поздравляю, вам попался счастливый баг!",

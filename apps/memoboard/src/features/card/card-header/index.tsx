@@ -2,17 +2,20 @@ import React from "react";
 
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
 import { Typography } from "@nihongo/core/shared/typography";
+import Input from "@nihongo/core/shared/ui/input";
 import { ModalHeader } from "@nihongo/core/shared/ui/modal-header/modal-header";
 import Tag from "@nihongo/core/shared/ui/tag/tag";
 import { BookIcon, TagIcon } from "phosphor-react-native";
 import { useTranslation } from "react-i18next";
 import { View, ImageBackground, StyleSheet, Text } from "react-native";
 
+import { CardEdit } from "@/features/card/edit/use-card-edit";
 import { Card } from "@/shared/api/get-cards";
 import Furigana from "@/shared/ui/furigana/furigana";
 
 interface CardHeaderProps {
   card: Card;
+  edit: CardEdit;
   goBack: () => void;
 }
 
@@ -51,7 +54,7 @@ const ViewContainer: React.FC<ViewContainerProps> = ({ children }) => {
   return <View>{children}</View>;
 };
 
-const CardHeader: React.FC<CardHeaderProps> = ({ card, goBack }) => {
+const CardHeader: React.FC<CardHeaderProps> = ({ card, edit, goBack }) => {
   const image = card?.images?.length
     ? card?.images?.[0].includes("https://") || card?.images?.[0].includes("http://")
       ? card?.images?.[0]
@@ -73,11 +76,20 @@ const CardHeader: React.FC<CardHeaderProps> = ({ card, goBack }) => {
         <ModalHeader
           left={{
             color: primaryColor,
-            text: t("common.close"),
-            onPress: goBack,
+            text: edit.isEditing ? t("alert.cancel") : t("common.close"),
+            onPress: edit.isEditing ? edit.cancel : goBack,
           }}
           title={card.titleWithoutFurigana}
           titleColor={primaryColor}
+          right={
+            edit.canEdit
+              ? {
+                  color: edit.isSaving ? colors.TextDisabled : primaryColor,
+                  text: edit.isEditing ? t("card.save") : t("card.edit"),
+                  onPress: edit.isEditing ? edit.save : edit.start,
+                }
+              : undefined
+          }
         />
 
         <View
@@ -87,17 +99,36 @@ const CardHeader: React.FC<CardHeaderProps> = ({ card, goBack }) => {
             minHeight: 160,
           }}
         >
-          <Furigana
-            typography={{
-              ...Typography.boldH2,
-              color: primaryColor,
-            }}
-            text={card.title}
-          />
+          {edit.isEditing ? (
+            <View style={styles.form}>
+              <Input
+                placeholder={t("card.titlePlaceholder")}
+                value={edit.title}
+                onChange={edit.setTitle}
+              />
 
-          <Text style={[styles.card_subtitle, { color: primaryColor }]}>
-            {card.subtitleNoFurigana}
-          </Text>
+              <Input
+                placeholder={t("card.subtitlePlaceholder")}
+                value={edit.subtitle}
+                onChange={edit.setSubtitle}
+                error={edit.hasError ? t("card.saveError") : undefined}
+              />
+            </View>
+          ) : (
+            <>
+              <Furigana
+                typography={{
+                  ...Typography.boldH2,
+                  color: primaryColor,
+                }}
+                text={card.title}
+              />
+
+              <Text style={[styles.card_subtitle, { color: primaryColor }]}>
+                {card.subtitleNoFurigana}
+              </Text>
+            </>
+          )}
 
           <View style={styles.tags}>
             <Tag text={card.lessonTitle} icon={<BookIcon size={12} color={colors.TextPrimary} />} />
@@ -146,6 +177,9 @@ const makeStyles = (colors: ColorsType) =>
       ...Typography.boldH2,
 
       marginTop: 8,
+    },
+    form: {
+      gap: 8,
     },
 
     buttonContainer: {

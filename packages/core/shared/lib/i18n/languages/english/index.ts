@@ -313,6 +313,12 @@ const English = {
     kanjiDescription: "Description:",
     kanjiRadicals: "Radicals:",
     kanjiElements: "Elements:",
+    edit: "Edit",
+    save: "Save",
+    titlePlaceholder: "Title",
+    subtitlePlaceholder: "Translation",
+    examplePlaceholder: "Example",
+    saveError: "Failed to save the card",
   },
   promotionTelegram: {
     title: "Congratulations, you've found a lucky bug!",

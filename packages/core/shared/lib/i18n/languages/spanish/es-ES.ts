@@ -318,6 +318,12 @@ const SpanishES = {
     kanjiDescription: "Descripción:",
     kanjiRadicals: "Radicales:",
     kanjiElements: "Elementos:",
+    edit: "Editar",
+    save: "Guardar",
+    titlePlaceholder: "Título",
+    subtitlePlaceholder: "Traducción",
+    examplePlaceholder: "Ejemplo",
+    saveError: "No se ha podido guardar la tarjeta",
   },
   promotionTelegram: {
     title: "¡Enhorabuena, has encontrado un bug de la suerte!",

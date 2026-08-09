@@ -1,6 +1,5 @@
 import React from "react";
 
-
 import SettingItem from "@nihongo/core/entities/setting/setting-item/setting-item";
 import { useModal } from "@nihongo/core/shared/contexts/modal/modal-context";
 import { ConfirmationModal } from "@nihongo/core/shared/contexts/modal/presets/confirmation";

@@ -317,6 +317,12 @@ const SpanishMX = {
     kanjiDescription: "Descripción:",
     kanjiRadicals: "Radicales:",
     kanjiElements: "Elementos:",
+    edit: "Editar",
+    save: "Guardar",
+    titlePlaceholder: "Título",
+    subtitlePlaceholder: "Traducción",
+    examplePlaceholder: "Ejemplo",
+    saveError: "No se pudo guardar la tarjeta",
   },
   promotionTelegram: {
     title: "¡Felicidades, encontraste un bug de la suerte!",

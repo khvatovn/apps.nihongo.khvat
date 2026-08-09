@@ -1,6 +1,5 @@
 import React from "react";
 
-
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
 import { Typography } from "@nihongo/core/shared/typography";
 import { CheckIcon } from "phosphor-react-native";

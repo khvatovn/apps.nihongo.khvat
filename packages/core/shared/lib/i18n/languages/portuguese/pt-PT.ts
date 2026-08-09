@@ -316,6 +316,12 @@ const PortuguesePT = {
     kanjiDescription: "Descrição:",
     kanjiRadicals: "Radicais:",
     kanjiElements: "Elementos:",
+    edit: "Editar",
+    save: "Guardar",
+    titlePlaceholder: "Título",
+    subtitlePlaceholder: "Tradução",
+    examplePlaceholder: "Exemplo",
+    saveError: "Não foi possível guardar o cartão",
   },
   promotionTelegram: {
     title: "Parabéns, encontrou um bug sortudo!",

@@ -7,7 +7,6 @@ import { useTranslation } from "react-i18next";
 
 import { PromotionTelegram } from "@/shared/contexts/modal/presets/promotion-telegram";
 
-
 const TELEGRAM_CHANCE = 0.5;
 
 export const useTelegramPromotion = () => {

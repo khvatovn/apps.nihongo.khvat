@@ -62,6 +62,25 @@ export interface BoardLesson {
   cards: Card[];
 }
 
+export interface CardFields {
+  title: string;
+  subtitle: string;
+  examples: string[];
+}
+
+export const applyCardFields = (card: Card, fields: CardFields): Card => ({
+  ...card,
+  ...fields,
+
+  titleWithoutFurigana: removeFurigana(fields.title),
+  titleWithFurigana: replaceKanjiWithFurigana(fields.title),
+
+  subtitleNoFurigana: removeFurigana(fields.subtitle),
+  subtitleFurigana: replaceKanjiWithFurigana(fields.subtitle),
+
+  verbForms: getVerbForm({ tags: card.tags.map((tag) => tag.label), title: fields.title }),
+});
+
 function decodeBitset(base64: string, tagsDictionary: string[]): string[] {
   if (!base64) {
     return [];

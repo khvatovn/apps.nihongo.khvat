@@ -316,6 +316,12 @@ const German = {
     kanjiDescription: "Beschreibung:",
     kanjiRadicals: "Radikale:",
     kanjiElements: "Elemente:",
+    edit: "Bearbeiten",
+    save: "Speichern",
+    titlePlaceholder: "Titel",
+    subtitlePlaceholder: "Übersetzung",
+    examplePlaceholder: "Beispiel",
+    saveError: "Karte konnte nicht gespeichert werden",
   },
   promotionTelegram: {
     title: "Glückwunsch, du hast einen Glücksbug gefunden!",

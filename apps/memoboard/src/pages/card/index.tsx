@@ -13,6 +13,7 @@ import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 import { RootStackParamList, ROUTES } from "@/app/routes.types";
 import CardHeader from "@/features/card/card-header";
+import { useCardEdit } from "@/features/card/edit/use-card-edit";
 import Examples from "@/features/card/examples";
 import KanjiOrder from "@/features/card/kanji-order/kanji-order";
 import VerbForm from "@/features/card/verb-form/verb-form";
@@ -34,6 +35,8 @@ const CardPage = () => {
 
   const card = currentCard ?? params.card;
 
+  const edit = useCardEdit(card);
+
   const { colors } = useThemeContext();
   const styles = makeStyles(colors);
 
@@ -51,6 +54,7 @@ const CardPage = () => {
   const swipe = useMemo(
     () =>
       Gesture.Pan()
+        .enabled(!edit.isEditing)
         .activeOffsetX([-SWIPE_THRESHOLD, SWIPE_THRESHOLD])
         .failOffsetY([-SWIPE_THRESHOLD, SWIPE_THRESHOLD])
         .runOnJS(true)
@@ -63,61 +67,68 @@ const CardPage = () => {
             prev();
           }
         }),
-    [next, prev, hasNext, hasPrev],
+    [next, prev, hasNext, hasPrev, edit.isEditing],
   );
 
   return (
     <GestureDetector gesture={swipe}>
       <View style={styles.screen}>
-        <CardHeader goBack={goBack} card={card} />
+        <CardHeader goBack={goBack} card={card} edit={edit} />
 
         <View style={styles.container}>
-          <ScrollView contentContainerStyle={styles.content}>
-            <Examples card={card} />
-            <KanjiOrder title={card.title} />
-            <VerbForm tags={card.tags.map((i) => i.label)} title={card.title} />
-            <YetSeen title={card.title} cards={cards} openModal={selectCard} />
+          <ScrollView contentContainerStyle={styles.content} keyboardShouldPersistTaps="handled">
+            <Examples card={card} edit={edit} />
+
+            {!edit.isEditing && (
+              <>
+                <KanjiOrder title={card.title} />
+                <VerbForm tags={card.tags.map((i) => i.label)} title={card.title} />
+                <YetSeen title={card.title} cards={cards} openModal={selectCard} />
+              </>
+            )}
           </ScrollView>
         </View>
 
-        <View style={[styles.buttons, { paddingBottom: insets.bottom }]}>
-          <SecondaryButton
-            isHapticFeedback
-            icon={
-              <ArrowLeftIcon
-                color={hasPrev ? colors.TextPrimary : colors.TextSecondary}
-                size={24}
-              />
-            }
-            isOutline
-            isDisabled={!hasPrev}
-            width={50}
-            onClick={prev}
-          />
+        {!edit.isEditing && (
+          <View style={[styles.buttons, { paddingBottom: insets.bottom }]}>
+            <SecondaryButton
+              isHapticFeedback
+              icon={
+                <ArrowLeftIcon
+                  color={hasPrev ? colors.TextPrimary : colors.TextSecondary}
+                  size={24}
+                />
+              }
+              isOutline
+              isDisabled={!hasPrev}
+              width={50}
+              onClick={prev}
+            />
 
-          <SecondaryButton
-            isHapticFeedback
-            text={t("card.open")}
-            isOutline
-            isFullWidth
-            isDisabled={!boardId}
-            onClick={openInDictionary}
-          />
+            <SecondaryButton
+              isHapticFeedback
+              text={t("card.open")}
+              isOutline
+              isFullWidth
+              isDisabled={!boardId}
+              onClick={openInDictionary}
+            />
 
-          <SecondaryButton
-            isHapticFeedback
-            icon={
-              <ArrowRightIcon
-                color={hasNext ? colors.TextPrimary : colors.TextSecondary}
-                size={24}
-              />
-            }
-            isOutline
-            isDisabled={!hasNext}
-            width={50}
-            onClick={next}
-          />
-        </View>
+            <SecondaryButton
+              isHapticFeedback
+              icon={
+                <ArrowRightIcon
+                  color={hasNext ? colors.TextPrimary : colors.TextSecondary}
+                  size={24}
+                />
+              }
+              isOutline
+              isDisabled={!hasNext}
+              width={50}
+              onClick={next}
+            />
+          </View>
+        )}
       </View>
     </GestureDetector>
   );

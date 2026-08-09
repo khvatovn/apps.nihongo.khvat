@@ -310,6 +310,12 @@ const ChineseHK = {
     kanjiDescription: "說明：",
     kanjiRadicals: "部首：",
     kanjiElements: "組成部件：",
+    edit: "編輯",
+    save: "儲存",
+    titlePlaceholder: "標題",
+    subtitlePlaceholder: "釋義",
+    examplePlaceholder: "例句",
+    saveError: "無法儲存卡片",
   },
   promotionTelegram: {
     title: "恭喜，你發現了幸運的錯誤！",

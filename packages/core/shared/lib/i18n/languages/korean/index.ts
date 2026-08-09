@@ -311,6 +311,12 @@ const Korean = {
     kanjiDescription: "설명:",
     kanjiRadicals: "부수:",
     kanjiElements: "구성 요소:",
+    edit: "편집",
+    save: "저장",
+    titlePlaceholder: "제목",
+    subtitlePlaceholder: "뜻",
+    examplePlaceholder: "예문",
+    saveError: "카드를 저장하지 못했습니다",
   },
   promotionTelegram: {
     title: "축하합니다, 행운의 버그를 발견하셨네요!",

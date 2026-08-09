@@ -316,6 +316,12 @@ const Italian = {
     kanjiDescription: "Descrizione:",
     kanjiRadicals: "Radicali:",
     kanjiElements: "Elementi:",
+    edit: "Modifica",
+    save: "Salva",
+    titlePlaceholder: "Titolo",
+    subtitlePlaceholder: "Traduzione",
+    examplePlaceholder: "Esempio",
+    saveError: "Impossibile salvare la carta",
   },
   promotionTelegram: {
     title: "Congratulazioni, hai trovato un bug fortunato!",

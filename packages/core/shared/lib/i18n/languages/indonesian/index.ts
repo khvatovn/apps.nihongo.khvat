@@ -314,6 +314,12 @@ const Indonesian = {
     kanjiDescription: "Deskripsi:",
     kanjiRadicals: "Radikal:",
     kanjiElements: "Elemen:",
+    edit: "Ubah",
+    save: "Simpan",
+    titlePlaceholder: "Judul",
+    subtitlePlaceholder: "Terjemahan",
+    examplePlaceholder: "Contoh",
+    saveError: "Gagal menyimpan kartu",
   },
   promotionTelegram: {
     title: "Selamat, Anda menemukan bug keberuntungan!",

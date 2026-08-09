@@ -2,7 +2,6 @@ import { REVIEW_KEY } from "@nihongo/core/shared/constants/storageKeys";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import * as StoreReview from "expo-store-review";
 
-
 const REVIEW_INTERVAL_MS = 90 * 24 * 60 * 60 * 1000;
 const REVIEW_CHANCE = 0.3;
 
