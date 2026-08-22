@@ -15,6 +15,7 @@ import { Theme } from "../../constants/theme";
 import { darkTheme } from "../../themes/dark";
 import { hokkaidoDarkTheme } from "../../themes/hokkaido_dark";
 import { hokkaidoLightTheme } from "../../themes/hokkaido_light";
+import { jiraiKeiDark } from "../../themes/jirai_kei_dark";
 import { lightTheme } from "../../themes/light";
 import { osakaDarkTheme } from "../../themes/osaka_dark";
 import { osakaLightTheme } from "../../themes/osaka_light";
@@ -30,6 +31,7 @@ const colors = {
   osakaDark: osakaDarkTheme,
   osakaLight: osakaLightTheme,
   sakuraLight: sakuraLightTheme,
+  jirai_kei_dark: jiraiKeiDark,
 };
 
 interface ThemeContextType {
@@ -50,19 +52,20 @@ interface ThemeProviderProps {
 
 export type ColorsType = typeof darkTheme;
 
-const getColors = (currentTheme: Theme, theme: ColorSchemeName) => {
-  if (currentTheme === Theme.Auto) {
-    if (theme === "dark") return colors.dark;
-    if (theme === "light") return colors.light;
+const getColors = (theme: Theme, deviceTheme: ColorSchemeName) => {
+  if (theme === Theme.Auto) {
+    if (deviceTheme === "dark") return colors.dark;
+    if (deviceTheme === "light") return colors.light;
   }
 
-  if (currentTheme === Theme.Dark) return colors.dark;
-  if (currentTheme === Theme.Light) return colors.light;
-  if (currentTheme === Theme.HokkaidoDark) return colors.hokkaidoDark;
-  if (currentTheme === Theme.HokkaidoLight) return colors.hokkaidoLight;
-  if (currentTheme === Theme.OsakaDark) return colors.osakaDark;
-  if (currentTheme === Theme.OsakaLight) return colors.osakaLight;
-  if (currentTheme === Theme.SakuraLight) return colors.sakuraLight;
+  if (theme === Theme.Dark) return colors.dark;
+  if (theme === Theme.Light) return colors.light;
+  if (theme === Theme.HokkaidoDark) return colors.hokkaidoDark;
+  if (theme === Theme.HokkaidoLight) return colors.hokkaidoLight;
+  if (theme === Theme.OsakaDark) return colors.osakaDark;
+  if (theme === Theme.OsakaLight) return colors.osakaLight;
+  if (theme === Theme.SakuraLight) return colors.sakuraLight;
+  if (theme === Theme.JiraiKeiDark) return colors.jirai_kei_dark;
 
   return colors.light;
 };

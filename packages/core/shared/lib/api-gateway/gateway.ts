@@ -4,7 +4,6 @@ import {
 } from "@nihongo/core/shared/constants/storageKeys";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
-
 import { getGateways } from "./gateways";
 import { ping, selectFastest } from "./select";
 
@@ -117,7 +116,10 @@ const invalidate = (deadUrl: string): Promise<string> => {
 const isIdempotent = (method: string = "GET"): boolean =>
   ["GET", "HEAD", "OPTIONS"].includes(method.toUpperCase());
 
-type ApiFetchOptions = { timeout?: number };
+export type ApiFetchOptions = {
+  timeout?: number;
+  failover?: boolean;
+};
 
 const request = async (
   url: string,
@@ -131,8 +133,15 @@ const request = async (
   if (init?.signal?.aborted) abort();
   init?.signal?.addEventListener("abort", abort, { once: true });
 
+  const method = init?.method ?? "GET";
+  const started = Date.now();
+
   try {
-    return await fetch(url, { ...init, signal: controller.signal });
+    const response = await fetch(url, { ...init, signal: controller.signal });
+    return response;
+  } catch (error) {
+    console.log(error, method, started);
+    throw error;
   } finally {
     clearTimeout(timer);
     init?.signal?.removeEventListener("abort", abort);
@@ -147,14 +156,18 @@ export const apiFetch = async (
   const timeout = options?.timeout ?? REQUEST_TIMEOUT;
   const base = await ensureSelected();
 
+  const allowFailover = options?.failover !== false;
+
   try {
     const response = await request(`${base}${path}`, init, timeout);
     const shouldFailover = response.status >= 500 && isIdempotent(init?.method);
-    if (!shouldFailover) return response;
+    if (!shouldFailover || !allowFailover) return response;
   } catch (error) {
     if (init?.signal?.aborted) throw error;
+    if (!allowFailover) throw error;
   }
 
   const fallback = await invalidate(base);
+  console.log("[api] fail", { from: base, to: fallback, path });
   return request(`${fallback}${path}`, init, timeout);
 };

@@ -1,7 +1,9 @@
 import React from "react";
 
 import SettingItem from "@nihongo/core/entities/setting/setting-item/setting-item";
+import { useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
 import { useGatewayUrl } from "@nihongo/core/shared/lib/api-gateway";
+import { FileDocIcon } from "phosphor-react-native";
 import { useTranslation } from "react-i18next";
 
 interface TermsAndConditionsProps {
@@ -16,8 +18,16 @@ const TermsAndConditions: React.FC<TermsAndConditionsProps> = ({ app }) => {
   } = useTranslation();
 
   const url = useGatewayUrl(`/${language}/docs/${app}/terms_conditions`);
+  const { colors } = useThemeContext();
 
-  return <SettingItem isLast text={t("settings.termsAndConditions")} link={url} />;
+  return (
+    <SettingItem
+      leftIcon={<FileDocIcon size={20} color={colors.BgContrast} />}
+      isLast
+      text={t("settings.termsAndConditions")}
+      link={url}
+    />
+  );
 };
 
 export default TermsAndConditions;

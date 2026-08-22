@@ -1,5 +1,6 @@
 const SpanishMX = {
   common: {
+    save: "Guardar",
     done: "Listo",
     close: "Cerrar",
     reset: "Restablecer",
@@ -191,6 +192,8 @@ const SpanishMX = {
     login: "Iniciar sesión",
     continueWithoutLogin: "Continuar sin iniciar sesión",
     fields: {
+      newName: "Nuevo nombre",
+      oldPassword: "Contraseña actual",
       name: "Nombre",
       email: "Correo electrónico",
       password: "Contraseña",
@@ -221,6 +224,8 @@ const SpanishMX = {
       confirm: "Confirmar",
     },
     errors: {
+      incorrectOldPassword: "La contraseña actual es incorrecta",
+      nameTooLong: "El nombre no puede superar los 16 caracteres",
       nameRequired: "Ingresa tu nombre",
       emailRequired: "Ingresa tu correo electrónico",
       invalidEmail: "Correo electrónico no válido",
@@ -250,6 +255,27 @@ const SpanishMX = {
     },
   },
   profile: {
+    avatar: {
+      title: "Foto de perfil",
+      takePhoto: "Tomar una foto",
+      chooseFromLibrary: "Elegir de la galería",
+      remove: "Eliminar foto",
+      errors: {
+        cameraPermission: "Sin acceso a la cámara. Permítelo en la configuración del dispositivo.",
+        fileTooLarge: "La imagen es demasiado grande. Máximo 5 MB.",
+        invalidImage: "Formato no compatible. Usa JPEG, PNG o WebP.",
+        storageUnavailable:
+          "El almacenamiento no está disponible temporalmente. Inténtalo de nuevo.",
+        failed: "No se pudo actualizar la foto. Inténtalo más tarde.",
+      },
+    },
+    edit: {
+      title: "Editar perfil",
+      name: "Nombre",
+      password: "Contraseña",
+      changeName: "Cambiar nombre",
+      changePassword: "Cambiar contraseña",
+    },
     signInPrompt:
       "Inicia sesión en {{app}} para sincronizar tu progreso en todos los dispositivos.",
     signInButton: "Iniciar sesión o crear una cuenta",

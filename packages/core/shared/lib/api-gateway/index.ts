@@ -1,3 +1,4 @@
+export type { ApiFetchOptions } from "./gateway";
 export {
   apiFetch,
   ensureSelected,

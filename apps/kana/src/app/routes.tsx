@@ -8,6 +8,9 @@ import { SignInPage } from "@nihongo/core/pages/auth/sign-in";
 import { SignUpPage } from "@nihongo/core/pages/auth/sign-up";
 import { SubmitCode } from "@nihongo/core/pages/auth/submit-code";
 import ProfilePage from "@nihongo/core/pages/profile";
+import ProfileEditPage from "@nihongo/core/pages/profile/edit";
+import ProfileChangeNamePage from "@nihongo/core/pages/profile/edit/change-name";
+import ProfileChangePasswordPage from "@nihongo/core/pages/profile/edit/change-password";
 import SettingsLanguagePage from "@nihongo/core/pages/settings/settings-language/settings-language";
 import SettingsThemePage from "@nihongo/core/pages/settings/settings-theme/settings-theme";
 import SettingsTransliterationsPage from "@nihongo/core/pages/settings/settings-transliterations/settings-transliterations";
@@ -52,8 +55,8 @@ const RootStack = {
           <TabBarButton
             {...props}
             tabs={{
-              [ROUTES.LEARNING_ROOT]: { title: "tabs.practice", icon: GraduationCapIcon },
-              [ROUTES.PRACTICE_ROOT]: { title: "tabs.learning", icon: CardsThreeIcon },
+              [ROUTES.LEARNING_ROOT]: { title: "tabs.learning", icon: GraduationCapIcon },
+              [ROUTES.PRACTICE_ROOT]: { title: "tabs.practice", icon: CardsThreeIcon },
               [ROUTES.KANA_TABLE_ROOT]: { title: "tabs.kana", icon: SwatchesIcon },
               [ROUTES.PROFILE_ROOT]: { title: "tabs.profile", icon: UserIcon },
             }}
@@ -84,6 +87,10 @@ const RootStack = {
     [ROUTES.SETTINGS_LANGUAGE]: withModal(SettingsLanguagePage),
     [ROUTES.SETTINGS_TRANSLITERATION]: withModal(SettingsTransliterationsPage),
     [ROUTES.SETTINGS_THEME]: withModal(SettingsThemePage),
+
+    [ROUTES.PROFILE_EDIT]: withModal(ProfileEditPage),
+    [ROUTES.PROFILE_EDIT_NAME]: withModal(ProfileChangeNamePage),
+    [ROUTES.PROFILE_EDIT_PASSWORD]: withModal(ProfileChangePasswordPage),
   },
 };
 

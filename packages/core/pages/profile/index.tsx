@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useState } from "react";
 
 import ProfileItem from "@nihongo/core/entities/profile/profile-item/profile-item";
 import SocialMediaProfile from "@nihongo/core/entities/profile/social-media-profile/social-media-profile";
@@ -12,7 +12,7 @@ import { Typography } from "@nihongo/core/shared/typography";
 import PrimaryButton from "@nihongo/core/shared/ui/buttons/Primary/primary-button";
 import PageTitle from "@nihongo/core/shared/ui/page-title/page-title";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import { useNavigation } from "@react-navigation/native";
+import { useFocusEffect, useNavigation } from "@react-navigation/native";
 import { StackNavigationProp } from "@react-navigation/stack";
 import { GearIcon } from "phosphor-react-native";
 import { useTranslation } from "react-i18next";
@@ -37,20 +37,26 @@ const ProfilePage: React.FC = () => {
     navigation.navigate(PROFILE_ROUTES.SETTINGS);
   };
 
+  const toEditProfile = () => {
+    navigation.navigate(PROFILE_ROUTES.EDIT);
+  };
+
   const [profile, setProfile] = useState<Profile | null>(null);
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    let active = true;
-    getProfile().then((data) => {
-      if (!active) return;
-      setProfile(data);
-      setLoading(false);
-    });
-    return () => {
-      active = false;
-    };
-  }, []);
+  useFocusEffect(
+    useCallback(() => {
+      let active = true;
+      getProfile().then((data) => {
+        if (!active) return;
+        setProfile(data);
+        setLoading(false);
+      });
+      return () => {
+        active = false;
+      };
+    }, []),
+  );
 
   return (
     <View style={styles.main}>
@@ -74,13 +80,17 @@ const ProfilePage: React.FC = () => {
             style={{ marginVertical: 24 }}
           />
         )}
+
         {!loading && profile?.email && (
-          <ProfileItem
-            avatar={profile?.avatar_url}
-            name={profile?.name ?? ""}
-            email={profile?.email ?? ""}
-          />
+          <Pressable onPress={toEditProfile}>
+            <ProfileItem
+              avatar={profile?.avatar_url}
+              name={profile?.name ?? ""}
+              email={profile?.email ?? ""}
+            />
+          </Pressable>
         )}
+
         {!loading && !profile?.email && (
           <View>
             <Text
@@ -128,8 +138,6 @@ const makeStyles = (colors: ColorsType) =>
       borderBottomLeftRadius: 24,
       borderBottomRightRadius: 24,
       backgroundColor: colors.BgPrimary,
-
-      gap: 16,
     },
     content: {
       marginTop: 16,

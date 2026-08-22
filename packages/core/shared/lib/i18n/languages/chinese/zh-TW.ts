@@ -1,5 +1,6 @@
 const ChineseTW = {
   common: {
+    save: "儲存",
     done: "完成",
     close: "關閉",
     reset: "重設",
@@ -184,6 +185,8 @@ const ChineseTW = {
     login: "登入",
     continueWithoutLogin: "不登入繼續",
     fields: {
+      newName: "新名稱",
+      oldPassword: "舊密碼",
       name: "姓名",
       email: "電子郵件地址",
       password: "密碼",
@@ -214,6 +217,8 @@ const ChineseTW = {
       confirm: "確認",
     },
     errors: {
+      incorrectOldPassword: "舊密碼不正確",
+      nameTooLong: "名稱不能超過 16 個字元",
       nameRequired: "請輸入姓名",
       emailRequired: "請輸入電子郵件",
       invalidEmail: "電子郵件格式無效",
@@ -243,6 +248,26 @@ const ChineseTW = {
     },
   },
   profile: {
+    avatar: {
+      title: "大頭貼",
+      takePhoto: "拍照",
+      chooseFromLibrary: "從相簿選擇",
+      remove: "移除大頭貼",
+      errors: {
+        cameraPermission: "沒有相機權限，請在系統設定中開啟。",
+        fileTooLarge: "圖片過大，上限為 5 MB。",
+        invalidImage: "不支援的格式，請使用 JPEG、PNG 或 WebP。",
+        storageUnavailable: "儲存空間暫時無法使用，請重試。",
+        failed: "更新大頭貼失敗，請稍後再試。",
+      },
+    },
+    edit: {
+      title: "編輯個人資料",
+      name: "名稱",
+      password: "密碼",
+      changeName: "變更名稱",
+      changePassword: "變更密碼",
+    },
     signInPrompt: "登入 {{app}} 以在所有裝置上同步進度。",
     signInButton: "登入或建立帳號",
   },

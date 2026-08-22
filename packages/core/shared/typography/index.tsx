@@ -7,9 +7,9 @@ const medium = isAndroid ? "IBMPlexSans-Medium" : "SFProDisplay-Semibold";
 
 export const fonts = {
   regular: { fontFamily: regular, fontWeight: "400" },
-  medium: { fontFamily: regular, fontWeight: "500" },
-  bold: { fontFamily: medium, fontWeight: "600" },
-  heavy: { fontFamily: medium, fontWeight: "600" },
+  medium: { fontFamily: medium, fontWeight: "500" },
+  bold: { fontFamily: medium, fontWeight: "500" },
+  heavy: { fontFamily: medium, fontWeight: "500" },
 } as const;
 
 const gts = (
@@ -27,10 +27,10 @@ export const Typography = StyleSheet.create({
   regularLabel: gts(regular, 15, 20, "400"),
   regularCaption: gts(regular, 13, 16, "400"),
 
-  boldDefault: gts(medium, 17, 24, "600"),
-  boldLabel: gts(medium, 15, 20, "600"),
+  boldDefault: gts(medium, 17, 24, "500"),
+  boldLabel: gts(medium, 15, 20, "500"),
 
-  boldH1: gts(medium, 96, 104, "600"),
-  boldH2: gts(medium, 28, 32, "600"),
-  boldH3: gts(medium, 22, 28, "600"),
+  boldH1: gts(medium, 96, 104, "500"),
+  boldH2: gts(medium, 28, 32, "500"),
+  boldH3: gts(medium, 22, 28, "500"),
 });

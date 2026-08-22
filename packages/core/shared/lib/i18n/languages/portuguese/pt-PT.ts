@@ -1,5 +1,6 @@
 const PortuguesePT = {
   common: {
+    save: "Guardar",
     done: "Concluído",
     close: "Fechar",
     reset: "Repor",
@@ -189,6 +190,8 @@ const PortuguesePT = {
     login: "Iniciar sessão",
     continueWithoutLogin: "Continuar sem iniciar sessão",
     fields: {
+      newName: "Novo nome",
+      oldPassword: "Palavra-passe atual",
       name: "Nome",
       email: "Endereço de e-mail",
       password: "Palavra-passe",
@@ -220,6 +223,8 @@ const PortuguesePT = {
       confirm: "Confirmar",
     },
     errors: {
+      incorrectOldPassword: "Palavra-passe atual incorreta",
+      nameTooLong: "O nome deve ter no máximo 16 caracteres",
       nameRequired: "Introduza o nome",
       emailRequired: "Introduza o e-mail",
       invalidEmail: "E-mail inválido",
@@ -249,6 +254,26 @@ const PortuguesePT = {
     },
   },
   profile: {
+    avatar: {
+      title: "Fotografia do perfil",
+      takePhoto: "Tirar fotografia",
+      chooseFromLibrary: "Escolher da galeria",
+      remove: "Remover fotografia",
+      errors: {
+        cameraPermission: "Sem acesso à câmara. Permita nas definições do dispositivo.",
+        fileTooLarge: "A imagem é demasiado grande. Máximo de 5 MB.",
+        invalidImage: "Formato não suportado. Use JPEG, PNG ou WebP.",
+        storageUnavailable: "O armazenamento está temporariamente indisponível. Tente novamente.",
+        failed: "Não foi possível atualizar a fotografia. Tente mais tarde.",
+      },
+    },
+    edit: {
+      title: "Editar perfil",
+      name: "Nome",
+      password: "Palavra-passe",
+      changeName: "Alterar nome",
+      changePassword: "Alterar palavra-passe",
+    },
     signInPrompt:
       "Inicie sessão em {{app}} para sincronizar o seu progresso em todos os dispositivos.",
     signInButton: "Iniciar sessão ou criar uma conta",

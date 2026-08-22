@@ -10,6 +10,7 @@ const lightTheme: Colors = {
   BgWhite: "#FFFFFF",
   BgGray: "#757575",
   BgLightGray: "#ECECEC",
+  BgDarkGray: "#363636",
   BgContrast: "#2A2A2A",
   BgContrastSecondary: "#1E1E1E",
   BgContrastPressed: "#1E1E1E",

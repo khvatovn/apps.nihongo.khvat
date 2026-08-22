@@ -4,14 +4,30 @@ const IS_DEV = process.env.APP_VARIANT === "development";
 
 const name = IS_DEV ? `${process.env.APP_NAME} (Dev)` : process.env.APP_NAME;
 
+// * Redirect-схема для Google OAuth = reversed client id.
+// * 268156862431-xxxx.apps.googleusercontent.com -> com.googleusercontent.apps.268156862431-xxxx
+// * Схема намеренно отличается от deep-link навигации, чтобы не конфликтовать intent-filter.
+// * Рантайм-redirect в googleAuth.ts — каноничный одинарный слеш (:/), матчинг идёт по схеме.
+const reversedScheme = (clientId) => `com.googleusercontent.apps.${clientId.split(".")[0]}`;
+
+// * ВАЖНО: из redirectUrls плагин react-native-app-auth берёт ТОЛЬКО [0] и ставит одну и ту же
+// * схему в Info.plist и в gradle. У iOS и Android разные client id -> разные схемы, поэтому
+// * отдаём явные пер-платформенные пропсы: плагин спредит их поверх своих дефолтов.
+// * Android-клиентов может быть несколько: OAuth-клиент привязан к паре (package, SHA-1), а
+// * Play App Signing переподписывает бандл своим ключом — тогда профиль в eas.json подставляет
+// * свой client id через env (реальный process.env приоритетнее .env и здесь, и в рантайме).
 const androidClientId = process.env.GOOGLE_OAUTH_ANDROID_CLIENT_ID;
 const iosClientId = process.env.GOOGLE_OAUTH_IOS_CLIENT_ID;
 
-const oauthRedirectUrls = [
-  androidClientId &&
-    `com.googleusercontent.apps.${androidClientId.split(".")[0]}://oauth2redirect/google`,
-  iosClientId && `com.googleusercontent.apps.${iosClientId.split(".")[0]}://oauth2redirect/google`,
-].filter(Boolean);
+// * Фолбэк на схему соседней платформы — чтобы не записать undefined в Info.plist/gradle,
+// * если client id для одной из платформ ещё не заведён.
+const iosScheme = iosClientId && reversedScheme(iosClientId);
+const androidScheme = androidClientId && reversedScheme(androidClientId);
+
+const appAuthProps = {
+  ios: { urlScheme: iosScheme || androidScheme },
+  android: { appAuthRedirectScheme: androidScheme || iosScheme },
+};
 
 const config = {
   name: name,
@@ -88,11 +104,15 @@ const config = {
     ],
     "expo-asset",
     [
-      "react-native-app-auth",
+      "expo-image-picker",
       {
-        redirectUrls: oauthRedirectUrls,
+        photosPermission: "$(PRODUCT_NAME) needs access to your photos so you can set an avatar.",
+        cameraPermission: "$(PRODUCT_NAME) needs access to your camera so you can take an avatar.",
+        // * Видео не снимаем — микрофон не запрашиваем.
+        microphonePermission: false,
       },
     ],
+    ["react-native-app-auth", appAuthProps],
   ],
   runtimeVersion: {
     policy: "appVersion",

@@ -44,6 +44,10 @@ export enum ROUTES {
   RESET_PASSWORD_ASK_EMAIL = "RESET_PASSWORD_ASK_EMAIL",
   RESET_PASSWORD_SUBMIT_CODE = "RESET_PASSWORD_SUBMIT_CODE",
   RESET_PASSWORD_CONFIRM = "RESET_PASSWORD_CONFIRM",
+
+  PROFILE_EDIT = "PROFILE_EDIT",
+  PROFILE_EDIT_NAME = "PROFILE_EDIT_NAME",
+  PROFILE_EDIT_PASSWORD = "PROFILE_EDIT_PASSWORD",
 }
 
 export type RootStackParamList = {
@@ -81,4 +85,8 @@ export type RootStackParamList = {
   [ROUTES.RESET_PASSWORD_ASK_EMAIL]: undefined;
   [ROUTES.RESET_PASSWORD_SUBMIT_CODE]: { email: string; region: string };
   [ROUTES.RESET_PASSWORD_CONFIRM]: { email: string; region: string; resetToken: string };
+
+  [ROUTES.PROFILE_EDIT]: undefined;
+  [ROUTES.PROFILE_EDIT_NAME]: undefined;
+  [ROUTES.PROFILE_EDIT_PASSWORD]: undefined;
 };

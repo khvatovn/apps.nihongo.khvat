@@ -1,5 +1,6 @@
 const ChineseCN = {
   common: {
+    save: "保存",
     done: "完成",
     close: "关闭",
     reset: "重置",
@@ -185,6 +186,8 @@ const ChineseCN = {
     login: "登录",
     continueWithoutLogin: "不登录继续",
     fields: {
+      newName: "新名称",
+      oldPassword: "旧密码",
       name: "姓名",
       email: "电子邮箱",
       password: "密码",
@@ -215,6 +218,8 @@ const ChineseCN = {
       confirm: "确认",
     },
     errors: {
+      incorrectOldPassword: "旧密码不正确",
+      nameTooLong: "名称不能超过 16 个字符",
       nameRequired: "请输入姓名",
       emailRequired: "请输入邮箱",
       invalidEmail: "邮箱格式无效",
@@ -244,6 +249,26 @@ const ChineseCN = {
     },
   },
   profile: {
+    avatar: {
+      title: "头像",
+      takePhoto: "拍照",
+      chooseFromLibrary: "从相册选择",
+      remove: "移除头像",
+      errors: {
+        cameraPermission: "没有相机权限，请在系统设置中开启。",
+        fileTooLarge: "图片过大，上限为 5 MB。",
+        invalidImage: "不支持的格式，请使用 JPEG、PNG 或 WebP。",
+        storageUnavailable: "存储暂时不可用，请重试。",
+        failed: "更新头像失败，请稍后重试。",
+      },
+    },
+    edit: {
+      title: "编辑资料",
+      name: "名称",
+      password: "密码",
+      changeName: "修改名称",
+      changePassword: "修改密码",
+    },
     signInPrompt: "登录 {{app}} 以在所有设备上同步进度。",
     signInButton: "登录或创建账户",
   },

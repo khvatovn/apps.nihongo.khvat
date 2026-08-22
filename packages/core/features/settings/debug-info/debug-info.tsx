@@ -7,6 +7,7 @@ import {
   isExpoGo,
   isProductionBuild,
 } from "@nihongo/core/shared/constants/environment";
+import { isIOS } from "@nihongo/core/shared/constants/platformUtil";
 import {
   APP_THEME,
   DEVICE_ID,
@@ -29,8 +30,11 @@ import {
   ProbeResult,
   removeCustomGateway,
 } from "@nihongo/core/shared/lib/api-gateway";
+import { getTokenRegion } from "@nihongo/core/shared/lib/auth/claims";
+import { getAvatarHosts } from "@nihongo/core/shared/lib/avatar";
 import { Typography } from "@nihongo/core/shared/typography";
 import AsyncStorage from "@react-native-async-storage/async-storage";
+import { AppStoreLogoIcon, GitBranchIcon, GooglePlayLogoIcon } from "phosphor-react-native";
 import { useTranslation } from "react-i18next";
 import {
   ActivityIndicator,
@@ -58,6 +62,11 @@ const DebugInfo: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [notificationToken, setNotificationToken] = useState<string | null>(null);
   const [deviceId, setDeviceId] = useState<string | null>(null);
+
+  // * Регион из клейма access-токена: по нему собирается домен для аватарки, и когда
+  // * картинка не грузится, первым делом нужно знать, заведён ли этот регион в конфиге.
+  const [region, setRegion] = useState<string | null>(null);
+  const avatarHost = region ? (getAvatarHosts()[region] ?? null) : null;
   const [activeGateway, setActiveGateway] = useState<string | null>(getCurrentGateway());
 
   const [gateways, setGateways] = useState<string[]>(getAllGateways());
@@ -85,6 +94,7 @@ const DebugInfo: React.FC = () => {
     if (!isVisible) return;
     AsyncStorage.getItem(NOTIFICATION_TOKEN).then(setNotificationToken);
     AsyncStorage.getItem(DEVICE_ID).then(setDeviceId);
+    getTokenRegion().then(setRegion);
 
     ensureSelected()
       .then((url: string) => {
@@ -171,12 +181,20 @@ const DebugInfo: React.FC = () => {
     <>
       <SettingsSection>
         <SettingItem
+          leftIcon={<GitBranchIcon size={20} color={colors.BgContrast} />}
           hideArrow
           text={t("settings.version")}
           subText={`v${process.env.VERSION}, build: ${process.env.BUILD_NUMBER} (${Platform.OS})`}
           onClick={handleVersionTap}
         />
         <SettingItem
+          leftIcon={
+            isIOS ? (
+              <AppStoreLogoIcon size={20} color={colors.BgContrast} />
+            ) : (
+              <GooglePlayLogoIcon size={20} color={colors.BgContrast} />
+            )
+          }
           isLast
           hideArrow
           text={t("debug.store")}
@@ -190,6 +208,17 @@ const DebugInfo: React.FC = () => {
             <Text style={styles.label}>{t("debug.deviceId")}</Text>
             <Text style={styles.value} numberOfLines={1}>
               {deviceId ?? "—"}
+            </Text>
+          </Pressable>
+          <View style={styles.divider} />
+          <Pressable
+            style={styles.row}
+            onPress={() => share("Avatar host", avatarHost ?? `region: ${region ?? "—"}`)}
+          >
+            {/* * Скрытая debug-панель — подписи здесь и так не переводятся. */}
+            <Text style={styles.label}>Avatar host</Text>
+            <Text style={styles.value} numberOfLines={1}>
+              {region ? `${region} → ${avatarHost ?? "не настроен"}` : "—"}
             </Text>
           </Pressable>
           <View style={styles.divider} />
@@ -363,7 +392,7 @@ const makeStyles = (colors: ColorsType) =>
     serverMeta: {
       ...Typography.regularLabel,
       color: colors.TextSecondary,
-      marginLeft: 18,
+      marginLeft: 16,
     },
     removeButton: {
       paddingHorizontal: 4,

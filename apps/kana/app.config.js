@@ -7,17 +7,28 @@ const name = IS_DEV ? `${process.env.APP_NAME} (Dev)` : process.env.APP_NAME;
 // * Redirect-схема для Google OAuth = reversed client id.
 // * 268156862431-xxxx.apps.googleusercontent.com -> com.googleusercontent.apps.268156862431-xxxx
 // * Схема намеренно отличается от deep-link навигации, чтобы не конфликтовать intent-filter.
-// * ВАЖНО: плагин react-native-app-auth вырезает схему через redirectUrls[0].split('://')[0],
-// * поэтому отдаём ему URL с ДВОЙНЫМ слешем (иначе в манифест попадёт вся строка как схема).
 // * Рантайм-redirect в googleAuth.ts — каноничный одинарный слеш (:/), матчинг идёт по схеме.
+const reversedScheme = (clientId) => `com.googleusercontent.apps.${clientId.split(".")[0]}`;
+
+// * ВАЖНО: из redirectUrls плагин react-native-app-auth берёт ТОЛЬКО [0] и ставит одну и ту же
+// * схему в Info.plist и в gradle. У iOS и Android разные client id -> разные схемы, поэтому
+// * отдаём явные пер-платформенные пропсы: плагин спредит их поверх своих дефолтов.
+// * Android-клиентов два: OAuth-клиент привязан к паре (package, SHA-1), а Play App Signing
+// * переподписывает бандл своим ключом. Профиль production_google в eas.json подставляет свой
+// * client id через env — реальный process.env приоритетнее .env и в dotenv/config (здесь),
+// * и в react-native-dotenv (рантайм), поэтому схема в манифесте и client id всегда из одного.
 const androidClientId = process.env.GOOGLE_OAUTH_ANDROID_CLIENT_ID;
 const iosClientId = process.env.GOOGLE_OAUTH_IOS_CLIENT_ID;
 
-const oauthRedirectUrls = [
-  androidClientId &&
-    `com.googleusercontent.apps.${androidClientId.split(".")[0]}://oauth2redirect/google`,
-  iosClientId && `com.googleusercontent.apps.${iosClientId.split(".")[0]}://oauth2redirect/google`,
-].filter(Boolean);
+// * Фолбэк на схему соседней платформы — чтобы не записать undefined в Info.plist/gradle,
+// * если client id для одной из платформ ещё не заведён.
+const iosScheme = iosClientId && reversedScheme(iosClientId);
+const androidScheme = androidClientId && reversedScheme(androidClientId);
+
+const appAuthProps = {
+  ios: { urlScheme: iosScheme || androidScheme },
+  android: { appAuthRedirectScheme: androidScheme || iosScheme },
+};
 
 const config = {
   name: name,
@@ -94,11 +105,14 @@ const config = {
     ],
     "expo-asset",
     [
-      "react-native-app-auth",
+      "expo-image-picker",
       {
-        redirectUrls: oauthRedirectUrls,
+        photosPermission: "$(PRODUCT_NAME) needs access to your photos so you can set an avatar.",
+        cameraPermission: "$(PRODUCT_NAME) needs access to your camera so you can take an avatar.",
+        microphonePermission: false,
       },
     ],
+    ["react-native-app-auth", appAuthProps],
   ],
   runtimeVersion: {
     policy: "appVersion",

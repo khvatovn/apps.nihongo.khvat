@@ -1,5 +1,6 @@
 const Korean = {
   common: {
+    save: "저장",
     done: "완료",
     close: "닫기",
     reset: "초기화",
@@ -186,6 +187,8 @@ const Korean = {
     login: "로그인",
     continueWithoutLogin: "로그인 없이 계속하기",
     fields: {
+      newName: "새 이름",
+      oldPassword: "기존 비밀번호",
       name: "이름",
       email: "이메일 주소",
       password: "비밀번호",
@@ -216,6 +219,8 @@ const Korean = {
       confirm: "확인",
     },
     errors: {
+      incorrectOldPassword: "기존 비밀번호가 올바르지 않습니다",
+      nameTooLong: "이름은 16자 이하여야 합니다",
       nameRequired: "이름을 입력하세요",
       emailRequired: "이메일을 입력하세요",
       invalidEmail: "올바르지 않은 이메일",
@@ -245,6 +250,26 @@ const Korean = {
     },
   },
   profile: {
+    avatar: {
+      title: "프로필 사진",
+      takePhoto: "사진 촬영",
+      chooseFromLibrary: "갤러리에서 선택",
+      remove: "사진 삭제",
+      errors: {
+        cameraPermission: "카메라 접근이 허용되지 않았습니다. 기기 설정에서 허용해 주세요.",
+        fileTooLarge: "이미지가 너무 큽니다. 최대 5MB입니다.",
+        invalidImage: "지원하지 않는 형식입니다. JPEG, PNG 또는 WebP를 사용하세요.",
+        storageUnavailable: "저장소를 일시적으로 사용할 수 없습니다. 다시 시도해 주세요.",
+        failed: "사진을 업데이트하지 못했습니다. 나중에 다시 시도해 주세요.",
+      },
+    },
+    edit: {
+      title: "프로필 편집",
+      name: "이름",
+      password: "비밀번호",
+      changeName: "이름 변경",
+      changePassword: "비밀번호 변경",
+    },
     signInPrompt: "{{app}}에 로그인하여 모든 기기에서 진행 상황을 동기화하세요.",
     signInButton: "로그인 또는 계정 만들기",
   },

@@ -394,7 +394,7 @@ export const dakuon: ILetter[][] = [
       id: "942585bb-b0ed-4712-9fd0-e4e9c91d63bd",
       ka: "ヅ",
       hi: "づ",
-      transliterations: ["ZU", "ZU", "ZU", "ДЗУ"],
+      transliterations: ["ZU", "ZU", "DU", "ДЗУ"],
     },
     {
       id: "7a0ba7ce-ee51-4d94-91ea-82e19d8d3268",

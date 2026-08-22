@@ -1,8 +1,9 @@
 const osakaLightTheme = {
   BgPrimary: "#FFFFFF",
   BgSecondary: "#F9F8F4",
-  BgLightGray: "#EBE8CA",
   BgGray: "#8A865D",
+  BgLightGray: "#EBE8CA",
+  BgDarkGray: "#43442E",
   BgDisabled: "#B3AE7B",
   BgContrast: "#2A2A24",
   BgContrastPressed: "#131311",

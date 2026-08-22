@@ -1,6 +1,7 @@
 import React from "react";
 
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
+import { useAvatarUri } from "@nihongo/core/shared/lib/avatar";
 import { Typography } from "@nihongo/core/shared/typography";
 import { UserIcon } from "phosphor-react-native";
 import { View, Text, StyleSheet, Image } from "react-native";
@@ -14,13 +15,15 @@ interface ProfileItemProps {
 const ProfileItem: React.FC<ProfileItemProps> = ({ avatar, name, email }) => {
   const { colors } = useThemeContext();
 
+  const avatarUri = useAvatarUri(avatar);
+
   const styles = makeStyles(colors);
 
   return (
     <View style={styles.container}>
       <View style={styles.avatar}>
-        {avatar ? (
-          <Image source={{ uri: avatar }} style={styles.avatarImage} />
+        {avatarUri ? (
+          <Image source={{ uri: avatarUri }} style={styles.avatarImage} />
         ) : (
           <UserIcon size={32} color={colors.BgContrast} />
         )}

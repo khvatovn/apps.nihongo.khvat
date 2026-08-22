@@ -1,8 +1,9 @@
 const sakuraLightTheme = {
   BgPrimary: "#FFFFFF",
   BgSecondary: "#FDF6F6",
-  BgLightGray: "#E7C8C7",
   BgGray: "#8B5F5D",
+  BgLightGray: "#E7C8C7",
+  BgDarkGray: "#4D3433",
   BgDisabled: "#A98786",
   BgContrast: "#2D2424",
   BgContrastPressed: "#140F0F",

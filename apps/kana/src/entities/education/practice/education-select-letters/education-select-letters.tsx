@@ -2,12 +2,17 @@ import React from "react";
 
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
 import { Typography } from "@nihongo/core/shared/typography";
+import PrimaryButton from "@nihongo/core/shared/ui/buttons/Primary/primary-button";
 import { useTranslation } from "react-i18next";
 import { StyleSheet, Text, useWindowDimensions, View } from "react-native";
 
 import { useKanaContext } from "@/pages/kana/kana-table-choice-letters-page/model/hooks";
 
-const EducationKanaSelectedCard: React.FC = () => {
+interface EducationKanaSelectedCardProps {
+  onSelectKana: () => void;
+}
+
+const EducationKanaSelectedCard: React.FC<EducationKanaSelectedCardProps> = ({ onSelectKana }) => {
   const { t } = useTranslation();
   const { colors } = useThemeContext();
   const { width } = useWindowDimensions();
@@ -19,34 +24,39 @@ const EducationKanaSelectedCard: React.FC = () => {
   const widthCard = width / 2 - 24;
 
   return (
-    <View style={styles.container}>
-      <View style={[styles.content, { width: widthCard }]}>
-        <View style={styles.header}>
-          <Text style={styles.title}>{selectedLettersHiragana + selectedLettersKatakana}</Text>
+    <View>
+      <View style={styles.container}>
+        <View style={[styles.content, { width: widthCard }]}>
+          <View style={styles.header}>
+            <Text style={styles.title}>{selectedLettersHiragana + selectedLettersKatakana}</Text>
+          </View>
+
+          {selectedLettersHiragana + selectedLettersKatakana === 0 && (
+            <Text style={styles.label}>{t("selectKana.nothingSelected")}</Text>
+          )}
+
+          {selectedLettersHiragana + selectedLettersKatakana !== 0 && (
+            <Text style={styles.label}>{t("tabs.kana")}</Text>
+          )}
         </View>
 
-        {selectedLettersHiragana + selectedLettersKatakana === 0 && (
-          <Text style={styles.label}>{t("selectKana.nothingSelected")}</Text>
-        )}
-
-        {selectedLettersHiragana + selectedLettersKatakana !== 0 && (
-          <Text style={styles.label}>{t("tabs.kana")}</Text>
-        )}
-      </View>
-
-      <View style={[styles.content, { width: widthCard }]}>
-        <View style={styles.header}>
-          <Text style={styles.title}>
-            {selectedWords.hiragana.length + selectedWords.katakana.length}
-          </Text>
+        <View style={[styles.content, { width: widthCard }]}>
+          <View style={styles.header}>
+            <Text style={styles.title}>
+              {selectedWords.hiragana.length + selectedWords.katakana.length}
+            </Text>
+          </View>
+          {selectedWords.hiragana.length + selectedWords.katakana.length === 0 && (
+            <Text style={styles.label}>{t("selectKana.nothingSelected")}</Text>
+          )}
+          {selectedWords.hiragana.length + selectedWords.katakana.length !== 0 && (
+            <Text style={styles.label}>{t("selectKana.words")}</Text>
+          )}
         </View>
-        {selectedWords.hiragana.length + selectedWords.katakana.length === 0 && (
-          <Text style={styles.label}>{t("selectKana.nothingSelected")}</Text>
-        )}
-        {selectedWords.hiragana.length + selectedWords.katakana.length !== 0 && (
-          <Text style={styles.label}>{t("selectKana.words")}</Text>
-        )}
       </View>
+
+      {/* ! Добавить в i18n */}
+      <PrimaryButton containerStyles={styles.btn} onClick={onSelectKana} text="Choose Kana" />
     </View>
   );
 };
@@ -84,5 +94,8 @@ const makeStyles = (colors: ColorsType) =>
       marginTop: 4,
       ...Typography.regularLabel,
       color: colors.TextSecondary,
+    },
+    btn: {
+      marginTop: 16,
     },
   });

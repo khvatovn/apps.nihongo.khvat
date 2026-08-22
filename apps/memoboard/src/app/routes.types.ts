@@ -14,6 +14,10 @@ export enum ROUTES {
   PROFILE_ROOT = "Profile",
   SETTINGS_ROOT = "Settings",
 
+  PROFILE_EDIT = "PROFILE_EDIT",
+  PROFILE_EDIT_NAME = "PROFILE_EDIT_NAME",
+  PROFILE_EDIT_PASSWORD = "PROFILE_EDIT_PASSWORD",
+
   SETTINGS_LANGUAGE = "SettingLanguage",
   SETTINGS_TRANSLITERATION = "SettingTransliterations",
   SETTINGS_THEME = "SettingTheme",
@@ -44,6 +48,10 @@ export type RootStackParamList = {
 
   [ROUTES.PROFILE_ROOT]: undefined;
   [ROUTES.SETTINGS_ROOT]: undefined;
+
+  [ROUTES.PROFILE_EDIT]: undefined;
+  [ROUTES.PROFILE_EDIT_NAME]: undefined;
+  [ROUTES.PROFILE_EDIT_PASSWORD]: undefined;
 
   [ROUTES.SETTINGS_LANGUAGE]: undefined;
   [ROUTES.SETTINGS_TRANSLITERATION]: undefined;

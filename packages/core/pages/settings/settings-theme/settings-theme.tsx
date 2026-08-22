@@ -6,6 +6,7 @@ import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme
 import { darkTheme } from "@nihongo/core/shared/themes/dark";
 import { hokkaidoDarkTheme } from "@nihongo/core/shared/themes/hokkaido_dark";
 import { hokkaidoLightTheme } from "@nihongo/core/shared/themes/hokkaido_light";
+import { jiraiKeiDark } from "@nihongo/core/shared/themes/jirai_kei_dark";
 import { lightTheme } from "@nihongo/core/shared/themes/light";
 import { osakaDarkTheme } from "@nihongo/core/shared/themes/osaka_dark";
 import { osakaLightTheme } from "@nihongo/core/shared/themes/osaka_light";
@@ -22,7 +23,7 @@ const SettingsThemePage: React.FC = () => {
 
   const { updateTheme } = useThemeContext();
 
-  const { colors } = useThemeContext();
+  const { colors, themeString } = useThemeContext();
 
   const navigation = useNavigation();
 
@@ -41,16 +42,10 @@ const SettingsThemePage: React.FC = () => {
     { key: Theme.Light, type: ThemeType.Dark, title: "Default Light", icon: getIcon(lightTheme) },
     { key: Theme.Dark, type: ThemeType.Light, title: "Default Dark", icon: getIcon(darkTheme) },
     {
-      key: Theme.HokkaidoDark,
-      type: ThemeType.Dark,
-      title: "Hokkaido Dark",
-      icon: getIcon(hokkaidoDarkTheme),
-    },
-    {
-      key: Theme.HokkaidoLight,
+      key: Theme.OsakaLight,
       type: ThemeType.Light,
-      title: "Hokkaido Light",
-      icon: getIcon(hokkaidoLightTheme),
+      title: "Osaka Light",
+      icon: getIcon(osakaLightTheme),
     },
     {
       key: Theme.OsakaDark,
@@ -59,16 +54,28 @@ const SettingsThemePage: React.FC = () => {
       icon: getIcon(osakaDarkTheme),
     },
     {
-      key: Theme.OsakaLight,
+      key: Theme.HokkaidoLight,
       type: ThemeType.Light,
-      title: "Osaka Light",
-      icon: getIcon(osakaLightTheme),
+      title: "Hokkaido Light",
+      icon: getIcon(hokkaidoLightTheme),
+    },
+    {
+      key: Theme.HokkaidoDark,
+      type: ThemeType.Dark,
+      title: "Hokkaido Dark",
+      icon: getIcon(hokkaidoDarkTheme),
     },
     {
       key: Theme.SakuraLight,
       type: ThemeType.Light,
       title: "Sakura Light",
       icon: getIcon(sakuraLightTheme),
+    },
+    {
+      key: Theme.JiraiKeiDark,
+      type: ThemeType.Dark,
+      title: "Jirai Kei Dark",
+      icon: getIcon(jiraiKeiDark),
     },
   ];
 
@@ -90,6 +97,7 @@ const SettingsThemePage: React.FC = () => {
             data={themeOptions}
             renderItem={({ item, index }) => (
               <ThemeItem
+                active={themeString === item.key}
                 key={item.key}
                 name={item.title}
                 icon={item.icon}
@@ -121,10 +129,7 @@ const makeStyles = (colors: ColorsType) =>
       marginVertical: 16,
     },
     list: {
-      backgroundColor: colors.BgSecondary,
       marginHorizontal: 18,
-
-      borderRadius: 12,
 
       flexShrink: 1,
       overflow: "hidden",

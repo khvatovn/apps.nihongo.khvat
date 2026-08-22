@@ -2,15 +2,12 @@ import React from "react";
 
 import { View, StyleSheet } from "react-native";
 
-import { ColorsType, useThemeContext } from "../../../../../../shared/contexts/theme/theme-context";
-
 interface ThemeIconProps {
   colors: string[];
 }
 
 const ThemeIcon: React.FC<ThemeIconProps> = (props) => {
-  const { colors } = useThemeContext();
-  const styles = makeStyles(colors);
+  const styles = makeStyles();
 
   if (props.colors.length < 3) {
     return <View></View>;
@@ -40,7 +37,7 @@ const ThemeIcon: React.FC<ThemeIconProps> = (props) => {
   );
 };
 
-const makeStyles = (colors: ColorsType) =>
+const makeStyles = () =>
   StyleSheet.create({
     container: {
       width: 48,
@@ -48,10 +45,6 @@ const makeStyles = (colors: ColorsType) =>
 
       borderRadius: 48,
       flexDirection: "column",
-
-      borderWidth: 1,
-      borderColor: colors.BorderDefault,
-
       transform: [{ rotate: "315deg" }],
     },
 

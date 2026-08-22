@@ -1,5 +1,6 @@
 const PortugueseBR = {
   common: {
+    save: "Salvar",
     done: "Concluído",
     close: "Fechar",
     reset: "Redefinir",
@@ -189,6 +190,8 @@ const PortugueseBR = {
     login: "Entrar",
     continueWithoutLogin: "Continuar sem entrar",
     fields: {
+      newName: "Novo nome",
+      oldPassword: "Senha atual",
       name: "Nome",
       email: "Endereço de e-mail",
       password: "Senha",
@@ -219,6 +222,8 @@ const PortugueseBR = {
       confirm: "Confirmar",
     },
     errors: {
+      incorrectOldPassword: "Senha atual incorreta",
+      nameTooLong: "O nome deve ter no máximo 16 caracteres",
       nameRequired: "Digite seu nome",
       emailRequired: "Digite seu e-mail",
       invalidEmail: "E-mail inválido",
@@ -248,6 +253,26 @@ const PortugueseBR = {
     },
   },
   profile: {
+    avatar: {
+      title: "Foto do perfil",
+      takePhoto: "Tirar foto",
+      chooseFromLibrary: "Escolher da galeria",
+      remove: "Remover foto",
+      errors: {
+        cameraPermission: "Sem acesso à câmera. Permita nas configurações do dispositivo.",
+        fileTooLarge: "A imagem é muito grande. Máximo de 5 MB.",
+        invalidImage: "Formato não suportado. Use JPEG, PNG ou WebP.",
+        storageUnavailable: "O armazenamento está temporariamente indisponível. Tente novamente.",
+        failed: "Não foi possível atualizar a foto. Tente mais tarde.",
+      },
+    },
+    edit: {
+      title: "Editar perfil",
+      name: "Nome",
+      password: "Senha",
+      changeName: "Alterar nome",
+      changePassword: "Alterar senha",
+    },
     signInPrompt: "Entre no {{app}} para sincronizar seu progresso em todos os dispositivos.",
     signInButton: "Entrar ou criar uma conta",
   },

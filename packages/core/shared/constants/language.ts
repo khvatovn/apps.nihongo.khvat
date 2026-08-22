@@ -5,7 +5,7 @@ export enum ShortLanguage {
   FR = "fr",
   IT = "it",
   ID = "id",
-  KO_KR = "ko-KR",
+  ko = "ko",
   ZH_CN = "zh-CN",
   ZH_TW = "zh-TW",
   ZH_HK = "zh-HK",
@@ -22,7 +22,7 @@ export type LanguageKeys =
   | "fr"
   | "it"
   | "id"
-  | "ko-KR"
+  | "ko"
   | "zh-CN"
   | "zh-TW"
   | "zh-HK"
@@ -37,8 +37,8 @@ export const LanguageName: Record<LanguageKeys, string> = {
   de: "Deutsch",
   fr: "Français",
   it: "Italiano",
-  id: "Indonesia",
-  "ko-KR": "한국어",
+  ko: "한국어",
+  id: "Bahasa Indonesia",
   "zh-CN": "中文（简体）",
   "zh-TW": "中文（繁體）",
   "zh-HK": "中文（香港）",
@@ -57,7 +57,7 @@ export const lessonsLang: LanguageKeys[] = [
   "fr",
   "it",
   "id",
-  "ko-KR",
+  "ko",
   "zh-CN",
   "zh-TW",
   "zh-HK",
@@ -78,7 +78,7 @@ export const languageList = [
   { title: LanguageName["pt-PT"], key: ShortLanguage.PT_PT },
   { title: LanguageName.de, key: ShortLanguage.DE },
   { title: LanguageName.it, key: ShortLanguage.IT },
-  { title: LanguageName["ko-KR"], key: ShortLanguage.KO_KR },
+  { title: LanguageName["ko"], key: ShortLanguage.ko },
   { title: LanguageName["zh-CN"], key: ShortLanguage.ZH_CN },
   { title: LanguageName["zh-TW"], key: ShortLanguage.ZH_TW },
   { title: LanguageName["zh-HK"], key: ShortLanguage.ZH_HK },

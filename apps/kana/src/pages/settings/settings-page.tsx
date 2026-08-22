@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 
 // * from packages/core
 
+import SettingItem from "@nihongo/core/entities/setting/setting-item/setting-item";
 import SettingsSection from "@nihongo/core/entities/setting/setting-section/settings-section";
 import ContactSupport from "@nihongo/core/features/settings/contact-support/contact-support";
 import DebugInfo from "@nihongo/core/features/settings/debug-info/debug-info";
@@ -17,7 +18,7 @@ import { useIsLoggedIn } from "@nihongo/core/shared/lib/auth/use-is-logged-in";
 import PageTitle from "@nihongo/core/shared/ui/page-title/page-title";
 import { useNavigation } from "@react-navigation/native";
 import { StackNavigationProp } from "@react-navigation/stack";
-import { CaretLeftIcon } from "phosphor-react-native";
+import { CaretLeftIcon, PencilSimpleIcon } from "phosphor-react-native";
 import { useTranslation } from "react-i18next";
 import { StyleSheet, View, ScrollView, Pressable } from "react-native";
 
@@ -62,6 +63,17 @@ const SettingsPage: React.FC = () => {
       </PageTitle>
 
       <ScrollView contentContainerStyle={styles.scroll}>
+        {isLoggedIn === true && (
+          <SettingsSection>
+            <SettingItem
+              leftIcon={<PencilSimpleIcon size={20} color={colors.BgContrast} />}
+              text={t("profile.edit.title")}
+              onClick={() => navigation.navigate(ROUTES.PROFILE_EDIT)}
+              isLast
+            />
+          </SettingsSection>
+        )}
+
         <SettingsSection>
           <SettingsStatistics />
           <SettingsHaptic />
@@ -79,13 +91,13 @@ const SettingsPage: React.FC = () => {
           />
         </SettingsSection>
 
+        <StoreReviewLink iosId="id6479753061" packageName={process.env.ANDROID_PACKAGE} />
+
         <SettingsSection>
           <PrivacyPolicy app="nihon-go-kana" />
           <ContactSupport app="nihon-go-kana" />
           <TermsAndConditions app="nihon-go-kana" />
         </SettingsSection>
-
-        <StoreReviewLink iosId="id6479753061" packageName={process.env.ANDROID_PACKAGE} />
 
         <DebugInfo />
 

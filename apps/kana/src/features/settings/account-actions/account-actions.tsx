@@ -5,18 +5,21 @@ import { useModal } from "@nihongo/core/shared/contexts/modal/modal-context";
 import { AlertModal } from "@nihongo/core/shared/contexts/modal/presets/alert";
 import { ConfirmationModal } from "@nihongo/core/shared/contexts/modal/presets/confirmation";
 import { DeleteAccountModal } from "@nihongo/core/shared/contexts/modal/presets/delete-account";
+import { useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
 import {
   clearTokens,
   deleteAccount,
   logout as revokeSession,
   requestAccountDeletion,
 } from "@nihongo/core/shared/lib/auth";
+import { SignOutIcon, TrashIcon } from "phosphor-react-native";
 import { useTranslation } from "react-i18next";
 
 import { useEraseData } from "@/features/settings/lib/use-erase-data";
 
 const AccountActions: React.FC = () => {
   const { t } = useTranslation();
+  const { colors } = useThemeContext();
 
   const { showModal, hideModal } = useModal();
   const eraseData = useEraseData();
@@ -103,8 +106,19 @@ const AccountActions: React.FC = () => {
 
   return (
     <>
-      <SettingItem isDanger text={t("settings.deleteAccount.button")} onClick={confirmDelete} />
-      <SettingItem isLast isDanger text={t("settings.logout.button")} onClick={confirmLogout} />
+      <SettingItem
+        leftIcon={<TrashIcon size={20} color={colors.BgContrast} />}
+        isDanger
+        text={t("settings.deleteAccount.button")}
+        onClick={confirmDelete}
+      />
+      <SettingItem
+        leftIcon={<SignOutIcon size={20} color={colors.BgContrast} />}
+        isLast
+        isDanger
+        text={t("settings.logout.button")}
+        onClick={confirmLogout}
+      />
     </>
   );
 };

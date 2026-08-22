@@ -5,9 +5,8 @@ import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme
 import PageTitle from "@nihongo/core/shared/ui/page-title/page-title";
 import { useNavigation } from "@react-navigation/native";
 import { StackNavigationProp } from "@react-navigation/stack";
-import { SlidersHorizontalIcon } from "phosphor-react-native";
 import { useTranslation } from "react-i18next";
-import { ScrollView, View, StyleSheet, Pressable } from "react-native";
+import { ScrollView, View, StyleSheet } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 import {
@@ -108,19 +107,9 @@ const PracticeWelcomePage: React.FC = () => {
   return (
     <View style={styles.main}>
       <View style={[styles.container, { paddingTop: insets.top }]}>
-        <PageTitle
-          icon={
-            <Pressable onPress={() => toChooseAlphabet()}>
-              <>
-                <SlidersHorizontalIcon size={32} color={colors.BgContrast} />
-              </>
-            </Pressable>
-          }
-        >
-          {t("tabs.practice")}
-        </PageTitle>
+        <PageTitle>{t("tabs.practice")}</PageTitle>
 
-        <EducationKanaSelectedCard />
+        <EducationKanaSelectedCard onSelectKana={toChooseAlphabet} />
       </View>
 
       <ScrollView

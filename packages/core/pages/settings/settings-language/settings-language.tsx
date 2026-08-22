@@ -29,7 +29,7 @@ const Item = ({ title, lang, colors, onPress, active }: ItemProps) => {
     if (key === ShortLanguage.ES_MX) return "mx";
     if (key === ShortLanguage.PT_BR) return "br";
     if (key === ShortLanguage.PT_PT) return "pt";
-    if (key === ShortLanguage.KO_KR) return "kr";
+    if (key === ShortLanguage.ko) return "kr";
 
     if (key === ShortLanguage.ZH_CN) return "cn";
     if (key === ShortLanguage.ZH_HK) return "hk";
@@ -39,14 +39,14 @@ const Item = ({ title, lang, colors, onPress, active }: ItemProps) => {
   };
 
   return (
-    <Pressable onPress={onPress} style={styles.item}>
+    <Pressable onPress={onPress} style={active ? styles.item__active : styles.item}>
       <View style={styles.row}>
         <CountryFlag
           style={styles.languageFlag}
           isoCode={getIsoCode((lang || "") as ShortLanguage)}
           size={24}
         />
-        <Text style={styles.item__text}>{title}</Text>
+        <Text style={active ? styles.item__text_active : styles.item__text}>{title}</Text>
       </View>
 
       {active && <CheckIcon color={colors.BgContrast} size={20} />}
@@ -87,21 +87,23 @@ const SettingsLanguagePage: React.FC = () => {
           }}
         />
 
-        <FlatList
-          style={{ flex: 1 }}
-          data={languageList}
-          renderItem={({ item }) => (
-            <Item
-              active={langToEdit === null ? i18n.language === item.key : langToEdit === item.key}
-              onPress={() => setAppLanguage(item.key)}
-              colors={colors}
-              key={item.key}
-              lang={item.key}
-              title={item.title}
-            />
-          )}
-          keyExtractor={(item) => item.key}
-        />
+        <View style={{ paddingHorizontal: 16, flex: 1 }}>
+          <FlatList
+            style={{ flex: 1 }}
+            data={languageList}
+            renderItem={({ item }) => (
+              <Item
+                active={langToEdit === null ? i18n.language === item.key : langToEdit === item.key}
+                onPress={() => setAppLanguage(item.key)}
+                colors={colors}
+                key={item.key}
+                lang={item.key}
+                title={item.title}
+              />
+            )}
+            keyExtractor={(item) => item.key}
+          />
+        </View>
       </View>
     </ModelContainer>
   );
@@ -109,12 +111,31 @@ const SettingsLanguagePage: React.FC = () => {
 
 const makeStyles = (colors: ColorsType) =>
   StyleSheet.create({
-    item: {
+    item__active: {
+      marginBottom: 8,
+      borderRadius: 12,
+
       height: 56,
+
       paddingLeft: 16,
       paddingRight: 16,
-      borderBottomWidth: 1,
-      borderBottomColor: colors.BorderDefault,
+
+      flexDirection: "row",
+      alignItems: "center",
+      justifyContent: "space-between",
+
+      backgroundColor: colors.BgContrast,
+    },
+    item: {
+      marginBottom: 8,
+      borderRadius: 12,
+
+      height: 56,
+
+      paddingLeft: 16,
+      paddingRight: 16,
+
+      backgroundColor: colors.BgSecondary,
 
       flexDirection: "row",
       alignItems: "center",
@@ -130,13 +151,15 @@ const makeStyles = (colors: ColorsType) =>
       color: colors.TextPrimary,
       lineHeight: 24,
     },
+    item__text_active: {
+      ...Typography.boldDefault,
+      color: colors.TextContrastPrimary,
+      lineHeight: 24,
+    },
     languageFlag: {
       borderRadius: 24,
       width: 24,
       height: 24,
-
-      borderWidth: 1,
-      borderColor: colors.BorderDefault,
     },
   });
 

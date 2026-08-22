@@ -1,5 +1,6 @@
 const English = {
   common: {
+    save: "Save",
     done: "Done",
     close: "Close",
     reset: "Reset",
@@ -188,6 +189,8 @@ const English = {
     login: "Log in",
     continueWithoutLogin: "Continue without signing in",
     fields: {
+      newName: "New name",
+      oldPassword: "Old password",
       name: "Name",
       email: "Email address",
       password: "Password",
@@ -218,6 +221,8 @@ const English = {
       confirm: "Confirm",
     },
     errors: {
+      incorrectOldPassword: "Incorrect old password",
+      nameTooLong: "Name must be 16 characters or fewer",
       nameRequired: "Enter your name",
       emailRequired: "Enter your email",
       invalidEmail: "Invalid email",
@@ -247,6 +252,26 @@ const English = {
     },
   },
   profile: {
+    avatar: {
+      title: "Profile photo",
+      takePhoto: "Take photo",
+      chooseFromLibrary: "Choose from library",
+      remove: "Remove photo",
+      errors: {
+        cameraPermission: "Camera access is not allowed. Enable it in your device settings.",
+        fileTooLarge: "The image is too large. Maximum size is 5 MB.",
+        invalidImage: "Unsupported image. Use JPEG, PNG or WebP.",
+        storageUnavailable: "Storage is temporarily unavailable. Please try again.",
+        failed: "Couldn't update the photo. Please try again later.",
+      },
+    },
+    edit: {
+      title: "Edit profile",
+      name: "Name",
+      password: "Password",
+      changeName: "Change name",
+      changePassword: "Change password",
+    },
     signInPrompt: "Sign in to {{app}} to sync your progress across devices.",
     signInButton: "Sign in or create an account",
   },

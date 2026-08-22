@@ -27,7 +27,7 @@ const resources: { [key: string]: { translation: Language } } = {
   id: { translation: Indonesian },
 
   // Корейский
-  "ko-KR": { translation: Korean },
+  ko: { translation: Korean },
   // Китай (упрощённый) 🇨🇳
   "zh-CN": { translation: ChineseCN },
   // Тайвань (традиционный) 🇹🇼

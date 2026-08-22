@@ -49,7 +49,7 @@ const WelcomePage: React.FC = () => {
     if (key === ShortLanguage.ES_MX) return "mx";
     if (key === ShortLanguage.PT_BR) return "br";
     if (key === ShortLanguage.PT_PT) return "pt";
-    if (key === ShortLanguage.KO_KR) return "kr";
+    if (key === ShortLanguage.ko) return "kr";
 
     if (key === ShortLanguage.ZH_CN) return "cn";
     if (key === ShortLanguage.ZH_HK) return "hk";
@@ -132,7 +132,7 @@ const makeStyles = (colors: ColorsType, insets: EdgeInsets) =>
     },
 
     languageContainer: {
-      paddingTop: 16,
+      flex: 1,
       paddingLeft: insets.left + 16,
       paddingRight: insets.right + 16,
     },

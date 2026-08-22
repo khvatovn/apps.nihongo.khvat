@@ -13,7 +13,7 @@
     "typescript-eslint": "^8.61.1"
   },
   "overrides": {
-    "react-native": "0.85.3",
+    "react-native": "0.86.2",
     "react": "19.2.3",
     "i18next": "25.10.10",
     "react-i18next": "15.7.4"
@@ -30,6 +30,6 @@
     "packages/*"
   ],
   "dependencies": {
-    "expo-store-review": "~56.0.3"
+    "expo-store-review": "~57.0.2"
   }
 }

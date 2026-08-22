@@ -1,6 +1,7 @@
 import { ACCESS_TOKEN, REFRESH_TOKEN } from "@nihongo/core/shared/constants/storageKeys";
-import { apiFetch } from "@nihongo/core/shared/lib/api-gateway";
+import { apiFetch, ApiFetchOptions } from "@nihongo/core/shared/lib/api-gateway";
 import AsyncStorage from "@react-native-async-storage/async-storage";
+import { File as FileSystemFile } from "expo-file-system";
 
 export const getAccessToken = () => AsyncStorage.getItem(ACCESS_TOKEN);
 export const getRefreshToken = () => AsyncStorage.getItem(REFRESH_TOKEN);
@@ -55,9 +56,13 @@ const withAuth = (init: RequestInit, token: string | null): RequestInit => ({
   },
 });
 
-export const authFetch = async (path: string, init: RequestInit = {}): Promise<Response> => {
+export const authFetch = async (
+  path: string,
+  init: RequestInit = {},
+  options?: ApiFetchOptions,
+): Promise<Response> => {
   const token = await getAccessToken();
-  const res = await apiFetch(path, withAuth(init, token));
+  const res = await apiFetch(path, withAuth(init, token), options);
 
   if (res.status !== 401) return res;
 
@@ -65,12 +70,14 @@ export const authFetch = async (path: string, init: RequestInit = {}): Promise<R
     .clone()
     .json()
     .catch(() => ({}) as { error?: string });
-  if (body.error !== "token_expired") return res;
+  if (body.error !== "token_expired") {
+    return res;
+  }
 
   const newToken = await refreshAccessToken();
   if (!newToken) return res;
 
-  return apiFetch(path, withAuth(init, newToken));
+  return apiFetch(path, withAuth(init, newToken), options);
 };
 
 export const logout = async (): Promise<void> => {
@@ -133,4 +140,88 @@ export const getProfile = async (): Promise<Profile | null> => {
   } catch {
     return null;
   }
+};
+
+export type UpdateProfileResult = AccountActionResult & { profile?: Profile };
+
+const PROFILE_WRITE_TIMEOUT = 15_000;
+const AVATAR_UPLOAD_TIMEOUT = 30_000;
+
+export const updateProfile = async (
+  fields: {
+    name?: string;
+    avatar_url?: string;
+  },
+  signal?: AbortSignal,
+): Promise<UpdateProfileResult> => {
+  const res = await authFetch(
+    "/api/v2/profile",
+    {
+      method: "PATCH",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(fields),
+      signal,
+    },
+    { timeout: PROFILE_WRITE_TIMEOUT, failover: false },
+  );
+
+  const { data } = await readResponseBody(res);
+
+  if (!res.ok) {
+    return { ok: false, status: res.status, error: data.error };
+  }
+
+  return { ok: true, status: res.status, profile: data as Profile };
+};
+
+const readResponseBody = async (
+  res: Response,
+): Promise<{ raw: string; data: Partial<Profile> & { error?: string } }> => {
+  const raw = await res.text().catch(() => "");
+
+  try {
+    return { raw, data: JSON.parse(raw) };
+  } catch {
+    return { raw, data: {} };
+  }
+};
+
+export type AvatarFile = { uri: string; name: string; type: string };
+
+export const uploadAvatar = async (
+  file: AvatarFile,
+  signal?: AbortSignal,
+): Promise<UpdateProfileResult> => {
+  const form = new FormData();
+
+  const source = new FileSystemFile(file.uri);
+  form.append("file", source as unknown as Blob);
+
+  const res = await authFetch(
+    "/api/v2/profile/avatar",
+    { method: "POST", body: form, signal },
+    { timeout: AVATAR_UPLOAD_TIMEOUT, failover: false },
+  );
+
+  const { data } = await readResponseBody(res);
+
+  if (!res.ok) return { ok: false, status: res.status, error: data.error };
+
+  return { ok: true, status: res.status, profile: data as Profile };
+};
+
+export const removeAvatar = (signal?: AbortSignal): Promise<UpdateProfileResult> =>
+  updateProfile({ avatar_url: "" }, signal);
+
+export const changePassword = async (
+  oldPassword: string,
+  newPassword: string,
+): Promise<AccountActionResult> => {
+  const res = await authFetch("/api/v2/auth/password/change", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ old_password: oldPassword, new_password: newPassword }),
+  });
+
+  return { ok: res.ok, status: res.status, error: await readError(res) };
 };

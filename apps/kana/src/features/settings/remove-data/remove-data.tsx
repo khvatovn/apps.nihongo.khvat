@@ -3,6 +3,8 @@ import React from "react";
 import SettingItem from "@nihongo/core/entities/setting/setting-item/setting-item";
 import { useModal } from "@nihongo/core/shared/contexts/modal/modal-context";
 import { ConfirmationModal } from "@nihongo/core/shared/contexts/modal/presets/confirmation";
+import { useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
+import { TrashIcon } from "phosphor-react-native";
 import { useTranslation } from "react-i18next";
 
 import { useEraseData } from "@/features/settings/lib/use-erase-data";
@@ -15,6 +17,8 @@ const RemoveData: React.FC = () => {
     t,
     i18n: { language },
   } = useTranslation();
+
+  const { colors } = useThemeContext();
 
   const { showModal, hideModal } = useModal();
 
@@ -76,6 +80,7 @@ const RemoveData: React.FC = () => {
 
   return (
     <SettingItem
+      leftIcon={<TrashIcon size={20} color={colors.BgContrast} />}
       isLast
       text={t("settings.eraseData.button")}
       subText={dataTakesUp}

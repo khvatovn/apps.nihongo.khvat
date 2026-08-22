@@ -1,8 +1,9 @@
 const hokkaidoDarkTheme = {
   BgPrimary: "#0C1012",
   BgSecondary: "#182023",
-  BgLightGray: "#2A3A3F",
   BgGray: "#7AA6B3",
+  BgLightGray: "#2A3A3F",
+  BgDarkGray: "#CDE6ED",
   BgDisabled: "#56757E",
   BgContrast: "#FFFFFF",
   BgContrastPressed: "#CDE6ED",

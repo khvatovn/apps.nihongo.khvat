@@ -6,6 +6,7 @@ const darkTheme = {
   BgWhite: "#FFFFFF",
   BgGray: "#BBBBBB",
   BgLightGray: "#363636",
+  BgDarkGray: "#ECECEC",
   BgContrast: "#FFFFFF",
   BgContrastSecondary: "#F6F6F6",
   BgContrastPressed: "#ECECEC",

@@ -1,5 +1,6 @@
 const French = {
   common: {
+    save: "Enregistrer",
     done: "Terminé",
     close: "Fermer",
     reset: "Réinitialiser",
@@ -191,6 +192,8 @@ const French = {
     login: "Se connecter",
     continueWithoutLogin: "Continuer sans se connecter",
     fields: {
+      newName: "Nouveau nom",
+      oldPassword: "Ancien mot de passe",
       name: "Nom",
       email: "Adresse e-mail",
       password: "Mot de passe",
@@ -221,6 +224,8 @@ const French = {
       confirm: "Confirmer",
     },
     errors: {
+      incorrectOldPassword: "Ancien mot de passe incorrect",
+      nameTooLong: "Le nom ne doit pas dépasser 16 caractères",
       nameRequired: "Entrez votre nom",
       emailRequired: "Entrez votre e-mail",
       invalidEmail: "E-mail invalide",
@@ -250,6 +255,27 @@ const French = {
     },
   },
   profile: {
+    avatar: {
+      title: "Photo de profil",
+      takePhoto: "Prendre une photo",
+      chooseFromLibrary: "Choisir dans la galerie",
+      remove: "Supprimer la photo",
+      errors: {
+        cameraPermission:
+          "Accès à l'appareil photo refusé. Autorisez-le dans les réglages de l'appareil.",
+        fileTooLarge: "L'image est trop lourde. Maximum 5 Mo.",
+        invalidImage: "Format non pris en charge. Utilisez JPEG, PNG ou WebP.",
+        storageUnavailable: "Le stockage est temporairement indisponible. Veuillez réessayer.",
+        failed: "Impossible de mettre à jour la photo. Réessayez plus tard.",
+      },
+    },
+    edit: {
+      title: "Modifier le profil",
+      name: "Nom",
+      password: "Mot de passe",
+      changeName: "Modifier le nom",
+      changePassword: "Modifier le mot de passe",
+    },
     signInPrompt:
       "Connectez-vous à {{app}} pour synchroniser votre progression sur tous les appareils.",
     signInButton: "Se connecter ou créer un compte",

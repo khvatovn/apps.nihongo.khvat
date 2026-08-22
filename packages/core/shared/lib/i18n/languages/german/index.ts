@@ -1,5 +1,6 @@
 const German = {
   common: {
+    save: "Speichern",
     done: "Fertig",
     close: "Schließen",
     reset: "Zurücksetzen",
@@ -189,6 +190,8 @@ const German = {
     login: "Anmelden",
     continueWithoutLogin: "Ohne Anmeldung fortfahren",
     fields: {
+      newName: "Neuer Name",
+      oldPassword: "Altes Passwort",
       name: "Name",
       email: "E-Mail-Adresse",
       password: "Passwort",
@@ -220,6 +223,8 @@ const German = {
       confirm: "Bestätigen",
     },
     errors: {
+      incorrectOldPassword: "Altes Passwort ist falsch",
+      nameTooLong: "Name darf höchstens 16 Zeichen lang sein",
       nameRequired: "Gib deinen Namen ein",
       emailRequired: "Gib deine E-Mail ein",
       invalidEmail: "Ungültige E-Mail",
@@ -249,6 +254,27 @@ const German = {
     },
   },
   profile: {
+    avatar: {
+      title: "Profilbild",
+      takePhoto: "Foto aufnehmen",
+      chooseFromLibrary: "Aus der Galerie wählen",
+      remove: "Foto entfernen",
+      errors: {
+        cameraPermission: "Kein Zugriff auf die Kamera. Erlaube ihn in den Geräteeinstellungen.",
+        fileTooLarge: "Das Bild ist zu groß. Maximal 5 MB.",
+        invalidImage: "Nicht unterstütztes Format. Verwende JPEG, PNG oder WebP.",
+        storageUnavailable:
+          "Der Speicher ist vorübergehend nicht verfügbar. Bitte versuche es erneut.",
+        failed: "Foto konnte nicht aktualisiert werden. Bitte versuche es später erneut.",
+      },
+    },
+    edit: {
+      title: "Profil bearbeiten",
+      name: "Name",
+      password: "Passwort",
+      changeName: "Name ändern",
+      changePassword: "Passwort ändern",
+    },
     signInPrompt:
       "Melde dich bei {{app}} an, um deinen Fortschritt auf allen Geräten zu synchronisieren.",
     signInButton: "Anmelden oder Konto erstellen",

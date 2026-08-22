@@ -8,6 +8,9 @@ import { SignInPage } from "@nihongo/core/pages/auth/sign-in";
 import { SignUpPage } from "@nihongo/core/pages/auth/sign-up";
 import { SubmitCode } from "@nihongo/core/pages/auth/submit-code";
 import ProfilePage from "@nihongo/core/pages/profile";
+import ProfileEditPage from "@nihongo/core/pages/profile/edit";
+import ProfileChangeNamePage from "@nihongo/core/pages/profile/edit/change-name";
+import ProfileChangePasswordPage from "@nihongo/core/pages/profile/edit/change-password";
 import SettingsLanguagePage from "@nihongo/core/pages/settings/settings-language/settings-language";
 import SettingsThemePage from "@nihongo/core/pages/settings/settings-theme/settings-theme";
 import WelcomePage from "@nihongo/core/pages/welcome/welcome";
@@ -75,6 +78,11 @@ const RootStack = {
 
     [ROUTES.SETTINGS_LANGUAGE]: withModal(SettingsLanguagePage),
     [ROUTES.SETTINGS_THEME]: withModal(SettingsThemePage),
+
+    // ? pages from @nihongo/core
+    [ROUTES.PROFILE_EDIT]: withModal(ProfileEditPage),
+    [ROUTES.PROFILE_EDIT_NAME]: withModal(ProfileChangeNamePage),
+    [ROUTES.PROFILE_EDIT_PASSWORD]: withModal(ProfileChangePasswordPage),
   },
 };
 

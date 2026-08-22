@@ -1,5 +1,6 @@
 const Russian = {
   common: {
+    save: "Сохранить",
     done: "Готово",
     close: "Закрыть",
     reset: "Сбросить",
@@ -189,6 +190,8 @@ const Russian = {
     login: "Вход",
     continueWithoutLogin: "Продолжить без входа",
     fields: {
+      newName: "Новое имя",
+      oldPassword: "Старый пароль",
       name: "Имя",
       email: "Адрес эл. почты",
       password: "Пароль",
@@ -219,6 +222,8 @@ const Russian = {
       confirm: "Подтвердить",
     },
     errors: {
+      incorrectOldPassword: "Неверный старый пароль",
+      nameTooLong: "Имя не длиннее 16 символов",
       nameRequired: "Введите имя",
       emailRequired: "Введите email",
       invalidEmail: "Некорректный email",
@@ -248,6 +253,26 @@ const Russian = {
     },
   },
   profile: {
+    avatar: {
+      title: "Фото профиля",
+      takePhoto: "Сделать фото",
+      chooseFromLibrary: "Выбрать из галереи",
+      remove: "Удалить фото",
+      errors: {
+        cameraPermission: "Нет доступа к камере. Разрешите его в настройках устройства.",
+        fileTooLarge: "Картинка слишком большая. Максимум — 5 МБ.",
+        invalidImage: "Неподдерживаемый формат. Подойдут JPEG, PNG или WebP.",
+        storageUnavailable: "Хранилище временно недоступно. Попробуйте ещё раз.",
+        failed: "Не удалось обновить фото. Попробуйте позже.",
+      },
+    },
+    edit: {
+      title: "Редактировать профиль",
+      name: "Имя",
+      password: "Пароль",
+      changeName: "Изменить имя",
+      changePassword: "Изменить пароль",
+    },
     signInPrompt: "Войдите в {{app}}, чтобы синхронизировать прогресс на всех устройствах.",
     signInButton: "Войти или создать аккаунт",
   },

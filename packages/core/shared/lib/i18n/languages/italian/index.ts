@@ -1,5 +1,6 @@
 const Italian = {
   common: {
+    save: "Salva",
     done: "Fatto",
     close: "Chiudi",
     reset: "Reimposta",
@@ -190,6 +191,8 @@ const Italian = {
     login: "Accedi",
     continueWithoutLogin: "Continua senza accedere",
     fields: {
+      newName: "Nuovo nome",
+      oldPassword: "Vecchia password",
       name: "Nome",
       email: "Indirizzo email",
       password: "Password",
@@ -221,6 +224,8 @@ const Italian = {
       confirm: "Conferma",
     },
     errors: {
+      incorrectOldPassword: "Vecchia password errata",
+      nameTooLong: "Il nome può avere al massimo 16 caratteri",
       nameRequired: "Inserisci il nome",
       emailRequired: "Inserisci l'email",
       invalidEmail: "Email non valida",
@@ -250,6 +255,27 @@ const Italian = {
     },
   },
   profile: {
+    avatar: {
+      title: "Foto del profilo",
+      takePhoto: "Scatta una foto",
+      chooseFromLibrary: "Scegli dalla galleria",
+      remove: "Rimuovi foto",
+      errors: {
+        cameraPermission:
+          "Accesso alla fotocamera negato. Consentilo nelle impostazioni del dispositivo.",
+        fileTooLarge: "L'immagine è troppo grande. Massimo 5 MB.",
+        invalidImage: "Formato non supportato. Usa JPEG, PNG o WebP.",
+        storageUnavailable: "L'archivio è temporaneamente non disponibile. Riprova.",
+        failed: "Impossibile aggiornare la foto. Riprova più tardi.",
+      },
+    },
+    edit: {
+      title: "Modifica profilo",
+      name: "Nome",
+      password: "Password",
+      changeName: "Cambia nome",
+      changePassword: "Cambia password",
+    },
     signInPrompt: "Accedi a {{app}} per sincronizzare i progressi su tutti i dispositivi.",
     signInButton: "Accedi o crea un account",
   },

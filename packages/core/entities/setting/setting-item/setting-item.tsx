@@ -9,10 +9,9 @@ import { useHaptic } from "../../../shared/contexts/haptic/haptic-context";
 import { useThemeContext } from "../../../shared/contexts/theme/theme-context";
 import { Typography } from "../../../shared/typography";
 
-
-
 interface SettingItemProps {
   icon?: string;
+  leftIcon?: React.ReactNode;
   text: string;
   subText?: string;
   isEnable?: boolean;
@@ -29,6 +28,7 @@ interface SettingItemProps {
 
 const SettingItem: React.FC<SettingItemProps> = ({
   text,
+  leftIcon,
   icon,
   subText,
   isEnable,
@@ -55,7 +55,7 @@ const SettingItem: React.FC<SettingItemProps> = ({
               borderColor: colors.BorderDefault,
             }
           : {},
-        !subText ? { height: 44 } : { height: 64 },
+        !subText ? { height: 56 } : { height: 76 },
         isContrast
           ? {
               backgroundColor: colors.BgContrastSecondary,
@@ -81,6 +81,15 @@ const SettingItem: React.FC<SettingItemProps> = ({
         }
       }}
     >
+      {leftIcon && (
+        <View
+          style={{
+            marginRight: 12,
+          }}
+        >
+          {leftIcon}
+        </View>
+      )}
       {icon && (
         <Image
           style={[
@@ -109,7 +118,7 @@ const SettingItem: React.FC<SettingItemProps> = ({
           numberOfLines={1}
           ellipsizeMode="tail"
           style={[
-            Typography.regularDefault,
+            Typography.boldDefault,
             { color: colors.TextPrimary },
             isContrast ? { color: colors.TextContrastPrimary } : {},
             isDanger ? { color: colors.TextDanger } : {},

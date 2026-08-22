@@ -1,5 +1,6 @@
 const Indonesian = {
   common: {
+    save: "Simpan",
     done: "Selesai",
     close: "Tutup",
     reset: "Atur ulang",
@@ -189,6 +190,8 @@ const Indonesian = {
     login: "Masuk",
     continueWithoutLogin: "Lanjutkan tanpa masuk",
     fields: {
+      newName: "Nama baru",
+      oldPassword: "Kata sandi lama",
       name: "Nama",
       email: "Alamat email",
       password: "Kata sandi",
@@ -219,6 +222,8 @@ const Indonesian = {
       confirm: "Konfirmasi",
     },
     errors: {
+      incorrectOldPassword: "Kata sandi lama salah",
+      nameTooLong: "Nama maksimal 16 karakter",
       nameRequired: "Masukkan nama",
       emailRequired: "Masukkan email",
       invalidEmail: "Email tidak valid",
@@ -248,6 +253,26 @@ const Indonesian = {
     },
   },
   profile: {
+    avatar: {
+      title: "Foto profil",
+      takePhoto: "Ambil foto",
+      chooseFromLibrary: "Pilih dari galeri",
+      remove: "Hapus foto",
+      errors: {
+        cameraPermission: "Akses kamera ditolak. Izinkan di pengaturan perangkat.",
+        fileTooLarge: "Gambar terlalu besar. Maksimal 5 MB.",
+        invalidImage: "Format tidak didukung. Gunakan JPEG, PNG, atau WebP.",
+        storageUnavailable: "Penyimpanan sementara tidak tersedia. Coba lagi.",
+        failed: "Gagal memperbarui foto. Coba lagi nanti.",
+      },
+    },
+    edit: {
+      title: "Edit profil",
+      name: "Nama",
+      password: "Kata sandi",
+      changeName: "Ubah nama",
+      changePassword: "Ubah kata sandi",
+    },
     signInPrompt: "Masuk ke {{app}} untuk menyinkronkan progres di semua perangkat.",
     signInButton: "Masuk atau buat akun",
   },

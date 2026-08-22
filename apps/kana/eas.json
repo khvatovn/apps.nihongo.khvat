@@ -12,7 +12,8 @@
       "env": {
         "APP_VARIANT": "production",
         "NODE_ENV": "production",
-        "STORE": "Google Play"
+        "STORE": "Google Play",
+        "GOOGLE_OAUTH_ANDROID_CLIENT_ID": "268156862431-ndcc82t4bjm8gp4jrf3ljgqv5onk6a9k.apps.googleusercontent.com"
       },
       "android": {
         "buildType": "app-bundle"

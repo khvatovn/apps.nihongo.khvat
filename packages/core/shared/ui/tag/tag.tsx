@@ -10,12 +10,13 @@ interface TagProps {
   text: string;
 
   isUpperCase?: boolean;
+  isLowerCase?: boolean;
 }
 
-const Tag: React.FC<TagProps> = ({ text, icon, isUpperCase }) => {
+const Tag: React.FC<TagProps> = ({ text, icon, isUpperCase, isLowerCase }) => {
   const { colors } = useThemeContext();
 
-  const styles = makeStyles(colors, isUpperCase || false);
+  const styles = makeStyles(colors, isUpperCase || false, isLowerCase || false);
 
   return (
     <View style={styles.tag}>
@@ -25,7 +26,7 @@ const Tag: React.FC<TagProps> = ({ text, icon, isUpperCase }) => {
   );
 };
 
-const makeStyles = (colors: ColorsType, isUpperCase: boolean) =>
+const makeStyles = (colors: ColorsType, isUpperCase: boolean, isLowerCase: boolean) =>
   StyleSheet.create({
     tag: {
       width: "auto",
@@ -40,16 +41,14 @@ const makeStyles = (colors: ColorsType, isUpperCase: boolean) =>
 
       flexDirection: "row",
       alignItems: "center",
+
       gap: 2,
     },
     text: {
       color: colors.TextPrimary,
       ...Typography.regularCaption,
 
-      textTransform: isUpperCase ? "uppercase" : "capitalize",
-
-      marginHorizontal: 2,
-      marginVertical: 2,
+      textTransform: isUpperCase ? "uppercase" : isLowerCase ? "lowercase" : "capitalize",
     },
   });
 
