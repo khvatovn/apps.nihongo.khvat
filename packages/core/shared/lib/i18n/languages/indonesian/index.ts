@@ -84,6 +84,8 @@ const Indonesian = {
     },
     deleteAccount: {
       button: "Hapus akun",
+      confirmTitle: "Yakin ingin menghapus akun Anda?",
+      confirmSubtitle: "Semua progres dan data akun Anda akan ikut terhapus.",
       title: "Hapus akun?",
       subtitle:
         "Masukkan kode 6 digit dari email. Tindakan ini permanen dan tidak dapat dibatalkan — akun serta semua data akan dihapus.",

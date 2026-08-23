@@ -85,6 +85,8 @@ const SpanishMX = {
     },
     deleteAccount: {
       button: "Eliminar cuenta",
+      confirmTitle: "¿Seguro que quieres eliminar tu cuenta?",
+      confirmSubtitle: "Se eliminarán todo tu progreso y los datos de tu cuenta.",
       title: "¿Eliminar cuenta?",
       subtitle:
         "Ingresa el código de 6 dígitos que te enviamos por correo. Esta acción es permanente e irreversible.",

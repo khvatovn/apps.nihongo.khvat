@@ -82,6 +82,8 @@ const ChineseTW = {
     },
     deleteAccount: {
       button: "刪除帳號",
+      confirmTitle: "確定要刪除帳號嗎？",
+      confirmSubtitle: "您所有的學習進度與帳號資料都會一併刪除。",
       title: "要刪除帳號嗎？",
       subtitle: "輸入我們寄到您信箱的 6 位數驗證碼。此操作無法復原，帳號與所有資料將被刪除。",
       confirm: "刪除帳號",

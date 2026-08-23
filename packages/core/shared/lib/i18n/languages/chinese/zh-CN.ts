@@ -83,6 +83,8 @@ const ChineseCN = {
     },
     deleteAccount: {
       button: "删除账户",
+      confirmTitle: "确定要删除账户吗？",
+      confirmSubtitle: "您的所有学习进度和账户数据都将一并删除。",
       title: "删除账户？",
       subtitle: "请输入我们发送到您邮箱的 6 位验证码。此操作不可撤销，账户和所有数据将被删除。",
       confirm: "删除账户",

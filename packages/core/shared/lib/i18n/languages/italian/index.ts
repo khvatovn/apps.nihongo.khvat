@@ -85,6 +85,8 @@ const Italian = {
     },
     deleteAccount: {
       button: "Elimina account",
+      confirmTitle: "Vuoi davvero eliminare il tuo account?",
+      confirmSubtitle: "Tutti i tuoi progressi e i dati del tuo account verranno eliminati.",
       title: "Eliminare l'account?",
       subtitle:
         "Inserisci il codice a 6 cifre che ti abbiamo inviato via email. Questa azione è permanente e irreversibile.",

@@ -83,6 +83,8 @@ const Korean = {
     },
     deleteAccount: {
       button: "계정 삭제",
+      confirmTitle: "정말 계정을 삭제하시겠습니까?",
+      confirmSubtitle: "모든 학습 진행 상황과 계정 데이터가 함께 삭제됩니다.",
       title: "계정을 삭제하시겠습니까?",
       subtitle:
         "이메일로 받은 6자리 코드를 입력하세요. 이 작업은 되돌릴 수 없으며 계정과 모든 데이터가 삭제됩니다.",

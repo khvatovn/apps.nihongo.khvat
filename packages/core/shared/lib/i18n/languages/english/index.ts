@@ -84,6 +84,8 @@ const English = {
     },
     deleteAccount: {
       button: "Remove account",
+      confirmTitle: "Are you sure you want to delete your account?",
+      confirmSubtitle: "All your progress and account data will be deleted along with it.",
       title: "Delete account?",
       subtitle:
         "Enter the 6-digit code we sent to your email. This action is permanent and cannot be undone.",

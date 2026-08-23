@@ -84,6 +84,8 @@ const German = {
     },
     deleteAccount: {
       button: "Konto löschen",
+      confirmTitle: "Möchtest du dein Konto wirklich löschen?",
+      confirmSubtitle: "Dein gesamter Fortschritt und alle Kontodaten werden damit gelöscht.",
       title: "Konto löschen?",
       subtitle:
         "Gib den 6-stelligen Code aus der E-Mail ein. Diese Aktion ist unwiderruflich – Konto und alle Daten werden gelöscht.",

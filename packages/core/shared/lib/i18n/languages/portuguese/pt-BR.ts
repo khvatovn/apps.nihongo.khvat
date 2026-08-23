@@ -84,6 +84,8 @@ const PortugueseBR = {
     },
     deleteAccount: {
       button: "Remover conta",
+      confirmTitle: "Tem certeza de que deseja excluir sua conta?",
+      confirmSubtitle: "Todo o seu progresso e os dados da sua conta serão excluídos junto.",
       title: "Excluir conta?",
       subtitle:
         "Digite o código de 6 dígitos que enviamos para o seu e-mail. Esta ação é permanente e não pode ser desfeita.",

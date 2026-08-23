@@ -80,9 +80,7 @@ const AccountActions: React.FC = () => {
       ),
     });
 
-  // * Шаг 1: запрашиваем код и открываем модалку ввода. resend_cooldown = код уже отправлен,
-  // * тоже открываем модалку; account_migrating и прочее — показываем ошибку.
-  const confirmDelete = async () => {
+  const requestDelete = async () => {
     try {
       const { ok, error } = await requestAccountDeletion();
 
@@ -101,6 +99,22 @@ const AccountActions: React.FC = () => {
       showError(t("auth.errors.requestFailed"));
     }
   };
+
+  const confirmDelete = () =>
+    showModal({
+      closeOnBackdrop: false,
+      onClose: () => {},
+      content: (
+        <ConfirmationModal
+          title={t("settings.deleteAccount.confirmTitle")}
+          subtitle={t("settings.deleteAccount.confirmSubtitle")}
+          cancelText={t("alert.cancel")}
+          confirmText={t("settings.deleteAccount.confirm")}
+          onConfirm={() => void requestDelete()}
+          onCancel={hideModal}
+        />
+      ),
+    });
 
   return (
     <>
