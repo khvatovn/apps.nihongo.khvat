@@ -6,6 +6,7 @@ import React, { StrictMode } from "react";
 import { ActionSheetProvider } from "@expo/react-native-action-sheet";
 import { BottomTabVisibilityProvider } from "@nihongo/core/shared/contexts/bottom-tab-visibility";
 import { DeviceRegistrationProvider } from "@nihongo/core/shared/contexts/device-registration";
+import { EraseDataProvider } from "@nihongo/core/shared/contexts/erase-data/erase-data-context";
 import { HapticProvider } from "@nihongo/core/shared/contexts/haptic/haptic-context";
 import { ModalProvider } from "@nihongo/core/shared/contexts/modal/modal-context";
 import { RemoteConfigProvider } from "@nihongo/core/shared/contexts/remote-config/remote-config-context";
@@ -36,6 +37,7 @@ const App: React.FC = () => {
             [ApiGatewayProvider],
             [RemoteConfigProvider],
             [SafeAreaProvider],
+            [EraseDataProvider],
             [ModalProvider],
             [BottomTabVisibilityProvider],
             [NotificationsWrapper],

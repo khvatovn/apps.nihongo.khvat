@@ -15,6 +15,7 @@ import SettingsLanguagePage from "@nihongo/core/pages/settings/settings-language
 import SettingsThemePage from "@nihongo/core/pages/settings/settings-theme/settings-theme";
 import WelcomePage from "@nihongo/core/pages/welcome/welcome";
 import { isAndroid } from "@nihongo/core/shared/constants/platformUtil";
+import { ModalProvider } from "@nihongo/core/shared/contexts/modal/modal-context";
 import { TabBarButton } from "@nihongo/core/shared/ui/bottom-tap";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { createStaticNavigation } from "@react-navigation/native";
@@ -33,7 +34,11 @@ import SectionsPage from "@/pages/sections";
 import SettingsPage from "@/pages/settings/settings-page";
 
 const withModal = <P extends object>(Component: React.ComponentType<P>) => ({
-  screen: Component,
+  screen: (props: P) => (
+    <ModalProvider>
+      <Component {...props} />
+    </ModalProvider>
+  ),
   options: {
     presentation: "modal",
     headerShadowVisible: false,

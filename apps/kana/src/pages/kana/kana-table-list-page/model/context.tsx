@@ -1,6 +1,7 @@
 import React, { createContext, useState, useEffect, useCallback, useMemo, ReactNode } from "react";
 
 import { KANA_STATISTICS } from "@nihongo/core/shared/constants/storageKeys";
+import { useRegisterEraseSource } from "@nihongo/core/shared/contexts/erase-data/erase-data-context";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
 import { StatisticChapter, StatisticChapterRaw, StatisticLevel } from "./types";
@@ -18,7 +19,6 @@ export interface StatisticsContextType {
   isEnabled: boolean;
   recalculateOnce: (chapter: KanaAlphabet, id: string, isCorrect: boolean) => void;
   toggleStatistics: () => void;
-  clearStatistics: () => void;
 }
 
 const initialState: StatisticsState = {
@@ -90,10 +90,18 @@ export const StatisticsProvider = ({ children }: { children: ReactNode }) => {
     });
   }, []);
 
-  const clearStatistics = useCallback(() => {
-    setState(initialState);
-    save(initialState);
-  }, []);
+  const dataSize = useMemo(
+    () => new Blob([JSON.stringify(state.statistics)]).size,
+    [state.statistics],
+  );
+
+  useRegisterEraseSource({
+    clear: async () => {
+      setState(initialState);
+      await AsyncStorage.removeItem(KANA_STATISTICS);
+    },
+    getSize: () => dataSize,
+  });
 
   const value = useMemo(
     () => ({
@@ -101,9 +109,8 @@ export const StatisticsProvider = ({ children }: { children: ReactNode }) => {
       isEnabled: state.isEnabled,
       recalculateOnce,
       toggleStatistics,
-      clearStatistics,
     }),
-    [state.statistics, state.isEnabled, recalculateOnce, toggleStatistics, clearStatistics],
+    [state.statistics, state.isEnabled, recalculateOnce, toggleStatistics],
   );
 
   return <StatisticsContext.Provider value={value}>{children}</StatisticsContext.Provider>;

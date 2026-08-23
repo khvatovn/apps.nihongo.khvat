@@ -3,6 +3,7 @@ import React, { useCallback, useState } from "react";
 import SettingItem from "@nihongo/core/entities/setting/setting-item/setting-item";
 import SettingsSection from "@nihongo/core/entities/setting/setting-section/settings-section";
 import { useChangeAvatar } from "@nihongo/core/features/profile/change-avatar/use-change-avatar";
+import AccountActions from "@nihongo/core/features/settings/account-actions/account-actions";
 import { PROFILE_ROUTES, ProfileParamList } from "@nihongo/core/pages/profile/routes";
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
 import { useUserGatewayUrl } from "@nihongo/core/shared/lib/api-gateway";
@@ -88,8 +89,6 @@ const ProfileEditPage: React.FC = () => {
           </View>
         </Pressable>
 
-        {/* * Отмена нужна: на недоступном хосте запрос висит до таймаута, и без неё
-            пользователь просто смотрит на спиннер. */}
         {uploading && (
           <Pressable style={styles.cancel} onPress={cancelAvatarUpload}>
             <Text style={styles.cancelText}>{t("alert.cancel")}</Text>
@@ -115,6 +114,14 @@ const ProfileEditPage: React.FC = () => {
               isLast
             />
           </SettingsSection>
+        )}
+
+        {!loading && (
+          <View style={{ marginTop: 16 }}>
+            <SettingsSection>
+              <AccountActions />
+            </SettingsSection>
+          </View>
         )}
       </View>
     </ModelContainer>

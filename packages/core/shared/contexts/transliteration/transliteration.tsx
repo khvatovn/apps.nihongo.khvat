@@ -8,6 +8,7 @@ import React, {
 } from "react";
 
 import { KANA_TRANSLITERATION } from "@nihongo/core/shared/constants/storageKeys";
+import { useRegisterEraseSource } from "@nihongo/core/shared/contexts/erase-data/erase-data-context";
 import { transliterateByIndex } from "@nihongo/core/shared/helpers/wordsRomanji";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
@@ -58,6 +59,10 @@ export const TransliterationsProvider: FunctionComponent<TransliterationsProvide
     AsyncStorage.setItem(KANA_TRANSLITERATION, JSON.stringify(newTransliterations));
     setTransliterations(newTransliterations);
   };
+
+  useRegisterEraseSource({
+    clear: () => updateTransliterations(Transliterations.HEP),
+  });
 
   function replaceTransliterations(text: string, index: number = 0): string {
     if (!text) return text;

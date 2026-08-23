@@ -1,6 +1,7 @@
 import React from "react";
 
 import SettingItem from "@nihongo/core/entities/setting/setting-item/setting-item";
+import { useEraseData } from "@nihongo/core/features/settings/lib/use-erase-data";
 import { useModal } from "@nihongo/core/shared/contexts/modal/modal-context";
 import { AlertModal } from "@nihongo/core/shared/contexts/modal/presets/alert";
 import { ConfirmationModal } from "@nihongo/core/shared/contexts/modal/presets/confirmation";
@@ -15,8 +16,6 @@ import {
 import { SignOutIcon, TrashIcon } from "phosphor-react-native";
 import { useTranslation } from "react-i18next";
 
-import { useEraseData } from "@/features/settings/lib/use-erase-data";
-
 const AccountActions: React.FC = () => {
   const { t } = useTranslation();
   const { colors } = useThemeContext();
@@ -26,7 +25,7 @@ const AccountActions: React.FC = () => {
 
   const logout = async () => {
     await revokeSession();
-    eraseData();
+    await eraseData();
   };
 
   const confirmLogout = () =>
@@ -40,7 +39,7 @@ const AccountActions: React.FC = () => {
           cancelText={t("alert.cancel")}
           confirmText={t("alert.confirm")}
           onConfirm={() => {
-            logout();
+            void logout();
             hideModal();
           }}
           onCancel={hideModal}
@@ -48,11 +47,10 @@ const AccountActions: React.FC = () => {
       ),
     });
 
-  // * Удалили аккаунт: чистим токены и локальные данные, forceReset уводит на онбординг.
   const onDeleted = async () => {
     hideModal();
     await clearTokens();
-    eraseData();
+    await eraseData();
   };
 
   const showDeleteCodeModal = () =>

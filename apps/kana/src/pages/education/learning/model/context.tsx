@@ -1,6 +1,7 @@
 import React, { createContext, useState, useEffect, useCallback, useMemo, ReactNode } from "react";
 
 import { COMPLETED_LESSONS_KEYS, LESSONS_LIST } from "@nihongo/core/shared/constants/storageKeys";
+import { useRegisterEraseSource } from "@nihongo/core/shared/contexts/erase-data/erase-data-context";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
 import { getLessons } from "./api";
@@ -14,7 +15,6 @@ export interface LessonsContextType {
   loading: boolean;
   loadLessons: (lang: string, signal?: AbortSignal) => Promise<void>;
   completeLesson: (lessonKey: string) => void;
-  clearLessons: () => void;
 }
 
 const LessonsContext = createContext<LessonsContextType | null>(null);
@@ -127,12 +127,21 @@ export const LessonsProvider = ({ children }: { children: ReactNode }) => {
     });
   }, []);
 
-  const clearLessons = useCallback(() => {
-    setChapters([]);
-    setCompletedLessonsKeys([]);
-    setLang("en");
-    setLoading(false);
-  }, []);
+  const dataSize = useMemo(
+    () => new Blob([JSON.stringify({ chapters, completedLessonsKeys, lang })]).size,
+    [chapters, completedLessonsKeys, lang],
+  );
+
+  useRegisterEraseSource({
+    clear: async () => {
+      setChapters([]);
+      setCompletedLessonsKeys([]);
+      setLang("en");
+      setLoading(false);
+      await AsyncStorage.multiRemove([LESSONS_LIST, COMPLETED_LESSONS_KEYS]);
+    },
+    getSize: () => dataSize,
+  });
 
   const value = useMemo(
     () => ({
@@ -142,9 +151,8 @@ export const LessonsProvider = ({ children }: { children: ReactNode }) => {
       loading,
       loadLessons,
       completeLesson,
-      clearLessons,
     }),
-    [chapters, completedLessonsKeys, lang, loading, loadLessons, completeLesson, clearLessons],
+    [chapters, completedLessonsKeys, lang, loading, loadLessons, completeLesson],
   );
 
   return <LessonsContext.Provider value={value}>{children}</LessonsContext.Provider>;

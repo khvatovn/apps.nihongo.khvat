@@ -1,6 +1,7 @@
 import React, { createContext, useState, useEffect, useCallback, useMemo, ReactNode } from "react";
 
 import { SELECTED_KANA } from "@nihongo/core/shared/constants/storageKeys";
+import { useRegisterEraseSource } from "@nihongo/core/shared/contexts/erase-data/erase-data-context";
 import {
   baseFlatLettersId,
   dakuonFlatLettersId,
@@ -29,7 +30,6 @@ export interface KanaContextType {
   selectedLetters: number;
   fill: (ids: string[], key: KanaSection) => void;
   resetKanaSelected: () => void;
-  clearKana: () => void;
 }
 
 const initialSelected: Selected = {
@@ -94,11 +94,6 @@ export const KanaProvider = ({ children }: { children: ReactNode }) => {
     save(next);
   }, []);
 
-  const clearKana = useCallback(() => {
-    setSelected(initialSelected);
-    save(initialSelected);
-  }, []);
-
   const selectedLettersHiragana = useMemo(
     () => Object.values(selected).reduce((sum, group) => sum + group.hiragana.length, 0),
     [selected],
@@ -123,6 +118,19 @@ export const KanaProvider = ({ children }: { children: ReactNode }) => {
     };
   }, [selected]);
 
+  const dataSize = useMemo(
+    () => new Blob([JSON.stringify({ selected, selectedWords })]).size,
+    [selected, selectedWords],
+  );
+
+  useRegisterEraseSource({
+    clear: async () => {
+      setSelected(initialSelected);
+      await AsyncStorage.removeItem(SELECTED_KANA);
+    },
+    getSize: () => dataSize,
+  });
+
   const value = useMemo(
     () => ({
       selected,
@@ -132,7 +140,6 @@ export const KanaProvider = ({ children }: { children: ReactNode }) => {
       selectedLetters,
       fill,
       resetKanaSelected,
-      clearKana,
     }),
     [
       selected,
@@ -142,7 +149,6 @@ export const KanaProvider = ({ children }: { children: ReactNode }) => {
       selectedLetters,
       fill,
       resetKanaSelected,
-      clearKana,
     ],
   );
 

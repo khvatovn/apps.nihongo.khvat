@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 // * from packages/core
 
 import SettingsSection from "@nihongo/core/entities/setting/setting-section/settings-section";
+import AccountActions from "@nihongo/core/features/settings/account-actions/account-actions";
 import ContactSupport from "@nihongo/core/features/settings/contact-support/contact-support";
 import DebugInfo from "@nihongo/core/features/settings/debug-info/debug-info";
 import PrivacyPolicy from "@nihongo/core/features/settings/privacy-policy/privacy-policy";
@@ -19,7 +20,6 @@ import { useTranslation } from "react-i18next";
 import { StyleSheet, View, ScrollView, Pressable } from "react-native";
 
 import { RootStackParamList, ROUTES } from "@/app/routes.types";
-import AccountActions from "@/features/settings/account-actions/account-actions";
 
 type NavigationProp = StackNavigationProp<RootStackParamList, typeof ROUTES.SETTINGS_ROOT>;
 

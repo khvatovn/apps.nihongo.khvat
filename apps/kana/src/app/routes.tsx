@@ -16,6 +16,7 @@ import SettingsThemePage from "@nihongo/core/pages/settings/settings-theme/setti
 import SettingsTransliterationsPage from "@nihongo/core/pages/settings/settings-transliterations/settings-transliterations";
 import WelcomePage from "@nihongo/core/pages/welcome/welcome";
 import { isAndroid } from "@nihongo/core/shared/constants/platformUtil";
+import { ModalProvider } from "@nihongo/core/shared/contexts/modal/modal-context";
 import { TabBarButton } from "@nihongo/core/shared/ui/bottom-tap";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { createStaticNavigation } from "@react-navigation/native";
@@ -36,7 +37,11 @@ import KanaTableListPage from "@/pages/kana/kana-table-list-page/kana-table-list
 import SettingsPage from "@/pages/settings/settings-page";
 
 const withModal = <P extends object>(Component: React.ComponentType<P>) => ({
-  screen: Component,
+  screen: (props: P) => (
+    <ModalProvider>
+      <Component {...props} />
+    </ModalProvider>
+  ),
   options: {
     presentation: "modal",
     headerShadowVisible: false,

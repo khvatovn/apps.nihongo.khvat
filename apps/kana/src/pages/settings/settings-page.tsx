@@ -4,9 +4,11 @@ import React, { useEffect } from "react";
 
 import SettingItem from "@nihongo/core/entities/setting/setting-item/setting-item";
 import SettingsSection from "@nihongo/core/entities/setting/setting-section/settings-section";
+import AccountActions from "@nihongo/core/features/settings/account-actions/account-actions";
 import ContactSupport from "@nihongo/core/features/settings/contact-support/contact-support";
 import DebugInfo from "@nihongo/core/features/settings/debug-info/debug-info";
 import PrivacyPolicy from "@nihongo/core/features/settings/privacy-policy/privacy-policy";
+import RemoveData from "@nihongo/core/features/settings/remove-data/remove-data";
 import SettingsHaptic from "@nihongo/core/features/settings/settings-haptic/settings-haptic";
 import SettingsLanguage from "@nihongo/core/features/settings/settings-language/settings-language";
 import SettingsTheme from "@nihongo/core/features/settings/settings-theme/settings-theme";
@@ -23,8 +25,6 @@ import { useTranslation } from "react-i18next";
 import { StyleSheet, View, ScrollView, Pressable } from "react-native";
 
 import { RootStackParamList, ROUTES } from "@/app/routes.types";
-import AccountActions from "@/features/settings/account-actions/account-actions";
-import RemoveData from "@/features/settings/remove-data/remove-data";
 import SettingsStatistics from "@/features/settings/settings-statistics/settings-statistics";
 
 type NavigationProp = StackNavigationProp<RootStackParamList, typeof ROUTES.SETTINGS_ROOT>;
@@ -102,7 +102,10 @@ const SettingsPage: React.FC = () => {
         <DebugInfo />
 
         {isLoggedIn !== null && (
-          <SettingsSection>{isLoggedIn ? <AccountActions /> : <RemoveData />}</SettingsSection>
+          <SettingsSection>
+            {isLoggedIn === true && <AccountActions />}
+            {isLoggedIn === false && <RemoveData />}
+          </SettingsSection>
         )}
       </ScrollView>
     </View>
