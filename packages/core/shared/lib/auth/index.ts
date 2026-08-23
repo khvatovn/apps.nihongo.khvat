@@ -1,18 +1,8 @@
-import { ACCESS_TOKEN, REFRESH_TOKEN } from "@nihongo/core/shared/constants/storageKeys";
 import { apiFetch, ApiFetchOptions } from "@nihongo/core/shared/lib/api-gateway";
-import AsyncStorage from "@react-native-async-storage/async-storage";
-import { File as FileSystemFile } from "expo-file-system";
 
-export const getAccessToken = () => AsyncStorage.getItem(ACCESS_TOKEN);
-export const getRefreshToken = () => AsyncStorage.getItem(REFRESH_TOKEN);
+import { clearTokens, getAccessToken, getRefreshToken, saveTokens } from "./tokens";
 
-export const saveTokens = (access: string, refresh: string) =>
-  AsyncStorage.multiSet([
-    [ACCESS_TOKEN, access],
-    [REFRESH_TOKEN, refresh],
-  ]);
-
-export const clearTokens = () => AsyncStorage.multiRemove([ACCESS_TOKEN, REFRESH_TOKEN]);
+export { clearTokens, getAccessToken, getRefreshToken, saveTokens };
 
 let refreshing: Promise<string | null> | null = null;
 
@@ -188,14 +178,29 @@ const readResponseBody = async (
 
 export type AvatarFile = { uri: string; name: string; type: string };
 
+const loadFileSystem = (): typeof import("expo-file-system") | null => {
+  try {
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
+    return require("expo-file-system") as typeof import("expo-file-system");
+  } catch {
+    return null;
+  }
+};
+
+const toUploadPart = (file: AvatarFile): Blob => {
+  const fileSystem = loadFileSystem();
+  if (!fileSystem) return file as unknown as Blob;
+
+  return new fileSystem.File(file.uri) as unknown as Blob;
+};
+
 export const uploadAvatar = async (
   file: AvatarFile,
   signal?: AbortSignal,
 ): Promise<UpdateProfileResult> => {
   const form = new FormData();
 
-  const source = new FileSystemFile(file.uri);
-  form.append("file", source as unknown as Blob);
+  form.append("file", toUploadPart(file));
 
   const res = await authFetch(
     "/api/v2/profile/avatar",

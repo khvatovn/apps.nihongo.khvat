@@ -25,16 +25,23 @@ import {
   forceSelect,
   getAllGateways,
   getCurrentGateway,
-  getGateways,
+  getBaseGateways,
   probeGateway,
   ProbeResult,
   removeCustomGateway,
+  useUserGatewayUrl,
 } from "@nihongo/core/shared/lib/api-gateway";
-import { getTokenRegion } from "@nihongo/core/shared/lib/auth/claims";
-import { getAvatarHosts } from "@nihongo/core/shared/lib/avatar";
 import { Typography } from "@nihongo/core/shared/typography";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import { AppStoreLogoIcon, GitBranchIcon, GooglePlayLogoIcon } from "phosphor-react-native";
+import {
+  AppStoreLogoIcon,
+  CornersOutIcon,
+  DeviceMobileIcon,
+  FingerprintIcon,
+  GitBranchIcon,
+  GooglePlayLogoIcon,
+  KeyIcon,
+} from "phosphor-react-native";
 import { useTranslation } from "react-i18next";
 import {
   ActivityIndicator,
@@ -63,16 +70,14 @@ const DebugInfo: React.FC = () => {
   const [notificationToken, setNotificationToken] = useState<string | null>(null);
   const [deviceId, setDeviceId] = useState<string | null>(null);
 
-  // * Регион из клейма access-токена: по нему собирается домен для аватарки, и когда
-  // * картинка не грузится, первым делом нужно знать, заведён ли этот регион в конфиге.
-  const [region, setRegion] = useState<string | null>(null);
-  const avatarHost = region ? (getAvatarHosts()[region] ?? null) : null;
   const [activeGateway, setActiveGateway] = useState<string | null>(getCurrentGateway());
 
   const [gateways, setGateways] = useState<string[]>(getAllGateways());
   const [rowStatus, setRowStatus] = useState<Record<string, RowStatus>>({});
   const [probes, setProbes] = useState<Record<string, ProbeResult>>({});
   const [newHost, setNewHost] = useState("");
+
+  const userServer = useUserGatewayUrl("");
 
   const { forceReset } = useResetApp();
 
@@ -94,7 +99,6 @@ const DebugInfo: React.FC = () => {
     if (!isVisible) return;
     AsyncStorage.getItem(NOTIFICATION_TOKEN).then(setNotificationToken);
     AsyncStorage.getItem(DEVICE_ID).then(setDeviceId);
-    getTokenRegion().then(setRegion);
 
     ensureSelected()
       .then((url: string) => {
@@ -162,7 +166,7 @@ const DebugInfo: React.FC = () => {
     setActiveGateway(getCurrentGateway());
   };
 
-  const envGateways = getGateways();
+  const envGateways = getBaseGateways();
 
   const handleVersionTap = () => {
     const next = tapCount + 1;
@@ -175,6 +179,14 @@ const DebugInfo: React.FC = () => {
 
   const share = (_: string, value: string) => {
     Share.share({ message: `${value}` });
+  };
+
+  const getAppEnv = () => {
+    if (isExpoGo) return "ExpoGo";
+    if (isBareWorkflow) return "BareWorkflow";
+    if (isProductionBuild) return "ProductionBuild";
+
+    return "Unknow";
   };
 
   return (
@@ -204,26 +216,41 @@ const DebugInfo: React.FC = () => {
 
       {isVisible && (
         <View style={styles.container}>
-          <Pressable style={styles.row} onPress={() => share("Device ID", deviceId ?? "—")}>
-            <Text style={styles.label}>{t("debug.deviceId")}</Text>
-            <Text style={styles.value} numberOfLines={1}>
-              {deviceId ?? "—"}
-            </Text>
-          </Pressable>
-          <View style={styles.divider} />
-          <Pressable
-            style={styles.row}
-            onPress={() => share("Avatar host", avatarHost ?? `region: ${region ?? "—"}`)}
-          >
-            {/* * Скрытая debug-панель — подписи здесь и так не переводятся. */}
-            <Text style={styles.label}>Avatar host</Text>
-            <Text style={styles.value} numberOfLines={1}>
-              {region ? `${region} → ${avatarHost ?? "не настроен"}` : "—"}
-            </Text>
-          </Pressable>
-          <View style={styles.divider} />
-          <View style={styles.row}>
+          <SettingItem
+            leftIcon={<DeviceMobileIcon size={20} color={colors.BgContrast} />}
+            hideArrow
+            text={t("debug.deviceId")}
+            onClick={() => share("Device ID", deviceId ?? "—")}
+            subText={deviceId ?? "—"}
+          />
+
+          <SettingItem
+            leftIcon={<FingerprintIcon size={20} color={colors.BgContrast} />}
+            hideArrow
+            text={"User Server"}
+            onClick={() => share("user's server", userServer || "-")}
+            subText={userServer || "-"}
+          />
+
+          <SettingItem
+            leftIcon={<KeyIcon size={20} color={colors.BgContrast} />}
+            hideArrow
+            text={t("debug.notificationToken")}
+            onClick={() => share("Notification Token", notificationToken ?? "—")}
+            subText={notificationToken ?? "-"}
+          />
+
+          <SettingItem
+            leftIcon={<CornersOutIcon size={20} color={colors.BgContrast} />}
+            hideArrow
+            text={"App env"}
+            onClick={() => share("App env", getAppEnv())}
+            subText={getAppEnv()}
+          />
+
+          <View style={styles.gateways}>
             <Text style={styles.label}>{t("debug.apiServers")}</Text>
+
             {gateways.map((url: string) => {
               const isActive = url === activeGateway;
               const status = rowStatus[url];
@@ -301,29 +328,6 @@ const DebugInfo: React.FC = () => {
               </Pressable>
             </View>
           </View>
-          <View style={styles.divider} />
-          <Pressable
-            style={styles.row}
-            onPress={() => share("Notification Token", notificationToken ?? "—")}
-          >
-            <Text style={styles.label}>{t("debug.notificationToken")}</Text>
-            <Text style={styles.value} numberOfLines={2}>
-              {notificationToken ?? "-"}
-            </Text>
-          </Pressable>
-          <View style={styles.divider} />
-          <Pressable style={styles.row}>
-            <Text style={styles.label}>env:</Text>
-            <Text style={styles.value} numberOfLines={1}>
-              ExpoGo: {JSON.stringify(isExpoGo)}
-            </Text>
-            <Text style={styles.value} numberOfLines={1}>
-              BareWorkflow: {JSON.stringify(isBareWorkflow)}
-            </Text>
-            <Text style={styles.value} numberOfLines={1}>
-              ProductionBuild: {JSON.stringify(isProductionBuild)}
-            </Text>
-          </Pressable>
         </View>
       )}
 
@@ -360,14 +364,16 @@ const makeStyles = (colors: ColorsType) =>
       borderRadius: 12,
       backgroundColor: colors.BgSecondary,
       padding: 16,
+      paddingVertical: 0,
       gap: 8,
     },
     header: {
       color: colors.TextPrimary,
       ...Typography.boldDefault,
     },
-    row: {
+    gateways: {
       gap: 4,
+      marginBottom: 16,
     },
     label: {
       color: colors.TextPrimary,

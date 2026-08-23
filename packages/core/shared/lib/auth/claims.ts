@@ -1,4 +1,4 @@
-import { getAccessToken } from "./index";
+import { getAccessToken } from "./tokens";
 
 export type AccessClaims = {
   email?: string;
@@ -9,7 +9,6 @@ export type AccessClaims = {
 
 const BASE64_ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
 
-// * В Hermes нет atob, а зависимость ради одного клейма не нужна — декодируем сами.
 const base64UrlToBytes = (input: string): number[] => {
   const bytes: number[] = [];
 

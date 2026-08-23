@@ -5,8 +5,8 @@ import SettingsSection from "@nihongo/core/entities/setting/setting-section/sett
 import { useChangeAvatar } from "@nihongo/core/features/profile/change-avatar/use-change-avatar";
 import { PROFILE_ROUTES, ProfileParamList } from "@nihongo/core/pages/profile/routes";
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
+import { useUserGatewayUrl } from "@nihongo/core/shared/lib/api-gateway";
 import { getProfile, Profile } from "@nihongo/core/shared/lib/auth";
-import { useAvatarUri } from "@nihongo/core/shared/lib/avatar";
 import { Typography } from "@nihongo/core/shared/typography";
 import { ModalHeader } from "@nihongo/core/shared/ui/modal-header/modal-header";
 import { ModelContainer } from "@nihongo/core/shared/ui/model-container/model-container";
@@ -29,7 +29,7 @@ const ProfileEditPage: React.FC = () => {
   const [profile, setProfile] = useState<Profile | null>(null);
   const [loading, setLoading] = useState(true);
 
-  const avatarUri = useAvatarUri(profile?.avatar_url);
+  const avatarUri = useUserGatewayUrl(profile?.avatar_url || "");
 
   const {
     open: openAvatarActions,
