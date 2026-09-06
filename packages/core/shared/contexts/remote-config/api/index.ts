@@ -4,7 +4,12 @@ export const fetchRemoteConfig = async (
   language: string,
 ): Promise<Record<string, unknown> | null> => {
   try {
-    const response = await apiFetch(`/api/conf?language=${language}`);
+    const appSlug = process.env.APP_SLUG;
+    const appParam = appSlug ? `&app=${encodeURIComponent(appSlug)}` : "";
+
+    const response = await apiFetch(
+      `/api/conf?language=${encodeURIComponent(language)}${appParam}`,
+    );
 
     if (!response.ok) return null;
 

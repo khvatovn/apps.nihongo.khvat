@@ -16,6 +16,7 @@ import {
   PROMOTION_TELEGRAM_KEY,
   REVIEW_KEY,
 } from "@nihongo/core/shared/constants/storageKeys";
+import { useRemoteConfig } from "@nihongo/core/shared/contexts/remote-config/remote-config-context";
 import { useResetApp } from "@nihongo/core/shared/contexts/reset-context/reset-context";
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
 import {
@@ -39,13 +40,14 @@ import {
   DeviceMobileIcon,
   FingerprintIcon,
   GitBranchIcon,
+  GithubLogoIcon,
   GooglePlayLogoIcon,
   KeyIcon,
+  LinkSimpleIcon,
 } from "phosphor-react-native";
 import { useTranslation } from "react-i18next";
 import {
   ActivityIndicator,
-  Platform,
   Pressable,
   Share,
   StyleSheet,
@@ -53,10 +55,26 @@ import {
   TextInput,
   View,
 } from "react-native";
+import { z } from "zod";
 
 type RowStatus = "connecting" | "failed";
 
 const IS_DEBUG = false;
+
+const appLinkSchema = z.object({
+  icon: z.string().min(1).optional().catch(undefined),
+  link: z.url(),
+  subtitle: z.string().min(1).optional().catch(undefined),
+  title: z.string().min(1),
+});
+
+const appInfoSchema = z.object({
+  last_version: z.string().min(1).optional().catch(undefined),
+  links: z
+    .array(appLinkSchema.nullable().catch(null))
+    .transform((links) => links.filter((link) => link !== null))
+    .catch([]),
+});
 
 const DebugInfo: React.FC = () => {
   const { t } = useTranslation();
@@ -78,6 +96,13 @@ const DebugInfo: React.FC = () => {
   const [newHost, setNewHost] = useState("");
 
   const userServer = useUserGatewayUrl("");
+
+  const { getField } = useRemoteConfig();
+
+  const parsedAppInfo = appInfoSchema.safeParse(getField("app"));
+
+  const appInfo = parsedAppInfo.success ? parsedAppInfo.data : null;
+  const appLinks = appInfo?.links ?? [];
 
   const { forceReset } = useResetApp();
 
@@ -189,6 +214,22 @@ const DebugInfo: React.FC = () => {
     return "Unknow";
   };
 
+  const getIconByName = (name?: string) => {
+    if (name === "github-logo") return <GithubLogoIcon size={20} color={colors.BgContrast} />;
+
+    return <LinkSimpleIcon size={20} color={colors.BgContrast} />;
+  };
+
+  const localize = (value: string) => (/[\s:]/.test(value) ? value : t(value));
+
+  const getVersionStatus = () => {
+    if (!appInfo?.last_version) return "";
+
+    return appInfo.last_version === process.env.VERSION
+      ? " (Latest version)"
+      : " (Outdated version)";
+  };
+
   return (
     <>
       <SettingsSection>
@@ -196,7 +237,7 @@ const DebugInfo: React.FC = () => {
           leftIcon={<GitBranchIcon size={20} color={colors.BgContrast} />}
           hideArrow
           text={t("settings.version")}
-          subText={`v${process.env.VERSION}, build: ${process.env.BUILD_NUMBER} (${Platform.OS})`}
+          subText={`v${process.env.VERSION}, build: ${process.env.BUILD_NUMBER}${getVersionStatus()}`}
           onClick={handleVersionTap}
         />
         <SettingItem
@@ -207,11 +248,21 @@ const DebugInfo: React.FC = () => {
               <GooglePlayLogoIcon size={20} color={colors.BgContrast} />
             )
           }
-          isLast
+          isLast={appLinks.length === 0}
           hideArrow
           text={t("debug.store")}
           subText={`Build for ${process.env.STORE}`}
         />
+        {appLinks.map((link, index) => (
+          <SettingItem
+            key={link.link}
+            leftIcon={getIconByName(link.icon)}
+            text={localize(link.title)}
+            subText={link.subtitle && localize(link.subtitle)}
+            link={link.link}
+            isLast={index === appLinks.length - 1}
+          />
+        ))}
       </SettingsSection>
 
       {isVisible && (
