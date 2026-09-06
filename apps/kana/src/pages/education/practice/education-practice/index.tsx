@@ -241,6 +241,7 @@ const EducationPracticePage: React.FC<LearnScreenProps> = ({ route }) => {
 
         {question.type === PracticeType.Typing && question.typing && (
           <PracticeTypeKana
+            key={currentIndex}
             symbol={question.typing.question}
             kana={question.typing.questionKana}
             onCompleted={onSubmit}

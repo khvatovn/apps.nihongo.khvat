@@ -35,13 +35,16 @@ const PracticeTypeKana: React.FC<PracticeTypeKanaProps> = ({ symbol, kana, onCom
   const [_, setTick] = useState(0);
   const updateTick = () => setTick((i) => i + 1);
 
-  const transliterationRef = useRef<null | string>(null);
+  const questionRef = useRef({ symbol, kana, onCompleted, recalculateOnce });
+  questionRef.current = { symbol, kana, onCompleted, recalculateOnce };
 
   const engineRef = useRef(
     new Sequence((isCorrect) => {
-      const typeOfChapter = kana === Kana.Hiragana ? KanaAlphabet.Hiragana : KanaAlphabet.Katakana;
-      recalculateOnce(typeOfChapter, symbol.id, isCorrect);
-      onCompleted?.({ isCorrectAnswer: isCorrect });
+      const question = questionRef.current;
+      const typeOfChapter =
+        question.kana === Kana.Hiragana ? KanaAlphabet.Hiragana : KanaAlphabet.Katakana;
+      question.recalculateOnce(typeOfChapter, question.symbol.id, isCorrect);
+      question.onCompleted?.({ isCorrectAnswer: isCorrect });
     }),
   );
 
@@ -54,11 +57,8 @@ const PracticeTypeKana: React.FC<PracticeTypeKanaProps> = ({ symbol, kana, onCom
 
   useEffect(() => {
     const transliteration = symbol.transliterations[transliterations].toLowerCase();
-    if (transliterationRef.current !== transliteration) {
-      transliterationRef.current = transliteration;
-      sequence.setNextWord(transliteration, updateTick);
-    }
-  }, [sequence, symbol.id, symbol.transliterations, transliterations]);
+    sequence.setNextWord(transliteration, updateTick);
+  }, [sequence, symbol, kana, transliterations]);
 
   const setVal = (val: string) => {
     if (!val) return false;
