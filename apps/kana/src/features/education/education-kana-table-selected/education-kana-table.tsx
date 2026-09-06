@@ -95,24 +95,25 @@ const EducationKanaTableSelected: React.FC<EducationKanaTableProps> = ({
   const selectedRef = useRef<Set<string>>(new Set());
   const [selected, setSelected] = useState<Set<string>>(() => new Set());
 
-  const setSelectedWithRef = (updater: (prev: Set<string>) => Set<string>) => {
-    setSelected((prev) => {
-      const next = updater(prev);
-      selectedRef.current = next;
-      return next;
-    });
-  };
+  const setSelectedWithRef = useCallback((updater: (prev: Set<string>) => Set<string>) => {
+    const next = updater(selectedRef.current);
+    selectedRef.current = next;
+    setSelected(next);
+  }, []);
+
+  const commitRef = useRef({ selectedLetters, fill });
+  commitRef.current = { selectedLetters, fill };
 
   useEffect(() => {
-    const initial = new Set(selectedLetters);
+    const initial = new Set(commitRef.current.selectedLetters);
     setSelected(initial);
     selectedRef.current = initial;
 
     return () => {
       const sectionKey = getKanaSectionKey(alphabetType, kana);
-      fill([...selectedRef.current], sectionKey);
+      commitRef.current.fill([...selectedRef.current], sectionKey);
     };
-  }, [kana, alphabetType, selectedLetters, fill]);
+  }, [kana, alphabetType]);
 
   const letters = useMemo(() => {
     if (!data) return [];
@@ -130,7 +131,7 @@ const EducationKanaTableSelected: React.FC<EducationKanaTableProps> = ({
 
   const isKanaSelected = (): boolean => {
     const section = getKanaSectionKey(alphabetType, kana);
-    return selectedFromStorage[alphabetType][kana].length === LETTERS_COUNT[section];
+    return selected.size === LETTERS_COUNT[section];
   };
 
   const onPlus = useCallback(
@@ -144,7 +145,7 @@ const EducationKanaTableSelected: React.FC<EducationKanaTableProps> = ({
               return normalized[index] ? [normalized[index]] : [];
             });
 
-      const allSelected = letters.every((l) => selected.has(l.id));
+      const allSelected = letters.every((l) => selectedRef.current.has(l.id));
 
       letters.forEach((item) => {
         setSelectedWithRef((prev) => {
@@ -158,16 +159,16 @@ const EducationKanaTableSelected: React.FC<EducationKanaTableProps> = ({
         });
       });
     },
-    [selected],
+    [setSelectedWithRef],
   );
 
   const onSelectAll = useCallback(() => {
     setSelectedWithRef((_) => new Set(allIds));
-  }, [allIds]);
+  }, [allIds, setSelectedWithRef]);
 
   const clearAll = useCallback(() => {
     setSelectedWithRef((_) => new Set());
-  }, []);
+  }, [setSelectedWithRef]);
 
   const isSelected = isKanaSelected();
 
