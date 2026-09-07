@@ -181,8 +181,8 @@ const Draw: React.FC<DrawProps> = ({
 
     const target = kana === KanaAlphabet.Hiragana ? letter.hi : letter.ka;
 
-    const ABS_THRESHOLD = 0.15;
-    const RANK_MARGIN = 0.15;
+    const ABS_THRESHOLD = 0.25;
+    const RANK_MARGIN = 0.1;
 
     const best = result[0];
     const targetMatch = result.find((symbol) => symbol.name[0] === target);
