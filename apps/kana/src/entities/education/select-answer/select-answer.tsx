@@ -11,7 +11,7 @@ import { shuffleArray } from "@/shared/helpers/letters";
 
 type SelectAnswerProps = {
   answers: { title: string; isTrue: boolean }[];
-  onFinish?: (hasError: boolean) => void;
+  onFinish?: (hasError: boolean, pickedTitle: string) => void;
 };
 
 const SelectAnswer: React.FC<SelectAnswerProps> = ({ answers, onFinish }) => {
@@ -25,14 +25,14 @@ const SelectAnswer: React.FC<SelectAnswerProps> = ({ answers, onFinish }) => {
   const onAnswer = (answer: { title: string; isTrue: boolean }) => {
     if (answer.isTrue) {
       setCorrect((prev) => [...prev, answer.title]);
-      onFinish?.(!true);
+      onFinish?.(!true, answer.title);
 
       setTimeout(() => {
         setCorrect([]);
       }, TEST_DELAY);
     } else {
       setErrors((prev) => [...prev, answer.title]);
-      onFinish?.(!false);
+      onFinish?.(!false, answer.title);
 
       setTimeout(() => {
         setErrors([]);

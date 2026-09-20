@@ -1,4 +1,4 @@
-import { PracticeQuestion, PracticeResultData } from "../lib/types/questions";
+import { PracticeQuestion, PracticeResultData, PracticeUserSelect } from "../lib/types/questions";
 
 import { TEST_DELAY } from "@/shared/constants/kana";
 
@@ -46,6 +46,7 @@ class QuestionsEducationPractice {
   }: {
     data: {
       isCorrectAnswer: boolean;
+      userSelect?: PracticeUserSelect;
     };
     finishCallback?: (data: PracticeResultData) => void;
     nextCallback?: () => void;
@@ -57,6 +58,7 @@ class QuestionsEducationPractice {
       index: this.currentQuestionIndex,
       ms: duration,
       isCorrectAnswer: data.isCorrectAnswer,
+      userSelect: data.userSelect ?? null,
     });
 
     this.questionStartTime = Date.now();

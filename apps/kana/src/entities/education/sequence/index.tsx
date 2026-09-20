@@ -11,7 +11,7 @@ import Sequence from "./sequence-engine";
 type SequenceProps = {
   sequence: string[];
 
-  onFinish?: (hasError: boolean) => void;
+  onFinish?: (isCorrect: boolean, picked: string[]) => void;
   onError?: () => void;
 };
 
@@ -26,8 +26,8 @@ const SequenceUi: React.FC<SequenceProps> = ({ sequence, onFinish, onError }) =>
   const transliterationRef = useRef<null | string>(null);
 
   const engineRef = useRef(
-    new Sequence((isCorrect) => {
-      onFinish?.(isCorrect);
+    new Sequence((isCorrect, picked) => {
+      onFinish?.(isCorrect, picked);
 
       if (!isCorrect && onError) {
         onError();

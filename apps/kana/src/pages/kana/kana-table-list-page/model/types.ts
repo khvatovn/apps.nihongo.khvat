@@ -1,15 +1,11 @@
 import { KanaAlphabet } from "@/shared/constants/kana";
 
-export interface InitialState {
-  rawStatistics: {
-    hiragana: StatisticChapterRaw;
-    katakana: StatisticChapterRaw;
+export interface RawStatistics {
+  [key: string]: {
+    values: number[];
+    correct: number;
+    total: number;
   };
-  statistics: {
-    hiragana: StatisticChapter;
-    katakana: StatisticChapter;
-  };
-  isEnabled: boolean;
 }
 
 export interface StatisticChapterRaw {

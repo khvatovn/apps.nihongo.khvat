@@ -140,6 +140,9 @@ const SpanishES = {
     question: "pregunta",
 
     done: "Hecho",
+
+    correct: "Correcto",
+    wrong: "Incorrecto",
   },
 
   lessonsList: {

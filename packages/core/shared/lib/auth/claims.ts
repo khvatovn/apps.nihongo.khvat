@@ -1,6 +1,7 @@
 import { getAccessToken } from "./tokens";
 
 export type AccessClaims = {
+  sub?: string;
   email?: string;
   region?: string;
   verified?: boolean;
@@ -92,4 +93,11 @@ export const getTokenRegion = async (): Promise<string | null> => {
   if (!token) return null;
 
   return decodeAccessClaims(token)?.region ?? null;
+};
+
+export const getTokenUserId = async (): Promise<string | null> => {
+  const token = await getAccessToken();
+  if (!token) return null;
+
+  return decodeAccessClaims(token)?.sub ?? null;
 };

@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 
 import { useModal } from "@nihongo/core/shared/contexts/modal/modal-context";
 import { ConfirmationModal } from "@nihongo/core/shared/contexts/modal/presets/confirmation";
+import { useStudyActivity } from "@nihongo/core/shared/contexts/study-activity/study-activity-context";
 import SafeLayout from "@nihongo/core/shared/ui/layouts/safe-layout";
 import LinearProgressBar from "@nihongo/core/shared/ui/progressbar/linear/linear-progress-bar";
 import { useNavigation } from "@react-navigation/native";
@@ -22,6 +23,7 @@ interface LessonProps {
 
 const Lesson: React.FC<LessonProps> = ({ lesson }) => {
   const { completeLesson } = useLessonsContext();
+  const { registerStudyDay } = useStudyActivity();
   const insets = useSafeAreaInsets();
   const { t } = useTranslation();
 
@@ -39,7 +41,10 @@ const Lesson: React.FC<LessonProps> = ({ lesson }) => {
     });
   }, [navigation]);
 
-  const addMarkCompleteLessonInStore = () => completeLesson(lesson.lesson_key);
+  const addMarkCompleteLessonInStore = () => {
+    completeLesson(lesson.lesson_key);
+    registerStudyDay();
+  };
 
   const onComplete = () => {
     addMarkCompleteLessonInStore();

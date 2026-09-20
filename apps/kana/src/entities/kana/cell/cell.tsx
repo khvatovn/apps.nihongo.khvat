@@ -64,18 +64,13 @@ const Cell: React.FC<CellProps> = ({
     const x =
       tabletCellSize / 60 > 1.2 ? 1.2 : tabletCellSize / 60 < 0.6 ? 0.6 : tabletCellSize / 60;
 
-    if (type == "regularLabel") {
-      return {
-        ...Typography.regularLabel,
-        lineHeight: (Typography.regularLabel.lineHeight || 1) * x,
-        fontSize: (Typography.regularLabel.fontSize || 1) * x,
-      };
-    }
+    const base = type == "regularLabel" ? Typography.regularLabel : Typography.regularDefault;
 
     return {
-      ...Typography.regularDefault,
-      lineHeight: (Typography.regularDefault.lineHeight || 1) * x,
-      fontSize: (Typography.regularDefault.fontSize || 1) * x,
+      ...base,
+
+      lineHeight: Math.round((base.lineHeight || 1) * x),
+      fontSize: Math.round((base.fontSize || 1) * x),
     };
   };
 
@@ -140,7 +135,9 @@ const Cell: React.FC<CellProps> = ({
             : {},
         ]}
       >
-        <Text style={[getFintSize("regularLabel"), { color: colors.TextSecondary }]}>
+        <Text
+          style={[getFintSize("regularLabel"), styles.cellText, { color: colors.TextSecondary }]}
+        >
           {isStartOfLine}
         </Text>
       </View>
@@ -199,6 +196,7 @@ const Cell: React.FC<CellProps> = ({
             <Text
               style={[
                 getFintSize("default"),
+                styles.cellText,
                 { color: active ? colors.TextContrastSecondary : colors.TextPrimary },
               ]}
             >
@@ -208,6 +206,7 @@ const Cell: React.FC<CellProps> = ({
             <Text
               style={[
                 getFintSize("regularLabel"),
+                styles.cellText,
                 { color: active ? colors.TextContrastSecondary : colors.TextPrimary },
               ]}
             >
@@ -228,6 +227,10 @@ const styles = StyleSheet.create({
     alignItems: "center",
     borderRadius: 12,
     position: "relative",
+  },
+  cellText: {
+    width: "100%",
+    textAlign: "center",
   },
   cellIndicator: {
     position: "absolute",

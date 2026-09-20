@@ -139,6 +139,9 @@ const Indonesian = {
     question: "pertanyaan",
 
     done: "Selesai",
+
+    correct: "Benar",
+    wrong: "Salah",
   },
 
   lessonsList: {

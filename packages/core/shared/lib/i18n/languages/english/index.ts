@@ -139,6 +139,9 @@ const English = {
     question: "question",
 
     done: "Done",
+
+    correct: "Correct",
+    wrong: "Incorrect",
   },
 
   lessonsList: {

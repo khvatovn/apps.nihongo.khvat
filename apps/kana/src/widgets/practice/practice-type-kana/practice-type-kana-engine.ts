@@ -5,9 +5,9 @@ class Sequence {
   sequence: (string | null)[] = [];
   answerStatus: (boolean | null)[] = [];
   isLocked: boolean = false;
-  private onComplete?: (isCorrect: boolean) => void;
+  private onComplete?: (isCorrect: boolean, typed: string) => void;
 
-  constructor(onComplete?: (isCorrect: boolean) => void) {
+  constructor(onComplete?: (isCorrect: boolean, typed: string) => void) {
     this.onComplete = onComplete;
   }
 
@@ -63,8 +63,10 @@ class Sequence {
 
     callback();
 
+    const typed = this.sequence.map((char) => char ?? "").join("");
+
     setTimeout(() => {
-      this.onComplete?.(isMatch);
+      this.onComplete?.(isMatch, typed);
     }, TEST_DELAY / 2);
   }
 }

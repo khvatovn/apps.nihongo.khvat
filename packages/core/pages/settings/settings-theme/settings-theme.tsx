@@ -3,6 +3,7 @@ import React from "react";
 import ThemeItem, { ThemeType } from "@nihongo/core/entities/setting/theme/theme-item";
 import { Theme } from "@nihongo/core/shared/constants/theme";
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
+import usePreviewSetting from "@nihongo/core/shared/lib/settings/usePreviewSetting";
 import { darkTheme } from "@nihongo/core/shared/themes/dark";
 import { hokkaidoDarkTheme } from "@nihongo/core/shared/themes/hokkaido_dark";
 import { hokkaidoLightTheme } from "@nihongo/core/shared/themes/hokkaido_light";
@@ -29,8 +30,18 @@ const SettingsThemePage: React.FC = () => {
 
   const styles = makeStyles(colors);
 
-  const setTheme = (item: Theme) => {
-    updateTheme(item);
+  const { selected, select, isDirty, confirm, cancel } = usePreviewSetting<Theme>({
+    current: themeString as Theme,
+    preview: updateTheme,
+  });
+
+  const onDone = async () => {
+    await confirm();
+    navigation.goBack();
+  };
+
+  const onClose = () => {
+    cancel();
     navigation.goBack();
   };
 
@@ -39,8 +50,8 @@ const SettingsThemePage: React.FC = () => {
   };
 
   const themeOptions = [
-    { key: Theme.Light, type: ThemeType.Dark, title: "Default Light", icon: getIcon(lightTheme) },
-    { key: Theme.Dark, type: ThemeType.Light, title: "Default Dark", icon: getIcon(darkTheme) },
+    { key: Theme.Light, type: ThemeType.Light, title: "Default Light", icon: getIcon(lightTheme) },
+    { key: Theme.Dark, type: ThemeType.Dark, title: "Default Dark", icon: getIcon(darkTheme) },
     {
       key: Theme.OsakaLight,
       type: ThemeType.Light,
@@ -86,7 +97,12 @@ const SettingsThemePage: React.FC = () => {
           title={t("settings.theme.title")}
           left={{
             text: t("common.close"),
-            onPress: () => navigation.goBack(),
+            onPress: onClose,
+          }}
+          right={{
+            text: t("common.done"),
+            onPress: () => isDirty && onDone(),
+            color: isDirty ? colors.TextPrimary : colors.TextDisabled,
           }}
         />
 
@@ -95,9 +111,10 @@ const SettingsThemePage: React.FC = () => {
           <FlatList
             style={{ flexShrink: 1 }}
             data={themeOptions}
+            extraData={selected}
             renderItem={({ item, index }) => (
               <ThemeItem
-                active={themeString === item.key}
+                active={selected === item.key}
                 key={item.key}
                 name={item.title}
                 icon={item.icon}
@@ -107,7 +124,7 @@ const SettingsThemePage: React.FC = () => {
                 screenshots={[]}
                 isOpen={false}
                 isLast={index >= themeOptions.length - 1}
-                onPress={() => setTheme(item.key)}
+                onPress={() => select(item.key)}
               />
             )}
             keyExtractor={(item) => item.key.toString()}

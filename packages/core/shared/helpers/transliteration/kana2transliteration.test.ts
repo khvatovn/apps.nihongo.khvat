@@ -493,3 +493,31 @@ describe("Polivanov", () => {
     expect(kana2transliteration("テレビ", "polivanovSystem")).toBe("тэрэби");
   });
 });
+
+// Одиночная を — название знака, внутри слова — показатель винительного падежа
+describe("Одиночная を", () => {
+  it("1. Хэпбёрн: を → wo, но ほんをよむ → hon'oyomu", () => {
+    expect(kana2transliteration("を", "hepburn")).toBe("wo");
+    expect(kana2transliteration("ほんをよむ", "hepburn")).toBe("hon'oyomu");
+  });
+
+  it("2. Кунрэй: を → wo, но ほんをよむ → hon'oyomu", () => {
+    expect(kana2transliteration("を", "kunreiShiki")).toBe("wo");
+    expect(kana2transliteration("ほんをよむ", "kunreiShiki")).toBe("hon'oyomu");
+  });
+
+  it("3. Нихон-сики: wo в обоих случаях", () => {
+    expect(kana2transliteration("を", "nihonShiki")).toBe("wo");
+    expect(kana2transliteration("ほんをよむ", "nihonShiki")).toBe("honwoyomu");
+  });
+
+  it("4. Поливанов: を → во, но ほんをよむ → хонъоёму", () => {
+    expect(kana2transliteration("を", "polivanovSystem")).toBe("во");
+    expect(kana2transliteration("ほんをよむ", "polivanovSystem")).toBe("хонъоёму");
+  });
+
+  it("5. Катакана ヲ нормализуется к を", () => {
+    expect(kana2transliteration("ヲ", "hepburn")).toBe("wo");
+    expect(kana2transliteration("ヲ", "polivanovSystem")).toBe("во");
+  });
+});

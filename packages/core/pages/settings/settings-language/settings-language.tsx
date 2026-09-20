@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { useCallback } from "react";
 
 import { languageList, ShortLanguage } from "@nihongo/core/shared/constants/language";
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
 import useSetLanguage from "@nihongo/core/shared/lib/i18n/hooks/useSetLanguage";
+import usePreviewSetting from "@nihongo/core/shared/lib/settings/usePreviewSetting";
 import { Typography } from "@nihongo/core/shared/typography";
 import { ModalHeader } from "@nihongo/core/shared/ui/modal-header/modal-header";
 import { ModelContainer } from "@nihongo/core/shared/ui/model-container/model-container";
@@ -62,12 +63,26 @@ const SettingsLanguagePage: React.FC = () => {
 
   const { set } = useSetLanguage();
 
-  const [langToEdit, setLangToEdit] = useState<null | ShortLanguage>(null);
+  const previewLanguage = useCallback(
+    (language: ShortLanguage) => {
+      i18n.changeLanguage(language);
+    },
+    [i18n],
+  );
 
-  const setAppLanguage = async (language: ShortLanguage) => {
-    set(language);
+  const { selected, select, isDirty, confirm, cancel } = usePreviewSetting<ShortLanguage>({
+    current: i18n.language as ShortLanguage,
+    preview: previewLanguage,
+    commit: set,
+  });
 
-    setLangToEdit(null);
+  const onDone = async () => {
+    await confirm();
+    navigation.goBack();
+  };
+
+  const onClose = () => {
+    cancel();
     navigation.goBack();
   };
 
@@ -78,12 +93,12 @@ const SettingsLanguagePage: React.FC = () => {
           title={t("settings.language")}
           left={{
             text: t("common.close"),
-            onPress: () => navigation.goBack(),
+            onPress: onClose,
           }}
           right={{
             text: t("common.done"),
-            onPress: () => langToEdit && setAppLanguage(langToEdit),
-            color: langToEdit === null ? colors.TextDisabled : colors.TextPrimary,
+            onPress: () => isDirty && onDone(),
+            color: isDirty ? colors.TextPrimary : colors.TextDisabled,
           }}
         />
 
@@ -91,10 +106,11 @@ const SettingsLanguagePage: React.FC = () => {
           <FlatList
             style={{ flex: 1 }}
             data={languageList}
+            extraData={selected}
             renderItem={({ item }) => (
               <Item
-                active={langToEdit === null ? i18n.language === item.key : langToEdit === item.key}
-                onPress={() => setAppLanguage(item.key)}
+                active={selected === item.key}
+                onPress={() => select(item.key)}
                 colors={colors}
                 key={item.key}
                 lang={item.key}

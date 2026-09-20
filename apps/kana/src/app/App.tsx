@@ -10,6 +10,7 @@ import { EraseDataProvider } from "@nihongo/core/shared/contexts/erase-data/eras
 import { HapticProvider } from "@nihongo/core/shared/contexts/haptic/haptic-context";
 import { ModalProvider } from "@nihongo/core/shared/contexts/modal/modal-context";
 import { RemoteConfigProvider } from "@nihongo/core/shared/contexts/remote-config/remote-config-context";
+import { StudyActivityProvider } from "@nihongo/core/shared/contexts/study-activity/study-activity-context";
 import { ThemeProvider } from "@nihongo/core/shared/contexts/theme/theme-context";
 import { TransliterationsProvider } from "@nihongo/core/shared/contexts/transliteration/transliteration";
 import { ApiGatewayProvider } from "@nihongo/core/shared/lib/api-gateway";
@@ -40,6 +41,7 @@ const App: React.FC = () => {
             [RemoteConfigProvider],
             [SafeAreaProvider],
             [EraseDataProvider],
+            [StudyActivityProvider],
             [TransliterationsProvider],
             [ModalProvider],
             [BottomTabVisibilityProvider],

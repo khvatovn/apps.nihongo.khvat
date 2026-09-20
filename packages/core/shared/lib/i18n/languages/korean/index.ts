@@ -137,6 +137,9 @@ const Korean = {
     question: "문제",
 
     done: "완료",
+
+    correct: "정답",
+    wrong: "오답",
   },
 
   lessonsList: {

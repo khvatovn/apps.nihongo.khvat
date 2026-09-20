@@ -139,6 +139,9 @@ const German = {
     question: "Frage",
 
     done: "Fertig",
+
+    correct: "Richtig",
+    wrong: "Falsch",
   },
 
   lessonsList: {

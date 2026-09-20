@@ -139,6 +139,9 @@ const Russian = {
     question: "вопрос",
 
     done: "Закончить",
+
+    correct: "Верно",
+    wrong: "Неверно",
   },
 
   lessonsList: {

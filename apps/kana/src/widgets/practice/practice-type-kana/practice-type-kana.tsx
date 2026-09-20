@@ -13,7 +13,7 @@ import Sequence from "./practice-type-kana-engine";
 import CustomKeyboard from "@/entities/general/keyboard/keyboard";
 import { OnSubmit } from "@/pages/education/practice/education-practice/lib/types/questions";
 import { useStatisticsContext } from "@/pages/kana/kana-table-list-page/model/hooks";
-import { Kana, KanaAlphabet } from "@/shared/constants/kana";
+import { Kana, KanaAlphabet, PracticeType } from "@/shared/constants/kana";
 import { getTypeById } from "@/shared/helpers/kana-letter";
 import Header from "@/shared/ui/practice-header/practice-header";
 
@@ -39,12 +39,15 @@ const PracticeTypeKana: React.FC<PracticeTypeKanaProps> = ({ symbol, kana, onCom
   questionRef.current = { symbol, kana, onCompleted, recalculateOnce };
 
   const engineRef = useRef(
-    new Sequence((isCorrect) => {
+    new Sequence((isCorrect, typed) => {
       const question = questionRef.current;
       const typeOfChapter =
         question.kana === Kana.Hiragana ? KanaAlphabet.Hiragana : KanaAlphabet.Katakana;
       question.recalculateOnce(typeOfChapter, question.symbol.id, isCorrect);
-      question.onCompleted?.({ isCorrectAnswer: isCorrect });
+      question.onCompleted?.({
+        isCorrectAnswer: isCorrect,
+        userSelect: { type: PracticeType.Typing, value: typed },
+      });
     }),
   );
 

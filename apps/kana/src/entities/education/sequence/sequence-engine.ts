@@ -11,10 +11,10 @@ class Sequence {
   shuffledLetters: string[] = [];
   selectedLetters: { [key: number]: boolean } = {};
 
-  private onComplete?: (isCorrect: boolean) => void;
+  private onComplete?: (isCorrect: boolean, picked: string[]) => void;
   private refresh: () => void;
 
-  constructor(onComplete: (isCorrect: boolean) => void, updateFunc: () => void) {
+  constructor(onComplete: (isCorrect: boolean, picked: string[]) => void, updateFunc: () => void) {
     this.onComplete = onComplete;
     this.refresh = updateFunc;
   }
@@ -97,8 +97,10 @@ class Sequence {
 
     this.refresh();
 
+    const picked = this.sequence.map((char) => char ?? "");
+
     setTimeout(() => {
-      this.onComplete?.(isMatch);
+      this.onComplete?.(isMatch, picked);
     }, TEST_DELAY / 2);
   }
 }

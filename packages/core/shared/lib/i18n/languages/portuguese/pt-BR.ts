@@ -139,6 +139,9 @@ const PortugueseBR = {
     question: "pergunta",
 
     done: "Concluir",
+
+    correct: "Correto",
+    wrong: "Incorreto",
   },
 
   lessonsList: {

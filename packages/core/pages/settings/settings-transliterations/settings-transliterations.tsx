@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 import LanguageItem from "@nihongo/core/entities/setting/language/language-item";
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
@@ -7,6 +7,7 @@ import {
   useTransliterationsContext,
 } from "@nihongo/core/shared/contexts/transliteration/transliteration";
 import { base, dakuon } from "@nihongo/core/shared/data/lettersTable";
+import usePreviewSetting from "@nihongo/core/shared/lib/settings/usePreviewSetting";
 import { Typography } from "@nihongo/core/shared/typography";
 import { ModalHeader } from "@nihongo/core/shared/ui/modal-header/modal-header";
 import { ModelContainer } from "@nihongo/core/shared/ui/model-container/model-container";
@@ -21,19 +22,21 @@ const SettingsTransliterationsPage: React.FC = () => {
   const { colors } = useThemeContext();
   const styles = makeStyles(colors);
 
-  const [langToEdit, setLangToEdit] = useState<null | Transliterations>(null);
-
   const navigation = useNavigation();
 
-  const setAppTransliterations = (item: Transliterations) => {
-    updateTransliterations(item);
+  const { selected, select, isDirty, confirm, cancel } = usePreviewSetting<Transliterations>({
+    current: transliterations,
+    preview: updateTransliterations,
+  });
 
-    setLangToEdit(null);
+  const onDone = async () => {
+    await confirm();
     navigation.goBack();
   };
 
-  const setTransliterations = async (lang: Transliterations) => {
-    setLangToEdit(lang);
+  const onClose = () => {
+    cancel();
+    navigation.goBack();
   };
 
   const transliterationSystems = [
@@ -69,12 +72,12 @@ const SettingsTransliterationsPage: React.FC = () => {
           title={t("transliterationSystems.romaji")}
           left={{
             text: t("common.close"),
-            onPress: () => navigation.goBack(),
+            onPress: onClose,
           }}
           right={{
             text: t("common.done"),
-            onPress: () => langToEdit !== null && setAppTransliterations(langToEdit),
-            color: langToEdit === null ? colors.TextDisabled : colors.TextPrimary,
+            onPress: () => isDirty && onDone(),
+            color: isDirty ? colors.TextPrimary : colors.TextDisabled,
           }}
         />
 
@@ -87,8 +90,8 @@ const SettingsTransliterationsPage: React.FC = () => {
               transliteration={index}
               name={item.title}
               icons={[base[2][1], dakuon[2][2]]}
-              onPress={() => setTransliterations(item.key)}
-              active={langToEdit === null ? transliterations === item.key : langToEdit === item.key}
+              onPress={() => select(item.key)}
+              active={selected === item.key}
             />
           ))}
         </View>
@@ -102,8 +105,8 @@ const SettingsTransliterationsPage: React.FC = () => {
               transliteration={3 + index}
               name={item.title}
               icons={[base[2][1], dakuon[2][2]]}
-              onPress={() => setTransliterations(item.key)}
-              active={langToEdit === null ? transliterations === item.key : langToEdit === item.key}
+              onPress={() => select(item.key)}
+              active={selected === item.key}
             />
           ))}
         </View>

@@ -25,6 +25,7 @@ import { normalizeCoordinates } from "../../lib/hieroglyph-recognition/coordinat
 import Recognizer from "../../lib/hieroglyph-recognition/recognizer";
 import { processDrawing } from "../../lib/hieroglyph-recognition/record";
 import { kanaTemplates } from "../../lib/hieroglyph-recognition/templates";
+import { DrawingPath, generatePathDAttribute } from "../../lib/svg-path";
 import { useDrawSettings } from "../../model/hooks";
 import ClearButtons from "../buttons/clear-buttons";
 import ToggleShowBorders from "../buttons/toggle-show-borders";
@@ -44,6 +45,12 @@ enum StateColor {
   Red = "Red",
   NotInitialized = "not_initialized",
 }
+
+export type DrawingSnapshot = {
+  strokes: DrawingPath[];
+  canvasSize: number;
+};
+
 interface DrawProps {
   letter: ILetter;
   kana: KanaAlphabet;
@@ -54,7 +61,7 @@ interface DrawProps {
 
   isTextRecognition?: boolean;
 
-  onCompleted?: (isErrors: boolean, pickedAnswer: ILetter) => void;
+  onCompleted?: (isErrors: boolean, pickedAnswer: ILetter, drawing: DrawingSnapshot) => void;
 }
 
 const getTypeById = (id: string) => {
@@ -129,36 +136,6 @@ const Draw: React.FC<DrawProps> = ({
     forceUpdate();
   };
 
-  const generatePathDAttribute = (points: { x: number; y: number }[]) => {
-    if (points.length < 2) return "";
-
-    const moveToStart = (x: number, y: number) => `M ${x},${y}`;
-
-    const quadraticCurveTo = (x1: number, y1: number, x2: number, y2: number) =>
-      ` Q ${x1},${y1} ${x2},${y2}`;
-
-    const smoothCurveTo = (x: number, y: number) => ` T ${x},${y}`;
-    const getMidPoint = (point1: { x: number; y: number }, point2: { x: number; y: number }) => ({
-      x: (point1.x + point2.x) / 2,
-      y: (point1.y + point2.y) / 2,
-    });
-
-    let d = moveToStart(points[0].x, points[0].y);
-
-    for (let i = 1; i < points.length; i++) {
-      const prevPoint = points[i - 1];
-      const currPoint = points[i];
-      const midPoint = i > 1 ? getMidPoint(prevPoint, currPoint) : prevPoint;
-
-      d += quadraticCurveTo(prevPoint.x, prevPoint.y, midPoint.x, midPoint.y);
-    }
-
-    const lastPoint = points[points.length - 1];
-    d += smoothCurveTo(lastPoint.x, lastPoint.y);
-
-    return d;
-  };
-
   function shortenLines(data: number[][][]) {
     return data.map((line) => line.map((item) => item.map((point) => +point.toFixed(4))));
   }
@@ -193,8 +170,13 @@ const Draw: React.FC<DrawProps> = ({
       targetMatch.score <= ABS_THRESHOLD &&
       targetMatch.score <= best.score * (1 + RANK_MARGIN);
 
+    const drawing: DrawingSnapshot = {
+      strokes: pathsRef.current.map((path) => path.map((point) => ({ ...point }))),
+      canvasSize,
+    };
+
     if (isSomeKana) {
-      onCompleted?.(true, letter);
+      onCompleted?.(true, letter, drawing);
       setState(StateColor.Green);
 
       setTimeout(() => {
@@ -202,7 +184,7 @@ const Draw: React.FC<DrawProps> = ({
         handleClearButtonClick();
       }, TEST_DELAY);
     } else {
-      onCompleted?.(false, letter);
+      onCompleted?.(false, letter, drawing);
       setState(StateColor.Red);
 
       setTimeout(() => {

@@ -136,6 +136,9 @@ const ChineseCN = {
     question: "题",
 
     done: "完成",
+
+    correct: "正确",
+    wrong: "错误",
   },
 
   lessonsList: {

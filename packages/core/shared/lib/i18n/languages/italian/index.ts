@@ -140,6 +140,9 @@ const Italian = {
     question: "domanda",
 
     done: "Fine",
+
+    correct: "Corretto",
+    wrong: "Sbagliato",
   },
 
   lessonsList: {

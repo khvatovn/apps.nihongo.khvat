@@ -80,13 +80,46 @@ export type Result = {
   }[];
 };
 
+export type DrawingStroke = { x: number; y: number }[];
+
+export type DrawingUserSelect = {
+  strokes: DrawingStroke[];
+  canvasSize: number;
+};
+
+export type MatchingPairAttempt = {
+  question: string;
+  answer: string;
+  translate: string;
+
+  isCorrect: boolean;
+};
+
+export type UserSelectByType = {
+  [PracticeType.Testing]: ILetter;
+  [PracticeType.Drawing]: DrawingUserSelect;
+  [PracticeType.Listening]: ILetter;
+  [PracticeType.MultipleChoice]: string;
+  [PracticeType.MatchingPairs]: MatchingPairAttempt[];
+  [PracticeType.WordBuilding]: string[];
+  [PracticeType.Typing]: string;
+};
+
+export type PracticeUserSelect = {
+  [Type in PracticeType]: { type: Type; value: UserSelectByType[Type] };
+}[PracticeType];
+
 export type OnSubmit = (data: {
-  // * `true` if the answer is correct, `false` if it is not correct
   isCorrectAnswer: boolean;
+  userSelect?: PracticeUserSelect;
 }) => void;
 
 export type PracticeResultData = {
-  questionsTime: { index: number; isCorrectAnswer: boolean; ms: number }[];
-  // * all practice questions to show the answer list on the result screen
+  questionsTime: {
+    index: number;
+    isCorrectAnswer: boolean;
+    ms: number;
+    userSelect: PracticeUserSelect | null;
+  }[];
   questions: PracticeQuestion[];
 };

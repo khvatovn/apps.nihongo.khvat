@@ -13,7 +13,7 @@ import { Pressable, StyleSheet, Text, useWindowDimensions, View } from "react-na
 import SoundLetter from "@/entities/kana/sound-letter/sound-letter";
 import { OnSubmit } from "@/pages/education/practice/education-practice/lib/types/questions";
 import { useStatisticsContext } from "@/pages/kana/kana-table-list-page/model/hooks";
-import { Kana, KanaAlphabet } from "@/shared/constants/kana";
+import { Kana, KanaAlphabet, PracticeType } from "@/shared/constants/kana";
 import { useFirstClickHandler } from "@/shared/helpers/firstClickHandler";
 
 interface EducationPracticeSelectAnswersProps {
@@ -67,7 +67,10 @@ const PracticeAudio: React.FC<EducationPracticeSelectAnswersProps> = ({
       setAnswerState({ id: answer.id, isCorrect, question: question.id, index });
       setIsLocked(true);
 
-      onCompleted({ isCorrectAnswer: isCorrect });
+      onCompleted({
+        isCorrectAnswer: isCorrect,
+        userSelect: { type: PracticeType.Listening, value: answer },
+      });
     },
     [answersKana, question, onCompleted, isLocked, answerState, triggerHaptic, recalculateOnce],
   );

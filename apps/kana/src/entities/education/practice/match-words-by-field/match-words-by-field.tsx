@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from "react";
+import React, { useState, useMemo, useRef } from "react";
 
 import { useHaptic } from "@nihongo/core/shared/contexts/haptic/haptic-context";
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
@@ -13,8 +13,16 @@ interface Word {
   transliteration: string;
 }
 
+export type MatchAttempt = {
+  question: string;
+  answer: string;
+  translate: string;
+
+  isCorrect: boolean;
+};
+
 interface MatchPairsProps {
-  onComplete?: (hasError: boolean) => void;
+  onComplete?: (hasError: boolean, attempts: MatchAttempt[]) => void;
   words: Word[];
   by: ByKey;
 }
@@ -61,8 +69,10 @@ export default function MatchWordsByField({ onComplete, words, by }: MatchPairsP
   const [matched, setMatched] = useState<Record<number, number>>({});
   const [selectedLeft, setSelectedLeft] = useState<number | null>(null);
   const [selectedRight, setSelectedRight] = useState<number | null>(null);
-  const [hasError, setHasError] = useState(false);
   const [errorPair, setErrorPair] = useState<{ left: number; right: number } | null>(null);
+
+  // * все шаги пользователя по порядку, включая неверные
+  const attemptsRef = useRef<MatchAttempt[]>([]);
 
   const matchedLeftIndices = Object.values(matched);
   const matchedRightIndices = Object.keys(matched).map(Number);
@@ -88,16 +98,26 @@ export default function MatchWordsByField({ onComplete, words, by }: MatchPairsP
   const tryMatch = (leftIndex: number, rightIndex: number) => {
     const isCorrect = leftIndex === rightIndex;
 
+    attemptsRef.current = [
+      ...attemptsRef.current,
+      {
+        question: words[leftIndex][by],
+        answer: words[rightIndex].transliteration,
+        translate: words[rightIndex].translate,
+        isCorrect,
+      },
+    ];
+
     if (isCorrect) {
       const newMatched = { ...matched, [rightIndex]: leftIndex };
       setMatched(newMatched);
       setSelectedLeft(null);
       setSelectedRight(null);
       if (Object.keys(newMatched).length === words.length) {
-        onComplete?.(hasError);
+        const hasError = attemptsRef.current.some((attempt) => !attempt.isCorrect);
+        onComplete?.(hasError, attemptsRef.current);
       }
     } else {
-      setHasError(true);
       setErrorPair({ left: leftIndex, right: rightIndex });
       setTimeout(() => {
         setErrorPair(null);

@@ -15,7 +15,7 @@ import { StyleSheet, useWindowDimensions, View } from "react-native";
 import AnswerCard from "@/entities/education/practice/answer-card/answer-card";
 import { OnSubmit } from "@/pages/education/practice/education-practice/lib/types/questions";
 import { useStatisticsContext } from "@/pages/kana/kana-table-list-page/model/hooks";
-import { Kana, KanaAlphabet, TEST_DELAY } from "@/shared/constants/kana";
+import { Kana, KanaAlphabet, PracticeType, TEST_DELAY } from "@/shared/constants/kana";
 import { useFirstClickHandler } from "@/shared/helpers/firstClickHandler";
 import Header from "@/shared/ui/practice-header/practice-header";
 
@@ -85,7 +85,10 @@ const EducationPracticeSelectAnswers = React.memo<Props>(function EducationPract
       recalculateOnce(typeOfChapter, question.id, isCorrect);
 
       setAnswerState({ selected: key, isCorrect });
-      onCompleted({ isCorrectAnswer: isCorrect });
+      onCompleted({
+        isCorrectAnswer: isCorrect,
+        userSelect: { type: PracticeType.Testing, value: answer },
+      });
 
       if (isCorrect) {
         delayCallback(TEST_DELAY, () => setAnswerState({ selected: null, isCorrect: false }));
@@ -141,6 +144,14 @@ const EducationPracticeSelectAnswers = React.memo<Props>(function EducationPract
     return `${kanaText} (${getTypeById(question.id)})`;
   }, [questionKana, question.id, getTypeById, t]);
 
+  const getTextByKey = (answersKana: Kana, answer: ILetter) => {
+    return answersKana === Kana.Hiragana
+      ? answer.hi
+      : answersKana === Kana.Katakana
+        ? answer.ka
+        : getRomaji(answer);
+  };
+
   return (
     <>
       <Header title={symbolLabel} subtitle={subTitle} />
@@ -159,11 +170,7 @@ const EducationPracticeSelectAnswers = React.memo<Props>(function EducationPract
                 onClick={pickAnswer}
                 questionId={question.id}
               >
-                {answersKana === Kana.Hiragana
-                  ? answer.hi
-                  : answersKana === Kana.Katakana
-                    ? answer.ka
-                    : getRomaji(answer)}
+                {getTextByKey(answersKana, answer)}
               </AnswerCard>
             );
           })}

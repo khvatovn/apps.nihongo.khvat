@@ -2,6 +2,7 @@ import React, { useCallback, useEffect, useReducer, useRef, useState } from "rea
 
 import { useModal } from "@nihongo/core/shared/contexts/modal/modal-context";
 import { ConfirmationModal } from "@nihongo/core/shared/contexts/modal/presets/confirmation";
+import { useStudyActivity } from "@nihongo/core/shared/contexts/study-activity/study-activity-context";
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
 import { useTransliterationsContext } from "@nihongo/core/shared/contexts/transliteration/transliteration";
 import SafeLayout from "@nihongo/core/shared/ui/layouts/safe-layout";
@@ -99,6 +100,7 @@ const EducationPracticePage: React.FC<LearnScreenProps> = ({ route }) => {
   }, [navigation]);
 
   const { selected, selectedWords } = useKanaContext();
+  const { registerStudyDay } = useStudyActivity();
   const katakanaLetters = getKatakanaLetters(selected);
   const hiraganaLetters = getHiraganaLetters(selected);
 
@@ -129,7 +131,7 @@ const EducationPracticePage: React.FC<LearnScreenProps> = ({ route }) => {
   }, []);
 
   const onSubmit = useCallback<OnSubmit>(
-    ({ isCorrectAnswer }) => {
+    ({ isCorrectAnswer, userSelect }) => {
       if (engine.isLocked) return;
       engine.isLocked = true;
 
@@ -138,8 +140,9 @@ const EducationPracticePage: React.FC<LearnScreenProps> = ({ route }) => {
 
       setTimeout(() => {
         engine.next({
-          data: { isCorrectAnswer },
+          data: { isCorrectAnswer, userSelect },
           finishCallback: (data: PracticeResultData) => {
+            registerStudyDay();
             navigation.navigate(ROUTES.RESULTS, data);
             engine.setFreezeTrue();
             forceUpdate();
@@ -153,7 +156,7 @@ const EducationPracticePage: React.FC<LearnScreenProps> = ({ route }) => {
         });
       }, TEST_DELAY);
     },
-    [engine, forceUpdate, navigation],
+    [engine, forceUpdate, navigation, registerStudyDay],
   );
 
   if (question === null) return <View></View>;

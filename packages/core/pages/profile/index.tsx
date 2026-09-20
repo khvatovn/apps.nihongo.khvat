@@ -1,11 +1,12 @@
 import React, { useCallback, useState } from "react";
 
+import PracticeHeatmap from "@nihongo/core/entities/profile/practice-heatmap";
 import ProfileItem from "@nihongo/core/entities/profile/profile-item/profile-item";
 import SocialMediaProfile from "@nihongo/core/entities/profile/social-media-profile/social-media-profile";
-// import StatWidget from "@nihongo/core/entities/profile/stat-widget/stat-widget";
 import { PROFILE_ROUTES, ProfileParamList } from "@nihongo/core/pages/profile/routes";
 import { IS_WELCOME_PAGE } from "@nihongo/core/shared/constants/storageKeys";
 import { useResetApp } from "@nihongo/core/shared/contexts/reset-context/reset-context";
+import { useStudyActivity } from "@nihongo/core/shared/contexts/study-activity/study-activity-context";
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
 import { getProfile, Profile } from "@nihongo/core/shared/lib/auth";
 import { Typography } from "@nihongo/core/shared/typography";
@@ -16,7 +17,7 @@ import { useFocusEffect, useNavigation } from "@react-navigation/native";
 import { StackNavigationProp } from "@react-navigation/stack";
 import { GearIcon } from "phosphor-react-native";
 import { useTranslation } from "react-i18next";
-import { ActivityIndicator, View, StyleSheet, Pressable, Text } from "react-native";
+import { ActivityIndicator, View, StyleSheet, Pressable, Text, ScrollView } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 type NavigationProp = StackNavigationProp<ProfileParamList, typeof PROFILE_ROUTES.PROFILE>;
@@ -28,6 +29,7 @@ const ProfilePage: React.FC = () => {
   const { colors } = useThemeContext();
 
   const { forceReset } = useResetApp();
+  const { days, sync } = useStudyActivity();
 
   const insets = useSafeAreaInsets();
 
@@ -52,10 +54,11 @@ const ProfilePage: React.FC = () => {
         setProfile(data);
         setLoading(false);
       });
+      void sync();
       return () => {
         active = false;
       };
-    }, []),
+    }, [sync]),
   );
 
   return (
@@ -113,14 +116,16 @@ const ProfilePage: React.FC = () => {
             />
           </View>
         )}
-
-        {/* ! TODO: pull statistics from the account */}
-        {/* <StatWidget daysCount={15} practiceCount={45} /> */}
       </View>
 
-      <View style={styles.content}>
+      <ScrollView
+        contentContainerStyle={{ gap: 16 }}
+        showsVerticalScrollIndicator={false}
+        style={styles.content}
+      >
+        <PracticeHeatmap data={days} />
         <SocialMediaProfile />
-      </View>
+      </ScrollView>
     </View>
   );
 };

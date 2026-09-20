@@ -7,7 +7,7 @@ import { View, Text, StyleSheet } from "react-native";
 
 import SelectAnswer from "@/entities/education/select-answer/select-answer";
 import { OnSubmit } from "@/pages/education/practice/education-practice/lib/types/questions";
-import { TEST_DELAY } from "@/shared/constants/kana";
+import { PracticeType, TEST_DELAY } from "@/shared/constants/kana";
 import { Word } from "@/shared/data/words";
 import { useFirstClickHandler } from "@/shared/helpers/firstClickHandler";
 import Title from "@/widgets/learning/lesson/info-screen/title/title";
@@ -44,8 +44,11 @@ const EducationPracticeChooseValue: React.FC<EducationPracticeChooseValueProps> 
 
   const styles = makeStyles(colors);
 
-  const onFinish = useFirstClickHandler((hasError) => {
-    onCompleted({ isCorrectAnswer: !hasError });
+  const onFinish = useFirstClickHandler((hasError: boolean, pickedTitle: string) => {
+    onCompleted({
+      isCorrectAnswer: !hasError,
+      userSelect: { type: PracticeType.MultipleChoice, value: pickedTitle },
+    });
   }, TEST_DELAY);
 
   return (

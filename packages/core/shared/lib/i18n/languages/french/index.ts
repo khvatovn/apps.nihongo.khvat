@@ -141,6 +141,9 @@ const French = {
     question: "question",
 
     done: "Terminer",
+
+    correct: "Correct",
+    wrong: "Incorrect",
   },
 
   lessonsList: {

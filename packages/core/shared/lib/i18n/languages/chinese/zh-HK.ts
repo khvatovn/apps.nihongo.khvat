@@ -136,6 +136,9 @@ const ChineseHK = {
     question: "題",
 
     done: "完成",
+
+    correct: "正確",
+    wrong: "錯誤",
   },
 
   lessonsList: {

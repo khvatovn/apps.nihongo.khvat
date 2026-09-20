@@ -7,7 +7,7 @@ import { View, Text, StyleSheet } from "react-native";
 
 import Sequence from "@/entities/education/sequence";
 import { OnSubmit } from "@/pages/education/practice/education-practice/lib/types/questions";
-import { Kana, TEST_DELAY } from "@/shared/constants/kana";
+import { Kana, PracticeType, TEST_DELAY } from "@/shared/constants/kana";
 import { useFirstClickHandler } from "@/shared/helpers/firstClickHandler";
 import Title from "@/widgets/learning/lesson/info-screen/title/title";
 
@@ -32,7 +32,11 @@ const EducationPracticeChooseLetters: React.FC<ChooseLettersProps> = ({
   const { colors } = useThemeContext();
 
   const onFinish = useFirstClickHandler(
-    (hasError) => onCompleted({ isCorrectAnswer: hasError }),
+    (isCorrect: boolean, picked: string[]) =>
+      onCompleted({
+        isCorrectAnswer: isCorrect,
+        userSelect: { type: PracticeType.WordBuilding, value: picked },
+      }),
     TEST_DELAY,
   );
 

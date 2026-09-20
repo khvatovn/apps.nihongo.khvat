@@ -7,7 +7,7 @@ import { StyleSheet, View } from "react-native";
 
 import Draw from "@/features/drawing/ui/draw/draw";
 import { OnSubmit } from "@/pages/education/practice/education-practice/lib/types/questions";
-import { Kana, KanaAlphabet } from "@/shared/constants/kana";
+import { Kana, KanaAlphabet, PracticeType } from "@/shared/constants/kana";
 import { getTypeById } from "@/shared/helpers/kana-letter";
 import Header from "@/shared/ui/practice-header/practice-header";
 
@@ -30,7 +30,12 @@ const PracticeDrawKana: React.FC<PracticeDrawKanaProps> = ({ symbol, kana, onCom
       />
       <View style={styles.container}>
         <Draw
-          onCompleted={(isErrors) => onCompleted({ isCorrectAnswer: isErrors })}
+          onCompleted={(isCorrect, _pickedAnswer, drawing) =>
+            onCompleted({
+              isCorrectAnswer: isCorrect,
+              userSelect: { type: PracticeType.Drawing, value: drawing },
+            })
+          }
           isCheck
           letter={symbol}
           kana={kana === Kana.Hiragana ? KanaAlphabet.Hiragana : KanaAlphabet.Katakana}

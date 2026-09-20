@@ -407,6 +407,18 @@ function buildTable(system: Transliteration): KanaTable {
 }
 
 // ---------------------------------------------------------------------------
+// 2.5. Standalone kana readings
+// ---------------------------------------------------------------------------
+// Inside a word or a sentence を is the accusative particle and is read as
+// "o" / "о". On its own — in kana drills and in the kana chart — it is the
+// name of the sign itself: "wo" / "во". The tables above hold the in-text
+// reading, this map overrides it when the whole input is a single kana.
+
+const STANDALONE_KANA: Record<string, Record<Transliteration, string>> = {
+  を: { hepburn: "wo", kunreiShiki: "wo", nihonShiki: "wo", polivanovSystem: "во" },
+};
+
+// ---------------------------------------------------------------------------
 // 3. Tokenizer — splits normalized hiragana string into an array of tokens
 // ---------------------------------------------------------------------------
 // Token types:
@@ -668,6 +680,11 @@ function applyLongVowels(text: string, system: Transliteration): string {
 
 export const kana2transliteration = (kana: string, system: Transliteration): string => {
   const normalized = normalizeToHiragana(kana);
+
+  // Single kana — use its standalone reading if it differs from the in-text one
+  const standalone = STANDALONE_KANA[normalized]?.[system];
+  if (standalone) return standalone;
+
   const table = buildTable(system);
   const tokens = tokenize(normalized, table, system);
   const raw = assemble(tokens, system);
