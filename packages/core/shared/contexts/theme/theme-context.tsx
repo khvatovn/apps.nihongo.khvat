@@ -52,7 +52,7 @@ interface ThemeProviderProps {
 
 export type ColorsType = typeof darkTheme;
 
-const getColors = (theme: Theme, deviceTheme: ColorSchemeName) => {
+const getColors = (theme: Theme, deviceTheme: ColorSchemeName | null) => {
   if (theme === Theme.Auto) {
     if (deviceTheme === "dark") return colors.dark;
     if (deviceTheme === "light") return colors.light;

@@ -110,7 +110,7 @@ const Layout: React.FC = () => {
   if (!appIsReady) {
     return (
       <View>
-        <StatusBar barStyle={barStyle} translucent={true} backgroundColor={colors.transparent} />
+        <StatusBar barStyle={barStyle} />
       </View>
     );
   }
@@ -118,7 +118,7 @@ const Layout: React.FC = () => {
   return (
     <ResetContext.Provider value={{ forceReset }}>
       <View style={{ flex: 1 }}>
-        <StatusBar barStyle={barStyle} translucent={true} backgroundColor={colors.transparent} />
+        <StatusBar barStyle={barStyle} />
 
         {!isAuthorization && isAndroid && <AndroidRootNavigation theme={currentTheme} />}
         {!isAuthorization && isIOS && <IOSRootNavigation theme={currentTheme} />}

@@ -1,6 +1,5 @@
 import React, { useCallback, useEffect } from "react";
 
-import { isAndroid } from "@nihongo/core/shared/constants/platformUtil";
 import { TABLET_WIDTH } from "@nihongo/core/shared/constants/sizes";
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
 import { ILetter } from "@nihongo/core/shared/data/lettersTable";
@@ -10,15 +9,7 @@ import PrimaryButton from "@nihongo/core/shared/ui/buttons/Primary/primary-butto
 import { RouteProp, useNavigation } from "@react-navigation/native";
 import { StackNavigationProp } from "@react-navigation/stack";
 import { useTranslation } from "react-i18next";
-import {
-  View,
-  Text,
-  ScrollView,
-  StyleSheet,
-  BackHandler,
-  StatusBar,
-  useWindowDimensions,
-} from "react-native";
+import { View, Text, ScrollView, StyleSheet, BackHandler, useWindowDimensions } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { Svg, Path } from "react-native-svg";
 
@@ -82,18 +73,6 @@ const EducationResultPage: React.FC<EducationResultProps> = ({ route }) => {
       gestureEnabled: false,
     });
   }, [navigation]);
-
-  useEffect(() => {
-    if (isAndroid) {
-      StatusBar.setBackgroundColor(colors.BgSecondary);
-    }
-
-    return () => {
-      if (isAndroid) {
-        StatusBar.setBackgroundColor(colors.transparent);
-      }
-    };
-  }, [colors]);
 
   type ResultStats = {
     totalQuestions: number;

@@ -53,6 +53,7 @@ const withModal = <P extends object>(Component: React.ComponentType<P>) => ({
 });
 
 const RootStack = {
+  screenOptions: { headerShown: false },
   screens: {
     [ROUTES.HOME]: {
       screen: createBottomTabNavigator({
@@ -100,6 +101,7 @@ const RootStack = {
 };
 
 const AuthStack = {
+  screenOptions: { headerShown: false },
   screens: {
     [ROUTES.WELCOME]: WelcomePage,
     [ROUTES.AUTH_PREVIEW]: LoginPage,

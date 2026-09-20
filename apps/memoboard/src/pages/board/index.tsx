@@ -214,7 +214,7 @@ const BoardPage = () => {
               <View style={styles.empty}>
                 <Text style={styles.emptyText}>{t("board.nothingFound")}</Text>
               </View>
-            ) : null
+            ) : undefined
           }
         />
       </View>
