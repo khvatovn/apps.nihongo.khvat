@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect, useMemo, useState } from "react";
 
-import { isAndroid, isIOS } from "@nihongo/core/shared/constants/platformUtil";
+import { isAndroid } from "@nihongo/core/shared/constants/platformUtil";
 import { useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
 import { Typography } from "@nihongo/core/shared/typography";
 import PageTitle from "@nihongo/core/shared/ui/page-title/page-title";
@@ -72,12 +72,6 @@ export const KanaTableListPage: React.FC<KanaInfoProps> = () => {
       <PageTitle isSaveArea>{t("tabs.kana")}</PageTitle>
 
       <View style={{ flex: 1, backgroundColor: colors.BgPrimary }}>
-        {isIOS && (
-          <View
-            style={[styles.lineContainer, { top: 92, backgroundColor: colors.BorderDefault }]}
-          />
-        )}
-
         <View style={{ paddingBottom: isAndroid ? 20 : 0, paddingHorizontal: 20 }}>
           <Switcher<KanaAlphabet>
             activeTab={activeTab}

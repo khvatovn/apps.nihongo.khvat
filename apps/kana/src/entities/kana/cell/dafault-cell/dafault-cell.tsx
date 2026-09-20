@@ -4,6 +4,8 @@ import { ColorsType } from "@nihongo/core/shared/contexts/theme/theme-context";
 import { Typography } from "@nihongo/core/shared/typography";
 import { Text, Pressable, View } from "react-native";
 
+const CELL_GAP = 9;
+
 interface DefaultCellProps {
   colors: ColorsType;
 
@@ -40,7 +42,7 @@ export const DefaultCell: React.FC<DefaultCellProps> = ({
     tabletCellSize = 85;
   }
 
-  const widthLong = tabletCellSize * 1.6666;
+  const widthLong = (tabletCellSize * 5 + CELL_GAP * 2) / 3;
 
   if (title === "") {
     return (

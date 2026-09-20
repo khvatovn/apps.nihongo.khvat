@@ -66,11 +66,7 @@ const normalizeRow = (row: ILetter[]): (ILetter | null)[] => {
   return row;
 };
 
-const EducationKanaTableSelected: React.FC<EducationKanaTableProps> = ({
-  kana,
-  alphabetType,
-  last,
-}) => {
+const EducationKanaTableSelected: React.FC<EducationKanaTableProps> = ({ kana, alphabetType }) => {
   const { width, height } = useWindowDimensions();
   const { colors } = useThemeContext();
   const { getRomaji } = useGetRomaji();
@@ -191,12 +187,7 @@ const EducationKanaTableSelected: React.FC<EducationKanaTableProps> = ({
   );
 
   return (
-    <View
-      style={[
-        styles.container,
-        { borderBottomWidth: last ? 0 : 1, borderBottomColor: colors.BorderDefault },
-      ]}
-    >
+    <View style={styles.container}>
       <View style={styles.rowButtons}>
         {alphabetType !== "handakuon" && (
           <PlusCell
@@ -308,7 +299,6 @@ const styles = StyleSheet.create({
     paddingRight: 16,
     marginTop: 16,
     marginBottom: 30,
-    paddingBottom: 30,
   },
   rowButtons: {
     flexDirection: "row",

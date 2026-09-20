@@ -3,6 +3,8 @@ import React, { ReactNode } from "react";
 import { ColorsType } from "@nihongo/core/shared/contexts/theme/theme-context";
 import { Pressable } from "react-native";
 
+const CELL_GAP = 9;
+
 interface PlusCellProps {
   onPress: () => void;
   colors: ColorsType;
@@ -37,7 +39,7 @@ export const PlusCell: React.FC<PlusCellProps> = ({
     tabletCellSize = 85;
   }
 
-  const widthLong = tabletCellSize * 1.6666;
+  const widthLong = (tabletCellSize * 5 + CELL_GAP * 2) / 3;
 
   return (
     <Pressable

@@ -51,7 +51,7 @@ const KanaTableChoiceLettersPage: React.FC = () => {
   const done = () => navigation.goBack();
 
   return (
-    <View style={{ flex: 1, paddingBottom: 40 + insets.bottom, position: "relative" }}>
+    <View style={{ flex: 1 }}>
       <ModalHeader
         title={activeTab === KanaAlphabet.Hiragana ? t("kana.hiragana") : t("kana.katakana")}
         left={{
@@ -61,12 +61,9 @@ const KanaTableChoiceLettersPage: React.FC = () => {
       />
 
       {isIOS && (
-        <View style={[styles.lineContainer, { top: 46, backgroundColor: colors.BorderDefault }]} />
-      )}
-
-      {isIOS && (
         <SectionList
           sections={sections}
+          style={{ flex: 1 }}
           keyExtractor={(item, index) => item + index}
           renderItem={({ section }) => (
             <React.Suspense fallback={<View />}>
@@ -88,6 +85,7 @@ const KanaTableChoiceLettersPage: React.FC = () => {
       {!isIOS && (
         <FlatList
           data={sections}
+          style={{ flex: 1 }}
           keyExtractor={(item) => item.title}
           renderItem={({ item }) => (
             <React.Suspense fallback={<View />}>
@@ -109,7 +107,7 @@ const KanaTableChoiceLettersPage: React.FC = () => {
         style={[
           styles.switcherContainer,
           {
-            bottom: insets.bottom,
+            paddingBottom: 15 + insets.bottom,
             backgroundColor: colors.BgPrimary,
             borderColor: colors.BorderDefault,
           },
@@ -172,10 +170,7 @@ const styles = StyleSheet.create({
     height: 1,
   },
   switcherContainer: {
-    position: "absolute",
-    width: "100%",
     paddingTop: 15,
-    paddingBottom: 15,
     borderTopWidth: 1,
     flexDirection: "row",
     alignItems: "flex-start",

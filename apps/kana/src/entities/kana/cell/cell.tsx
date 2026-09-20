@@ -9,6 +9,8 @@ import PrimaryButton from "@nihongo/core/shared/ui/buttons/Primary/primary-butto
 import SecondaryButton from "@nihongo/core/shared/ui/buttons/Secondary/secondary-button";
 import { StyleSheet, Text, View } from "react-native";
 
+const CELL_GAP = 9;
+
 import { StatisticLevel } from "@/pages/kana/kana-table-list-page/model/types";
 import { KanaAlphabet } from "@/shared/constants/kana";
 import getKana from "@/shared/helpers/getKanaKey";
@@ -58,7 +60,7 @@ const Cell: React.FC<CellProps> = ({
     tabletCellSize = 85;
   }
 
-  const widthLong = tabletCellSize * 1.6666;
+  const widthLong = (tabletCellSize * 5 + CELL_GAP * 2) / 3;
 
   const getFintSize = (type: "regularLabel" | "default") => {
     const x =

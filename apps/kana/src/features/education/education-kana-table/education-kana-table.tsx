@@ -1,6 +1,5 @@
 import React, { useMemo } from "react";
 
-import { useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
 import { dakuon, handakuon, base, yoon, ILetter } from "@nihongo/core/shared/data/lettersTable";
 import useGetRomaji from "@nihongo/core/shared/lib/i18n/hooks/useKey";
 import { useWindowDimensions, View, StyleSheet } from "react-native";
@@ -20,7 +19,6 @@ const EducationKanaTable: React.FC<EducationKanaTableProps> = ({
   kana,
   type,
   onClick = () => {},
-  last,
 }) => {
   const letters = useMemo(() => {
     switch (type) {
@@ -40,8 +38,6 @@ const EducationKanaTable: React.FC<EducationKanaTableProps> = ({
   const { statistics, isEnabled: isEnabledStats } = useStatisticsContext();
   const levels = statistics[kana];
 
-  const { colors } = useThemeContext();
-
   const { getRomaji } = useGetRomaji();
 
   const getStartOfRow = (letter: ILetter) => {
@@ -57,13 +53,7 @@ const EducationKanaTable: React.FC<EducationKanaTableProps> = ({
   };
 
   return (
-    <View
-      style={[
-        styles.container,
-        { borderBottomWidth: last ? 0 : 1, borderBottomColor: colors.BorderDefault },
-        type === "yoon" ? { marginBottom: 0 } : {},
-      ]}
-    >
+    <View style={styles.container}>
       {letters && letters.length > 1 && (
         <View style={styles.rowButtons}>
           <Cell
@@ -134,7 +124,6 @@ const styles = StyleSheet.create({
     paddingLeft: 16,
     paddingRight: 16,
     marginTop: 16,
-    marginBottom: 30,
     paddingBottom: 30,
     gap: 9,
     width: "100%",
