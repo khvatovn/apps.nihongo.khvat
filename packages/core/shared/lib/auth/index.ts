@@ -1,8 +1,14 @@
 import { apiFetch, ApiFetchOptions } from "@nihongo/core/shared/lib/api-gateway";
 
-import { clearTokens, getAccessToken, getRefreshToken, saveTokens } from "./tokens";
+import {
+  clearTokens,
+  getAccessToken,
+  getRefreshToken,
+  saveTokens,
+  subscribeToAuthChange,
+} from "./tokens";
 
-export { clearTokens, getAccessToken, getRefreshToken, saveTokens };
+export { clearTokens, getAccessToken, getRefreshToken, saveTokens, subscribeToAuthChange };
 
 let refreshing: Promise<string | null> | null = null;
 

@@ -12,6 +12,7 @@ import React, {
 import { STUDY_ACTIVITY } from "@nihongo/core/shared/constants/storageKeys";
 import { useRegisterEraseSource } from "@nihongo/core/shared/contexts/erase-data/erase-data-context";
 import { getTokenUserId } from "@nihongo/core/shared/lib/auth/claims";
+import { subscribeToAuthChange } from "@nihongo/core/shared/lib/auth/tokens";
 import { getUserDataField, syncUserData } from "@nihongo/core/shared/lib/user-data";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { AppState } from "react-native";
@@ -171,6 +172,8 @@ export const StudyActivityProvider = ({ children }: { children: ReactNode }) => 
 
     restore();
   }, [sync]);
+
+  useEffect(() => subscribeToAuthChange(() => void sync()), [sync]);
 
   useEffect(() => {
     const subscription = AppState.addEventListener("change", (state) => {

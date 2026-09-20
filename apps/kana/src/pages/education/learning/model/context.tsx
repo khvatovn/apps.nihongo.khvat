@@ -11,6 +11,7 @@ import React, {
 import { COMPLETED_LESSONS_KEYS, LESSONS_LIST } from "@nihongo/core/shared/constants/storageKeys";
 import { useRegisterEraseSource } from "@nihongo/core/shared/contexts/erase-data/erase-data-context";
 import { getTokenUserId } from "@nihongo/core/shared/lib/auth/claims";
+import { subscribeToAuthChange } from "@nihongo/core/shared/lib/auth/tokens";
 import { getUserDataField, syncUserData } from "@nihongo/core/shared/lib/user-data";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { AppState } from "react-native";
@@ -156,6 +157,8 @@ export const LessonsProvider = ({ children }: { children: ReactNode }) => {
 
     restore();
   }, [syncCompletedLessons]);
+
+  useEffect(() => subscribeToAuthChange(() => void syncCompletedLessons()), [syncCompletedLessons]);
 
   useEffect(() => {
     const subscription = AppState.addEventListener("change", (state) => {
