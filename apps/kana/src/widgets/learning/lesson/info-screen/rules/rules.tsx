@@ -37,8 +37,8 @@ const makeStyles = (colors: ColorsType) =>
       borderRadius: 12,
       marginTop: 16,
       marginBottom: 16,
-      paddingLeft: 15,
-      paddingRight: 15,
+      paddingLeft: 16,
+      paddingRight: 16,
       borderColor: colors.BorderDefault,
     },
     textContainer: {

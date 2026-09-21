@@ -6,12 +6,11 @@ import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme
 import { Typography } from "@nihongo/core/shared/typography";
 import PrimaryButton from "@nihongo/core/shared/ui/buttons/Primary/primary-button";
 import Input from "@nihongo/core/shared/ui/input";
+import KeyboardScrollLayout from "@nihongo/core/shared/ui/layouts/keyboard-scroll-layout";
 import { useNavigation } from "@react-navigation/native";
 import { StackNavigationProp } from "@react-navigation/stack";
-import { CaretLeftIcon } from "phosphor-react-native";
 import { useTranslation } from "react-i18next";
-import { View, Text, StyleSheet, Pressable } from "react-native";
-import { EdgeInsets, useSafeAreaInsets } from "react-native-safe-area-context";
+import { View, Text, StyleSheet } from "react-native";
 import { z } from "zod";
 
 const emailSchema = z
@@ -40,8 +39,7 @@ export const ResetPasswordAskEmailPage: React.FC = () => {
   const { t } = useTranslation();
 
   const { colors } = useThemeContext();
-  const insets = useSafeAreaInsets();
-  const styles = makeStyles(colors, insets);
+  const styles = makeStyles(colors);
 
   const [email, setEmail] = useState("");
   const [serverError, setServerError] = useState<string | undefined>();
@@ -100,18 +98,7 @@ export const ResetPasswordAskEmailPage: React.FC = () => {
   };
 
   return (
-    <View style={styles.page}>
-      <Pressable
-        onPress={goBack}
-        style={{
-          position: "absolute",
-          left: insets.left + 16,
-          top: insets.top + 16,
-        }}
-      >
-        <CaretLeftIcon color={colors.BgContrast} size={32} />
-      </Pressable>
-
+    <KeyboardScrollLayout onBack={goBack}>
       <View style={styles.header}>
         <Text style={styles.title}>{t("auth.resetPassword.title")}</Text>
       </View>
@@ -132,23 +119,12 @@ export const ResetPasswordAskEmailPage: React.FC = () => {
         containerStyles={styles.submitButton}
         text={t("auth.verifyEmail.submit")}
       />
-    </View>
+    </KeyboardScrollLayout>
   );
 };
 
-const makeStyles = (colors: ColorsType, insets: EdgeInsets) =>
+const makeStyles = (colors: ColorsType) =>
   StyleSheet.create({
-    page: {
-      paddingTop: insets.top + 16,
-      paddingBottom: insets.bottom + 16,
-      paddingLeft: insets.left + 16,
-      paddingRight: insets.right + 16,
-
-      width: "100%",
-      flex: 1,
-      alignItems: "center",
-    },
-
     header: {
       width: "100%",
     },

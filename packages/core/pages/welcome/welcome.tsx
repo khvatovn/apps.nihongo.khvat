@@ -108,6 +108,7 @@ const makeStyles = (colors: ColorsType, insets: EdgeInsets) =>
 
       paddingTop: insets.top + 32,
       paddingBottom: 32,
+      marginBottom: 16,
 
       flexDirection: "column",
       justifyContent: "center",
@@ -142,10 +143,10 @@ const makeStyles = (colors: ColorsType, insets: EdgeInsets) =>
       flexDirection: "row",
       justifyContent: "space-between",
       alignItems: "center",
-      marginTop: 8,
+      marginBottom: 8,
       padding: 12,
       borderRadius: 12,
-      height: 50,
+      height: 56,
     },
     languageFlag: {
       borderRadius: 24,

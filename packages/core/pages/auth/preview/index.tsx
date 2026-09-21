@@ -221,7 +221,7 @@ export const LoginPage: React.FC = () => {
           styles.buttonLink,
           {
             position: "absolute",
-            bottom: 15 + insets.bottom,
+            bottom: 16 + insets.bottom,
           },
         ]}
       >
@@ -273,7 +273,7 @@ const makeStyles = (colors: ColorsType, insets: EdgeInsets) =>
 
       color: colors.TextPrimary,
 
-      marginTop: 16,
+      marginTop: 8,
 
       flexDirection: "row",
       flexWrap: "wrap",
@@ -307,7 +307,7 @@ const makeStyles = (colors: ColorsType, insets: EdgeInsets) =>
       justifyContent: "center",
       gap: 8,
 
-      marginTop: 26,
+      marginTop: 16,
     },
     buttonLinkText: {
       ...Typography.regularDefault,

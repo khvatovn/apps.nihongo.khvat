@@ -8,12 +8,11 @@ import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme
 import { Typography } from "@nihongo/core/shared/typography";
 import PrimaryButton from "@nihongo/core/shared/ui/buttons/Primary/primary-button";
 import Input from "@nihongo/core/shared/ui/input";
+import KeyboardScrollLayout from "@nihongo/core/shared/ui/layouts/keyboard-scroll-layout";
 import { useNavigation } from "@react-navigation/native";
 import { StackNavigationProp } from "@react-navigation/stack";
-import { CaretLeftIcon } from "phosphor-react-native";
 import { useTranslation } from "react-i18next";
 import { View, StyleSheet, Pressable, Text } from "react-native";
-import { EdgeInsets, useSafeAreaInsets } from "react-native-safe-area-context";
 import { z } from "zod";
 
 // * Messages are i18n keys (auth.errors.*); translated in the component via t().
@@ -63,8 +62,7 @@ export const SignInPage: React.FC = () => {
   const { t } = useTranslation();
 
   const { colors } = useThemeContext();
-  const insets = useSafeAreaInsets();
-  const styles = makeStyles(colors, insets);
+  const styles = makeStyles(colors);
 
   useEffect(() => {
     navigation.setOptions({
@@ -126,18 +124,7 @@ export const SignInPage: React.FC = () => {
   };
 
   return (
-    <View style={styles.page}>
-      <Pressable
-        onPress={goBack}
-        style={{
-          position: "absolute",
-          left: insets.left + 16,
-          top: insets.top + 16,
-        }}
-      >
-        <CaretLeftIcon color={colors.BgContrast} size={32} />
-      </Pressable>
-
+    <KeyboardScrollLayout onBack={goBack}>
       <View style={styles.header}>
         <Text style={styles.title}>{t("auth.signIn.title")}</Text>
       </View>
@@ -180,23 +167,12 @@ export const SignInPage: React.FC = () => {
           </Text>
         )}
       </Pressable>
-    </View>
+    </KeyboardScrollLayout>
   );
 };
 
-const makeStyles = (colors: ColorsType, insets: EdgeInsets) =>
+const makeStyles = (colors: ColorsType) =>
   StyleSheet.create({
-    page: {
-      paddingTop: insets.top + 16,
-      paddingBottom: insets.bottom + 16,
-      paddingLeft: insets.left + 16,
-      paddingRight: insets.right + 16,
-
-      width: "100%",
-      flex: 1,
-      alignItems: "center",
-    },
-
     header: {
       width: "100%",
     },

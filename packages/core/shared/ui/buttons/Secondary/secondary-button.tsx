@@ -14,7 +14,6 @@ import { useHaptic } from "../../../contexts/haptic/haptic-context";
 import { useThemeContext } from "../../../contexts/theme/theme-context";
 import { Typography } from "../../../typography";
 
-
 interface SecondaryButtonProps {
   content?: ReactNode;
 
@@ -120,7 +119,7 @@ const SecondaryButton: React.FC<SecondaryButtonProps> = ({
       color: colors.TextPrimary,
     },
     isDisabled && {
-      color: colors.TextSecondary,
+      color: colors.TextDisabled,
     },
     Typography.boldDefault,
     textStyles && textStyles,

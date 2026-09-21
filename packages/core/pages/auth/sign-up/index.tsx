@@ -7,12 +7,11 @@ import { useGatewayUrl } from "@nihongo/core/shared/lib/api-gateway";
 import { Typography } from "@nihongo/core/shared/typography";
 import PrimaryButton from "@nihongo/core/shared/ui/buttons/Primary/primary-button";
 import Input from "@nihongo/core/shared/ui/input";
+import KeyboardScrollLayout from "@nihongo/core/shared/ui/layouts/keyboard-scroll-layout";
 import { useNavigation } from "@react-navigation/native";
 import { StackNavigationProp } from "@react-navigation/stack";
-import { CaretLeftIcon } from "phosphor-react-native";
 import { useTranslation } from "react-i18next";
 import { View, StyleSheet, Pressable, Text, Linking } from "react-native";
-import { EdgeInsets, useSafeAreaInsets } from "react-native-safe-area-context";
 import { z } from "zod";
 
 const ageFromDateString = (value: string): number => {
@@ -94,8 +93,7 @@ export const SignUpPage: React.FC = () => {
   const { t, i18n } = useTranslation();
 
   const { colors } = useThemeContext();
-  const insets = useSafeAreaInsets();
-  const styles = makeStyles(colors, insets);
+  const styles = makeStyles(colors);
 
   useEffect(() => {
     navigation.setOptions({
@@ -117,7 +115,7 @@ export const SignUpPage: React.FC = () => {
 
   const setField = (name: string, val: string) => {
     setData((prev) => ({ ...prev, [name]: val }));
-    // * Clear the field's server error as soon as the user edits it.
+
     setServerErrors((prev) => {
       if (!prev[name]) return prev;
       const next = { ...prev };
@@ -129,7 +127,6 @@ export const SignUpPage: React.FC = () => {
   const errors = useMemo(() => validateSignUp(data), [data]);
   const isValid = Object.keys(errors).length === 0;
 
-  // * Show errors only after a submit attempt; the key is translated via i18n.
   const fieldError = (name: string): string | undefined => {
     if (!submitted) return undefined;
     const key = errors[name] ?? serverErrors[name];
@@ -140,7 +137,7 @@ export const SignUpPage: React.FC = () => {
     setSubmitted(true);
     setServerErrors({});
 
-    if (!isValid) return; // * validation errors — do not send the request
+    if (!isValid) return;
 
     const formatDate = (date: Date) => {
       const pad = (value: number) => String(value).padStart(2, "0");
@@ -172,18 +169,7 @@ export const SignUpPage: React.FC = () => {
   };
 
   return (
-    <View style={styles.page}>
-      <Pressable
-        onPress={goBack}
-        style={{
-          position: "absolute",
-          left: insets.left + 16,
-          top: insets.top + 16,
-        }}
-      >
-        <CaretLeftIcon color={colors.BgContrast} size={32} />
-      </Pressable>
-
+    <KeyboardScrollLayout onBack={goBack}>
       <View style={styles.header}>
         <Text style={styles.title}>{t("auth.signUp.title")}</Text>
       </View>
@@ -289,23 +275,12 @@ export const SignUpPage: React.FC = () => {
           )}
         </Pressable>
       </View>
-    </View>
+    </KeyboardScrollLayout>
   );
 };
 
-const makeStyles = (colors: ColorsType, insets: EdgeInsets) =>
+const makeStyles = (colors: ColorsType) =>
   StyleSheet.create({
-    page: {
-      paddingTop: insets.top + 16,
-      paddingBottom: insets.bottom + 16,
-      paddingLeft: insets.left + 16,
-      paddingRight: insets.right + 16,
-
-      width: "100%",
-      flex: 1,
-      alignItems: "center",
-    },
-
     header: {
       width: "100%",
     },

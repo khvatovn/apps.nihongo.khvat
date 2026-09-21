@@ -8,12 +8,11 @@ import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme
 import { Typography } from "@nihongo/core/shared/typography";
 import PrimaryButton from "@nihongo/core/shared/ui/buttons/Primary/primary-button";
 import Input from "@nihongo/core/shared/ui/input";
+import KeyboardScrollLayout from "@nihongo/core/shared/ui/layouts/keyboard-scroll-layout";
 import { RouteProp, useNavigation, useRoute } from "@react-navigation/native";
 import { StackNavigationProp } from "@react-navigation/stack";
-import { CaretLeftIcon } from "phosphor-react-native";
 import { useTranslation } from "react-i18next";
-import { View, Text, StyleSheet, Pressable } from "react-native";
-import { EdgeInsets, useSafeAreaInsets } from "react-native-safe-area-context";
+import { View, Text, StyleSheet } from "react-native";
 import { z } from "zod";
 
 // * i18n-ключи (auth.errors.*); переводятся в компоненте через t().
@@ -73,8 +72,7 @@ export const ResetPasswordPage: React.FC = () => {
   const { t } = useTranslation();
 
   const { colors } = useThemeContext();
-  const insets = useSafeAreaInsets();
-  const styles = makeStyles(colors, insets);
+  const styles = makeStyles(colors);
 
   const { forceReset } = useResetApp();
 
@@ -136,18 +134,7 @@ export const ResetPasswordPage: React.FC = () => {
   };
 
   return (
-    <View style={styles.page}>
-      <Pressable
-        onPress={goBack}
-        style={{
-          position: "absolute",
-          left: insets.left + 16,
-          top: insets.top + 16,
-        }}
-      >
-        <CaretLeftIcon color={colors.BgContrast} size={32} />
-      </Pressable>
-
+    <KeyboardScrollLayout onBack={goBack}>
       <View style={styles.header}>
         <Text style={styles.title}>{t("auth.resetPassword.changeTitle")}</Text>
       </View>
@@ -173,23 +160,12 @@ export const ResetPasswordPage: React.FC = () => {
         containerStyles={styles.submitButton}
         text={t("auth.resetPassword.confirm")}
       />
-    </View>
+    </KeyboardScrollLayout>
   );
 };
 
-const makeStyles = (colors: ColorsType, insets: EdgeInsets) =>
+const makeStyles = (colors: ColorsType) =>
   StyleSheet.create({
-    page: {
-      paddingTop: insets.top + 16,
-      paddingBottom: insets.bottom + 16,
-      paddingLeft: insets.left + 16,
-      paddingRight: insets.right + 16,
-
-      width: "100%",
-      flex: 1,
-      alignItems: "center",
-    },
-
     header: {
       width: "100%",
     },

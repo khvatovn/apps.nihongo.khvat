@@ -163,8 +163,8 @@ const Input: React.FC<InputProps> = ({
 
         {isSecure && (
           <Pressable style={styles.icon} onPress={() => setSecureText((val) => !val)}>
-            {!secureText && <EyeIcon color={colors.BgContrast} />}
-            {secureText && <EyeSlashIcon color={colors.BgContrast} />}
+            {!secureText && <EyeIcon size={20} color={colors.BgContrast} />}
+            {secureText && <EyeSlashIcon size={20} color={colors.BgContrast} />}
           </Pressable>
         )}
       </View>
@@ -207,7 +207,7 @@ const makeStyles = (colors: ColorsType) =>
     icon: {
       position: "absolute",
       right: 16,
-      top: 12,
+      top: 14,
     },
 
     error: {

@@ -14,7 +14,6 @@ import { useHaptic } from "../../../contexts/haptic/haptic-context";
 import { useThemeContext } from "../../../contexts/theme/theme-context";
 import { Typography } from "../../../typography";
 
-
 interface PrimaryButtonProps {
   content?: ReactNode;
 
@@ -97,10 +96,10 @@ const PrimaryButton: FC<PrimaryButtonProps> = ({
 
   const getTextStyles = () => [
     {
-      color: isDisabled ? colors.TextSecondary : colors.TextContrastPrimary,
+      color: isDisabled ? colors.TextDisabled : colors.TextContrastPrimary,
     },
     isOutline && {
-      color: isDisabled ? colors.TextSecondary : colors.TextPrimary,
+      color: isDisabled ? colors.TextDisabled : colors.TextPrimary,
     },
     Typography.boldDefault,
     textStyles,
