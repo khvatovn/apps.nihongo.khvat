@@ -230,6 +230,14 @@ const DebugInfo: React.FC = () => {
       : " (Outdated version)";
   };
 
+  const storeLogo = isIOS ? (
+    <AppStoreLogoIcon size={20} color={colors.BgContrast} />
+  ) : (
+    <GooglePlayLogoIcon size={20} color={colors.BgContrast} />
+  );
+
+  const versionText = `v${process.env.VERSION}, build: ${process.env.BUILD_NUMBER}${getVersionStatus()}`;
+
   return (
     <>
       <SettingsSection>
@@ -237,22 +245,18 @@ const DebugInfo: React.FC = () => {
           leftIcon={<GitBranchIcon size={20} color={colors.BgContrast} />}
           hideArrow
           text={t("settings.version")}
-          subText={`v${process.env.VERSION}, build: ${process.env.BUILD_NUMBER}${getVersionStatus()}`}
+          subText={versionText}
           onClick={handleVersionTap}
         />
+
         <SettingItem
-          leftIcon={
-            isIOS ? (
-              <AppStoreLogoIcon size={20} color={colors.BgContrast} />
-            ) : (
-              <GooglePlayLogoIcon size={20} color={colors.BgContrast} />
-            )
-          }
+          leftIcon={storeLogo}
           isLast={appLinks.length === 0}
           hideArrow
           text={t("debug.store")}
           subText={`Build for ${process.env.STORE}`}
         />
+
         {appLinks.map((link, index) => (
           <SettingItem
             key={link.link}
@@ -266,7 +270,7 @@ const DebugInfo: React.FC = () => {
       </SettingsSection>
 
       {isVisible && (
-        <View style={styles.container}>
+        <SettingsSection>
           <SettingItem
             leftIcon={<DeviceMobileIcon size={20} color={colors.BgContrast} />}
             hideArrow
@@ -358,7 +362,7 @@ const DebugInfo: React.FC = () => {
 
             <Pressable onPress={selectAuto} style={styles.gatewayButton}>
               <Text style={[styles.value, { color: colors.BgAccent }]}>
-                ↻ {t("debug.autoSelect")}
+                {t("debug.autoSelect")}
               </Text>
             </Pressable>
 
@@ -366,20 +370,18 @@ const DebugInfo: React.FC = () => {
               <TextInput
                 value={newHost}
                 onChangeText={setNewHost}
-                placeholder="http://192.168.0.1:3009"
+                placeholder="http://192.168.0.1:3000"
                 placeholderTextColor={colors.TextSecondary}
                 autoCapitalize="none"
                 autoCorrect={false}
                 style={[styles.value, styles.addHostInput, { color: colors.TextPrimary }]}
               />
               <Pressable onPress={addHost} style={styles.gatewayButton}>
-                <Text style={[styles.value, { color: colors.BgAccent }]}>
-                  + {t("debug.addHost")}
-                </Text>
+                <Text style={[styles.value, { color: colors.BgAccent }]}>{t("debug.addHost")}</Text>
               </Pressable>
             </View>
           </View>
-        </View>
+        </SettingsSection>
       )}
 
       {IS_DEBUG && (
@@ -410,14 +412,6 @@ export default DebugInfo;
 
 const makeStyles = (colors: ColorsType) =>
   StyleSheet.create({
-    container: {
-      marginHorizontal: 16,
-      borderRadius: 12,
-      backgroundColor: colors.BgSecondary,
-      padding: 16,
-      paddingVertical: 0,
-      gap: 8,
-    },
     header: {
       color: colors.TextPrimary,
       ...Typography.boldDefault,
@@ -425,6 +419,9 @@ const makeStyles = (colors: ColorsType) =>
     gateways: {
       gap: 4,
       marginBottom: 16,
+      marginTop: 16,
+
+      marginRight: 16,
     },
     label: {
       color: colors.TextPrimary,
