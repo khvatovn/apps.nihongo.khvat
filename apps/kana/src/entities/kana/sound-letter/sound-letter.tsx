@@ -41,12 +41,12 @@ const SoundLetter: React.FC<SoundLetterProps> = ({ id, width, children, isAutoPl
     };
   }, [id, isAutoPlay]);
 
-  const playSound = () => {
+  const playSound = async () => {
     const player = playerRef.current;
     if (!player) return;
 
     try {
-      player.seekTo(0);
+      await player.seekTo(0);
       player.play();
     } catch (error) {
       console.warn("Sound play skipped:", error);

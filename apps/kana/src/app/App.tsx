@@ -1,5 +1,7 @@
 // * Initialization of i18n (side-effect) - before other modules
 import "@nihongo/core/shared/lib/i18n/index";
+// * Configuration of the audio session (side-effect) - before any player is created
+import "@/shared/lib/audio";
 
 import React, { StrictMode } from "react";
 
