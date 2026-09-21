@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+import { useHaptic } from "@nihongo/core/shared/contexts/haptic/haptic-context";
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
 import { useTransliterationsContext } from "@nihongo/core/shared/contexts/transliteration/transliteration";
 import { Typography } from "@nihongo/core/shared/typography";
@@ -15,13 +16,14 @@ type ChapterProps = {
   title: string;
   lessons: LessonInterface[];
   startLesson: (lesson: LessonInterface) => void;
-  isLast: boolean;
 };
 
-const Chapter: React.FC<ChapterProps> = ({ lessons, title, isLast, startLesson }) => {
+const Chapter: React.FC<ChapterProps> = ({ lessons, title, startLesson }) => {
   const { t } = useTranslation();
   const { colors } = useThemeContext();
   const styles = makeStyles(colors);
+
+  const { triggerHaptic } = useHaptic();
 
   const [activeLesson, setActiveLesson] = useState<string | null>(null);
 
@@ -35,6 +37,8 @@ const Chapter: React.FC<ChapterProps> = ({ lessons, title, isLast, startLesson }
   );
 
   const toggleActiveLesson = (key: string) => {
+    triggerHaptic();
+
     if (activeLesson === key) {
       setActiveLesson("");
     } else {
@@ -69,11 +73,12 @@ const Chapter: React.FC<ChapterProps> = ({ lessons, title, isLast, startLesson }
           infoTitle={replaceTransliterations(item.expanded_title, transliterations)}
           infoSubTitle={replaceTransliterations(item.expanded_subtitle, transliterations)}
           onClick={() => toggleActiveLesson(item.id)}
-          onStartLesson={() => startLesson(item)}
+          onStartLesson={() => {
+            triggerHaptic();
+            startLesson(item);
+          }}
         />
       ))}
-
-      {!isLast && <View style={styles.line} />}
     </View>
   );
 };
@@ -93,11 +98,5 @@ const makeStyles = (colors: ColorsType) =>
       marginTop: 8,
       marginBottom: 22,
       paddingHorizontal: 16,
-    },
-    line: {
-      width: "100%",
-      height: 1,
-      marginBottom: 32,
-      backgroundColor: colors.BorderDefault,
     },
   });

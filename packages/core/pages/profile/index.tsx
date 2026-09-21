@@ -5,6 +5,7 @@ import ProfileItem from "@nihongo/core/entities/profile/profile-item/profile-ite
 import SocialMediaProfile from "@nihongo/core/entities/profile/social-media-profile/social-media-profile";
 import { PROFILE_ROUTES, ProfileParamList } from "@nihongo/core/pages/profile/routes";
 import { IS_WELCOME_PAGE } from "@nihongo/core/shared/constants/storageKeys";
+import { useHaptic } from "@nihongo/core/shared/contexts/haptic/haptic-context";
 import { useResetApp } from "@nihongo/core/shared/contexts/reset-context/reset-context";
 import { useStudyActivity } from "@nihongo/core/shared/contexts/study-activity/study-activity-context";
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
@@ -32,14 +33,17 @@ const ProfilePage: React.FC = () => {
   const { days, sync } = useStudyActivity();
 
   const insets = useSafeAreaInsets();
+  const { triggerHaptic } = useHaptic();
 
   const styles = makeStyles(colors);
 
   const toSettings = () => {
+    triggerHaptic();
     navigation.navigate(PROFILE_ROUTES.SETTINGS);
   };
 
   const toEditProfile = () => {
+    triggerHaptic();
     navigation.navigate(PROFILE_ROUTES.EDIT);
   };
 
@@ -123,7 +127,7 @@ const ProfilePage: React.FC = () => {
         showsVerticalScrollIndicator={false}
         style={styles.content}
       >
-        <PracticeHeatmap data={days} />
+        {process.env.APP_SLUG === "kana-master" && <PracticeHeatmap data={days} />}
         <SocialMediaProfile />
       </ScrollView>
     </View>

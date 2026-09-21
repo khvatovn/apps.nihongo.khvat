@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 
+import { useHaptic } from "@nihongo/core/shared/contexts/haptic/haptic-context";
 import { useModal } from "@nihongo/core/shared/contexts/modal/modal-context";
 import { ConfirmationModal } from "@nihongo/core/shared/contexts/modal/presets/confirmation";
 import { useStudyActivity } from "@nihongo/core/shared/contexts/study-activity/study-activity-context";
@@ -26,6 +27,8 @@ const Lesson: React.FC<LessonProps> = ({ lesson }) => {
   const { registerStudyDay } = useStudyActivity();
   const insets = useSafeAreaInsets();
   const { t } = useTranslation();
+
+  const { triggerHaptic } = useHaptic();
 
   const { showModal, hideModal } = useModal();
 
@@ -62,7 +65,7 @@ const Lesson: React.FC<LessonProps> = ({ lesson }) => {
     // eslint-disable-next-line react-hooks/exhaustive-deps -- init из контекста
   }, [lesson.screens]);
 
-  React.useEffect(() => {
+  useEffect(() => {
     const onBackPress = () => {
       showModal({
         closeOnBackdrop: false,
@@ -74,10 +77,20 @@ const Lesson: React.FC<LessonProps> = ({ lesson }) => {
             cancelText={t("alert.cancel")}
             confirmText={t("alert.ok")}
             onConfirm={() => {
-              navigation.goBack();
-              hideModal();
+              triggerHaptic();
+
+              setTimeout(() => {
+                navigation.goBack();
+                hideModal();
+              }, 0);
             }}
-            onCancel={hideModal}
+            onCancel={() => {
+              triggerHaptic();
+
+              setTimeout(() => {
+                hideModal();
+              }, 0);
+            }}
           />
         ),
       });
@@ -88,7 +101,7 @@ const Lesson: React.FC<LessonProps> = ({ lesson }) => {
     const backHandler = BackHandler.addEventListener("hardwareBackPress", onBackPress);
 
     return () => backHandler.remove();
-  }, [hideModal, navigation, showModal, t]);
+  }, [triggerHaptic, hideModal, navigation, showModal, t]);
 
   return (
     <SafeLayout disableLeft disableRight style={styles.container}>

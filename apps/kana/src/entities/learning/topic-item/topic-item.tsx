@@ -56,7 +56,7 @@ const TopicItem: React.FC<TopicItemProps> = ({
       style={[styles.container, { marginBottom: !isLast ? 8 : isOpened ? 32 : 16 }]}
       onPress={() => onClick?.()}
     >
-      <View style={[styles.content]}>
+      <View style={styles.content}>
         <View
           style={[
             {

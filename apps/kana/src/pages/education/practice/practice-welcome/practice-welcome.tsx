@@ -65,9 +65,12 @@ const PracticeWelcomePage: React.FC = () => {
     wordsCount,
   });
 
-  const toChooseAlphabet = () => {
+  const toChooseAlphabet = async () => {
     triggerHaptic();
-    navigation.navigate(ROUTES.KANA_SELECT, { title: "" });
+
+    setTimeout(() => {
+      navigation.navigate(ROUTES.KANA_SELECT, { title: "" });
+    }, 0);
   };
 
   const start = (type?: PracticeType) => {

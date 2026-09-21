@@ -200,13 +200,12 @@ const LearningList: React.FC = () => {
           <View style={styles.scrollContainerCenter}>
             {isShowChapters && (
               <ScrollView showsVerticalScrollIndicator={false}>
-                {chapters.map((chapter, index) => (
+                {chapters.map((chapter) => (
                   <Chapter
                     title={chapter.title}
                     lessons={chapter.lessons}
                     key={chapter.id}
                     startLesson={(lesson) => startLesson(lesson)}
-                    isLast={index >= chapters.length - 1}
                   />
                 ))}
               </ScrollView>
