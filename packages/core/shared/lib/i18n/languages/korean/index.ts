@@ -1,5 +1,6 @@
 const Korean = {
   common: {
+    space: "스페이스",
     save: "저장",
     done: "완료",
     close: "닫기",
@@ -71,6 +72,7 @@ const Korean = {
   },
 
   selectKana: {
+    chooseKana: "가나 선택",
     words: "연습할 단어",
     nothingSelected: "선택된 항목 없음",
   },
@@ -93,6 +95,7 @@ const Korean = {
     displayStatistics: "통계 표시",
     hapticFeedback: "햅틱 피드백",
     theme: {
+      installed: "설치됨",
       title: "테마",
       light: "라이트",
       dark: "다크",
@@ -128,6 +131,10 @@ const Korean = {
   },
 
   result: {
+    drawing: "쓰기",
+    example: "예시",
+    you: "내 답",
+
     title: "연습 완료",
     score: "점수",
 
@@ -155,6 +162,16 @@ const Korean = {
   },
 
   transliterationSystems: {
+    latin: "로마자",
+    cyrillic: "키릴 문자",
+
+    tags: {
+      mostPopular: "가장 대중적",
+      officialJapan: "일본 공식",
+      strictest: "가장 엄격",
+      russianStandard: "러시아 표준",
+    },
+
     romaji: "로마자",
     transliterationSystems: "로마자 표기 체계",
     hepburn: "Hepburn (헵번식)",
@@ -255,6 +272,11 @@ const Korean = {
     },
   },
   profile: {
+    stats: {
+      daysOfStudy: "학습일수",
+      timesOfPractice: "연습 횟수",
+    },
+
     avatar: {
       title: "프로필 사진",
       takePhoto: "사진 촬영",

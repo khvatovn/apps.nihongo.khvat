@@ -43,17 +43,17 @@ const SettingsTransliterationsPage: React.FC = () => {
     {
       key: Transliterations.HEP,
       title: t("transliterationSystems.hepburn"),
-      tags: ["Самая популярная"],
+      tags: [t("transliterationSystems.tags.mostPopular")],
     },
     {
       key: Transliterations.KUN,
       title: t("transliterationSystems.kunreiShiki"),
-      tags: ["Официальная Япония"],
+      tags: [t("transliterationSystems.tags.officialJapan")],
     },
     {
       key: Transliterations.NIH,
       title: t("transliterationSystems.nihonShiki"),
-      tags: ["Самая строгая"],
+      tags: [t("transliterationSystems.tags.strictest")],
     },
   ];
 
@@ -61,7 +61,7 @@ const SettingsTransliterationsPage: React.FC = () => {
     {
       key: Transliterations.POL,
       title: t("transliterationSystems.polivanovSystem"),
-      tags: ["Стандарт в России"],
+      tags: [t("transliterationSystems.tags.russianStandard")],
     },
   ];
 
@@ -81,7 +81,7 @@ const SettingsTransliterationsPage: React.FC = () => {
           }}
         />
 
-        <Text style={styles.title}>Latin</Text>
+        <Text style={styles.title}>{t("transliterationSystems.latin")}</Text>
         <View style={styles.list}>
           {transliterationSystems.map((item, index) => (
             <LanguageItem
@@ -96,7 +96,9 @@ const SettingsTransliterationsPage: React.FC = () => {
           ))}
         </View>
 
-        <Text style={[styles.title, styles.title_bottom]}>Cyrillic</Text>
+        <Text style={[styles.title, styles.title_bottom]}>
+          {t("transliterationSystems.cyrillic")}
+        </Text>
         <View style={styles.list}>
           {cyrillicTransliterationSystems.map((item, index) => (
             <LanguageItem

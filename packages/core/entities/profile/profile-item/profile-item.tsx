@@ -16,6 +16,7 @@ const ProfileItem: React.FC<ProfileItemProps> = ({ avatar, name, email }) => {
   const { colors } = useThemeContext();
 
   const userUrl = useUserGatewayUrl(avatar || "");
+
   const styles = makeStyles(colors);
 
   return (
@@ -29,8 +30,12 @@ const ProfileItem: React.FC<ProfileItemProps> = ({ avatar, name, email }) => {
       </View>
 
       <View style={styles.desc}>
-        <Text style={styles.name}>{name}</Text>
-        <Text style={styles.email}>{email}</Text>
+        <Text style={styles.name} numberOfLines={1}>
+          {name}
+        </Text>
+        <Text style={styles.email} numberOfLines={1}>
+          {email}
+        </Text>
       </View>
     </View>
   );
@@ -60,6 +65,9 @@ const makeStyles = (colors: ColorsType) =>
       height: 64,
     },
     desc: {
+      // * Без flex колонка растёт по контенту и длинное имя вылезает за экран
+      flex: 1,
+
       flexDirection: "column",
       justifyContent: "center",
     },

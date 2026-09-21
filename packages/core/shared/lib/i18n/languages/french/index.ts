@@ -1,5 +1,6 @@
 const French = {
   common: {
+    space: "Espace",
     save: "Enregistrer",
     done: "Terminé",
     close: "Fermer",
@@ -73,6 +74,7 @@ const French = {
   },
 
   selectKana: {
+    chooseKana: "Choisir les kana",
     words: "Mots pour la pratique",
     nothingSelected: "Rien de sélectionné",
   },
@@ -96,6 +98,7 @@ const French = {
     displayStatistics: "Afficher les statistiques",
     hapticFeedback: "Retour haptique",
     theme: {
+      installed: "Installés",
       title: "Thème",
       light: "Clair",
       dark: "Sombre",
@@ -132,6 +135,10 @@ const French = {
   },
 
   result: {
+    drawing: "Tracé",
+    example: "Exemple",
+    you: "Vous",
+
     title: "Pratique terminée",
     score: "Score",
 
@@ -159,6 +166,16 @@ const French = {
   },
 
   transliterationSystems: {
+    latin: "Latin",
+    cyrillic: "Cyrillique",
+
+    tags: {
+      mostPopular: "La plus courante",
+      officialJapan: "Officiel au Japon",
+      strictest: "La plus stricte",
+      russianStandard: "Standard en Russie",
+    },
+
     romaji: "Romaji",
     transliterationSystems: "Systèmes de translittération",
     hepburn: "Hepburn",
@@ -260,6 +277,11 @@ const French = {
     },
   },
   profile: {
+    stats: {
+      daysOfStudy: "jours d'étude",
+      timesOfPractice: "sessions d'entraînement",
+    },
+
     avatar: {
       title: "Photo de profil",
       takePhoto: "Prendre une photo",

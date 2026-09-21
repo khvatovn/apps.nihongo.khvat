@@ -1,5 +1,6 @@
 const Italian = {
   common: {
+    space: "Spazio",
     save: "Salva",
     done: "Fatto",
     close: "Chiudi",
@@ -72,6 +73,7 @@ const Italian = {
   },
 
   selectKana: {
+    chooseKana: "Scegli i kana",
     words: "Parole per la pratica",
     nothingSelected: "Niente selezionato",
   },
@@ -95,6 +97,7 @@ const Italian = {
     displayStatistics: "Mostra statistiche",
     hapticFeedback: "Feedback aptico",
     theme: {
+      installed: "Installati",
       title: "Tema",
       light: "Chiaro",
       dark: "Scuro",
@@ -131,6 +134,10 @@ const Italian = {
   },
 
   result: {
+    drawing: "Disegno",
+    example: "Esempio",
+    you: "Tu",
+
     title: "Pratica completata",
     score: "Punteggio",
 
@@ -158,6 +165,16 @@ const Italian = {
   },
 
   transliterationSystems: {
+    latin: "Latino",
+    cyrillic: "Cirillico",
+
+    tags: {
+      mostPopular: "La più diffusa",
+      officialJapan: "Ufficiale in Giappone",
+      strictest: "La più rigorosa",
+      russianStandard: "Standard in Russia",
+    },
+
     romaji: "Romaji",
     transliterationSystems: "Sistemi di traslitterazione",
     hepburn: "Hepburn",
@@ -260,6 +277,11 @@ const Italian = {
     },
   },
   profile: {
+    stats: {
+      daysOfStudy: "giorni di studio",
+      timesOfPractice: "sessioni di pratica",
+    },
+
     avatar: {
       title: "Foto del profilo",
       takePhoto: "Scatta una foto",

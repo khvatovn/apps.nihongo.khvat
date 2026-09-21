@@ -74,6 +74,9 @@ export const LoginPage: React.FC = () => {
   const privacyPolicyUrl = useGatewayUrl(
     `/${i18n.language}/docs/${process.env.DOCS_SLUG}/privacy_policy`,
   );
+  const termsUrl = useGatewayUrl(
+    `/${i18n.language}/docs/${process.env.DOCS_SLUG}/terms_conditions`,
+  );
 
   return (
     <View style={styles.page}>
@@ -107,7 +110,7 @@ export const LoginPage: React.FC = () => {
 
         <Pressable
           onPress={() => {
-            // ? Navigate to Terms of Service
+            if (termsUrl) Linking.openURL(termsUrl);
           }}
           style={{ height: 20, margin: 0, padding: 0, alignItems: "center" }}
         >
@@ -138,7 +141,6 @@ export const LoginPage: React.FC = () => {
 
         <Pressable
           onPress={() => {
-            // ? Navigate to Privacy Policy
             if (privacyPolicyUrl) Linking.openURL(privacyPolicyUrl);
           }}
           style={{ height: 20, margin: 0, padding: 0, alignItems: "center" }}
@@ -177,7 +179,6 @@ export const LoginPage: React.FC = () => {
         <PrimaryButton
           width="100%"
           onClick={() => {
-            // ? Navigate to the auth screen
             navigation.navigate(AUTH_ROUTES.SIGN_UP);
           }}
           containerStyles={{
@@ -194,7 +195,6 @@ export const LoginPage: React.FC = () => {
 
         <Pressable
           onPress={() => {
-            // ? Navigate to the auth screen
             navigation.navigate(AUTH_ROUTES.SIGN_IN);
           }}
           style={styles.buttonLink}

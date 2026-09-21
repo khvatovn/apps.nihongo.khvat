@@ -1,5 +1,6 @@
 const SpanishMX = {
   common: {
+    space: "Espacio",
     save: "Guardar",
     done: "Listo",
     close: "Cerrar",
@@ -73,6 +74,7 @@ const SpanishMX = {
   },
 
   selectKana: {
+    chooseKana: "Elegir kana",
     words: "Palabras para practicar",
     nothingSelected: "Nada seleccionado",
   },
@@ -95,6 +97,7 @@ const SpanishMX = {
     displayStatistics: "Mostrar estadísticas",
     hapticFeedback: "Vibración",
     theme: {
+      installed: "Instalados",
       title: "Tema",
       light: "Claro",
       dark: "Oscuro",
@@ -131,6 +134,10 @@ const SpanishMX = {
   },
 
   result: {
+    drawing: "Trazo",
+    example: "Ejemplo",
+    you: "Tú",
+
     title: "Práctica completada",
     score: "Puntuación",
 
@@ -159,6 +166,16 @@ const SpanishMX = {
   },
 
   transliterationSystems: {
+    latin: "Latino",
+    cyrillic: "Cirílico",
+
+    tags: {
+      mostPopular: "La más popular",
+      officialJapan: "Oficial en Japón",
+      strictest: "La más estricta",
+      russianStandard: "Estándar en Rusia",
+    },
+
     romaji: "Romaji",
     transliterationSystems: "Sistemas de transliteración",
     hepburn: "Hepburn",
@@ -260,6 +277,11 @@ const SpanishMX = {
     },
   },
   profile: {
+    stats: {
+      daysOfStudy: "días de estudio",
+      timesOfPractice: "sesiones de práctica",
+    },
+
     avatar: {
       title: "Foto de perfil",
       takePhoto: "Tomar una foto",

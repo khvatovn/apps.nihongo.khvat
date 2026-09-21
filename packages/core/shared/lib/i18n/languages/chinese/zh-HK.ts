@@ -1,5 +1,6 @@
 const ChineseHK = {
   common: {
+    space: "空格",
     save: "儲存",
     done: "完成",
     close: "關閉",
@@ -71,6 +72,7 @@ const ChineseHK = {
   },
 
   selectKana: {
+    chooseKana: "選擇假名",
     words: "練習單字數",
     nothingSelected: "未選擇任何項目",
   },
@@ -92,6 +94,7 @@ const ChineseHK = {
     displayStatistics: "顯示統計資料",
     hapticFeedback: "觸覺回饋",
     theme: {
+      installed: "已安裝",
       title: "主題",
       light: "淺色",
       dark: "深色",
@@ -127,6 +130,10 @@ const ChineseHK = {
   },
 
   result: {
+    drawing: "書寫",
+    example: "範例",
+    you: "你的",
+
     title: "練習完成",
     score: "分數",
 
@@ -154,6 +161,16 @@ const ChineseHK = {
   },
 
   transliterationSystems: {
+    latin: "拉丁字母",
+    cyrillic: "西里爾字母",
+
+    tags: {
+      mostPopular: "最常用",
+      officialJapan: "日本官方",
+      strictest: "最嚴格",
+      russianStandard: "俄羅斯標準",
+    },
+
     romaji: "羅馬字",
     transliterationSystems: "羅馬拼音系統",
     hepburn: "Hepburn（赫本）",
@@ -254,6 +271,11 @@ const ChineseHK = {
     },
   },
   profile: {
+    stats: {
+      daysOfStudy: "學習天數",
+      timesOfPractice: "練習次數",
+    },
+
     avatar: {
       title: "頭像",
       takePhoto: "拍照",

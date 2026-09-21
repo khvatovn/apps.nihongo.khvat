@@ -119,13 +119,13 @@ const AccountActions: React.FC = () => {
   return (
     <>
       <SettingItem
-        leftIcon={<TrashIcon size={20} color={colors.BgContrast} />}
+        leftIcon={<TrashIcon size={20} color={colors.BgDanger} />}
         isDanger
         text={t("settings.deleteAccount.button")}
         onClick={confirmDelete}
       />
       <SettingItem
-        leftIcon={<SignOutIcon size={20} color={colors.BgContrast} />}
+        leftIcon={<SignOutIcon size={20} color={colors.BgDanger} />}
         isLast
         isDanger
         text={t("settings.logout.button")}

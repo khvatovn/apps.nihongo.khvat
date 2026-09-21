@@ -163,7 +163,7 @@ export const SignInPage: React.FC = () => {
               { color: pressed ? colors.TextPrimaryPressed : colors.TextPrimary },
             ]}
           >
-            Forgot password?
+            {t("auth.resetPassword.title")}
           </Text>
         )}
       </Pressable>

@@ -330,6 +330,8 @@ export const useUserGatewayUrl = (path: string): string | undefined => {
     };
   }, [path]);
 
+  if (path == "") return "";
+
   return url;
 };
 

@@ -106,7 +106,7 @@ const SettingsThemePage: React.FC = () => {
           }}
         />
 
-        <Text style={styles.title}>Installed</Text>
+        <Text style={styles.title}>{t("settings.theme.installed")}</Text>
         <View style={styles.list}>
           <FlatList
             style={{ flexShrink: 1 }}

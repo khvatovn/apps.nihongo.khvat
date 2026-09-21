@@ -3,6 +3,7 @@ import React from "react";
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
 import { Typography } from "@nihongo/core/shared/typography";
 import { CalendarIcon, ClockIcon } from "phosphor-react-native";
+import { useTranslation } from "react-i18next";
 import { View, StyleSheet, Text } from "react-native";
 
 interface StatWidgetProps {
@@ -11,6 +12,7 @@ interface StatWidgetProps {
 }
 
 const StatWidget: React.FC<StatWidgetProps> = ({ daysCount, practiceCount }) => {
+  const { t } = useTranslation();
   const { colors } = useThemeContext();
   const styles = makeStyles(colors);
 
@@ -22,7 +24,7 @@ const StatWidget: React.FC<StatWidgetProps> = ({ daysCount, practiceCount }) => 
         </View>
         <View>
           <Text style={styles.title}>{daysCount}</Text>
-          <Text style={styles.subtitle}>days of study</Text>
+          <Text style={styles.subtitle}>{t("profile.stats.daysOfStudy")}</Text>
         </View>
       </View>
       <View style={styles.item}>
@@ -31,7 +33,7 @@ const StatWidget: React.FC<StatWidgetProps> = ({ daysCount, practiceCount }) => 
         </View>
         <View>
           <Text style={styles.title}>{practiceCount}</Text>
-          <Text style={styles.subtitle}>раз практики</Text>
+          <Text style={styles.subtitle}>{t("profile.stats.timesOfPractice")}</Text>
         </View>
       </View>
     </View>

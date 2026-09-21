@@ -130,7 +130,11 @@ const SettingItem: React.FC<SettingItemProps> = ({
           <Text
             numberOfLines={1}
             ellipsizeMode="tail"
-            style={[Typography.regularLabel, { color: colors.TextSecondary }]}
+            style={[
+              Typography.regularLabel,
+              { color: colors.TextSecondary },
+              isDanger ? { color: colors.TextDanger } : {},
+            ]}
           >
             {subText}
           </Text>

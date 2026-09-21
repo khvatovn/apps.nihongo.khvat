@@ -7,6 +7,7 @@ import { useRemoteConfig } from "@nihongo/core/shared/contexts/remote-config/rem
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
 import { Typography } from "@nihongo/core/shared/typography";
 import SecondaryButton from "@nihongo/core/shared/ui/buttons/Secondary/secondary-button";
+import { useTranslation } from "react-i18next";
 import { StyleSheet, View, Text, ScrollView } from "react-native";
 import { z } from "zod";
 
@@ -25,6 +26,7 @@ const socialMediaLinkSchema = z.object({
 const socialMediaLinksSchema = z.array(socialMediaLinkSchema);
 
 export const PromotionTelegram = (props: ConfirmationModalProps) => {
+  const { t } = useTranslation();
   const { colors } = useThemeContext();
 
   const { onPress } = props;
@@ -130,7 +132,12 @@ export const PromotionTelegram = (props: ConfirmationModalProps) => {
       </View>
 
       <View style={styles.buttons}>
-        <SecondaryButton onClick={onPress} isOutline isFullWidth text={"Я починю сам"} />
+        <SecondaryButton
+          onClick={onPress}
+          isOutline
+          isFullWidth
+          text={t("promotionTelegram.fixMyself")}
+        />
       </View>
     </ScrollView>
   );

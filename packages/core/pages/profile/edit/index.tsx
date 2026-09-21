@@ -85,7 +85,7 @@ const ProfileEditPage: React.FC = () => {
           </View>
 
           <View style={styles.avatarBadge}>
-            <CameraIcon size={16} color={colors.TextContrastPrimary} weight="fill" />
+            <CameraIcon size={16} color={colors.TextContrastPrimary} />
           </View>
         </Pressable>
 

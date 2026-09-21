@@ -8,6 +8,7 @@ import {
 } from "@nihongo/core/shared/contexts/transliteration/transliteration";
 import { Typography } from "@nihongo/core/shared/typography";
 import { ArrowFatLineUpIcon, BackspaceIcon, SmileyMeltingIcon } from "phosphor-react-native";
+import { useTranslation } from "react-i18next";
 import { StyleSheet, View, Text, useWindowDimensions, Pressable } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
@@ -33,6 +34,7 @@ const russion = [
 const CustomKeyboard: React.FC<KeyboardProps> = ({ setValue, onSubmit, disable }) => {
   const insets = useSafeAreaInsets();
   const { width } = useWindowDimensions();
+  const { t } = useTranslation();
   const { colors } = useThemeContext();
   const styles = makeStyles(colors);
   const { triggerHaptic } = useHaptic();
@@ -163,7 +165,9 @@ const CustomKeyboard: React.FC<KeyboardProps> = ({ setValue, onSubmit, disable }
             },
           ]}
         >
-          <Text style={[{ color: colors.TextPrimary }, Typography.regularDefault]}>Space</Text>
+          <Text style={[{ color: colors.TextPrimary }, Typography.regularDefault]}>
+            {t("common.space")}
+          </Text>
         </Pressable>
         <Pressable
           onPress={() => onPress("enter")}
@@ -175,7 +179,9 @@ const CustomKeyboard: React.FC<KeyboardProps> = ({ setValue, onSubmit, disable }
             },
           ]}
         >
-          <Text style={[{ color: colors.TextPrimary }, Typography.regularDefault]}>Done</Text>
+          <Text style={[{ color: colors.TextPrimary }, Typography.regularDefault]}>
+            {t("common.done")}
+          </Text>
         </Pressable>
       </View>
     </View>

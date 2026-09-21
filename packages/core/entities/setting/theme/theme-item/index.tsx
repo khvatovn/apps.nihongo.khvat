@@ -1,6 +1,7 @@
 import React from "react";
 
 import { MoonIcon, SunIcon } from "phosphor-react-native";
+import { useTranslation } from "react-i18next";
 import { View, StyleSheet, Text, Pressable } from "react-native";
 
 import { ColorsType, useThemeContext } from "../../../../shared/contexts/theme/theme-context";
@@ -36,6 +37,7 @@ interface ThemeItemProps {
 const ThemeItem: React.FC<ThemeItemProps> = (props) => {
   const { name, icon, isOpen, isLast, type, active } = props;
 
+  const { t } = useTranslation();
   const { colors } = useThemeContext();
   const styles = makeStyles(colors, active);
 
@@ -52,10 +54,18 @@ const ThemeItem: React.FC<ThemeItemProps> = (props) => {
         <Text style={styles.title}>{name}</Text>
         <View style={styles.tags}>
           {type === ThemeType.Light && (
-            <Tag icon={<SunIcon color={colors.BgContrast} size={12} />} text="light" />
+            <Tag
+              primary={active}
+              icon={<SunIcon color={active ? colors.BgPrimary : colors.BgContrast} size={12} />}
+              text={t("settings.theme.light")}
+            />
           )}
           {type === ThemeType.Dark && (
-            <Tag icon={<MoonIcon color={colors.BgContrast} size={12} />} text="dark" />
+            <Tag
+              primary={active}
+              icon={<MoonIcon color={active ? colors.BgPrimary : colors.BgContrast} size={12} />}
+              text={t("settings.theme.dark")}
+            />
           )}
         </View>
       </View>

@@ -1,5 +1,6 @@
 const ChineseCN = {
   common: {
+    space: "空格",
     save: "保存",
     done: "完成",
     close: "关闭",
@@ -71,6 +72,7 @@ const ChineseCN = {
   },
 
   selectKana: {
+    chooseKana: "选择假名",
     words: "练习单词数",
     nothingSelected: "未选择任何内容",
   },
@@ -92,6 +94,7 @@ const ChineseCN = {
     displayStatistics: "显示统计",
     hapticFeedback: "触觉反馈",
     theme: {
+      installed: "已安装",
       title: "主题",
       light: "浅色",
       dark: "深色",
@@ -127,6 +130,10 @@ const ChineseCN = {
   },
 
   result: {
+    drawing: "书写",
+    example: "示例",
+    you: "你的",
+
     title: "练习完成",
     score: "得分",
 
@@ -154,6 +161,16 @@ const ChineseCN = {
   },
 
   transliterationSystems: {
+    latin: "拉丁字母",
+    cyrillic: "西里尔字母",
+
+    tags: {
+      mostPopular: "最常用",
+      officialJapan: "日本官方",
+      strictest: "最严格",
+      russianStandard: "俄罗斯标准",
+    },
+
     romaji: "罗马字",
     transliterationSystems: "转写系统",
     hepburn: "Hepburn（赫本式）",
@@ -254,6 +271,11 @@ const ChineseCN = {
     },
   },
   profile: {
+    stats: {
+      daysOfStudy: "学习天数",
+      timesOfPractice: "练习次数",
+    },
+
     avatar: {
       title: "头像",
       takePhoto: "拍照",

@@ -1,5 +1,6 @@
 const Indonesian = {
   common: {
+    space: "Spasi",
     save: "Simpan",
     done: "Selesai",
     close: "Tutup",
@@ -72,6 +73,7 @@ const Indonesian = {
   },
 
   selectKana: {
+    chooseKana: "Pilih kana",
     words: "Kata untuk latihan",
     nothingSelected: "Tidak ada yang dipilih",
   },
@@ -94,6 +96,7 @@ const Indonesian = {
     displayStatistics: "Tampilkan statistik",
     hapticFeedback: "Umpan balik haptic",
     theme: {
+      installed: "Terpasang",
       title: "Tema",
       light: "Terang",
       dark: "Gelap",
@@ -130,6 +133,10 @@ const Indonesian = {
   },
 
   result: {
+    drawing: "Menggambar",
+    example: "Contoh",
+    you: "Kamu",
+
     title: "Latihan selesai",
     score: "Skor",
 
@@ -157,6 +164,16 @@ const Indonesian = {
   },
 
   transliterationSystems: {
+    latin: "Latin",
+    cyrillic: "Kiril",
+
+    tags: {
+      mostPopular: "Paling populer",
+      officialJapan: "Resmi di Jepang",
+      strictest: "Paling ketat",
+      russianStandard: "Standar di Rusia",
+    },
+
     romaji: "Romaji",
     transliterationSystems: "Sistem Transliterasi",
     hepburn: "Hepburn",
@@ -258,6 +275,11 @@ const Indonesian = {
     },
   },
   profile: {
+    stats: {
+      daysOfStudy: "hari belajar",
+      timesOfPractice: "kali latihan",
+    },
+
     avatar: {
       title: "Foto profil",
       takePhoto: "Ambil foto",

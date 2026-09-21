@@ -2,6 +2,7 @@ import React, { useMemo, useState } from "react";
 
 import { toDateKey } from "@nihongo/core/shared/contexts/study-activity/study-activity-context";
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
+import { useTranslation } from "react-i18next";
 import { View, Text, StyleSheet, LayoutChangeEvent } from "react-native";
 
 const DAY_SIZE = 14;
@@ -69,6 +70,7 @@ interface PracticeHeatmapProps {
 }
 
 export const PracticeHeatmap: React.FC<PracticeHeatmapProps> = ({ data = {} }) => {
+  const { t } = useTranslation();
   const { colors } = useThemeContext();
   const [width, setWidth] = useState(0);
 
@@ -128,11 +130,11 @@ export const PracticeHeatmap: React.FC<PracticeHeatmapProps> = ({ data = {} }) =
       <View style={styles.info}>
         <View style={styles.infoItem}>
           <Text style={styles.infoTextAccent}>{daysCount} </Text>
-          <Text style={styles.infoText}>days of study</Text>
+          <Text style={styles.infoText}>{t("profile.stats.daysOfStudy")}</Text>
         </View>
         <View style={styles.infoItem}>
           <Text style={styles.infoTextAccent}>{practiceCount} </Text>
-          <Text style={styles.infoText}>times of practics</Text>
+          <Text style={styles.infoText}>{t("profile.stats.timesOfPractice")}</Text>
         </View>
       </View>
     </View>

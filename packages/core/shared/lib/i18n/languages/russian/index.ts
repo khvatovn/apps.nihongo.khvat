@@ -1,5 +1,6 @@
 const Russian = {
   common: {
+    space: "Пробел",
     save: "Сохранить",
     done: "Готово",
     close: "Закрыть",
@@ -72,6 +73,7 @@ const Russian = {
   },
 
   selectKana: {
+    chooseKana: "Выбрать кану",
     words: "Слов для практики",
     nothingSelected: "Ничего не выбрано",
   },
@@ -94,6 +96,7 @@ const Russian = {
     displayStatistics: "Отображать статистику",
     hapticFeedback: "Виброотклик",
     theme: {
+      installed: "Установленные",
       title: "Тема",
       light: "Светлая",
       dark: "Тёмная",
@@ -130,6 +133,10 @@ const Russian = {
   },
 
   result: {
+    drawing: "Рисование",
+    example: "Образец",
+    you: "Вы",
+
     title: "Практика окончена",
     score: "Счёт",
 
@@ -157,6 +164,16 @@ const Russian = {
   },
 
   transliterationSystems: {
+    latin: "Латиница",
+    cyrillic: "Кириллица",
+
+    tags: {
+      mostPopular: "Самая популярная",
+      officialJapan: "Официальная в Японии",
+      strictest: "Самая строгая",
+      russianStandard: "Стандарт в России",
+    },
+
     romaji: "Ромадзи",
     transliterationSystems: "Системы транслитерации",
     hepburn: "Hepburn (Хепбёрн)",
@@ -258,6 +275,11 @@ const Russian = {
     },
   },
   profile: {
+    stats: {
+      daysOfStudy: "дней занятий",
+      timesOfPractice: "раз практики",
+    },
+
     avatar: {
       title: "Фото профиля",
       takePhoto: "Сделать фото",

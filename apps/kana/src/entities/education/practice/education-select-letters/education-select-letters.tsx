@@ -55,8 +55,11 @@ const EducationKanaSelectedCard: React.FC<EducationKanaSelectedCardProps> = ({ o
         </View>
       </View>
 
-      {/* ! Добавить в i18n */}
-      <PrimaryButton containerStyles={styles.btn} onClick={onSelectKana} text="Choose Kana" />
+      <PrimaryButton
+        containerStyles={styles.btn}
+        onClick={onSelectKana}
+        text={t("selectKana.chooseKana")}
+      />
     </View>
   );
 };

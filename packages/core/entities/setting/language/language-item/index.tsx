@@ -38,7 +38,7 @@ const LanguageItem: React.FC<ThemeItemProps> = (props) => {
         <Text style={styles.title}>{name}</Text>
         <View style={styles.tags}>
           {tags.map((tag) => (
-            <Tag key={tag} text={tag} />
+            <Tag primary={active} key={tag} text={tag} />
           ))}
         </View>
       </View>

@@ -197,6 +197,12 @@ const EducationResultPage: React.FC<EducationResultProps> = ({ route }) => {
                 if (answer.question === null) return <View key={index}></View>;
 
                 if (answer.question.type === PracticeType.MultipleChoice) {
+                  // * userSelect хранит title выбранного варианта, id у ответов нет
+                  const pickedTitle =
+                    answer.userSelect?.type === PracticeType.MultipleChoice
+                      ? answer.userSelect.value
+                      : null;
+
                   return (
                     <View
                       key={index}
@@ -208,18 +214,35 @@ const EducationResultPage: React.FC<EducationResultProps> = ({ route }) => {
                       <Text style={{ color: colors.TextPrimary, ...Typography.regularDefault }}>
                         {answer.question![PracticeType.MultipleChoice]?.word.kana}
                       </Text>
-                      {answer.question![PracticeType.MultipleChoice]?.answers.map((item) => (
-                        <View
-                          style={{
-                            backgroundColor: item.isTrue ? colors.BgSuccess : colors.BgSecondary,
-                            padding: 12,
-                            borderRadius: 6,
-                          }}
-                          key={index + item.title}
-                        >
-                          <Text style={{ color: colors.TextPrimary }}>{item.title}</Text>
-                        </View>
-                      ))}
+                      {answer.question![PracticeType.MultipleChoice]?.answers.map((item) => {
+                        const isWrongPick = pickedTitle === item.title && !item.isTrue;
+
+                        return (
+                          <View
+                            style={{
+                              backgroundColor: item.isTrue
+                                ? colors.BgSuccess
+                                : isWrongPick
+                                  ? colors.BgDanger
+                                  : colors.BgSecondary,
+                              padding: 12,
+                              borderRadius: 6,
+                            }}
+                            key={index + item.title}
+                          >
+                            <Text
+                              style={{
+                                color:
+                                  item.isTrue || isWrongPick
+                                    ? colors.TextContrastSecondary
+                                    : colors.TextPrimary,
+                              }}
+                            >
+                              {item.title}
+                            </Text>
+                          </View>
+                        );
+                      })}
                     </View>
                   );
                 }
@@ -248,7 +271,7 @@ const EducationResultPage: React.FC<EducationResultProps> = ({ route }) => {
                     >
                       <View style={styles.answer__header}>
                         <Text style={{ color: colors.TextPrimary, ...Typography.regularDefault }}>
-                          Drawing:{" "}
+                          {t("result.drawing")}:{" "}
                           {
                             answer.question![PracticeType.Drawing]?.question.transliterations[
                               transliterations
@@ -290,7 +313,7 @@ const EducationResultPage: React.FC<EducationResultProps> = ({ route }) => {
                               marginBottom: 6,
                             }}
                           >
-                            Example:
+                            {t("result.example")}:
                           </Text>
                           <View style={{ backgroundColor: colors.BgSecondary, borderRadius: 6 }}>
                             <DrawingReference
@@ -310,7 +333,7 @@ const EducationResultPage: React.FC<EducationResultProps> = ({ route }) => {
                               marginBottom: 6,
                             }}
                           >
-                            You:
+                            {t("result.you")}:
                           </Text>
                           <View style={{ backgroundColor: colors.BgSecondary, borderRadius: 6 }}>
                             {drawing !== null && (

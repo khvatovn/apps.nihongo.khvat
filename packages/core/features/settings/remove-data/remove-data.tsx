@@ -71,7 +71,8 @@ const RemoveData: React.FC = () => {
 
   return (
     <SettingItem
-      leftIcon={<TrashIcon size={20} color={colors.BgContrast} />}
+      isDanger
+      leftIcon={<TrashIcon size={20} color={colors.BgDanger} />}
       isLast
       text={t("settings.eraseData.button")}
       subText={dataTakesUp}

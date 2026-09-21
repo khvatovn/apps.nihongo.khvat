@@ -1,5 +1,6 @@
 const English = {
   common: {
+    space: "Space",
     save: "Save",
     done: "Done",
     close: "Close",
@@ -72,6 +73,7 @@ const English = {
   },
 
   selectKana: {
+    chooseKana: "Choose kana",
     words: "Words for practice",
     nothingSelected: "Nothing selected",
   },
@@ -94,6 +96,7 @@ const English = {
     displayStatistics: "Show statistics",
     hapticFeedback: "Haptic feedback",
     theme: {
+      installed: "Installed",
       title: "Theme",
       light: "Light",
       dark: "Dark",
@@ -130,6 +133,10 @@ const English = {
   },
 
   result: {
+    drawing: "Drawing",
+    example: "Example",
+    you: "You",
+
     title: "Practice Complete",
     score: "Score",
 
@@ -157,6 +164,16 @@ const English = {
   },
 
   transliterationSystems: {
+    latin: "Latin",
+    cyrillic: "Cyrillic",
+
+    tags: {
+      mostPopular: "Most popular",
+      officialJapan: "Official in Japan",
+      strictest: "Strictest",
+      russianStandard: "Standard in Russia",
+    },
+
     romaji: "Romaji",
     transliterationSystems: "Transliteration Systems",
     hepburn: "Hepburn",
@@ -257,6 +274,11 @@ const English = {
     },
   },
   profile: {
+    stats: {
+      daysOfStudy: "days of study",
+      timesOfPractice: "times of practice",
+    },
+
     avatar: {
       title: "Profile photo",
       takePhoto: "Take photo",

@@ -1,5 +1,6 @@
 const ChineseTW = {
   common: {
+    space: "空格",
     save: "儲存",
     done: "完成",
     close: "關閉",
@@ -70,6 +71,7 @@ const ChineseTW = {
   },
 
   selectKana: {
+    chooseKana: "選擇假名",
     words: "練習用單字",
     nothingSelected: "尚未選擇",
   },
@@ -91,6 +93,7 @@ const ChineseTW = {
     displayStatistics: "顯示統計資料",
     hapticFeedback: "觸覺回饋",
     theme: {
+      installed: "已安裝",
       title: "主題",
       light: "淺色",
       dark: "深色",
@@ -126,6 +129,10 @@ const ChineseTW = {
   },
 
   result: {
+    drawing: "書寫",
+    example: "範例",
+    you: "你的",
+
     title: "練習完成",
     score: "分數",
 
@@ -153,6 +160,16 @@ const ChineseTW = {
   },
 
   transliterationSystems: {
+    latin: "拉丁字母",
+    cyrillic: "西里爾字母",
+
+    tags: {
+      mostPopular: "最常用",
+      officialJapan: "日本官方",
+      strictest: "最嚴格",
+      russianStandard: "俄羅斯標準",
+    },
+
     romaji: "羅馬字",
     transliterationSystems: "音譯系統",
     hepburn: "Hepburn（黑本式）",
@@ -253,6 +270,11 @@ const ChineseTW = {
     },
   },
   profile: {
+    stats: {
+      daysOfStudy: "學習天數",
+      timesOfPractice: "練習次數",
+    },
+
     avatar: {
       title: "大頭貼",
       takePhoto: "拍照",

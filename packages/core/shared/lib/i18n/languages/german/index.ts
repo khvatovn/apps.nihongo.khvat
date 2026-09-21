@@ -1,5 +1,6 @@
 const German = {
   common: {
+    space: "Leertaste",
     save: "Speichern",
     done: "Fertig",
     close: "Schließen",
@@ -72,6 +73,7 @@ const German = {
   },
 
   selectKana: {
+    chooseKana: "Kana auswählen",
     words: "Wörter zum Üben",
     nothingSelected: "Nichts ausgewählt",
   },
@@ -94,6 +96,7 @@ const German = {
     displayStatistics: "Statistiken anzeigen",
     hapticFeedback: "Haptisches Feedback",
     theme: {
+      installed: "Installiert",
       title: "Design",
       light: "Hell",
       dark: "Dunkel",
@@ -130,6 +133,10 @@ const German = {
   },
 
   result: {
+    drawing: "Zeichnen",
+    example: "Beispiel",
+    you: "Du",
+
     title: "Übung beendet",
     score: "Punktzahl",
 
@@ -157,6 +164,16 @@ const German = {
   },
 
   transliterationSystems: {
+    latin: "Lateinisch",
+    cyrillic: "Kyrillisch",
+
+    tags: {
+      mostPopular: "Am beliebtesten",
+      officialJapan: "Offiziell in Japan",
+      strictest: "Am striktesten",
+      russianStandard: "Standard in Russland",
+    },
+
     romaji: "Romaji",
     transliterationSystems: "Transliterationssysteme",
     hepburn: "Hepburn",
@@ -259,6 +276,11 @@ const German = {
     },
   },
   profile: {
+    stats: {
+      daysOfStudy: "Lerntage",
+      timesOfPractice: "Übungen",
+    },
+
     avatar: {
       title: "Profilbild",
       takePhoto: "Foto aufnehmen",

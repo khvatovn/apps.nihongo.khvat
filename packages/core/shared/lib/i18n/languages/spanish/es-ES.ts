@@ -1,5 +1,6 @@
 const SpanishES = {
   common: {
+    space: "Espacio",
     save: "Guardar",
     done: "Hecho",
     close: "Cerrar",
@@ -73,6 +74,7 @@ const SpanishES = {
   },
 
   selectKana: {
+    chooseKana: "Elegir kana",
     words: "Palabras para practicar",
     nothingSelected: "Nada seleccionado",
   },
@@ -95,6 +97,7 @@ const SpanishES = {
     displayStatistics: "Mostrar estadísticas",
     hapticFeedback: "Retroalimentación háptica",
     theme: {
+      installed: "Instalados",
       title: "Tema",
       light: "Claro",
       dark: "Oscuro",
@@ -131,6 +134,10 @@ const SpanishES = {
   },
 
   result: {
+    drawing: "Trazo",
+    example: "Ejemplo",
+    you: "Tú",
+
     title: "Práctica completada",
     score: "Puntuación",
 
@@ -159,6 +166,16 @@ const SpanishES = {
   },
 
   transliterationSystems: {
+    latin: "Latino",
+    cyrillic: "Cirílico",
+
+    tags: {
+      mostPopular: "La más popular",
+      officialJapan: "Oficial en Japón",
+      strictest: "La más estricta",
+      russianStandard: "Estándar en Rusia",
+    },
+
     romaji: "Romaji",
     transliterationSystems: "Sistemas de transliteración",
     hepburn: "Hepburn",
@@ -261,6 +278,11 @@ const SpanishES = {
     },
   },
   profile: {
+    stats: {
+      daysOfStudy: "días de estudio",
+      timesOfPractice: "sesiones de práctica",
+    },
+
     avatar: {
       title: "Foto de perfil",
       takePhoto: "Hacer una foto",

@@ -107,6 +107,9 @@ export const SignUpPage: React.FC = () => {
   const privacyPolicyUrl = useGatewayUrl(
     `/${i18n.language}/docs/${process.env.DOCS_SLUG}/privacy_policy`,
   );
+  const termsUrl = useGatewayUrl(
+    `/${i18n.language}/docs/${process.env.DOCS_SLUG}/terms_conditions`,
+  );
 
   const [data, setData] = useState<Record<string, string>>({});
   const [serverErrors, setServerErrors] = useState<Record<string, string>>({});
@@ -228,7 +231,7 @@ export const SignUpPage: React.FC = () => {
 
         <Pressable
           onPress={() => {
-            // ? Navigate to Terms of Service
+            if (termsUrl) Linking.openURL(termsUrl);
           }}
           style={{ height: 20, margin: 0, padding: 0, alignItems: "center" }}
         >

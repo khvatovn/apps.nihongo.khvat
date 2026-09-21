@@ -1,5 +1,6 @@
 const PortugueseBR = {
   common: {
+    space: "Espaço",
     save: "Salvar",
     done: "Concluído",
     close: "Fechar",
@@ -72,6 +73,7 @@ const PortugueseBR = {
   },
 
   selectKana: {
+    chooseKana: "Escolher kana",
     words: "Palavras para prática",
     nothingSelected: "Nada selecionado",
   },
@@ -94,6 +96,7 @@ const PortugueseBR = {
     displayStatistics: "Mostrar estatísticas",
     hapticFeedback: "Feedback tátil",
     theme: {
+      installed: "Instalados",
       title: "Tema",
       light: "Claro",
       dark: "Escuro",
@@ -130,6 +133,10 @@ const PortugueseBR = {
   },
 
   result: {
+    drawing: "Desenho",
+    example: "Exemplo",
+    you: "Você",
+
     title: "Prática concluída",
     score: "Pontuação",
 
@@ -157,6 +164,16 @@ const PortugueseBR = {
   },
 
   transliterationSystems: {
+    latin: "Latino",
+    cyrillic: "Cirílico",
+
+    tags: {
+      mostPopular: "Mais popular",
+      officialJapan: "Oficial no Japão",
+      strictest: "Mais rigoroso",
+      russianStandard: "Padrão na Rússia",
+    },
+
     romaji: "Romaji",
     transliterationSystems: "Sistemas de transliteração",
     hepburn: "Hepburn",
@@ -258,6 +275,11 @@ const PortugueseBR = {
     },
   },
   profile: {
+    stats: {
+      daysOfStudy: "dias de estudo",
+      timesOfPractice: "sessões de prática",
+    },
+
     avatar: {
       title: "Foto do perfil",
       takePhoto: "Tirar foto",
