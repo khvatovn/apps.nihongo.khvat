@@ -136,9 +136,7 @@ const PracticeAudio: React.FC<EducationPracticeSelectAnswersProps> = ({
                 : null;
 
             const textColor =
-              marked === false || marked === true
-                ? colors.TextContrastSecondary
-                : colors.TextPrimary;
+              marked === false || marked === true ? colors.TextWhite : colors.TextPrimary;
 
             return (
               <Pressable

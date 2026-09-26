@@ -49,7 +49,7 @@ const AnswerCard: React.FC<AnswerCardProps> = ({
     return colors.BgSecondary;
   };
 
-  const textColor = redMarked || greenMarked ? colors.TextContrastSecondary : colors.TextPrimary;
+  const textColor = redMarked || greenMarked ? colors.TextWhite : colors.TextPrimary;
 
   return (
     <PrimaryButton

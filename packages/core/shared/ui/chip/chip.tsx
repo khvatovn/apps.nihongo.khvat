@@ -41,7 +41,7 @@ const makeStyles = (colors: ColorsType, active: boolean) =>
     },
     text: {
       ...Typography.boldLabel,
-      color: active ? colors.TextContrastSecondary : colors.TextPrimary,
+      color: active ? colors.TextWhite : colors.TextPrimary,
     },
   });
 

@@ -135,7 +135,7 @@ const makeStyles = (colors: ColorsType) =>
       ...Typography.boldDefault,
     },
     tabLabelSelected: {
-      color: colors.TextContrastSecondary,
+      color: colors.TextWhite,
     },
     animation: {
       backgroundColor: colors.BgSecondary,

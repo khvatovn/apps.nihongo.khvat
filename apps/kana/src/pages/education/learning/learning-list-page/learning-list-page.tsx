@@ -295,6 +295,6 @@ const makeStyles = (colors: ColorsType, width: number) =>
     },
     progressBarText: {
       ...Typography.regularCaption,
-      color: colors.TextContrastSecondary,
+      color: colors.TextWhite,
     },
   });

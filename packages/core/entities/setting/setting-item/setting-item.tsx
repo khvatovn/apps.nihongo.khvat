@@ -120,7 +120,7 @@ const SettingItem: React.FC<SettingItemProps> = ({
           style={[
             Typography.boldDefault,
             { color: colors.TextPrimary },
-            isContrast ? { color: colors.TextContrastPrimary } : {},
+            isContrast ? { color: colors.TextContrast } : {},
             isDanger ? { color: colors.TextDanger } : {},
           ]}
         >

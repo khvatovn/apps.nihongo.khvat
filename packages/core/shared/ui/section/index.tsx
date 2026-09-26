@@ -34,9 +34,9 @@ const Section: React.FC<SectionProps> = ({ title, buttons, stateKey, children })
             {buttons || []}
             <Pressable onPress={() => setIsShow((prev) => !prev)}>
               {isShow ? (
-                <CaretCircleUpIcon color={colors.TextContrastPrimary} />
+                <CaretCircleUpIcon color={colors.TextContrast} />
               ) : (
-                <CaretCircleDownIcon color={colors.TextContrastPrimary} />
+                <CaretCircleDownIcon color={colors.TextContrast} />
               )}
             </Pressable>
           </View>
@@ -72,7 +72,7 @@ const makeStyles = (colors: ColorsType) =>
     headerTitle: {
       ...Typography.boldDefault,
 
-      color: colors.TextContrastPrimary,
+      color: colors.TextContrast,
     },
     content: {
       flexDirection: "column",

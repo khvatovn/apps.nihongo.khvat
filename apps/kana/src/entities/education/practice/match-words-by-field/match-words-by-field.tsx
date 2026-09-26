@@ -246,6 +246,6 @@ const makeStyles = (colors: ColorsType) =>
       color: colors.TextPrimary,
     },
     itemTextError: {
-      color: colors.TextContrastSecondary,
+      color: colors.TextWhite,
     },
   });

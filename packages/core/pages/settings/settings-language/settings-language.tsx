@@ -173,7 +173,7 @@ const makeStyles = (colors: ColorsType) =>
     },
     item__text_active: {
       ...Typography.boldDefault,
-      color: colors.TextContrastPrimary,
+      color: colors.TextContrast,
       lineHeight: 24,
     },
     languageFlag: {

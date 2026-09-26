@@ -334,7 +334,7 @@ const makeStyles = (colors: ColorsType, insets: EdgeInsets) =>
     button_text: {
       ...Typography.boldDefault,
 
-      color: colors.TextContrastPrimary,
+      color: colors.TextContrast,
     },
     buttonLink: {
       flexDirection: "row",

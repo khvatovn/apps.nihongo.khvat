@@ -96,7 +96,7 @@ const PrimaryButton: FC<PrimaryButtonProps> = ({
 
   const getTextStyles = () => [
     {
-      color: isDisabled ? colors.TextDisabled : colors.TextContrastPrimary,
+      color: isDisabled ? colors.TextDisabled : colors.TextContrast,
     },
     isOutline && {
       color: isDisabled ? colors.TextDisabled : colors.TextPrimary,

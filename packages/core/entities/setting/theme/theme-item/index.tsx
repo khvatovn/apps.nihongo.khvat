@@ -102,7 +102,7 @@ const makeStyles = (colors: ColorsType, active: boolean) =>
       height: 48,
     },
     title: {
-      color: active ? colors.TextContrastPrimary : colors.TextPrimary,
+      color: active ? colors.TextContrast : colors.TextPrimary,
 
       ...Typography.boldDefault,
     },

@@ -79,16 +79,13 @@ export const DefaultCell: React.FC<DefaultCellProps> = ({
       <Text
         style={[
           Typography.regularDefault,
-          { color: active ? colors.TextContrastSecondary : colors.TextPrimary },
+          { color: active ? colors.TextWhite : colors.TextPrimary },
         ]}
       >
         {title}
       </Text>
       <Text
-        style={[
-          Typography.regularLabel,
-          { color: active ? colors.TextContrastSecondary : colors.TextPrimary },
-        ]}
+        style={[Typography.regularLabel, { color: active ? colors.TextWhite : colors.TextPrimary }]}
       >
         {subtitle}
       </Text>

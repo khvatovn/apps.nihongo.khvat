@@ -199,7 +199,7 @@ const Cell: React.FC<CellProps> = ({
               style={[
                 getFintSize("default"),
                 styles.cellText,
-                { color: active ? colors.TextContrastSecondary : colors.TextPrimary },
+                { color: active ? colors.TextWhite : colors.TextPrimary },
               ]}
             >
               {getKana(cell, kana)}
@@ -209,7 +209,7 @@ const Cell: React.FC<CellProps> = ({
               style={[
                 getFintSize("regularLabel"),
                 styles.cellText,
-                { color: active ? colors.TextContrastSecondary : colors.TextPrimary },
+                { color: active ? colors.TextWhite : colors.TextPrimary },
               ]}
             >
               {getRomaji(cell).toUpperCase()}

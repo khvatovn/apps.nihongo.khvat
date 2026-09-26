@@ -64,7 +64,7 @@ const BoardsPage: React.FC = () => {
           <Text style={styles.sectionTitle}>{t("boards.myBoards")}</Text>
 
           <Pressable style={styles.btn} onPress={() => navigation.navigate(ROUTES.CREATE_BOARD)}>
-            <PlusCircleIcon color={colors.TextContrastSecondary} />
+            <PlusCircleIcon color={colors.TextWhite} />
           </Pressable>
         </View>
 

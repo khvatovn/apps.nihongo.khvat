@@ -35,7 +35,7 @@ const makeStyles = (colors: ColorsType) =>
     },
     text: {
       ...Typography.boldLabel,
-      color: colors.TextContrastPrimary,
+      color: colors.TextContrast,
     },
   });
 

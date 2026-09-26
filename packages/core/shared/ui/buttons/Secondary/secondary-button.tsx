@@ -113,7 +113,7 @@ const SecondaryButton: React.FC<SecondaryButtonProps> = ({
 
   const getTextStyles = () => [
     {
-      color: colors.TextContrastSecondary,
+      color: colors.TextWhite,
     },
     isOutline && {
       color: colors.TextPrimary,

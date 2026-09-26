@@ -233,7 +233,7 @@ const EducationResultPage: React.FC<EducationResultProps> = ({ route }) => {
                               style={{
                                 color:
                                   item.isTrue || isWrongPick
-                                    ? colors.TextContrastSecondary
+                                    ? colors.TextWhite
                                     : colors.TextPrimary,
                               }}
                             >
@@ -392,7 +392,7 @@ const EducationResultPage: React.FC<EducationResultProps> = ({ route }) => {
                                 style={{
                                   color:
                                     isCorrectItem || isWrongPick
-                                      ? colors.TextContrastSecondary
+                                      ? colors.TextWhite
                                       : colors.TextPrimary,
                                   ...Typography.boldLabel,
                                 }}

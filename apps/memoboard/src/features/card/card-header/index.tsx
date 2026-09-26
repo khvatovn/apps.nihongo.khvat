@@ -68,7 +68,7 @@ const CardHeader: React.FC<CardHeaderProps> = ({ card, edit, goBack }) => {
   const { colors } = useThemeContext();
   const styles = makeStyles(colors);
 
-  const primaryColor = image ? colors.TextContrastSecondary : colors.TextPrimary;
+  const primaryColor = image ? colors.TextWhite : colors.TextPrimary;
 
   return (
     <View>

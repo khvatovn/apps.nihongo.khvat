@@ -62,9 +62,9 @@ const YetSeen: React.FC<YetSeenProps> = ({ title, cards, openModal }) => {
           isFurigana ? (
             <Pressable key={"eye_btn"} onPress={() => setShowFurigana((prev) => !prev)}>
               {showFurigana ? (
-                <SelectionSlashIcon color={colors.TextContrastPrimary} />
+                <SelectionSlashIcon color={colors.TextContrast} />
               ) : (
-                <SelectionIcon color={colors.TextContrastPrimary} />
+                <SelectionIcon color={colors.TextContrast} />
               )}
             </Pressable>
           ) : (
@@ -131,7 +131,7 @@ const makeStyles = (colors: ColorsType) =>
       gap: 6,
     },
     groupLabel: {
-      color: colors.TextContrastSecondary,
+      color: colors.TextWhite,
       ...Typography.boldLabel,
     },
     labelContainer: {

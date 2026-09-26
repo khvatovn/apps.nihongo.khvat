@@ -65,7 +65,7 @@ const makeStyles = (color: ColorsType) =>
     },
     title: {
       ...Typography.H4,
-      color: color.TextContrastPrimary,
+      color: color.TextContrast,
       textAlign: "center",
     },
     items: {

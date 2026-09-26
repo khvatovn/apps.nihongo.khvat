@@ -75,7 +75,7 @@ const makeStyles = (colors: ColorsType, active: boolean) =>
     },
 
     title: {
-      color: active ? colors.TextContrastPrimary : colors.TextPrimary,
+      color: active ? colors.TextContrast : colors.TextPrimary,
 
       ...Typography.boldDefault,
     },
@@ -113,14 +113,14 @@ const makeStyles = (colors: ColorsType, active: boolean) =>
 
       textAlign: "center",
 
-      color: active ? colors.TextContrastPrimary : colors.TextPrimary,
+      color: active ? colors.TextContrast : colors.TextPrimary,
     },
     symbolSubtitle: {
       ...Typography.regularLabel,
 
       textAlign: "center",
 
-      color: active ? colors.TextContrastPrimary : colors.TextPrimary,
+      color: active ? colors.TextContrast : colors.TextPrimary,
     },
   });
 

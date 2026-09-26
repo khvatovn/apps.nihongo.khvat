@@ -52,7 +52,7 @@ const makeStyles = (
       gap: 2,
     },
     text: {
-      color: primary ? colors.TextContrastPrimary : colors.TextPrimary,
+      color: primary ? colors.TextContrast : colors.TextPrimary,
       ...Typography.regularCaption,
 
       textTransform: isUpperCase ? "uppercase" : isLowerCase ? "lowercase" : "capitalize",

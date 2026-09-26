@@ -65,7 +65,7 @@ function Switcher<T extends string>(props: SwitcherProps<T>) {
         {options.map((tab, index) => {
           const colorInterpolation = animatedColor.interpolate({
             inputRange: [index - 1, index, index + 1],
-            outputRange: [colors.TextPrimary, colors.TextContrastPrimary, colors.TextPrimary],
+            outputRange: [colors.TextPrimary, colors.TextContrast, colors.TextPrimary],
             extrapolate: "clamp",
           });
           return (

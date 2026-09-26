@@ -202,7 +202,7 @@ const makeStyles = (colors: ColorsType) =>
     },
     buttonStartLessonText: {
       ...Typography.boldDefault,
-      color: colors.TextContrastPrimary,
+      color: colors.TextContrast,
     },
     infoLine: {
       width: "100%",

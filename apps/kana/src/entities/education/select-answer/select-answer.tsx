@@ -71,7 +71,7 @@ const SelectAnswer: React.FC<SelectAnswerProps> = ({ answers, onFinish }) => {
             textStyles={
               errors.includes(answer.title) || correct.includes(answer.title)
                 ? {
-                    color: colors.TextContrastSecondary,
+                    color: colors.TextWhite,
                     ...Typography.regularDefault,
                   }
                 : {

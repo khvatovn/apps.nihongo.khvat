@@ -47,9 +47,9 @@ const VerbForm: React.FC<VerbFormProps> = ({ tags, title }) => {
           isFurigana ? (
             <Pressable key={"eye_btn"} onPress={() => isShowFurigana((prev) => !prev)}>
               {showFurigana ? (
-                <SelectionSlashIcon color={colors.TextContrastPrimary} />
+                <SelectionSlashIcon color={colors.TextContrast} />
               ) : (
-                <SelectionIcon color={colors.TextContrastPrimary} />
+                <SelectionIcon color={colors.TextContrast} />
               )}
             </Pressable>
           ) : (
