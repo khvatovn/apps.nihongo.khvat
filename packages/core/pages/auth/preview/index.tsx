@@ -1,10 +1,16 @@
 import React, { useEffect, useState } from "react";
 
-import { oauthGoogle } from "@nihongo/core/features/auth/api";
+import {
+  checkGoogleOAuthAvailability,
+  GOOGLE_OAUTH_BLOCKED,
+  oauthGoogle,
+} from "@nihongo/core/features/auth/api";
 import { completeAuth } from "@nihongo/core/features/auth/lib/completeAuth";
 import { googleSignIn } from "@nihongo/core/features/auth/lib/googleAuth";
 import { AUTH_ROUTES, AuthParamList } from "@nihongo/core/features/auth/routes";
 import { IS_WELCOME_PAGE } from "@nihongo/core/shared/constants/storageKeys";
+import { useModal } from "@nihongo/core/shared/contexts/modal/modal-context";
+import { AlertModal } from "@nihongo/core/shared/contexts/modal/presets/alert";
 import { useResetApp } from "@nihongo/core/shared/contexts/reset-context/reset-context";
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
 import { useGatewayUrl } from "@nihongo/core/shared/lib/api-gateway";
@@ -29,6 +35,7 @@ export const LoginPage: React.FC = () => {
   const navigation = useNavigation<LoginNavigationProp>();
 
   const { forceReset } = useResetApp();
+  const { showModal, hideModal } = useModal();
 
   const { colors } = useThemeContext();
   const insets = useSafeAreaInsets();
@@ -51,13 +58,40 @@ export const LoginPage: React.FC = () => {
 
   const [googleLoading, setGoogleLoading] = useState(false);
 
+  const showGoogleUnavailable = (ip?: string) =>
+    showModal({
+      closeOnBackdrop: true,
+      onClose: () => {},
+      content: (
+        <AlertModal
+          title={t("auth.googleUnavailable.title")}
+          subtitle={t("auth.googleUnavailable.subtitle", { ip: ip ?? "—" })}
+          button={t("alert.ok")}
+          onPress={hideModal}
+        />
+      ),
+    });
+
   const continueWithGoogle = async () => {
     if (googleLoading) return;
     setGoogleLoading(true);
+
     try {
+      const availability = await checkGoogleOAuthAvailability().catch(() => null);
+
+      if (availability && !availability.available) {
+        showGoogleUnavailable(availability.ip);
+        return;
+      }
+
       const idToken = await googleSignIn();
 
       const { ok, body } = await oauthGoogle(idToken);
+
+      if (body.error === GOOGLE_OAUTH_BLOCKED) {
+        showGoogleUnavailable(availability?.ip);
+        return;
+      }
 
       if (ok && body.access_token && body.refresh_token) {
         await completeAuth(body.access_token, body.refresh_token);

@@ -207,6 +207,11 @@ const PortuguesePT = {
       privacy: "Política de Privacidade",
     },
     continueWithGoogle: "Continuar com Google",
+    googleUnavailable: {
+      title: "O início de sessão com a Google não está disponível na Rússia",
+      subtitle:
+        "Não é possível utilizar o início de sessão com a Google a partir da Rússia. O seu endereço IP: {{ip}}. Pode registar-se com o seu e-mail.",
+    },
     signUpWithEmail: "Registar-se com e-mail",
     alreadyHaveAccount: "Já tem uma conta?",
     login: "Iniciar sessão",

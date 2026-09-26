@@ -207,6 +207,11 @@ const PortugueseBR = {
       privacy: "Política de Privacidade",
     },
     continueWithGoogle: "Continuar com o Google",
+    googleUnavailable: {
+      title: "O login com o Google não está disponível na Rússia",
+      subtitle:
+        "Não é possível usar o login com o Google a partir da Rússia. Seu endereço IP: {{ip}}. Você pode se cadastrar com seu e-mail.",
+    },
     signUpWithEmail: "Cadastrar-se com e-mail",
     alreadyHaveAccount: "Já tem uma conta?",
     login: "Entrar",

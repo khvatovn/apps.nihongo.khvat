@@ -207,6 +207,11 @@ const Russian = {
       privacy: "Политику конфиденциальности",
     },
     continueWithGoogle: "Продолжить с Google",
+    googleUnavailable: {
+      title: "Вход через Google недоступен в России",
+      subtitle:
+        "Вход через Google нельзя использовать из России. Ваш IP-адрес: {{ip}} 🇷🇺. Вы можете зарегистрироваться по почте.",
+    },
     signUpWithEmail: "Зарегистрироваться с почтой",
     alreadyHaveAccount: "Уже есть учетная запись?",
     login: "Вход",

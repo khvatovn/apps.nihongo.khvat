@@ -207,6 +207,11 @@ const Indonesian = {
       privacy: "Kebijakan Privasi",
     },
     continueWithGoogle: "Lanjutkan dengan Google",
+    googleUnavailable: {
+      title: "Masuk dengan Google tidak tersedia di Rusia",
+      subtitle:
+        "Masuk dengan Google tidak dapat digunakan dari Rusia. Alamat IP Anda: {{ip}}. Anda dapat mendaftar dengan email.",
+    },
     signUpWithEmail: "Daftar dengan email",
     alreadyHaveAccount: "Sudah punya akun?",
     login: "Masuk",

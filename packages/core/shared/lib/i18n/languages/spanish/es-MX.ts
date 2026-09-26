@@ -209,6 +209,11 @@ const SpanishMX = {
       privacy: "Política de privacidad",
     },
     continueWithGoogle: "Continuar con Google",
+    googleUnavailable: {
+      title: "El inicio de sesión con Google no está disponible en Rusia",
+      subtitle:
+        "No se puede usar el inicio de sesión con Google desde Rusia. Tu dirección IP: {{ip}}. Puedes registrarte con tu correo electrónico.",
+    },
     signUpWithEmail: "Registrarse con correo electrónico",
     alreadyHaveAccount: "¿Ya tienes una cuenta?",
     login: "Iniciar sesión",

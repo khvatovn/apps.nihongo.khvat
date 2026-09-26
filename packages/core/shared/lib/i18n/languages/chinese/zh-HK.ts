@@ -203,6 +203,10 @@ const ChineseHK = {
       privacy: "私隱政策",
     },
     continueWithGoogle: "使用 Google 繼續",
+    googleUnavailable: {
+      title: "俄羅斯境內無法使用 Google 登入",
+      subtitle: "無法在俄羅斯使用 Google 登入。你的 IP 位址：{{ip}}。你可以改用電郵註冊。",
+    },
     signUpWithEmail: "使用電郵註冊",
     alreadyHaveAccount: "已有帳號？",
     login: "登入",

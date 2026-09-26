@@ -208,6 +208,11 @@ const Italian = {
       privacy: "Informativa sulla privacy",
     },
     continueWithGoogle: "Continua con Google",
+    googleUnavailable: {
+      title: "L'accesso con Google non è disponibile in Russia",
+      subtitle:
+        "L'accesso con Google non può essere usato dalla Russia. Il tuo indirizzo IP: {{ip}}. Puoi registrarti con l'email.",
+    },
     signUpWithEmail: "Registrati con email",
     alreadyHaveAccount: "Hai già un account?",
     login: "Accedi",

@@ -1,6 +1,5 @@
 import { apiFetch } from "@nihongo/core/shared/lib/api-gateway";
 
-// * Ответы auth-эндпоинтов (docs/auth/auth_api.md). Поля опциональны — на ошибках их нет.
 export type AuthResponseBody = {
   access_token?: string;
   refresh_token?: string;
@@ -9,7 +8,6 @@ export type AuthResponseBody = {
   error?: string;
 };
 
-// * Единый результат: экраны ветвятся по ok/status, как и раньше, но без дублирования fetch.
 export type ApiResult<T = AuthResponseBody> = {
   ok: boolean;
   status: number;
@@ -48,20 +46,32 @@ export const resendVerification = (email: string, region: string) =>
 export const oauthGoogle = (idToken: string) =>
   postJson("/api/v2/auth/oauth/google", { id_token: idToken });
 
-// * Сброс пароля (docs/auth/reset_password.md). region приходит с forgot и прокидывается дальше.
-// * forgot всегда 200 { region } — анти-энумерация (не раскрываем, есть ли такой email).
+export const GOOGLE_OAUTH_BLOCKED = "google_oauth_unavailable_in_country";
+
+export type GoogleOAuthAvailability = {
+  available: boolean;
+  error?: string;
+  ip?: string;
+  country?: string;
+};
+
+export const checkGoogleOAuthAvailability = async (): Promise<GoogleOAuthAvailability> => {
+  const res = await apiFetch("/api/v2/auth/oauth/google/availability", {
+    cache: "no-store",
+    headers: { "Cache-Control": "no-cache" },
+  });
+  return (await res.json()) as GoogleOAuthAvailability;
+};
+
 export const requestPasswordReset = (email: string) =>
   postJson("/api/v2/auth/password/forgot", { email });
 
-// * Проверяет код и выдаёт одноразовый reset_token (TTL 10 мин).
 export const verifyResetCode = (email: string, code: string, region: string) =>
   postJson("/api/v2/auth/password/verify-code", { email, code, region });
 
-// * Повторная отправка кода (cooldown 45с на сервере) → 204.
 export const resendResetCode = (email: string, region: string) =>
   postJson("/api/v2/auth/password/resend", { email, region });
 
-// * Меняет пароль по reset_token и авто-логинит: 200 { access_token, refresh_token }.
 export const resetPassword = (
   email: string,
   region: string,

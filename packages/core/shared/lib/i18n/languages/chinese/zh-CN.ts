@@ -203,6 +203,10 @@ const ChineseCN = {
       privacy: "隐私政策",
     },
     continueWithGoogle: "使用 Google 继续",
+    googleUnavailable: {
+      title: "俄罗斯境内无法使用 Google 登录",
+      subtitle: "无法在俄罗斯使用 Google 登录。你的 IP 地址：{{ip}}。你可以改用邮箱注册。",
+    },
     signUpWithEmail: "使用邮箱注册",
     alreadyHaveAccount: "已有账户？",
     login: "登录",

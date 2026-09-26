@@ -209,6 +209,11 @@ const French = {
       privacy: "Politique de confidentialité",
     },
     continueWithGoogle: "Continuer avec Google",
+    googleUnavailable: {
+      title: "La connexion Google n'est pas disponible en Russie",
+      subtitle:
+        "La connexion avec Google ne peut pas être utilisée depuis la Russie. Votre adresse IP : {{ip}}. Vous pouvez vous inscrire avec votre e-mail.",
+    },
     signUpWithEmail: "S'inscrire avec un e-mail",
     alreadyHaveAccount: "Vous avez déjà un compte ?",
     login: "Se connecter",
