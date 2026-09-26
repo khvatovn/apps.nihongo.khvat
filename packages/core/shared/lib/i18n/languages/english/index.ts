@@ -95,6 +95,11 @@ const English = {
     },
     displayStatistics: "Show statistics",
     hapticFeedback: "Haptic feedback",
+    widgets: {
+      title: "Widgets",
+      statistics: "Statistics widget",
+      social: "Social media widget",
+    },
     theme: {
       installed: "Installed",
       title: "Theme",

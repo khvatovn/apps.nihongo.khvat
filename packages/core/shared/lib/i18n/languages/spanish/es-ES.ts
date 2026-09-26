@@ -96,6 +96,11 @@ const SpanishES = {
     },
     displayStatistics: "Mostrar estadísticas",
     hapticFeedback: "Retroalimentación háptica",
+    widgets: {
+      title: "Widgets",
+      statistics: "Widget de estadísticas",
+      social: "Widget de redes sociales",
+    },
     theme: {
       installed: "Instalados",
       title: "Tema",

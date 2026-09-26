@@ -95,6 +95,11 @@ const Russian = {
     },
     displayStatistics: "Отображать статистику",
     hapticFeedback: "Виброотклик",
+    widgets: {
+      title: "Виджеты",
+      statistics: "Виджет статистики",
+      social: "Виджет соцсетей",
+    },
     theme: {
       installed: "Установленные",
       title: "Тема",

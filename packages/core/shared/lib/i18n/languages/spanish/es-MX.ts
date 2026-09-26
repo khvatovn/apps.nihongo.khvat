@@ -96,6 +96,11 @@ const SpanishMX = {
     },
     displayStatistics: "Mostrar estadísticas",
     hapticFeedback: "Vibración",
+    widgets: {
+      title: "Widgets",
+      statistics: "Widget de estadísticas",
+      social: "Widget de redes sociales",
+    },
     theme: {
       installed: "Instalados",
       title: "Tema",

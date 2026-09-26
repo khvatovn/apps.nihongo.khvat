@@ -13,6 +13,7 @@ import ProfileChangeNamePage from "@nihongo/core/pages/profile/edit/change-name"
 import ProfileChangePasswordPage from "@nihongo/core/pages/profile/edit/change-password";
 import SettingsLanguagePage from "@nihongo/core/pages/settings/settings-language/settings-language";
 import SettingsThemePage from "@nihongo/core/pages/settings/settings-theme/settings-theme";
+import SettingsWidgetsPage from "@nihongo/core/pages/settings/settings-widgets/settings-widgets";
 import WelcomePage from "@nihongo/core/pages/welcome/welcome";
 import { isAndroid } from "@nihongo/core/shared/constants/platformUtil";
 import { ModalProvider } from "@nihongo/core/shared/contexts/modal/modal-context";
@@ -84,6 +85,7 @@ const RootStack = {
 
     [ROUTES.SETTINGS_LANGUAGE]: withModal(SettingsLanguagePage),
     [ROUTES.SETTINGS_THEME]: withModal(SettingsThemePage),
+    [ROUTES.SETTINGS_WIDGETS]: withModal(SettingsWidgetsPage),
 
     // ? pages from @nihongo/core
     [ROUTES.PROFILE_EDIT]: withModal(ProfileEditPage),

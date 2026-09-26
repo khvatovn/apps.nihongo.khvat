@@ -95,6 +95,11 @@ const Indonesian = {
     },
     displayStatistics: "Tampilkan statistik",
     hapticFeedback: "Umpan balik haptic",
+    widgets: {
+      title: "Widget",
+      statistics: "Widget statistik",
+      social: "Widget media sosial",
+    },
     theme: {
       installed: "Terpasang",
       title: "Tema",

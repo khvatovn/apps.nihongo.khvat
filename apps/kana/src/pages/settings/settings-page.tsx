@@ -13,6 +13,7 @@ import SettingsHaptic from "@nihongo/core/features/settings/settings-haptic/sett
 import SettingsLanguage from "@nihongo/core/features/settings/settings-language/settings-language";
 import SettingsTheme from "@nihongo/core/features/settings/settings-theme/settings-theme";
 import SettingsTransliterations from "@nihongo/core/features/settings/settings-transliterations/settings-language";
+import SettingsWidgetsSection from "@nihongo/core/features/settings/settings-widgets/settings-widgets";
 import StoreReviewLink from "@nihongo/core/features/settings/store-review-link/store-review-link";
 import TermsAndConditions from "@nihongo/core/features/settings/terms-and-conditions/terms-and-conditions";
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
@@ -79,6 +80,10 @@ const SettingsPage: React.FC = () => {
           <SettingsHaptic />
           <SettingsTheme toThemeSettingPage={() => navigation.navigate(ROUTES.SETTINGS_THEME)} />
         </SettingsSection>
+
+        <SettingsWidgetsSection
+          toWidgetsSettingPage={() => navigation.navigate(ROUTES.SETTINGS_WIDGETS)}
+        />
 
         <SettingsSection>
           <SettingsLanguage

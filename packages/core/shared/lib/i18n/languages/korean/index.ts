@@ -94,6 +94,11 @@ const Korean = {
     },
     displayStatistics: "통계 표시",
     hapticFeedback: "햅틱 피드백",
+    widgets: {
+      title: "위젯",
+      statistics: "통계 위젯",
+      social: "소셜 미디어 위젯",
+    },
     theme: {
       installed: "설치됨",
       title: "테마",

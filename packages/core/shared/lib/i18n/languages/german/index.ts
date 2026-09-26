@@ -95,6 +95,11 @@ const German = {
     },
     displayStatistics: "Statistiken anzeigen",
     hapticFeedback: "Haptisches Feedback",
+    widgets: {
+      title: "Widgets",
+      statistics: "Statistik-Widget",
+      social: "Social-Media-Widget",
+    },
     theme: {
       installed: "Installiert",
       title: "Design",

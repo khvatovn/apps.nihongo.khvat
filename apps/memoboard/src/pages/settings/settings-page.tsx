@@ -10,6 +10,7 @@ import PrivacyPolicy from "@nihongo/core/features/settings/privacy-policy/privac
 import SettingsHaptic from "@nihongo/core/features/settings/settings-haptic/settings-haptic";
 import SettingsLanguage from "@nihongo/core/features/settings/settings-language/settings-language";
 import SettingsTheme from "@nihongo/core/features/settings/settings-theme/settings-theme";
+import SettingsWidgetsSection from "@nihongo/core/features/settings/settings-widgets/settings-widgets";
 import TermsAndConditions from "@nihongo/core/features/settings/terms-and-conditions/terms-and-conditions";
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
 import PageTitle from "@nihongo/core/shared/ui/page-title/page-title";
@@ -59,6 +60,10 @@ const SettingsPage: React.FC = () => {
           <SettingsHaptic />
           <SettingsTheme toThemeSettingPage={() => navigation.navigate(ROUTES.SETTINGS_THEME)} />
         </SettingsSection>
+
+        <SettingsWidgetsSection
+          toWidgetsSettingPage={() => navigation.navigate(ROUTES.SETTINGS_WIDGETS)}
+        />
 
         <SettingsSection>
           <SettingsLanguage

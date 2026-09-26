@@ -10,6 +10,7 @@ import { useResetApp } from "@nihongo/core/shared/contexts/reset-context/reset-c
 import { useStudyActivity } from "@nihongo/core/shared/contexts/study-activity/study-activity-context";
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
 import { getProfile, Profile } from "@nihongo/core/shared/lib/auth";
+import { useProfileWidgets } from "@nihongo/core/shared/lib/settings/useProfileWidgets";
 import { Typography } from "@nihongo/core/shared/typography";
 import PrimaryButton from "@nihongo/core/shared/ui/buttons/Primary/primary-button";
 import PageTitle from "@nihongo/core/shared/ui/page-title/page-title";
@@ -31,6 +32,7 @@ const ProfilePage: React.FC = () => {
 
   const { forceReset } = useResetApp();
   const { days, sync } = useStudyActivity();
+  const { widgets, loaded: widgetsLoaded } = useProfileWidgets();
 
   const insets = useSafeAreaInsets();
   const { triggerHaptic } = useHaptic();
@@ -127,8 +129,10 @@ const ProfilePage: React.FC = () => {
         showsVerticalScrollIndicator={false}
         style={styles.content}
       >
-        {process.env.APP_SLUG === "kana-master" && <PracticeHeatmap data={days} />}
-        <SocialMediaProfile />
+        {widgetsLoaded && process.env.APP_SLUG === "kana-master" && widgets.statistics && (
+          <PracticeHeatmap data={days} />
+        )}
+        {widgetsLoaded && widgets.social && <SocialMediaProfile />}
       </ScrollView>
     </View>
   );

@@ -96,6 +96,11 @@ const Italian = {
     },
     displayStatistics: "Mostra statistiche",
     hapticFeedback: "Feedback aptico",
+    widgets: {
+      title: "Widget",
+      statistics: "Widget delle statistiche",
+      social: "Widget dei social",
+    },
     theme: {
       installed: "Installati",
       title: "Tema",

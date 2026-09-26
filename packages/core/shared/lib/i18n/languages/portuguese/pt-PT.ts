@@ -95,6 +95,11 @@ const PortuguesePT = {
     },
     displayStatistics: "Mostrar estatísticas",
     hapticFeedback: "Feedback háptico",
+    widgets: {
+      title: "Widgets",
+      statistics: "Widget de estatísticas",
+      social: "Widget de redes sociais",
+    },
     theme: {
       installed: "Instalados",
       title: "Tema",

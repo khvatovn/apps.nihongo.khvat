@@ -92,6 +92,11 @@ const ChineseTW = {
     },
     displayStatistics: "顯示統計資料",
     hapticFeedback: "觸覺回饋",
+    widgets: {
+      title: "小工具",
+      statistics: "統計小工具",
+      social: "社群媒體小工具",
+    },
     theme: {
       installed: "已安裝",
       title: "主題",

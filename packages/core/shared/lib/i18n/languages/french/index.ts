@@ -97,6 +97,11 @@ const French = {
     },
     displayStatistics: "Afficher les statistiques",
     hapticFeedback: "Retour haptique",
+    widgets: {
+      title: "Widgets",
+      statistics: "Widget des statistiques",
+      social: "Widget des réseaux sociaux",
+    },
     theme: {
       installed: "Installés",
       title: "Thème",

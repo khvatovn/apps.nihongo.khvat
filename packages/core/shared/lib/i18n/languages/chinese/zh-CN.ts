@@ -93,6 +93,11 @@ const ChineseCN = {
     },
     displayStatistics: "显示统计",
     hapticFeedback: "触觉反馈",
+    widgets: {
+      title: "小组件",
+      statistics: "统计小组件",
+      social: "社交媒体小组件",
+    },
     theme: {
       installed: "已安装",
       title: "主题",
