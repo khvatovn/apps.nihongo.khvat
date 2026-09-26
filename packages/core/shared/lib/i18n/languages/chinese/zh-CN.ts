@@ -39,6 +39,16 @@ const ChineseCN = {
 
     playAudio: "播放音频",
 
+    preferences: {
+      title: "偏好设置",
+      autoplaySound: "自动播放声音",
+      questionsCount: "题目数量",
+      timer: "计时器",
+      mixMode: "混合模式",
+      timerSeconds: "每题时间",
+      seconds: "{{count}} 秒",
+    },
+
     selectCorrectTransliteration: "选择正确的转写。",
     selectHiraganaForWord: "按正确顺序选择平假名。",
     selectKatakanaForWord: "按正确顺序选择片假名。",

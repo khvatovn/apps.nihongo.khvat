@@ -21,9 +21,9 @@ import { getKatakanaLetters, getHiraganaLetters } from "./selectors/kanaSelector
 
 import { ROUTES, RootStackParamList } from "@/app/routes.types";
 import EducationPracticeTimer from "@/entities/education/practice/practice-timer/practice-timer";
+import { usePracticePreferences } from "@/pages/education/practice/practice-preferences/model/hooks";
 import { useKanaContext } from "@/pages/kana/kana-table-choice-letters-page/model/hooks";
 import { PracticeType, TEST_DELAY } from "@/shared/constants/kana";
-import { isUniformArray } from "@/shared/helpers/array";
 import PracticeAudio from "@/widgets/practice/practice-audio/practice-audio";
 import PracticeDrawKana from "@/widgets/practice/practice-draw-kana/practice-draw-kana";
 import EducationPracticeSelectAnswers from "@/widgets/practice/practice-pick-answers/practice-pick-answers";
@@ -37,8 +37,6 @@ type LearnScreenRouteProp = RouteProp<RootStackParamList, typeof ROUTES.PRACTICE
 interface LearnScreenProps {
   route: LearnScreenRouteProp;
 }
-
-const TIMER_SPEED = 5;
 
 const MemoTimer = React.memo(EducationPracticeTimer);
 
@@ -101,6 +99,7 @@ const EducationPracticePage: React.FC<LearnScreenProps> = ({ route }) => {
 
   const { selected, selectedWords } = useKanaContext();
   const { registerStudyDay } = useStudyActivity();
+  const { preferences } = usePracticePreferences();
   const katakanaLetters = getKatakanaLetters(selected);
   const hiraganaLetters = getHiraganaLetters(selected);
 
@@ -172,16 +171,15 @@ const EducationPracticePage: React.FC<LearnScreenProps> = ({ route }) => {
           />
         )}
 
-        {mode[currentIndex] === PracticeType.Testing &&
-          isUniformArray<PracticeType>(mode, PracticeType.Testing) && (
-            <MemoTimer
-              index={currentIndex}
-              key={timerKey}
-              initial={TIMER_SPEED}
-              isFreeze={isFreeze}
-              onTimerEnd={() => onSubmit({ isCorrectAnswer: false })}
-            />
-          )}
+        {preferences.timerModes.includes(question.type) && (
+          <MemoTimer
+            index={currentIndex}
+            key={timerKey}
+            initial={preferences.timerSeconds}
+            isFreeze={isFreeze}
+            onTimerEnd={() => onSubmit({ isCorrectAnswer: false })}
+          />
+        )}
       </View>
 
       <View

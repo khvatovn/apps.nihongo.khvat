@@ -39,6 +39,16 @@ const Indonesian = {
 
     playAudio: "Putar Audio",
 
+    preferences: {
+      title: "Preferensi",
+      autoplaySound: "Putar suara otomatis",
+      questionsCount: "Jumlah pertanyaan",
+      timer: "Pengatur waktu",
+      mixMode: "Mode campuran",
+      timerSeconds: "Waktu per pertanyaan",
+      seconds: "{{count}} dtk",
+    },
+
     selectCorrectTransliteration: "Pilih transliterasi yang benar.",
     selectHiraganaForWord: "Pilih Hiragana dalam urutan yang benar.",
     selectKatakanaForWord: "Pilih Katakana dalam urutan yang benar.",

@@ -39,6 +39,16 @@ const French = {
 
     playAudio: "Lire l'audio",
 
+    preferences: {
+      title: "Préférences",
+      autoplaySound: "Lecture automatique du son",
+      questionsCount: "Nombre de questions",
+      timer: "Minuteur",
+      mixMode: "Mode mixte",
+      timerSeconds: "Temps par question",
+      seconds: "{{count}} s",
+    },
+
     selectCorrectTransliteration: "Sélectionnez la bonne translittération.",
     selectHiraganaForWord: "Sélectionnez les Hiragana dans le bon ordre.",
     selectKatakanaForWord: "Sélectionnez les Katakana dans le bon ordre.",

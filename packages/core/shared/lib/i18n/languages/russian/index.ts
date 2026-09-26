@@ -39,6 +39,16 @@ const Russian = {
 
     playAudio: "Воспроизвести аудио",
 
+    preferences: {
+      title: "Настройки",
+      autoplaySound: "Автовоспроизведение звука",
+      questionsCount: "Количество вопросов",
+      timer: "Таймер",
+      mixMode: "Смешанный режим",
+      timerSeconds: "Время на вопрос",
+      seconds: "{{count}} с",
+    },
+
     selectCorrectTransliteration: "Выбери правильную транслитерацию.",
     selectHiraganaForWord: "Выбери хиригану в правильном порядке.",
     selectKatakanaForWord: "Выбери катакана в правильном порядке.",

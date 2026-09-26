@@ -12,6 +12,7 @@ import { Pressable, StyleSheet, Text, useWindowDimensions, View } from "react-na
 
 import SoundLetter from "@/entities/kana/sound-letter/sound-letter";
 import { OnSubmit } from "@/pages/education/practice/education-practice/lib/types/questions";
+import { usePracticePreferences } from "@/pages/education/practice/practice-preferences/model/hooks";
 import { useStatisticsContext } from "@/pages/kana/kana-table-list-page/model/hooks";
 import { Kana, KanaAlphabet, PracticeType } from "@/shared/constants/kana";
 import { useFirstClickHandler } from "@/shared/helpers/firstClickHandler";
@@ -36,6 +37,7 @@ const PracticeAudio: React.FC<EducationPracticeSelectAnswersProps> = ({
 
   const { recalculateOnce } = useStatisticsContext();
   const { triggerHaptic } = useHaptic();
+  const { preferences } = usePracticePreferences();
 
   const styles = useMemo(() => makeStyles(colors), [colors]);
 
@@ -107,7 +109,7 @@ const PracticeAudio: React.FC<EducationPracticeSelectAnswersProps> = ({
             marginTop: 26,
           }}
         >
-          <SoundLetter isAutoPlay id={question.id}>
+          <SoundLetter isAutoPlay={preferences.autoplaySound} id={question.id}>
             <View style={styles.button}>
               <SpeakerHighIcon size={64} color={colors.BgContrast} />
             </View>

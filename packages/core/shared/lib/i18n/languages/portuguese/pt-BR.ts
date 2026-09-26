@@ -39,6 +39,16 @@ const PortugueseBR = {
 
     playAudio: "Reproduzir áudio",
 
+    preferences: {
+      title: "Preferências",
+      autoplaySound: "Reproduzir som automaticamente",
+      questionsCount: "Número de perguntas",
+      timer: "Cronômetro",
+      mixMode: "Modo misto",
+      timerSeconds: "Tempo por pergunta",
+      seconds: "{{count}} s",
+    },
+
     selectCorrectTransliteration: "Selecione a transliteração correta.",
     selectHiraganaForWord: "Selecione o Hiragana na ordem correta.",
     selectKatakanaForWord: "Selecione o Katakana na ordem correta.",

@@ -14,7 +14,6 @@ import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { Svg, Path } from "react-native-svg";
 
 import formatResultAnswer from "../education-practice/helpers/format-result-answer";
-import { QUESTIONS_LENGTH } from "../education-practice/helpers/wrapper-question-generate";
 import { PracticeResultData } from "../education-practice/lib/types/questions";
 
 import { ROUTES, RootStackParamList } from "@/app/routes.types";
@@ -98,10 +97,10 @@ const EducationResultPage: React.FC<EducationResultProps> = ({ route }) => {
   const { questionsTime, questions } = route.params;
   const { transliterations } = useGetRomaji();
 
-  const data = calculateStats(questionsTime.slice(0, QUESTIONS_LENGTH));
+  const data = calculateStats(questionsTime.slice(0, questions.length));
 
   const answers = questionsTime
-    .slice(0, QUESTIONS_LENGTH)
+    .slice(0, questions.length)
     .map(({ index, isCorrectAnswer, userSelect }) => ({
       ...formatResultAnswer({ question: questions[index], userSelect, t, transliterations }),
       isCorrectAnswer,

@@ -39,6 +39,16 @@ const SpanishES = {
 
     playAudio: "Reproducir audio",
 
+    preferences: {
+      title: "Preferencias",
+      autoplaySound: "Reproducir sonido automáticamente",
+      questionsCount: "Número de preguntas",
+      timer: "Temporizador",
+      mixMode: "Modo mixto",
+      timerSeconds: "Tiempo por pregunta",
+      seconds: "{{count}} s",
+    },
+
     selectCorrectTransliteration: "Selecciona la transliteración correcta.",
     selectHiraganaForWord: "Selecciona el hiragana en el orden correcto.",
     selectKatakanaForWord: "Selecciona el katakana en el orden correcto.",

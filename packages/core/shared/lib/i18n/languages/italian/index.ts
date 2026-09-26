@@ -39,6 +39,16 @@ const Italian = {
 
     playAudio: "Riproduci audio",
 
+    preferences: {
+      title: "Preferenze",
+      autoplaySound: "Riproduzione automatica dell'audio",
+      questionsCount: "Numero di domande",
+      timer: "Timer",
+      mixMode: "Modalità mista",
+      timerSeconds: "Tempo per domanda",
+      seconds: "{{count}} s",
+    },
+
     selectCorrectTransliteration: "Seleziona la traslitterazione corretta.",
     selectHiraganaForWord: "Seleziona l'hiragana nell'ordine corretto.",
     selectKatakanaForWord: "Seleziona il katakana nell'ordine corretto.",

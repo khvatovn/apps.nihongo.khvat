@@ -29,6 +29,7 @@ export enum ROUTES {
   PROFILE_ROOT = "Profile",
   SETTINGS_ROOT = "Settings",
 
+  PRACTICE_PREFERENCES = "PracticePreferences",
   SETTINGS_LANGUAGE = "SettingLanguage",
   SETTINGS_TRANSLITERATION = "SettingTransliterations",
   SETTINGS_THEME = "SettingTheme",
@@ -71,6 +72,7 @@ export type RootStackParamList = {
   [ROUTES.SETTINGS_ROOT]: undefined;
   [ROUTES.KANA_TABLE_ROOT]: undefined;
 
+  [ROUTES.PRACTICE_PREFERENCES]: undefined;
   [ROUTES.SETTINGS_LANGUAGE]: undefined;
   [ROUTES.SETTINGS_TRANSLITERATION]: undefined;
   [ROUTES.SETTINGS_THEME]: undefined;

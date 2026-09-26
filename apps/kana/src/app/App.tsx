@@ -27,6 +27,7 @@ import { enableScreens } from "react-native-screens";
 import Layout from "@/app/layout";
 import { DrawProvider } from "@/features/drawing/model/context";
 import { LessonsProvider } from "@/pages/education/learning/model/context";
+import { PracticePreferencesProvider } from "@/pages/education/practice/practice-preferences/model/context";
 import { KanaProvider } from "@/pages/kana/kana-table-choice-letters-page/model/context";
 import { StatisticsProvider } from "@/pages/kana/kana-table-list-page/model/context";
 
@@ -57,6 +58,7 @@ const App: React.FC = () => {
             [DrawProvider],
             [KanaProvider],
             [LessonsProvider],
+            [PracticePreferencesProvider],
           ]}
         >
           <Layout />

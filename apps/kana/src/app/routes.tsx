@@ -31,6 +31,7 @@ import LearningList from "@/pages/education/learning/learning-list-page/learning
 import LessonPage from "@/pages/education/learning/lesson-page/lesson-page";
 import EducationPracticePage from "@/pages/education/practice/education-practice";
 import EducationResultPage from "@/pages/education/practice/education-result-page/education-result-page";
+import PracticePreferencesPage from "@/pages/education/practice/practice-preferences";
 import PracticeWelcomePage from "@/pages/education/practice/practice-welcome/practice-welcome";
 import KanaLetterPage from "@/pages/kana/kana-letter-page/kana-letter-page";
 import KanaTableChoiceLettersPage from "@/pages/kana/kana-table-choice-letters-page/kana-table-choice-letters-page";
@@ -89,6 +90,8 @@ const RootStack = {
 
     [ROUTES.KANA_INFO]: withModal(KanaLetterPage),
     [ROUTES.KANA_SELECT]: withModal(KanaTableChoiceLettersPage),
+
+    [ROUTES.PRACTICE_PREFERENCES]: withModal(PracticePreferencesPage),
 
     // ? pages from @nihongo/core
     [ROUTES.SETTINGS_LANGUAGE]: withModal(SettingsLanguagePage),

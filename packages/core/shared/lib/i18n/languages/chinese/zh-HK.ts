@@ -39,6 +39,16 @@ const ChineseHK = {
 
     playAudio: "播放音訊",
 
+    preferences: {
+      title: "偏好設定",
+      autoplaySound: "自動播放聲音",
+      questionsCount: "題目數量",
+      timer: "計時器",
+      mixMode: "混合模式",
+      timerSeconds: "每題時間",
+      seconds: "{{count}} 秒",
+    },
+
     selectCorrectTransliteration: "選擇正確的羅馬拼音。",
     selectHiraganaForWord: "按正確順序選擇平假名。",
     selectKatakanaForWord: "按正確順序選擇片假名。",

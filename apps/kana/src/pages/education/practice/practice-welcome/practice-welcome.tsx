@@ -5,19 +5,20 @@ import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme
 import PageTitle from "@nihongo/core/shared/ui/page-title/page-title";
 import { useNavigation } from "@react-navigation/native";
 import { StackNavigationProp } from "@react-navigation/stack";
+import { SlidersHorizontalIcon } from "phosphor-react-native";
 import { useTranslation } from "react-i18next";
-import { ScrollView, View, StyleSheet } from "react-native";
+import { ScrollView, View, StyleSheet, Pressable } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 import {
   AccessibilityError,
   isAvailablePractice,
 } from "../education-practice/helpers/is-available-practice";
-import { QUESTIONS_LENGTH } from "../education-practice/helpers/wrapper-question-generate";
 
 import { ROUTES, RootStackParamList } from "@/app/routes.types";
 import EducationKanaSelectedCard from "@/entities/education/practice/education-select-letters/education-select-letters";
 import PracticeCard from "@/entities/education/practice/practice-card/practice-card";
+import { usePracticePreferences } from "@/pages/education/practice/practice-preferences/model/hooks";
 import { useKanaContext } from "@/pages/kana/kana-table-choice-letters-page/model/hooks";
 import { PracticeType } from "@/shared/constants/kana";
 import practiceImageMixed from "@/shared/resources/practice/1.jpg";
@@ -48,6 +49,10 @@ const PracticeWelcomePage: React.FC = () => {
     selectedLettersKatakana,
   } = useKanaContext();
 
+  const {
+    preferences: { questionsCount, mixModes },
+  } = usePracticePreferences();
+
   const wordsCount = selectedWords.hiragana.length + selectedWords.katakana.length;
 
   const baseHiragana = letters.base.hiragana.length;
@@ -57,7 +62,7 @@ const PracticeWelcomePage: React.FC = () => {
   const katakanaLength = selectedLettersKatakana;
 
   const isAvailable = isAvailablePractice({
-    questionsLength: QUESTIONS_LENGTH,
+    questionsLength: questionsCount,
     hiraganaLength,
     katakanaLength,
     baseHiragana,
@@ -79,27 +84,16 @@ const PracticeWelcomePage: React.FC = () => {
     let modes: PracticeType[] = [];
 
     if (type) {
-      modes = Array.from({ length: QUESTIONS_LENGTH }, () => type);
+      modes = Array.from({ length: questionsCount }, () => type);
     } else {
-      const allModes: PracticeType[] = [];
-
-      if (isAvailable[PracticeType.Testing]().message === AccessibilityError.Available)
-        allModes.push(PracticeType.Testing);
-      if (isAvailable[PracticeType.Drawing]().message === AccessibilityError.Available)
-        allModes.push(PracticeType.Drawing);
-      if (isAvailable[PracticeType.Listening]().message === AccessibilityError.Available)
-        allModes.push(PracticeType.Listening);
-      if (isAvailable[PracticeType.MultipleChoice]().message === AccessibilityError.Available)
-        allModes.push(PracticeType.MultipleChoice);
-      if (isAvailable[PracticeType.MatchingPairs]().message === AccessibilityError.Available)
-        allModes.push(PracticeType.MatchingPairs);
-      if (isAvailable[PracticeType.WordBuilding]().message === AccessibilityError.Available)
-        allModes.push(PracticeType.WordBuilding);
-      if (isAvailable[PracticeType.Typing]().message === AccessibilityError.Available)
-        allModes.push(PracticeType.Typing);
+      const available = Object.values(PracticeType).filter(
+        (practice) => isAvailable[practice]().message === AccessibilityError.Available,
+      );
+      const mixed = available.filter((practice) => mixModes.includes(practice));
+      const allModes = mixed.length > 0 ? mixed : available;
 
       modes = Array.from(
-        { length: QUESTIONS_LENGTH },
+        { length: questionsCount },
         () => allModes[Math.floor(Math.random() * allModes.length)],
       );
     }
@@ -110,7 +104,20 @@ const PracticeWelcomePage: React.FC = () => {
   return (
     <View style={styles.main}>
       <View style={[styles.container, { paddingTop: insets.top }]}>
-        <PageTitle>{t("tabs.practice")}</PageTitle>
+        <PageTitle
+          icon={
+            <Pressable
+              onPress={() => {
+                triggerHaptic();
+                navigation.navigate(ROUTES.PRACTICE_PREFERENCES);
+              }}
+            >
+              <SlidersHorizontalIcon size={32} color={colors.BgContrast} />
+            </Pressable>
+          }
+        >
+          {t("tabs.practice")}
+        </PageTitle>
 
         <EducationKanaSelectedCard onSelectKana={toChooseAlphabet} />
       </View>

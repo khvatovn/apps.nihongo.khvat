@@ -150,10 +150,7 @@ const SettingItem: React.FC<SettingItemProps> = ({
             }}
             thumbColor={isEnable ? colors.BgPrimary : colors.BgPrimary}
             ios_backgroundColor={colors.BgLightGray}
-            onValueChange={() => {
-              triggerHaptic();
-              onValueChange?.();
-            }}
+            onValueChange={() => onValueChange?.()}
             value={isEnable}
           />
         </View>

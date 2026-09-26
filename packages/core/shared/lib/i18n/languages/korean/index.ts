@@ -39,6 +39,16 @@ const Korean = {
 
     playAudio: "오디오 재생",
 
+    preferences: {
+      title: "설정",
+      autoplaySound: "소리 자동 재생",
+      questionsCount: "문제 수",
+      timer: "타이머",
+      mixMode: "혼합 모드",
+      timerSeconds: "문제당 시간",
+      seconds: "{{count}}초",
+    },
+
     selectCorrectTransliteration: "올바른 로마자 표기를 선택하세요.",
     selectHiraganaForWord: "올바른 순서로 히라가나를 선택하세요.",
     selectKatakanaForWord: "올바른 순서로 가타카나를 선택하세요.",

@@ -16,8 +16,6 @@ import { PracticeQuestion } from "@/pages/education/practice/education-practice/
 import { Kana, KanaAlphabet, PracticeType } from "@/shared/constants/kana";
 import { Word } from "@/shared/data/words";
 
-export const QUESTIONS_LENGTH = 16;
-
 interface State {
   modes: PracticeType[];
   katakanaLetters: string[];
@@ -30,23 +28,27 @@ interface State {
   transliterations: number;
 }
 
-function generateWordsKanaTemplate(katakana: Word[], hiragana: Word[]): Kana[] {
+function generateWordsKanaTemplate(
+  katakana: Word[],
+  hiragana: Word[],
+  questionsLength: number,
+): Kana[] {
   const shuffleArray = <T>(arr: T[]): T[] => arr.sort(() => Math.random() - 0.5);
 
-  if (hiragana.length < QUESTIONS_LENGTH && katakana.length < QUESTIONS_LENGTH) {
+  if (hiragana.length < questionsLength && katakana.length < questionsLength) {
     return [];
   }
 
-  if (hiragana.length >= QUESTIONS_LENGTH && katakana.length >= QUESTIONS_LENGTH) {
+  if (hiragana.length >= questionsLength && katakana.length >= questionsLength) {
     return shuffleArray([
-      ...Array(QUESTIONS_LENGTH / 2).fill(Kana.Hiragana),
-      ...Array(QUESTIONS_LENGTH / 2).fill(Kana.Katakana),
+      ...Array(questionsLength / 2).fill(Kana.Hiragana),
+      ...Array(questionsLength / 2).fill(Kana.Katakana),
     ]);
   }
 
-  if (hiragana.length >= QUESTIONS_LENGTH) return Array(QUESTIONS_LENGTH).fill(Kana.Hiragana);
+  if (hiragana.length >= questionsLength) return Array(questionsLength).fill(Kana.Hiragana);
 
-  return Array(QUESTIONS_LENGTH).fill(Kana.Katakana);
+  return Array(questionsLength).fill(Kana.Katakana);
 }
 
 function generateKanaTemplate(
@@ -54,6 +56,7 @@ function generateKanaTemplate(
   availableKatakanaLetters: ILetter[],
   modes: PracticeType[],
 ): [Kana, Kana][] {
+  const questionsLength = modes.length;
   const pairs: [Kana, Kana][] = [];
 
   const randomChoice = <T>(arr: T[]): T => arr[Math.floor(Math.random() * arr.length)];
@@ -62,14 +65,14 @@ function generateKanaTemplate(
   const hiraganaCount = availableHiraganaLetters.length;
   const katakanaCount = availableKatakanaLetters.length;
 
-  if (hiraganaCount < QUESTIONS_LENGTH && katakanaCount < QUESTIONS_LENGTH) {
+  if (hiraganaCount < questionsLength && katakanaCount < questionsLength) {
     return [];
   }
 
   const getAvailableDirections = (mode: PracticeType): [Kana, Kana][] => {
     const directions: [Kana, Kana][] = [];
 
-    if (hiraganaCount >= QUESTIONS_LENGTH) {
+    if (hiraganaCount >= questionsLength) {
       if (mode === PracticeType.Drawing || mode === PracticeType.Typing) {
         directions.push([Kana.Hiragana, Kana.Romaji]);
       } else if (mode === PracticeType.Listening) {
@@ -80,7 +83,7 @@ function generateKanaTemplate(
       }
     }
 
-    if (katakanaCount >= QUESTIONS_LENGTH) {
+    if (katakanaCount >= questionsLength) {
       if (mode === PracticeType.Drawing || mode === PracticeType.Typing) {
         directions.push([Kana.Katakana, Kana.Romaji]);
       } else if (mode === PracticeType.Listening) {
@@ -92,8 +95,8 @@ function generateKanaTemplate(
     }
 
     if (
-      katakanaCount >= QUESTIONS_LENGTH &&
-      hiraganaCount >= QUESTIONS_LENGTH &&
+      katakanaCount >= questionsLength &&
+      hiraganaCount >= questionsLength &&
       mode === PracticeType.Testing
     ) {
       directions.push([Kana.Katakana, Kana.Hiragana]);
@@ -103,7 +106,7 @@ function generateKanaTemplate(
     return directions;
   };
 
-  for (let i = 0; i < QUESTIONS_LENGTH; i++) {
+  for (let i = 0; i < questionsLength; i++) {
     const mode = modes[i];
     const availableDirections = getAvailableDirections(mode);
 
@@ -126,6 +129,7 @@ const wrapperQuestionGenerate = ({
   transliterations,
 }: State) => {
   const questions: PracticeQuestion[] = [];
+  const questionsLength = modes.length;
 
   // * For all modes
   const availableHiraganaLetters: ILetter[] = [];
@@ -172,6 +176,7 @@ const wrapperQuestionGenerate = ({
   const questionWordKanaTemplate = generateWordsKanaTemplate(
     selectedWords.katakana,
     selectedWords.hiragana,
+    questionsLength,
   );
 
   const addLetterInAdded = (questionKana: Kana, letterId: string) => {
@@ -179,7 +184,7 @@ const wrapperQuestionGenerate = ({
     if (questionKana === Kana.Katakana) addedKatakanaLetters.push(letterId);
   };
 
-  for (let i = 0; i < QUESTIONS_LENGTH; i++) {
+  for (let i = 0; i < questionsLength; i++) {
     const mode = modes[i];
 
     // * Test
