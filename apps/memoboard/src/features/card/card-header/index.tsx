@@ -118,7 +118,7 @@ const CardHeader: React.FC<CardHeaderProps> = ({ card, edit, goBack }) => {
             <>
               <Furigana
                 typography={{
-                  ...Typography.boldH2,
+                  ...Typography.H3,
                   color: primaryColor,
                 }}
                 text={card.title}
@@ -174,7 +174,7 @@ const makeStyles = (colors: ColorsType) =>
     },
     card_subtitle: {
       color: colors.TextPrimary,
-      ...Typography.boldH2,
+      ...Typography.H3,
 
       marginTop: 8,
     },

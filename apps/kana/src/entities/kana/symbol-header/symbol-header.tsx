@@ -90,7 +90,7 @@ const makeStyles = (colors: ColorsType) =>
       height: 62,
     },
     subTitle: {
-      ...Typography.boldH2,
+      ...Typography.H3,
       marginTop: 16,
     },
     kanaSub: {

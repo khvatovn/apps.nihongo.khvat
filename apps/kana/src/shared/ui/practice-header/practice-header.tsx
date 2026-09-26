@@ -21,7 +21,7 @@ export default Header;
 const makeStyles = (colors: ColorsType) =>
   StyleSheet.create({
     symbol: {
-      ...Typography.boldH1,
+      ...Typography.H1,
       textAlign: "center",
       color: colors.TextPrimary,
     },

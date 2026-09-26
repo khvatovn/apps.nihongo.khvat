@@ -262,13 +262,13 @@ const Draw: React.FC<DrawProps> = ({
                 {state === StateColor.Green && <CircleIcon size={32} color={colors.TextSuccess} />}
 
                 {state === StateColor.Green && (
-                  <Text style={[{ color: colors.TextSuccess }, Typography.boldH3]}>まる</Text>
+                  <Text style={[{ color: colors.TextSuccess }, Typography.H4]}>まる</Text>
                 )}
 
                 {state === StateColor.Red && <XIcon size={32} color={colors.TextDanger} />}
 
                 {state === StateColor.Red && (
-                  <Text style={[{ color: colors.TextDanger }, Typography.boldH3]}>ばつ</Text>
+                  <Text style={[{ color: colors.TextDanger }, Typography.H4]}>ばつ</Text>
                 )}
               </View>
             )}

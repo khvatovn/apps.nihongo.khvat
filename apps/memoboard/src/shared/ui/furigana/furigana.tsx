@@ -19,7 +19,7 @@ const Furigana: React.FC<FuriganaProps> = ({ text, typography, typographyFurigan
   if (!text) return null;
 
   const styles = makeStyles(colors, {
-    typography: typography || Typography.boldH2,
+    typography: typography || Typography.H3,
     typographyFurigana: typographyFurigana || Typography.regularCaption,
   });
 

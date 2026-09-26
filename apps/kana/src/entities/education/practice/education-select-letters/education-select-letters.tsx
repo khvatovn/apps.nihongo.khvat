@@ -90,7 +90,7 @@ const makeStyles = (colors: ColorsType) =>
       backgroundColor: colors.BgSecondary,
     },
     title: {
-      ...Typography.boldH2,
+      ...Typography.H3,
       color: colors.TextPrimary,
     },
     label: {

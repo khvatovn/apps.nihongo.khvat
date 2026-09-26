@@ -133,9 +133,7 @@ const BoardPage = () => {
   const renderSectionHeader = useCallback(
     ({ section: { title } }: { section: { title: string } }) => (
       <View style={styles.nameContainer}>
-        <Text
-          style={[Typography.boldH3, { color: colors.TextPrimary, textTransform: "capitalize" }]}
-        >
+        <Text style={[Typography.H4, { color: colors.TextPrimary, textTransform: "capitalize" }]}>
           {title}
         </Text>
       </View>

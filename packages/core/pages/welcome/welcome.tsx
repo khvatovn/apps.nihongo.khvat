@@ -120,7 +120,7 @@ const makeStyles = (colors: ColorsType, insets: EdgeInsets) =>
       borderBottomRightRadius: 24,
     },
     title: {
-      ...Typography.boldH2,
+      ...Typography.H3,
       textAlign: "center",
       color: colors.TextPrimary,
     },

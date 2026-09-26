@@ -173,7 +173,7 @@ const makeStyles = (colors: ColorsType) =>
       width: "100%",
     },
     title: {
-      ...Typography.boldH2,
+      ...Typography.H3,
 
       color: colors.TextPrimary,
 

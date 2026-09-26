@@ -159,7 +159,7 @@ const EducationResultPage: React.FC<EducationResultProps> = ({ route }) => {
       <View style={styles.header}>
         <Text style={styles.title}>{t("result.title")}</Text>
 
-        <Text style={{ color: colors.TextPrimary, ...Typography.boldH2 }}>
+        <Text style={{ color: colors.TextPrimary, ...Typography.H3 }}>
           {(data.correctAnswers / data.totalQuestions) * 100}%
         </Text>
       </View>
@@ -169,7 +169,7 @@ const EducationResultPage: React.FC<EducationResultProps> = ({ route }) => {
           <ScrollView style={{ flex: 1 }} showsVerticalScrollIndicator={false}>
             <View style={styles.card}>
               <View style={styles.cardContent}>
-                <Text style={[Typography.boldH3, { color: colors.TextPrimary }]}>
+                <Text style={[Typography.H4, { color: colors.TextPrimary }]}>
                   {data.correctAnswers} / {data.totalQuestions}
                 </Text>
 
@@ -181,7 +181,7 @@ const EducationResultPage: React.FC<EducationResultProps> = ({ route }) => {
 
             <View style={styles.card}>
               <View style={styles.cardContent}>
-                <Text style={[Typography.boldH3, { color: colors.TextPrimary }]}>
+                <Text style={[Typography.H4, { color: colors.TextPrimary }]}>
                   {millisecondsToSeconds(data.totalTime)}
                 </Text>
 
@@ -472,7 +472,7 @@ const makeStyles = (colors: ColorsType) =>
     },
     title: {
       color: colors.TextPrimary,
-      ...Typography.boldH2,
+      ...Typography.H3,
       textAlign: "center",
     },
     scroll__clip: {

@@ -120,7 +120,7 @@ export const KanaTableListPage: React.FC<KanaInfoProps> = () => {
             )}
             renderSectionHeader={({ section: { title } }) => (
               <View style={[styles.nameContainer, { backgroundColor: colors.BgPrimary }]}>
-                <Text style={[Typography.boldH3, { color: colors.TextPrimary }]}>{title}</Text>
+                <Text style={[Typography.H4, { color: colors.TextPrimary }]}>{title}</Text>
               </View>
             )}
           />

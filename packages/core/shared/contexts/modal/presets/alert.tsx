@@ -50,7 +50,7 @@ const makeStyles = (color: ColorsType) =>
     },
     title: {
       color: color.TextPrimary,
-      ...Typography.boldH3,
+      ...Typography.H4,
       textAlign: "center",
     },
     subtitle: {

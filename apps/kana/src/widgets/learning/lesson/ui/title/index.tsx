@@ -15,7 +15,7 @@ export const LearningTitle: React.FC<LearningTitleProps> = ({ children, style })
   return (
     <Text
       style={[
-        Typography.boldH3,
+        Typography.H4,
         {
           color: colors.TextPrimary,
           marginBottom: 32,

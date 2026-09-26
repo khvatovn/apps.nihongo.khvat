@@ -35,7 +35,7 @@ const makeStyles = (colors: ColorsType) =>
       gap: 8,
     },
     title: {
-      ...Typography.boldH2,
+      ...Typography.H3,
       color: colors.TextPrimary,
     },
     subtitle: {

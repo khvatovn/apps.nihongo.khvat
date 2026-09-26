@@ -64,7 +64,7 @@ export default PageTitle;
 
 const styles = StyleSheet.create({
   title: {
-    ...Typography.boldH2,
+    ...Typography.H3,
     marginTop: 10,
     marginBottom: 16,
   },

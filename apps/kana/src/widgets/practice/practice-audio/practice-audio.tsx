@@ -153,7 +153,7 @@ const PracticeAudio: React.FC<EducationPracticeSelectAnswersProps> = ({
                   borderRadius: 24,
                 })}
               >
-                <Text style={{ ...Typography.boldH2, color: textColor }}>{getTitle(answer)}</Text>
+                <Text style={{ ...Typography.H3, color: textColor }}>{getTitle(answer)}</Text>
               </Pressable>
             );
           })}

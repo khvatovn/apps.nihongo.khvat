@@ -130,7 +130,7 @@ const makeStyles = (colors: ColorsType) =>
     },
 
     title: {
-      ...Typography.boldH2,
+      ...Typography.H3,
 
       color: colors.TextPrimary,
 

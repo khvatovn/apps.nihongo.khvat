@@ -59,7 +59,7 @@ const makeStyles = (colors: ColorsType) =>
     title: {
       color: colors.TextPrimary,
 
-      ...Typography.boldH2,
+      ...Typography.H3,
     },
     subtitle: {
       color: colors.TextSecondary,

@@ -60,7 +60,7 @@ const CircularProgressBar: React.FC<CircularProgressBarProps> = ({ progress }) =
               width: "100%",
               textAlign: "center",
               color: colors.TextPrimary,
-              ...Typography.boldH2,
+              ...Typography.H3,
             }}
           >
             {`${Math.round(progress)}%`}

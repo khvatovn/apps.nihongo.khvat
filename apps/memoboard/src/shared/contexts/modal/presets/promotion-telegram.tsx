@@ -62,7 +62,7 @@ export const PromotionTelegram = (props: ConfirmationModalProps) => {
     <ScrollView style={styles.modal}>
       <Text
         style={{
-          ...Typography.boldH3,
+          ...Typography.H4,
           color: colors.TextPrimary,
         }}
       >
@@ -171,7 +171,7 @@ const makeStyles = (color: ColorsType) =>
       marginTop: 16,
     },
     title: {
-      ...Typography.boldH3,
+      ...Typography.H4,
       color: color.TextContrastPrimary,
       textAlign: "center",
     },

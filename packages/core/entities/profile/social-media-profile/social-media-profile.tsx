@@ -64,7 +64,7 @@ const makeStyles = (color: ColorsType) =>
       padding: 16,
     },
     title: {
-      ...Typography.boldH3,
+      ...Typography.H4,
       color: color.TextContrastPrimary,
       textAlign: "center",
     },

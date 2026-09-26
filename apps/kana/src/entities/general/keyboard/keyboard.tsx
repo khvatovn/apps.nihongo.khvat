@@ -132,7 +132,7 @@ const CustomKeyboard: React.FC<KeyboardProps> = ({ setValue, onSubmit, disable }
               )}
 
               {item.length === 1 && (
-                <Text style={[{ color: colors.TextPrimary }, Typography.boldH3]}>
+                <Text style={[{ color: colors.TextPrimary }, Typography.H4]}>
                   {isCaps ? item.toUpperCase() : item}
                 </Text>
               )}

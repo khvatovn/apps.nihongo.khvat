@@ -63,7 +63,7 @@ const AnswerCard: React.FC<AnswerCardProps> = ({
       isOutline
       text={children}
       textStyles={{
-        ...Typography.boldH2,
+        ...Typography.H3,
         color: textColor,
       }}
     />

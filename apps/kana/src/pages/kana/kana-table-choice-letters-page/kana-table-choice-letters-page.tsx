@@ -76,7 +76,7 @@ const KanaTableChoiceLettersPage: React.FC = () => {
           )}
           renderSectionHeader={({ section: { title } }) => (
             <View style={[styles.nameContainer, { backgroundColor: colors.BgPrimary }]}>
-              <Text style={[Typography.boldH3, { color: colors.TextPrimary }]}>{title}</Text>
+              <Text style={[Typography.H4, { color: colors.TextPrimary }]}>{title}</Text>
             </View>
           )}
         />
@@ -90,7 +90,7 @@ const KanaTableChoiceLettersPage: React.FC = () => {
           renderItem={({ item }) => (
             <React.Suspense fallback={<View />}>
               <View style={[styles.nameContainer]}>
-                <Text style={[Typography.boldH3, { color: colors.TextPrimary }]}>{item.title}</Text>
+                <Text style={[Typography.H4, { color: colors.TextPrimary }]}>{item.title}</Text>
               </View>
 
               <EducationKanaTableSelected

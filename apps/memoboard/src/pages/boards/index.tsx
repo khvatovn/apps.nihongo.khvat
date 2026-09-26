@@ -138,7 +138,7 @@ const makeStyles = (colors: ColorsType) =>
       paddingHorizontal: 16,
     },
     title: {
-      ...Typography.boldH3,
+      ...Typography.H4,
 
       color: colors.TextPrimary,
     },

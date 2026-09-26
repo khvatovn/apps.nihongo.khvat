@@ -160,7 +160,7 @@ const makeStyles = (colors: ColorsType) =>
     },
     card_subtitle: {
       color: colors.TextPrimary,
-      ...Typography.boldH2,
+      ...Typography.H3,
 
       marginTop: 8,
     },

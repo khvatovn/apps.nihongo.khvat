@@ -124,7 +124,7 @@ const makeStyles = (colors: ColorsType) =>
     title: {
       color: colors.TextPrimary,
 
-      ...Typography.boldH3,
+      ...Typography.H4,
 
       marginTop: 16,
       marginBottom: 16,

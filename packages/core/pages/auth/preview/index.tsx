@@ -292,7 +292,7 @@ const makeStyles = (colors: ColorsType, insets: EdgeInsets) =>
       borderRadius: 192,
     },
     title: {
-      ...Typography.boldH2,
+      ...Typography.H3,
 
       marginTop: 32,
 

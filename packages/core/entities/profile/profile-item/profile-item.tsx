@@ -72,7 +72,7 @@ const makeStyles = (colors: ColorsType) =>
       justifyContent: "center",
     },
     name: {
-      ...Typography.boldH3,
+      ...Typography.H4,
 
       color: colors.TextPrimary,
     },

@@ -88,7 +88,7 @@ export default Chapter;
 const makeStyles = (colors: ColorsType) =>
   StyleSheet.create({
     title: {
-      ...Typography.boldH3,
+      ...Typography.H4,
       color: colors.TextPrimary,
       marginTop: 10,
       paddingHorizontal: 16,
