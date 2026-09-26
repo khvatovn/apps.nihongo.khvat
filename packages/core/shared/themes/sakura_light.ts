@@ -14,6 +14,7 @@ const sakuraLightTheme = {
   BgSuccess: "#95AC5A",
   BgWarning: "#FFDF86",
   BgDanger: "#F58587",
+  BgModal: "#140F0F80",
 
   BorderDefault: "#E7C8C7",
   BorderContrast: "#4D3433",
@@ -26,7 +27,7 @@ const sakuraLightTheme = {
   TextDisabled: "#A98786",
   TextContrastPrimary: "#FFFFFF",
   TextContrastSecondary: "#FFFFFF",
-  TextTabBar: "#85543F",
+  TextAccent: "#85543F",
   TextSuccess: "#95AC5A",
   // TextWarning: "#FFDF86",
   TextDanger: "#F58587",

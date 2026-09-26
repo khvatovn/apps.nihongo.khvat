@@ -14,6 +14,7 @@ const osakaLightTheme = {
   BgSuccess: "#B9CD7B",
   BgWarning: "#F8DB71",
   BgDanger: "#EF929E",
+  BgModal: "#13131180",
 
   BorderDefault: "#EBE8CA",
   BorderContrast: "#43442E",
@@ -26,7 +27,7 @@ const osakaLightTheme = {
   TextDisabled: "#B3AE7B",
   TextContrastPrimary: "#FFFFFF",
   TextContrastSecondary: "#FFFFFF",
-  TextTabBar: "#DE9B2F",
+  TextAccent: "#DE9B2F",
   TextSuccess: "#B9CD7B",
   // TextWarning: "#F8DB71",
   TextDanger: "#EF929E",

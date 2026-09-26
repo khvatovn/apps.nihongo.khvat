@@ -14,6 +14,7 @@ import { ModelContainer } from "@nihongo/core/shared/ui/model-container/model-co
 import { useNavigation } from "@react-navigation/native";
 import { useTranslation } from "react-i18next";
 import { View, StyleSheet, Text } from "react-native";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 const SettingsTransliterationsPage: React.FC = () => {
   const { t } = useTranslation();
@@ -21,6 +22,7 @@ const SettingsTransliterationsPage: React.FC = () => {
 
   const { colors } = useThemeContext();
   const styles = makeStyles(colors);
+  const insets = useSafeAreaInsets();
 
   const navigation = useNavigation();
 
@@ -67,7 +69,7 @@ const SettingsTransliterationsPage: React.FC = () => {
 
   return (
     <ModelContainer>
-      <View style={{ flex: 1 }}>
+      <View style={{ flex: 1, paddingBottom: insets.bottom }}>
         <ModalHeader
           title={t("transliterationSystems.romaji")}
           left={{

@@ -15,6 +15,7 @@ const darkTheme = {
   BgSuccess: "#60BA53",
   BgWarning: "#F0B153",
   BgDanger: "#EF625D",
+  BgModal: "#1E1E1E80",
 
   // Border
   BorderDefault: "#363636",
@@ -28,7 +29,7 @@ const darkTheme = {
   TextDisabled: "#757575",
   TextContrastPrimary: "#1E1E1E",
   TextContrastSecondary: "#FFFFFF",
-  TextTabBar: "#C08D6B",
+  TextAccent: "#C08D6B",
   TextSuccess: "#60BA53",
   TextDanger: "#EF625D",
 

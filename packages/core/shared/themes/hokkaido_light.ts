@@ -14,6 +14,7 @@ const hokkaidoLightTheme = {
   BgSuccess: "#9AD563",
   BgWarning: "#FCC470",
   BgDanger: "#D4746B",
+  BgModal: "#0C101280",
 
   BorderDefault: "#CDE6ED",
   BorderContrast: "#2A3A3F",
@@ -26,7 +27,7 @@ const hokkaidoLightTheme = {
   TextDisabled: "#7AA6B3",
   TextContrastPrimary: "#FFFFFF",
   TextContrastSecondary: "#FFFFFF",
-  TextTabBar: "#E97237",
+  TextAccent: "#E97237",
   TextSuccess: "#9AD563",
   // TextWarning: "#FCC470",
   TextDanger: "#D4746B",

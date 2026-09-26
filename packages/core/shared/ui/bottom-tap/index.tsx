@@ -6,14 +6,11 @@ import { useTranslation } from "react-i18next";
 import { Pressable, View, Text } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
-
 import { isIOS } from "../../constants/platformUtil";
 import { useBottomTabVisibility } from "../../contexts/bottom-tab-visibility";
 import { useHaptic } from "../../contexts/haptic/haptic-context";
 import { useThemeContext } from "../../contexts/theme/theme-context";
 import { Typography } from "../../typography";
-
-
 
 type IconComponent = React.ComponentType<IconProps>;
 
@@ -88,7 +85,7 @@ export const TabBarButton = ({ state, navigation, tabs }: TabBarButtonProps) => 
               style={[
                 Typography.regularCaption,
                 {
-                  color: isFocused ? colors.TextTabBar : colors.TextSecondary,
+                  color: isFocused ? colors.TextAccent : colors.TextSecondary,
                 },
               ]}
             >

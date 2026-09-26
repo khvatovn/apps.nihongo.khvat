@@ -12,6 +12,7 @@ import { CheckIcon } from "phosphor-react-native";
 import { useTranslation } from "react-i18next";
 import { FlatList, View, StyleSheet, Text, Pressable } from "react-native";
 import CountryFlag from "react-native-country-flag";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 type ItemProps = {
   onPress: () => void;
@@ -61,6 +62,8 @@ const SettingsLanguagePage: React.FC = () => {
   const { t, i18n } = useTranslation();
   const { colors } = useThemeContext();
 
+  const insets = useSafeAreaInsets();
+
   const { set } = useSetLanguage();
 
   const previewLanguage = useCallback(
@@ -105,6 +108,7 @@ const SettingsLanguagePage: React.FC = () => {
         <View style={{ paddingHorizontal: 16, flex: 1 }}>
           <FlatList
             style={{ flex: 1 }}
+            contentContainerStyle={{ paddingBottom: insets.bottom }}
             data={languageList}
             extraData={selected}
             renderItem={({ item }) => (

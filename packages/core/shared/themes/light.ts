@@ -19,6 +19,7 @@ const lightTheme: Colors = {
   BgSuccess: "#7ABC71",
   BgWarning: "#F6BF6C",
   BgDanger: "#F4817D",
+  BgModal: "#1E1E1E80",
 
   // Border
   BorderDefault: "#ECECEC",
@@ -32,7 +33,7 @@ const lightTheme: Colors = {
   TextDisabled: "#BBBBBB",
   TextContrastPrimary: "#FFFFFF",
   TextContrastSecondary: "#FFFFFF",
-  TextTabBar: "#9A7861",
+  TextAccent: "#9A7861",
   TextSuccess: "#7ABC71",
   TextDanger: "#F4817D",
 

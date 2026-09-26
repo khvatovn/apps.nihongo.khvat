@@ -19,6 +19,7 @@ const jiraiKeiLight: Colors = {
   BgSuccess: "#7FA99B",
   BgWarning: "#EECF7F",
   BgDanger: "#E3A2A2",
+  BgModal: "#100F0F80",
 
   // Border
   BorderDefault: "#E0D6DA",
@@ -32,7 +33,7 @@ const jiraiKeiLight: Colors = {
   TextDisabled: "#A6999E",
   TextContrastPrimary: "#FFFFFF",
   TextContrastSecondary: "#FFFFFF",
-  TextTabBar: "#75617D",
+  TextAccent: "#75617D",
   TextSuccess: "#7FA99B",
   TextDanger: "#E3A2A2",
 

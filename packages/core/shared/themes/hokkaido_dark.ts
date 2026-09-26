@@ -14,6 +14,7 @@ const hokkaidoDarkTheme = {
   BgSuccess: "#60BA53",
   BgWarning: "#F3A92A",
   BgDanger: "#CE483B",
+  BgModal: "#0C101280",
 
   BorderDefault: "#2A3A3F",
   BorderContrast: "#CDE6ED",
@@ -26,7 +27,7 @@ const hokkaidoDarkTheme = {
   TextDisabled: "#56757E",
   TextContrastPrimary: "#0C1012",
   TextContrastSecondary: "#FFFFFF",
-  TextTabBar: "#EA8C5D",
+  TextAccent: "#EA8C5D",
   TextSuccess: "#60BA53",
   // TextWarning: "#F3A92A",
   TextDanger: "#CE483B",

@@ -82,7 +82,7 @@ const makeStyles = (colors: ColorsType, options: StylesProps) =>
       ...options.typography,
     },
     furiganaText: {
-      color: colors.TextTabBar,
+      color: colors.TextAccent,
       textAlign: "center",
 
       ...options.typographyFurigana,

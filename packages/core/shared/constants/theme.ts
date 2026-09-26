@@ -12,4 +12,7 @@ export enum Theme {
   SakuraLight = "sakura_light",
 
   JiraiKeiDark = "jirai_kei_dark",
+
+  BlueOceanDark = "blue_ocean_dark",
+  BlueOceanLight = "blue_ocean_light",
 }

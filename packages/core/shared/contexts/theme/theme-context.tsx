@@ -12,6 +12,8 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 import { ColorSchemeName, useColorScheme } from "react-native";
 
 import { Theme } from "../../constants/theme";
+import { blueOceanDarkTheme } from "../../themes/blue_ocean";
+import { blueOceanLightTheme } from "../../themes/blue_ocean_light";
 import { darkTheme } from "../../themes/dark";
 import { hokkaidoDarkTheme } from "../../themes/hokkaido_dark";
 import { hokkaidoLightTheme } from "../../themes/hokkaido_light";
@@ -28,6 +30,8 @@ const colors = {
   light: lightTheme,
   hokkaidoLight: hokkaidoLightTheme,
   hokkaidoDark: hokkaidoDarkTheme,
+  blueOceanLight: blueOceanLightTheme,
+  blueOceanDarkTheme: blueOceanDarkTheme,
   osakaDark: osakaDarkTheme,
   osakaLight: osakaLightTheme,
   sakuraLight: sakuraLightTheme,
@@ -66,6 +70,9 @@ const getColors = (theme: Theme, deviceTheme: ColorSchemeName | null) => {
   if (theme === Theme.OsakaLight) return colors.osakaLight;
   if (theme === Theme.SakuraLight) return colors.sakuraLight;
   if (theme === Theme.JiraiKeiDark) return colors.jirai_kei_dark;
+
+  if (theme === Theme.BlueOceanDark) return colors.blueOceanDarkTheme;
+  if (theme === Theme.BlueOceanLight) return colors.blueOceanLight;
 
   return colors.light;
 };

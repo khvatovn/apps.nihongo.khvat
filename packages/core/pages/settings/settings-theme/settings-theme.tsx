@@ -4,6 +4,8 @@ import ThemeItem, { ThemeType } from "@nihongo/core/entities/setting/theme/theme
 import { Theme } from "@nihongo/core/shared/constants/theme";
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
 import usePreviewSetting from "@nihongo/core/shared/lib/settings/usePreviewSetting";
+import { blueOceanDarkTheme } from "@nihongo/core/shared/themes/blue_ocean";
+import { blueOceanLightTheme } from "@nihongo/core/shared/themes/blue_ocean_light";
 import { darkTheme } from "@nihongo/core/shared/themes/dark";
 import { hokkaidoDarkTheme } from "@nihongo/core/shared/themes/hokkaido_dark";
 import { hokkaidoLightTheme } from "@nihongo/core/shared/themes/hokkaido_light";
@@ -18,6 +20,7 @@ import { ModelContainer } from "@nihongo/core/shared/ui/model-container/model-co
 import { useNavigation } from "@react-navigation/native";
 import { useTranslation } from "react-i18next";
 import { FlatList, View, StyleSheet, Text } from "react-native";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 const SettingsThemePage: React.FC = () => {
   const { t } = useTranslation();
@@ -29,6 +32,7 @@ const SettingsThemePage: React.FC = () => {
   const navigation = useNavigation();
 
   const styles = makeStyles(colors);
+  const insets = useSafeAreaInsets();
 
   const { selected, select, isDirty, confirm, cancel } = usePreviewSetting<Theme>({
     current: themeString as Theme,
@@ -88,6 +92,18 @@ const SettingsThemePage: React.FC = () => {
       title: "Jirai Kei Dark",
       icon: getIcon(jiraiKeiDark),
     },
+    {
+      key: Theme.BlueOceanLight,
+      type: ThemeType.Light,
+      title: "Blue Ocean Light",
+      icon: getIcon(blueOceanLightTheme),
+    },
+    {
+      key: Theme.BlueOceanDark,
+      type: ThemeType.Dark,
+      title: "Blue Ocean Dark",
+      icon: getIcon(blueOceanDarkTheme),
+    },
   ];
 
   return (
@@ -110,6 +126,7 @@ const SettingsThemePage: React.FC = () => {
         <View style={styles.list}>
           <FlatList
             style={{ flexShrink: 1 }}
+            contentContainerStyle={{ paddingBottom: insets.bottom }}
             data={themeOptions}
             extraData={selected}
             renderItem={({ item, index }) => (

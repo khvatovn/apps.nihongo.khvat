@@ -3,6 +3,7 @@ import React, { createContext, useCallback, useContext, useState, ReactNode } fr
 import { Modal, Pressable, StyleSheet, View, KeyboardAvoidingView, Platform } from "react-native";
 
 import { useHaptic } from "../haptic/haptic-context";
+import { ColorsType, useThemeContext } from "../theme/theme-context";
 
 interface ModalOptions {
   content: ReactNode;
@@ -22,6 +23,9 @@ export const ModalProvider: React.FC<{ children: ReactNode }> = ({ children }) =
 
   const [visible, setVisible] = useState(false);
   const [options, setOptions] = useState<ModalOptions | null>(null);
+
+  const { colors } = useThemeContext();
+  const styles = makeStyles(colors);
 
   const showModal = useCallback((opts: ModalOptions) => {
     setOptions(opts);
@@ -74,25 +78,26 @@ export const useModal = (): ModalContextType => {
   return ctx;
 };
 
-const styles = StyleSheet.create({
-  flex: {
-    flex: 1,
-  },
-  overlay: {
-    flex: 1,
-    backgroundColor: "rgb(42 42 42 / 0.5)",
-    justifyContent: "center",
-    alignItems: "center",
+const makeStyles = (colors: ColorsType) =>
+  StyleSheet.create({
+    flex: {
+      flex: 1,
+    },
+    overlay: {
+      flex: 1,
+      backgroundColor: colors.BgModal,
+      justifyContent: "center",
+      alignItems: "center",
 
-    paddingTop: 40,
-    paddingBottom: 40,
-  },
-  backdrop: {
-    ...StyleSheet.absoluteFill,
-  },
-  content: {
-    width: "100%",
-    alignItems: "center",
-    paddingHorizontal: 24,
-  },
-});
+      paddingTop: 40,
+      paddingBottom: 40,
+    },
+    backdrop: {
+      ...StyleSheet.absoluteFill,
+    },
+    content: {
+      width: "100%",
+      alignItems: "center",
+      paddingHorizontal: 24,
+    },
+  });
