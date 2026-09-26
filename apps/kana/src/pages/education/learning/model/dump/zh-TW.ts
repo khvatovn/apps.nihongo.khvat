@@ -1,14 +1,14 @@
-export const dumpPt = {
+export const dumpZhTW = {
   data: [
     {
-      id: "de246ddb-5cfd-49c7-ac83-1099ea41d43b",
+      id: "70dfc023-7e82-406b-b1c2-84209535bd0c",
       lessons: [
         {
-          expanded_subtitle: "Aqui contamos sobre os alfabetos na língua japonesa.",
-          expanded_title: "Informação",
+          expanded_subtitle: "在這裡，我們將向您介紹日語中的字母系統。",
+          expanded_title: "資訊",
           icon: "https://nihongo.khvat.app/chapter1/Introduction.jpg",
-          id: "9cdda2d3-6c9b-4472-a921-a1f17d966c55",
-          last_updated: "2026-03-26T17:43:20.226Z",
+          id: "1fb60922-2cb0-4609-bf93-cb61ef9a1738",
+          last_updated: "2026-09-08T13:12:16.091Z",
           lesson_key: "alphabet/introduction",
           lesson_order: 1,
           minimum_version: "2.4.1",
@@ -18,94 +18,90 @@ export const dumpPt = {
                 {
                   block_order: 1,
                   content: {
-                    text: "Na língua japonesa, são utilizados dois alfabetos principais – hiragana e katakana, cada um deles com 46 símbolos.",
+                    text: "日語使用兩種主要的字母系統——平假名與片假名，每種各有 46 個字符。",
                   },
-                  id: "bb3bd969-d22b-44e7-a25f-748388eb6b1d",
+                  id: "8da96399-1804-5301-a609-c4c8079fc3e5",
                   type: "text",
                 },
                 {
                   block_order: 2,
                   content: {
-                    text: "Hiragana é usado principalmente para escrever palavras de origem japonesa, enquanto katakana é mais frequentemente usado para transcrever palavras e nomes estrangeiros.",
+                    text: "平假名主要用於書寫日語固有詞彙，而片假名則較常用於轉寫外來詞與人名。",
                   },
-                  id: "180f8870-30c3-483a-b516-8a50c786c82d",
+                  id: "f05e914d-0498-5eef-95f3-5b9dc2fcdac3",
                   type: "text",
                 },
                 {
                   block_order: 3,
                   content: {
-                    text: "Além disso, caracteres kanji também são amplamente utilizados na língua japonesa, com cerca de dois mil símbolos comumente usados.",
+                    text: "此外，日語也廣泛使用漢字，其中約有兩千個常用字符。",
                   },
-                  id: "f8472d02-d50b-4f3c-a06d-d5ffbc058c2a",
+                  id: "0cb1ba58-18f9-5625-8de0-506cc828cebf",
                   type: "text",
                 },
               ],
-              id: "85c7755b-197d-4858-9f9f-74f08b76ebca",
+              id: "62470adf-0a8b-5cba-bddd-f3db1e4ded69",
               screen_order: 1,
-              title: "Você sabia?",
+              title: "你知道嗎？",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "Hiragana e katakana são alfabetos silábicos que representam sons, enquanto kanji carregam significado.",
+                    text: "平假名和片假名都是表示語音的音節字母，而漢字則承載含義。",
                   },
-                  id: "7bf922b6-ac33-4e5d-bf45-b4b595f9e837",
+                  id: "16a23af6-edea-5e27-a9c2-8f0c0fbcc294",
                   type: "text",
                 },
                 {
                   block_order: 2,
                   content: {
                     table: [
-                      ["Romandzi", "tr:あ", "tr:い", "tr:う", "tr:え", "tr:お"],
-                      ["Hiragana", "あ", "い", "う", "え", "お"],
-                      ["Katakana", "ア", "イ", "ウ", "エ", "オ"],
+                      ["羅馬字", "tr:あ", "tr:い", "tr:う", "tr:え", "tr:お"],
+                      ["平假名", "あ", "い", "う", "え", "お"],
+                      ["片假名", "ア", "イ", "ウ", "エ", "オ"],
                     ],
                   },
-                  id: "f8e5328c-ee19-4148-9995-27cb92126845",
+                  id: "023b930a-3663-577e-8626-05a58f0013e6",
                   type: "table",
                 },
               ],
-              id: "cb7e236f-987f-45dc-8517-defc924a2264",
+              id: "6c40f582-d1b8-53ee-8d16-f6e83a3cafcb",
               screen_order: 2,
-              title: "Hiragana, Katakana, Kanji – Qual é a diferença?",
+              title: "平假名、片假名、漢字——有什麼差別？",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "Aprender a ordem correta dos traços é importante para escrever caracteres bonitos. Aqui estão as regras básicas:",
+                    text: "學習正確的筆畫順序對於寫出工整的文字非常重要。以下是基本規則：",
                   },
-                  id: "bd7230a2-5f83-4b01-a2b8-5bb9ed788431",
+                  id: "9738b8c1-b973-5f8d-a66a-f7ebe439c6d3",
                   type: "text",
                 },
                 {
                   block_order: 2,
                   content: {
-                    rules: [
-                      "Os traços são desenhados da esquerda para a direita",
-                      "Os traços são desenhados de cima para baixo",
-                      "Curvas e círculos são desenhados no sentido horário",
-                    ],
+                    rules: ["筆畫由左至右書寫", "筆畫由上至下書寫", "曲線與圓形按照順時針方向書寫"],
                   },
-                  id: "86066dc5-512c-4ba2-8051-7f2cd022fb30",
+                  id: "1305a7e4-2008-58f6-b71e-c2b26b4ad7a1",
                   type: "rule",
                 },
               ],
-              id: "7c0437f8-75a0-481c-82e0-8074e3cb7839",
+              id: "bb650257-0ddd-591c-b34e-3b318f6f0f78",
               screen_order: 3,
-              title: "Dica!",
+              title: "提示！",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "Seguir a ordem correta dos traços ajuda a escrever caracteres de forma ordenada.",
+                    text: "遵循正確的筆畫順序有助於寫出工整的字符。",
                   },
-                  id: "84b17f25-3f2c-41a9-bedd-bc0620f28d96",
+                  id: "a6d438a5-e8c0-55c1-99c0-d21a8e67f462",
                   type: "text",
                 },
                 {
@@ -115,13 +111,13 @@ export const dumpPt = {
                     id: "a151eeeb-2537-463c-ae23-d484d1bcb835",
                     kana: "hiragana",
                   },
-                  id: "fd68dd4b-d44e-47c7-9324-7b0236953f91",
+                  id: "95b968f3-5814-5bc5-986e-98b57e7608e4",
                   type: "letter",
                 },
               ],
-              id: "eb608d57-2c3d-4d28-8d5a-f37297808349",
+              id: "764eb50d-314d-5ecd-a526-940363720e23",
               screen_order: 4,
-              title: "Veja a ordem dos traços.",
+              title: "看看筆畫順序。",
             },
             {
               blocks: [
@@ -131,50 +127,50 @@ export const dumpPt = {
                     answers: [
                       {
                         isTrue: false,
-                        title: "da direita para a esquerda",
+                        title: "由右至左",
                       },
                       {
                         isTrue: false,
-                        title: "de baixo para cima",
+                        title: "由下至上",
                       },
                       {
                         isTrue: true,
-                        title: "da esquerda para a direita",
+                        title: "由左至右",
                       },
                     ],
                   },
-                  id: "e2da674a-dfa5-4b02-afa0-c85cfc4b73e4",
+                  id: "fdf552eb-5d73-5dcd-a5cc-54555b5badc8",
                   type: "choice",
                 },
               ],
-              id: "8c5916ae-aab7-410f-bd13-0ce25b8a69f5",
+              id: "a1a2d20a-2af2-50bc-bcd1-3d02f896c0f9",
               screen_order: 5,
-              title: "Escolha a escrita correta.",
+              title: "選擇正確的書寫方向。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "Dominar a técnica de finalização correta dos traços ajuda a alcançar a estética e a legibilidade da escrita.",
+                    text: "掌握正確的收筆技巧，有助於讓字跡更美觀且易於辨識。",
                   },
-                  id: "e1917eec-b4cb-4670-82b4-e7fc1de0502e",
+                  id: "34956df1-b27a-546b-9715-059ace88b44c",
                   type: "text",
                 },
                 {
                   block_order: 2,
                   content: {
-                    text: "Para finalizar um traço, paramos abruptamente, fazemos um gancho ou afastamos lentamente o pincel.",
+                    text: "收筆時，我們可以突然停筆、加上鉤，或逐漸提起筆。",
                   },
-                  id: "7a460032-360a-43a3-b5d5-cb1b67cd6c4d",
+                  id: "4d6cf40e-8ae0-5246-9a8f-103f61a12b6f",
                   type: "text",
                 },
                 {
                   block_order: 3,
                   content: {
-                    text: "Vamos considerar diferentes maneiras de finalizar os traços no exemplo, onde o primeiro traço termina com um gancho e o segundo para abruptamente.",
+                    text: "讓我們透過範例看看不同的收筆方式：第一筆以鉤收尾，第二筆則突然停筆。",
                   },
-                  id: "f28a7316-8d99-42dc-98b5-5406d156bbaf",
+                  id: "453eace7-fb0a-54d1-b62b-e47408daf161",
                   type: "text",
                 },
                 {
@@ -184,25 +180,25 @@ export const dumpPt = {
                     id: "11017078-148a-4a44-b3f7-21d1df02d981",
                     kana: "hiragana",
                   },
-                  id: "6a9c4e98-e288-4b2f-8d1f-3662bf5b13d5",
+                  id: "0709f040-d957-5e78-9805-0c76e1c3810a",
                   type: "letter",
                 },
               ],
-              id: "2bc028c8-2a90-4d78-9b8a-a3b3d51e9e75",
+              id: "be896cb4-613b-50d2-847f-8c02b549d796",
               screen_order: 6,
-              title: "Finalização do traço.",
+              title: "筆畫的收筆。",
             },
           ],
-          subtitle: "Hiragana e Katakana",
-          title: "Introdução",
-          topic_id: "de246ddb-5cfd-49c7-ac83-1099ea41d43b",
+          subtitle: "平假名與片假名",
+          title: "介紹",
+          topic_id: "70dfc023-7e82-406b-b1c2-84209535bd0c",
         },
         {
-          expanded_subtitle: "Aprenda a ler e escrever os sons vocálicos do hiragana.",
-          expanded_title: "Hiragana: tr:あ, tr:い, tr:う, tr:え, tr:お",
+          expanded_subtitle: "學習讀寫平假名的母音。",
+          expanded_title: "平假名: tr:あ, tr:い, tr:う, tr:え, tr:お",
           icon: "https://nihongo.khvat.app/chapter1/Lesson1.jpg",
-          id: "24a50c8f-75d9-4119-947a-6d9fa56b766b",
-          last_updated: "2026-03-26T17:43:20.226Z",
+          id: "7227ea3b-0ab6-4d75-890f-05ab481e6f93",
+          last_updated: "2026-09-08T13:12:16.091Z",
           lesson_key: "alphabet/hiragana&a",
           lesson_order: 2,
           minimum_version: "2.4.1",
@@ -216,13 +212,13 @@ export const dumpPt = {
                     id: "a151eeeb-2537-463c-ae23-d484d1bcb835",
                     kana: "hiragana",
                   },
-                  id: "79824a77-d5ae-4f66-8565-d6e30a7b55e0",
+                  id: "804b3c58-967b-5955-b17b-afc2ae51aa4a",
                   type: "letter",
                 },
               ],
-              id: "74ad5927-b2b7-414b-bead-b6a5faea1449",
+              id: "e566f7be-6ce1-5595-8470-12f5a86944c9",
               screen_order: 1,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "記住這個音節的筆順和發音。",
             },
             {
               blocks: [
@@ -233,13 +229,13 @@ export const dumpPt = {
                     id: "a151eeeb-2537-463c-ae23-d484d1bcb835",
                     kana: "hiragana",
                   },
-                  id: "eb2a4d97-35c6-4b3e-8186-c9b43046d17b",
+                  id: "15c70e5a-9752-518b-a75f-d7fba2153c97",
                   type: "letter",
                 },
               ],
-              id: "a76c6d16-7240-45e6-ab2f-d886520a6da9",
+              id: "1d7c2d91-59bf-5b36-8aa6-1d89f0738c15",
               screen_order: 2,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "按正確的筆順書寫音節。",
             },
             {
               blocks: [
@@ -250,13 +246,13 @@ export const dumpPt = {
                     id: "11017078-148a-4a44-b3f7-21d1df02d981",
                     kana: "hiragana",
                   },
-                  id: "ee56daa9-fc3d-4f4b-bc84-4e99e7aadc3c",
+                  id: "7e514b83-4ca8-56e4-a91e-e1d703d8d8d7",
                   type: "letter",
                 },
               ],
-              id: "8e982a71-1c49-4ac2-a6fa-0a49e1a05303",
+              id: "0dc7c806-b871-5eb8-9b98-1a84be129c89",
               screen_order: 3,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "記住這個音節的筆順和發音。",
             },
             {
               blocks: [
@@ -267,13 +263,13 @@ export const dumpPt = {
                     id: "11017078-148a-4a44-b3f7-21d1df02d981",
                     kana: "hiragana",
                   },
-                  id: "636486c2-38ce-49aa-93a6-73cbd9b5b8af",
+                  id: "e59164c2-2d1f-50e8-adc9-5bc87f5f64be",
                   type: "letter",
                 },
               ],
-              id: "2c11bea9-6092-4bff-888d-aa4fc53d3766",
+              id: "9c8aff6b-ef30-5411-b1f7-7fde48c0c8b9",
               screen_order: 4,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "按正確的筆順書寫音節。",
             },
             {
               blocks: [
@@ -285,13 +281,13 @@ export const dumpPt = {
                       ["あ", "tr:あ"],
                     ],
                   },
-                  id: "b359ca7a-ca1d-4c86-a23e-8744f3efa9b4",
+                  id: "1a1eb02b-614d-515e-842f-bf6b37e387dd",
                   type: "matching",
                 },
               ],
-              id: "64f06028-1829-4fed-9339-0198c7e9fae6",
+              id: "5b92da92-245d-52a7-a7ef-2604024a4dc0",
               screen_order: 5,
-              title: "Combine 「Hiragana」 com sua transliteração.",
+              title: "將「平假名」與其羅馬字配對。",
             },
             {
               blocks: [
@@ -302,13 +298,13 @@ export const dumpPt = {
                     id: "bcbd90e2-fabc-4dcc-8022-02e5b650c822",
                     kana: "hiragana",
                   },
-                  id: "48010976-6f30-48f0-8571-172447c1c26c",
+                  id: "d8e70bd3-6358-5d15-a2de-db98b781063f",
                   type: "letter",
                 },
               ],
-              id: "c04ff3f7-5163-4964-ad2c-8055df42a949",
+              id: "8514c4a9-9180-5ce7-8a5a-4b0d6f3e1263",
               screen_order: 6,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "記住這個音節的筆順和發音。",
             },
             {
               blocks: [
@@ -319,23 +315,23 @@ export const dumpPt = {
                     id: "bcbd90e2-fabc-4dcc-8022-02e5b650c822",
                     kana: "hiragana",
                   },
-                  id: "df057c7f-681b-482d-b61f-65f503c5ae9a",
+                  id: "7467ab9b-c5e9-5d5a-88d0-4314e14ca34d",
                   type: "letter",
                 },
               ],
-              id: "c9c6c860-4c74-4766-96c2-53b068fefede",
+              id: "ae241e20-d858-5a43-ac17-fa3af3af1621",
               screen_order: 7,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "按正確的筆順書寫音節。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Hiragana",
+                    sub_title: "平假名",
                     title: "tr:あ",
                   },
-                  id: "36cee8fb-911d-4d8f-a9e3-4a1a68ca79f0",
+                  id: "c654cd8c-ae35-5b6b-873d-d61f4978bfe3",
                   type: "title",
                 },
                 {
@@ -343,26 +339,26 @@ export const dumpPt = {
                   content: {
                     answers: [
                       {
-                        isTrue: false,
-                        title: "う",
+                        isTrue: true,
+                        title: "あ",
                       },
                       {
                         isTrue: false,
                         title: "い",
                       },
                       {
-                        isTrue: true,
-                        title: "あ",
+                        isTrue: false,
+                        title: "う",
                       },
                     ],
                   },
-                  id: "1c1c20a4-4224-4392-b60f-7681c02bca03",
+                  id: "3e4b8562-387d-5978-a5ee-c1322c5c2a86",
                   type: "choice",
                 },
               ],
-              id: "351fa37a-0bae-4849-9c37-ec910f4f9d4e",
+              id: "4937488e-a29a-51fd-aa43-c5076017bdd3",
               screen_order: 8,
-              title: "Selecione a sílaba.",
+              title: "選擇音節。",
             },
             {
               blocks: [
@@ -374,13 +370,13 @@ export const dumpPt = {
                       ["い", "tr:い"],
                     ],
                   },
-                  id: "533c1d59-ba67-4ec4-b894-8d2c5e1abfb1",
+                  id: "e18d7011-1d80-5158-86d2-04210634d725",
                   type: "matching",
                 },
               ],
-              id: "c06f6fdd-9430-4f3f-acea-40b4af1252ce",
+              id: "69eb8382-6bc6-5505-9f40-80449bbcbc53",
               screen_order: 9,
-              title: "Combine 「Hiragana」 com sua transliteração.",
+              title: "將「平假名」與其羅馬字配對。",
             },
             {
               blocks: [
@@ -391,13 +387,13 @@ export const dumpPt = {
                     id: "70680d73-c9f9-4b4e-aac4-c82caa49668c",
                     kana: "hiragana",
                   },
-                  id: "245b496e-e6e0-4c8b-a0db-de648d801ac6",
+                  id: "96075edd-3506-5bc2-a4f3-832caa5af611",
                   type: "letter",
                 },
               ],
-              id: "d552d3c3-40b6-4dde-a1c1-95241fc0643c",
+              id: "de07f20c-013c-5096-b01e-2d98512e1b43",
               screen_order: 10,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "記住這個音節的筆順和發音。",
             },
             {
               blocks: [
@@ -408,13 +404,13 @@ export const dumpPt = {
                     id: "70680d73-c9f9-4b4e-aac4-c82caa49668c",
                     kana: "hiragana",
                   },
-                  id: "8d05a9fe-21dc-42b2-ae88-6974aa5a2298",
+                  id: "3431e1c0-d5ea-5b8a-9243-eeb493fd7cbd",
                   type: "letter",
                 },
               ],
-              id: "18777892-dba2-41a7-9d8d-cbb52b158ee9",
+              id: "fb95136a-cac4-58a8-b8ef-63537566ed09",
               screen_order: 11,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "按正確的筆順書寫音節。",
             },
             {
               blocks: [
@@ -426,13 +422,13 @@ export const dumpPt = {
                       ["う", "tr:う"],
                     ],
                   },
-                  id: "757cae17-3fae-4faa-9add-461b718757ee",
+                  id: "080f2e1b-a412-5def-b2c6-8a4a999f6b0c",
                   type: "matching",
                 },
               ],
-              id: "25205289-03d0-456a-b72f-aa255f904bde",
+              id: "0be170b7-f31f-5642-a600-c988282b5ef6",
               screen_order: 12,
-              title: "Combine 「Hiragana」 com sua transliteração.",
+              title: "將「平假名」與其羅馬字配對。",
             },
             {
               blocks: [
@@ -443,13 +439,13 @@ export const dumpPt = {
                     id: "e430643d-5624-432e-b53e-974447baad22",
                     kana: "hiragana",
                   },
-                  id: "057f40e6-814f-45cb-b4bd-648961e3581e",
+                  id: "4a4c9a2e-ecdb-5f0c-9856-ffc164db2fdf",
                   type: "letter",
                 },
               ],
-              id: "5af9b7c7-c17f-4e2f-a4c2-65cb7d547863",
+              id: "042dc212-ea02-5357-b56d-1e2ee24bc4ea",
               screen_order: 13,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "記住這個音節的筆順和發音。",
             },
             {
               blocks: [
@@ -460,23 +456,23 @@ export const dumpPt = {
                     id: "e430643d-5624-432e-b53e-974447baad22",
                     kana: "hiragana",
                   },
-                  id: "d06c7b1b-40b8-41c4-a461-ac660124e482",
+                  id: "f2efc2f5-00ce-5c70-a2e0-e65ffc94bc07",
                   type: "letter",
                 },
               ],
-              id: "22b0b5e5-5ce3-47cf-a3f8-1edd8d69801c",
+              id: "33edaad2-ff42-5ba2-8be7-d88e20452267",
               screen_order: 14,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "按正確的筆順書寫音節。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Hiragana",
-                    title: "tr:あ",
+                    sub_title: "平假名",
+                    title: "tr:う",
                   },
-                  id: "fad963a7-7371-42d4-bfad-64456a7a5197",
+                  id: "55de4af9-9fc0-5fa7-841a-a88112d06653",
                   type: "title",
                 },
                 {
@@ -484,36 +480,36 @@ export const dumpPt = {
                   content: {
                     answers: [
                       {
-                        isTrue: false,
-                        title: "う",
-                      },
-                      {
                         isTrue: true,
-                        title: "あ",
+                        title: "う",
                       },
                       {
                         isTrue: false,
                         title: "お",
                       },
+                      {
+                        isTrue: false,
+                        title: "あ",
+                      },
                     ],
                   },
-                  id: "20b0d86d-7c63-476f-b9c7-c7ca72e3083b",
+                  id: "1f3d58c6-7e81-52cc-b0b0-ff56f579e59f",
                   type: "choice",
                 },
               ],
-              id: "ea7824d6-4837-4054-b0ea-7d9e64fb1ca2",
+              id: "9bb02066-ee6a-504c-b358-48e88c7150dd",
               screen_order: 15,
-              title: "Selecione a sílaba.",
+              title: "選擇音節。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Hiragana",
-                    title: "う, お, あ, い, え",
+                    sub_title: "平假名",
+                    title: "い, え, う, あ, お",
                   },
-                  id: "04641fd7-11ba-41ba-b0c6-40942b4a08c8",
+                  id: "d7108448-6241-5545-966d-e2ba6ccd804c",
                   type: "title",
                 },
                 {
@@ -522,31 +518,31 @@ export const dumpPt = {
                     answers: [
                       {
                         isTrue: false,
-                        title: "tr:い, tr:お, tr:あ, tr:え, tr:う",
+                        title: "tr:え, tr:う, tr:お, tr:あ, tr:い",
                       },
                       {
                         isTrue: true,
-                        title: "tr:う, tr:お, tr:あ, tr:い, tr:え",
+                        title: "tr:い, tr:え, tr:う, tr:あ, tr:お",
                       },
                     ],
                   },
-                  id: "017c3100-39e1-4d1d-ace9-5f4cd2a40e4a",
+                  id: "81f72c57-51e2-51d6-84cc-a36c40c23665",
                   type: "choice",
                 },
               ],
-              id: "d29e60ce-309c-4376-a6a9-62733c65f88e",
+              id: "2934f813-0cb7-551b-8fff-9a83079fa1ef",
               screen_order: 16,
-              title: "Escolha a sequência correta.",
+              title: "選擇正確的順序。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Hiragana",
-                    title: "お, え, う, あ, い",
+                    sub_title: "平假名",
+                    title: "お, う, あ, い, え",
                   },
-                  id: "7ee402de-2c2b-4b19-bb78-1769ce63e8df",
+                  id: "a2fd73b4-acba-5151-999a-64af6930f00d",
                   type: "title",
                 },
                 {
@@ -554,82 +550,82 @@ export const dumpPt = {
                   content: {
                     answers: [
                       {
-                        isTrue: false,
-                        title: "tr:う, tr:あ, tr:え, tr:お, tr:い",
+                        isTrue: true,
+                        title: "tr:お, tr:う, tr:あ, tr:い, tr:え",
                       },
                       {
-                        isTrue: true,
-                        title: "tr:お, tr:え, tr:う, tr:あ, tr:い",
+                        isTrue: false,
+                        title: "tr:い, tr:う, tr:あ, tr:え, tr:お",
                       },
                     ],
                   },
-                  id: "d89ef30d-2031-4997-945e-4ee357b6e028",
+                  id: "8dca8086-f1d8-56b9-b1fa-eed1e437a74b",
                   type: "choice",
                 },
               ],
-              id: "8d9545c6-017b-4bad-836d-9caa08331352",
+              id: "15e6dd81-6fe5-5ac6-a034-5b5325519220",
               screen_order: 17,
-              title: "Escolha a sequência correta.",
+              title: "選擇正確的順序。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Hiragana",
-                    title: "tr:お, tr:え, tr:い, tr:う, tr:あ",
+                    sub_title: "平假名",
+                    title: "tr:い, tr:あ, tr:え, tr:お, tr:う",
                   },
-                  id: "7bab7a02-6eb6-4214-9387-563bf7685d54",
+                  id: "5e5e498d-6958-5f0a-81b8-7b6c74aa8df7",
                   type: "title",
                 },
                 {
                   block_order: 2,
                   content: {
-                    sequence: ["お", "え", "い", "う", "あ"],
+                    sequence: ["い", "あ", "え", "お", "う"],
                   },
-                  id: "31f95758-5895-433e-aef6-717476e2f22c",
+                  id: "2e936126-8e9f-5ce9-8a3c-c9e9902409ce",
                   type: "sequence",
                 },
               ],
-              id: "ec4ceba1-a929-4347-92e8-8fa5dd753352",
+              id: "b00470a6-717a-5560-a2af-5cddb384284e",
               screen_order: 18,
-              title: "Organize as sílabas na ordem correta.",
+              title: "將音節按正確的順序排列。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Hiragana",
-                    title: "tr:い, tr:う, tr:え, tr:お, tr:あ",
+                    sub_title: "平假名",
+                    title: "tr:え, tr:い, tr:あ, tr:お, tr:う",
                   },
-                  id: "0a2692f3-8f93-4d22-ac1b-9d0aab523c21",
+                  id: "e9464123-8537-5a28-866a-6099b18d919c",
                   type: "title",
                 },
                 {
                   block_order: 2,
                   content: {
-                    sequence: ["い", "う", "え", "お", "あ"],
+                    sequence: ["え", "い", "あ", "お", "う"],
                   },
-                  id: "77e290a6-caff-4df4-815d-327351cc0d0a",
+                  id: "3b49aa1d-b191-5d22-a6a9-01d24b5ec4ff",
                   type: "sequence",
                 },
               ],
-              id: "c68c625b-e08d-4f9e-95e9-d96524cdf961",
+              id: "c84e867d-af6f-5055-9a8e-7d21185f6dcd",
               screen_order: 19,
-              title: "Organize as sílabas na ordem correta.",
+              title: "將音節按正確的順序排列。",
             },
           ],
-          subtitle: "Sílabas: あ、い、う、え、お",
-          title: "Lição 1",
-          topic_id: "de246ddb-5cfd-49c7-ac83-1099ea41d43b",
+          subtitle: "音節：あ、い、う、え、お",
+          title: "第 1 課",
+          topic_id: "70dfc023-7e82-406b-b1c2-84209535bd0c",
         },
         {
-          expanded_subtitle: "Aprenda a ler e escrever as sílabas na linha tr:か.",
-          expanded_title: "Hiragana: tr:か, tr:き, tr:く, tr:け, tr:こ",
+          expanded_subtitle: "學習讀寫tr:か行的音節。",
+          expanded_title: "平假名: tr:か, tr:き, tr:く, tr:け, tr:こ",
           icon: "https://nihongo.khvat.app/chapter1/Lesson2.jpg",
-          id: "4f63e7d3-d422-4bc8-95df-f54e37910903",
-          last_updated: "2026-03-26T17:43:20.226Z",
+          id: "f1014d3d-d770-4a69-ac64-1357df9fc0e7",
+          last_updated: "2026-09-08T13:12:16.091Z",
           lesson_key: "alphabet/hiragana&ka",
           lesson_order: 3,
           minimum_version: "2.4.1",
@@ -643,13 +639,13 @@ export const dumpPt = {
                     id: "22350aba-d254-48ba-811a-9d1448761042",
                     kana: "hiragana",
                   },
-                  id: "6bbff0fc-d81c-4db3-87af-84bd07279bce",
+                  id: "7d184c58-fd29-5a2c-b256-5084393306e9",
                   type: "letter",
                 },
               ],
-              id: "3df62bb6-c2af-4c19-9f8a-d481d772da88",
+              id: "bb61bc3d-f74b-5e47-b0c6-bf785d85d573",
               screen_order: 1,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "記住這個音節的筆順和發音。",
             },
             {
               blocks: [
@@ -660,13 +656,13 @@ export const dumpPt = {
                     id: "22350aba-d254-48ba-811a-9d1448761042",
                     kana: "hiragana",
                   },
-                  id: "8599f3e0-b2e5-4cac-9d30-01963db1739e",
+                  id: "a1cc2c38-4e41-58f1-881b-fb189976dc22",
                   type: "letter",
                 },
               ],
-              id: "ba6da2dd-80d2-4477-9b1d-a3537b8bf558",
+              id: "9708a3da-cbcf-51e5-bbd0-bffb93d33903",
               screen_order: 2,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "按正確的筆順書寫音節。",
             },
             {
               blocks: [
@@ -677,13 +673,13 @@ export const dumpPt = {
                     id: "a1d45e3b-a1c9-4409-8d39-725a0a35899d",
                     kana: "hiragana",
                   },
-                  id: "bbf1ffb9-4423-48d1-a3f7-47bc1ca127ae",
+                  id: "cb54cdd2-2787-5dcb-9909-230d1fcf1ffb",
                   type: "letter",
                 },
               ],
-              id: "7ac04e91-b05f-4f4f-a2f1-f28b7adb852d",
+              id: "928bcca7-4dfe-5b11-ba57-a911e4cc3d91",
               screen_order: 3,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "記住這個音節的筆順和發音。",
             },
             {
               blocks: [
@@ -694,13 +690,13 @@ export const dumpPt = {
                     id: "a1d45e3b-a1c9-4409-8d39-725a0a35899d",
                     kana: "hiragana",
                   },
-                  id: "2febd647-ad08-4e69-b43f-bb8302013369",
+                  id: "2c4304cd-7ac7-53c9-80a0-8622351c70ae",
                   type: "letter",
                 },
               ],
-              id: "bb355122-10d8-47fb-ab69-025730dcf6bd",
+              id: "ccdcc077-9369-5c46-bed7-25cb34320445",
               screen_order: 4,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "按正確的筆順書寫音節。",
             },
             {
               blocks: [
@@ -712,13 +708,13 @@ export const dumpPt = {
                       ["か", "tr:か"],
                     ],
                   },
-                  id: "443a460a-16e4-4c1d-9ced-a98bba725bfc",
+                  id: "c23c4fd7-e713-5b66-9821-e269170decbb",
                   type: "matching",
                 },
               ],
-              id: "39213c90-3ec3-4e21-9517-dc6843ea195c",
+              id: "9868df28-0258-5116-9c0e-9af10fad478b",
               screen_order: 5,
-              title: "Combine 「Hiragana」 com sua transliteração.",
+              title: "將「平假名」與其羅馬字配對。",
             },
             {
               blocks: [
@@ -729,13 +725,13 @@ export const dumpPt = {
                     id: "51cd83e5-6167-4bcc-a3e6-6b246f2ca2d1",
                     kana: "hiragana",
                   },
-                  id: "0d02191a-b9b5-4ece-b0c4-a6e7393a6aa3",
+                  id: "c2262aec-4631-5b10-a8bb-bda7d7c486c3",
                   type: "letter",
                 },
               ],
-              id: "fdd3cd0d-5a35-4370-951f-0ea118a1e33f",
+              id: "d4a94919-0188-5430-a1be-16d6ab7654f2",
               screen_order: 6,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "記住這個音節的筆順和發音。",
             },
             {
               blocks: [
@@ -746,23 +742,164 @@ export const dumpPt = {
                     id: "51cd83e5-6167-4bcc-a3e6-6b246f2ca2d1",
                     kana: "hiragana",
                   },
-                  id: "3d8305a4-4f91-4848-a8db-898f2c73b0b6",
+                  id: "ef130af9-9d05-585b-9bb5-651157addaeb",
                   type: "letter",
                 },
               ],
-              id: "46c95e2f-98cb-4a9a-82d2-c6dbd5172cc0",
+              id: "acf0c41d-b87c-51c6-bc1b-c49477546699",
               screen_order: 7,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "按正確的筆順書寫音節。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Hiragana",
+                    sub_title: "平假名",
+                    title: "tr:か",
+                  },
+                  id: "f88f42be-e4ee-5a3f-a0b9-a15e5891c4eb",
+                  type: "title",
+                },
+                {
+                  block_order: 2,
+                  content: {
+                    answers: [
+                      {
+                        isTrue: true,
+                        title: "か",
+                      },
+                      {
+                        isTrue: false,
+                        title: "く",
+                      },
+                      {
+                        isTrue: false,
+                        title: "き",
+                      },
+                    ],
+                  },
+                  id: "c52c64ab-f341-525b-a363-76f1ba3e7f2c",
+                  type: "choice",
+                },
+              ],
+              id: "48bd944f-f6cb-5970-9617-c3605eda4125",
+              screen_order: 8,
+              title: "選擇音節。",
+            },
+            {
+              blocks: [
+                {
+                  block_order: 1,
+                  content: {
+                    pairs: [
+                      ["く", "tr:く"],
+                      ["き", "tr:き"],
+                    ],
+                  },
+                  id: "468f903b-7e52-5750-b5bf-61d8e3b7cafd",
+                  type: "matching",
+                },
+              ],
+              id: "88e1b036-5c2a-5533-96aa-7fe27ec7cc3e",
+              screen_order: 9,
+              title: "將「平假名」與其羅馬字配對。",
+            },
+            {
+              blocks: [
+                {
+                  block_order: 1,
+                  content: {
+                    exercise: false,
+                    id: "9a84b07b-696a-4abd-83f2-70ff8ec66a66",
+                    kana: "hiragana",
+                  },
+                  id: "0c6f22d5-6652-5502-890f-0d1002ec5404",
+                  type: "letter",
+                },
+              ],
+              id: "a9ac0eac-1255-51f6-8232-452506d2ffd5",
+              screen_order: 10,
+              title: "記住這個音節的筆順和發音。",
+            },
+            {
+              blocks: [
+                {
+                  block_order: 1,
+                  content: {
+                    exercise: true,
+                    id: "9a84b07b-696a-4abd-83f2-70ff8ec66a66",
+                    kana: "hiragana",
+                  },
+                  id: "c43d61f8-b4bd-5dc2-b764-0e2d10207a02",
+                  type: "letter",
+                },
+              ],
+              id: "a31e5f3c-6284-59f7-9949-649a7f25851d",
+              screen_order: 11,
+              title: "按正確的筆順書寫音節。",
+            },
+            {
+              blocks: [
+                {
+                  block_order: 1,
+                  content: {
+                    pairs: [
+                      ["け", "tr:け"],
+                      ["く", "tr:く"],
+                    ],
+                  },
+                  id: "f26d828f-932e-5210-b0a3-1a0fb6243f54",
+                  type: "matching",
+                },
+              ],
+              id: "ac9cd7a3-b587-59bc-bdfb-8d0d89b0e6a7",
+              screen_order: 12,
+              title: "將「平假名」與其羅馬字配對。",
+            },
+            {
+              blocks: [
+                {
+                  block_order: 1,
+                  content: {
+                    exercise: false,
+                    id: "8a2655c3-4553-4f58-83db-069439b11154",
+                    kana: "hiragana",
+                  },
+                  id: "1a0a3e38-5af5-5d9f-8df7-ea0988a83a7d",
+                  type: "letter",
+                },
+              ],
+              id: "0a3ee605-690a-5443-8f8d-b8e70916162a",
+              screen_order: 13,
+              title: "記住這個音節的筆順和發音。",
+            },
+            {
+              blocks: [
+                {
+                  block_order: 1,
+                  content: {
+                    exercise: true,
+                    id: "8a2655c3-4553-4f58-83db-069439b11154",
+                    kana: "hiragana",
+                  },
+                  id: "a29c9ced-396a-5375-ac45-4ea64a59b3db",
+                  type: "letter",
+                },
+              ],
+              id: "b61e2dae-d1fa-53eb-8ddf-2cfe328ef3fc",
+              screen_order: 14,
+              title: "按正確的筆順書寫音節。",
+            },
+            {
+              blocks: [
+                {
+                  block_order: 1,
+                  content: {
+                    sub_title: "平假名",
                     title: "tr:く",
                   },
-                  id: "130aa670-1650-4097-84be-d0d18c5d0514",
+                  id: "7c23de06-bc94-536c-b287-5527d8aff78a",
                   type: "title",
                 },
                 {
@@ -779,168 +916,27 @@ export const dumpPt = {
                       },
                       {
                         isTrue: false,
-                        title: "か",
+                        title: "こ",
                       },
                     ],
                   },
-                  id: "d2ab7edb-667d-42d9-b74d-10e9245d604c",
+                  id: "87999bd1-803f-5253-a8d7-90beb1e1e629",
                   type: "choice",
                 },
               ],
-              id: "844e90f0-1e76-49ff-a1c7-32243decd629",
-              screen_order: 8,
-              title: "Selecione a sílaba.",
-            },
-            {
-              blocks: [
-                {
-                  block_order: 1,
-                  content: {
-                    pairs: [
-                      ["く", "tr:く"],
-                      ["き", "tr:き"],
-                    ],
-                  },
-                  id: "6ee31e75-6e55-4c13-b685-eba5d410a5c3",
-                  type: "matching",
-                },
-              ],
-              id: "254be682-0b45-4e48-89be-62912f175c1c",
-              screen_order: 9,
-              title: "Combine 「Hiragana」 com sua transliteração.",
-            },
-            {
-              blocks: [
-                {
-                  block_order: 1,
-                  content: {
-                    exercise: false,
-                    id: "9a84b07b-696a-4abd-83f2-70ff8ec66a66",
-                    kana: "hiragana",
-                  },
-                  id: "ada3ad4d-c55c-4ff9-8b5a-7907837f3f12",
-                  type: "letter",
-                },
-              ],
-              id: "18c25afa-b68b-44af-97cb-7f8ae97c9d37",
-              screen_order: 10,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
-            },
-            {
-              blocks: [
-                {
-                  block_order: 1,
-                  content: {
-                    exercise: true,
-                    id: "9a84b07b-696a-4abd-83f2-70ff8ec66a66",
-                    kana: "hiragana",
-                  },
-                  id: "75f6ecf4-3a44-4d0c-b0de-ebbd13654ce4",
-                  type: "letter",
-                },
-              ],
-              id: "7c1b26b0-b3a5-403d-982f-8140a8c97608",
-              screen_order: 11,
-              title: "Escreva a sílaba na ordem correta dos traços.",
-            },
-            {
-              blocks: [
-                {
-                  block_order: 1,
-                  content: {
-                    pairs: [
-                      ["け", "tr:け"],
-                      ["く", "tr:く"],
-                    ],
-                  },
-                  id: "7a0c4ccc-eafb-4d97-9e38-b6e5c8ab4657",
-                  type: "matching",
-                },
-              ],
-              id: "4edd78d7-4d09-495a-ac6d-e4e4b5a6cb0e",
-              screen_order: 12,
-              title: "Combine 「Hiragana」 com sua transliteração.",
-            },
-            {
-              blocks: [
-                {
-                  block_order: 1,
-                  content: {
-                    exercise: false,
-                    id: "8a2655c3-4553-4f58-83db-069439b11154",
-                    kana: "hiragana",
-                  },
-                  id: "597ed4f5-eb5d-427d-ac2b-27edc1db2b7b",
-                  type: "letter",
-                },
-              ],
-              id: "b9ba560d-2e03-46f7-9358-1b61654b7993",
-              screen_order: 13,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
-            },
-            {
-              blocks: [
-                {
-                  block_order: 1,
-                  content: {
-                    exercise: true,
-                    id: "8a2655c3-4553-4f58-83db-069439b11154",
-                    kana: "hiragana",
-                  },
-                  id: "a6aef6b5-5747-484c-bbad-4b450976903c",
-                  type: "letter",
-                },
-              ],
-              id: "2e2cf9e1-8cca-4e02-b0e9-175cc622e3fe",
-              screen_order: 14,
-              title: "Escreva a sílaba na ordem correta dos traços.",
-            },
-            {
-              blocks: [
-                {
-                  block_order: 1,
-                  content: {
-                    sub_title: "Hiragana",
-                    title: "tr:け",
-                  },
-                  id: "1a8f69fc-fb0f-48eb-ba9e-6d0132e7210f",
-                  type: "title",
-                },
-                {
-                  block_order: 2,
-                  content: {
-                    answers: [
-                      {
-                        isTrue: false,
-                        title: "き",
-                      },
-                      {
-                        isTrue: true,
-                        title: "け",
-                      },
-                      {
-                        isTrue: false,
-                        title: "か",
-                      },
-                    ],
-                  },
-                  id: "0aca125b-a175-47ab-ad84-a67db2c05f5d",
-                  type: "choice",
-                },
-              ],
-              id: "31a39021-1cb0-4726-b4fb-6a31a3ce9f26",
+              id: "d70a2f04-815c-54e2-9d35-6a67c3c52cc4",
               screen_order: 15,
-              title: "Selecione a sílaba.",
+              title: "選擇音節。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Hiragana",
-                    title: "き, か, く, け, こ",
+                    sub_title: "平假名",
+                    title: "け, き, か, く, こ",
                   },
-                  id: "e6fd3c05-a064-49df-85ea-1a4f488fb38d",
+                  id: "4197e1dc-7b97-597a-894c-d6819c812159",
                   type: "title",
                 },
                 {
@@ -948,32 +944,32 @@ export const dumpPt = {
                   content: {
                     answers: [
                       {
-                        isTrue: true,
-                        title: "tr:き, tr:か, tr:く, tr:け, tr:こ",
+                        isTrue: false,
+                        title: "tr:け, tr:こ, tr:か, tr:く, tr:き",
                       },
                       {
-                        isTrue: false,
-                        title: "tr:か, tr:こ, tr:き, tr:く, tr:け",
+                        isTrue: true,
+                        title: "tr:け, tr:き, tr:か, tr:く, tr:こ",
                       },
                     ],
                   },
-                  id: "2910608a-b5ef-4ea1-a235-a06c592b37d1",
+                  id: "2b7c535b-688f-5219-93a4-45e9d62a668e",
                   type: "choice",
                 },
               ],
-              id: "2226ab8a-b4ee-4688-8c11-ad40821749a3",
+              id: "6faa597d-4d4a-5e92-a2c9-5e4d5175ed6b",
               screen_order: 16,
-              title: "Escolha a sequência correta.",
+              title: "選擇正確的順序。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Hiragana",
-                    title: "か, こ, く, き, け",
+                    sub_title: "平假名",
+                    title: "く, き, か, け, こ",
                   },
-                  id: "76f5aecd-47ae-45c1-bd4b-d642af2c8254",
+                  id: "c6c1471a-ac4e-54e1-9263-e3a653713b3c",
                   type: "title",
                 },
                 {
@@ -982,81 +978,81 @@ export const dumpPt = {
                     answers: [
                       {
                         isTrue: true,
-                        title: "tr:か, tr:こ, tr:く, tr:き, tr:け",
+                        title: "tr:く, tr:き, tr:か, tr:け, tr:こ",
                       },
                       {
                         isTrue: false,
-                        title: "tr:け, tr:き, tr:く, tr:か, tr:こ",
+                        title: "tr:こ, tr:け, tr:き, tr:か, tr:く",
                       },
                     ],
                   },
-                  id: "4a651b6d-09f7-4fba-854a-444214b48663",
+                  id: "2a77cc74-ab17-5a4f-a1d5-4ea8c1b33ba0",
                   type: "choice",
                 },
               ],
-              id: "201447f0-5359-45e6-a06f-5056bfffa402",
+              id: "8a94ebb0-40bb-5fcb-8cc6-f988f3a682d8",
               screen_order: 17,
-              title: "Escolha a sequência correta.",
+              title: "選擇正確的順序。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Hiragana",
-                    title: "tr:こ, tr:き, tr:か, tr:け, tr:く",
+                    sub_title: "平假名",
+                    title: "tr:か, tr:き, tr:け, tr:こ, tr:く",
                   },
-                  id: "904037d2-8f52-4be6-bfc0-c1ac59e73372",
+                  id: "6135abbf-fc4a-5ede-a50d-12acdfae15c5",
                   type: "title",
                 },
                 {
                   block_order: 2,
                   content: {
-                    sequence: ["こ", "き", "か", "け", "く"],
+                    sequence: ["か", "き", "け", "こ", "く"],
                   },
-                  id: "fc19377e-b7c0-4c26-b5e0-81abddc7b6d4",
+                  id: "38bd36fb-5809-53af-8488-76d71d0715f7",
                   type: "sequence",
                 },
               ],
-              id: "0207dd3e-bdb7-48a8-a527-b2e946d6cc8a",
+              id: "1b0ab2dd-7907-5ab5-a1b4-7ac53a84312f",
               screen_order: 18,
-              title: "Organize as sílabas na ordem correta.",
+              title: "將音節按正確的順序排列。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Hiragana",
-                    title: "tr:く, tr:き, tr:け, tr:こ, tr:か",
+                    sub_title: "平假名",
+                    title: "tr:こ, tr:か, tr:く, tr:け, tr:き",
                   },
-                  id: "7fc788e7-90d7-48b0-a9d9-6d60c8086ae7",
+                  id: "f020752e-116a-5cdb-ab5c-f7cd6f6ce636",
                   type: "title",
                 },
                 {
                   block_order: 2,
                   content: {
-                    sequence: ["く", "き", "け", "こ", "か"],
+                    sequence: ["こ", "か", "く", "け", "き"],
                   },
-                  id: "83001f6d-3669-43a9-9a99-47bc27ec1749",
+                  id: "64a7a7e1-f23d-5d91-abb5-3975adb5d9d4",
                   type: "sequence",
                 },
               ],
-              id: "20fb3546-7379-40bc-9bff-45571aa7f251",
+              id: "175b25fc-d226-58f1-99b3-09cedbcde2f5",
               screen_order: 19,
-              title: "Organize as sílabas na ordem correta.",
+              title: "將音節按正確的順序排列。",
             },
           ],
-          subtitle: "Sílabas: か、き、く、け、こ",
-          title: "Lição 2",
-          topic_id: "de246ddb-5cfd-49c7-ac83-1099ea41d43b",
+          subtitle: "音節：か、き、く、け、こ",
+          title: "第 2 課",
+          topic_id: "70dfc023-7e82-406b-b1c2-84209535bd0c",
         },
         {
-          expanded_subtitle: "Aprenda a ler e escrever as sílabas na linha tr:さ.",
-          expanded_title: "Hiragana: tr:さ, tr:し, tr:す, tr:せ, tr:そ",
+          expanded_subtitle: "學習讀寫tr:さ行的音節。",
+          expanded_title: "平假名: tr:さ, tr:し, tr:す, tr:せ, tr:そ",
           icon: "https://nihongo.khvat.app/chapter1/Lesson3.jpg",
-          id: "fe3d8dc3-3138-4115-a552-8d2711657446",
-          last_updated: "2026-03-26T17:43:20.226Z",
+          id: "9c820aeb-df30-4581-a2c7-5848dfa895c1",
+          last_updated: "2026-09-08T13:12:16.091Z",
           lesson_key: "alphabet/hiragana&sa",
           lesson_order: 4,
           minimum_version: "2.4.1",
@@ -1070,13 +1066,13 @@ export const dumpPt = {
                     id: "5bc17c31-0c79-45dd-be5c-41cf67a5baf0",
                     kana: "hiragana",
                   },
-                  id: "a876dbb4-1e79-4c7f-a45a-15e401a60fab",
+                  id: "f2065c44-42b1-5bbe-bab0-ecfed0c077cc",
                   type: "letter",
                 },
               ],
-              id: "0cf1114a-fc5e-4c99-b48f-ebb5862bce9b",
+              id: "2b017549-6b3d-5e60-8ac9-4b9ffb88be6b",
               screen_order: 1,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "記住這個音節的筆順和發音。",
             },
             {
               blocks: [
@@ -1087,13 +1083,13 @@ export const dumpPt = {
                     id: "5bc17c31-0c79-45dd-be5c-41cf67a5baf0",
                     kana: "hiragana",
                   },
-                  id: "d5f99eae-e39b-4022-88a5-e031ce959a14",
+                  id: "5af271d1-cffe-54ad-b69e-b950c3280852",
                   type: "letter",
                 },
               ],
-              id: "186e65cc-5d51-4ead-baa3-9cff40a8113f",
+              id: "732ab69f-e2a5-5daf-8a80-330a8f7b51b8",
               screen_order: 2,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "按正確的筆順書寫音節。",
             },
             {
               blocks: [
@@ -1104,13 +1100,13 @@ export const dumpPt = {
                     id: "0d44c671-edf2-4c9d-b62d-e3f5ae8ea7b2",
                     kana: "hiragana",
                   },
-                  id: "b64865ac-77f7-4e5e-82f9-e312f11b18e8",
+                  id: "8cf98f3d-0dfb-500b-9551-27d0eae80898",
                   type: "letter",
                 },
               ],
-              id: "55b53be0-dd8f-4e4a-b888-c4562facc7e4",
+              id: "46e95aea-2e40-57c2-ada0-77ea41a07f2a",
               screen_order: 3,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "記住這個音節的筆順和發音。",
             },
             {
               blocks: [
@@ -1121,13 +1117,13 @@ export const dumpPt = {
                     id: "0d44c671-edf2-4c9d-b62d-e3f5ae8ea7b2",
                     kana: "hiragana",
                   },
-                  id: "5f2eb2e6-02f5-4124-8268-b835b88a3598",
+                  id: "ad3fa108-d601-5938-847c-86a6d609b906",
                   type: "letter",
                 },
               ],
-              id: "fdd8e311-71d3-4650-8015-1841064133f3",
+              id: "4d75cf6a-4f4e-544e-991f-5fac3ca266ee",
               screen_order: 4,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "按正確的筆順書寫音節。",
             },
             {
               blocks: [
@@ -1139,13 +1135,13 @@ export const dumpPt = {
                       ["さ", "tr:さ"],
                     ],
                   },
-                  id: "fccaa063-ea53-43a8-93a1-68eb7bdbcc7b",
+                  id: "fec0b566-c920-5e2b-a6bf-cc4b4e4e0a8f",
                   type: "matching",
                 },
               ],
-              id: "918b6aed-726e-412a-8f75-4c271d4a291f",
+              id: "e920183b-264b-502c-a6b0-b5298e266eea",
               screen_order: 5,
-              title: "Combine 「Hiragana」 com sua transliteração.",
+              title: "將「平假名」與其羅馬字配對。",
             },
             {
               blocks: [
@@ -1156,13 +1152,13 @@ export const dumpPt = {
                     id: "c495772d-7048-4423-a993-60ce5ce325a2",
                     kana: "hiragana",
                   },
-                  id: "89437647-20be-4dd9-854d-23c64b1e6cba",
+                  id: "ed6ea00c-9551-5fff-b457-6b223a3bd9e2",
                   type: "letter",
                 },
               ],
-              id: "bb553a2e-c0fc-46c0-b882-43192af6fa86",
+              id: "e4a128d3-e89a-5c37-a3e1-2f2673905fea",
               screen_order: 6,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "記住這個音節的筆順和發音。",
             },
             {
               blocks: [
@@ -1173,23 +1169,23 @@ export const dumpPt = {
                     id: "c495772d-7048-4423-a993-60ce5ce325a2",
                     kana: "hiragana",
                   },
-                  id: "3bafc0ab-240c-43e1-8d28-e98da5866de0",
+                  id: "ad470e6b-65b2-5509-937a-140d7ee0dba7",
                   type: "letter",
                 },
               ],
-              id: "3543a701-3ef1-4b7c-9f09-3a06a71da7aa",
+              id: "42e59fc6-2346-5b46-ba5e-f6d06e0152e3",
               screen_order: 7,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "按正確的筆順書寫音節。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Hiragana",
-                    title: "tr:す",
+                    sub_title: "平假名",
+                    title: "tr:さ",
                   },
-                  id: "a2916e1a-c52f-4440-b3cd-908ad068f57c",
+                  id: "b5428681-a212-55ea-9aa7-f5561626fd21",
                   type: "title",
                 },
                 {
@@ -1197,26 +1193,26 @@ export const dumpPt = {
                   content: {
                     answers: [
                       {
+                        isTrue: true,
+                        title: "さ",
+                      },
+                      {
                         isTrue: false,
                         title: "し",
                       },
                       {
-                        isTrue: true,
-                        title: "す",
-                      },
-                      {
                         isTrue: false,
-                        title: "さ",
+                        title: "す",
                       },
                     ],
                   },
-                  id: "bc805303-4efd-42ea-b5c7-f1e8f0edef24",
+                  id: "101d2485-9728-5f60-adae-fd520daeab4d",
                   type: "choice",
                 },
               ],
-              id: "c02a2ec9-f290-403e-b780-1b11f7cd01a9",
+              id: "e1281876-0819-5a4f-aeb4-05e0c6ce519c",
               screen_order: 8,
-              title: "Selecione a sílaba.",
+              title: "選擇音節。",
             },
             {
               blocks: [
@@ -1228,13 +1224,13 @@ export const dumpPt = {
                       ["し", "tr:し"],
                     ],
                   },
-                  id: "e9d80879-d752-4e8e-adff-833c334667cd",
+                  id: "fd3b55e5-4064-5ebb-bf72-3371afcb9dd4",
                   type: "matching",
                 },
               ],
-              id: "264a1ac7-9538-43ff-87a0-daf5ac446d20",
+              id: "337a7c7d-c8a4-572d-92c2-0379e19726a1",
               screen_order: 9,
-              title: "Combine 「Hiragana」 com sua transliteração.",
+              title: "將「平假名」與其羅馬字配對。",
             },
             {
               blocks: [
@@ -1245,13 +1241,13 @@ export const dumpPt = {
                     id: "0106956a-9090-4599-93a2-0be363bcf7bf",
                     kana: "hiragana",
                   },
-                  id: "47ea1e5d-3219-46f4-a93b-e875aa84716d",
+                  id: "2148f9ad-7214-52e6-9c0e-aed613bdc842",
                   type: "letter",
                 },
               ],
-              id: "7f04ba7b-6e91-4883-b783-94c6932e7feb",
+              id: "62bdf98d-097f-5ce2-b90a-cbdd8bd81955",
               screen_order: 10,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "記住這個音節的筆順和發音。",
             },
             {
               blocks: [
@@ -1262,13 +1258,13 @@ export const dumpPt = {
                     id: "0106956a-9090-4599-93a2-0be363bcf7bf",
                     kana: "hiragana",
                   },
-                  id: "3e4ddfb2-d3fd-47a1-8605-a5d8374a25ff",
+                  id: "40de4eb1-218f-5fc2-9d00-9fa051d8027b",
                   type: "letter",
                 },
               ],
-              id: "2f2f4314-7ea1-4f28-8874-ab6f3b67f138",
+              id: "04e24191-a121-57bb-a1de-2b5bace62b00",
               screen_order: 11,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "按正確的筆順書寫音節。",
             },
             {
               blocks: [
@@ -1280,13 +1276,13 @@ export const dumpPt = {
                       ["す", "tr:す"],
                     ],
                   },
-                  id: "479ed205-1371-4c2a-9cd8-a97e5ac2fc9a",
+                  id: "6bb852fb-6328-5b25-b4a1-8ba038fde7ae",
                   type: "matching",
                 },
               ],
-              id: "256b2948-6063-41a4-9ee0-8af48389e00b",
+              id: "3877fd1c-878d-5695-b9a3-9cf4a9301454",
               screen_order: 12,
-              title: "Combine 「Hiragana」 com sua transliteração.",
+              title: "將「平假名」與其羅馬字配對。",
             },
             {
               blocks: [
@@ -1297,13 +1293,13 @@ export const dumpPt = {
                     id: "3108807a-1d5e-47b3-9f06-514bc8096102",
                     kana: "hiragana",
                   },
-                  id: "0ce7ddaf-2c08-48cc-90bb-cf5a86378a49",
+                  id: "42074d77-38e4-59de-8c72-b30773b8e393",
                   type: "letter",
                 },
               ],
-              id: "5c279490-5a70-45ff-b36f-46f51645fe4a",
+              id: "fee96d08-8a51-5d3b-8109-3d755f88ac0e",
               screen_order: 13,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "記住這個音節的筆順和發音。",
             },
             {
               blocks: [
@@ -1314,23 +1310,23 @@ export const dumpPt = {
                     id: "3108807a-1d5e-47b3-9f06-514bc8096102",
                     kana: "hiragana",
                   },
-                  id: "a6f21eb1-4c81-4d6c-8cf9-5b7bba05a7ae",
+                  id: "2829dcbc-f3d6-5e05-aedf-b73df9a1820f",
                   type: "letter",
                 },
               ],
-              id: "571a3149-82d9-4492-a438-011d8b7d3a41",
+              id: "7abbcf72-9d2b-5140-8522-e510e1f6d113",
               screen_order: 14,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "按正確的筆順書寫音節。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Hiragana",
-                    title: "tr:す",
+                    sub_title: "平假名",
+                    title: "tr:そ",
                   },
-                  id: "cc72a013-2464-4de9-b583-dbc3ac2cd1b4",
+                  id: "046532d2-7c9a-5551-a021-33c5e663837a",
                   type: "title",
                 },
                 {
@@ -1338,36 +1334,36 @@ export const dumpPt = {
                   content: {
                     answers: [
                       {
-                        isTrue: true,
+                        isTrue: false,
                         title: "す",
                       },
                       {
-                        isTrue: false,
-                        title: "せ",
+                        isTrue: true,
+                        title: "そ",
                       },
                       {
                         isTrue: false,
-                        title: "し",
+                        title: "さ",
                       },
                     ],
                   },
-                  id: "69928b45-2ed8-4e3d-8e16-0055b6187e97",
+                  id: "13659561-f721-53b5-a0a2-6d46098fdf0c",
                   type: "choice",
                 },
               ],
-              id: "0f83e75f-5324-4ccc-a424-593b0d133168",
+              id: "6a1a285b-4819-5faf-81a7-9775253a0ded",
               screen_order: 15,
-              title: "Selecione a sílaba.",
+              title: "選擇音節。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Hiragana",
-                    title: "せ, さ, そ, し, す",
+                    sub_title: "平假名",
+                    title: "そ, し, さ, す, せ",
                   },
-                  id: "524c695c-5099-4d36-8712-30ba039e3d61",
+                  id: "3d51ac33-d23a-5d8b-97e6-e018c009263f",
                   type: "title",
                 },
                 {
@@ -1375,32 +1371,32 @@ export const dumpPt = {
                   content: {
                     answers: [
                       {
-                        isTrue: false,
-                        title: "tr:そ, tr:さ, tr:し, tr:す, tr:せ",
+                        isTrue: true,
+                        title: "tr:そ, tr:し, tr:さ, tr:す, tr:せ",
                       },
                       {
-                        isTrue: true,
-                        title: "tr:せ, tr:さ, tr:そ, tr:し, tr:す",
+                        isTrue: false,
+                        title: "tr:す, tr:さ, tr:そ, tr:せ, tr:し",
                       },
                     ],
                   },
-                  id: "9757cd70-4715-416f-9cbe-807205d3f3bf",
+                  id: "fe0dd314-d76d-5360-bc40-9a36afadecfd",
                   type: "choice",
                 },
               ],
-              id: "da0480c7-af6d-4a2b-9276-e1584b513545",
+              id: "1b9cb99e-a620-5925-8dff-76777ded9f6f",
               screen_order: 16,
-              title: "Escolha a sequência correta.",
+              title: "選擇正確的順序。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Hiragana",
-                    title: "そ, さ, し, せ, す",
+                    sub_title: "平假名",
+                    title: "せ, し, す, さ, そ",
                   },
-                  id: "925b31a5-66e8-4f7f-a2d8-96b66f293a18",
+                  id: "b031d7af-4969-5fae-bdec-2119c74f352e",
                   type: "title",
                 },
                 {
@@ -1409,81 +1405,81 @@ export const dumpPt = {
                     answers: [
                       {
                         isTrue: true,
-                        title: "tr:そ, tr:さ, tr:し, tr:せ, tr:す",
+                        title: "tr:せ, tr:し, tr:す, tr:さ, tr:そ",
                       },
                       {
                         isTrue: false,
-                        title: "tr:さ, tr:し, tr:そ, tr:せ, tr:す",
+                        title: "tr:さ, tr:し, tr:せ, tr:す, tr:そ",
                       },
                     ],
                   },
-                  id: "42ff7139-711d-4073-a1a3-61a750be3c4a",
+                  id: "d563f604-9b7a-5077-b200-9ad888445c37",
                   type: "choice",
                 },
               ],
-              id: "7a8fad4a-b439-46e2-936a-b9c83267d74e",
+              id: "dfd3cf81-9bff-5171-8949-3bd8dacd6840",
               screen_order: 17,
-              title: "Escolha a sequência correta.",
+              title: "選擇正確的順序。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Hiragana",
-                    title: "tr:そ, tr:せ, tr:さ, tr:し, tr:す",
+                    sub_title: "平假名",
+                    title: "tr:す, tr:さ, tr:し, tr:せ, tr:そ",
                   },
-                  id: "63176306-f71e-47a3-acf3-06ad29189ada",
+                  id: "dee0d0d6-4025-5885-b8ce-d42de5b54931",
                   type: "title",
                 },
                 {
                   block_order: 2,
                   content: {
-                    sequence: ["そ", "せ", "さ", "し", "す"],
+                    sequence: ["す", "さ", "し", "せ", "そ"],
                   },
-                  id: "f96b4f51-3b6b-430f-8b29-75f202b3297d",
+                  id: "af5d7002-37b6-5b99-9d1a-d764b49c89f2",
                   type: "sequence",
                 },
               ],
-              id: "29a39951-070b-4f25-a5e3-a009a6c2917e",
+              id: "a4826456-b3e0-5dcd-bb4b-7d2505062e8e",
               screen_order: 18,
-              title: "Organize as sílabas na ordem correta.",
+              title: "將音節按正確的順序排列。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Hiragana",
-                    title: "tr:し, tr:さ, tr:す, tr:せ, tr:そ",
+                    sub_title: "平假名",
+                    title: "tr:し, tr:さ, tr:せ, tr:そ, tr:す",
                   },
-                  id: "244ce5b6-3429-471f-83ed-753e4e2412d6",
+                  id: "d1abc3bb-2c8f-572d-88d1-c55d0bebe393",
                   type: "title",
                 },
                 {
                   block_order: 2,
                   content: {
-                    sequence: ["し", "さ", "す", "せ", "そ"],
+                    sequence: ["し", "さ", "せ", "そ", "す"],
                   },
-                  id: "21a9f9cb-a8ff-4825-9267-27369e27a381",
+                  id: "21ac0433-994d-58e3-b57d-127f3fcb1099",
                   type: "sequence",
                 },
               ],
-              id: "1a2e5dbc-a10b-423f-8f40-2a51c497ad47",
+              id: "299d1042-3c0b-5953-8673-9043dd21d08b",
               screen_order: 19,
-              title: "Organize as sílabas na ordem correta.",
+              title: "將音節按正確的順序排列。",
             },
           ],
-          subtitle: "Sílabas: さ、し、す、せ、そ",
-          title: "Lição 3",
-          topic_id: "de246ddb-5cfd-49c7-ac83-1099ea41d43b",
+          subtitle: "音節：さ、し、す、せ、そ",
+          title: "第 3 課",
+          topic_id: "70dfc023-7e82-406b-b1c2-84209535bd0c",
         },
         {
-          expanded_subtitle: "Aprenda a ler e escrever as sílabas na linha tr:た.",
-          expanded_title: "Hiragana: tr:た, tr:ち, tr:つ, tr:て, tr:と",
+          expanded_subtitle: "學習讀寫tr:た行的音節。",
+          expanded_title: "平假名: tr:た, tr:ち, tr:つ, tr:て, tr:と",
           icon: "https://nihongo.khvat.app/chapter1/Lesson4.jpg",
-          id: "171e6007-43c7-4018-bf71-6d8cc8c0f083",
-          last_updated: "2026-03-26T17:43:20.226Z",
+          id: "99444064-013d-42f5-8e0e-ab23404517db",
+          last_updated: "2026-09-08T13:12:16.092Z",
           lesson_key: "alphabet/hiragana&ta",
           lesson_order: 5,
           minimum_version: "2.4.1",
@@ -1497,13 +1493,13 @@ export const dumpPt = {
                     id: "36b4894e-19d1-4efe-961d-d9dbc6284757",
                     kana: "hiragana",
                   },
-                  id: "ea955156-4ff6-4ac1-86af-2e844e0cc3dc",
+                  id: "25a2a776-9ff1-5521-877e-fe7e85e568f0",
                   type: "letter",
                 },
               ],
-              id: "67240de0-08ad-4f7a-8f53-8d2762f7bc19",
+              id: "f51eca61-95eb-5338-bb97-60c590bf714b",
               screen_order: 1,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "記住這個音節的筆順和發音。",
             },
             {
               blocks: [
@@ -1514,13 +1510,13 @@ export const dumpPt = {
                     id: "36b4894e-19d1-4efe-961d-d9dbc6284757",
                     kana: "hiragana",
                   },
-                  id: "b079d97c-595e-4368-a986-6578b9002a98",
+                  id: "77ea661d-6cde-5cfb-9d5d-6753922e436f",
                   type: "letter",
                 },
               ],
-              id: "2d1d0063-1e86-4071-8302-f4ffc277c00c",
+              id: "5abf9e43-544d-5a5f-b739-681021557cc6",
               screen_order: 2,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "按正確的筆順書寫音節。",
             },
             {
               blocks: [
@@ -1531,13 +1527,13 @@ export const dumpPt = {
                     id: "f17698db-0da4-4c09-ba3b-9d10e3c7aa4d",
                     kana: "hiragana",
                   },
-                  id: "85f3422d-25a5-405a-9456-605d059f5ae7",
+                  id: "0ec22d23-5bc3-5886-9640-8a887306bf58",
                   type: "letter",
                 },
               ],
-              id: "745d9174-4f74-4305-a12a-70b8cb5fc683",
+              id: "cf62b3b0-a03a-5998-ad7e-b2d6ef8b61e1",
               screen_order: 3,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "記住這個音節的筆順和發音。",
             },
             {
               blocks: [
@@ -1548,13 +1544,13 @@ export const dumpPt = {
                     id: "f17698db-0da4-4c09-ba3b-9d10e3c7aa4d",
                     kana: "hiragana",
                   },
-                  id: "92e2e210-ad5f-4780-af22-84a023e7160f",
+                  id: "3ca2611b-952c-5018-9797-60006a812c64",
                   type: "letter",
                 },
               ],
-              id: "4596f60c-5e80-4ea1-ae49-6427ed42cbe2",
+              id: "91b40ee5-6fe9-5718-ac54-24d7038dcdef",
               screen_order: 4,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "按正確的筆順書寫音節。",
             },
             {
               blocks: [
@@ -1566,13 +1562,13 @@ export const dumpPt = {
                       ["た", "tr:た"],
                     ],
                   },
-                  id: "274e018d-0c22-4215-af0a-5724f7005b63",
+                  id: "fc592e6c-8daa-5805-a894-1d284abea757",
                   type: "matching",
                 },
               ],
-              id: "18168a59-93e3-4b5b-98de-419a24202679",
+              id: "017b4125-2bda-5a08-9662-7cf6ef76beda",
               screen_order: 5,
-              title: "Combine 「Hiragana」 com sua transliteração.",
+              title: "將「平假名」與其羅馬字配對。",
             },
             {
               blocks: [
@@ -1583,13 +1579,13 @@ export const dumpPt = {
                     id: "08123485-a3d0-461e-8af3-bf6708b74d90",
                     kana: "hiragana",
                   },
-                  id: "68090018-363b-4daa-8be1-eec0f231d738",
+                  id: "0163de92-9a92-521d-90f5-1664d1d0c529",
                   type: "letter",
                 },
               ],
-              id: "893989d8-6bd3-4b14-8f92-4b1d1b80ea9c",
+              id: "2cc733b8-35ff-517c-bfa4-0431ee13d8b9",
               screen_order: 6,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "記住這個音節的筆順和發音。",
             },
             {
               blocks: [
@@ -1600,23 +1596,23 @@ export const dumpPt = {
                     id: "08123485-a3d0-461e-8af3-bf6708b74d90",
                     kana: "hiragana",
                   },
-                  id: "742cd249-48ff-4c27-bfaf-1b23a16158ec",
+                  id: "eff47875-caab-5be4-9725-80b4a75bdae2",
                   type: "letter",
                 },
               ],
-              id: "0f34bb87-cea9-4873-a0b8-1ecd7f8c5f81",
+              id: "edc86cf4-6918-531d-acf8-e84c9709bc73",
               screen_order: 7,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "按正確的筆順書寫音節。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Hiragana",
+                    sub_title: "平假名",
                     title: "tr:た",
                   },
-                  id: "452f5017-4992-4e54-b903-392fd56b93cc",
+                  id: "8e61b011-8e75-5840-bf3c-b673787bb0fb",
                   type: "title",
                 },
                 {
@@ -1625,11 +1621,11 @@ export const dumpPt = {
                     answers: [
                       {
                         isTrue: false,
-                        title: "ち",
+                        title: "つ",
                       },
                       {
                         isTrue: false,
-                        title: "つ",
+                        title: "ち",
                       },
                       {
                         isTrue: true,
@@ -1637,13 +1633,13 @@ export const dumpPt = {
                       },
                     ],
                   },
-                  id: "ed565f76-8baa-4dbc-9283-e6dfb9ac0311",
+                  id: "443c5236-2779-543d-b432-9288d9b1bba2",
                   type: "choice",
                 },
               ],
-              id: "6e4a63e2-33d5-47e8-bf2e-91818db814ac",
+              id: "c764bc9a-0cb2-5ac8-b895-98384d174eb6",
               screen_order: 8,
-              title: "Selecione a sílaba.",
+              title: "選擇音節。",
             },
             {
               blocks: [
@@ -1655,13 +1651,13 @@ export const dumpPt = {
                       ["ち", "tr:ち"],
                     ],
                   },
-                  id: "00147616-632c-4f91-9e11-8627283bb7d8",
+                  id: "061a3d2c-bfb0-58e8-88e6-482d14392174",
                   type: "matching",
                 },
               ],
-              id: "b9092a5d-1a54-4d64-b3f1-525d6fc21086",
+              id: "1031f92d-7ed4-5fcd-9acf-295e64024b93",
               screen_order: 9,
-              title: "Combine 「Hiragana」 com sua transliteração.",
+              title: "將「平假名」與其羅馬字配對。",
             },
             {
               blocks: [
@@ -1672,13 +1668,13 @@ export const dumpPt = {
                     id: "45870b67-8005-4ee1-a79c-a239289ef9b6",
                     kana: "hiragana",
                   },
-                  id: "2eec2dfc-59f2-4957-8e51-71a0be10d2f6",
+                  id: "9f7b1398-cbdb-5c72-b4de-98c5b3ccc56e",
                   type: "letter",
                 },
               ],
-              id: "5efd5d67-bad2-489d-be42-0af3a9cc5c39",
+              id: "6b806c3a-4661-5927-ad1f-3f1e22af820f",
               screen_order: 10,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "記住這個音節的筆順和發音。",
             },
             {
               blocks: [
@@ -1689,13 +1685,13 @@ export const dumpPt = {
                     id: "45870b67-8005-4ee1-a79c-a239289ef9b6",
                     kana: "hiragana",
                   },
-                  id: "9d967c17-9a23-4cb7-b0d5-8c27635f380e",
+                  id: "9e90b327-c266-5d6f-8212-7b0930925e54",
                   type: "letter",
                 },
               ],
-              id: "6b387322-bf4d-4ae9-afe6-161352810fa4",
+              id: "05f949b1-9dcf-5439-a05d-3f1fbe69a93b",
               screen_order: 11,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "按正確的筆順書寫音節。",
             },
             {
               blocks: [
@@ -1707,13 +1703,13 @@ export const dumpPt = {
                       ["つ", "tr:つ"],
                     ],
                   },
-                  id: "dc941d85-ab59-43f9-adcd-b5380f7804c7",
+                  id: "34604ada-89c0-5a83-928c-d3ec65beda91",
                   type: "matching",
                 },
               ],
-              id: "79fb7946-3c0c-4d18-868b-2e36e704900a",
+              id: "9f233dfe-5c24-54dd-8980-ed87c6fe53a6",
               screen_order: 12,
-              title: "Combine 「Hiragana」 com sua transliteração.",
+              title: "將「平假名」與其羅馬字配對。",
             },
             {
               blocks: [
@@ -1724,13 +1720,13 @@ export const dumpPt = {
                     id: "bfd720a3-aaaa-4ce1-a88b-ce4866b0351f",
                     kana: "hiragana",
                   },
-                  id: "3144673b-1142-4706-8e47-bb0da7ed2a9c",
+                  id: "074def94-ca57-502c-8161-1befdd00a1db",
                   type: "letter",
                 },
               ],
-              id: "d32995f9-9a43-4b39-b9a2-a4901fd543ac",
+              id: "dccaa59d-2c08-5600-ae52-c0349dc8aa2e",
               screen_order: 13,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "記住這個音節的筆順和發音。",
             },
             {
               blocks: [
@@ -1741,23 +1737,23 @@ export const dumpPt = {
                     id: "bfd720a3-aaaa-4ce1-a88b-ce4866b0351f",
                     kana: "hiragana",
                   },
-                  id: "837afb1e-0b78-4a67-9df6-2539a89427b7",
+                  id: "d74897cb-f8b7-50ec-8d83-525b1770a83d",
                   type: "letter",
                 },
               ],
-              id: "40abca63-61e0-4b70-be0c-eeff91c7ba32",
+              id: "2b0b2840-a74e-526f-8849-6b5030e29d5c",
               screen_order: 14,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "按正確的筆順書寫音節。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Hiragana",
-                    title: "tr:ち",
+                    sub_title: "平假名",
+                    title: "tr:た",
                   },
-                  id: "08be3c9a-4c47-4b12-942f-480726444a1b",
+                  id: "6c7dc455-3fdb-537f-a251-0165339a0897",
                   type: "title",
                 },
                 {
@@ -1766,35 +1762,35 @@ export const dumpPt = {
                     answers: [
                       {
                         isTrue: false,
-                        title: "た",
-                      },
-                      {
-                        isTrue: true,
-                        title: "ち",
+                        title: "つ",
                       },
                       {
                         isTrue: false,
                         title: "て",
                       },
+                      {
+                        isTrue: true,
+                        title: "た",
+                      },
                     ],
                   },
-                  id: "11bcbe8a-946b-4057-8234-9dab97c12f93",
+                  id: "4c7fd6af-e4e2-5362-9ddb-f7111044e4c5",
                   type: "choice",
                 },
               ],
-              id: "8b8c3a69-ef3f-4d92-a206-de54de1f6f14",
+              id: "badabcaa-1805-5ca4-bcd9-99848c8c9b0d",
               screen_order: 15,
-              title: "Selecione a sílaba.",
+              title: "選擇音節。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Hiragana",
-                    title: "と, つ, て, ち, た",
+                    sub_title: "平假名",
+                    title: "た, と, て, ち, つ",
                   },
-                  id: "1cb088eb-db3f-4c33-b309-b2ade00ac3b7",
+                  id: "3e983cf5-022a-5590-97da-e66fa1f995fa",
                   type: "title",
                 },
                 {
@@ -1802,32 +1798,32 @@ export const dumpPt = {
                   content: {
                     answers: [
                       {
-                        isTrue: false,
-                        title: "tr:と, tr:つ, tr:た, tr:ち, tr:て",
+                        isTrue: true,
+                        title: "tr:た, tr:と, tr:て, tr:ち, tr:つ",
                       },
                       {
-                        isTrue: true,
-                        title: "tr:と, tr:つ, tr:て, tr:ち, tr:た",
+                        isTrue: false,
+                        title: "tr:ち, tr:つ, tr:て, tr:た, tr:と",
                       },
                     ],
                   },
-                  id: "7ecdd74d-4629-4720-9f33-ef99d77a1272",
+                  id: "34a96754-6067-58f4-97af-637cc7b257a2",
                   type: "choice",
                 },
               ],
-              id: "1edc9135-d524-44b2-ac72-07b46779579f",
+              id: "179ce831-e77a-5aee-9dd0-072ae4ca956d",
               screen_order: 16,
-              title: "Escolha a sequência correta.",
+              title: "選擇正確的順序。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Hiragana",
-                    title: "と, ち, て, つ, た",
+                    sub_title: "平假名",
+                    title: "た, て, ち, つ, と",
                   },
-                  id: "aae4bda4-1511-4a63-9241-102bb4b32bdb",
+                  id: "60e6b623-cca5-50d0-960e-698a4d260ad2",
                   type: "title",
                 },
                 {
@@ -1836,81 +1832,81 @@ export const dumpPt = {
                     answers: [
                       {
                         isTrue: false,
-                        title: "tr:ち, tr:た, tr:と, tr:て, tr:つ",
+                        title: "tr:と, tr:て, tr:ち, tr:つ, tr:た",
                       },
                       {
                         isTrue: true,
-                        title: "tr:と, tr:ち, tr:て, tr:つ, tr:た",
+                        title: "tr:た, tr:て, tr:ち, tr:つ, tr:と",
                       },
                     ],
                   },
-                  id: "47f63230-2742-449a-9c3c-65327b69d74f",
+                  id: "84055cbe-dfb9-5b9b-9a49-f608b7556808",
                   type: "choice",
                 },
               ],
-              id: "81e4b339-c288-4700-aa05-3b891aabe34f",
+              id: "fcf2a35e-82e4-5e4b-8adc-5e8e23218160",
               screen_order: 17,
-              title: "Escolha a sequência correta.",
+              title: "選擇正確的順序。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Hiragana",
-                    title: "tr:た, tr:と, tr:つ, tr:て, tr:ち",
+                    sub_title: "平假名",
+                    title: "tr:ち, tr:と, tr:た, tr:て, tr:つ",
                   },
-                  id: "e308b397-58a7-422d-ab64-700da878c3c2",
+                  id: "2b1192ed-3a5c-5551-9a3c-c77ed9bd17bd",
                   type: "title",
                 },
                 {
                   block_order: 2,
                   content: {
-                    sequence: ["た", "と", "つ", "て", "ち"],
+                    sequence: ["ち", "と", "た", "て", "つ"],
                   },
-                  id: "5e54714d-7897-4671-aacb-4b6ecea85a45",
+                  id: "102f4148-91e3-57e2-830a-d9e7be66a271",
                   type: "sequence",
                 },
               ],
-              id: "f8d0eb75-30d3-4b03-a54c-9370edae1d6b",
+              id: "d315f490-a4ae-5158-8761-58ae882ef665",
               screen_order: 18,
-              title: "Organize as sílabas na ordem correta.",
+              title: "將音節按正確的順序排列。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Hiragana",
-                    title: "tr:た, tr:つ, tr:て, tr:ち, tr:と",
+                    sub_title: "平假名",
+                    title: "tr:ち, tr:と, tr:つ, tr:て, tr:た",
                   },
-                  id: "0fe2bb27-2d5c-4323-80d2-603d0ea0ea39",
+                  id: "8685d185-b966-5d3b-b96a-90f274a0eeb1",
                   type: "title",
                 },
                 {
                   block_order: 2,
                   content: {
-                    sequence: ["た", "つ", "て", "ち", "と"],
+                    sequence: ["ち", "と", "つ", "て", "た"],
                   },
-                  id: "7195aea1-9dec-4d4f-aab8-ea50fcc5e5e5",
+                  id: "f2f851e4-4de6-5a10-9b89-426f52006e30",
                   type: "sequence",
                 },
               ],
-              id: "7e4a3255-e8bd-4927-89f2-c20dd8a51e2b",
+              id: "0bc6df6f-ab02-5ca9-94c0-87e936327757",
               screen_order: 19,
-              title: "Organize as sílabas na ordem correta.",
+              title: "將音節按正確的順序排列。",
             },
           ],
-          subtitle: "Sílabas: た、ち、つ、て、と",
-          title: "Lição 4",
-          topic_id: "de246ddb-5cfd-49c7-ac83-1099ea41d43b",
+          subtitle: "音節：た、ち、つ、て、と",
+          title: "第 4 課",
+          topic_id: "70dfc023-7e82-406b-b1c2-84209535bd0c",
         },
         {
-          expanded_subtitle: "Aprenda a ler e escrever as sílabas na linha tr:な.",
-          expanded_title: "Hiragana: tr:な, tr:に, tr:ぬ, tr:ね, tr:の",
+          expanded_subtitle: "學習讀寫tr:な行的音節。",
+          expanded_title: "平假名: tr:な, tr:に, tr:ぬ, tr:ね, tr:の",
           icon: "https://nihongo.khvat.app/chapter1/Lesson5.jpg",
-          id: "00e9c673-beed-4b70-a694-e0dad9e489a7",
-          last_updated: "2026-03-26T17:43:20.226Z",
+          id: "7b83eb5e-eb1d-4872-b22f-91360cf8753c",
+          last_updated: "2026-09-08T13:12:16.092Z",
           lesson_key: "alphabet/hiragana&na",
           lesson_order: 6,
           minimum_version: "2.4.1",
@@ -1924,13 +1920,13 @@ export const dumpPt = {
                     id: "426cc9fd-4eeb-4914-9484-e87f922365fe",
                     kana: "hiragana",
                   },
-                  id: "327ac94a-c3b1-4cad-af02-c4c47a345f1c",
+                  id: "85c88fe1-fdd6-5fe7-b7bf-f553b72838b4",
                   type: "letter",
                 },
               ],
-              id: "f1b7d48d-f9e9-4790-a017-71a43a98f111",
+              id: "3cc1dfb5-a1d4-52e1-b169-560d57bb6851",
               screen_order: 1,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "記住這個音節的筆順和發音。",
             },
             {
               blocks: [
@@ -1941,13 +1937,13 @@ export const dumpPt = {
                     id: "426cc9fd-4eeb-4914-9484-e87f922365fe",
                     kana: "hiragana",
                   },
-                  id: "4f3d13b3-494e-4f32-8e82-c28254dda615",
+                  id: "95813ec1-1eb6-510f-9916-46979c124f80",
                   type: "letter",
                 },
               ],
-              id: "50913cda-9a11-456a-badc-7d7153d63398",
+              id: "92c5b534-c964-5750-8815-e6975494a05c",
               screen_order: 2,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "按正確的筆順書寫音節。",
             },
             {
               blocks: [
@@ -1958,13 +1954,13 @@ export const dumpPt = {
                     id: "16c7e660-5f2f-44bb-82aa-72722e944126",
                     kana: "hiragana",
                   },
-                  id: "590252f2-af6c-487e-bc0c-0e22d3f65825",
+                  id: "2525017d-eb6a-5da7-b861-9ab7e3e59949",
                   type: "letter",
                 },
               ],
-              id: "44f72d04-29cd-4d65-b304-b6732bb46244",
+              id: "37d8973e-a3a8-58a4-badc-f3db5c40582a",
               screen_order: 3,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "記住這個音節的筆順和發音。",
             },
             {
               blocks: [
@@ -1975,13 +1971,13 @@ export const dumpPt = {
                     id: "16c7e660-5f2f-44bb-82aa-72722e944126",
                     kana: "hiragana",
                   },
-                  id: "46d094f1-0cb1-4c59-9ab9-97d650d311cc",
+                  id: "cf279cdb-6f09-5066-b6ad-6c165eb0393b",
                   type: "letter",
                 },
               ],
-              id: "869664a0-df3f-487c-9a81-33ad330c48b2",
+              id: "1060342e-4940-5974-afe0-2c3c76b39067",
               screen_order: 4,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "按正確的筆順書寫音節。",
             },
             {
               blocks: [
@@ -1993,13 +1989,13 @@ export const dumpPt = {
                       ["な", "tr:な"],
                     ],
                   },
-                  id: "ac003700-19ef-4dca-aac8-7cb2ba9562b8",
+                  id: "fde1c4ab-aa15-51bb-a170-b9991441ebb5",
                   type: "matching",
                 },
               ],
-              id: "d757a514-dc3d-46f5-8abe-7cfbea74de61",
+              id: "55de8b8e-7c24-5cd2-9ba8-a242f4192a9b",
               screen_order: 5,
-              title: "Combine 「Hiragana」 com sua transliteração.",
+              title: "將「平假名」與其羅馬字配對。",
             },
             {
               blocks: [
@@ -2010,13 +2006,13 @@ export const dumpPt = {
                     id: "6a1e5aa1-6978-4f46-bd78-1310607d9018",
                     kana: "hiragana",
                   },
-                  id: "e4b8f87b-eaf9-4fd3-8404-5c30bfb6e5bc",
+                  id: "cdcf43f9-36f1-5751-b1df-b50307901a4e",
                   type: "letter",
                 },
               ],
-              id: "8f8ed742-2fa4-40d2-8a6a-352697e835cd",
+              id: "ccdedd13-2528-530c-ad8e-7454832469b5",
               screen_order: 6,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "記住這個音節的筆順和發音。",
             },
             {
               blocks: [
@@ -2027,23 +2023,23 @@ export const dumpPt = {
                     id: "6a1e5aa1-6978-4f46-bd78-1310607d9018",
                     kana: "hiragana",
                   },
-                  id: "7c640556-cb6e-43ee-9bf7-9bc1f5aa454d",
+                  id: "744668c4-94a3-5830-9b55-00f9d53305b5",
                   type: "letter",
                 },
               ],
-              id: "9eef82ad-6232-4f98-8018-3d75ce2cdbd7",
+              id: "6d45106d-a0bc-5c8e-91ea-0851fa305184",
               screen_order: 7,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "按正確的筆順書寫音節。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Hiragana",
-                    title: "tr:な",
+                    sub_title: "平假名",
+                    title: "tr:に",
                   },
-                  id: "83e0dc5d-784c-4d83-b66e-e1da5bac22ae",
+                  id: "6404c099-b269-5301-b290-21be5c5938b1",
                   type: "title",
                 },
                 {
@@ -2052,25 +2048,25 @@ export const dumpPt = {
                     answers: [
                       {
                         isTrue: true,
-                        title: "な",
-                      },
-                      {
-                        isTrue: false,
                         title: "に",
                       },
                       {
                         isTrue: false,
                         title: "ぬ",
                       },
+                      {
+                        isTrue: false,
+                        title: "な",
+                      },
                     ],
                   },
-                  id: "9e883557-832d-446c-bd57-8eafb0b3ddba",
+                  id: "b3841646-f0ba-56f8-bc6f-174cc53edb66",
                   type: "choice",
                 },
               ],
-              id: "bbdd1b65-0ee1-4540-ba92-67050bb3bf92",
+              id: "88d5a88d-9a98-55b3-ba45-392587598c5e",
               screen_order: 8,
-              title: "Selecione a sílaba.",
+              title: "選擇音節。",
             },
             {
               blocks: [
@@ -2082,13 +2078,13 @@ export const dumpPt = {
                       ["に", "tr:に"],
                     ],
                   },
-                  id: "e4c6d75a-143e-4d04-844e-f3232f09ce33",
+                  id: "1a21bfaa-d771-5483-9ce4-e6598fe538ab",
                   type: "matching",
                 },
               ],
-              id: "bda24f45-d1ae-4853-b25d-3f104ddd323a",
+              id: "cbd16be3-1241-5d9a-bc56-88fc62785059",
               screen_order: 9,
-              title: "Combine 「Hiragana」 com sua transliteração.",
+              title: "將「平假名」與其羅馬字配對。",
             },
             {
               blocks: [
@@ -2099,13 +2095,13 @@ export const dumpPt = {
                     id: "78f412ca-a2fc-4319-9444-288363407b45",
                     kana: "hiragana",
                   },
-                  id: "824c33f1-f89d-4eab-961a-477cfc21d0c2",
+                  id: "cce594f7-3813-58fa-8a61-47e3824def6e",
                   type: "letter",
                 },
               ],
-              id: "f6902c44-91b2-47f2-b78a-271ad2b81710",
+              id: "363dba82-8da8-582f-a403-1e64e7bc69fb",
               screen_order: 10,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "記住這個音節的筆順和發音。",
             },
             {
               blocks: [
@@ -2116,13 +2112,13 @@ export const dumpPt = {
                     id: "78f412ca-a2fc-4319-9444-288363407b45",
                     kana: "hiragana",
                   },
-                  id: "a1e2b589-9870-47f5-a292-769f537c82eb",
+                  id: "d7a561fa-b105-591b-adcd-2c911ffc7164",
                   type: "letter",
                 },
               ],
-              id: "a7f4886b-3669-4257-80ac-5cdb69472337",
+              id: "90907520-2e8e-5ef4-9f58-17a58b9f5b7a",
               screen_order: 11,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "按正確的筆順書寫音節。",
             },
             {
               blocks: [
@@ -2134,13 +2130,13 @@ export const dumpPt = {
                       ["ぬ", "tr:ぬ"],
                     ],
                   },
-                  id: "27644127-f1ff-43b1-a0e4-6e86e2ce395a",
+                  id: "1d3ae333-a174-5f6b-b86b-7a6517f4872c",
                   type: "matching",
                 },
               ],
-              id: "ba8328c8-0a45-4bc0-a3d3-b3bd2b4e2d41",
+              id: "96123db8-2a08-5ee0-b19b-d781c72805d0",
               screen_order: 12,
-              title: "Combine 「Hiragana」 com sua transliteração.",
+              title: "將「平假名」與其羅馬字配對。",
             },
             {
               blocks: [
@@ -2151,13 +2147,13 @@ export const dumpPt = {
                     id: "8b140c48-5818-4a3b-b8fe-0ddc49852778",
                     kana: "hiragana",
                   },
-                  id: "98b7ad1f-57f4-497c-be42-e3122e12634d",
+                  id: "f61e2f56-8e40-54ea-8e88-303c3720e566",
                   type: "letter",
                 },
               ],
-              id: "ccc65f8c-cd01-4cca-be5f-a86fe6ad4919",
+              id: "068805c7-4471-5f9b-87a6-2e7e2ec6ceff",
               screen_order: 13,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "記住這個音節的筆順和發音。",
             },
             {
               blocks: [
@@ -2168,23 +2164,23 @@ export const dumpPt = {
                     id: "8b140c48-5818-4a3b-b8fe-0ddc49852778",
                     kana: "hiragana",
                   },
-                  id: "dae03a26-3a82-41a3-a217-f9e3a27ba1f4",
+                  id: "6e77402a-b991-59fc-80ce-994eec1d9edd",
                   type: "letter",
                 },
               ],
-              id: "7b6063ad-aced-4824-9fb2-31fcf104a91f",
+              id: "b469626e-4b4b-567c-b64a-057c14379d17",
               screen_order: 14,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "按正確的筆順書寫音節。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Hiragana",
-                    title: "tr:な",
+                    sub_title: "平假名",
+                    title: "tr:ぬ",
                   },
-                  id: "0c0f0e8d-725d-4942-9b8b-550c27908429",
+                  id: "f491a39a-79ec-5e67-9ca6-6390ffe1baa1",
                   type: "title",
                 },
                 {
@@ -2192,36 +2188,36 @@ export const dumpPt = {
                   content: {
                     answers: [
                       {
-                        isTrue: false,
-                        title: "の",
-                      },
-                      {
-                        isTrue: false,
-                        title: "に",
-                      },
-                      {
                         isTrue: true,
+                        title: "ぬ",
+                      },
+                      {
+                        isTrue: false,
+                        title: "ね",
+                      },
+                      {
+                        isTrue: false,
                         title: "な",
                       },
                     ],
                   },
-                  id: "42428afd-0fa1-4971-bd7f-cc9eb53f65e4",
+                  id: "7600f070-9a4f-57f9-90a6-a081db863356",
                   type: "choice",
                 },
               ],
-              id: "fc367668-6080-4d17-a196-15c2908a38a1",
+              id: "968850fd-97eb-5190-9654-6437fdb30560",
               screen_order: 15,
-              title: "Selecione a sílaba.",
+              title: "選擇音節。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Hiragana",
-                    title: "ぬ, の, ね, に, な",
+                    sub_title: "平假名",
+                    title: "ぬ, の, に, な, ね",
                   },
-                  id: "f5ca422b-ee30-4b8c-ab0b-6ce669726e15",
+                  id: "1f3b5551-f4f7-58d8-9639-1570e145f141",
                   type: "title",
                 },
                 {
@@ -2229,115 +2225,115 @@ export const dumpPt = {
                   content: {
                     answers: [
                       {
-                        isTrue: true,
-                        title: "tr:ぬ, tr:の, tr:ね, tr:に, tr:な",
+                        isTrue: false,
+                        title: "tr:の, tr:に, tr:な, tr:ね, tr:ぬ",
                       },
                       {
+                        isTrue: true,
+                        title: "tr:ぬ, tr:の, tr:に, tr:な, tr:ね",
+                      },
+                    ],
+                  },
+                  id: "04011485-26c0-5b46-b42a-385e067c4c9d",
+                  type: "choice",
+                },
+              ],
+              id: "9a48f10e-ac8f-5979-b1f0-67fda804eeeb",
+              screen_order: 16,
+              title: "選擇正確的順序。",
+            },
+            {
+              blocks: [
+                {
+                  block_order: 1,
+                  content: {
+                    sub_title: "平假名",
+                    title: "な, の, に, ね, ぬ",
+                  },
+                  id: "40b3c809-2073-5614-a6da-6823db1c6a68",
+                  type: "title",
+                },
+                {
+                  block_order: 2,
+                  content: {
+                    answers: [
+                      {
                         isTrue: false,
+                        title: "tr:な, tr:に, tr:の, tr:ね, tr:ぬ",
+                      },
+                      {
+                        isTrue: true,
                         title: "tr:な, tr:の, tr:に, tr:ね, tr:ぬ",
                       },
                     ],
                   },
-                  id: "1e106db2-c2f7-4299-abcc-29a3ca9960e7",
+                  id: "3d1d7aaa-0f2f-50c0-a2bd-4c0cd650798f",
                   type: "choice",
                 },
               ],
-              id: "5c61e224-eebb-404f-8766-3e442e20cf5c",
-              screen_order: 16,
-              title: "Escolha a sequência correta.",
-            },
-            {
-              blocks: [
-                {
-                  block_order: 1,
-                  content: {
-                    sub_title: "Hiragana",
-                    title: "に, ぬ, ね, の, な",
-                  },
-                  id: "cafb3152-ed2e-4de7-b336-49b678489c32",
-                  type: "title",
-                },
-                {
-                  block_order: 2,
-                  content: {
-                    answers: [
-                      {
-                        isTrue: true,
-                        title: "tr:に, tr:ぬ, tr:ね, tr:の, tr:な",
-                      },
-                      {
-                        isTrue: false,
-                        title: "tr:ね, tr:な, tr:の, tr:ぬ, tr:に",
-                      },
-                    ],
-                  },
-                  id: "0090d435-c24c-405a-ab79-e60d00010dab",
-                  type: "choice",
-                },
-              ],
-              id: "c73032fd-e1db-4086-a42a-af3fd891ef02",
+              id: "7e6c77a3-13ef-523f-af23-2db3a983bc53",
               screen_order: 17,
-              title: "Escolha a sequência correta.",
+              title: "選擇正確的順序。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Hiragana",
-                    title: "tr:の, tr:ぬ, tr:に, tr:ね, tr:な",
+                    sub_title: "平假名",
+                    title: "tr:に, tr:な, tr:ね, tr:ぬ, tr:の",
                   },
-                  id: "229736c1-d86b-452e-a188-a93f0fb9ba19",
+                  id: "dabab526-0d02-5d34-aa1b-71ea66ac361d",
                   type: "title",
                 },
                 {
                   block_order: 2,
                   content: {
-                    sequence: ["の", "ぬ", "に", "ね", "な"],
+                    sequence: ["に", "な", "ね", "ぬ", "の"],
                   },
-                  id: "9deb559a-263f-456f-95b5-76ea3662bed1",
+                  id: "8209bd3e-d3d7-5743-8cdf-b65522208b06",
                   type: "sequence",
                 },
               ],
-              id: "dcd69143-8996-4f2d-8982-bdd4fc439e31",
+              id: "d85efa25-9546-5333-aee6-7daec5a737fe",
               screen_order: 18,
-              title: "Organize as sílabas na ordem correta.",
+              title: "將音節按正確的順序排列。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Hiragana",
-                    title: "tr:の, tr:な, tr:ね, tr:ぬ, tr:に",
+                    sub_title: "平假名",
+                    title: "tr:ね, tr:な, tr:に, tr:の, tr:ぬ",
                   },
-                  id: "95bbc600-90c4-450c-b900-033fe04ede93",
+                  id: "1e1ac7fc-698d-530b-9584-f532c8dfc994",
                   type: "title",
                 },
                 {
                   block_order: 2,
                   content: {
-                    sequence: ["の", "な", "ね", "ぬ", "に"],
+                    sequence: ["ね", "な", "に", "の", "ぬ"],
                   },
-                  id: "6d67c32d-f910-4684-81cc-75157206d3a2",
+                  id: "00398038-92ab-5d8f-9552-4db02b7b4e33",
                   type: "sequence",
                 },
               ],
-              id: "4d8326fb-70bf-44a7-b432-961a0f3e8045",
+              id: "4b001254-8529-5904-b41e-6b0a060afe5f",
               screen_order: 19,
-              title: "Organize as sílabas na ordem correta.",
+              title: "將音節按正確的順序排列。",
             },
           ],
-          subtitle: "Sílabas: な、に、ぬ、ね、の",
-          title: "Lição 5",
-          topic_id: "de246ddb-5cfd-49c7-ac83-1099ea41d43b",
+          subtitle: "音節：な、に、ぬ、ね、の",
+          title: "第 5 課",
+          topic_id: "70dfc023-7e82-406b-b1c2-84209535bd0c",
         },
         {
-          expanded_subtitle: "Aprenda a ler e escrever as sílabas na linha tr:は.",
-          expanded_title: "Hiragana: tr:は, tr:ひ, tr:ふ, tr:へ, tr:ほ",
+          expanded_subtitle: "學習讀寫tr:は行的音節。",
+          expanded_title: "平假名: tr:は, tr:ひ, tr:ふ, tr:へ, tr:ほ",
           icon: "https://nihongo.khvat.app/chapter1/Lesson6.jpg",
-          id: "8770c3e9-5416-4cf5-8ca5-5693df21e9aa",
-          last_updated: "2026-03-26T17:43:20.226Z",
+          id: "72f17ca4-2928-4fe8-a628-65e46918fa75",
+          last_updated: "2026-09-08T13:12:16.092Z",
           lesson_key: "alphabet/hiragana&ha",
           lesson_order: 7,
           minimum_version: "2.4.1",
@@ -2351,13 +2347,13 @@ export const dumpPt = {
                     id: "98db662b-5ca1-47cd-9026-735c762c76f6",
                     kana: "hiragana",
                   },
-                  id: "cb9dbdfd-e347-46bd-adfb-66e77a73eeca",
+                  id: "df2958f0-2540-5bba-ad6c-a2f6336680fb",
                   type: "letter",
                 },
               ],
-              id: "e4a08b83-7886-4b51-a322-e9c3f3197c78",
+              id: "178ea382-3492-55d8-ad1f-bd609a54c8bf",
               screen_order: 1,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "記住這個音節的筆順和發音。",
             },
             {
               blocks: [
@@ -2368,13 +2364,13 @@ export const dumpPt = {
                     id: "98db662b-5ca1-47cd-9026-735c762c76f6",
                     kana: "hiragana",
                   },
-                  id: "a78e175f-650a-4ba8-8249-a2a9e996ec18",
+                  id: "e0bbd96a-37e6-5c3e-ae5a-1b8cd76c3667",
                   type: "letter",
                 },
               ],
-              id: "64a3bf99-8d3a-4ab7-b024-6263254104b8",
+              id: "4512c00b-b3ac-5710-a4ec-272f39e44c8e",
               screen_order: 2,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "按正確的筆順書寫音節。",
             },
             {
               blocks: [
@@ -2385,13 +2381,13 @@ export const dumpPt = {
                     id: "458fcd0d-1f08-4222-99c7-e17000999ccf",
                     kana: "hiragana",
                   },
-                  id: "1885f353-8fa5-49b6-af67-cdfdc951c0d9",
+                  id: "7e7cec4f-2fd1-5771-8ce7-f4ac5b300afb",
                   type: "letter",
                 },
               ],
-              id: "c5c77a84-8be0-4731-ab15-983f5ca688be",
+              id: "21016fdf-1c4a-5f14-9736-a75df2751b4e",
               screen_order: 3,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "記住這個音節的筆順和發音。",
             },
             {
               blocks: [
@@ -2402,13 +2398,13 @@ export const dumpPt = {
                     id: "458fcd0d-1f08-4222-99c7-e17000999ccf",
                     kana: "hiragana",
                   },
-                  id: "f82cd6f5-bbf6-4232-8e6e-c6773368465f",
+                  id: "7cb8d9e5-6ebb-5336-b644-c4222444cab6",
                   type: "letter",
                 },
               ],
-              id: "c4ea98d1-7eec-4cec-8f8a-4798833fc98c",
+              id: "b6a80c0d-8b29-5f8d-8f06-f8d2400d8ada",
               screen_order: 4,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "按正確的筆順書寫音節。",
             },
             {
               blocks: [
@@ -2420,13 +2416,13 @@ export const dumpPt = {
                       ["は", "tr:は"],
                     ],
                   },
-                  id: "84aa3131-e42f-41ce-afa4-aab3540056fd",
+                  id: "b7ba65d4-e4ee-5254-ad4c-67b9db7eb412",
                   type: "matching",
                 },
               ],
-              id: "1587a242-ad74-46e1-9cd2-4095652070c8",
+              id: "ca93f0b2-11f3-518f-8d28-e367c1a89122",
               screen_order: 5,
-              title: "Combine 「Hiragana」 com sua transliteração.",
+              title: "將「平假名」與其羅馬字配對。",
             },
             {
               blocks: [
@@ -2437,13 +2433,13 @@ export const dumpPt = {
                     id: "6ee7807e-278a-4652-8445-f3062e026891",
                     kana: "hiragana",
                   },
-                  id: "66977471-1fe1-4661-8e22-11b02625a344",
+                  id: "794d7de3-0df6-5068-a6e0-4ea7a4cc5105",
                   type: "letter",
                 },
               ],
-              id: "61effc81-cabf-4be9-91b0-5b1058e22d9a",
+              id: "30b57872-671a-5aa4-94d9-c5995e1f0021",
               screen_order: 6,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "記住這個音節的筆順和發音。",
             },
             {
               blocks: [
@@ -2454,23 +2450,23 @@ export const dumpPt = {
                     id: "6ee7807e-278a-4652-8445-f3062e026891",
                     kana: "hiragana",
                   },
-                  id: "8a230adf-58c2-4e17-b6e3-047868a384e7",
+                  id: "2e8c511b-0c40-546c-80e9-a972cfceb3b0",
                   type: "letter",
                 },
               ],
-              id: "c2dc1c8f-d657-4567-85f8-a1bc6dd8a90e",
+              id: "ba84921a-4071-5b03-82e4-df1ba4a69314",
               screen_order: 7,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "按正確的筆順書寫音節。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Hiragana",
-                    title: "tr:ふ",
+                    sub_title: "平假名",
+                    title: "tr:は",
                   },
-                  id: "5d158890-fb8d-48bd-a847-e07a2ed398bb",
+                  id: "9fa0a6af-738b-5b78-906f-35d69211172f",
                   type: "title",
                 },
                 {
@@ -2478,26 +2474,26 @@ export const dumpPt = {
                   content: {
                     answers: [
                       {
+                        isTrue: true,
+                        title: "は",
+                      },
+                      {
                         isTrue: false,
                         title: "ひ",
                       },
                       {
                         isTrue: false,
-                        title: "は",
-                      },
-                      {
-                        isTrue: true,
                         title: "ふ",
                       },
                     ],
                   },
-                  id: "ad9c8735-2685-48a7-9aa2-6472a0d1b969",
+                  id: "cff0c0df-0806-51ac-b9fc-f06962dd5656",
                   type: "choice",
                 },
               ],
-              id: "a48ee805-418b-405d-a3fe-64ec8506444a",
+              id: "48e7b19d-e0ed-53d1-a23d-d851ed6fb8f2",
               screen_order: 8,
-              title: "Selecione a sílaba.",
+              title: "選擇音節。",
             },
             {
               blocks: [
@@ -2509,13 +2505,13 @@ export const dumpPt = {
                       ["ひ", "tr:ひ"],
                     ],
                   },
-                  id: "f72783ba-c141-450a-b6e9-09374025c366",
+                  id: "28dfe494-26e7-51a0-ac2f-808b7a88b00b",
                   type: "matching",
                 },
               ],
-              id: "ad3a3ad1-fcc2-449c-b063-9e96307fe98e",
+              id: "0b92581f-a748-529b-ba86-23c43e71cdad",
               screen_order: 9,
-              title: "Combine 「Hiragana」 com sua transliteração.",
+              title: "將「平假名」與其羅馬字配對。",
             },
             {
               blocks: [
@@ -2526,13 +2522,13 @@ export const dumpPt = {
                     id: "1014abd7-deb5-4c6b-a1dc-27543817c9fe",
                     kana: "hiragana",
                   },
-                  id: "07bca404-809d-4437-baa9-276003f8ba29",
+                  id: "c7855b4a-b7ea-5b88-839f-aabfbe4a841b",
                   type: "letter",
                 },
               ],
-              id: "97e003ed-64b0-4875-918f-70e5c3fed371",
+              id: "9f2f101a-fb26-5af1-8b81-51271d331528",
               screen_order: 10,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "記住這個音節的筆順和發音。",
             },
             {
               blocks: [
@@ -2543,13 +2539,13 @@ export const dumpPt = {
                     id: "1014abd7-deb5-4c6b-a1dc-27543817c9fe",
                     kana: "hiragana",
                   },
-                  id: "e6aad4cc-0188-4f1c-864f-16bdf3ee3d60",
+                  id: "261cc198-d13d-5e63-941c-25fd9e1270e7",
                   type: "letter",
                 },
               ],
-              id: "dc8a8060-48db-4ff1-97a5-91bd70c46ae9",
+              id: "8b09f8b1-8b36-5291-9007-fe28edfc869c",
               screen_order: 11,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "按正確的筆順書寫音節。",
             },
             {
               blocks: [
@@ -2561,13 +2557,13 @@ export const dumpPt = {
                       ["ふ", "tr:ふ"],
                     ],
                   },
-                  id: "789544f0-93b2-424a-b426-aa5872fa2ccf",
+                  id: "00843e08-46cd-559e-ae34-ed229e6dc0a1",
                   type: "matching",
                 },
               ],
-              id: "fbb7db80-3697-4f51-84da-2694bf8c43c0",
+              id: "fd9fe4b4-672f-5575-b428-e645b889ccb0",
               screen_order: 12,
-              title: "Combine 「Hiragana」 com sua transliteração.",
+              title: "將「平假名」與其羅馬字配對。",
             },
             {
               blocks: [
@@ -2578,13 +2574,13 @@ export const dumpPt = {
                     id: "d80bf13e-66cd-4cf9-93e7-09cb2f435ead",
                     kana: "hiragana",
                   },
-                  id: "d2747d79-9448-4556-a27e-136b282a4a76",
+                  id: "94e7ceb9-59d5-56c3-a5d1-40bd6719b0b7",
                   type: "letter",
                 },
               ],
-              id: "3987adbc-d987-4de2-a360-b8b945b43c07",
+              id: "57b7bb73-b7be-54b2-bbd0-402c0db98e3d",
               screen_order: 13,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "記住這個音節的筆順和發音。",
             },
             {
               blocks: [
@@ -2595,60 +2591,60 @@ export const dumpPt = {
                     id: "d80bf13e-66cd-4cf9-93e7-09cb2f435ead",
                     kana: "hiragana",
                   },
-                  id: "e51cee27-cd6a-4516-b277-979d97f440ff",
+                  id: "5c6ef5c1-805b-595c-9ace-f33b25db5ba6",
                   type: "letter",
                 },
               ],
-              id: "7998b13f-eb70-4908-9188-74624afc1e36",
+              id: "e9fd444e-ecb0-5d33-8504-3e6c8e2e0a95",
               screen_order: 14,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "按正確的筆順書寫音節。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Hiragana",
-                    title: "tr:は",
+                    sub_title: "平假名",
+                    title: "tr:へ",
                   },
-                  id: "ed9d3069-709b-433d-9cde-19a81c02ab98",
+                  id: "a2393be6-c627-5177-ba04-93235adc3c1d",
                   type: "title",
                 },
                 {
                   block_order: 2,
                   content: {
                     answers: [
-                      {
-                        isTrue: true,
-                        title: "は",
-                      },
                       {
                         isTrue: false,
                         title: "ふ",
                       },
                       {
                         isTrue: false,
-                        title: "ひ",
+                        title: "ほ",
+                      },
+                      {
+                        isTrue: true,
+                        title: "へ",
                       },
                     ],
                   },
-                  id: "f2d43574-c682-429f-9ba8-27442b7d7a5f",
+                  id: "5daecf72-159b-5e7f-b0a3-655f18873e3a",
                   type: "choice",
                 },
               ],
-              id: "6c0a2af9-088c-47cb-a078-13cd8d6fdb2f",
+              id: "dfba7ab9-1200-5fe3-bf3d-33558131abfd",
               screen_order: 15,
-              title: "Selecione a sílaba.",
+              title: "選擇音節。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Hiragana",
-                    title: "は, ひ, へ, ほ, ふ",
+                    sub_title: "平假名",
+                    title: "は, ほ, ひ, ふ, へ",
                   },
-                  id: "b2931b62-7de3-48c9-9056-d4924256fbea",
+                  id: "16408915-3c15-5e4c-b7ec-37b8d502f79d",
                   type: "title",
                 },
                 {
@@ -2656,32 +2652,32 @@ export const dumpPt = {
                   content: {
                     answers: [
                       {
-                        isTrue: true,
-                        title: "tr:は, tr:ひ, tr:へ, tr:ほ, tr:ふ",
+                        isTrue: false,
+                        title: "tr:ふ, tr:へ, tr:は, tr:ほ, tr:ひ",
                       },
                       {
-                        isTrue: false,
-                        title: "tr:ほ, tr:へ, tr:は, tr:ふ, tr:ひ",
+                        isTrue: true,
+                        title: "tr:は, tr:ほ, tr:ひ, tr:ふ, tr:へ",
                       },
                     ],
                   },
-                  id: "251a257a-f1c5-4758-937a-9ca2a7adc1cd",
+                  id: "d184fe90-244b-57f9-843d-7cb8423327b5",
                   type: "choice",
                 },
               ],
-              id: "74933c31-d048-4bbf-90d7-1706f79f1c1c",
+              id: "bbff60cd-7b00-58b1-8871-4908ba6ce61c",
               screen_order: 16,
-              title: "Escolha a sequência correta.",
+              title: "選擇正確的順序。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Hiragana",
-                    title: "ひ, へ, ふ, は, ほ",
+                    sub_title: "平假名",
+                    title: "へ, ひ, ふ, は, ほ",
                   },
-                  id: "03822229-65e1-4d5c-bf43-69bac861dbc0",
+                  id: "e361c5da-20a5-5d2b-a4c2-91411cad9f00",
                   type: "title",
                 },
                 {
@@ -2690,81 +2686,81 @@ export const dumpPt = {
                     answers: [
                       {
                         isTrue: true,
-                        title: "tr:ひ, tr:へ, tr:ふ, tr:は, tr:ほ",
+                        title: "tr:へ, tr:ひ, tr:ふ, tr:は, tr:ほ",
                       },
                       {
                         isTrue: false,
-                        title: "tr:ほ, tr:へ, tr:は, tr:ひ, tr:ふ",
+                        title: "tr:は, tr:ほ, tr:ひ, tr:へ, tr:ふ",
                       },
                     ],
                   },
-                  id: "9dfb9023-71f4-469a-a8a3-c49e7c305953",
+                  id: "dbc7f939-f2c8-5aa9-ad4c-37b629db0b85",
                   type: "choice",
                 },
               ],
-              id: "48fc1953-bd78-49f2-bf02-c8f70438aeb4",
+              id: "ab014f57-e946-5ec9-b7a9-8585fffae480",
               screen_order: 17,
-              title: "Escolha a sequência correta.",
+              title: "選擇正確的順序。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Hiragana",
-                    title: "tr:ふ, tr:は, tr:へ, tr:ほ, tr:ひ",
+                    sub_title: "平假名",
+                    title: "tr:ふ, tr:ほ, tr:へ, tr:ひ, tr:は",
                   },
-                  id: "e30c8dc8-26bc-498c-80ff-bc3cae3fc77c",
+                  id: "0447f5c0-6a70-58be-a7ab-263fa4e1aece",
                   type: "title",
                 },
                 {
                   block_order: 2,
                   content: {
-                    sequence: ["ふ", "は", "へ", "ほ", "ひ"],
+                    sequence: ["ふ", "ほ", "へ", "ひ", "は"],
                   },
-                  id: "070feaad-e920-475a-ad3b-21533cfa3397",
+                  id: "a38b5879-af64-5ffd-affb-c4111ca5cd6a",
                   type: "sequence",
                 },
               ],
-              id: "e95522c6-28b1-4e0a-95d9-0b3fc8b95b21",
+              id: "dd48955c-7dcf-5d81-a97d-3bdd1add8285",
               screen_order: 18,
-              title: "Organize as sílabas na ordem correta.",
+              title: "將音節按正確的順序排列。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Hiragana",
-                    title: "tr:ひ, tr:へ, tr:ふ, tr:は, tr:ほ",
+                    sub_title: "平假名",
+                    title: "tr:は, tr:ふ, tr:へ, tr:ひ, tr:ほ",
                   },
-                  id: "c8040650-86ec-44c3-878d-2315d5ebbf11",
+                  id: "466ac3a2-718e-591f-9ad7-661b8d0b1f74",
                   type: "title",
                 },
                 {
                   block_order: 2,
                   content: {
-                    sequence: ["ひ", "へ", "ふ", "は", "ほ"],
+                    sequence: ["は", "ふ", "へ", "ひ", "ほ"],
                   },
-                  id: "cf63efb6-1889-4330-acfe-89297a1a696b",
+                  id: "eeee601f-642f-5547-8353-b4fdd9b2aca5",
                   type: "sequence",
                 },
               ],
-              id: "0dbc8960-1687-4ae7-8bdc-f55bdae13ca1",
+              id: "0367e588-380c-5f12-86b7-4804a426b22d",
               screen_order: 19,
-              title: "Organize as sílabas na ordem correta.",
+              title: "將音節按正確的順序排列。",
             },
           ],
-          subtitle: "Sílabas: は、ひ、ふ、へ、ほ",
-          title: "Lição 6",
-          topic_id: "de246ddb-5cfd-49c7-ac83-1099ea41d43b",
+          subtitle: "音節：は、ひ、ふ、へ、ほ",
+          title: "第 6 課",
+          topic_id: "70dfc023-7e82-406b-b1c2-84209535bd0c",
         },
         {
-          expanded_subtitle: "Aprenda a ler e escrever as sílabas na linha tr:ま.",
-          expanded_title: "Hiragana: tr:ま, tr:み, tr:む, tr:め, tr:も",
+          expanded_subtitle: "學習讀寫tr:ま行的音節。",
+          expanded_title: "平假名: tr:ま, tr:み, tr:む, tr:め, tr:も",
           icon: "https://nihongo.khvat.app/chapter1/Lesson7.jpg",
-          id: "fc936a18-a4d1-423d-8995-4dbcd0242b43",
-          last_updated: "2026-03-26T17:43:20.226Z",
+          id: "5747818e-d0fd-466a-8bdb-2d948477f5cd",
+          last_updated: "2026-09-08T13:12:16.092Z",
           lesson_key: "alphabet/hiragana&ma",
           lesson_order: 8,
           minimum_version: "2.4.1",
@@ -2778,13 +2774,13 @@ export const dumpPt = {
                     id: "827078b5-74f9-499b-a523-0fea2020a5af",
                     kana: "hiragana",
                   },
-                  id: "2407ca00-4188-4a9a-bb80-9e9bdf6f40ff",
+                  id: "329deebf-a4b5-5edd-abb5-577027622674",
                   type: "letter",
                 },
               ],
-              id: "87e31298-ef75-4795-801d-fadea23d358c",
+              id: "9b82cd29-694b-580e-9fe9-6b9232b6f982",
               screen_order: 1,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "記住這個音節的筆順和發音。",
             },
             {
               blocks: [
@@ -2795,13 +2791,13 @@ export const dumpPt = {
                     id: "827078b5-74f9-499b-a523-0fea2020a5af",
                     kana: "hiragana",
                   },
-                  id: "4cd548f3-7404-4a3f-80a7-760dd811857a",
+                  id: "f18e8305-7129-5c30-bf01-1d81d1491cb2",
                   type: "letter",
                 },
               ],
-              id: "a843b7be-2df4-4ddc-b244-6100270c632f",
+              id: "c7c8b6a0-4d79-526f-8ec7-e138dd4d5bb0",
               screen_order: 2,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "按正確的筆順書寫音節。",
             },
             {
               blocks: [
@@ -2812,13 +2808,13 @@ export const dumpPt = {
                     id: "b131b9f3-d6fd-48e6-b0cc-32831ea4b3f9",
                     kana: "hiragana",
                   },
-                  id: "8fd7c938-3a33-4930-aae2-ea9ed91acf08",
+                  id: "21ec6ebc-70db-5cf9-be2e-e616a688cd10",
                   type: "letter",
                 },
               ],
-              id: "c822b173-dbdb-48bb-8044-9cdc656f03f3",
+              id: "1b5770fa-39ba-554b-89d6-d604ac21f94b",
               screen_order: 3,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "記住這個音節的筆順和發音。",
             },
             {
               blocks: [
@@ -2829,13 +2825,13 @@ export const dumpPt = {
                     id: "b131b9f3-d6fd-48e6-b0cc-32831ea4b3f9",
                     kana: "hiragana",
                   },
-                  id: "80ee5a46-b4ba-46e3-8a82-97758e479d16",
+                  id: "4ef278d0-43d1-5b12-a6d8-583c580867f3",
                   type: "letter",
                 },
               ],
-              id: "6b0aa02a-1710-4e79-ba46-d5b5891f17d0",
+              id: "3c9a7ac7-ad26-5eb2-ad37-7d46ecb3f190",
               screen_order: 4,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "按正確的筆順書寫音節。",
             },
             {
               blocks: [
@@ -2847,13 +2843,13 @@ export const dumpPt = {
                       ["ま", "tr:ま"],
                     ],
                   },
-                  id: "78f5a2cf-b6a2-448f-9d59-78bc50854218",
+                  id: "7d87429b-5f2b-51ad-ade4-d873c4dc6d35",
                   type: "matching",
                 },
               ],
-              id: "09b94c19-b1b8-48cf-9be0-c0e45a1ef1e1",
+              id: "eea96b87-9a39-594b-b865-ebb87f5af862",
               screen_order: 5,
-              title: "Combine 「Hiragana」 com sua transliteração.",
+              title: "將「平假名」與其羅馬字配對。",
             },
             {
               blocks: [
@@ -2864,13 +2860,13 @@ export const dumpPt = {
                     id: "4d81e8f2-0e6b-475f-bd08-c6b03d20ae69",
                     kana: "hiragana",
                   },
-                  id: "8292ce35-0715-40e1-a55c-74a6b6099493",
+                  id: "d970828b-97be-5dff-b101-e1c475622c06",
                   type: "letter",
                 },
               ],
-              id: "7a0539d6-c498-4c5d-933d-2a815f53d270",
+              id: "ed9398d1-ffd4-5e96-9a4c-e63594694f3b",
               screen_order: 6,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "記住這個音節的筆順和發音。",
             },
             {
               blocks: [
@@ -2881,23 +2877,23 @@ export const dumpPt = {
                     id: "4d81e8f2-0e6b-475f-bd08-c6b03d20ae69",
                     kana: "hiragana",
                   },
-                  id: "fe1634b1-3912-4b1c-a917-38b771944e26",
+                  id: "8e1adddf-93c0-5917-80b9-a83d151dbfd6",
                   type: "letter",
                 },
               ],
-              id: "46098f0c-1260-484f-82d3-8928fe817c4b",
+              id: "ff6c3917-5b50-5c09-a92b-412877907727",
               screen_order: 7,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "按正確的筆順書寫音節。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Hiragana",
+                    sub_title: "平假名",
                     title: "tr:ま",
                   },
-                  id: "ce910aa7-9fd3-49aa-ae02-a4210c24f249",
+                  id: "ca205aad-75d6-5533-a221-1f2c830f6d78",
                   type: "title",
                 },
                 {
@@ -2910,21 +2906,21 @@ export const dumpPt = {
                       },
                       {
                         isTrue: false,
-                        title: "む",
+                        title: "み",
                       },
                       {
                         isTrue: false,
-                        title: "み",
+                        title: "む",
                       },
                     ],
                   },
-                  id: "1e7b7a1d-f506-472d-974e-2a70b2d910fa",
+                  id: "44dac769-1f31-5a44-a9aa-5debd5667814",
                   type: "choice",
                 },
               ],
-              id: "e4fd3658-f762-402b-a754-f78fd0dd773b",
+              id: "8d28d34e-b526-5ffe-9b2f-5772df841c51",
               screen_order: 8,
-              title: "Selecione a sílaba.",
+              title: "選擇音節。",
             },
             {
               blocks: [
@@ -2936,13 +2932,13 @@ export const dumpPt = {
                       ["み", "tr:み"],
                     ],
                   },
-                  id: "24a51ebe-752b-4bfb-b169-16c28c43aba1",
+                  id: "d7ee9f54-4ab1-536d-b02a-a762e74b0f47",
                   type: "matching",
                 },
               ],
-              id: "640a3663-3839-4400-b0b5-e3529583f038",
+              id: "856a2f3d-76fa-556b-b777-93f748c5c589",
               screen_order: 9,
-              title: "Combine 「Hiragana」 com sua transliteração.",
+              title: "將「平假名」與其羅馬字配對。",
             },
             {
               blocks: [
@@ -2953,13 +2949,13 @@ export const dumpPt = {
                     id: "3037e1df-8072-4273-abf1-664b500613af",
                     kana: "hiragana",
                   },
-                  id: "9d778a66-07f5-4cee-8ef9-17ba52550a3d",
+                  id: "fd2da4a1-a234-556a-a363-edf5dc652ac1",
                   type: "letter",
                 },
               ],
-              id: "58d1b22b-9473-4936-9d67-2e12546ffd2c",
+              id: "ed8da9c1-054d-5182-829b-eb3afdfa0c10",
               screen_order: 10,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "記住這個音節的筆順和發音。",
             },
             {
               blocks: [
@@ -2970,13 +2966,13 @@ export const dumpPt = {
                     id: "3037e1df-8072-4273-abf1-664b500613af",
                     kana: "hiragana",
                   },
-                  id: "6dea81db-f20a-436a-969d-21a0ae9cab92",
+                  id: "108e880b-cd4d-5cb2-84c9-98c6b208f215",
                   type: "letter",
                 },
               ],
-              id: "ecb51e33-e711-4400-9218-5c3c96c5fd99",
+              id: "85cc9a95-eb89-5939-8726-3e6d59eb47f0",
               screen_order: 11,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "按正確的筆順書寫音節。",
             },
             {
               blocks: [
@@ -2988,13 +2984,13 @@ export const dumpPt = {
                       ["む", "tr:む"],
                     ],
                   },
-                  id: "501bd586-1006-4d2c-8572-3a96a9ecefad",
+                  id: "63cc02af-f6cc-5590-94ff-6bf2868dfcdf",
                   type: "matching",
                 },
               ],
-              id: "a00f1c5e-3edd-4c15-b720-3c7f9591ee28",
+              id: "3fa021ff-339c-598b-9301-6ff5a3159a45",
               screen_order: 12,
-              title: "Combine 「Hiragana」 com sua transliteração.",
+              title: "將「平假名」與其羅馬字配對。",
             },
             {
               blocks: [
@@ -3005,13 +3001,13 @@ export const dumpPt = {
                     id: "54a8b634-b713-4652-957e-fffa3b3319cc",
                     kana: "hiragana",
                   },
-                  id: "569fcaf4-4418-428b-9504-6e7204f78fc8",
+                  id: "b87d9898-7b19-5048-8ee8-f2559527108b",
                   type: "letter",
                 },
               ],
-              id: "d7f46c0f-6ec8-4e46-94c8-d02e4d57e6cb",
+              id: "b08e2dc2-7093-5f3f-9789-8a10db1ecf79",
               screen_order: 13,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "記住這個音節的筆順和發音。",
             },
             {
               blocks: [
@@ -3022,23 +3018,23 @@ export const dumpPt = {
                     id: "54a8b634-b713-4652-957e-fffa3b3319cc",
                     kana: "hiragana",
                   },
-                  id: "a240b825-77e2-4695-99f1-15eac2c4b9de",
+                  id: "03f6afcc-fa5f-585f-b1f2-bdbeab066ef0",
                   type: "letter",
                 },
               ],
-              id: "e21899e1-9db5-420d-97df-3c025f229141",
+              id: "1ed27485-86e1-5407-b767-98683aa192c0",
               screen_order: 14,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "按正確的筆順書寫音節。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Hiragana",
-                    title: "tr:む",
+                    sub_title: "平假名",
+                    title: "tr:ま",
                   },
-                  id: "ecd3eb27-1ffc-4ebf-88cd-bab99b256381",
+                  id: "354813e8-1598-5c58-ac60-a2178b9a9158",
                   type: "title",
                 },
                 {
@@ -3047,35 +3043,35 @@ export const dumpPt = {
                     answers: [
                       {
                         isTrue: false,
+                        title: "め",
+                      },
+                      {
+                        isTrue: true,
                         title: "ま",
                       },
                       {
                         isTrue: false,
                         title: "み",
                       },
-                      {
-                        isTrue: true,
-                        title: "む",
-                      },
                     ],
                   },
-                  id: "5a141075-806a-403e-8ce9-ed3aa39f2864",
+                  id: "939ee9cf-455a-563e-a20a-74d27fe7dbe4",
                   type: "choice",
                 },
               ],
-              id: "7b64c8ca-4ac0-49ca-878b-d1dde07882c8",
+              id: "07f61050-e020-58b1-810b-f19579db2d1d",
               screen_order: 15,
-              title: "Selecione a sílaba.",
+              title: "選擇音節。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Hiragana",
-                    title: "み, も, め, む, ま",
+                    sub_title: "平假名",
+                    title: "み, も, め, ま, む",
                   },
-                  id: "703b483b-1063-4c10-88b7-75404294e807",
+                  id: "9ff738ec-0bd6-594d-ad16-aaa8c81cc8db",
                   type: "title",
                 },
                 {
@@ -3083,32 +3079,32 @@ export const dumpPt = {
                   content: {
                     answers: [
                       {
-                        isTrue: false,
-                        title: "tr:み, tr:ま, tr:め, tr:む, tr:も",
+                        isTrue: true,
+                        title: "tr:み, tr:も, tr:め, tr:ま, tr:む",
                       },
                       {
-                        isTrue: true,
-                        title: "tr:み, tr:も, tr:め, tr:む, tr:ま",
+                        isTrue: false,
+                        title: "tr:ま, tr:も, tr:め, tr:む, tr:み",
                       },
                     ],
                   },
-                  id: "862464b9-fb41-4cfb-beac-7362af3c4015",
+                  id: "1001ea21-d282-51bb-bffe-c6942103e8cc",
                   type: "choice",
                 },
               ],
-              id: "72766526-20cd-4d84-81f4-7cc29fe6fdc4",
+              id: "0848ad70-eb01-5059-8a1e-a1b093be1490",
               screen_order: 16,
-              title: "Escolha a sequência correta.",
+              title: "選擇正確的順序。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Hiragana",
-                    title: "む, ま, も, め, み",
+                    sub_title: "平假名",
+                    title: "め, ま, も, む, み",
                   },
-                  id: "96adcedb-3afb-47c2-839a-7ec380874ad8",
+                  id: "404f7dc8-2086-5078-9eb7-cee54961e133",
                   type: "title",
                 },
                 {
@@ -3117,81 +3113,81 @@ export const dumpPt = {
                     answers: [
                       {
                         isTrue: true,
-                        title: "tr:む, tr:ま, tr:も, tr:め, tr:み",
+                        title: "tr:め, tr:ま, tr:も, tr:む, tr:み",
                       },
                       {
                         isTrue: false,
-                        title: "tr:む, tr:も, tr:め, tr:み, tr:ま",
+                        title: "tr:ま, tr:む, tr:め, tr:み, tr:も",
                       },
                     ],
                   },
-                  id: "4546ae9d-84b6-4bb2-b8a2-bf9d82058174",
+                  id: "7ca64c35-cde8-5919-a71d-7416ae1d8d17",
                   type: "choice",
                 },
               ],
-              id: "453af704-d1e7-41de-b708-1f7f6a17950b",
+              id: "a7b303e4-465a-5aba-a1c4-ca96d88e010a",
               screen_order: 17,
-              title: "Escolha a sequência correta.",
+              title: "選擇正確的順序。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Hiragana",
-                    title: "tr:み, tr:め, tr:む, tr:ま, tr:も",
+                    sub_title: "平假名",
+                    title: "tr:も, tr:み, tr:め, tr:む, tr:ま",
                   },
-                  id: "edbbee5d-97dc-4a56-b913-ff8e3ee53e68",
+                  id: "8f00328c-a21b-5c03-bc04-cb415b312bcb",
                   type: "title",
                 },
                 {
                   block_order: 2,
                   content: {
-                    sequence: ["み", "め", "む", "ま", "も"],
+                    sequence: ["も", "み", "め", "む", "ま"],
                   },
-                  id: "ef21c92d-e464-4a57-9e9d-3bed996cdb96",
+                  id: "b18abb7e-6626-5133-9e70-65d6e7299d10",
                   type: "sequence",
                 },
               ],
-              id: "7b39f6fe-0ea6-4ef9-b851-d59ef89d7017",
+              id: "8ea8fa0f-aa98-504e-ae17-659e826fd664",
               screen_order: 18,
-              title: "Organize as sílabas na ordem correta.",
+              title: "將音節按正確的順序排列。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Hiragana",
-                    title: "tr:ま, tr:め, tr:む, tr:も, tr:み",
+                    sub_title: "平假名",
+                    title: "tr:む, tr:ま, tr:み, tr:も, tr:め",
                   },
-                  id: "a84015e1-56d1-445b-8e71-b153954eab28",
+                  id: "25fc2d8e-460e-5f51-880b-fad440e6af4f",
                   type: "title",
                 },
                 {
                   block_order: 2,
                   content: {
-                    sequence: ["ま", "め", "む", "も", "み"],
+                    sequence: ["む", "ま", "み", "も", "め"],
                   },
-                  id: "ed151928-d500-457d-bc70-722df1380962",
+                  id: "f3978683-f240-5696-97af-f5000cea5193",
                   type: "sequence",
                 },
               ],
-              id: "12024590-4cfd-406f-a776-07803598d309",
+              id: "2d4d0a9d-83d6-5121-9ba8-2d193beba1de",
               screen_order: 19,
-              title: "Organize as sílabas na ordem correta.",
+              title: "將音節按正確的順序排列。",
             },
           ],
-          subtitle: "Sílabas: ま、み、む、め、も",
-          title: "Lição 7",
-          topic_id: "de246ddb-5cfd-49c7-ac83-1099ea41d43b",
+          subtitle: "音節：ま、み、む、め、も",
+          title: "第 7 課",
+          topic_id: "70dfc023-7e82-406b-b1c2-84209535bd0c",
         },
         {
-          expanded_subtitle: "Aprenda a ler e escrever as sílabas na linha tr:や.",
-          expanded_title: "Hiragana: tr:や, tr:ゆ, tr:よ",
+          expanded_subtitle: "學習讀寫tr:や行的音節。",
+          expanded_title: "平假名: tr:や, tr:ゆ, tr:よ",
           icon: "https://nihongo.khvat.app/chapter1/Lesson9.jpg",
-          id: "9330b2b9-7d68-498b-b71b-25d5f14a673f",
-          last_updated: "2026-03-26T17:43:20.226Z",
+          id: "786d4a84-f8d3-4d07-bc25-7fa7437f6668",
+          last_updated: "2026-09-08T13:12:16.092Z",
           lesson_key: "alphabet/hiragana&ya",
           lesson_order: 9,
           minimum_version: "2.4.1",
@@ -3205,13 +3201,13 @@ export const dumpPt = {
                     id: "9e4e7b1b-2b3c-467d-8c24-be83a4ae5a89",
                     kana: "hiragana",
                   },
-                  id: "b80389dc-a3ad-4f33-8506-48f8e19c0a9b",
+                  id: "a932cb8f-1f1c-5c29-abd6-a7e7e11c0be4",
                   type: "letter",
                 },
               ],
-              id: "6db9ab95-5b94-43f7-9c8f-d5fa5219e0b7",
+              id: "18b410cc-7c54-59b1-b6a6-3b9dabb1e04e",
               screen_order: 1,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "記住這個音節的筆順和發音。",
             },
             {
               blocks: [
@@ -3222,13 +3218,13 @@ export const dumpPt = {
                     id: "9e4e7b1b-2b3c-467d-8c24-be83a4ae5a89",
                     kana: "hiragana",
                   },
-                  id: "43d3d217-80a9-4091-8025-addc21b46bcd",
+                  id: "60e82210-9172-556c-9403-c257d1c5884b",
                   type: "letter",
                 },
               ],
-              id: "f910c80f-90b7-4aad-a1cf-46d61427b7ac",
+              id: "e94fe29c-2501-52c9-a39c-a596f3b8606c",
               screen_order: 2,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "按正確的筆順書寫音節。",
             },
             {
               blocks: [
@@ -3239,13 +3235,13 @@ export const dumpPt = {
                     id: "e3c281bb-31aa-4fab-8b83-1daca7c6bdd5",
                     kana: "hiragana",
                   },
-                  id: "8bd6f844-a447-45d3-8927-93641373dd65",
+                  id: "00f32b7b-7f23-5ea7-945e-c489170002ee",
                   type: "letter",
                 },
               ],
-              id: "c58f7641-23e5-42fe-b337-f2b8ba6b2162",
+              id: "e7ab585d-2daf-53a7-b498-f6393dd8dda7",
               screen_order: 3,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "記住這個音節的筆順和發音。",
             },
             {
               blocks: [
@@ -3256,13 +3252,13 @@ export const dumpPt = {
                     id: "e3c281bb-31aa-4fab-8b83-1daca7c6bdd5",
                     kana: "hiragana",
                   },
-                  id: "f3152e52-cacf-49ff-9614-82679f502e47",
+                  id: "f1b61b93-53e8-5347-89ef-e12e23618f44",
                   type: "letter",
                 },
               ],
-              id: "a6ef29af-a771-40d4-910a-f43382e05002",
+              id: "ab0abeb1-0e32-5914-9f4d-f706a2b6b175",
               screen_order: 4,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "按正確的筆順書寫音節。",
             },
             {
               blocks: [
@@ -3274,13 +3270,13 @@ export const dumpPt = {
                       ["や", "tr:や"],
                     ],
                   },
-                  id: "8e805ffd-3d6e-429d-b6f6-145ace2942da",
+                  id: "526d1260-db9f-5057-b962-ce127511e22d",
                   type: "matching",
                 },
               ],
-              id: "4d3fb656-d6f7-4d47-9bc3-20d623e4008d",
+              id: "28d35b08-2fdf-51f2-a087-2b487313f861",
               screen_order: 5,
-              title: "Combine 「Hiragana」 com sua transliteração.",
+              title: "將「平假名」與其羅馬字配對。",
             },
             {
               blocks: [
@@ -3291,13 +3287,13 @@ export const dumpPt = {
                     id: "5b7da1eb-3e8c-418f-bcb5-ea8551c77706",
                     kana: "hiragana",
                   },
-                  id: "43d7fe6b-5834-44f6-83f4-545baf583867",
+                  id: "2d4f7434-1f9a-5a2c-82e0-7087191d25b1",
                   type: "letter",
                 },
               ],
-              id: "1f5330b5-2690-42a2-95c4-6feec81b2e9b",
+              id: "9da0a4e5-deb0-57be-92bb-9cf5f849dd62",
               screen_order: 6,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "記住這個音節的筆順和發音。",
             },
             {
               blocks: [
@@ -3308,23 +3304,23 @@ export const dumpPt = {
                     id: "5b7da1eb-3e8c-418f-bcb5-ea8551c77706",
                     kana: "hiragana",
                   },
-                  id: "e28615d7-8d4c-4fc8-a99a-661d46222700",
+                  id: "7fea3b67-2df4-5482-8b3b-828ae475d070",
                   type: "letter",
                 },
               ],
-              id: "72986b8f-b448-4691-b32f-ad6f50357a8f",
+              id: "c6b2ae98-8e75-5cd0-bcb2-ec315de3c709",
               screen_order: 7,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "按正確的筆順書寫音節。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Hiragana",
-                    title: "tr:ゆ",
+                    sub_title: "平假名",
+                    title: "tr:よ",
                   },
-                  id: "e7480c9b-2da8-4570-8002-4d998bc63c63",
+                  id: "9077288e-b21c-55db-b334-49613bad76f3",
                   type: "title",
                 },
                 {
@@ -3333,25 +3329,25 @@ export const dumpPt = {
                     answers: [
                       {
                         isTrue: false,
-                        title: "よ",
+                        title: "や",
                       },
                       {
                         isTrue: true,
-                        title: "ゆ",
+                        title: "よ",
                       },
                       {
                         isTrue: false,
-                        title: "や",
+                        title: "ゆ",
                       },
                     ],
                   },
-                  id: "d13b3642-290c-4a28-a2fc-1493db717624",
+                  id: "49ebb954-f05a-59f0-ac73-de154d9c4d2c",
                   type: "choice",
                 },
               ],
-              id: "abdcd125-c559-4f56-b187-892af81640db",
+              id: "183a9224-32dd-5ab6-a65a-bbffa93088a3",
               screen_order: 8,
-              title: "Selecione a sílaba.",
+              title: "選擇音節。",
             },
             {
               blocks: [
@@ -3363,23 +3359,23 @@ export const dumpPt = {
                       ["ゆ", "tr:ゆ"],
                     ],
                   },
-                  id: "e8a81713-297b-4ea5-b9e4-0ba5d578613e",
+                  id: "964a170f-65ea-5693-b503-4fe76fc7a9ad",
                   type: "matching",
                 },
               ],
-              id: "0c855e7b-7738-428a-a05c-2d8243eb925b",
+              id: "73922b3e-259e-591f-a18e-628e0dbe5723",
               screen_order: 9,
-              title: "Combine 「Hiragana」 com sua transliteração.",
+              title: "將「平假名」與其羅馬字配對。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Hiragana",
-                    title: "tr:ゆ",
+                    sub_title: "平假名",
+                    title: "tr:よ",
                   },
-                  id: "eee162e4-b317-4211-8852-9d8eea283e08",
+                  id: "3d3213fa-8048-54f6-81cc-ea7a9a0312e7",
                   type: "title",
                 },
                 {
@@ -3387,36 +3383,36 @@ export const dumpPt = {
                   content: {
                     answers: [
                       {
-                        isTrue: false,
+                        isTrue: true,
                         title: "よ",
+                      },
+                      {
+                        isTrue: false,
+                        title: "ゆ",
                       },
                       {
                         isTrue: false,
                         title: "や",
                       },
-                      {
-                        isTrue: true,
-                        title: "ゆ",
-                      },
                     ],
                   },
-                  id: "24929b2d-9989-42af-b21d-fb1de3a0d9a9",
+                  id: "42537021-07f1-5f10-b4ea-c41dced1f74c",
                   type: "choice",
                 },
               ],
-              id: "4b29671c-164e-466b-95f6-46798ef1cf66",
+              id: "755bf95a-fa54-5853-a1b5-a4128e1d48e2",
               screen_order: 10,
-              title: "Selecione a sílaba.",
+              title: "選擇音節。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Hiragana",
-                    title: "ゆ, よ, や",
+                    sub_title: "平假名",
+                    title: "や, よ, ゆ",
                   },
-                  id: "df6b55d2-24a0-4d1a-a9dc-70e13c6bf508",
+                  id: "f4941055-d965-5160-a251-ee4eeba3c0a8",
                   type: "title",
                 },
                 {
@@ -3425,114 +3421,114 @@ export const dumpPt = {
                     answers: [
                       {
                         isTrue: false,
-                        title: "tr:よ, tr:や, tr:ゆ",
+                        title: "tr:や, tr:ゆ, tr:よ",
                       },
                       {
                         isTrue: true,
-                        title: "tr:ゆ, tr:よ, tr:や",
-                      },
-                    ],
-                  },
-                  id: "ab803487-1e92-4d08-9a5c-4e22a2f2006c",
-                  type: "choice",
-                },
-              ],
-              id: "d457a329-dc8c-44f9-9578-9912e6fa21e5",
-              screen_order: 11,
-              title: "Escolha a sequência correta.",
-            },
-            {
-              blocks: [
-                {
-                  block_order: 1,
-                  content: {
-                    sub_title: "Hiragana",
-                    title: "よ, や, ゆ",
-                  },
-                  id: "3d0fe331-a99c-413c-a672-c4a8e82d5e12",
-                  type: "title",
-                },
-                {
-                  block_order: 2,
-                  content: {
-                    answers: [
-                      {
-                        isTrue: false,
                         title: "tr:や, tr:よ, tr:ゆ",
                       },
+                    ],
+                  },
+                  id: "541384c9-1734-5d99-bc22-fc08076231ef",
+                  type: "choice",
+                },
+              ],
+              id: "34ee33ee-a787-5219-990a-a99c3d23e6a4",
+              screen_order: 11,
+              title: "選擇正確的順序。",
+            },
+            {
+              blocks: [
+                {
+                  block_order: 1,
+                  content: {
+                    sub_title: "平假名",
+                    title: "ゆ, や, よ",
+                  },
+                  id: "b1eec631-43bf-5d13-b3e2-e566b816fced",
+                  type: "title",
+                },
+                {
+                  block_order: 2,
+                  content: {
+                    answers: [
                       {
                         isTrue: true,
+                        title: "tr:ゆ, tr:や, tr:よ",
+                      },
+                      {
+                        isTrue: false,
                         title: "tr:よ, tr:や, tr:ゆ",
                       },
                     ],
                   },
-                  id: "f87d4c31-177a-4219-976e-4872eb6bfb20",
+                  id: "26e3afea-bbe9-59a2-a5c5-0b1d77476637",
                   type: "choice",
                 },
               ],
-              id: "65a47514-1d51-481d-8625-9e1bde09ff26",
+              id: "f25925e3-792e-5760-85aa-60e3f29ea4fe",
               screen_order: 12,
-              title: "Escolha a sequência correta.",
+              title: "選擇正確的順序。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Hiragana",
-                    title: "tr:ゆ, tr:や, tr:よ",
+                    sub_title: "平假名",
+                    title: "tr:よ, tr:ゆ, tr:や",
                   },
-                  id: "ad8b8b1d-f5e1-47f0-aa61-96a7b4d786f6",
+                  id: "78101238-f657-5f14-8dcc-1b167f9468d6",
                   type: "title",
                 },
                 {
                   block_order: 2,
                   content: {
-                    sequence: ["ゆ", "や", "よ"],
+                    sequence: ["よ", "ゆ", "や"],
                   },
-                  id: "09cfeaf0-77fe-4cb0-8fa4-92b10667c1f1",
+                  id: "537289b6-05e9-53a1-8f68-be785c5d2932",
                   type: "sequence",
                 },
               ],
-              id: "433c7dab-f2ca-4135-9bcd-f9dd5038b034",
+              id: "89aa3329-5b2b-5d43-b7cd-308afefb4c6a",
               screen_order: 13,
-              title: "Organize as sílabas na ordem correta.",
+              title: "將音節按正確的順序排列。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Hiragana",
-                    title: "tr:や, tr:ゆ, tr:よ",
+                    sub_title: "平假名",
+                    title: "tr:よ, tr:や, tr:ゆ",
                   },
-                  id: "1b40ac20-424c-475c-95c8-44a0d8eb513e",
+                  id: "505638f8-6a10-5b29-bdcb-4e68b91cf335",
                   type: "title",
                 },
                 {
                   block_order: 2,
                   content: {
-                    sequence: ["や", "ゆ", "よ"],
+                    sequence: ["よ", "や", "ゆ"],
                   },
-                  id: "b06ea02a-2dbe-4b9d-af6e-e8e579ee4b0e",
+                  id: "9209bece-e20f-5f16-873c-a241859c0097",
                   type: "sequence",
                 },
               ],
-              id: "e940a98c-20f1-4c9f-a637-d01ff3e7dae1",
+              id: "7cb20a3f-250d-5dbf-bdc8-46e0a8b47ef4",
               screen_order: 14,
-              title: "Organize as sílabas na ordem correta.",
+              title: "將音節按正確的順序排列。",
             },
           ],
-          subtitle: "Sílabas: や、ゆ、よ",
-          title: "Lição 8",
-          topic_id: "de246ddb-5cfd-49c7-ac83-1099ea41d43b",
+          subtitle: "音節：や、ゆ、よ",
+          title: "第 8 課",
+          topic_id: "70dfc023-7e82-406b-b1c2-84209535bd0c",
         },
         {
-          expanded_subtitle: "Aprenda a ler e escrever as sílabas na linha tr:ら.",
-          expanded_title: "Hiragana: tr:ら, tr:り, tr:る, tr:れ, tr:ろ",
+          expanded_subtitle: "學習讀寫tr:ら行的音節。",
+          expanded_title: "平假名: tr:ら, tr:り, tr:る, tr:れ, tr:ろ",
           icon: "https://nihongo.khvat.app/chapter1/Lesson10.jpg",
-          id: "e2a92489-c850-4c36-93be-53881a821c78",
-          last_updated: "2026-03-26T17:43:20.226Z",
+          id: "8b524b12-ea5a-459f-9aac-90c50cf25679",
+          last_updated: "2026-09-08T13:12:16.093Z",
           lesson_key: "alphabet/hiragana&ra",
           lesson_order: 10,
           minimum_version: "2.4.1",
@@ -3546,13 +3542,13 @@ export const dumpPt = {
                     id: "859472d4-50b2-4574-adcf-65b301aa916e",
                     kana: "hiragana",
                   },
-                  id: "9e299a5f-402b-4d3f-818f-547610b6a7ec",
+                  id: "d5a77cb9-483d-57b6-a01f-7ffd0e9b57ef",
                   type: "letter",
                 },
               ],
-              id: "f8b7c3e3-7e40-476e-97f3-38d91d64c168",
+              id: "b491171f-f480-539e-a642-105a0554debb",
               screen_order: 1,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "記住這個音節的筆順和發音。",
             },
             {
               blocks: [
@@ -3563,13 +3559,13 @@ export const dumpPt = {
                     id: "859472d4-50b2-4574-adcf-65b301aa916e",
                     kana: "hiragana",
                   },
-                  id: "8ad8ff62-95c8-4809-944a-02aa02e163ca",
+                  id: "c0448b5c-120a-5711-a30e-e20c657cb733",
                   type: "letter",
                 },
               ],
-              id: "8cae4486-04ae-43e4-8123-a8943e351085",
+              id: "7a394fe1-37f7-5973-b6d8-f91cbafe9c17",
               screen_order: 2,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "按正確的筆順書寫音節。",
             },
             {
               blocks: [
@@ -3580,13 +3576,13 @@ export const dumpPt = {
                     id: "6e0e6570-0e60-46e4-8735-40ad423daec2",
                     kana: "hiragana",
                   },
-                  id: "0151c880-4c90-416d-b987-d5d61f1fe722",
+                  id: "4a77096d-9071-5a73-82a5-ee5feff0a5ae",
                   type: "letter",
                 },
               ],
-              id: "9525c0e7-64a0-46ec-8957-d6cb2ec95d68",
+              id: "b3978251-c7e1-59ab-8e71-eadec333c87e",
               screen_order: 3,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "記住這個音節的筆順和發音。",
             },
             {
               blocks: [
@@ -3597,13 +3593,13 @@ export const dumpPt = {
                     id: "6e0e6570-0e60-46e4-8735-40ad423daec2",
                     kana: "hiragana",
                   },
-                  id: "80baebdd-9742-4186-a849-1632eea818c6",
+                  id: "969fb93e-e3c6-5024-841f-949ba49bf5ea",
                   type: "letter",
                 },
               ],
-              id: "1183aa37-cc8e-4401-b8ef-c01e50a54f02",
+              id: "b5058d65-607b-5346-9387-dd2e31dbf44a",
               screen_order: 4,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "按正確的筆順書寫音節。",
             },
             {
               blocks: [
@@ -3615,13 +3611,13 @@ export const dumpPt = {
                       ["ら", "tr:ら"],
                     ],
                   },
-                  id: "9e652429-29a5-4965-bebb-d2cb630a5115",
+                  id: "d5ceac41-e2e4-560c-9ce3-17aa2870afde",
                   type: "matching",
                 },
               ],
-              id: "46b77d61-a848-48cc-b7eb-4e2636a88620",
+              id: "3bcc6609-88ca-56db-8478-970c9b20181e",
               screen_order: 5,
-              title: "Combine 「Hiragana」 com sua transliteração.",
+              title: "將「平假名」與其羅馬字配對。",
             },
             {
               blocks: [
@@ -3632,13 +3628,13 @@ export const dumpPt = {
                     id: "1a43007b-1cfb-49a0-baea-02fe8d7cd78a",
                     kana: "hiragana",
                   },
-                  id: "35f11dd2-8506-4322-baa0-a1b71cf220d5",
+                  id: "8e0aaea0-0d3a-513c-a366-cf27ab4e211b",
                   type: "letter",
                 },
               ],
-              id: "bce99ca7-c6b7-4697-ba9c-769970c0f81e",
+              id: "c3eaadb7-5fa8-5eca-9d68-bf79b4140127",
               screen_order: 6,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "記住這個音節的筆順和發音。",
             },
             {
               blocks: [
@@ -3649,23 +3645,23 @@ export const dumpPt = {
                     id: "1a43007b-1cfb-49a0-baea-02fe8d7cd78a",
                     kana: "hiragana",
                   },
-                  id: "4ff21afc-d28e-4481-a911-ff1ed1c0cf14",
+                  id: "59290a6b-008e-5a4a-ace5-78091a0b2057",
                   type: "letter",
                 },
               ],
-              id: "7fc1c2d6-7af1-47b7-88c1-9b1449d61a3c",
+              id: "7c661504-7945-580f-be10-3b17dba1e255",
               screen_order: 7,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "按正確的筆順書寫音節。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Hiragana",
-                    title: "tr:り",
+                    sub_title: "平假名",
+                    title: "tr:る",
                   },
-                  id: "b6d244c7-41af-40b5-8790-ae291e43548b",
+                  id: "536716cf-62ca-5a27-a6ba-b5e312b65d77",
                   type: "title",
                 },
                 {
@@ -3674,25 +3670,25 @@ export const dumpPt = {
                     answers: [
                       {
                         isTrue: false,
-                        title: "る",
-                      },
-                      {
-                        isTrue: true,
                         title: "り",
                       },
                       {
                         isTrue: false,
                         title: "ら",
                       },
+                      {
+                        isTrue: true,
+                        title: "る",
+                      },
                     ],
                   },
-                  id: "8e928a9e-8f0e-47df-91f0-1c5446b4ad4a",
+                  id: "a69168f7-8564-52a0-8737-ece4b338166b",
                   type: "choice",
                 },
               ],
-              id: "8d61a058-c215-4393-8aa0-06a12dfdd9bf",
+              id: "fa5ee9a9-6b64-5527-9c50-94a23c7f0f28",
               screen_order: 8,
-              title: "Selecione a sílaba.",
+              title: "選擇音節。",
             },
             {
               blocks: [
@@ -3704,13 +3700,13 @@ export const dumpPt = {
                       ["り", "tr:り"],
                     ],
                   },
-                  id: "37e3b225-d82f-4792-9558-9f584f6ed796",
+                  id: "8802031d-64a1-5c90-be83-ecf1f4363170",
                   type: "matching",
                 },
               ],
-              id: "06095720-9f5a-4e26-b5fa-991b47b1a55d",
+              id: "a4c3d0f2-a269-5d02-875c-6e55e439d178",
               screen_order: 9,
-              title: "Combine 「Hiragana」 com sua transliteração.",
+              title: "將「平假名」與其羅馬字配對。",
             },
             {
               blocks: [
@@ -3721,13 +3717,13 @@ export const dumpPt = {
                     id: "e53fdab4-2d04-452d-a635-d2ac728c6a32",
                     kana: "hiragana",
                   },
-                  id: "f3768d12-bc39-46d1-80c6-0281b821387f",
+                  id: "c7022ee0-dbf2-5b48-9bf8-d4ab5c11389d",
                   type: "letter",
                 },
               ],
-              id: "3bc5d552-369e-4f91-8cdf-25c5f47722a3",
+              id: "698d6262-47e6-50b6-a9ee-cafdabb95a4c",
               screen_order: 10,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "記住這個音節的筆順和發音。",
             },
             {
               blocks: [
@@ -3738,13 +3734,13 @@ export const dumpPt = {
                     id: "e53fdab4-2d04-452d-a635-d2ac728c6a32",
                     kana: "hiragana",
                   },
-                  id: "e488343a-8369-43a9-9abe-413b6cf1464d",
+                  id: "8c1cdd6a-456a-5094-9018-8f6d8e3be534",
                   type: "letter",
                 },
               ],
-              id: "2016335c-db58-4b6e-b7cb-cee32ebb80ae",
+              id: "6c3a0a50-13b1-5368-8d63-bf7f33352d2e",
               screen_order: 11,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "按正確的筆順書寫音節。",
             },
             {
               blocks: [
@@ -3756,13 +3752,13 @@ export const dumpPt = {
                       ["る", "tr:る"],
                     ],
                   },
-                  id: "fe3afc62-ba32-4278-8da5-4ad1bac03c56",
+                  id: "264692f7-3ba4-5501-920d-ecd21fb0c228",
                   type: "matching",
                 },
               ],
-              id: "fc576b8c-707e-416b-8378-11814bc9400b",
+              id: "a346aaab-3175-5c63-84b1-7c35e14f34d4",
               screen_order: 12,
-              title: "Combine 「Hiragana」 com sua transliteração.",
+              title: "將「平假名」與其羅馬字配對。",
             },
             {
               blocks: [
@@ -3773,13 +3769,13 @@ export const dumpPt = {
                     id: "6ba2a0b0-d443-4323-a382-c8144cd996d3",
                     kana: "hiragana",
                   },
-                  id: "e983557c-7165-4ff2-b229-eb9a1688124b",
+                  id: "55a27722-a317-52f1-98cc-1f793bec0788",
                   type: "letter",
                 },
               ],
-              id: "e43166e1-9d84-4ccc-9c7d-5d97340cf941",
+              id: "8946c684-1b4e-5c1e-8d47-beec5a0b3816",
               screen_order: 13,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "記住這個音節的筆順和發音。",
             },
             {
               blocks: [
@@ -3790,23 +3786,23 @@ export const dumpPt = {
                     id: "6ba2a0b0-d443-4323-a382-c8144cd996d3",
                     kana: "hiragana",
                   },
-                  id: "7df463df-affd-4856-98d1-afd15fb1a146",
+                  id: "a00daf1b-9141-5288-9b39-d28b20eca93b",
                   type: "letter",
                 },
               ],
-              id: "07f08138-46af-4a00-9dde-766f5e635279",
+              id: "9dfa17e0-cc12-58ea-9159-9930d018d94a",
               screen_order: 14,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "按正確的筆順書寫音節。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Hiragana",
+                    sub_title: "平假名",
                     title: "tr:る",
                   },
-                  id: "af1269fb-5396-4048-b2d6-44a359770c92",
+                  id: "fedfadd6-35ad-5521-a510-7849cf4af85b",
                   type: "title",
                 },
                 {
@@ -3818,32 +3814,32 @@ export const dumpPt = {
                         title: "ら",
                       },
                       {
-                        isTrue: false,
-                        title: "ろ",
-                      },
-                      {
                         isTrue: true,
                         title: "る",
                       },
+                      {
+                        isTrue: false,
+                        title: "り",
+                      },
                     ],
                   },
-                  id: "6164842c-6d5f-47c5-8fd1-7b3a8628bc2c",
+                  id: "ad1b47cb-b3d1-58c5-b36b-44c4d1932832",
                   type: "choice",
                 },
               ],
-              id: "8d7e1773-efc8-495a-9ace-7c333052d468",
+              id: "1729ad5b-d140-53c3-a28d-5ca4eee35e96",
               screen_order: 15,
-              title: "Selecione a sílaba.",
+              title: "選擇音節。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Hiragana",
-                    title: "ら, ろ, り, る, れ",
+                    sub_title: "平假名",
+                    title: "ろ, ら, る, れ, り",
                   },
-                  id: "69b2f495-4631-4414-bc0a-60080ba00bf1",
+                  id: "3e9267d2-8b8e-5837-b8a4-d367c5e13f43",
                   type: "title",
                 },
                 {
@@ -3852,31 +3848,31 @@ export const dumpPt = {
                     answers: [
                       {
                         isTrue: true,
-                        title: "tr:ら, tr:ろ, tr:り, tr:る, tr:れ",
+                        title: "tr:ろ, tr:ら, tr:る, tr:れ, tr:り",
                       },
                       {
                         isTrue: false,
-                        title: "tr:り, tr:ら, tr:る, tr:ろ, tr:れ",
+                        title: "tr:ら, tr:る, tr:り, tr:れ, tr:ろ",
                       },
                     ],
                   },
-                  id: "675bc80c-24f7-464f-99f4-b508b73b80f8",
+                  id: "22e8b9b6-1da7-5f00-bd05-970fbd3c4d1d",
                   type: "choice",
                 },
               ],
-              id: "cd6e3795-9efc-4bdf-b7b3-e84c9937728f",
+              id: "5c5af351-9fae-56bc-80bd-855e5759f0a3",
               screen_order: 16,
-              title: "Escolha a sequência correta.",
+              title: "選擇正確的順序。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Hiragana",
-                    title: "れ, り, ら, ろ, る",
+                    sub_title: "平假名",
+                    title: "ら, る, ろ, れ, り",
                   },
-                  id: "dfcd7a6d-2aaa-400a-9e21-c563c8194dba",
+                  id: "3dd1eb5b-47e1-564e-aaae-ebeface833ff",
                   type: "title",
                 },
                 {
@@ -3885,81 +3881,81 @@ export const dumpPt = {
                     answers: [
                       {
                         isTrue: false,
-                        title: "tr:れ, tr:り, tr:る, tr:ろ, tr:ら",
+                        title: "tr:れ, tr:ら, tr:ろ, tr:る, tr:り",
                       },
                       {
                         isTrue: true,
-                        title: "tr:れ, tr:り, tr:ら, tr:ろ, tr:る",
+                        title: "tr:ら, tr:る, tr:ろ, tr:れ, tr:り",
                       },
                     ],
                   },
-                  id: "ccc10cab-3fef-4970-8496-2838fd4d5c5e",
+                  id: "fed05088-c629-5b5e-a3b9-afbfc1de137c",
                   type: "choice",
                 },
               ],
-              id: "3fcab168-c0eb-4c9c-8ef4-82f6ee361a98",
+              id: "b7bbcbff-61b3-520b-aa99-473ca2eadc75",
               screen_order: 17,
-              title: "Escolha a sequência correta.",
+              title: "選擇正確的順序。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Hiragana",
-                    title: "tr:る, tr:ろ, tr:れ, tr:り, tr:ら",
+                    sub_title: "平假名",
+                    title: "tr:り, tr:る, tr:れ, tr:ろ, tr:ら",
                   },
-                  id: "2245240a-4cf6-44dc-bbb5-e95f6a66a649",
+                  id: "bb8d293f-d6bf-5856-9743-e526fe2e2ffe",
                   type: "title",
                 },
                 {
                   block_order: 2,
                   content: {
-                    sequence: ["る", "ろ", "れ", "り", "ら"],
+                    sequence: ["り", "る", "れ", "ろ", "ら"],
                   },
-                  id: "9186084a-c096-4383-adde-799dbd2ef8f6",
+                  id: "0d275850-b33b-507d-a92f-29efc9c3e0c9",
                   type: "sequence",
                 },
               ],
-              id: "7f79af0a-86d8-4dc7-80ec-f8f01a405bef",
+              id: "bd913e8c-4b51-5f1a-bddc-3b27bc2c3366",
               screen_order: 18,
-              title: "Organize as sílabas na ordem correta.",
+              title: "將音節按正確的順序排列。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Hiragana",
-                    title: "tr:る, tr:れ, tr:ら, tr:り, tr:ろ",
+                    sub_title: "平假名",
+                    title: "tr:る, tr:ろ, tr:り, tr:ら, tr:れ",
                   },
-                  id: "27606417-a0c0-4e4e-9124-0bda7d4ff18b",
+                  id: "6782d472-8907-5428-bfe5-cbc44bf28cf5",
                   type: "title",
                 },
                 {
                   block_order: 2,
                   content: {
-                    sequence: ["る", "れ", "ら", "り", "ろ"],
+                    sequence: ["る", "ろ", "り", "ら", "れ"],
                   },
-                  id: "8ef878b4-9b6d-47e1-82a8-549c6fc39734",
+                  id: "4fea750d-609b-5140-bf42-79949d0a69a8",
                   type: "sequence",
                 },
               ],
-              id: "425ffc74-8d97-4948-87f4-6552cecc3288",
+              id: "885e6b73-3b97-5ad0-9bf5-9861b4ce3dbb",
               screen_order: 19,
-              title: "Organize as sílabas na ordem correta.",
+              title: "將音節按正確的順序排列。",
             },
           ],
-          subtitle: "Sílabas: ら、り、る、れ、ろ",
-          title: "Lição 9",
-          topic_id: "de246ddb-5cfd-49c7-ac83-1099ea41d43b",
+          subtitle: "音節：ら、り、る、れ、ろ",
+          title: "第 9 課",
+          topic_id: "70dfc023-7e82-406b-b1c2-84209535bd0c",
         },
         {
-          expanded_subtitle: "Aprenda a ler e escrever as sílabas: tr:わ, tr:を, tr:ん.",
-          expanded_title: "Hiragana: tr:わ, tr:を, tr:ん",
+          expanded_subtitle: "學習讀寫以下音節： tr:わ, tr:を, tr:ん.",
+          expanded_title: "平假名: tr:わ, tr:を, tr:ん",
           icon: "https://nihongo.khvat.app/chapter1/Lesson8.jpg",
-          id: "40ae0dfc-ccbc-4dc5-b27a-493333acc46a",
-          last_updated: "2026-03-26T17:43:20.226Z",
+          id: "556d243d-459d-4f7b-82d7-3807f30bfaa1",
+          last_updated: "2026-09-08T13:12:16.093Z",
           lesson_key: "alphabet/hiragana&wa",
           lesson_order: 11,
           minimum_version: "2.4.1",
@@ -3973,13 +3969,13 @@ export const dumpPt = {
                     id: "a53d8501-373d-4944-a76b-657f672162f9",
                     kana: "hiragana",
                   },
-                  id: "ca318059-6ad6-4802-96ef-b3143945ed8d",
+                  id: "e7a69091-4bd3-5c0e-bf49-365e54ece3e4",
                   type: "letter",
                 },
               ],
-              id: "4f7db8a3-d911-4099-b0c0-da4080148d08",
+              id: "e6274b64-4e9f-55c1-b60e-77ccf62a8ae1",
               screen_order: 1,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "記住這個音節的筆順和發音。",
             },
             {
               blocks: [
@@ -3990,13 +3986,13 @@ export const dumpPt = {
                     id: "a53d8501-373d-4944-a76b-657f672162f9",
                     kana: "hiragana",
                   },
-                  id: "77b7853c-eaec-4c26-992c-bf64493b1221",
+                  id: "458d55c7-2a25-570d-9ebb-6eb178e24dd4",
                   type: "letter",
                 },
               ],
-              id: "d5c372fd-a2ef-43db-bb93-5ce371ff3cc8",
+              id: "67f8fabd-44f2-5e02-8531-ef13b66f9fd2",
               screen_order: 2,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "按正確的筆順書寫音節。",
             },
             {
               blocks: [
@@ -4007,13 +4003,13 @@ export const dumpPt = {
                     id: "858b53e1-af17-45d5-8fc2-330121eab5c4",
                     kana: "hiragana",
                   },
-                  id: "42146590-193d-4aaf-8f0c-9211a8656bb6",
+                  id: "92f632c0-7f57-51c7-b2bd-61604d019bc5",
                   type: "letter",
                 },
               ],
-              id: "6bf84110-db0f-4d30-9326-a3eab0d0b168",
+              id: "49296a8c-decc-5ea8-b6a0-ad002f3fbd89",
               screen_order: 3,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "記住這個音節的筆順和發音。",
             },
             {
               blocks: [
@@ -4024,13 +4020,13 @@ export const dumpPt = {
                     id: "858b53e1-af17-45d5-8fc2-330121eab5c4",
                     kana: "hiragana",
                   },
-                  id: "dd8eedfa-518f-4305-b8af-7c355d44bf5d",
+                  id: "d1aeab74-e660-5733-97ba-5e4802440b2d",
                   type: "letter",
                 },
               ],
-              id: "279c0136-4fd8-47eb-b8e1-3b724ddd2f53",
+              id: "bc2ccc0d-4f7a-5175-b6d2-426e1d40b328",
               screen_order: 4,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "按正確的筆順書寫音節。",
             },
             {
               blocks: [
@@ -4042,13 +4038,13 @@ export const dumpPt = {
                       ["わ", "tr:わ"],
                     ],
                   },
-                  id: "544857c3-47f4-4ee5-8cdf-ee71faed2a04",
+                  id: "b6a6497f-26fc-55b3-8b57-3a950d7eeacd",
                   type: "matching",
                 },
               ],
-              id: "1eba38b6-52e6-48dc-a65d-73e02039b6d2",
+              id: "a151ac88-1ae8-5e7c-bb7e-22f80d79dccb",
               screen_order: 5,
-              title: "Combine 「Hiragana」 com sua transliteração.",
+              title: "將「平假名」與其羅馬字配對。",
             },
             {
               blocks: [
@@ -4059,13 +4055,13 @@ export const dumpPt = {
                     id: "2a481d17-0d7c-492a-85fc-cab60e9fb6df",
                     kana: "hiragana",
                   },
-                  id: "77dc99d0-d09f-4827-87a6-50a4b86ed179",
+                  id: "6f5fb58a-bfc4-5fa0-9c7c-e40b0315cbfb",
                   type: "letter",
                 },
               ],
-              id: "cae0d3ff-5449-4892-b5a5-754134faa0ce",
+              id: "2c8dc781-3b78-52d6-af67-2518e1b92636",
               screen_order: 6,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "記住這個音節的筆順和發音。",
             },
             {
               blocks: [
@@ -4076,23 +4072,23 @@ export const dumpPt = {
                     id: "2a481d17-0d7c-492a-85fc-cab60e9fb6df",
                     kana: "hiragana",
                   },
-                  id: "d1590fd8-e4a8-4313-8763-eb1723e7dff7",
+                  id: "ac347636-b78b-554a-b980-3d4ea85b6413",
                   type: "letter",
                 },
               ],
-              id: "e43f2c2f-cadc-495e-ae58-20b1f1134ea6",
+              id: "9c2fa2ef-a090-5b86-8a5b-08d9fa5a832a",
               screen_order: 7,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "按正確的筆順書寫音節。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Hiragana",
+                    sub_title: "平假名",
                     title: "tr:わ",
                   },
-                  id: "58e40761-28ac-4e44-84a7-84eff995a4d3",
+                  id: "ee4d4151-cef4-5a0e-9914-67ba1eccd4e3",
                   type: "title",
                 },
                 {
@@ -4113,13 +4109,13 @@ export const dumpPt = {
                       },
                     ],
                   },
-                  id: "b63b14e0-0dbb-4bc8-8591-49c4e95185cc",
+                  id: "a0ec3bcf-734e-59b6-b2a0-5f1191e6ea3e",
                   type: "choice",
                 },
               ],
-              id: "ee6a0afe-d956-4cbc-8694-f36d344b6947",
+              id: "532566ed-1564-562c-8382-b30f61a574aa",
               screen_order: 8,
-              title: "Selecione a sílaba.",
+              title: "選擇音節。",
             },
             {
               blocks: [
@@ -4131,23 +4127,23 @@ export const dumpPt = {
                       ["を", "tr:を"],
                     ],
                   },
-                  id: "19d9d644-fce1-405a-9e51-ab443a134c68",
+                  id: "55500789-9770-5382-969a-46311c7985dc",
                   type: "matching",
                 },
               ],
-              id: "e7825f1d-8c55-4472-9a60-f8680d126230",
+              id: "d7605daf-c692-579d-a1b8-97f73a1f8b01",
               screen_order: 9,
-              title: "Combine 「Hiragana」 com sua transliteração.",
+              title: "將「平假名」與其羅馬字配對。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Hiragana",
+                    sub_title: "平假名",
                     title: "tr:ん",
                   },
-                  id: "ed506b1f-ee8b-410c-a3c8-994ba1e567e1",
+                  id: "aa42a704-1cbe-5e1b-b21a-e36781515b66",
                   type: "title",
                 },
                 {
@@ -4168,56 +4164,23 @@ export const dumpPt = {
                       },
                     ],
                   },
-                  id: "74319ce1-be27-481a-8d9c-64867d76d78f",
+                  id: "86f4e4e0-cebd-51ec-893e-fca658dc913d",
                   type: "choice",
                 },
               ],
-              id: "39e15908-d266-44c5-a3de-deead9a8cd8c",
+              id: "1a7b0e42-48c3-5241-9b6e-674fc713d7e3",
               screen_order: 10,
-              title: "Selecione a sílaba.",
+              title: "選擇音節。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Hiragana",
-                    title: "ん, を, わ",
-                  },
-                  id: "eb1cf1b0-5a29-40f3-9f26-31d8da568ce8",
-                  type: "title",
-                },
-                {
-                  block_order: 2,
-                  content: {
-                    answers: [
-                      {
-                        isTrue: true,
-                        title: "tr:ん, tr:を, tr:わ",
-                      },
-                      {
-                        isTrue: false,
-                        title: "tr:を, tr:わ, tr:ん",
-                      },
-                    ],
-                  },
-                  id: "6b9dca20-225c-49fd-9915-87aba78cc67e",
-                  type: "choice",
-                },
-              ],
-              id: "16844d6c-d7b7-4392-b626-675b9fa2451d",
-              screen_order: 11,
-              title: "Escolha a sequência correta.",
-            },
-            {
-              blocks: [
-                {
-                  block_order: 1,
-                  content: {
-                    sub_title: "Hiragana",
+                    sub_title: "平假名",
                     title: "わ, ん, を",
                   },
-                  id: "4ec01127-f408-4fbc-8873-a70eeff0850c",
+                  id: "74e5d823-f783-56db-b4ce-6f608f8d26a7",
                   type: "title",
                 },
                 {
@@ -4234,47 +4197,80 @@ export const dumpPt = {
                       },
                     ],
                   },
-                  id: "b944ba7b-617f-4a1f-8810-ea485955ca9c",
+                  id: "760b96e1-9a58-55f0-bd0f-9cfe4a5b6cc4",
                   type: "choice",
                 },
               ],
-              id: "d66fe1bb-56c2-4072-8247-6d7d008517ec",
-              screen_order: 12,
-              title: "Escolha a sequência correta.",
+              id: "6b5c5f09-574a-556a-8b7e-9aaf37d89bdc",
+              screen_order: 11,
+              title: "選擇正確的順序。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Hiragana",
-                    title: "tr:わ, tr:ん, tr:を",
+                    sub_title: "平假名",
+                    title: "わ, ん, を",
                   },
-                  id: "64435278-3725-4f59-98b4-455c69d9c03f",
+                  id: "697fa313-9d57-57c8-adba-06f3883ab5db",
                   type: "title",
                 },
                 {
                   block_order: 2,
                   content: {
-                    sequence: ["わ", "ん", "を"],
+                    answers: [
+                      {
+                        isTrue: true,
+                        title: "tr:わ, tr:ん, tr:を",
+                      },
+                      {
+                        isTrue: false,
+                        title: "tr:ん, tr:わ, tr:を",
+                      },
+                    ],
                   },
-                  id: "8b8c3b5d-53e7-4351-b30d-766186d88cb8",
-                  type: "sequence",
+                  id: "194e5406-138d-5b8f-b1cd-5dfd817a7efe",
+                  type: "choice",
                 },
               ],
-              id: "091b7de3-e14a-4c93-8f48-90fc4080d73c",
-              screen_order: 13,
-              title: "Organize as sílabas na ordem correta.",
+              id: "9bdc6e2e-2d95-59f0-8c5c-051a6d7a6a94",
+              screen_order: 12,
+              title: "選擇正確的順序。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Hiragana",
+                    sub_title: "平假名",
+                    title: "tr:を, tr:ん, tr:わ",
+                  },
+                  id: "7ae2aab5-58f5-583e-ae85-da5d723cb51e",
+                  type: "title",
+                },
+                {
+                  block_order: 2,
+                  content: {
+                    sequence: ["を", "ん", "わ"],
+                  },
+                  id: "8db925d7-01f4-5893-8b2c-1763513b9cf8",
+                  type: "sequence",
+                },
+              ],
+              id: "43207614-9118-573b-aead-fd30209da582",
+              screen_order: 13,
+              title: "將音節按正確的順序排列。",
+            },
+            {
+              blocks: [
+                {
+                  block_order: 1,
+                  content: {
+                    sub_title: "平假名",
                     title: "tr:わ, tr:を, tr:ん",
                   },
-                  id: "83ea2a2d-5dd1-4c76-bcb3-6419da573166",
+                  id: "3cb38810-8ab4-585f-8379-66b4851d8582",
                   type: "title",
                 },
                 {
@@ -4282,32 +4278,32 @@ export const dumpPt = {
                   content: {
                     sequence: ["わ", "を", "ん"],
                   },
-                  id: "b6c87545-d74b-4d8d-848e-35a53f829055",
+                  id: "c750c858-12a3-5872-86f2-b6a40b01fd89",
                   type: "sequence",
                 },
               ],
-              id: "7bed09f1-d0dc-4aa2-9840-91227053a2bc",
+              id: "0836b1b0-de3e-569b-9b8f-3c13c262cfee",
               screen_order: 14,
-              title: "Organize as sílabas na ordem correta.",
+              title: "將音節按正確的順序排列。",
             },
           ],
-          subtitle: "Sílabas: わ、を、ん",
-          title: "Lição 10",
-          topic_id: "de246ddb-5cfd-49c7-ac83-1099ea41d43b",
+          subtitle: "音節：わ、を、ん",
+          title: "第 10 課",
+          topic_id: "70dfc023-7e82-406b-b1c2-84209535bd0c",
         },
       ],
-      title: "Seção 1. Hiragana",
+      title: "第1章. 平假名",
       topic_order: 1,
     },
     {
-      id: "8912b4f4-2c04-404f-a64e-bfb712c677f5",
+      id: "921d01de-29d3-409e-abbc-b2d88ab40960",
       lessons: [
         {
-          expanded_subtitle: "Aprenda a ler e escrever os sons vocálicos do katakana.",
-          expanded_title: "Katakana: tr:あ, tr:い, tr:う, tr:え, tr:お",
+          expanded_subtitle: "學習讀寫片假名的母音。",
+          expanded_title: "片假名: tr:あ, tr:い, tr:う, tr:え, tr:お",
           icon: "https://nihongo.khvat.app/chapter2/Lesson11.jpg",
-          id: "bc06947e-4ec3-4d05-8655-6d5c88593b96",
-          last_updated: "2026-03-26T17:43:20.226Z",
+          id: "7c35e035-1be1-475e-9df0-1090cd01b624",
+          last_updated: "2026-09-08T13:12:16.093Z",
           lesson_key: "alphabet/katakana&a",
           lesson_order: 12,
           minimum_version: "2.4.1",
@@ -4321,13 +4317,13 @@ export const dumpPt = {
                     id: "a151eeeb-2537-463c-ae23-d484d1bcb835",
                     kana: "katakana",
                   },
-                  id: "ff223c51-51c0-4059-a26f-3944de7940ff",
+                  id: "6bffdfc5-83d2-5fdb-9358-767c1640d27e",
                   type: "letter",
                 },
               ],
-              id: "a8274524-276b-432e-bad2-211d75e41e05",
+              id: "1c1cc5fc-1fea-57c1-ac31-3e745ad9e898",
               screen_order: 1,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "記住這個音節的筆順和發音。",
             },
             {
               blocks: [
@@ -4338,13 +4334,13 @@ export const dumpPt = {
                     id: "a151eeeb-2537-463c-ae23-d484d1bcb835",
                     kana: "katakana",
                   },
-                  id: "d5bbb2c3-cffd-49f4-a9b6-cb0a8fcb685d",
+                  id: "e2803228-4197-5d53-8ef2-96206bfc8151",
                   type: "letter",
                 },
               ],
-              id: "a0fc81d2-de53-4265-a834-8881759b05c9",
+              id: "023116f7-bb6c-5291-8f91-fa3e3a92c26f",
               screen_order: 2,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "按正確的筆順書寫音節。",
             },
             {
               blocks: [
@@ -4355,13 +4351,13 @@ export const dumpPt = {
                     id: "11017078-148a-4a44-b3f7-21d1df02d981",
                     kana: "katakana",
                   },
-                  id: "cb5b7c9a-e056-4802-a7c0-d30a91ed0b29",
+                  id: "013ad8e9-b880-52b3-95ce-0e9a200fca28",
                   type: "letter",
                 },
               ],
-              id: "fe5c73ed-6cd9-4fd5-9e65-74bc1fe0c504",
+              id: "12e2f88c-86f1-50f0-9ff6-45a890924524",
               screen_order: 3,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "記住這個音節的筆順和發音。",
             },
             {
               blocks: [
@@ -4372,13 +4368,13 @@ export const dumpPt = {
                     id: "11017078-148a-4a44-b3f7-21d1df02d981",
                     kana: "katakana",
                   },
-                  id: "d9b8a2a9-4c03-4a1f-94c0-c8fec3a69787",
+                  id: "2f65de34-8667-5faa-bc8c-06e529f13a12",
                   type: "letter",
                 },
               ],
-              id: "baf7daae-28eb-408e-850d-85be1e2d0910",
+              id: "8c4aea69-bd78-5d96-b887-1bd29a0d44b5",
               screen_order: 4,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "按正確的筆順書寫音節。",
             },
             {
               blocks: [
@@ -4390,13 +4386,13 @@ export const dumpPt = {
                       ["ア", "tr:ア"],
                     ],
                   },
-                  id: "7a211b29-e90d-4ed6-a87c-f58143f87fb7",
+                  id: "1beaa61d-c099-5a6c-b8cc-5392ce84cec9",
                   type: "matching",
                 },
               ],
-              id: "227d959a-1bef-44c6-97ab-03fc2530acb8",
+              id: "f30a37b3-66be-5fbf-b35e-5f5c7e607514",
               screen_order: 5,
-              title: "Combine 「Katakana」 com sua transliteração.",
+              title: "將「片假名」與其羅馬字配對。",
             },
             {
               blocks: [
@@ -4407,13 +4403,13 @@ export const dumpPt = {
                     id: "bcbd90e2-fabc-4dcc-8022-02e5b650c822",
                     kana: "katakana",
                   },
-                  id: "60590572-182c-4802-9688-f3ea1aaab952",
+                  id: "b1fab7f7-fe1f-5a22-93be-a0332eb3cad7",
                   type: "letter",
                 },
               ],
-              id: "10c02199-6364-4173-b9bf-2156bf1cbeb2",
+              id: "a7510fef-956e-512f-90c3-b34fdaf8c6e6",
               screen_order: 6,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "記住這個音節的筆順和發音。",
             },
             {
               blocks: [
@@ -4424,23 +4420,23 @@ export const dumpPt = {
                     id: "bcbd90e2-fabc-4dcc-8022-02e5b650c822",
                     kana: "katakana",
                   },
-                  id: "250f0f34-6d26-4dea-bfc0-2da84bb97f21",
+                  id: "95dc915c-26f9-5738-9da2-88c4ed544eca",
                   type: "letter",
                 },
               ],
-              id: "441c38e0-9ebd-4353-879a-43f6358a39f0",
+              id: "aeec50aa-dbfb-5fa7-9b26-a4d93de6e6b2",
               screen_order: 7,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "按正確的筆順書寫音節。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Katakana",
-                    title: "tr:ウ",
+                    sub_title: "片假名",
+                    title: "tr:ア",
                   },
-                  id: "4d252e3c-0469-45b8-a2eb-d4b163342a0a",
+                  id: "f21fb9a0-5b00-5208-af8a-5d1fbd8168c9",
                   type: "title",
                 },
                 {
@@ -4452,22 +4448,22 @@ export const dumpPt = {
                         title: "イ",
                       },
                       {
-                        isTrue: true,
+                        isTrue: false,
                         title: "ウ",
                       },
                       {
-                        isTrue: false,
+                        isTrue: true,
                         title: "ア",
                       },
                     ],
                   },
-                  id: "006f53d0-c765-4ebd-9f35-d28e6273d41d",
+                  id: "de93f395-0595-55f5-972d-af2cacc42c67",
                   type: "choice",
                 },
               ],
-              id: "47a17507-ed16-4908-baed-14c6046e5840",
+              id: "600cf070-fa05-516b-aac6-907623d730e5",
               screen_order: 8,
-              title: "Selecione a sílaba.",
+              title: "選擇音節。",
             },
             {
               blocks: [
@@ -4479,13 +4475,13 @@ export const dumpPt = {
                       ["イ", "tr:イ"],
                     ],
                   },
-                  id: "75c46d3b-e81a-41c8-a94a-99c7860d1d8b",
+                  id: "c7ad5b76-60ee-5d2f-9cef-506ee9b11508",
                   type: "matching",
                 },
               ],
-              id: "f9615fda-c7df-4814-b6c8-c34ab28d81b2",
+              id: "ff8458a2-b6af-571e-b827-29e830304f17",
               screen_order: 9,
-              title: "Combine 「Katakana」 com sua transliteração.",
+              title: "將「片假名」與其羅馬字配對。",
             },
             {
               blocks: [
@@ -4496,13 +4492,13 @@ export const dumpPt = {
                     id: "70680d73-c9f9-4b4e-aac4-c82caa49668c",
                     kana: "katakana",
                   },
-                  id: "6f4dc1de-b756-416c-a751-1437fd6510d4",
+                  id: "f7e63b39-3022-561c-9382-3e7591bd698b",
                   type: "letter",
                 },
               ],
-              id: "41cbe3f0-5192-46b0-802d-453251f487d6",
+              id: "35b05f92-8914-5d3a-a1f5-d276523830d0",
               screen_order: 10,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "記住這個音節的筆順和發音。",
             },
             {
               blocks: [
@@ -4513,13 +4509,13 @@ export const dumpPt = {
                     id: "70680d73-c9f9-4b4e-aac4-c82caa49668c",
                     kana: "katakana",
                   },
-                  id: "b2867b94-5080-4757-a5ed-e4fd5e22b28f",
+                  id: "3f7a9949-9f2e-59ac-bf76-81bf5ee40eac",
                   type: "letter",
                 },
               ],
-              id: "948496c0-b76f-45cc-a549-81f0ca57395b",
+              id: "495c589a-e30f-5ddb-a56d-3cc4f3c0eaa8",
               screen_order: 11,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "按正確的筆順書寫音節。",
             },
             {
               blocks: [
@@ -4531,13 +4527,13 @@ export const dumpPt = {
                       ["ウ", "tr:ウ"],
                     ],
                   },
-                  id: "460826a9-11f8-403b-a596-c2c245741446",
+                  id: "3b4258f0-2c6a-5ce8-83d6-469ae11db005",
                   type: "matching",
                 },
               ],
-              id: "a826c96e-a4e2-465b-9096-186548021aaa",
+              id: "abd50dc5-c3a1-55dc-9941-176717b3299b",
               screen_order: 12,
-              title: "Combine 「Katakana」 com sua transliteração.",
+              title: "將「片假名」與其羅馬字配對。",
             },
             {
               blocks: [
@@ -4548,13 +4544,13 @@ export const dumpPt = {
                     id: "e430643d-5624-432e-b53e-974447baad22",
                     kana: "katakana",
                   },
-                  id: "22cf8b56-4a71-4125-b642-c6a4da9fb136",
+                  id: "09c7cc6a-97e7-5127-af72-9bf9d9b1a095",
                   type: "letter",
                 },
               ],
-              id: "8bdd74d6-4892-4862-9de1-b20f5bdf9c37",
+              id: "0d4ca552-0b09-56fe-9643-ccd62c34079c",
               screen_order: 13,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "記住這個音節的筆順和發音。",
             },
             {
               blocks: [
@@ -4565,60 +4561,60 @@ export const dumpPt = {
                     id: "e430643d-5624-432e-b53e-974447baad22",
                     kana: "katakana",
                   },
-                  id: "3f321e6c-b873-49d5-a773-1fa19d4fa2a4",
+                  id: "2629611b-c523-503a-be2b-5fef68f67502",
                   type: "letter",
                 },
               ],
-              id: "6a7cf014-4162-407a-9e29-bc95b50994ed",
+              id: "c12ad8d7-5400-5eb6-ab36-e0aab7709eca",
               screen_order: 14,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "按正確的筆順書寫音節。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Katakana",
+                    sub_title: "片假名",
                     title: "tr:エ",
                   },
-                  id: "f78c7537-1e70-4060-bb9d-41f731258b11",
+                  id: "7120eae8-65fd-5b25-b6a2-14f830424d0c",
                   type: "title",
                 },
                 {
                   block_order: 2,
                   content: {
                     answers: [
-                      {
-                        isTrue: false,
-                        title: "オ",
-                      },
                       {
                         isTrue: true,
                         title: "エ",
                       },
                       {
                         isTrue: false,
-                        title: "ア",
+                        title: "イ",
+                      },
+                      {
+                        isTrue: false,
+                        title: "オ",
                       },
                     ],
                   },
-                  id: "ea7a730d-30ea-4705-9f5c-ee04376477d7",
+                  id: "239a5220-27f2-5811-b56c-2311dd73e8d5",
                   type: "choice",
                 },
               ],
-              id: "289efbfa-5dc3-44f7-a3f0-469ab46660ac",
+              id: "11208d3a-d11d-5e8e-9c16-8200fe70ef7c",
               screen_order: 15,
-              title: "Selecione a sílaba.",
+              title: "選擇音節。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Katakana",
-                    title: "オ, ウ, ア, エ, イ",
+                    sub_title: "片假名",
+                    title: "エ, イ, オ, ア, ウ",
                   },
-                  id: "71973dcf-f48c-4004-81e8-07000796b7ae",
+                  id: "18db535e-4d5d-5ebb-878e-ab0f46074d88",
                   type: "title",
                 },
                 {
@@ -4627,31 +4623,31 @@ export const dumpPt = {
                     answers: [
                       {
                         isTrue: false,
-                        title: "tr:ウ, tr:エ, tr:オ, tr:ア, tr:イ",
+                        title: "tr:ウ, tr:エ, tr:ア, tr:イ, tr:オ",
                       },
                       {
                         isTrue: true,
-                        title: "tr:オ, tr:ウ, tr:ア, tr:エ, tr:イ",
+                        title: "tr:エ, tr:イ, tr:オ, tr:ア, tr:ウ",
                       },
                     ],
                   },
-                  id: "deb5057e-835f-469d-b8e1-6b161d6bbb3e",
+                  id: "3722f0b1-c7f5-559f-b645-c5c22ef4a093",
                   type: "choice",
                 },
               ],
-              id: "99f552ea-a3dc-40a3-8136-07ffd2ef014c",
+              id: "ca1347bd-a959-5219-bed4-f47294cdbacc",
               screen_order: 16,
-              title: "Escolha a sequência correta.",
+              title: "選擇正確的順序。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Katakana",
-                    title: "エ, ウ, オ, イ, ア",
+                    sub_title: "片假名",
+                    title: "エ, イ, ウ, ア, オ",
                   },
-                  id: "68b4a525-cf2d-436e-b3fb-b7b98f8b8c71",
+                  id: "bd4a2680-b9e2-5c31-8c17-ac753fbcb026",
                   type: "title",
                 },
                 {
@@ -4660,81 +4656,81 @@ export const dumpPt = {
                     answers: [
                       {
                         isTrue: false,
-                        title: "tr:ア, tr:オ, tr:エ, tr:ウ, tr:イ",
+                        title: "tr:ア, tr:イ, tr:オ, tr:ウ, tr:エ",
                       },
                       {
                         isTrue: true,
-                        title: "tr:エ, tr:ウ, tr:オ, tr:イ, tr:ア",
+                        title: "tr:エ, tr:イ, tr:ウ, tr:ア, tr:オ",
                       },
                     ],
                   },
-                  id: "e4c91eb7-4a6f-4761-8219-7e88e5a51c4c",
+                  id: "08a8eae3-0121-5e3c-ba8b-6dfd92f2919e",
                   type: "choice",
                 },
               ],
-              id: "b8b15eef-8d33-417e-b4a8-8328bf3f881d",
+              id: "63750d4d-c108-54fa-8fb2-8931b754dd6a",
               screen_order: 17,
-              title: "Escolha a sequência correta.",
+              title: "選擇正確的順序。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Katakana",
-                    title: "tr:エ, tr:イ, tr:ウ, tr:ア, tr:オ",
+                    sub_title: "片假名",
+                    title: "tr:オ, tr:ウ, tr:エ, tr:ア, tr:イ",
                   },
-                  id: "4d10933d-c843-420f-a7b9-05795a2118cd",
+                  id: "eb44ff21-e3b5-5d50-b95c-c086698ce796",
                   type: "title",
                 },
                 {
                   block_order: 2,
                   content: {
-                    sequence: ["エ", "イ", "ウ", "ア", "オ"],
+                    sequence: ["オ", "ウ", "エ", "ア", "イ"],
                   },
-                  id: "170c327c-f4fb-481b-9ae8-cf4873813f1d",
+                  id: "faf68455-1c2b-5376-8a03-96ba7ac22371",
                   type: "sequence",
                 },
               ],
-              id: "1fe9103d-7bdd-4bb0-9a6c-205307f50568",
+              id: "9ab1bea2-cff7-55d7-8da9-713861bf8f51",
               screen_order: 18,
-              title: "Organize as sílabas na ordem correta.",
+              title: "將音節按正確的順序排列。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Katakana",
-                    title: "tr:ア, tr:オ, tr:ウ, tr:イ, tr:エ",
+                    sub_title: "片假名",
+                    title: "tr:ウ, tr:ア, tr:オ, tr:エ, tr:イ",
                   },
-                  id: "6e91f1fd-1a27-4412-8ad6-29e03e3b862c",
+                  id: "0630bfd8-77b8-5d3b-9056-21e787d9b41a",
                   type: "title",
                 },
                 {
                   block_order: 2,
                   content: {
-                    sequence: ["ア", "オ", "ウ", "イ", "エ"],
+                    sequence: ["ウ", "ア", "オ", "エ", "イ"],
                   },
-                  id: "3ad6b5ea-b715-494f-a7ad-94e0188c9be0",
+                  id: "12b940c6-5bc9-52a3-9d41-2daf6318a5d3",
                   type: "sequence",
                 },
               ],
-              id: "f2f84bab-3075-430d-80a0-9c26da6ab81d",
+              id: "e347704d-3bad-5825-a76e-bd305d04fcda",
               screen_order: 19,
-              title: "Organize as sílabas na ordem correta.",
+              title: "將音節按正確的順序排列。",
             },
           ],
-          subtitle: "Sílabas: ア、イ、ウ、エ、オ",
-          title: "Lição 11",
-          topic_id: "8912b4f4-2c04-404f-a64e-bfb712c677f5",
+          subtitle: "音節：ア、イ、ウ、エ、オ",
+          title: "第 11 課",
+          topic_id: "921d01de-29d3-409e-abbc-b2d88ab40960",
         },
         {
-          expanded_subtitle: "Aprenda a ler e escrever as sílabas na linha tr:か.",
-          expanded_title: "Katakana: tr:か, tr:き, tr:く, tr:け, tr:こ",
+          expanded_subtitle: "學習讀寫tr:か行的音節。",
+          expanded_title: "片假名: tr:か, tr:き, tr:く, tr:け, tr:こ",
           icon: "https://nihongo.khvat.app/chapter2/Lesson12.jpg",
-          id: "e8df0a0f-b890-4a88-8ca8-495505ebf5bc",
-          last_updated: "2026-03-26T17:43:20.226Z",
+          id: "3b79667a-39d7-4999-b059-1223949b1e89",
+          last_updated: "2026-09-08T13:12:16.093Z",
           lesson_key: "alphabet/katakana&ka",
           lesson_order: 13,
           minimum_version: "2.4.1",
@@ -4748,13 +4744,13 @@ export const dumpPt = {
                     id: "22350aba-d254-48ba-811a-9d1448761042",
                     kana: "katakana",
                   },
-                  id: "0cc736c2-1bab-402f-ae54-51a7c0e4fba9",
+                  id: "e3c3c880-28c6-5f7c-bb40-c415e00f4a0e",
                   type: "letter",
                 },
               ],
-              id: "fc1109b8-ec83-436d-bf33-e48dfbe88826",
+              id: "e81a0180-b341-575c-8e88-1ba07c0c9390",
               screen_order: 1,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "記住這個音節的筆順和發音。",
             },
             {
               blocks: [
@@ -4765,13 +4761,13 @@ export const dumpPt = {
                     id: "22350aba-d254-48ba-811a-9d1448761042",
                     kana: "katakana",
                   },
-                  id: "8761d8e5-0dd6-4d60-bd69-099a449b131e",
+                  id: "8fab2450-6f00-5abc-a936-4e5bd3b91385",
                   type: "letter",
                 },
               ],
-              id: "aa121486-284d-44a7-80bd-3e3bbf49a324",
+              id: "f86a7ef0-09cb-56e0-bde9-e74c4365b6fc",
               screen_order: 2,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "按正確的筆順書寫音節。",
             },
             {
               blocks: [
@@ -4782,13 +4778,13 @@ export const dumpPt = {
                     id: "a1d45e3b-a1c9-4409-8d39-725a0a35899d",
                     kana: "katakana",
                   },
-                  id: "07cb3808-562f-43fa-a726-75a348bf19be",
+                  id: "4e8525d3-3936-5a61-a2ae-3e4412162468",
                   type: "letter",
                 },
               ],
-              id: "cb44af68-e946-4669-bc0b-2513f355d670",
+              id: "7a5a0b5c-a015-575e-8221-3d754f1795a1",
               screen_order: 3,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "記住這個音節的筆順和發音。",
             },
             {
               blocks: [
@@ -4799,13 +4795,13 @@ export const dumpPt = {
                     id: "a1d45e3b-a1c9-4409-8d39-725a0a35899d",
                     kana: "katakana",
                   },
-                  id: "75f89cbf-ca66-4d51-9220-293f5c727512",
+                  id: "60de318c-c6f5-5f9d-b0fe-69c3dbc4d13c",
                   type: "letter",
                 },
               ],
-              id: "c8afaaf4-cd5a-46c3-97f7-89816e098df5",
+              id: "f5469eb3-47e4-55c5-b31a-b6fc3e2cadf1",
               screen_order: 4,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "按正確的筆順書寫音節。",
             },
             {
               blocks: [
@@ -4817,13 +4813,13 @@ export const dumpPt = {
                       ["カ", "tr:カ"],
                     ],
                   },
-                  id: "1c41e9b9-a79c-4139-a6cd-2d2773f4b709",
+                  id: "6610b0d6-b22d-57f6-a57e-cc3287bb56ce",
                   type: "matching",
                 },
               ],
-              id: "577ddbd7-99de-438b-9a2d-e2eef1f891d3",
+              id: "909b8acd-e1c0-529b-9fc1-82d817c86f72",
               screen_order: 5,
-              title: "Combine 「Katakana」 com sua transliteração.",
+              title: "將「片假名」與其羅馬字配對。",
             },
             {
               blocks: [
@@ -4834,13 +4830,13 @@ export const dumpPt = {
                     id: "51cd83e5-6167-4bcc-a3e6-6b246f2ca2d1",
                     kana: "katakana",
                   },
-                  id: "31b4b4cb-abde-47d1-b404-6bdc1f36b87b",
+                  id: "592030c0-abe8-5698-99d2-dee4cbc2da75",
                   type: "letter",
                 },
               ],
-              id: "0327e91f-25dc-460c-90ea-d9967559d602",
+              id: "d62ecbc9-26f2-5e82-aad7-d3232abd3e5d",
               screen_order: 6,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "記住這個音節的筆順和發音。",
             },
             {
               blocks: [
@@ -4851,23 +4847,164 @@ export const dumpPt = {
                     id: "51cd83e5-6167-4bcc-a3e6-6b246f2ca2d1",
                     kana: "katakana",
                   },
-                  id: "3a2dd6c9-d96c-40eb-890e-69399d84897d",
+                  id: "c8c84b68-6fda-5bf9-b5dc-cca118b34b14",
                   type: "letter",
                 },
               ],
-              id: "70b472c0-2946-4618-a670-aa6c8f9b75cf",
+              id: "6accf25e-c1e3-50ca-bd65-78190e118657",
               screen_order: 7,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "按正確的筆順書寫音節。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Katakana",
+                    sub_title: "片假名",
                     title: "tr:キ",
                   },
-                  id: "7b9cd7ca-00c2-42bf-b661-61fa928413a5",
+                  id: "6e5b2f3f-6109-53d5-b27e-b24d8af59987",
+                  type: "title",
+                },
+                {
+                  block_order: 2,
+                  content: {
+                    answers: [
+                      {
+                        isTrue: false,
+                        title: "ク",
+                      },
+                      {
+                        isTrue: false,
+                        title: "カ",
+                      },
+                      {
+                        isTrue: true,
+                        title: "キ",
+                      },
+                    ],
+                  },
+                  id: "983fd1e9-2a6d-508d-b945-0d343578596b",
+                  type: "choice",
+                },
+              ],
+              id: "ebd5ff41-d54b-5a8c-b4ce-6007c8f059e7",
+              screen_order: 8,
+              title: "選擇音節。",
+            },
+            {
+              blocks: [
+                {
+                  block_order: 1,
+                  content: {
+                    pairs: [
+                      ["ク", "tr:ク"],
+                      ["キ", "tr:キ"],
+                    ],
+                  },
+                  id: "9551de00-1e6b-5072-847e-1126bc477016",
+                  type: "matching",
+                },
+              ],
+              id: "bd7f606b-9249-539d-b85f-d14c060da0a2",
+              screen_order: 9,
+              title: "將「片假名」與其羅馬字配對。",
+            },
+            {
+              blocks: [
+                {
+                  block_order: 1,
+                  content: {
+                    exercise: false,
+                    id: "9a84b07b-696a-4abd-83f2-70ff8ec66a66",
+                    kana: "katakana",
+                  },
+                  id: "cc85e1a4-3c39-56f9-a02b-2aa9cfa7caa8",
+                  type: "letter",
+                },
+              ],
+              id: "ed41ada7-db7d-5a98-9793-2018e3f882c8",
+              screen_order: 10,
+              title: "記住這個音節的筆順和發音。",
+            },
+            {
+              blocks: [
+                {
+                  block_order: 1,
+                  content: {
+                    exercise: true,
+                    id: "9a84b07b-696a-4abd-83f2-70ff8ec66a66",
+                    kana: "katakana",
+                  },
+                  id: "b03b57e5-36c7-5f60-8477-ddf09ed43cce",
+                  type: "letter",
+                },
+              ],
+              id: "3f400fbc-67fc-5e48-8fee-a77f811754ad",
+              screen_order: 11,
+              title: "按正確的筆順書寫音節。",
+            },
+            {
+              blocks: [
+                {
+                  block_order: 1,
+                  content: {
+                    pairs: [
+                      ["ケ", "tr:ケ"],
+                      ["ク", "tr:ク"],
+                    ],
+                  },
+                  id: "db41ecf6-901c-5714-867f-f636743015a7",
+                  type: "matching",
+                },
+              ],
+              id: "f9ef6e16-331f-535e-883d-ed3c728573ea",
+              screen_order: 12,
+              title: "將「片假名」與其羅馬字配對。",
+            },
+            {
+              blocks: [
+                {
+                  block_order: 1,
+                  content: {
+                    exercise: false,
+                    id: "8a2655c3-4553-4f58-83db-069439b11154",
+                    kana: "katakana",
+                  },
+                  id: "63a2e84c-c176-5eb3-ad08-49664103c26a",
+                  type: "letter",
+                },
+              ],
+              id: "7e2fa34b-0d6f-5da8-826e-d594a694312a",
+              screen_order: 13,
+              title: "記住這個音節的筆順和發音。",
+            },
+            {
+              blocks: [
+                {
+                  block_order: 1,
+                  content: {
+                    exercise: true,
+                    id: "8a2655c3-4553-4f58-83db-069439b11154",
+                    kana: "katakana",
+                  },
+                  id: "489d421d-b237-5837-a97d-7830912221ac",
+                  type: "letter",
+                },
+              ],
+              id: "53bbeb7c-3868-5e90-bfe2-30a2789a8f0a",
+              screen_order: 14,
+              title: "按正確的筆順書寫音節。",
+            },
+            {
+              blocks: [
+                {
+                  block_order: 1,
+                  content: {
+                    sub_title: "片假名",
+                    title: "tr:カ",
+                  },
+                  id: "ee61346d-c166-5620-883a-e8034f76214a",
                   type: "title",
                 },
                 {
@@ -4880,172 +5017,31 @@ export const dumpPt = {
                       },
                       {
                         isTrue: true,
+                        title: "カ",
+                      },
+                      {
+                        isTrue: false,
                         title: "キ",
                       },
-                      {
-                        isTrue: false,
-                        title: "カ",
-                      },
                     ],
                   },
-                  id: "60727828-6fee-4ecc-a8f3-8a2aef9d0303",
+                  id: "c4dfc07b-8be1-5139-99e0-914dd34b5171",
                   type: "choice",
                 },
               ],
-              id: "ead81715-75f8-4378-8387-4784a76f1345",
-              screen_order: 8,
-              title: "Selecione a sílaba.",
-            },
-            {
-              blocks: [
-                {
-                  block_order: 1,
-                  content: {
-                    pairs: [
-                      ["ク", "tr:ク"],
-                      ["キ", "tr:キ"],
-                    ],
-                  },
-                  id: "770799b8-93bc-4a09-aab2-efd8792ce94f",
-                  type: "matching",
-                },
-              ],
-              id: "5442309e-d9f0-4a03-8448-33e5d0e000b8",
-              screen_order: 9,
-              title: "Combine 「Katakana」 com sua transliteração.",
-            },
-            {
-              blocks: [
-                {
-                  block_order: 1,
-                  content: {
-                    exercise: false,
-                    id: "9a84b07b-696a-4abd-83f2-70ff8ec66a66",
-                    kana: "katakana",
-                  },
-                  id: "bf20c777-b26b-4e56-b836-3ecada616355",
-                  type: "letter",
-                },
-              ],
-              id: "5a03d504-c105-446f-b479-259161fd50f7",
-              screen_order: 10,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
-            },
-            {
-              blocks: [
-                {
-                  block_order: 1,
-                  content: {
-                    exercise: true,
-                    id: "9a84b07b-696a-4abd-83f2-70ff8ec66a66",
-                    kana: "katakana",
-                  },
-                  id: "aff200e2-9206-4388-8963-6286eabadfd3",
-                  type: "letter",
-                },
-              ],
-              id: "5e8e97dd-d53c-4897-b5f1-ae29f4f54f45",
-              screen_order: 11,
-              title: "Escreva a sílaba na ordem correta dos traços.",
-            },
-            {
-              blocks: [
-                {
-                  block_order: 1,
-                  content: {
-                    pairs: [
-                      ["ケ", "tr:ケ"],
-                      ["ク", "tr:ク"],
-                    ],
-                  },
-                  id: "277dfb95-75d8-4244-ba02-11b9ee4c1595",
-                  type: "matching",
-                },
-              ],
-              id: "60a36f4d-3911-428d-bf30-c00f7ec17329",
-              screen_order: 12,
-              title: "Combine 「Katakana」 com sua transliteração.",
-            },
-            {
-              blocks: [
-                {
-                  block_order: 1,
-                  content: {
-                    exercise: false,
-                    id: "8a2655c3-4553-4f58-83db-069439b11154",
-                    kana: "katakana",
-                  },
-                  id: "c6115d71-f2a6-4dca-b126-01c3961c1780",
-                  type: "letter",
-                },
-              ],
-              id: "7784b018-be64-40d8-af6c-0cdfde223589",
-              screen_order: 13,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
-            },
-            {
-              blocks: [
-                {
-                  block_order: 1,
-                  content: {
-                    exercise: true,
-                    id: "8a2655c3-4553-4f58-83db-069439b11154",
-                    kana: "katakana",
-                  },
-                  id: "5c590fa4-f453-47d0-b2a6-531b6e7e5372",
-                  type: "letter",
-                },
-              ],
-              id: "790e8b35-7bf9-4542-85d0-f9445c2c8af9",
-              screen_order: 14,
-              title: "Escreva a sílaba na ordem correta dos traços.",
-            },
-            {
-              blocks: [
-                {
-                  block_order: 1,
-                  content: {
-                    sub_title: "Katakana",
-                    title: "tr:カ",
-                  },
-                  id: "cbbce636-8396-486c-bc1d-15208d5f2f1a",
-                  type: "title",
-                },
-                {
-                  block_order: 2,
-                  content: {
-                    answers: [
-                      {
-                        isTrue: true,
-                        title: "カ",
-                      },
-                      {
-                        isTrue: false,
-                        title: "コ",
-                      },
-                      {
-                        isTrue: false,
-                        title: "ケ",
-                      },
-                    ],
-                  },
-                  id: "aab4881e-f9d7-4e60-b9ef-f819564a5c35",
-                  type: "choice",
-                },
-              ],
-              id: "bcdebbe2-882b-4589-be97-868c7158e00b",
+              id: "cc8d0109-964f-5559-ad22-7ad25009e485",
               screen_order: 15,
-              title: "Selecione a sílaba.",
+              title: "選擇音節。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Katakana",
-                    title: "コ, ケ, キ, ク, カ",
+                    sub_title: "片假名",
+                    title: "ク, ケ, キ, カ, コ",
                   },
-                  id: "3bbcd0e5-c652-4440-afff-1121d328cedb",
+                  id: "b3b60a0e-86d7-590d-a398-f2ce4e7878f2",
                   type: "title",
                 },
                 {
@@ -5058,27 +5054,27 @@ export const dumpPt = {
                       },
                       {
                         isTrue: true,
-                        title: "tr:コ, tr:ケ, tr:キ, tr:ク, tr:カ",
+                        title: "tr:ク, tr:ケ, tr:キ, tr:カ, tr:コ",
                       },
                     ],
                   },
-                  id: "6225a967-1a23-442d-850a-40a9bf24ed10",
+                  id: "ab732e7f-e64c-5133-8443-189c6cc1c8bc",
                   type: "choice",
                 },
               ],
-              id: "df2b39ad-5087-4be4-886c-0424ee88d62d",
+              id: "26d8e528-cca8-5d8f-ba96-7eb71b26c518",
               screen_order: 16,
-              title: "Escolha a sequência correta.",
+              title: "選擇正確的順序。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Katakana",
-                    title: "キ, カ, コ, ク, ケ",
+                    sub_title: "片假名",
+                    title: "ク, キ, ケ, コ, カ",
                   },
-                  id: "d3b04072-0a5c-48c3-aa21-850b0e7aa359",
+                  id: "f338fa4e-0232-5399-90be-efaf64a94f89",
                   type: "title",
                 },
                 {
@@ -5086,82 +5082,82 @@ export const dumpPt = {
                   content: {
                     answers: [
                       {
-                        isTrue: true,
-                        title: "tr:キ, tr:カ, tr:コ, tr:ク, tr:ケ",
+                        isTrue: false,
+                        title: "tr:コ, tr:キ, tr:カ, tr:ケ, tr:ク",
                       },
                       {
-                        isTrue: false,
-                        title: "tr:コ, tr:カ, tr:ケ, tr:キ, tr:ク",
+                        isTrue: true,
+                        title: "tr:ク, tr:キ, tr:ケ, tr:コ, tr:カ",
                       },
                     ],
                   },
-                  id: "fb1ffe7a-6efb-4dc8-8623-26356809d0ce",
+                  id: "b64d7121-7296-5c84-9cc6-f49f127f59de",
                   type: "choice",
                 },
               ],
-              id: "cd95322d-83a1-4b07-a132-d9626457d828",
+              id: "96a02941-08a0-5fd6-bd8e-5f676cf2b427",
               screen_order: 17,
-              title: "Escolha a sequência correta.",
+              title: "選擇正確的順序。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Katakana",
-                    title: "tr:カ, tr:ク, tr:キ, tr:ケ, tr:コ",
+                    sub_title: "片假名",
+                    title: "tr:カ, tr:キ, tr:ケ, tr:コ, tr:ク",
                   },
-                  id: "aa03eb23-7c23-4578-9f22-38c1d3eb4fc8",
+                  id: "7d8df50c-3625-5742-b5e5-1330e46b4ac2",
                   type: "title",
                 },
                 {
                   block_order: 2,
                   content: {
-                    sequence: ["カ", "ク", "キ", "ケ", "コ"],
+                    sequence: ["カ", "キ", "ケ", "コ", "ク"],
                   },
-                  id: "92da99d0-81b9-49ed-a7e9-83ad3e8e32d0",
+                  id: "83061f9e-a568-5bdb-b04e-37d68514b524",
                   type: "sequence",
                 },
               ],
-              id: "66fdffac-2ad9-4238-8350-c428df4be1c7",
+              id: "277e2c08-efde-5119-af50-6711471a4650",
               screen_order: 18,
-              title: "Organize as sílabas na ordem correta.",
+              title: "將音節按正確的順序排列。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Katakana",
-                    title: "tr:ク, tr:ケ, tr:カ, tr:キ, tr:コ",
+                    sub_title: "片假名",
+                    title: "tr:キ, tr:ケ, tr:コ, tr:ク, tr:カ",
                   },
-                  id: "2c407ece-ae3b-4aad-93e0-53d0f6e2c230",
+                  id: "3aca6da7-ffde-5ee7-8da8-3fdf7d9de58f",
                   type: "title",
                 },
                 {
                   block_order: 2,
                   content: {
-                    sequence: ["ク", "ケ", "カ", "キ", "コ"],
+                    sequence: ["キ", "ケ", "コ", "ク", "カ"],
                   },
-                  id: "a5af854d-0a99-45c5-b0dd-c9ecdf7fa6c3",
+                  id: "4117b034-3758-58ae-97b8-444718967e3b",
                   type: "sequence",
                 },
               ],
-              id: "02bbde6c-906b-4389-a27c-fa45ed6f4e94",
+              id: "e62c4030-c8f6-5ff1-9624-6e2783516983",
               screen_order: 19,
-              title: "Organize as sílabas na ordem correta.",
+              title: "將音節按正確的順序排列。",
             },
           ],
-          subtitle: "Sílabas: カ、キ、ク、ケ、コ",
-          title: "Lição 12",
-          topic_id: "8912b4f4-2c04-404f-a64e-bfb712c677f5",
+          subtitle: "音節：カ、キ、ク、ケ、コ",
+          title: "第 12 課",
+          topic_id: "921d01de-29d3-409e-abbc-b2d88ab40960",
         },
         {
-          expanded_subtitle: "Aprenda a ler e escrever as sílabas na linha tr:さ.",
-          expanded_title: "Katakana: tr:さ, tr:し, tr:す, tr:せ, tr:そ",
+          expanded_subtitle: "學習讀寫tr:さ行的音節。",
+          expanded_title: "片假名: tr:さ, tr:し, tr:す, tr:せ, tr:そ",
           icon: "https://nihongo.khvat.app/chapter2/Lesson13.jpg",
-          id: "df8f7a7b-12ae-4cb3-b027-705d0e3f23c5",
-          last_updated: "2026-03-26T17:43:20.226Z",
+          id: "2edfe30c-4b69-432b-b0e5-a7f6ddc804dd",
+          last_updated: "2026-09-08T13:12:16.093Z",
           lesson_key: "alphabet/katakana&sa",
           lesson_order: 14,
           minimum_version: "2.4.1",
@@ -5175,13 +5171,13 @@ export const dumpPt = {
                     id: "5bc17c31-0c79-45dd-be5c-41cf67a5baf0",
                     kana: "katakana",
                   },
-                  id: "1e80b81e-da96-4129-99d3-ac4bb8682620",
+                  id: "b9363842-5f24-5d3f-9ee0-1b1a8e1e03df",
                   type: "letter",
                 },
               ],
-              id: "11ada213-6ee0-4153-b8c2-c0e73a6e6f44",
+              id: "82f05381-401c-5e8a-b630-9c02f22393f7",
               screen_order: 1,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "記住這個音節的筆順和發音。",
             },
             {
               blocks: [
@@ -5192,13 +5188,13 @@ export const dumpPt = {
                     id: "5bc17c31-0c79-45dd-be5c-41cf67a5baf0",
                     kana: "katakana",
                   },
-                  id: "0437747a-cdc0-471d-a1a3-e71bb063a005",
+                  id: "c16e9ebe-3de1-5945-a6ea-6d0954cd0e8e",
                   type: "letter",
                 },
               ],
-              id: "7833919b-ed3c-4f68-ae44-449ff72c3bd9",
+              id: "e5a44b69-2ebd-5eae-994e-b5a19453898f",
               screen_order: 2,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "按正確的筆順書寫音節。",
             },
             {
               blocks: [
@@ -5209,13 +5205,13 @@ export const dumpPt = {
                     id: "0d44c671-edf2-4c9d-b62d-e3f5ae8ea7b2",
                     kana: "katakana",
                   },
-                  id: "d299e539-ae7d-409e-9a63-abcd3288ba89",
+                  id: "2c8a29fe-6e9c-5552-82da-4f53f64678ad",
                   type: "letter",
                 },
               ],
-              id: "7652a415-1c18-49b2-a80b-bdeca4039d52",
+              id: "954743a6-8c0b-5ac0-b52f-fb7b4c56a42c",
               screen_order: 3,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "記住這個音節的筆順和發音。",
             },
             {
               blocks: [
@@ -5226,13 +5222,13 @@ export const dumpPt = {
                     id: "0d44c671-edf2-4c9d-b62d-e3f5ae8ea7b2",
                     kana: "katakana",
                   },
-                  id: "08e4940c-499f-48e5-9646-bbe693c36182",
+                  id: "60d36077-0967-538f-a5ec-024edba82e18",
                   type: "letter",
                 },
               ],
-              id: "998a9735-6d45-449e-8200-a073ddc73563",
+              id: "11379f26-432c-5711-9235-71b9a668f0d2",
               screen_order: 4,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "按正確的筆順書寫音節。",
             },
             {
               blocks: [
@@ -5244,13 +5240,13 @@ export const dumpPt = {
                       ["サ", "tr:サ"],
                     ],
                   },
-                  id: "967dd0ad-75d5-4197-837d-6522ff3d9a89",
+                  id: "ed9ace48-8e5c-536c-8955-51d4659a435d",
                   type: "matching",
                 },
               ],
-              id: "726b49f0-dd43-449f-b451-31853598466c",
+              id: "18850d3b-ba2e-5269-a522-6989a3982cd2",
               screen_order: 5,
-              title: "Combine 「Katakana」 com sua transliteração.",
+              title: "將「片假名」與其羅馬字配對。",
             },
             {
               blocks: [
@@ -5261,13 +5257,13 @@ export const dumpPt = {
                     id: "c495772d-7048-4423-a993-60ce5ce325a2",
                     kana: "katakana",
                   },
-                  id: "5dd96177-ef54-45a9-a954-080ac44e96d0",
+                  id: "9ccc21d9-09ed-5de1-9dcb-5bb9520ca661",
                   type: "letter",
                 },
               ],
-              id: "5f73dc7a-cd33-4525-b0b0-9122b8dc4e50",
+              id: "d89d756d-5450-5762-83fb-7a4b9fe9b0a0",
               screen_order: 6,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "記住這個音節的筆順和發音。",
             },
             {
               blocks: [
@@ -5278,23 +5274,164 @@ export const dumpPt = {
                     id: "c495772d-7048-4423-a993-60ce5ce325a2",
                     kana: "katakana",
                   },
-                  id: "219705b7-aad8-4730-8362-af78e7c821aa",
+                  id: "2b3fd4f6-2192-592f-be12-802173e44e3b",
                   type: "letter",
                 },
               ],
-              id: "c7634be1-4552-40ed-ad20-18639e1429e5",
+              id: "61900c14-5089-5844-8b98-dcd82374d19d",
               screen_order: 7,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "按正確的筆順書寫音節。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Katakana",
-                    title: "tr:ス",
+                    sub_title: "片假名",
+                    title: "tr:サ",
                   },
-                  id: "fb54f382-86f1-46be-98be-786694ed8b37",
+                  id: "721c8081-8604-5be1-881a-edb996872f5c",
+                  type: "title",
+                },
+                {
+                  block_order: 2,
+                  content: {
+                    answers: [
+                      {
+                        isTrue: true,
+                        title: "サ",
+                      },
+                      {
+                        isTrue: false,
+                        title: "シ",
+                      },
+                      {
+                        isTrue: false,
+                        title: "ス",
+                      },
+                    ],
+                  },
+                  id: "d2ee5d17-7c73-5596-be97-48a1d2a3204e",
+                  type: "choice",
+                },
+              ],
+              id: "c87e0645-4dd1-53d6-8f2f-add5e8f197b9",
+              screen_order: 8,
+              title: "選擇音節。",
+            },
+            {
+              blocks: [
+                {
+                  block_order: 1,
+                  content: {
+                    pairs: [
+                      ["ス", "tr:ス"],
+                      ["シ", "tr:シ"],
+                    ],
+                  },
+                  id: "50a894f4-5de0-5e4a-813e-4a82475fd58f",
+                  type: "matching",
+                },
+              ],
+              id: "15e63018-a2b1-5a94-9600-e75a2c67adda",
+              screen_order: 9,
+              title: "將「片假名」與其羅馬字配對。",
+            },
+            {
+              blocks: [
+                {
+                  block_order: 1,
+                  content: {
+                    exercise: false,
+                    id: "0106956a-9090-4599-93a2-0be363bcf7bf",
+                    kana: "katakana",
+                  },
+                  id: "82ff1f5e-7199-5d77-913a-d0e0a5ceebd3",
+                  type: "letter",
+                },
+              ],
+              id: "a6b6d631-fdf6-5bd1-afbc-eddf186a33ea",
+              screen_order: 10,
+              title: "記住這個音節的筆順和發音。",
+            },
+            {
+              blocks: [
+                {
+                  block_order: 1,
+                  content: {
+                    exercise: true,
+                    id: "0106956a-9090-4599-93a2-0be363bcf7bf",
+                    kana: "katakana",
+                  },
+                  id: "b1fb4370-74aa-5472-a15c-beba2cc664ae",
+                  type: "letter",
+                },
+              ],
+              id: "0bae5cea-d96f-51e7-9fef-05dc0d7d0897",
+              screen_order: 11,
+              title: "按正確的筆順書寫音節。",
+            },
+            {
+              blocks: [
+                {
+                  block_order: 1,
+                  content: {
+                    pairs: [
+                      ["セ", "tr:セ"],
+                      ["ス", "tr:ス"],
+                    ],
+                  },
+                  id: "f710fab8-0138-546a-9af2-72351c0a478d",
+                  type: "matching",
+                },
+              ],
+              id: "c44c3692-00a8-5839-8846-b7025fddc55a",
+              screen_order: 12,
+              title: "將「片假名」與其羅馬字配對。",
+            },
+            {
+              blocks: [
+                {
+                  block_order: 1,
+                  content: {
+                    exercise: false,
+                    id: "3108807a-1d5e-47b3-9f06-514bc8096102",
+                    kana: "katakana",
+                  },
+                  id: "49cbe16d-9339-5245-a8f7-e069318a1653",
+                  type: "letter",
+                },
+              ],
+              id: "ef6b5679-3eee-5c52-a1af-c4d806f72ac2",
+              screen_order: 13,
+              title: "記住這個音節的筆順和發音。",
+            },
+            {
+              blocks: [
+                {
+                  block_order: 1,
+                  content: {
+                    exercise: true,
+                    id: "3108807a-1d5e-47b3-9f06-514bc8096102",
+                    kana: "katakana",
+                  },
+                  id: "62a122e5-0875-5bdf-b329-f38f59030a82",
+                  type: "letter",
+                },
+              ],
+              id: "d543938c-026c-5897-a416-996b3fcf9685",
+              screen_order: 14,
+              title: "按正確的筆順書寫音節。",
+            },
+            {
+              blocks: [
+                {
+                  block_order: 1,
+                  content: {
+                    sub_title: "片假名",
+                    title: "tr:セ",
+                  },
+                  id: "ef309fc7-37c5-5747-84fa-e509acf2f534",
                   type: "title",
                 },
                 {
@@ -5311,168 +5448,27 @@ export const dumpPt = {
                       },
                       {
                         isTrue: true,
-                        title: "ス",
-                      },
-                    ],
-                  },
-                  id: "95266e46-71f5-490f-b712-aa902a1b6f7f",
-                  type: "choice",
-                },
-              ],
-              id: "0164c2b6-4c82-4878-ba4b-3f1c60696dde",
-              screen_order: 8,
-              title: "Selecione a sílaba.",
-            },
-            {
-              blocks: [
-                {
-                  block_order: 1,
-                  content: {
-                    pairs: [
-                      ["ス", "tr:ス"],
-                      ["シ", "tr:シ"],
-                    ],
-                  },
-                  id: "3aaf384a-2f74-448d-a820-093aa1038222",
-                  type: "matching",
-                },
-              ],
-              id: "f5b2cde4-3a0d-49ad-8440-c5cf9de41dc5",
-              screen_order: 9,
-              title: "Combine 「Katakana」 com sua transliteração.",
-            },
-            {
-              blocks: [
-                {
-                  block_order: 1,
-                  content: {
-                    exercise: false,
-                    id: "0106956a-9090-4599-93a2-0be363bcf7bf",
-                    kana: "katakana",
-                  },
-                  id: "5e23782c-d81d-4aa1-8db3-0ffe2dd62bfd",
-                  type: "letter",
-                },
-              ],
-              id: "96b8de31-920b-4e19-9ee1-7b0ced30b178",
-              screen_order: 10,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
-            },
-            {
-              blocks: [
-                {
-                  block_order: 1,
-                  content: {
-                    exercise: true,
-                    id: "0106956a-9090-4599-93a2-0be363bcf7bf",
-                    kana: "katakana",
-                  },
-                  id: "fecc7cd2-7514-4e99-8682-de8389aaa7a2",
-                  type: "letter",
-                },
-              ],
-              id: "ee99c802-c4ec-449f-8d2f-ef34840d6d11",
-              screen_order: 11,
-              title: "Escreva a sílaba na ordem correta dos traços.",
-            },
-            {
-              blocks: [
-                {
-                  block_order: 1,
-                  content: {
-                    pairs: [
-                      ["セ", "tr:セ"],
-                      ["ス", "tr:ス"],
-                    ],
-                  },
-                  id: "653a4a66-5b7e-4013-bc38-763d63655be6",
-                  type: "matching",
-                },
-              ],
-              id: "cf5b3b0c-3a53-462a-98f9-74a3b7799dac",
-              screen_order: 12,
-              title: "Combine 「Katakana」 com sua transliteração.",
-            },
-            {
-              blocks: [
-                {
-                  block_order: 1,
-                  content: {
-                    exercise: false,
-                    id: "3108807a-1d5e-47b3-9f06-514bc8096102",
-                    kana: "katakana",
-                  },
-                  id: "5b608cea-bbbe-489b-bd2d-be5735bf4a0e",
-                  type: "letter",
-                },
-              ],
-              id: "a65381be-632d-4376-a6ff-97e2254ecfa8",
-              screen_order: 13,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
-            },
-            {
-              blocks: [
-                {
-                  block_order: 1,
-                  content: {
-                    exercise: true,
-                    id: "3108807a-1d5e-47b3-9f06-514bc8096102",
-                    kana: "katakana",
-                  },
-                  id: "170c9a91-b6f4-4ec8-ade4-3b8b082063e9",
-                  type: "letter",
-                },
-              ],
-              id: "b77c4393-c641-4916-aee2-3a4406dc93e2",
-              screen_order: 14,
-              title: "Escreva a sílaba na ordem correta dos traços.",
-            },
-            {
-              blocks: [
-                {
-                  block_order: 1,
-                  content: {
-                    sub_title: "Katakana",
-                    title: "tr:ソ",
-                  },
-                  id: "99bb3222-a78c-42a9-b29e-74a3133959b9",
-                  type: "title",
-                },
-                {
-                  block_order: 2,
-                  content: {
-                    answers: [
-                      {
-                        isTrue: true,
-                        title: "ソ",
-                      },
-                      {
-                        isTrue: false,
                         title: "セ",
                       },
-                      {
-                        isTrue: false,
-                        title: "サ",
-                      },
                     ],
                   },
-                  id: "10c81565-09f7-4842-9bb5-3469c10b5032",
+                  id: "1f044831-1cfe-59bc-8862-40683ae0b0f4",
                   type: "choice",
                 },
               ],
-              id: "cd239f0e-4290-41d5-8503-2718d3507e8a",
+              id: "0c1c4246-c4aa-5d82-863c-0a583e32e9f5",
               screen_order: 15,
-              title: "Selecione a sílaba.",
+              title: "選擇音節。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Katakana",
-                    title: "シ, セ, ソ, ス, サ",
+                    sub_title: "片假名",
+                    title: "ソ, ス, サ, セ, シ",
                   },
-                  id: "4ab9d3e2-5f4c-4728-9445-4e998d09a5e0",
+                  id: "d10eb2d4-6cc4-59e5-befb-62b8ca9e64df",
                   type: "title",
                 },
                 {
@@ -5481,31 +5477,31 @@ export const dumpPt = {
                     answers: [
                       {
                         isTrue: false,
-                        title: "tr:ソ, tr:ス, tr:セ, tr:シ, tr:サ",
+                        title: "tr:セ, tr:ス, tr:シ, tr:サ, tr:ソ",
                       },
                       {
                         isTrue: true,
-                        title: "tr:シ, tr:セ, tr:ソ, tr:ス, tr:サ",
+                        title: "tr:ソ, tr:ス, tr:サ, tr:セ, tr:シ",
                       },
                     ],
                   },
-                  id: "c4dedd88-06ba-4616-99d0-27a5b2cf326c",
+                  id: "5012632f-c065-5522-b0f3-110c16f47580",
                   type: "choice",
                 },
               ],
-              id: "fa45a4f9-8295-4886-927c-c99c1c72a2a2",
+              id: "8e2b21e2-a3d7-5ba9-9be5-62d888020171",
               screen_order: 16,
-              title: "Escolha a sequência correta.",
+              title: "選擇正確的順序。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Katakana",
-                    title: "サ, セ, シ, ス, ソ",
+                    sub_title: "片假名",
+                    title: "セ, サ, ス, シ, ソ",
                   },
-                  id: "048f2a07-5928-4f2f-b3e6-58ca14aa725e",
+                  id: "5b6eee9d-e9f7-5b21-af23-038424213150",
                   type: "title",
                 },
                 {
@@ -5513,82 +5509,82 @@ export const dumpPt = {
                   content: {
                     answers: [
                       {
-                        isTrue: false,
-                        title: "tr:ス, tr:サ, tr:ソ, tr:セ, tr:シ",
+                        isTrue: true,
+                        title: "tr:セ, tr:サ, tr:ス, tr:シ, tr:ソ",
                       },
                       {
-                        isTrue: true,
-                        title: "tr:サ, tr:セ, tr:シ, tr:ス, tr:ソ",
+                        isTrue: false,
+                        title: "tr:シ, tr:ソ, tr:ス, tr:サ, tr:セ",
                       },
                     ],
                   },
-                  id: "f4a96359-1901-499d-ac3e-766157955676",
+                  id: "c84f6b1a-c4d8-5765-95f0-a18ccfe50cc3",
                   type: "choice",
                 },
               ],
-              id: "b9f16f99-e4a4-41d3-bdfd-0dfd6823d968",
+              id: "933914da-d393-5506-90cd-a408de770478",
               screen_order: 17,
-              title: "Escolha a sequência correta.",
+              title: "選擇正確的順序。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Katakana",
-                    title: "tr:ソ, tr:サ, tr:シ, tr:ス, tr:セ",
+                    sub_title: "片假名",
+                    title: "tr:ス, tr:サ, tr:ソ, tr:セ, tr:シ",
                   },
-                  id: "d087c799-bc3a-4950-a72a-c76d2baa26f7",
+                  id: "8520069b-f154-58a8-8e00-e99ce0778248",
                   type: "title",
                 },
                 {
                   block_order: 2,
                   content: {
-                    sequence: ["ソ", "サ", "シ", "ス", "セ"],
+                    sequence: ["ス", "サ", "ソ", "セ", "シ"],
                   },
-                  id: "ea3b9f9a-9262-4333-8826-8541e7df38ab",
+                  id: "8d811488-30fa-54f7-83d1-180ae6c5e9d4",
                   type: "sequence",
                 },
               ],
-              id: "f92a9894-5dcd-4548-8ac6-2ea3f331233e",
+              id: "d31faa62-003c-5ff5-a4ff-3f78811c28e9",
               screen_order: 18,
-              title: "Organize as sílabas na ordem correta.",
+              title: "將音節按正確的順序排列。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Katakana",
-                    title: "tr:シ, tr:セ, tr:サ, tr:ス, tr:ソ",
+                    sub_title: "片假名",
+                    title: "tr:シ, tr:ソ, tr:サ, tr:ス, tr:セ",
                   },
-                  id: "ab6b30bc-36be-4ef4-b136-2bd210d3d8b1",
+                  id: "47abbf77-b75e-53a8-bf8e-aa6a6017e846",
                   type: "title",
                 },
                 {
                   block_order: 2,
                   content: {
-                    sequence: ["シ", "セ", "サ", "ス", "ソ"],
+                    sequence: ["シ", "ソ", "サ", "ス", "セ"],
                   },
-                  id: "14694c7a-5593-46b7-b194-e16a84de3a58",
+                  id: "1deb1506-7c39-513f-a483-56ecb84b0a59",
                   type: "sequence",
                 },
               ],
-              id: "0456cc7d-eea4-4cf9-abe3-2ddb50adab54",
+              id: "b3e30617-e6f7-596c-a17a-53316b3be2af",
               screen_order: 19,
-              title: "Organize as sílabas na ordem correta.",
+              title: "將音節按正確的順序排列。",
             },
           ],
-          subtitle: "Sílabas: サ、シ、ス、セ、ソ",
-          title: "Lição 13",
-          topic_id: "8912b4f4-2c04-404f-a64e-bfb712c677f5",
+          subtitle: "音節：サ、シ、ス、セ、ソ",
+          title: "第 13 課",
+          topic_id: "921d01de-29d3-409e-abbc-b2d88ab40960",
         },
         {
-          expanded_subtitle: "Aprenda a ler e escrever as sílabas na linha tr:た.",
-          expanded_title: "Katakana: tr:た, tr:ち, tr:つ, tr:て, tr:と",
+          expanded_subtitle: "學習讀寫tr:た行的音節。",
+          expanded_title: "片假名: tr:た, tr:ち, tr:つ, tr:て, tr:と",
           icon: "https://nihongo.khvat.app/chapter2/Lesson14.jpg",
-          id: "9902ef59-9af4-4f2a-8066-fefe177faf9d",
-          last_updated: "2026-03-26T17:43:20.226Z",
+          id: "04e3c20b-80ea-423c-a755-7f98866e119e",
+          last_updated: "2026-09-08T13:12:16.094Z",
           lesson_key: "alphabet/katakana&ta",
           lesson_order: 15,
           minimum_version: "2.4.1",
@@ -5602,13 +5598,13 @@ export const dumpPt = {
                     id: "36b4894e-19d1-4efe-961d-d9dbc6284757",
                     kana: "katakana",
                   },
-                  id: "88fb12bd-b653-444d-9715-a568dff41716",
+                  id: "264ec53d-512a-5e6b-864b-96bf2670a412",
                   type: "letter",
                 },
               ],
-              id: "88d9d9d0-fbd7-4faa-a07b-83fa37707ecb",
+              id: "c5be298f-5a49-5c07-a834-2e3d5ea3c8d3",
               screen_order: 1,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "記住這個音節的筆順和發音。",
             },
             {
               blocks: [
@@ -5619,13 +5615,13 @@ export const dumpPt = {
                     id: "36b4894e-19d1-4efe-961d-d9dbc6284757",
                     kana: "katakana",
                   },
-                  id: "b473d319-8c66-4551-9d23-6508496becf5",
+                  id: "b1dffa7f-e3e4-580b-9af9-95fc0cc71b3d",
                   type: "letter",
                 },
               ],
-              id: "5c00ddfe-bb5f-4054-850c-014b65154649",
+              id: "ebb51b6a-ef52-51de-85da-1a5f02c2b573",
               screen_order: 2,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "按正確的筆順書寫音節。",
             },
             {
               blocks: [
@@ -5636,13 +5632,13 @@ export const dumpPt = {
                     id: "f17698db-0da4-4c09-ba3b-9d10e3c7aa4d",
                     kana: "katakana",
                   },
-                  id: "18f25416-4539-45ab-acf6-ab3d7bc9e098",
+                  id: "2f2f16f7-30dd-597d-9483-db6075ef4320",
                   type: "letter",
                 },
               ],
-              id: "04385b18-4dee-4d47-92c1-caec4f16d753",
+              id: "61d98f1f-55d5-5676-a4a1-0e2d1aa8e947",
               screen_order: 3,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "記住這個音節的筆順和發音。",
             },
             {
               blocks: [
@@ -5653,13 +5649,13 @@ export const dumpPt = {
                     id: "f17698db-0da4-4c09-ba3b-9d10e3c7aa4d",
                     kana: "katakana",
                   },
-                  id: "cf1495ce-bc44-4092-be99-967e9030f9d5",
+                  id: "366b2f1e-5520-5332-9532-99b95f1d9ae9",
                   type: "letter",
                 },
               ],
-              id: "8bed3f07-44d6-44b6-80d9-1ed9c23cba2c",
+              id: "0b87ee8a-b37e-5ecd-82d1-3843f1552ace",
               screen_order: 4,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "按正確的筆順書寫音節。",
             },
             {
               blocks: [
@@ -5671,13 +5667,13 @@ export const dumpPt = {
                       ["タ", "tr:タ"],
                     ],
                   },
-                  id: "fe18768c-c9d7-456a-91a9-1769678a7945",
+                  id: "60adad97-43ec-502d-976d-fb8bb432c2d4",
                   type: "matching",
                 },
               ],
-              id: "10e9afea-4aab-48c5-be06-9e3d142a8a60",
+              id: "de750cde-e5cd-5db0-9aed-11809d5e9ea5",
               screen_order: 5,
-              title: "Combine 「Katakana」 com sua transliteração.",
+              title: "將「片假名」與其羅馬字配對。",
             },
             {
               blocks: [
@@ -5688,13 +5684,13 @@ export const dumpPt = {
                     id: "08123485-a3d0-461e-8af3-bf6708b74d90",
                     kana: "katakana",
                   },
-                  id: "b4c43f7b-e4ce-4cff-b3db-fc075782dd01",
+                  id: "88d84827-2556-5fcb-aed1-746a79791442",
                   type: "letter",
                 },
               ],
-              id: "8bde38aa-e954-476a-8922-19df96131f3e",
+              id: "0eed5a23-289b-5be0-924c-0da9368e46cc",
               screen_order: 6,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "記住這個音節的筆順和發音。",
             },
             {
               blocks: [
@@ -5705,23 +5701,23 @@ export const dumpPt = {
                     id: "08123485-a3d0-461e-8af3-bf6708b74d90",
                     kana: "katakana",
                   },
-                  id: "496d23bd-542c-4a6e-9c99-cf3233fad1f6",
+                  id: "159553ca-ede9-526b-96cf-c240d528fa48",
                   type: "letter",
                 },
               ],
-              id: "239ef022-f185-4905-b9ec-2efd2059306f",
+              id: "777a2277-d0f9-5725-ba28-618b9d5b809d",
               screen_order: 7,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "按正確的筆順書寫音節。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Katakana",
-                    title: "tr:ツ",
+                    sub_title: "片假名",
+                    title: "tr:タ",
                   },
-                  id: "bdc9db0c-c0fa-46a4-8dcb-b184e7097ffb",
+                  id: "4e555127-4967-52f8-9ca2-a20508fadf0a",
                   type: "title",
                 },
                 {
@@ -5729,7 +5725,7 @@ export const dumpPt = {
                   content: {
                     answers: [
                       {
-                        isTrue: false,
+                        isTrue: true,
                         title: "タ",
                       },
                       {
@@ -5737,18 +5733,18 @@ export const dumpPt = {
                         title: "チ",
                       },
                       {
-                        isTrue: true,
+                        isTrue: false,
                         title: "ツ",
                       },
                     ],
                   },
-                  id: "9b832384-1655-47cd-9ad8-e28382cd460f",
+                  id: "5e9c1aa0-3773-5d9a-adbe-1549b7df9a81",
                   type: "choice",
                 },
               ],
-              id: "dce4972f-ce40-4c8c-8719-edb5ece16930",
+              id: "34996179-fd50-51c1-8e88-4bc4ac4d2324",
               screen_order: 8,
-              title: "Selecione a sílaba.",
+              title: "選擇音節。",
             },
             {
               blocks: [
@@ -5760,13 +5756,13 @@ export const dumpPt = {
                       ["チ", "tr:チ"],
                     ],
                   },
-                  id: "c9a4da21-0ec6-4b88-9a79-0f2566e6da83",
+                  id: "edd72bbe-fb00-51d8-bd35-d36706a298b6",
                   type: "matching",
                 },
               ],
-              id: "5428af36-fd18-419a-9ca7-2834ad850e18",
+              id: "53f96977-430d-5a5e-a377-2c7e843f4044",
               screen_order: 9,
-              title: "Combine 「Katakana」 com sua transliteração.",
+              title: "將「片假名」與其羅馬字配對。",
             },
             {
               blocks: [
@@ -5777,13 +5773,13 @@ export const dumpPt = {
                     id: "45870b67-8005-4ee1-a79c-a239289ef9b6",
                     kana: "katakana",
                   },
-                  id: "8fa9e50e-b73f-41a8-9e47-a1e585374c09",
+                  id: "0e8238cc-ec08-568a-aa2f-919cad6d0c48",
                   type: "letter",
                 },
               ],
-              id: "b722c7eb-24b1-4f8e-ae44-789c1cd2dc09",
+              id: "1a9049e2-fd55-5354-8baf-10762120c6e8",
               screen_order: 10,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "記住這個音節的筆順和發音。",
             },
             {
               blocks: [
@@ -5794,13 +5790,13 @@ export const dumpPt = {
                     id: "45870b67-8005-4ee1-a79c-a239289ef9b6",
                     kana: "katakana",
                   },
-                  id: "fde436dd-219d-48a8-9ede-026bbc802795",
+                  id: "15bb4f2f-eab3-5d3d-8292-bb1e06266194",
                   type: "letter",
                 },
               ],
-              id: "a42441f0-a6b4-4593-b2e3-00f612cfd376",
+              id: "738b0810-af29-5494-b5f5-e04cb5d79363",
               screen_order: 11,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "按正確的筆順書寫音節。",
             },
             {
               blocks: [
@@ -5812,13 +5808,13 @@ export const dumpPt = {
                       ["ツ", "tr:ツ"],
                     ],
                   },
-                  id: "a6ad9553-3f53-4f08-9c55-ee5848a5d950",
+                  id: "3ab646bf-9b6e-5d76-a53b-c8a7c5edd1a3",
                   type: "matching",
                 },
               ],
-              id: "76c115ef-7d3e-4daf-8c3d-27512b11ceb0",
+              id: "120d77bf-102f-5343-a08e-21cf5a705149",
               screen_order: 12,
-              title: "Combine 「Katakana」 com sua transliteração.",
+              title: "將「片假名」與其羅馬字配對。",
             },
             {
               blocks: [
@@ -5829,13 +5825,13 @@ export const dumpPt = {
                     id: "bfd720a3-aaaa-4ce1-a88b-ce4866b0351f",
                     kana: "katakana",
                   },
-                  id: "d29b6509-f639-4c35-930a-a5ec0eb2272a",
+                  id: "84d93853-61ed-572f-ae43-3c6e53528d4f",
                   type: "letter",
                 },
               ],
-              id: "3177e5ba-4583-4116-8312-fd5cac596d39",
+              id: "3c5ceb87-7130-58df-82f9-71a4b252d2b0",
               screen_order: 13,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "記住這個音節的筆順和發音。",
             },
             {
               blocks: [
@@ -5846,23 +5842,23 @@ export const dumpPt = {
                     id: "bfd720a3-aaaa-4ce1-a88b-ce4866b0351f",
                     kana: "katakana",
                   },
-                  id: "578a6f78-f1ac-45c4-b9fb-e5271d9ede37",
+                  id: "82d061c5-0b7c-55cd-a1ab-cd69a6bbc018",
                   type: "letter",
                 },
               ],
-              id: "c17da204-ba0a-4bc1-a0e7-6919796e551d",
+              id: "2050d3cc-c552-5738-97b4-0bd6e03037a3",
               screen_order: 14,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "按正確的筆順書寫音節。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Katakana",
-                    title: "tr:タ",
+                    sub_title: "片假名",
+                    title: "tr:テ",
                   },
-                  id: "e53e38d8-5155-4513-94d7-726c24927e99",
+                  id: "3fe1d980-3e11-5d18-ae50-c34d990d9037",
                   type: "title",
                 },
                 {
@@ -5870,36 +5866,36 @@ export const dumpPt = {
                   content: {
                     answers: [
                       {
-                        isTrue: false,
+                        isTrue: true,
                         title: "テ",
                       },
                       {
-                        isTrue: true,
-                        title: "タ",
+                        isTrue: false,
+                        title: "ツ",
                       },
                       {
                         isTrue: false,
-                        title: "チ",
+                        title: "ト",
                       },
                     ],
                   },
-                  id: "71521f8e-f2c7-4324-99fb-a450f57d9ff2",
+                  id: "4cac07ef-23ec-5331-bd69-cfafd649c933",
                   type: "choice",
                 },
               ],
-              id: "aa96fdb9-2f52-4b6e-af84-b2d3d2cfd78e",
+              id: "5c51e2e0-f484-5977-8326-c49d8c5b7fb6",
               screen_order: 15,
-              title: "Selecione a sílaba.",
+              title: "選擇音節。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Katakana",
-                    title: "ト, タ, チ, テ, ツ",
+                    sub_title: "片假名",
+                    title: "タ, チ, テ, ツ, ト",
                   },
-                  id: "69355e77-2e55-45b7-aa5e-486d3b6c8260",
+                  id: "6a16b1a8-0211-579c-a165-ca2d1af973c9",
                   type: "title",
                 },
                 {
@@ -5907,32 +5903,32 @@ export const dumpPt = {
                   content: {
                     answers: [
                       {
-                        isTrue: true,
-                        title: "tr:ト, tr:タ, tr:チ, tr:テ, tr:ツ",
+                        isTrue: false,
+                        title: "tr:ト, tr:タ, tr:テ, tr:ツ, tr:チ",
                       },
                       {
-                        isTrue: false,
-                        title: "tr:テ, tr:チ, tr:ツ, tr:ト, tr:タ",
+                        isTrue: true,
+                        title: "tr:タ, tr:チ, tr:テ, tr:ツ, tr:ト",
                       },
                     ],
                   },
-                  id: "50d183ee-59a4-4ef5-91bd-248b8e28d853",
+                  id: "42a4db69-7756-5d56-8370-8f61c72e837c",
                   type: "choice",
                 },
               ],
-              id: "f8453202-f8b1-4d83-8f76-0bbb5b4b6b46",
+              id: "73a45dd7-0a6e-5b34-9d96-0d92931df8e6",
               screen_order: 16,
-              title: "Escolha a sequência correta.",
+              title: "選擇正確的順序。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Katakana",
-                    title: "テ, ツ, タ, ト, チ",
+                    sub_title: "片假名",
+                    title: "テ, チ, タ, ト, ツ",
                   },
-                  id: "4855a1f7-16d5-499e-9828-a637bbc0e092",
+                  id: "14f0fe21-81cb-558e-9239-d29bc972cb1e",
                   type: "title",
                 },
                 {
@@ -5941,81 +5937,81 @@ export const dumpPt = {
                     answers: [
                       {
                         isTrue: true,
-                        title: "tr:テ, tr:ツ, tr:タ, tr:ト, tr:チ",
+                        title: "tr:テ, tr:チ, tr:タ, tr:ト, tr:ツ",
                       },
                       {
                         isTrue: false,
-                        title: "tr:ツ, tr:チ, tr:テ, tr:タ, tr:ト",
+                        title: "tr:ツ, tr:タ, tr:チ, tr:テ, tr:ト",
                       },
                     ],
                   },
-                  id: "8a4bfed5-36d0-40d0-965b-a14ca4fbbd25",
+                  id: "dd32d247-b1e3-5bd8-919b-f1291b3e2e95",
                   type: "choice",
                 },
               ],
-              id: "180c8d40-331b-4b89-85a2-7f5ff2c66d33",
+              id: "10cb3d93-11d5-5972-a8ff-41ea8cdc08c4",
               screen_order: 17,
-              title: "Escolha a sequência correta.",
+              title: "選擇正確的順序。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Katakana",
-                    title: "tr:チ, tr:ト, tr:タ, tr:テ, tr:ツ",
+                    sub_title: "片假名",
+                    title: "tr:ト, tr:テ, tr:タ, tr:チ, tr:ツ",
                   },
-                  id: "4d34bed3-a6c6-45c9-984d-41dade79d360",
+                  id: "0df6e979-6e6d-58b5-80d9-620488029dec",
                   type: "title",
                 },
                 {
                   block_order: 2,
                   content: {
-                    sequence: ["チ", "ト", "タ", "テ", "ツ"],
+                    sequence: ["ト", "テ", "タ", "チ", "ツ"],
                   },
-                  id: "21228489-ce83-462b-918a-943b77d49de0",
+                  id: "d9369ecb-ea3f-5a8d-9daf-3e7465ee591e",
                   type: "sequence",
                 },
               ],
-              id: "eadca4ad-12a2-4db3-a9ec-a191f5189371",
+              id: "882a3792-b034-5c71-af40-929cd289c0fd",
               screen_order: 18,
-              title: "Organize as sílabas na ordem correta.",
+              title: "將音節按正確的順序排列。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Katakana",
-                    title: "tr:チ, tr:タ, tr:ト, tr:テ, tr:ツ",
+                    sub_title: "片假名",
+                    title: "tr:ツ, tr:タ, tr:テ, tr:ト, tr:チ",
                   },
-                  id: "075e60dc-49a5-463d-88f9-81e56d530e02",
+                  id: "afe9a043-6247-52a2-848d-3ccc8fc6b84c",
                   type: "title",
                 },
                 {
                   block_order: 2,
                   content: {
-                    sequence: ["チ", "タ", "ト", "テ", "ツ"],
+                    sequence: ["ツ", "タ", "テ", "ト", "チ"],
                   },
-                  id: "bd1adede-230b-417b-b086-d0abbccf1341",
+                  id: "e472e58f-7527-5940-8db3-70821c376fec",
                   type: "sequence",
                 },
               ],
-              id: "f76ac13f-8500-4f20-a841-c632331a9c79",
+              id: "bc944ab3-f09b-59d8-bd1d-7a20a6f01231",
               screen_order: 19,
-              title: "Organize as sílabas na ordem correta.",
+              title: "將音節按正確的順序排列。",
             },
           ],
-          subtitle: "Sílabas: タ、チ、ツ、テ、ト",
-          title: "Lição 14",
-          topic_id: "8912b4f4-2c04-404f-a64e-bfb712c677f5",
+          subtitle: "音節：タ、チ、ツ、テ、ト",
+          title: "第 14 課",
+          topic_id: "921d01de-29d3-409e-abbc-b2d88ab40960",
         },
         {
-          expanded_subtitle: "Aprenda a ler e escrever as sílabas na linha tr:な.",
-          expanded_title: "Katakana: tr:な, tr:に, tr:ぬ, tr:ね, tr:の",
+          expanded_subtitle: "學習讀寫tr:な行的音節。",
+          expanded_title: "片假名: tr:な, tr:に, tr:ぬ, tr:ね, tr:の",
           icon: "https://nihongo.khvat.app/chapter2/Lesson15.jpg",
-          id: "202f53dc-49bc-4087-8a56-5d62cb70a871",
-          last_updated: "2026-03-26T17:43:20.226Z",
+          id: "69b6bbbd-4e44-4090-84e5-50b752610b3a",
+          last_updated: "2026-09-08T13:12:16.094Z",
           lesson_key: "alphabet/katakana&na",
           lesson_order: 16,
           minimum_version: "2.4.1",
@@ -6029,13 +6025,13 @@ export const dumpPt = {
                     id: "426cc9fd-4eeb-4914-9484-e87f922365fe",
                     kana: "katakana",
                   },
-                  id: "15fe3618-a6c5-46da-a9b7-147af289962a",
+                  id: "00c0173a-d544-51cf-a268-ea7413d97c3b",
                   type: "letter",
                 },
               ],
-              id: "0cf328a3-250f-4190-9487-232773529c9e",
+              id: "206c21ef-c388-59bd-9240-a203bd3ade6c",
               screen_order: 1,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "記住這個音節的筆順和發音。",
             },
             {
               blocks: [
@@ -6046,13 +6042,13 @@ export const dumpPt = {
                     id: "426cc9fd-4eeb-4914-9484-e87f922365fe",
                     kana: "katakana",
                   },
-                  id: "cafaaaf9-48f8-4c6a-a733-863224a7c20e",
+                  id: "7f0b2f2b-4520-5648-a3d6-6adb677bfe3e",
                   type: "letter",
                 },
               ],
-              id: "05d703a8-175c-4a41-9989-3c61425e8f7f",
+              id: "318502d5-de9a-5bf2-863c-d0a304c9851d",
               screen_order: 2,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "按正確的筆順書寫音節。",
             },
             {
               blocks: [
@@ -6063,13 +6059,13 @@ export const dumpPt = {
                     id: "16c7e660-5f2f-44bb-82aa-72722e944126",
                     kana: "katakana",
                   },
-                  id: "697d7456-802d-4583-95a6-c40fee34d457",
+                  id: "c9a7d0a9-c2b1-5e48-9567-42f32194d322",
                   type: "letter",
                 },
               ],
-              id: "29ef6aee-6e82-4db3-ae49-45293b0603e8",
+              id: "b2dc10c4-76f8-5b9c-8569-2d958a25c221",
               screen_order: 3,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "記住這個音節的筆順和發音。",
             },
             {
               blocks: [
@@ -6080,13 +6076,13 @@ export const dumpPt = {
                     id: "16c7e660-5f2f-44bb-82aa-72722e944126",
                     kana: "katakana",
                   },
-                  id: "bb8d09a5-7638-454a-ab7e-2db8162675d3",
+                  id: "02b2bc1b-6ad8-57d9-b51f-e556ff96f5c4",
                   type: "letter",
                 },
               ],
-              id: "9556ef8a-ac51-46de-be18-205c36e16272",
+              id: "4f8fdb0a-ab29-5fb0-ada0-26a3a53eb209",
               screen_order: 4,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "按正確的筆順書寫音節。",
             },
             {
               blocks: [
@@ -6098,13 +6094,13 @@ export const dumpPt = {
                       ["ナ", "tr:ナ"],
                     ],
                   },
-                  id: "3a051a4b-2d7f-4ff5-8fc3-e21fba423474",
+                  id: "f5c9f186-9fb4-508e-9f40-3b04e54e16d8",
                   type: "matching",
                 },
               ],
-              id: "0f970ef5-af2a-4a1d-9dcc-ddb5639d4347",
+              id: "acbba5fd-75fd-530f-995c-55f89345c4e2",
               screen_order: 5,
-              title: "Combine 「Katakana」 com sua transliteração.",
+              title: "將「片假名」與其羅馬字配對。",
             },
             {
               blocks: [
@@ -6115,13 +6111,13 @@ export const dumpPt = {
                     id: "6a1e5aa1-6978-4f46-bd78-1310607d9018",
                     kana: "katakana",
                   },
-                  id: "191b924e-2b33-4d40-934e-4efa8e02e022",
+                  id: "3d125478-ce28-5191-a0d7-eca6e3e7e0a2",
                   type: "letter",
                 },
               ],
-              id: "c5f6f36a-eee7-4208-ae21-f150266382e0",
+              id: "d5ec108a-bb41-543f-8a9e-e6137977708a",
               screen_order: 6,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "記住這個音節的筆順和發音。",
             },
             {
               blocks: [
@@ -6132,23 +6128,23 @@ export const dumpPt = {
                     id: "6a1e5aa1-6978-4f46-bd78-1310607d9018",
                     kana: "katakana",
                   },
-                  id: "8231000c-df7f-4922-b606-d1a19f370a65",
+                  id: "8002f073-0547-5c87-a1d3-d66046ffb4e8",
                   type: "letter",
                 },
               ],
-              id: "84912def-fa54-4f04-92b2-5a8431164a35",
+              id: "4fcfb9ca-208c-51c0-8e2b-9d6647c383a1",
               screen_order: 7,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "按正確的筆順書寫音節。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Katakana",
-                    title: "tr:ヌ",
+                    sub_title: "片假名",
+                    title: "tr:ナ",
                   },
-                  id: "3f8988be-bc13-40c7-ada1-f93b6bf0780f",
+                  id: "3b800523-74cc-5c3d-935d-1afb280d3310",
                   type: "title",
                 },
                 {
@@ -6157,25 +6153,25 @@ export const dumpPt = {
                     answers: [
                       {
                         isTrue: false,
-                        title: "ナ",
-                      },
-                      {
-                        isTrue: false,
                         title: "ニ",
                       },
                       {
-                        isTrue: true,
+                        isTrue: false,
                         title: "ヌ",
+                      },
+                      {
+                        isTrue: true,
+                        title: "ナ",
                       },
                     ],
                   },
-                  id: "70eaebf7-a1d2-4da1-a5fd-0890451b2241",
+                  id: "bdb4a0f6-c5c6-5b49-9aad-d3fcfdee93f4",
                   type: "choice",
                 },
               ],
-              id: "97613830-d0d2-449f-87c2-35018d10e3e6",
+              id: "f4c6c2c1-e784-572e-9fd7-c7eda4cc05f6",
               screen_order: 8,
-              title: "Selecione a sílaba.",
+              title: "選擇音節。",
             },
             {
               blocks: [
@@ -6187,13 +6183,13 @@ export const dumpPt = {
                       ["ニ", "tr:ニ"],
                     ],
                   },
-                  id: "09c0e70f-ef15-4040-959f-e3e1ab1744f8",
+                  id: "4615e4d6-8c06-5e54-acac-566327add5ca",
                   type: "matching",
                 },
               ],
-              id: "cca28ebb-ef3e-4b47-9b17-cf94d0c80150",
+              id: "7b538a9d-2617-55d0-923a-4662119f693e",
               screen_order: 9,
-              title: "Combine 「Katakana」 com sua transliteração.",
+              title: "將「片假名」與其羅馬字配對。",
             },
             {
               blocks: [
@@ -6204,13 +6200,13 @@ export const dumpPt = {
                     id: "78f412ca-a2fc-4319-9444-288363407b45",
                     kana: "katakana",
                   },
-                  id: "f7f42abc-ed0c-4b41-a118-8ace2ab4a8aa",
+                  id: "1685a2e4-1303-5cc8-b378-71f29af54d5b",
                   type: "letter",
                 },
               ],
-              id: "5db94e24-cc93-4b30-bb23-5ceab2f8f6dd",
+              id: "dd5901c9-30d3-50a2-9a83-531461bae1e9",
               screen_order: 10,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "記住這個音節的筆順和發音。",
             },
             {
               blocks: [
@@ -6221,13 +6217,13 @@ export const dumpPt = {
                     id: "78f412ca-a2fc-4319-9444-288363407b45",
                     kana: "katakana",
                   },
-                  id: "73c012f9-d48b-4bab-89a7-19796c43e653",
+                  id: "fd6bdd3b-7f39-5dff-aa3e-6f6a95d182f7",
                   type: "letter",
                 },
               ],
-              id: "62db1291-5713-4bb1-92aa-1400214f2aa1",
+              id: "4b88f308-215d-5a14-9688-3d46dcd5c523",
               screen_order: 11,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "按正確的筆順書寫音節。",
             },
             {
               blocks: [
@@ -6239,13 +6235,13 @@ export const dumpPt = {
                       ["ヌ", "tr:ヌ"],
                     ],
                   },
-                  id: "e05fdbbc-c87c-44e0-a792-0d28d8ef1f23",
+                  id: "2b7c795f-d7f1-5cdd-9ab7-d3b3c22e25b8",
                   type: "matching",
                 },
               ],
-              id: "d17928f5-9d4b-40a9-89a1-847ccd275844",
+              id: "165649d5-c876-55f7-8ca4-99775903aa9a",
               screen_order: 12,
-              title: "Combine 「Katakana」 com sua transliteração.",
+              title: "將「片假名」與其羅馬字配對。",
             },
             {
               blocks: [
@@ -6256,13 +6252,13 @@ export const dumpPt = {
                     id: "8b140c48-5818-4a3b-b8fe-0ddc49852778",
                     kana: "katakana",
                   },
-                  id: "b3ff7ec0-601a-445c-bff7-5eaa4776170d",
+                  id: "8b9de345-66af-55f4-bf94-3b9f11db3406",
                   type: "letter",
                 },
               ],
-              id: "632674c0-7470-41f4-a3f2-bf07d72f4137",
+              id: "de946ba7-40dd-5ca0-ae59-9d9c2309060b",
               screen_order: 13,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "記住這個音節的筆順和發音。",
             },
             {
               blocks: [
@@ -6273,60 +6269,60 @@ export const dumpPt = {
                     id: "8b140c48-5818-4a3b-b8fe-0ddc49852778",
                     kana: "katakana",
                   },
-                  id: "b6063626-81cd-40b9-9abc-c17bcb3ba630",
+                  id: "d67561ac-f60e-5e52-8da5-b28710fcde0b",
                   type: "letter",
                 },
               ],
-              id: "6ba7ae73-cfbb-4fa8-9ed2-9deed82107b9",
+              id: "62ef2898-c77b-5936-a5d0-14935bef2b43",
               screen_order: 14,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "按正確的筆順書寫音節。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Katakana",
-                    title: "tr:ヌ",
+                    sub_title: "片假名",
+                    title: "tr:ナ",
                   },
-                  id: "a2e7cbd7-b1db-4937-ba34-d99a167655f2",
+                  id: "5e6b43bf-05ef-5a43-8c17-2ae0f1b4f7c8",
                   type: "title",
                 },
                 {
                   block_order: 2,
                   content: {
                     answers: [
+                      {
+                        isTrue: false,
+                        title: "ノ",
+                      },
+                      {
+                        isTrue: true,
+                        title: "ナ",
+                      },
                       {
                         isTrue: false,
                         title: "ネ",
                       },
-                      {
-                        isTrue: true,
-                        title: "ヌ",
-                      },
-                      {
-                        isTrue: false,
-                        title: "ニ",
-                      },
                     ],
                   },
-                  id: "e3f719cf-0f46-4188-87d6-039e6e58c1f3",
+                  id: "059e95a0-cba6-5070-b9ee-e58b15487d39",
                   type: "choice",
                 },
               ],
-              id: "0ee85fbb-e038-4cb5-8f15-3d56807ef954",
+              id: "b0728b9e-4872-5092-917f-27b8f5f8fbe5",
               screen_order: 15,
-              title: "Selecione a sílaba.",
+              title: "選擇音節。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Katakana",
-                    title: "ノ, ヌ, ナ, ネ, ニ",
+                    sub_title: "片假名",
+                    title: "ナ, ヌ, ネ, ニ, ノ",
                   },
-                  id: "e242179b-c09a-47fe-a262-d37a27f0b684",
+                  id: "d5dcda8d-c988-5828-8e1f-de7601a77cde",
                   type: "title",
                 },
                 {
@@ -6334,32 +6330,32 @@ export const dumpPt = {
                   content: {
                     answers: [
                       {
-                        isTrue: true,
-                        title: "tr:ノ, tr:ヌ, tr:ナ, tr:ネ, tr:ニ",
+                        isTrue: false,
+                        title: "tr:ヌ, tr:ノ, tr:ニ, tr:ネ, tr:ナ",
                       },
                       {
-                        isTrue: false,
-                        title: "tr:ニ, tr:ナ, tr:ノ, tr:ネ, tr:ヌ",
+                        isTrue: true,
+                        title: "tr:ナ, tr:ヌ, tr:ネ, tr:ニ, tr:ノ",
                       },
                     ],
                   },
-                  id: "907d4aad-fb98-452c-97b8-dd0265195594",
+                  id: "b20509d8-9655-5685-be78-be5ce8fdfc9e",
                   type: "choice",
                 },
               ],
-              id: "cf8bb5ba-2dd1-40d9-8b76-435e43596e52",
+              id: "6a773a0b-6dc8-5887-bfe7-bf96f72856c1",
               screen_order: 16,
-              title: "Escolha a sequência correta.",
+              title: "選擇正確的順序。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Katakana",
-                    title: "ネ, ノ, ニ, ヌ, ナ",
+                    sub_title: "片假名",
+                    title: "ノ, ネ, ヌ, ニ, ナ",
                   },
-                  id: "fd87adea-c7bc-41c6-baee-96b95cd256ec",
+                  id: "c4333594-97da-5e1f-97a6-5b9321f48039",
                   type: "title",
                 },
                 {
@@ -6368,81 +6364,81 @@ export const dumpPt = {
                     answers: [
                       {
                         isTrue: false,
-                        title: "tr:ナ, tr:ネ, tr:ヌ, tr:ニ, tr:ノ",
+                        title: "tr:ノ, tr:ヌ, tr:ニ, tr:ナ, tr:ネ",
                       },
                       {
                         isTrue: true,
-                        title: "tr:ネ, tr:ノ, tr:ニ, tr:ヌ, tr:ナ",
+                        title: "tr:ノ, tr:ネ, tr:ヌ, tr:ニ, tr:ナ",
                       },
                     ],
                   },
-                  id: "cc6039ea-84fa-46ac-82c1-ad262b80bf2c",
+                  id: "bc0a43cf-7c57-501f-aa19-8eb2d2e8eedf",
                   type: "choice",
                 },
               ],
-              id: "0d0bdff8-633f-4aa3-aa17-100d8d9f8bf3",
+              id: "0eccd8ec-613b-5b36-b472-31583c0d4766",
               screen_order: 17,
-              title: "Escolha a sequência correta.",
+              title: "選擇正確的順序。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Katakana",
-                    title: "tr:ニ, tr:ナ, tr:ノ, tr:ネ, tr:ヌ",
+                    sub_title: "片假名",
+                    title: "tr:ナ, tr:ノ, tr:ヌ, tr:ネ, tr:ニ",
                   },
-                  id: "135ccfa9-ce65-4457-93be-64a8407cee45",
+                  id: "dcfaae0c-52e8-55b2-ab83-4ed28684540a",
                   type: "title",
                 },
                 {
                   block_order: 2,
                   content: {
-                    sequence: ["ニ", "ナ", "ノ", "ネ", "ヌ"],
+                    sequence: ["ナ", "ノ", "ヌ", "ネ", "ニ"],
                   },
-                  id: "6d0a6a2e-eb81-4176-8f82-a85664608335",
+                  id: "f1fbc00e-96e9-59cf-895c-3dd83ab719c1",
                   type: "sequence",
                 },
               ],
-              id: "9e842cce-491a-42e2-b155-483a22140a2a",
+              id: "20c3980a-b58f-5790-9abc-645a22025fd8",
               screen_order: 18,
-              title: "Organize as sílabas na ordem correta.",
+              title: "將音節按正確的順序排列。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Katakana",
-                    title: "tr:ニ, tr:ノ, tr:ヌ, tr:ネ, tr:ナ",
+                    sub_title: "片假名",
+                    title: "tr:ノ, tr:ヌ, tr:ナ, tr:ニ, tr:ネ",
                   },
-                  id: "e552e3e8-aae9-4e47-8309-adcc2ac72f6f",
+                  id: "467fab0c-8143-5c9d-9313-a2360e55a7a5",
                   type: "title",
                 },
                 {
                   block_order: 2,
                   content: {
-                    sequence: ["ニ", "ノ", "ヌ", "ネ", "ナ"],
+                    sequence: ["ノ", "ヌ", "ナ", "ニ", "ネ"],
                   },
-                  id: "115b2809-af79-4e67-8fa6-58fa46635e68",
+                  id: "53a42bcf-fcc1-50dd-88bb-72ba244c4851",
                   type: "sequence",
                 },
               ],
-              id: "16161567-0aa0-441b-995f-4a8f20e71706",
+              id: "3117c60d-d79b-5249-ba2d-cf284a564f4b",
               screen_order: 19,
-              title: "Organize as sílabas na ordem correta.",
+              title: "將音節按正確的順序排列。",
             },
           ],
-          subtitle: "Sílabas: ナ、ニ、ヌ、ネ、ノ",
-          title: "Lição 15",
-          topic_id: "8912b4f4-2c04-404f-a64e-bfb712c677f5",
+          subtitle: "音節：ナ、ニ、ヌ、ネ、ノ",
+          title: "第 15 課",
+          topic_id: "921d01de-29d3-409e-abbc-b2d88ab40960",
         },
         {
-          expanded_subtitle: "Aprenda a ler e escrever as sílabas na linha tr:は.",
-          expanded_title: "Katakana: tr:は, tr:ひ, tr:ふ, tr:へ, tr:ほ",
+          expanded_subtitle: "學習讀寫tr:は行的音節。",
+          expanded_title: "片假名: tr:は, tr:ひ, tr:ふ, tr:へ, tr:ほ",
           icon: "https://nihongo.khvat.app/chapter2/Lesson16.jpg",
-          id: "34a8fe4e-ca97-43ab-b646-dcd6d2070965",
-          last_updated: "2026-03-26T17:43:20.226Z",
+          id: "41bfa6f8-88ab-4c3e-a914-2975361b5592",
+          last_updated: "2026-09-08T13:12:16.094Z",
           lesson_key: "alphabet/katakana&ha",
           lesson_order: 17,
           minimum_version: "2.4.1",
@@ -6456,13 +6452,13 @@ export const dumpPt = {
                     id: "98db662b-5ca1-47cd-9026-735c762c76f6",
                     kana: "katakana",
                   },
-                  id: "91a4c17b-23f9-4d38-bdbd-4c62f14181b3",
+                  id: "ee1cbdb5-f4d2-51c4-b2aa-9212efc5c41a",
                   type: "letter",
                 },
               ],
-              id: "04d788b1-33ab-4f7c-8a6a-95fa1031b23c",
+              id: "bcf7b6fd-a826-56a9-9385-d51891227942",
               screen_order: 1,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "記住這個音節的筆順和發音。",
             },
             {
               blocks: [
@@ -6473,13 +6469,13 @@ export const dumpPt = {
                     id: "98db662b-5ca1-47cd-9026-735c762c76f6",
                     kana: "katakana",
                   },
-                  id: "c8ee9bfe-4f9a-4ac0-95dd-5c3fe7f76461",
+                  id: "3b7b95cc-3e59-5da1-a8e3-df7748f573fd",
                   type: "letter",
                 },
               ],
-              id: "36c37880-24e1-4d7d-9676-febed5ec0e70",
+              id: "10b3cb33-6539-5a5f-bac0-8b7313a5bf73",
               screen_order: 2,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "按正確的筆順書寫音節。",
             },
             {
               blocks: [
@@ -6490,13 +6486,13 @@ export const dumpPt = {
                     id: "458fcd0d-1f08-4222-99c7-e17000999ccf",
                     kana: "katakana",
                   },
-                  id: "0f1342e8-b169-4771-95f9-a662ced7a37d",
+                  id: "ca835312-c862-5d90-a878-7a8d380da7b3",
                   type: "letter",
                 },
               ],
-              id: "81d2a2e1-6969-4e38-9aa4-a8bdc380c0f6",
+              id: "40e93191-fddf-514f-8caf-b10ad7fbe250",
               screen_order: 3,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "記住這個音節的筆順和發音。",
             },
             {
               blocks: [
@@ -6507,13 +6503,13 @@ export const dumpPt = {
                     id: "458fcd0d-1f08-4222-99c7-e17000999ccf",
                     kana: "katakana",
                   },
-                  id: "33d7866d-9c13-4a0c-958c-04eb0028e1b3",
+                  id: "cf1f491c-51d0-5871-876a-3a19987354d2",
                   type: "letter",
                 },
               ],
-              id: "1358b16e-56d0-4760-874e-552082f96131",
+              id: "49a75e32-3b05-5911-99c1-955c3ba3f482",
               screen_order: 4,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "按正確的筆順書寫音節。",
             },
             {
               blocks: [
@@ -6525,13 +6521,13 @@ export const dumpPt = {
                       ["ハ", "tr:ハ"],
                     ],
                   },
-                  id: "8fd9193a-f476-42c8-9776-76534b7aacbd",
+                  id: "94d28cfb-18d8-570d-b51b-d146df594f3b",
                   type: "matching",
                 },
               ],
-              id: "a0433f28-2a1c-4e5a-b936-30f865bb86fa",
+              id: "4dfe21fe-e575-5288-bb5a-337238f05162",
               screen_order: 5,
-              title: "Combine 「Katakana」 com sua transliteração.",
+              title: "將「片假名」與其羅馬字配對。",
             },
             {
               blocks: [
@@ -6542,13 +6538,13 @@ export const dumpPt = {
                     id: "6ee7807e-278a-4652-8445-f3062e026891",
                     kana: "katakana",
                   },
-                  id: "302ea864-e26e-486c-8687-b70c57b3d83f",
+                  id: "907bb380-aee3-58d8-8b3d-3ce406e7ec5e",
                   type: "letter",
                 },
               ],
-              id: "1b5716bf-d80a-45bc-94d0-ea25a748d6e1",
+              id: "928edc3f-5eda-5307-a09d-fd532feca38b",
               screen_order: 6,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "記住這個音節的筆順和發音。",
             },
             {
               blocks: [
@@ -6559,23 +6555,23 @@ export const dumpPt = {
                     id: "6ee7807e-278a-4652-8445-f3062e026891",
                     kana: "katakana",
                   },
-                  id: "f7564093-f253-4319-93c5-9d63a9299cf2",
+                  id: "dfb8e6ea-7cb9-5725-85ba-ca99d239c3f1",
                   type: "letter",
                 },
               ],
-              id: "238d2ec3-a12c-43c2-8824-dc956fbbd3c8",
+              id: "910f7653-0878-5167-9508-78701635a85e",
               screen_order: 7,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "按正確的筆順書寫音節。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Katakana",
+                    sub_title: "片假名",
                     title: "tr:フ",
                   },
-                  id: "79734725-91fd-4482-92e1-b24232b69fd7",
+                  id: "d4a4caf7-5b93-5f3a-8bb5-0a551df0ff76",
                   type: "title",
                 },
                 {
@@ -6583,26 +6579,26 @@ export const dumpPt = {
                   content: {
                     answers: [
                       {
-                        isTrue: true,
-                        title: "フ",
+                        isTrue: false,
+                        title: "ヒ",
                       },
                       {
                         isTrue: false,
                         title: "ハ",
                       },
                       {
-                        isTrue: false,
-                        title: "ヒ",
+                        isTrue: true,
+                        title: "フ",
                       },
                     ],
                   },
-                  id: "baa5573b-3281-42e5-9297-00151a66d761",
+                  id: "d2e6fccb-2881-52b2-bf9d-433084661b30",
                   type: "choice",
                 },
               ],
-              id: "f3a6d5c6-931f-4074-90d1-993a243d53b6",
+              id: "3ce86194-4e54-5f1d-adf2-43c9191b741c",
               screen_order: 8,
-              title: "Selecione a sílaba.",
+              title: "選擇音節。",
             },
             {
               blocks: [
@@ -6614,13 +6610,13 @@ export const dumpPt = {
                       ["ヒ", "tr:ヒ"],
                     ],
                   },
-                  id: "70860a53-eba8-4fc6-bc18-ceb0824d80ce",
+                  id: "4cf4e88f-560d-58f2-ac25-d33f14166117",
                   type: "matching",
                 },
               ],
-              id: "5fdfe1ec-9b35-40f2-975f-d97a3a1fbaef",
+              id: "6af0048a-c91b-52c2-b0ec-336463f1b8a4",
               screen_order: 9,
-              title: "Combine 「Katakana」 com sua transliteração.",
+              title: "將「片假名」與其羅馬字配對。",
             },
             {
               blocks: [
@@ -6631,13 +6627,13 @@ export const dumpPt = {
                     id: "1014abd7-deb5-4c6b-a1dc-27543817c9fe",
                     kana: "katakana",
                   },
-                  id: "1b514cd1-638e-4577-9bc3-28dcb7fc8803",
+                  id: "4ec2fe17-dd29-5a01-ac8b-740886b1ddf4",
                   type: "letter",
                 },
               ],
-              id: "48735d09-2be0-43e8-902a-8d8a47e777b3",
+              id: "303911a9-b088-539c-942f-a9068d1e84c2",
               screen_order: 10,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "記住這個音節的筆順和發音。",
             },
             {
               blocks: [
@@ -6648,13 +6644,13 @@ export const dumpPt = {
                     id: "1014abd7-deb5-4c6b-a1dc-27543817c9fe",
                     kana: "katakana",
                   },
-                  id: "8ce505d7-ae6b-43bc-87c0-76fe8045952c",
+                  id: "1b281e65-ca12-5668-bb3c-b58e4ab04f58",
                   type: "letter",
                 },
               ],
-              id: "b28e98f4-5052-4b79-9bc7-a2f50b9ae213",
+              id: "1fa6db02-58fb-561c-8fe2-9d4f182abe1c",
               screen_order: 11,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "按正確的筆順書寫音節。",
             },
             {
               blocks: [
@@ -6666,13 +6662,13 @@ export const dumpPt = {
                       ["フ", "tr:フ"],
                     ],
                   },
-                  id: "5162839b-8463-4c1d-84b9-1904972028d9",
+                  id: "2f884154-931b-5f1a-b5e6-491baf75f32a",
                   type: "matching",
                 },
               ],
-              id: "520366b0-868e-4e0a-919e-0731e381f319",
+              id: "d8292ae1-e46c-5406-941d-de2a19df753b",
               screen_order: 12,
-              title: "Combine 「Katakana」 com sua transliteração.",
+              title: "將「片假名」與其羅馬字配對。",
             },
             {
               blocks: [
@@ -6683,13 +6679,13 @@ export const dumpPt = {
                     id: "d80bf13e-66cd-4cf9-93e7-09cb2f435ead",
                     kana: "katakana",
                   },
-                  id: "6c89bb26-5c86-47ba-a1ef-7e7cc41a83ed",
+                  id: "572f8457-7844-5865-a282-eb437dc070a4",
                   type: "letter",
                 },
               ],
-              id: "0e2ff06b-551f-4a68-96c2-bd255650b0c1",
+              id: "cbb6280a-e85a-5af2-b9bd-a4e032289d20",
               screen_order: 13,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "記住這個音節的筆順和發音。",
             },
             {
               blocks: [
@@ -6700,23 +6696,23 @@ export const dumpPt = {
                     id: "d80bf13e-66cd-4cf9-93e7-09cb2f435ead",
                     kana: "katakana",
                   },
-                  id: "f8b81c13-fb75-4479-9af9-f3bfca9ab0a7",
+                  id: "6607e0ac-1af7-5587-acb0-eb5562d763c9",
                   type: "letter",
                 },
               ],
-              id: "b1b3bbc1-b668-49a3-9a44-12657566a9f7",
+              id: "bc42e6e0-43b7-55b0-99d0-be60a87ae843",
               screen_order: 14,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "按正確的筆順書寫音節。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Katakana",
+                    sub_title: "片假名",
                     title: "tr:フ",
                   },
-                  id: "6acda9ac-38a1-4a88-82a3-38a518ebeeb4",
+                  id: "dd0ff8c2-471b-5dad-b548-7bdbc855e69c",
                   type: "title",
                 },
                 {
@@ -6725,35 +6721,35 @@ export const dumpPt = {
                     answers: [
                       {
                         isTrue: false,
-                        title: "ヒ",
-                      },
-                      {
-                        isTrue: false,
-                        title: "ヘ",
+                        title: "ハ",
                       },
                       {
                         isTrue: true,
                         title: "フ",
                       },
+                      {
+                        isTrue: false,
+                        title: "ヒ",
+                      },
                     ],
                   },
-                  id: "0c5d35eb-7e71-4a62-bc32-2c73469cd8d5",
+                  id: "367901d0-4402-587c-83fd-c521c8a41e2f",
                   type: "choice",
                 },
               ],
-              id: "842b125c-fb60-4e1b-b822-6d8de6720948",
+              id: "b0cd9664-9281-5173-bf8b-cb3f913b5c2f",
               screen_order: 15,
-              title: "Selecione a sílaba.",
+              title: "選擇音節。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Katakana",
-                    title: "ホ, ヘ, ヒ, フ, ハ",
+                    sub_title: "片假名",
+                    title: "ホ, ヒ, ヘ, ハ, フ",
                   },
-                  id: "acee0c8d-3bc6-43f2-9ac7-a7cc6b082799",
+                  id: "5cf1decc-8e41-51dd-8324-07493ec6725a",
                   type: "title",
                 },
                 {
@@ -6762,31 +6758,31 @@ export const dumpPt = {
                     answers: [
                       {
                         isTrue: true,
-                        title: "tr:ホ, tr:ヘ, tr:ヒ, tr:フ, tr:ハ",
+                        title: "tr:ホ, tr:ヒ, tr:ヘ, tr:ハ, tr:フ",
                       },
                       {
                         isTrue: false,
-                        title: "tr:ヒ, tr:ホ, tr:ヘ, tr:フ, tr:ハ",
+                        title: "tr:フ, tr:ホ, tr:ヘ, tr:ハ, tr:ヒ",
                       },
                     ],
                   },
-                  id: "33989ff5-aa8d-4048-8171-f0a4cd623c6e",
+                  id: "f9113f42-264e-5a89-866e-e07866fbce07",
                   type: "choice",
                 },
               ],
-              id: "165145cc-94ba-4ad8-8bc8-ed6d996531a6",
+              id: "c8648f17-8639-5564-99c2-54b5ba7e565c",
               screen_order: 16,
-              title: "Escolha a sequência correta.",
+              title: "選擇正確的順序。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Katakana",
-                    title: "ヘ, ホ, フ, ハ, ヒ",
+                    sub_title: "片假名",
+                    title: "ヘ, ヒ, ホ, フ, ハ",
                   },
-                  id: "5011c0b6-5e05-4214-aeed-6b978446b0f3",
+                  id: "7bda3d7f-30d5-54a0-824b-bdc2b27a28ab",
                   type: "title",
                 },
                 {
@@ -6794,82 +6790,82 @@ export const dumpPt = {
                   content: {
                     answers: [
                       {
-                        isTrue: false,
-                        title: "tr:ヒ, tr:ヘ, tr:フ, tr:ホ, tr:ハ",
+                        isTrue: true,
+                        title: "tr:ヘ, tr:ヒ, tr:ホ, tr:フ, tr:ハ",
                       },
                       {
-                        isTrue: true,
-                        title: "tr:ヘ, tr:ホ, tr:フ, tr:ハ, tr:ヒ",
+                        isTrue: false,
+                        title: "tr:ホ, tr:ハ, tr:フ, tr:ヒ, tr:ヘ",
                       },
                     ],
                   },
-                  id: "a7b69560-991b-4cac-9ec8-0360c1e458f4",
+                  id: "ba81bb9d-9481-5cbc-8710-a7b0a2dced9a",
                   type: "choice",
                 },
               ],
-              id: "410c7e51-5bff-49c8-8a28-de57dd1ff316",
+              id: "0ceb2350-732d-562d-a35e-88fc8ff5ec18",
               screen_order: 17,
-              title: "Escolha a sequência correta.",
+              title: "選擇正確的順序。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Katakana",
-                    title: "tr:フ, tr:ヒ, tr:ホ, tr:ヘ, tr:ハ",
+                    sub_title: "片假名",
+                    title: "tr:ヘ, tr:ホ, tr:フ, tr:ハ, tr:ヒ",
                   },
-                  id: "8c949cc1-b036-4e68-b099-3d9d9d7e01ed",
+                  id: "7e87c2c6-e4a0-55f5-9d0f-8e8786603e5e",
                   type: "title",
                 },
                 {
                   block_order: 2,
                   content: {
-                    sequence: ["フ", "ヒ", "ホ", "ヘ", "ハ"],
+                    sequence: ["ヘ", "ホ", "フ", "ハ", "ヒ"],
                   },
-                  id: "84f9d24d-55d6-4dc1-a6eb-f448e44d7ce8",
+                  id: "91e62dde-4fdf-57cb-be82-d23a2df98bec",
                   type: "sequence",
                 },
               ],
-              id: "0eddc83f-ed33-452b-aaba-77a07481bfe1",
+              id: "20e71b66-e102-5c1c-9269-016c86ba75be",
               screen_order: 18,
-              title: "Organize as sílabas na ordem correta.",
+              title: "將音節按正確的順序排列。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Katakana",
-                    title: "tr:ホ, tr:ハ, tr:ヒ, tr:ヘ, tr:フ",
+                    sub_title: "片假名",
+                    title: "tr:ホ, tr:ヒ, tr:ハ, tr:ヘ, tr:フ",
                   },
-                  id: "5366c8cf-3bfc-4feb-80c5-9c236bdcec31",
+                  id: "8219f715-8bfb-5cd7-a877-e774243cffcf",
                   type: "title",
                 },
                 {
                   block_order: 2,
                   content: {
-                    sequence: ["ホ", "ハ", "ヒ", "ヘ", "フ"],
+                    sequence: ["ホ", "ヒ", "ハ", "ヘ", "フ"],
                   },
-                  id: "5ec03708-2a0f-456e-adb8-24378de30199",
+                  id: "dbaa48f8-87a9-5d5a-b3f0-f675aef6e5d7",
                   type: "sequence",
                 },
               ],
-              id: "afdfd0ef-854c-4b70-b95f-8694deee747a",
+              id: "65af5683-50b7-5c30-a9cf-9fc6d0d821cc",
               screen_order: 19,
-              title: "Organize as sílabas na ordem correta.",
+              title: "將音節按正確的順序排列。",
             },
           ],
-          subtitle: "Sílabas: ハ、ヒ、フ、ヘ、ホ",
-          title: "Lição 16",
-          topic_id: "8912b4f4-2c04-404f-a64e-bfb712c677f5",
+          subtitle: "音節：ハ、ヒ、フ、ヘ、ホ",
+          title: "第 16 課",
+          topic_id: "921d01de-29d3-409e-abbc-b2d88ab40960",
         },
         {
-          expanded_subtitle: "Aprenda a ler e escrever as sílabas na linha tr:ま.",
-          expanded_title: "Katakana: tr:ま, tr:み, tr:む, tr:め, tr:も",
+          expanded_subtitle: "學習讀寫tr:ま行的音節。",
+          expanded_title: "片假名: tr:ま, tr:み, tr:む, tr:め, tr:も",
           icon: "https://nihongo.khvat.app/chapter2/Lesson17.jpg",
-          id: "17ca0dc4-e999-48ca-9c03-c6ba6ec68a2a",
-          last_updated: "2026-03-26T17:43:20.226Z",
+          id: "d603ff1d-a32a-4eae-ad58-93a0390d485c",
+          last_updated: "2026-09-08T13:12:16.094Z",
           lesson_key: "alphabet/katakana&ma",
           lesson_order: 18,
           minimum_version: "2.4.1",
@@ -6883,13 +6879,13 @@ export const dumpPt = {
                     id: "827078b5-74f9-499b-a523-0fea2020a5af",
                     kana: "katakana",
                   },
-                  id: "92498df4-18e1-4bed-9aae-2ca9ca23b417",
+                  id: "9186a988-cb28-57c0-ba8c-3c64f9002d36",
                   type: "letter",
                 },
               ],
-              id: "366111b3-1101-4979-a523-e6413bda5ee5",
+              id: "fb83dbbe-7354-5fde-b312-e4fb5b283499",
               screen_order: 1,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "記住這個音節的筆順和發音。",
             },
             {
               blocks: [
@@ -6900,13 +6896,13 @@ export const dumpPt = {
                     id: "827078b5-74f9-499b-a523-0fea2020a5af",
                     kana: "katakana",
                   },
-                  id: "14fa8150-c3be-4266-b2aa-98e1c87bc5b5",
+                  id: "0ea1fc1b-2045-5dea-9266-66d7c7498676",
                   type: "letter",
                 },
               ],
-              id: "60379b86-8e9c-4747-ad09-ec45d4d8b3f3",
+              id: "e6627cb4-9097-5076-97ac-fe3426cdb9e1",
               screen_order: 2,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "按正確的筆順書寫音節。",
             },
             {
               blocks: [
@@ -6917,13 +6913,13 @@ export const dumpPt = {
                     id: "b131b9f3-d6fd-48e6-b0cc-32831ea4b3f9",
                     kana: "katakana",
                   },
-                  id: "4bf70ab4-79db-489b-9b54-1e284e189645",
+                  id: "113bd657-1adc-5aeb-8b1a-1ea762a99702",
                   type: "letter",
                 },
               ],
-              id: "c806755c-6e53-4979-ad07-a86290a77920",
+              id: "3d14acdb-6ad6-577d-87d4-e9b8227c1fcd",
               screen_order: 3,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "記住這個音節的筆順和發音。",
             },
             {
               blocks: [
@@ -6934,13 +6930,13 @@ export const dumpPt = {
                     id: "b131b9f3-d6fd-48e6-b0cc-32831ea4b3f9",
                     kana: "katakana",
                   },
-                  id: "54f5b087-1a07-49c7-8026-dba8ead5065b",
+                  id: "041373d1-fea5-52b5-9566-faf2ab3f038f",
                   type: "letter",
                 },
               ],
-              id: "ec9077f1-39ea-47b3-8870-01dfadb4b5f9",
+              id: "ef981052-d120-5b71-91b2-0e4754ee95e0",
               screen_order: 4,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "按正確的筆順書寫音節。",
             },
             {
               blocks: [
@@ -6952,13 +6948,13 @@ export const dumpPt = {
                       ["マ", "tr:マ"],
                     ],
                   },
-                  id: "8eb966dd-f65d-4432-94ee-66fc4d28ca79",
+                  id: "9f43442c-e537-57c9-a74a-89731ac98f2c",
                   type: "matching",
                 },
               ],
-              id: "055b00fc-3d92-4dd9-844b-35368111adc3",
+              id: "a937d355-bd85-5d77-8064-5f27163ae5fb",
               screen_order: 5,
-              title: "Combine 「Katakana」 com sua transliteração.",
+              title: "將「片假名」與其羅馬字配對。",
             },
             {
               blocks: [
@@ -6969,13 +6965,13 @@ export const dumpPt = {
                     id: "4d81e8f2-0e6b-475f-bd08-c6b03d20ae69",
                     kana: "katakana",
                   },
-                  id: "082f78f9-2813-4e48-be56-2bd292efa4d5",
+                  id: "714cda17-eccc-5596-b697-414e0da7a991",
                   type: "letter",
                 },
               ],
-              id: "54e02a43-a20b-4626-b697-747353d0fafc",
+              id: "10b249a3-36f6-5063-bbd6-c32e57aa86b3",
               screen_order: 6,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "記住這個音節的筆順和發音。",
             },
             {
               blocks: [
@@ -6986,23 +6982,23 @@ export const dumpPt = {
                     id: "4d81e8f2-0e6b-475f-bd08-c6b03d20ae69",
                     kana: "katakana",
                   },
-                  id: "ceb768b0-4dae-416d-aff1-2c57afc71191",
+                  id: "69ec86b5-6bb9-578d-be4f-25c016011696",
                   type: "letter",
                 },
               ],
-              id: "17a7da33-4391-4738-880f-9123056a88fa",
+              id: "b13cd54f-5889-591e-a4e5-09d93a8e03ef",
               screen_order: 7,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "按正確的筆順書寫音節。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Katakana",
+                    sub_title: "片假名",
                     title: "tr:マ",
                   },
-                  id: "e1027977-b822-449f-8eac-a32dc4eacd5f",
+                  id: "e7138f57-28b9-5347-977f-9daf4a15fe20",
                   type: "title",
                 },
                 {
@@ -7011,11 +7007,11 @@ export const dumpPt = {
                     answers: [
                       {
                         isTrue: false,
-                        title: "ム",
+                        title: "ミ",
                       },
                       {
                         isTrue: false,
-                        title: "ミ",
+                        title: "ム",
                       },
                       {
                         isTrue: true,
@@ -7023,13 +7019,13 @@ export const dumpPt = {
                       },
                     ],
                   },
-                  id: "75ac0b7d-ff5a-4db0-856f-f5b7972a5bc9",
+                  id: "b1160fbf-114c-59b7-9ca5-34929854a800",
                   type: "choice",
                 },
               ],
-              id: "728ccf04-fe26-47d7-82db-5a8cefc517f6",
+              id: "221d0066-683b-523c-9795-93a8a4e2c579",
               screen_order: 8,
-              title: "Selecione a sílaba.",
+              title: "選擇音節。",
             },
             {
               blocks: [
@@ -7041,13 +7037,13 @@ export const dumpPt = {
                       ["ミ", "tr:ミ"],
                     ],
                   },
-                  id: "da6367ff-6bda-4ce3-bf3c-018a97423454",
+                  id: "92439f61-b2fd-5237-a77a-ceada4b19f07",
                   type: "matching",
                 },
               ],
-              id: "02759768-adf8-43ad-bb68-6b55b520e270",
+              id: "9f4b64c0-b2b4-57a2-a4eb-82556504bcda",
               screen_order: 9,
-              title: "Combine 「Katakana」 com sua transliteração.",
+              title: "將「片假名」與其羅馬字配對。",
             },
             {
               blocks: [
@@ -7058,13 +7054,13 @@ export const dumpPt = {
                     id: "3037e1df-8072-4273-abf1-664b500613af",
                     kana: "katakana",
                   },
-                  id: "781e4766-6aa0-480d-aea3-0154aacbb4bb",
+                  id: "a7a43bb7-65b1-533f-8496-6a3329a54c36",
                   type: "letter",
                 },
               ],
-              id: "6a5b6b03-f51c-43eb-bab5-ed6e9e4b2c69",
+              id: "52e8b997-59ce-56fa-a93e-879e7fa0a9a1",
               screen_order: 10,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "記住這個音節的筆順和發音。",
             },
             {
               blocks: [
@@ -7075,13 +7071,13 @@ export const dumpPt = {
                     id: "3037e1df-8072-4273-abf1-664b500613af",
                     kana: "katakana",
                   },
-                  id: "a275fe5e-22f8-4028-8aa6-70dd773b7b59",
+                  id: "e2c1dc96-d291-56aa-94c1-7792594339d6",
                   type: "letter",
                 },
               ],
-              id: "203adecf-f40b-48ec-8dd1-a6214daa9425",
+              id: "a4b7a35d-a2ef-5598-89fd-4948cf3a4f42",
               screen_order: 11,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "按正確的筆順書寫音節。",
             },
             {
               blocks: [
@@ -7093,13 +7089,13 @@ export const dumpPt = {
                       ["ム", "tr:ム"],
                     ],
                   },
-                  id: "5c89141d-09fd-477c-87ae-28c455fb07ae",
+                  id: "43bcafa2-0ed8-58d6-82a8-2a22b90d5b9f",
                   type: "matching",
                 },
               ],
-              id: "3637b143-9021-4a8b-8f77-8f63c59b3085",
+              id: "9c858184-d8a0-56c4-bb48-3d00962f38e5",
               screen_order: 12,
-              title: "Combine 「Katakana」 com sua transliteração.",
+              title: "將「片假名」與其羅馬字配對。",
             },
             {
               blocks: [
@@ -7110,13 +7106,13 @@ export const dumpPt = {
                     id: "54a8b634-b713-4652-957e-fffa3b3319cc",
                     kana: "katakana",
                   },
-                  id: "ba2d39f9-2b5b-4088-995f-2774e0d4e366",
+                  id: "d7c7b243-9d56-52ac-818d-dbfc2d968062",
                   type: "letter",
                 },
               ],
-              id: "bbf4cf4f-cb35-4c64-a7d3-8d1e36648ab3",
+              id: "04ee4e79-4ad0-5e13-9cb4-c8decd02da5f",
               screen_order: 13,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "記住這個音節的筆順和發音。",
             },
             {
               blocks: [
@@ -7127,23 +7123,23 @@ export const dumpPt = {
                     id: "54a8b634-b713-4652-957e-fffa3b3319cc",
                     kana: "katakana",
                   },
-                  id: "5c923846-b21a-4605-acef-457c3323f194",
+                  id: "83a7cdf0-55bd-5d6a-a776-f67f0c6cb2da",
                   type: "letter",
                 },
               ],
-              id: "3d174059-020f-421b-b6e8-54c1c6403c4a",
+              id: "4c3e4362-ad79-5585-bcbe-da9642ec9659",
               screen_order: 14,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "按正確的筆順書寫音節。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Katakana",
-                    title: "tr:ム",
+                    sub_title: "片假名",
+                    title: "tr:ミ",
                   },
-                  id: "2e0ac7ae-c5cd-4855-89aa-d31f5a597337",
+                  id: "184d99aa-051d-5fa8-a7cb-e18791bbf4ae",
                   type: "title",
                 },
                 {
@@ -7152,35 +7148,35 @@ export const dumpPt = {
                     answers: [
                       {
                         isTrue: true,
-                        title: "ム",
+                        title: "ミ",
+                      },
+                      {
+                        isTrue: false,
+                        title: "モ",
                       },
                       {
                         isTrue: false,
                         title: "メ",
                       },
-                      {
-                        isTrue: false,
-                        title: "ミ",
-                      },
                     ],
                   },
-                  id: "3d876688-a414-4977-823f-aadb059d834a",
+                  id: "f218d553-a509-58b2-824e-fdf16e635e68",
                   type: "choice",
                 },
               ],
-              id: "37c96862-adcc-4360-ae34-776c6d42a0f6",
+              id: "c44e82c0-caa6-511a-b42e-99f0c930c8e7",
               screen_order: 15,
-              title: "Selecione a sílaba.",
+              title: "選擇音節。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Katakana",
-                    title: "モ, ム, ミ, マ, メ",
+                    sub_title: "片假名",
+                    title: "モ, ム, ミ, メ, マ",
                   },
-                  id: "323819ab-8a38-4b83-b66a-ea719cbfb92a",
+                  id: "deb7980d-1b1c-5625-ad7e-5f690ed65c38",
                   type: "title",
                 },
                 {
@@ -7189,31 +7185,31 @@ export const dumpPt = {
                     answers: [
                       {
                         isTrue: false,
-                        title: "tr:マ, tr:メ, tr:ミ, tr:ム, tr:モ",
+                        title: "tr:モ, tr:ム, tr:マ, tr:ミ, tr:メ",
                       },
                       {
                         isTrue: true,
-                        title: "tr:モ, tr:ム, tr:ミ, tr:マ, tr:メ",
+                        title: "tr:モ, tr:ム, tr:ミ, tr:メ, tr:マ",
                       },
                     ],
                   },
-                  id: "c941bce8-b900-4961-b049-52515139347d",
+                  id: "af519e26-a991-50aa-aa0a-e473847ffad5",
                   type: "choice",
                 },
               ],
-              id: "c8dea60a-90c8-4469-abc8-b65bf53e87c5",
+              id: "8eef943e-baa0-5a52-83d2-6eee98ab0ea7",
               screen_order: 16,
-              title: "Escolha a sequência correta.",
+              title: "選擇正確的順序。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Katakana",
-                    title: "ミ, ム, マ, メ, モ",
+                    sub_title: "片假名",
+                    title: "モ, メ, ミ, ム, マ",
                   },
-                  id: "8eecca40-e4d4-4567-9dae-74a25d3dc729",
+                  id: "f3680dc0-d47f-519b-932f-afbe867bbda1",
                   type: "title",
                 },
                 {
@@ -7222,81 +7218,81 @@ export const dumpPt = {
                     answers: [
                       {
                         isTrue: false,
-                        title: "tr:マ, tr:ミ, tr:モ, tr:ム, tr:メ",
+                        title: "tr:ミ, tr:モ, tr:マ, tr:ム, tr:メ",
                       },
                       {
                         isTrue: true,
-                        title: "tr:ミ, tr:ム, tr:マ, tr:メ, tr:モ",
+                        title: "tr:モ, tr:メ, tr:ミ, tr:ム, tr:マ",
                       },
                     ],
                   },
-                  id: "f288ca25-aaba-4b27-9103-59214ff841dd",
+                  id: "dd02e5f6-a504-5b51-aff1-07cdc36c04a0",
                   type: "choice",
                 },
               ],
-              id: "9e23bde9-1223-4f1f-a6e1-9da5f1eabf69",
+              id: "0a8814df-20b0-547b-aaa6-208121a40bd9",
               screen_order: 17,
-              title: "Escolha a sequência correta.",
+              title: "選擇正確的順序。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Katakana",
-                    title: "tr:メ, tr:ム, tr:モ, tr:ミ, tr:マ",
+                    sub_title: "片假名",
+                    title: "tr:マ, tr:モ, tr:メ, tr:ム, tr:ミ",
                   },
-                  id: "c403bc3b-ae97-4314-aff6-cc6936405b4c",
+                  id: "28c81e38-3257-5878-afd2-7ccfadd3aa72",
                   type: "title",
                 },
                 {
                   block_order: 2,
                   content: {
-                    sequence: ["メ", "ム", "モ", "ミ", "マ"],
+                    sequence: ["マ", "モ", "メ", "ム", "ミ"],
                   },
-                  id: "3638d0dd-943e-460d-b585-bbf38867e402",
+                  id: "01d08775-06f3-558e-9e96-0aa234321bf6",
                   type: "sequence",
                 },
               ],
-              id: "106d3c3a-885e-4b44-85b8-e73d493fb3a2",
+              id: "2395373f-40c3-524f-89f2-3658a1d4da10",
               screen_order: 18,
-              title: "Organize as sílabas na ordem correta.",
+              title: "將音節按正確的順序排列。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Katakana",
-                    title: "tr:マ, tr:メ, tr:ミ, tr:モ, tr:ム",
+                    sub_title: "片假名",
+                    title: "tr:メ, tr:マ, tr:ム, tr:モ, tr:ミ",
                   },
-                  id: "e6d7c5fe-eb76-4f7d-a8ef-b81cb2fc028b",
+                  id: "4bbce584-71af-5a59-9615-ca13cf2b8b47",
                   type: "title",
                 },
                 {
                   block_order: 2,
                   content: {
-                    sequence: ["マ", "メ", "ミ", "モ", "ム"],
+                    sequence: ["メ", "マ", "ム", "モ", "ミ"],
                   },
-                  id: "d57219fd-0256-49a7-aa6f-8489e8628bad",
+                  id: "e2dd6046-5c60-57c1-91ee-55c7579f42ae",
                   type: "sequence",
                 },
               ],
-              id: "d69ce2d2-0718-415b-aaee-356c31834b0a",
+              id: "9afbf4b2-9e2b-540b-9ebc-664577c1b720",
               screen_order: 19,
-              title: "Organize as sílabas na ordem correta.",
+              title: "將音節按正確的順序排列。",
             },
           ],
-          subtitle: "Sílabas: マ、ミ、ム、メ、モ",
-          title: "Lição 17",
-          topic_id: "8912b4f4-2c04-404f-a64e-bfb712c677f5",
+          subtitle: "音節：マ、ミ、ム、メ、モ",
+          title: "第 17 課",
+          topic_id: "921d01de-29d3-409e-abbc-b2d88ab40960",
         },
         {
-          expanded_subtitle: "Aprenda a ler e escrever as sílabas na linha tr:や.",
-          expanded_title: "Katakana: tr:や, tr:ゆ, tr:よ",
+          expanded_subtitle: "學習讀寫tr:や行的音節。",
+          expanded_title: "片假名: tr:や, tr:ゆ, tr:よ",
           icon: "https://nihongo.khvat.app/chapter2/Lesson18.jpg",
-          id: "0178500a-8d00-4630-9110-4618bc5cbf3f",
-          last_updated: "2026-03-26T17:43:20.226Z",
+          id: "24a14141-ff97-455b-87cd-006d9b52a8e7",
+          last_updated: "2026-09-08T13:12:16.094Z",
           lesson_key: "alphabet/katakana&ya",
           lesson_order: 19,
           minimum_version: "2.4.1",
@@ -7310,13 +7306,13 @@ export const dumpPt = {
                     id: "9e4e7b1b-2b3c-467d-8c24-be83a4ae5a89",
                     kana: "katakana",
                   },
-                  id: "12fdf81b-3c61-42a1-8a37-83d494291e55",
+                  id: "13319953-d78d-5205-b1af-57fcae0f2f72",
                   type: "letter",
                 },
               ],
-              id: "7b6fb17e-30a9-4f55-9d32-f91d3c88e5b8",
+              id: "97eef9c0-eb1e-55f8-b08c-372904b55d9b",
               screen_order: 1,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "記住這個音節的筆順和發音。",
             },
             {
               blocks: [
@@ -7327,13 +7323,13 @@ export const dumpPt = {
                     id: "9e4e7b1b-2b3c-467d-8c24-be83a4ae5a89",
                     kana: "katakana",
                   },
-                  id: "929ac7c7-abfc-4630-87af-63ef0ab9b37f",
+                  id: "6d03965b-4568-574b-a38f-688534528138",
                   type: "letter",
                 },
               ],
-              id: "02934279-b47b-4ad0-acf7-62ea2460660e",
+              id: "98706b1d-1755-597a-b312-f597679263e4",
               screen_order: 2,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "按正確的筆順書寫音節。",
             },
             {
               blocks: [
@@ -7344,13 +7340,13 @@ export const dumpPt = {
                     id: "e3c281bb-31aa-4fab-8b83-1daca7c6bdd5",
                     kana: "katakana",
                   },
-                  id: "a803ae94-f637-4d8a-bcc2-4f30adba5303",
+                  id: "99d9ca60-84a8-5b7c-8fcc-faa90e67e256",
                   type: "letter",
                 },
               ],
-              id: "f6bbdd42-861d-4498-b196-8bfe8aa47762",
+              id: "e88455d7-c12b-57ac-af60-1081d68571f6",
               screen_order: 3,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "記住這個音節的筆順和發音。",
             },
             {
               blocks: [
@@ -7361,13 +7357,13 @@ export const dumpPt = {
                     id: "e3c281bb-31aa-4fab-8b83-1daca7c6bdd5",
                     kana: "katakana",
                   },
-                  id: "a4e25e73-dde8-40ab-a15d-011d4567c9ce",
+                  id: "3a6efd9f-82ca-517d-966d-c1bf559d967e",
                   type: "letter",
                 },
               ],
-              id: "a83c62ff-7bac-497f-ae73-66250a9d2dec",
+              id: "edf987c8-d97a-59f3-8776-8ad6d5ba8ee9",
               screen_order: 4,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "按正確的筆順書寫音節。",
             },
             {
               blocks: [
@@ -7379,13 +7375,13 @@ export const dumpPt = {
                       ["ヤ", "tr:ヤ"],
                     ],
                   },
-                  id: "0ae5a872-be73-4fef-b6b8-3b24145178a3",
+                  id: "1c463ce4-62e1-5dd8-bad6-8a10ced5ca4e",
                   type: "matching",
                 },
               ],
-              id: "85d2b702-d6ed-4fa7-bc1b-d4aed065b0d8",
+              id: "1d42b41f-1081-54ad-aa8d-5040c06c2e89",
               screen_order: 5,
-              title: "Combine 「Katakana」 com sua transliteração.",
+              title: "將「片假名」與其羅馬字配對。",
             },
             {
               blocks: [
@@ -7396,13 +7392,13 @@ export const dumpPt = {
                     id: "5b7da1eb-3e8c-418f-bcb5-ea8551c77706",
                     kana: "katakana",
                   },
-                  id: "e09ffcd8-eac2-4310-bccf-d2ea6cb4a29e",
+                  id: "b33086a6-d3fc-5949-b372-1b3cd809a790",
                   type: "letter",
                 },
               ],
-              id: "5b5e6f33-7b7a-4a2b-88d3-8440d27f9ab9",
+              id: "e886648f-6342-55d7-877b-6f91ab4f6fb1",
               screen_order: 6,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "記住這個音節的筆順和發音。",
             },
             {
               blocks: [
@@ -7413,23 +7409,23 @@ export const dumpPt = {
                     id: "5b7da1eb-3e8c-418f-bcb5-ea8551c77706",
                     kana: "katakana",
                   },
-                  id: "4d151aa1-2828-4072-84a6-c64192d4dbe7",
+                  id: "e62d2247-be19-560b-905f-f6a2ddac7a06",
                   type: "letter",
                 },
               ],
-              id: "26d31623-17ff-4d29-bf74-e7a1cad9bcd7",
+              id: "82ca79d0-66a5-5739-8405-4b451a8f4fe4",
               screen_order: 7,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "按正確的筆順書寫音節。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Katakana",
-                    title: "tr:ヨ",
+                    sub_title: "片假名",
+                    title: "tr:ユ",
                   },
-                  id: "8552782b-dc03-439d-9ee4-355d3bb55f23",
+                  id: "f9d9c399-027e-52a8-a904-a118ac4f1b2f",
                   type: "title",
                 },
                 {
@@ -7437,26 +7433,26 @@ export const dumpPt = {
                   content: {
                     answers: [
                       {
-                        isTrue: true,
-                        title: "ヨ",
+                        isTrue: false,
+                        title: "ヤ",
                       },
                       {
-                        isTrue: false,
+                        isTrue: true,
                         title: "ユ",
                       },
                       {
                         isTrue: false,
-                        title: "ヤ",
+                        title: "ヨ",
                       },
                     ],
                   },
-                  id: "c7151f2e-a8ae-42be-b40f-b3142aeea841",
+                  id: "c0d2055d-5fa6-5ab8-bd44-90873e08cb1a",
                   type: "choice",
                 },
               ],
-              id: "9947bf4d-0763-4931-bbef-7dab4779590a",
+              id: "8173c733-1577-5b5f-920e-b93bdce381ad",
               screen_order: 8,
-              title: "Selecione a sílaba.",
+              title: "選擇音節。",
             },
             {
               blocks: [
@@ -7468,60 +7464,60 @@ export const dumpPt = {
                       ["ユ", "tr:ユ"],
                     ],
                   },
-                  id: "39fdee98-78da-4af4-9fa9-576325daf9ef",
+                  id: "8bba8ed4-0b6e-5627-a83f-d25f91102dc0",
                   type: "matching",
                 },
               ],
-              id: "b4953919-8748-4b60-a9c6-e137389bd6fb",
+              id: "cfe65640-2cf0-5bf4-bba4-41926a39ca4c",
               screen_order: 9,
-              title: "Combine 「Katakana」 com sua transliteração.",
+              title: "將「片假名」與其羅馬字配對。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Katakana",
-                    title: "tr:ユ",
+                    sub_title: "片假名",
+                    title: "tr:ヤ",
                   },
-                  id: "1bc54de3-e37a-42ae-aafe-f27e46a4fe13",
+                  id: "bb97114a-d551-5b5a-9f11-7fe0540bb609",
                   type: "title",
                 },
                 {
                   block_order: 2,
                   content: {
                     answers: [
+                      {
+                        isTrue: false,
+                        title: "ユ",
+                      },
+                      {
+                        isTrue: true,
+                        title: "ヤ",
+                      },
                       {
                         isTrue: false,
                         title: "ヨ",
                       },
-                      {
-                        isTrue: true,
-                        title: "ユ",
-                      },
-                      {
-                        isTrue: false,
-                        title: "ヤ",
-                      },
                     ],
                   },
-                  id: "7994b75f-1a05-46cd-9a12-f215675cabf4",
+                  id: "efac43de-90d9-5491-9d8c-f708d2c13aa1",
                   type: "choice",
                 },
               ],
-              id: "e0af3646-198c-4d4c-8b80-18a4d3cb9458",
+              id: "30eef868-366d-5bab-9ebf-ba60c1ff05ea",
               screen_order: 10,
-              title: "Selecione a sílaba.",
+              title: "選擇音節。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Katakana",
+                    sub_title: "片假名",
                     title: "ヨ, ユ, ヤ",
                   },
-                  id: "3a60a5a1-6eab-47a9-a7b5-5eb8ccd93543",
+                  id: "324dcd24-8888-5424-9d17-158864a7d307",
                   type: "title",
                 },
                 {
@@ -7530,88 +7526,88 @@ export const dumpPt = {
                     answers: [
                       {
                         isTrue: false,
+                        title: "tr:ヤ, tr:ユ, tr:ヨ",
+                      },
+                      {
+                        isTrue: true,
+                        title: "tr:ヨ, tr:ユ, tr:ヤ",
+                      },
+                    ],
+                  },
+                  id: "f81b2c2a-4efb-5318-9636-e08f9d0a23d0",
+                  type: "choice",
+                },
+              ],
+              id: "e109181e-7d9e-5a7b-aef3-5a4dc5b126aa",
+              screen_order: 11,
+              title: "選擇正確的順序。",
+            },
+            {
+              blocks: [
+                {
+                  block_order: 1,
+                  content: {
+                    sub_title: "片假名",
+                    title: "ヤ, ヨ, ユ",
+                  },
+                  id: "25013c51-a534-5037-ace2-7d86ed28e501",
+                  type: "title",
+                },
+                {
+                  block_order: 2,
+                  content: {
+                    answers: [
+                      {
+                        isTrue: false,
+                        title: "tr:ユ, tr:ヨ, tr:ヤ",
+                      },
+                      {
+                        isTrue: true,
                         title: "tr:ヤ, tr:ヨ, tr:ユ",
                       },
-                      {
-                        isTrue: true,
-                        title: "tr:ヨ, tr:ユ, tr:ヤ",
-                      },
                     ],
                   },
-                  id: "799593b1-c8bd-48ff-bae4-0f0c923ac582",
+                  id: "b4c90ea7-20ce-5495-a27a-51a635bca209",
                   type: "choice",
                 },
               ],
-              id: "93a2a6f1-f9b4-4896-9ee7-4ad1b4cc5f0d",
-              screen_order: 11,
-              title: "Escolha a sequência correta.",
-            },
-            {
-              blocks: [
-                {
-                  block_order: 1,
-                  content: {
-                    sub_title: "Katakana",
-                    title: "ヨ, ヤ, ユ",
-                  },
-                  id: "71d6a4c2-d92b-4faf-8657-25bfa1177108",
-                  type: "title",
-                },
-                {
-                  block_order: 2,
-                  content: {
-                    answers: [
-                      {
-                        isTrue: false,
-                        title: "tr:ヨ, tr:ユ, tr:ヤ",
-                      },
-                      {
-                        isTrue: true,
-                        title: "tr:ヨ, tr:ヤ, tr:ユ",
-                      },
-                    ],
-                  },
-                  id: "4a55d809-edf4-4a83-878d-93ed74241729",
-                  type: "choice",
-                },
-              ],
-              id: "8e3c1e47-f4ca-4f60-b1f3-15aaa798202a",
+              id: "d276007a-4ea5-5528-8d43-a714057c9e59",
               screen_order: 12,
-              title: "Escolha a sequência correta.",
+              title: "選擇正確的順序。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Katakana",
-                    title: "tr:ヤ, tr:ユ, tr:ヨ",
+                    sub_title: "片假名",
+                    title: "tr:ヤ, tr:ヨ, tr:ユ",
                   },
-                  id: "c9ba7701-7c55-4f2b-a2d5-55384d131c74",
+                  id: "370a9b68-4178-5b1b-9dd6-68cd5cbe3f96",
                   type: "title",
                 },
                 {
                   block_order: 2,
                   content: {
-                    sequence: ["ヤ", "ユ", "ヨ"],
+                    sequence: ["ヤ", "ヨ", "ユ"],
                   },
-                  id: "d56d680f-43be-43c8-ac86-daeef8bb5cd1",
+                  id: "e750e11f-96fb-5768-8e32-1f0581d2fdc6",
                   type: "sequence",
                 },
               ],
-              id: "7d0732cc-4fe9-49ff-aa86-be624aca6bbb",
+              id: "5b9e02a8-35d2-5bfd-8f71-50cf1dfa1211",
               screen_order: 13,
-              title: "Organize as sílabas na ordem correta.",
+              title: "將音節按正確的順序排列。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Katakana",
+                    sub_title: "片假名",
                     title: "tr:ヨ, tr:ユ, tr:ヤ",
                   },
-                  id: "cebec6c3-e7b6-4750-84c8-1f4fd69cea3e",
+                  id: "62546b95-551d-5af3-85ce-7da90ae64a4f",
                   type: "title",
                 },
                 {
@@ -7619,25 +7615,25 @@ export const dumpPt = {
                   content: {
                     sequence: ["ヨ", "ユ", "ヤ"],
                   },
-                  id: "e6e41543-4b9f-4e06-9d41-b010b7854eab",
+                  id: "d2bfc18e-38de-5eb2-a103-a3f448fb2d37",
                   type: "sequence",
                 },
               ],
-              id: "77c242b4-0c34-49fc-b41c-6d07a3e8a7a4",
+              id: "b92e8519-a531-55db-8265-50228bf1d36e",
               screen_order: 14,
-              title: "Organize as sílabas na ordem correta.",
+              title: "將音節按正確的順序排列。",
             },
           ],
-          subtitle: "Sílabas: ヤ、ユ、ヨ",
-          title: "Lição 18",
-          topic_id: "8912b4f4-2c04-404f-a64e-bfb712c677f5",
+          subtitle: "音節：ヤ、ユ、ヨ",
+          title: "第 18 課",
+          topic_id: "921d01de-29d3-409e-abbc-b2d88ab40960",
         },
         {
-          expanded_subtitle: "Aprenda a ler e escrever as sílabas na linha tr:ら.",
-          expanded_title: "Katakana: tr:ら, tr:り, tr:る, tr:れ, tr:ろ",
+          expanded_subtitle: "學習讀寫tr:ら行的音節。",
+          expanded_title: "片假名: tr:ら, tr:り, tr:る, tr:れ, tr:ろ",
           icon: "https://nihongo.khvat.app/chapter2/Lesson19.jpg",
-          id: "3bca627d-87c5-4fbf-b4ab-5ddb39b77978",
-          last_updated: "2026-03-26T17:43:20.226Z",
+          id: "9427d301-d4e3-4b56-aaae-27bd61000b3a",
+          last_updated: "2026-09-08T13:12:16.095Z",
           lesson_key: "alphabet/katakana&ra",
           lesson_order: 20,
           minimum_version: "2.4.1",
@@ -7651,13 +7647,13 @@ export const dumpPt = {
                     id: "859472d4-50b2-4574-adcf-65b301aa916e",
                     kana: "katakana",
                   },
-                  id: "9ee33818-3fa5-4513-9588-76a2fd9fdaeb",
+                  id: "aa94c9db-f32e-593d-96be-cb6ccce7a89f",
                   type: "letter",
                 },
               ],
-              id: "d63a0e9c-6fe0-421d-9f2a-db961db0677d",
+              id: "6c658e3d-2590-5a84-944e-497e576de9d1",
               screen_order: 1,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "記住這個音節的筆順和發音。",
             },
             {
               blocks: [
@@ -7668,13 +7664,13 @@ export const dumpPt = {
                     id: "859472d4-50b2-4574-adcf-65b301aa916e",
                     kana: "katakana",
                   },
-                  id: "44a6718c-f2a6-4e59-a90c-e639bd45c240",
+                  id: "89852add-d7bc-5d71-85d3-6a35778651d4",
                   type: "letter",
                 },
               ],
-              id: "611bf752-da22-41ff-ba2d-75cc78b80af4",
+              id: "85a79925-b5d5-5ef6-a4ce-7f6bdca4041e",
               screen_order: 2,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "按正確的筆順書寫音節。",
             },
             {
               blocks: [
@@ -7685,13 +7681,13 @@ export const dumpPt = {
                     id: "6e0e6570-0e60-46e4-8735-40ad423daec2",
                     kana: "katakana",
                   },
-                  id: "2f7b7c2c-5fd2-44c5-976b-061fd56342e1",
+                  id: "05f8933a-fe47-5701-91ea-adb5b27d8a09",
                   type: "letter",
                 },
               ],
-              id: "b8a1cce5-fe8f-42c8-856d-46c7f30459c4",
+              id: "f076d121-d6e7-5cf5-b2cc-074acb4ec57f",
               screen_order: 3,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "記住這個音節的筆順和發音。",
             },
             {
               blocks: [
@@ -7702,13 +7698,13 @@ export const dumpPt = {
                     id: "6e0e6570-0e60-46e4-8735-40ad423daec2",
                     kana: "katakana",
                   },
-                  id: "d11e65a2-def0-4cde-ba60-7889f750af2a",
+                  id: "179a44e0-6137-5e38-8643-00aa88d715cb",
                   type: "letter",
                 },
               ],
-              id: "2bccfceb-9aa4-44c7-87e2-cee4223b3cbe",
+              id: "033900ca-ab02-5dbb-833a-d3081e60f04e",
               screen_order: 4,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "按正確的筆順書寫音節。",
             },
             {
               blocks: [
@@ -7720,13 +7716,13 @@ export const dumpPt = {
                       ["ラ", "tr:ラ"],
                     ],
                   },
-                  id: "53944b54-95e2-45a6-b84e-f1c3f6a0f9bf",
+                  id: "b797927b-706e-56df-87c2-718edfed0dfb",
                   type: "matching",
                 },
               ],
-              id: "996c2cda-bf43-4913-a14e-dc73a67001b4",
+              id: "c093c62b-d4a0-5a8f-9d3c-ee5875ef20ae",
               screen_order: 5,
-              title: "Combine 「Katakana」 com sua transliteração.",
+              title: "將「片假名」與其羅馬字配對。",
             },
             {
               blocks: [
@@ -7737,13 +7733,13 @@ export const dumpPt = {
                     id: "1a43007b-1cfb-49a0-baea-02fe8d7cd78a",
                     kana: "katakana",
                   },
-                  id: "1726960b-dac7-4646-b4df-af07155f6d28",
+                  id: "0c97cee5-538d-5b62-b548-b22fff5e4900",
                   type: "letter",
                 },
               ],
-              id: "dbce5bef-03e9-4ff8-9615-1948ead7559f",
+              id: "044b6e09-0ce6-5db0-be0b-e2c7f435a993",
               screen_order: 6,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "記住這個音節的筆順和發音。",
             },
             {
               blocks: [
@@ -7754,23 +7750,23 @@ export const dumpPt = {
                     id: "1a43007b-1cfb-49a0-baea-02fe8d7cd78a",
                     kana: "katakana",
                   },
-                  id: "9b84d79f-8ef3-4779-ad35-153fd2df75e0",
+                  id: "30ff54cc-c168-59e4-be9a-d6ebf991307d",
                   type: "letter",
                 },
               ],
-              id: "ee3c6b7b-93e5-4aa0-af58-e0a9154b46da",
+              id: "852e52e2-e3e9-5baa-9034-a6a2c9e1c61c",
               screen_order: 7,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "按正確的筆順書寫音節。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Katakana",
+                    sub_title: "片假名",
                     title: "tr:リ",
                   },
-                  id: "6a97b743-6f50-486e-b157-e558df91822a",
+                  id: "cf3bbb20-e728-561f-8209-d57145e68487",
                   type: "title",
                 },
                 {
@@ -7791,13 +7787,13 @@ export const dumpPt = {
                       },
                     ],
                   },
-                  id: "c8f86152-2aa4-41ba-9445-3efab7b57cb3",
+                  id: "9feb5b64-8eb8-539d-8eb1-b695489b74a2",
                   type: "choice",
                 },
               ],
-              id: "ea4b7863-3e1e-4b63-96f3-f8c267efbd91",
+              id: "30c58d31-ece8-5bd3-9a0d-401f3d93614f",
               screen_order: 8,
-              title: "Selecione a sílaba.",
+              title: "選擇音節。",
             },
             {
               blocks: [
@@ -7809,13 +7805,13 @@ export const dumpPt = {
                       ["リ", "tr:リ"],
                     ],
                   },
-                  id: "1b0810d8-69d4-4440-b51e-64914b68816c",
+                  id: "74a13437-4e7b-5aa2-906a-0b6f47a0be4b",
                   type: "matching",
                 },
               ],
-              id: "61c84b98-cccf-4bc7-ac2c-a1faff4ca634",
+              id: "197a228f-3bb6-5b45-89a6-2f0dff269bca",
               screen_order: 9,
-              title: "Combine 「Katakana」 com sua transliteração.",
+              title: "將「片假名」與其羅馬字配對。",
             },
             {
               blocks: [
@@ -7826,13 +7822,13 @@ export const dumpPt = {
                     id: "e53fdab4-2d04-452d-a635-d2ac728c6a32",
                     kana: "katakana",
                   },
-                  id: "b4dadc07-d7dc-49a0-a8ef-a701d93c9728",
+                  id: "fdbb9ec7-e877-56ed-ab95-47b747da00af",
                   type: "letter",
                 },
               ],
-              id: "90b7846d-d61a-43bd-8fe5-269d9adda2d6",
+              id: "1c80fd0c-5f27-5ed0-860e-20a86b745234",
               screen_order: 10,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "記住這個音節的筆順和發音。",
             },
             {
               blocks: [
@@ -7843,13 +7839,13 @@ export const dumpPt = {
                     id: "e53fdab4-2d04-452d-a635-d2ac728c6a32",
                     kana: "katakana",
                   },
-                  id: "a7cea013-98ec-47f5-9158-b6418ac0ab84",
+                  id: "531b3957-e710-52c7-afd5-932e0d51673c",
                   type: "letter",
                 },
               ],
-              id: "6a289517-b6f0-4b00-8da1-d3b181ed96e4",
+              id: "d30b1d78-96f1-5e8e-aa3d-f33ce8a7bdc6",
               screen_order: 11,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "按正確的筆順書寫音節。",
             },
             {
               blocks: [
@@ -7861,13 +7857,13 @@ export const dumpPt = {
                       ["ル", "tr:ル"],
                     ],
                   },
-                  id: "2d72c7d6-a6ea-4416-bd5f-cacbfc872193",
+                  id: "c5daf6ef-fd87-5fb4-a7d3-f0a233a586c9",
                   type: "matching",
                 },
               ],
-              id: "fce1e5c8-6743-4315-b266-d2f3d671a2ad",
+              id: "d057710a-fea4-5702-8aa2-e3397823fbd7",
               screen_order: 12,
-              title: "Combine 「Katakana」 com sua transliteração.",
+              title: "將「片假名」與其羅馬字配對。",
             },
             {
               blocks: [
@@ -7878,13 +7874,13 @@ export const dumpPt = {
                     id: "6ba2a0b0-d443-4323-a382-c8144cd996d3",
                     kana: "katakana",
                   },
-                  id: "54ef6666-48d0-4d2f-9b9e-b72053d1fada",
+                  id: "9d725c3c-1abe-59af-ad1a-173edb9868c1",
                   type: "letter",
                 },
               ],
-              id: "f129217d-d843-441f-9152-59775bc1db5b",
+              id: "b5a25700-7d1c-58c3-9c44-adcdc3ea9852",
               screen_order: 13,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "記住這個音節的筆順和發音。",
             },
             {
               blocks: [
@@ -7895,60 +7891,60 @@ export const dumpPt = {
                     id: "6ba2a0b0-d443-4323-a382-c8144cd996d3",
                     kana: "katakana",
                   },
-                  id: "35729b47-9617-4818-9be4-91ac2a8907b1",
+                  id: "3b6b9e1c-a9a0-5f80-b6d9-7c93461bbe56",
                   type: "letter",
                 },
               ],
-              id: "ac43b60f-af3b-4312-89ba-963f5e27c1ab",
+              id: "0af41ec2-fd5f-5268-b505-a7b94a6154e9",
               screen_order: 14,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "按正確的筆順書寫音節。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Katakana",
-                    title: "tr:リ",
+                    sub_title: "片假名",
+                    title: "tr:ラ",
                   },
-                  id: "91c5a9cd-4277-4ecc-a2ad-8edccdcd3e03",
+                  id: "635d7b3a-44c1-5671-a61f-7347211e4a30",
                   type: "title",
                 },
                 {
                   block_order: 2,
                   content: {
                     answers: [
+                      {
+                        isTrue: false,
+                        title: "ロ",
+                      },
                       {
                         isTrue: false,
                         title: "レ",
                       },
                       {
-                        isTrue: false,
-                        title: "ル",
-                      },
-                      {
                         isTrue: true,
-                        title: "リ",
+                        title: "ラ",
                       },
                     ],
                   },
-                  id: "99292986-e941-431f-8835-348e91d05812",
+                  id: "ddd2a8da-b5eb-5d64-9bc7-beacc50be7ce",
                   type: "choice",
                 },
               ],
-              id: "d1885f0b-cc17-4cfd-85f5-7c0a0c2b2f71",
+              id: "73051446-3746-5d72-8c69-03788932aae5",
               screen_order: 15,
-              title: "Selecione a sílaba.",
+              title: "選擇音節。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Katakana",
-                    title: "リ, ル, ロ, ラ, レ",
+                    sub_title: "片假名",
+                    title: "ロ, レ, ル, リ, ラ",
                   },
-                  id: "ff49a285-53e8-4c84-ad8b-74f67348bc56",
+                  id: "b7c04a29-b6f2-546b-9210-f702b0f93db0",
                   type: "title",
                 },
                 {
@@ -7957,31 +7953,31 @@ export const dumpPt = {
                     answers: [
                       {
                         isTrue: true,
-                        title: "tr:リ, tr:ル, tr:ロ, tr:ラ, tr:レ",
+                        title: "tr:ロ, tr:レ, tr:ル, tr:リ, tr:ラ",
                       },
                       {
                         isTrue: false,
-                        title: "tr:レ, tr:ル, tr:ロ, tr:リ, tr:ラ",
+                        title: "tr:レ, tr:ラ, tr:リ, tr:ロ, tr:ル",
                       },
                     ],
                   },
-                  id: "ab38224f-0bf3-41a9-b528-952fc5b858e7",
+                  id: "1979148a-4ed2-556c-a185-7558b6ee201e",
                   type: "choice",
                 },
               ],
-              id: "58a8e048-51a9-499d-8c91-c5e0b4edd77a",
+              id: "a8477034-c742-59f0-aaaa-dd3126b674ad",
               screen_order: 16,
-              title: "Escolha a sequência correta.",
+              title: "選擇正確的順序。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Katakana",
-                    title: "レ, ロ, ラ, リ, ル",
+                    sub_title: "片假名",
+                    title: "ル, リ, ロ, ラ, レ",
                   },
-                  id: "a8832979-a832-458d-862e-601c63b2edac",
+                  id: "dee08001-e236-5f5b-9fe2-6143076e106b",
                   type: "title",
                 },
                 {
@@ -7990,81 +7986,81 @@ export const dumpPt = {
                     answers: [
                       {
                         isTrue: true,
-                        title: "tr:レ, tr:ロ, tr:ラ, tr:リ, tr:ル",
+                        title: "tr:ル, tr:リ, tr:ロ, tr:ラ, tr:レ",
                       },
                       {
                         isTrue: false,
-                        title: "tr:レ, tr:ラ, tr:ル, tr:ロ, tr:リ",
+                        title: "tr:ラ, tr:ル, tr:ロ, tr:レ, tr:リ",
                       },
                     ],
                   },
-                  id: "2eaafcc3-2df7-4a5e-a171-e4ede9130ab5",
+                  id: "ffabdb39-ea84-5906-89ad-ec6ae5669562",
                   type: "choice",
                 },
               ],
-              id: "1932b996-5332-4cf8-be43-13646c045bbd",
+              id: "bd555fe9-cb93-5844-bc4a-2980179ecf4f",
               screen_order: 17,
-              title: "Escolha a sequência correta.",
+              title: "選擇正確的順序。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Katakana",
-                    title: "tr:ロ, tr:リ, tr:ル, tr:レ, tr:ラ",
+                    sub_title: "片假名",
+                    title: "tr:ラ, tr:リ, tr:ル, tr:ロ, tr:レ",
                   },
-                  id: "2802d601-c44d-4e12-9760-86f25e766b5d",
+                  id: "a3caa1d7-c62f-52d9-a6ed-09959d35ab8a",
                   type: "title",
                 },
                 {
                   block_order: 2,
                   content: {
-                    sequence: ["ロ", "リ", "ル", "レ", "ラ"],
+                    sequence: ["ラ", "リ", "ル", "ロ", "レ"],
                   },
-                  id: "d56e3f63-cd7b-4a77-a622-3e9c19333251",
+                  id: "837a5eb7-f05c-5707-b103-075052ac4fbc",
                   type: "sequence",
                 },
               ],
-              id: "a90c2fbb-ec47-4f62-b797-dae4fad67ecc",
+              id: "752dfd92-0f06-5cc8-ac3b-56a5fb69ebb7",
               screen_order: 18,
-              title: "Organize as sílabas na ordem correta.",
+              title: "將音節按正確的順序排列。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Katakana",
-                    title: "tr:レ, tr:ロ, tr:ル, tr:ラ, tr:リ",
+                    sub_title: "片假名",
+                    title: "tr:ラ, tr:ル, tr:レ, tr:ロ, tr:リ",
                   },
-                  id: "54ffaa32-750f-493c-a646-6a9617c689d0",
+                  id: "fe4fcd14-a5f0-59c9-a677-5862a2703f92",
                   type: "title",
                 },
                 {
                   block_order: 2,
                   content: {
-                    sequence: ["レ", "ロ", "ル", "ラ", "リ"],
+                    sequence: ["ラ", "ル", "レ", "ロ", "リ"],
                   },
-                  id: "d295e5f6-8564-41d1-a78b-8b95df22ea6f",
+                  id: "50027b98-9aa6-577e-8082-2dd4a893da4c",
                   type: "sequence",
                 },
               ],
-              id: "69ba3e5d-3ca1-42b1-90b3-799558d0316e",
+              id: "acc53da2-9a28-57a5-9474-c7bd99b92fdc",
               screen_order: 19,
-              title: "Organize as sílabas na ordem correta.",
+              title: "將音節按正確的順序排列。",
             },
           ],
-          subtitle: "Sílabas: ラ、リ、ル、レ、ロ",
-          title: "Lição 19",
-          topic_id: "8912b4f4-2c04-404f-a64e-bfb712c677f5",
+          subtitle: "音節：ラ、リ、ル、レ、ロ",
+          title: "第 19 課",
+          topic_id: "921d01de-29d3-409e-abbc-b2d88ab40960",
         },
         {
-          expanded_subtitle: "Aprenda a ler e escrever as sílabas na linha tr:わ.",
-          expanded_title: "Katakana: tr:わ, tr:を, tr:ん",
+          expanded_subtitle: "學習讀寫tr:わ行的音節。",
+          expanded_title: "片假名: tr:わ, tr:を, tr:ん",
           icon: "https://nihongo.khvat.app/chapter2/Lesson20.jpg",
-          id: "7dc6e2c0-b90b-4417-91b0-c1eb68808ed3",
-          last_updated: "2026-03-26T17:43:20.226Z",
+          id: "4f32372e-4a73-4dd2-9284-5b0d0540e02b",
+          last_updated: "2026-09-08T13:12:16.095Z",
           lesson_key: "alphabet/katakana&wa",
           lesson_order: 21,
           minimum_version: "2.4.1",
@@ -8078,13 +8074,13 @@ export const dumpPt = {
                     id: "a53d8501-373d-4944-a76b-657f672162f9",
                     kana: "katakana",
                   },
-                  id: "8bbfd750-7377-4624-b4dd-60498666a58e",
+                  id: "cddd1f06-8078-59a5-8496-86226f5b8621",
                   type: "letter",
                 },
               ],
-              id: "3b58f3cc-0aeb-4844-a9c3-43ad78f8b4b7",
+              id: "c13b1c27-e295-5beb-ad83-b461addc88a6",
               screen_order: 1,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "記住這個音節的筆順和發音。",
             },
             {
               blocks: [
@@ -8095,13 +8091,13 @@ export const dumpPt = {
                     id: "a53d8501-373d-4944-a76b-657f672162f9",
                     kana: "katakana",
                   },
-                  id: "818cb644-c711-4ab9-afcb-226542af954d",
+                  id: "6bbd5ea6-99b9-5cca-bbcf-e30fb0389b94",
                   type: "letter",
                 },
               ],
-              id: "a9eb7270-be7b-472e-8667-fbd8c571ffd0",
+              id: "6da7f030-d34e-55e2-80b2-9ecc0cd240ef",
               screen_order: 2,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "按正確的筆順書寫音節。",
             },
             {
               blocks: [
@@ -8112,13 +8108,13 @@ export const dumpPt = {
                     id: "858b53e1-af17-45d5-8fc2-330121eab5c4",
                     kana: "katakana",
                   },
-                  id: "de3d7258-74ef-447e-92c8-cca3ba95ef51",
+                  id: "4bd934f7-8e1e-5346-ac99-36cf5f407cb8",
                   type: "letter",
                 },
               ],
-              id: "b7ac26c4-b5d8-496c-aad6-56649de4e80f",
+              id: "ca53585e-eab8-515f-a0f3-5ec50cebcb29",
               screen_order: 3,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "記住這個音節的筆順和發音。",
             },
             {
               blocks: [
@@ -8129,13 +8125,13 @@ export const dumpPt = {
                     id: "858b53e1-af17-45d5-8fc2-330121eab5c4",
                     kana: "katakana",
                   },
-                  id: "68106755-5ee8-4e98-a556-3c9d9990bba5",
+                  id: "490096eb-e41e-5403-81e0-834046d64111",
                   type: "letter",
                 },
               ],
-              id: "de9391ef-ee8a-4b33-93cb-be8f2a20ad44",
+              id: "f7db95d8-215e-580b-94db-5b78c4bccc7d",
               screen_order: 4,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "按正確的筆順書寫音節。",
             },
             {
               blocks: [
@@ -8147,13 +8143,13 @@ export const dumpPt = {
                       ["ワ", "tr:ワ"],
                     ],
                   },
-                  id: "822534aa-564f-47f7-9694-f09150ec71a7",
+                  id: "14628d1a-6990-5335-9438-f13636a08d7b",
                   type: "matching",
                 },
               ],
-              id: "b2671a72-fd78-4c11-aa45-57ffad678a27",
+              id: "b99b14b8-ac55-5986-a920-b7728737acf7",
               screen_order: 5,
-              title: "Combine 「Katakana」 com sua transliteração.",
+              title: "將「片假名」與其羅馬字配對。",
             },
             {
               blocks: [
@@ -8164,13 +8160,13 @@ export const dumpPt = {
                     id: "2a481d17-0d7c-492a-85fc-cab60e9fb6df",
                     kana: "katakana",
                   },
-                  id: "e893e254-b01f-4098-8399-bf837edf2e2c",
+                  id: "1ec3707b-c7a6-5a73-a1d5-e46e4308551d",
                   type: "letter",
                 },
               ],
-              id: "b7f9a7a2-81f2-426a-afea-be56f9762e70",
+              id: "f2a97560-5a97-5d21-8659-46121bca1219",
               screen_order: 6,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "記住這個音節的筆順和發音。",
             },
             {
               blocks: [
@@ -8181,23 +8177,23 @@ export const dumpPt = {
                     id: "2a481d17-0d7c-492a-85fc-cab60e9fb6df",
                     kana: "katakana",
                   },
-                  id: "7ab6de0f-8a97-4c8b-9839-e8db5747486d",
+                  id: "1a0e6702-c6e0-55ac-9cd0-b88a78e04ec4",
                   type: "letter",
                 },
               ],
-              id: "dd64c582-998a-4466-af17-68bbcf5422d1",
+              id: "8edd661f-c175-54df-81d0-f7d74bdb3f53",
               screen_order: 7,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "按正確的筆順書寫音節。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Katakana",
-                    title: "tr:ヲ",
+                    sub_title: "片假名",
+                    title: "tr:ン",
                   },
-                  id: "34a96ec5-04b3-4db7-a46c-173927e1a572",
+                  id: "a1850bb4-84a4-5192-99a0-e53d193c9f8c",
                   type: "title",
                 },
                 {
@@ -8206,25 +8202,25 @@ export const dumpPt = {
                     answers: [
                       {
                         isTrue: false,
-                        title: "ワ",
-                      },
-                      {
-                        isTrue: true,
                         title: "ヲ",
                       },
                       {
                         isTrue: false,
+                        title: "ワ",
+                      },
+                      {
+                        isTrue: true,
                         title: "ン",
                       },
                     ],
                   },
-                  id: "46a240fb-2d6e-45bd-a8cc-34f9ab418714",
+                  id: "88c0bde1-71d5-523c-99f2-9942e23d69e6",
                   type: "choice",
                 },
               ],
-              id: "e01e4786-a8f2-4902-ae5e-3b51bcc58856",
+              id: "0c71ee4c-a3f7-543b-84de-b8c360a997da",
               screen_order: 8,
-              title: "Selecione a sílaba.",
+              title: "選擇音節。",
             },
             {
               blocks: [
@@ -8236,60 +8232,60 @@ export const dumpPt = {
                       ["ヲ", "tr:ヲ"],
                     ],
                   },
-                  id: "1805a69d-798a-409f-b150-e252302afe62",
+                  id: "9fdba1a0-5a04-5c7f-a327-830850daae90",
                   type: "matching",
                 },
               ],
-              id: "49958c2b-ee05-4470-a0a5-fa446f4334df",
+              id: "c0f9b1ff-25d7-50eb-998e-59928350274c",
               screen_order: 9,
-              title: "Combine 「Katakana」 com sua transliteração.",
+              title: "將「片假名」與其羅馬字配對。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Katakana",
-                    title: "tr:ヲ",
+                    sub_title: "片假名",
+                    title: "tr:ワ",
                   },
-                  id: "c1e34e1b-2705-46be-9ef9-c74036e13d56",
+                  id: "ac58033a-b662-50b5-b05b-21aa5a485d3a",
                   type: "title",
                 },
                 {
                   block_order: 2,
                   content: {
                     answers: [
-                      {
-                        isTrue: true,
-                        title: "ヲ",
-                      },
                       {
                         isTrue: false,
                         title: "ン",
                       },
                       {
-                        isTrue: false,
+                        isTrue: true,
                         title: "ワ",
+                      },
+                      {
+                        isTrue: false,
+                        title: "ヲ",
                       },
                     ],
                   },
-                  id: "b6a7fb54-acae-4db0-99b2-c336858cd649",
+                  id: "55cd0f6d-bdfc-5a2c-b296-f1c77b2d4c05",
                   type: "choice",
                 },
               ],
-              id: "722d1128-021f-47d5-a939-a4d8cbb95eff",
+              id: "b5bb13b0-8914-5913-a733-b5e20a7dd9ab",
               screen_order: 10,
-              title: "Selecione a sílaba.",
+              title: "選擇音節。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Katakana",
-                    title: "ヲ, ワ, ン",
+                    sub_title: "片假名",
+                    title: "ワ, ン, ヲ",
                   },
-                  id: "d0c1a20b-dc66-4b1c-9eb2-5ba2c8e1a914",
+                  id: "9d69940d-5521-5d58-a940-3125558dcb13",
                   type: "title",
                 },
                 {
@@ -8297,32 +8293,32 @@ export const dumpPt = {
                   content: {
                     answers: [
                       {
-                        isTrue: false,
+                        isTrue: true,
                         title: "tr:ワ, tr:ン, tr:ヲ",
                       },
                       {
-                        isTrue: true,
+                        isTrue: false,
                         title: "tr:ヲ, tr:ワ, tr:ン",
                       },
                     ],
                   },
-                  id: "dc659f71-f3f2-4868-881c-9989ce11b658",
+                  id: "0e0db8ae-c7a5-576d-9147-b8e75fc08a1e",
                   type: "choice",
                 },
               ],
-              id: "573b04ce-404d-48e4-a672-d7df7ee716ac",
+              id: "ae2fc8ce-6320-5c35-b171-c85f282441d5",
               screen_order: 11,
-              title: "Escolha a sequência correta.",
+              title: "選擇正確的順序。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Katakana",
-                    title: "ン, ヲ, ワ",
+                    sub_title: "片假名",
+                    title: "ワ, ン, ヲ",
                   },
-                  id: "15aad4aa-2fda-4497-acdf-d19bd1d52520",
+                  id: "d3033c33-3abc-51f9-aaa3-77d93b665417",
                   type: "title",
                 },
                 {
@@ -8330,89 +8326,89 @@ export const dumpPt = {
                   content: {
                     answers: [
                       {
-                        isTrue: false,
-                        title: "tr:ヲ, tr:ン, tr:ワ",
+                        isTrue: true,
+                        title: "tr:ワ, tr:ン, tr:ヲ",
                       },
                       {
-                        isTrue: true,
+                        isTrue: false,
                         title: "tr:ン, tr:ヲ, tr:ワ",
                       },
                     ],
                   },
-                  id: "145e9769-ee94-494d-afc4-79e4148c3eaa",
+                  id: "266e3e1b-3ece-55a8-9f17-1005e93acb90",
                   type: "choice",
                 },
               ],
-              id: "766a25a5-79b5-456d-9a6f-0f95ebd1d26a",
+              id: "cfc9220d-88d6-5501-a2de-ee5f1b6230f8",
               screen_order: 12,
-              title: "Escolha a sequência correta.",
+              title: "選擇正確的順序。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Katakana",
-                    title: "tr:ヲ, tr:ン, tr:ワ",
+                    sub_title: "片假名",
+                    title: "tr:ヲ, tr:ワ, tr:ン",
                   },
-                  id: "289b644c-8173-409e-8180-4c632d67c302",
+                  id: "5cd848ca-14ee-5699-a28d-48ba74844a4f",
                   type: "title",
                 },
                 {
                   block_order: 2,
                   content: {
-                    sequence: ["ヲ", "ン", "ワ"],
+                    sequence: ["ヲ", "ワ", "ン"],
                   },
-                  id: "863cbc97-9c55-401b-8a87-7703b902d2f0",
+                  id: "ec897156-4797-5a18-a1ed-0f42ca5f0f4d",
                   type: "sequence",
                 },
               ],
-              id: "2c50dfe2-6f02-414c-ab53-bd2011f6deac",
+              id: "39b93468-91fb-5423-a9eb-342bebf64537",
               screen_order: 13,
-              title: "Organize as sílabas na ordem correta.",
+              title: "將音節按正確的順序排列。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Katakana",
-                    title: "tr:ヲ, tr:ン, tr:ワ",
+                    sub_title: "片假名",
+                    title: "tr:ン, tr:ワ, tr:ヲ",
                   },
-                  id: "5aff954d-0ca3-4222-bbd8-c82d79398a08",
+                  id: "20077b35-2413-59ec-8512-5b42a4e0d4e8",
                   type: "title",
                 },
                 {
                   block_order: 2,
                   content: {
-                    sequence: ["ワ", "ヲ", "ン"],
+                    sequence: ["ン", "ワ", "ヲ"],
                   },
-                  id: "49456d73-f757-4120-a6d4-50981db7d775",
+                  id: "4640ac27-da0f-5960-afda-a47f6c07cd26",
                   type: "sequence",
                 },
               ],
-              id: "82aec6e2-0b1e-465b-8f07-675eff104d2f",
+              id: "d38bb0fa-04b6-56e4-8ac5-badd2c0d6a7b",
               screen_order: 14,
-              title: "Organize as sílabas na ordem correta.",
+              title: "將音節按正確的順序排列。",
             },
           ],
-          subtitle: "Sílabas: ワ、ヲ、ン",
-          title: "Lição 20",
-          topic_id: "8912b4f4-2c04-404f-a64e-bfb712c677f5",
+          subtitle: "音節：ワ、ヲ、ン",
+          title: "第 20 課",
+          topic_id: "921d01de-29d3-409e-abbc-b2d88ab40960",
         },
       ],
-      title: "Seção 2. Katakana",
+      title: "第2章. 片假名",
       topic_order: 2,
     },
     {
-      id: "05afe72f-3479-47dc-a4c4-12b41a9c4f94",
+      id: "bb1372fe-3cd1-40bc-b72a-5c0a79ddc5ad",
       lessons: [
         {
-          expanded_subtitle: "Aqui vamos contar sobre os sinais especiais do hiragana.",
-          expanded_title: "Informação",
+          expanded_subtitle: "在這裡，我們將向你介紹平假名的特殊符號。",
+          expanded_title: "資訊",
           icon: "https://nihongo.khvat.app/chapter3/DakuonAndHandakuon.jpg",
-          id: "f4496755-9f5f-4ffa-a38c-3d1841903805",
-          last_updated: "2026-03-26T17:43:20.226Z",
+          id: "0aa00070-52c4-4a6f-98ad-2dbd73ea8edd",
+          last_updated: "2026-09-08T13:12:16.095Z",
           lesson_key: "alphabet/hiragana&dakuon",
           lesson_order: 22,
           minimum_version: "2.4.1",
@@ -8422,17 +8418,17 @@ export const dumpPt = {
                 {
                   block_order: 1,
                   content: {
-                    text: "Depois de dominarmos as sílabas básicas do hiragana, é hora de conhecer dakuon e handakuon — sinais especiais que alteram a sonoridade das sílabas.",
+                    text: "在掌握平假名的基本音節後，現在該認識濁音與半濁音了——這些特殊符號會改變音節的發音。",
                   },
-                  id: "ac1d5a8b-7726-4f37-baf2-0a39c86cc2c3",
+                  id: "45619c08-8ca8-5249-b225-425f68f2d810",
                   type: "text",
                 },
                 {
                   block_order: 2,
                   content: {
-                    text: "Primeiro, vamos descobrir com quais sílabas do hiragana esses sinais podem ser usados:",
+                    text: "首先，讓我們了解哪些平假名音節可以使用這些符號：",
                   },
-                  id: "ff58fc76-4b9f-4a2f-8670-13b53c135fd7",
+                  id: "211522b6-fcbc-5b5e-8678-6335e5b516ea",
                   type: "text",
                 },
                 {
@@ -8440,14 +8436,14 @@ export const dumpPt = {
                   content: {
                     table: [
                       [
-                        "Romaji",
+                        "羅馬字",
                         "tr:か, tr:き, tr:く, tr:け, tr:こ",
                         "tr:さ, tr:し, tr:す, tr:せ, tr:そ",
                         "tr:た, tr:ち, tr:つ, tr:て, tr:と",
                         "tr:は, tr:ひ, tr:ふ, tr:へ, tr:ほ",
                       ],
                       [
-                        "Hiragana",
+                        "平假名",
                         "か, き, く, け, こ",
                         "さ, し, す, せ, そ",
                         "た, ち, つ, て, と",
@@ -8455,13 +8451,13 @@ export const dumpPt = {
                       ],
                     ],
                   },
-                  id: "2f7a1652-93b0-4e58-85b4-3b691cc59ea6",
+                  id: "d8ef6729-11a8-5684-987a-bbca4cee2914",
                   type: "table",
                 },
               ],
-              id: "963f3b9e-3e8a-46b3-9bc3-f83fb776a53f",
+              id: "c27dc624-c22f-5756-b61f-cdef5d71e185",
               screen_order: 1,
-              title: "Dakuon e Handakuon.",
+              title: "濁音與半濁音。",
             },
             {
               blocks: [
@@ -8469,27 +8465,27 @@ export const dumpPt = {
                   block_order: 1,
                   content: {
                     pairs: [
-                      ["きく", "tr(きく) (ouvir)"],
-                      ["つち", "tr(つち) (terra)"],
-                      ["ほし", "tr(ほし) (estrela)"],
+                      ["きく", "tr(きく)（聽）"],
+                      ["つち", "tr(つち)（土地）"],
+                      ["ほし", "tr(ほし)（星星）"],
                     ],
                   },
-                  id: "e1aa506f-def0-4a11-b16d-d602d2750c34",
+                  id: "9af60e36-b44f-57eb-9edb-c40013564e3a",
                   type: "matching",
                 },
               ],
-              id: "203b9243-3756-4b47-ab90-c8e3df698bb5",
+              id: "641a31bc-f2b1-5681-b608-94320a9dc94d",
               screen_order: 2,
-              title: "Associe o hiragana com o romaji.",
+              title: "將平假名與羅馬字配對。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "Ao adicionar sinais especiais dakuten, que são duas curtas linhas no canto superior direito nas sílabas, formamos novos sons. Veja como isso altera a pronúncia.",
+                    text: "在音節右上角加上由兩條短線組成的濁點，就能形成新的聲音。來看看這會如何改變發音。",
                   },
-                  id: "aadc24ee-5dc6-47a3-ab1e-74a34c86005a",
+                  id: "18cc9502-3da3-598f-8239-e4a289825ce3",
                   type: "text",
                 },
                 {
@@ -8497,7 +8493,7 @@ export const dumpPt = {
                   content: {
                     table: [
                       [
-                        "Surda",
+                        "清音",
                         "か (tr:か)",
                         "き (tr:き)",
                         "く (tr:く)",
@@ -8505,7 +8501,7 @@ export const dumpPt = {
                         "こ (tr:こ)",
                       ],
                       [
-                        "Sonora",
+                        "濁音",
                         "が (tr:が)",
                         "ぎ (tr:ぎ)",
                         "ぐ (tr:ぐ)",
@@ -8514,23 +8510,23 @@ export const dumpPt = {
                       ],
                     ],
                   },
-                  id: "74be04c4-704b-444a-af82-07f94a5e4f26",
+                  id: "f10936a4-c0d7-5816-a43f-1f927ed4074d",
                   type: "table",
                 },
               ],
-              id: "eabafb9a-0ecc-486b-9326-4838552254cf",
+              id: "f19fc2c5-40ab-5092-a00a-426fe98dd7ad",
               screen_order: 3,
-              title: "Dakuon tr:が, tr:ぎ, tr:ぐ, tr:げ, tr:ご.",
+              title: "濁音 tr:が, tr:ぎ, tr:ぐ, tr:げ, tr:ご。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Chave",
+                    sub_title: "鑰匙",
                     title: "tr(かぎ)",
                   },
-                  id: "1c799bf3-9129-44f6-865d-f33c54e17bc1",
+                  id: "907076d9-5d6a-5452-a82b-242b9cc07f5e",
                   type: "title",
                 },
                 {
@@ -8551,22 +8547,22 @@ export const dumpPt = {
                       },
                     ],
                   },
-                  id: "910e7b6a-0ab8-4459-93c8-d8029fb5e943",
+                  id: "c9a66b86-17a5-51cb-8ee7-6e1164b6a8ee",
                   type: "choice",
                 },
               ],
-              id: "32da8c49-2640-4696-af50-486100235bbc",
+              id: "c4c2823b-91d9-549f-8604-93cb016ac0b8",
               screen_order: 4,
-              title: "Escolha o hiragana para:",
+              title: "選擇對應的平假名：",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "Da mesma forma, adicionamos dakuten às sílabas na linha 'tr:さ', transformando-as em sons sonoros.",
+                    text: "同樣地，我們在「tr:さ」行的音節上加上濁點，將它們變成濁音。",
                   },
-                  id: "18a21949-5e4a-4e2e-9d71-ab090ea16fb7",
+                  id: "b00fe908-9105-5c1f-ad6c-51ce18d81613",
                   type: "text",
                 },
                 {
@@ -8574,7 +8570,7 @@ export const dumpPt = {
                   content: {
                     table: [
                       [
-                        "Surda",
+                        "清音",
                         "さ (tr:さ)",
                         "し (tr:し)",
                         "す (tr:す)",
@@ -8582,7 +8578,7 @@ export const dumpPt = {
                         "そ (tr:そ)",
                       ],
                       [
-                        "Sonora",
+                        "濁音",
                         "ざ (tr:ざ)",
                         "じ (tr:じ)",
                         "ず (tr:ず)",
@@ -8591,23 +8587,23 @@ export const dumpPt = {
                       ],
                     ],
                   },
-                  id: "555aa947-4ff4-4970-b788-4ff15c7b4c12",
+                  id: "55684711-3b9f-518c-b527-b93f0c32d287",
                   type: "table",
                 },
               ],
-              id: "e0d7e7ec-1675-437a-b76b-51c1c05dc0fb",
+              id: "ce070401-d421-5fa8-93e0-4f219302d138",
               screen_order: 5,
-              title: "Dakuon tr:ざ, tr:じ, tr:ず, tr:ぜ, tr:ぞ.",
+              title: "濁音 tr:ざ, tr:じ, tr:ず, tr:ぜ, tr:ぞ。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Lírio-do-vale",
+                    sub_title: "鈴蘭",
                     title: "tr(すずらん)",
                   },
-                  id: "af1c532b-7d82-4b13-8b91-b1e8817e7a17",
+                  id: "7d2a5a12-9648-5dd2-9a8b-bcaaffe8c0e4",
                   type: "title",
                 },
                 {
@@ -8615,22 +8611,22 @@ export const dumpPt = {
                   content: {
                     sequence: ["す", "ず", "ら", "ん"],
                   },
-                  id: "ef0be798-3d69-440c-bc72-0b0c8734cc20",
+                  id: "404c2914-5454-508d-900c-040c3620e7d0",
                   type: "sequence",
                 },
               ],
-              id: "6070d588-9fd2-4c94-a914-ebee46a5e498",
+              id: "d6ce78b8-10ca-5803-b5c7-41311ce69d67",
               screen_order: 6,
-              title: "Escolha o hiragana para:",
+              title: "選擇對應的平假名：",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "Ao adicionar dakuten às sílabas na linha 'tr:た', criamos outro conjunto de sons sonoros.",
+                    text: "在「tr:た」行的音節上加上濁點，就能形成另一組濁音。",
                   },
-                  id: "11fe9341-54b6-489d-becd-332abc2b3657",
+                  id: "59135e16-398b-5460-828a-0c73edf9bbfe",
                   type: "text",
                 },
                 {
@@ -8638,7 +8634,7 @@ export const dumpPt = {
                   content: {
                     table: [
                       [
-                        "Surda",
+                        "清音",
                         "た (tr:た)",
                         "ち (tr:ち)",
                         "つ (tr:つ)",
@@ -8646,7 +8642,7 @@ export const dumpPt = {
                         "と (tr:と)",
                       ],
                       [
-                        "Sonora",
+                        "濁音",
                         "だ (tr:だ)",
                         "ぢ (tr:ぢ)",
                         "づ (tr:づ)",
@@ -8655,57 +8651,57 @@ export const dumpPt = {
                       ],
                     ],
                   },
-                  id: "818cd957-d1bb-4cfc-ab5b-568ab7e083db",
+                  id: "646008e0-ca9d-5008-88b9-0b1f043e833a",
                   type: "table",
                 },
               ],
-              id: "3d242c6f-79d8-4dc5-a493-6193960d8fef",
+              id: "57808b37-98db-5f0c-890d-e5f1e9608eb9",
               screen_order: 7,
-              title: "Dakuon tr:だ, tr:ぢ, tr:づ, tr:で, tr:ど.",
+              title: "濁音 tr:だ, tr:ぢ, tr:づ, tr:で, tr:ど。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "As sílabas じ (tr:じ) e ぢ (tr:ぢ), assim como ず (tr:ず) e づ (tr:づ) são pronunciadas da mesma forma no japonês moderno. Anteriormente, esses sons eram diferentes, mas com o tempo se fundiram.",
+                    text: "在現代日語中，音節 じ (tr:じ) 與 ぢ (tr:ぢ)，以及 ず (tr:ず) 與 づ (tr:づ) 的發音相同。這些聲音過去有所區別，但隨著時間逐漸合併了。",
                   },
-                  id: "f86ca692-81d5-45c3-b92b-1216af0cd5bc",
+                  id: "f1a8c551-d78a-5dc2-861f-80f974facea0",
                   type: "text",
                 },
                 {
                   block_order: 2,
                   content: {
-                    text: "Note que para palavras com 'tr:じ' geralmente usa-se じ, e para palavras com 'tr:ず' - ず. Apenas em pouquíssimas palavras usa-se ぢ e づ.",
+                    text: "請注意，包含「tr:じ」的詞通常使用 じ，而包含「tr:ず」的詞通常使用 ず。只有極少數詞會使用 ぢ 和 づ。",
                   },
-                  id: "12b1b699-5f1a-470a-b5e1-7bd6ce9e1cc8",
+                  id: "e31a4d94-663f-5efd-8256-caeb9f660270",
                   type: "text",
                 },
                 {
                   block_order: 3,
                   content: {
                     rules: [
-                      "じ(tr:じ), ず(tr:ず) - usados na maioria dos casos",
-                      "ぢ(tr:ぢ), づ(tr:づ) - usados apenas em poucas palavras",
+                      "じ(tr:じ)、ず(tr:ず)－大多數情況下使用",
+                      "ぢ(tr:ぢ)、づ(tr:づ)－僅用於少數詞彙",
                     ],
                   },
-                  id: "54c7e2fb-e7a1-4d3a-9053-1939b1a2e807",
+                  id: "d8ce20f8-45cb-599a-ade0-ae5f0b5619ce",
                   type: "rule",
                 },
               ],
-              id: "898c33a7-5b11-47c1-9bbf-6453f029d19e",
+              id: "a12d6625-ff2a-5670-803f-6b3dbc449914",
               screen_order: 8,
-              title: "Preste atenção!",
+              title: "請注意！",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Caldo japonês",
+                    sub_title: "日式高湯",
                     title: "tr(だし)",
                   },
-                  id: "8ae6c0a1-9270-4e69-b32f-2923b2ac88a7",
+                  id: "b9fd236a-f369-58b1-b51e-1e749aa652dc",
                   type: "title",
                 },
                 {
@@ -8726,22 +8722,22 @@ export const dumpPt = {
                       },
                     ],
                   },
-                  id: "dbed12d1-b4e0-47c5-a447-fd4a0ac8e904",
+                  id: "987428e1-e62e-5c6e-b0bf-61ce45262a22",
                   type: "choice",
                 },
               ],
-              id: "fed37639-d545-4ec2-930f-6e2b72b3542f",
+              id: "451a2daf-1271-54f3-9204-cdd8334c4f50",
               screen_order: 9,
-              title: "Escolha o hiragana para:",
+              title: "選擇對應的平假名：",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "Agora vamos estudar os sinais especiais dakuten para a linha 'tr:は'",
+                    text: "現在讓我們學習「tr:は」行的濁點特殊符號。",
                   },
-                  id: "f664410f-829a-4845-83c2-504bb16bf99e",
+                  id: "5be83388-87c5-57e8-ac50-6cc8c5834dfc",
                   type: "text",
                 },
                 {
@@ -8749,7 +8745,7 @@ export const dumpPt = {
                   content: {
                     table: [
                       [
-                        "Linha 'tr:は'",
+                        "「tr:は」行",
                         "は (tr:は)",
                         "ひ (tr:ひ)",
                         "ふ (tr:ふ)",
@@ -8757,7 +8753,7 @@ export const dumpPt = {
                         "ほ (tr:ほ)",
                       ],
                       [
-                        "Linha 'tr:ば'",
+                        "「tr:ば」行",
                         "ば (tr:ば)",
                         "び (tr:び)",
                         "ぶ (tr:ぶ)",
@@ -8766,23 +8762,23 @@ export const dumpPt = {
                       ],
                     ],
                   },
-                  id: "7c2e225b-bf9c-445c-81a6-2bdc371b6d3e",
+                  id: "f50aa7b5-24f4-5106-b903-a5a6c4b1a1b3",
                   type: "table",
                 },
               ],
-              id: "dfa97d2d-78f2-4d77-986a-767ade4a06f8",
+              id: "cb79ac71-ee40-5648-a1fd-6d2247f20204",
               screen_order: 10,
-              title: "Dakuon tr:ば, tr:び, tr:ぶ, tr:べ, tr:ぼ.",
+              title: "濁音 tr:ば, tr:び, tr:ぶ, tr:べ, tr:ぼ。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Teatro japonês",
+                    sub_title: "日本傳統劇場",
                     title: "tr(かぶき)",
                   },
-                  id: "820e29bd-1b2e-4471-a7de-e17f42811903",
+                  id: "fc60a84e-6f9c-5022-8e8d-709e73f53d01",
                   type: "title",
                 },
                 {
@@ -8803,22 +8799,22 @@ export const dumpPt = {
                       },
                     ],
                   },
-                  id: "bab871d0-e2d1-401a-8d3e-d24b27393672",
+                  id: "59d81063-6542-5d48-a51f-3c5a1339dbf4",
                   type: "choice",
                 },
               ],
-              id: "985d9ca0-c248-4a89-8f25-d5862edef19c",
+              id: "b8562289-fdc7-5d19-ab23-6750e915f93f",
               screen_order: 11,
-              title: "Escolha o hiragana para:",
+              title: "選擇對應的平假名：",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "A linha do hiragana que começa com は (tr:は) é especial! A ela podemos adicionar não apenas dakuten, mas também handakuten, um pequeno círculo, que transforma o som は em ぱ (tr:ぱ).",
+                    text: "以 は (tr:は) 開頭的平假名行很特別！除了濁點外，我們還可以加上半濁點——一個小圓圈，它會將 は 的聲音變成 ぱ (tr:ぱ)。",
                   },
-                  id: "bc2b1c38-11d8-4519-88a0-1238a41adc1e",
+                  id: "200c1aa6-37ef-5f32-bb8a-a6a2960680d8",
                   type: "text",
                 },
                 {
@@ -8826,7 +8822,7 @@ export const dumpPt = {
                   content: {
                     table: [
                       [
-                        "Linha 'tr:は'",
+                        "「tr:は」行",
                         "は (tr:は)",
                         "ひ (tr:ひ)",
                         "ふ (tr:ふ)",
@@ -8834,7 +8830,7 @@ export const dumpPt = {
                         "ほ (tr:ほ)",
                       ],
                       [
-                        "Linha 'tr:ば'",
+                        "「tr:ば」行",
                         "ば (tr:ば)",
                         "び (tr:び)",
                         "ぶ (tr:ぶ)",
@@ -8842,7 +8838,7 @@ export const dumpPt = {
                         "ぼ (tr:ぼ)",
                       ],
                       [
-                        "Linha 'tr:ぱ'",
+                        "「tr:ぱ」行",
                         "ぱ (tr:ぱ)",
                         "ぴ (tr:ぴ)",
                         "ぷ (tr:ぷ)",
@@ -8851,13 +8847,13 @@ export const dumpPt = {
                       ],
                     ],
                   },
-                  id: "7121d38a-e2dd-44a9-8478-cda2be4cd2eb",
+                  id: "a497408c-499a-5599-b740-e928d35e4f28",
                   type: "table",
                 },
               ],
-              id: "9172bac8-a966-409f-85c1-54db20b85a60",
+              id: "a6d81b53-017c-5fb6-a660-ed66c2d5acc2",
               screen_order: 12,
-              title: "Handakuon tr:ぱ, tr:ぴ, tr:ぷ, tr:ぺ, tr:ぽ.",
+              title: "半濁音 tr:ぱ, tr:ぴ, tr:ぷ, tr:ぺ, tr:ぽ。",
             },
             {
               blocks: [
@@ -8879,41 +8875,41 @@ export const dumpPt = {
                       },
                     ],
                   },
-                  id: "6f947c0b-73fe-4528-b7a5-03b77cc8feb8",
+                  id: "7cfa27f6-418b-575c-b44b-1aded739f5aa",
                   type: "choice",
                 },
               ],
-              id: "cf10ec42-34f6-4572-b75f-b4623da28351",
+              id: "b928a980-8a44-5b01-8246-a3f41025f40c",
               screen_order: 13,
-              title: "Escolha o romaji para ぱくぱく (comer com apetite).",
+              title: "選擇 ぱくぱく（津津有味地吃）的羅馬字。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "O uso de sinais especiais altera significativamente os significados das palavras, sublinhando sua importância na língua japonesa.",
+                    text: "使用特殊符號會大幅改變詞語的意思，這突顯了它們在日語中的重要性。",
                   },
-                  id: "a30184b9-7ad6-4f8d-8ae8-a22dac263dd3",
+                  id: "aeb6c0e9-79bf-5d1f-9e1c-53f0dd04bbce",
                   type: "text",
                 },
                 {
                   block_order: 2,
                   content: {
                     rules: [
-                      "はか (tr(はか)) - túmulo",
-                      "ばか (tr(ばか)) - bobo",
-                      "かき (tr(かき)) - caqui",
-                      "かぎ (tr(かぎ)) - chave",
+                      "はか (tr(はか))－墳墓",
+                      "ばか (tr(ばか))－笨蛋",
+                      "かき (tr(かき))－柿子",
+                      "かぎ (tr(かぎ))－鑰匙",
                     ],
                   },
-                  id: "fc296836-ea98-4a54-9482-e92342b9fc61",
+                  id: "e7bf2089-f53c-54da-bc06-a5739427ad0a",
                   type: "rule",
                 },
               ],
-              id: "dc0b5ac3-0bc6-4a9e-8f44-24ea1869fca8",
+              id: "2869cc4c-9309-53fb-af1e-479e26375be2",
               screen_order: 14,
-              title: "Dica!",
+              title: "提示！",
             },
             {
               blocks: [
@@ -8921,30 +8917,30 @@ export const dumpPt = {
                   block_order: 1,
                   content: {
                     pairs: [
-                      ["ここ", "tr(ここ) (aqui)"],
-                      ["ごこ", "tr(ごこ) (5 pedaços)"],
-                      ["ごご", "tr(ごご) (à tarde)"],
+                      ["ここ", "tr(ここ)（這裡）"],
+                      ["ごこ", "tr(ごこ)（5個）"],
+                      ["ごご", "tr(ごご)（下午）"],
                     ],
                   },
-                  id: "131efc46-9356-448a-af91-d501dd86198b",
+                  id: "e989daed-bc0d-50b4-b8e5-54ee95984f17",
                   type: "matching",
                 },
               ],
-              id: "66a83e71-f70b-4614-854a-d3bd9c286c2c",
+              id: "d7b3df05-1046-569e-afd0-4ba1a95f0ffe",
               screen_order: 15,
-              title: "Associe o hiragana com o romaji.",
+              title: "將平假名與羅馬字配對。",
             },
           ],
-          subtitle: "Sinais especiais",
-          title: "Dakuon e Handakuon",
-          topic_id: "05afe72f-3479-47dc-a4c4-12b41a9c4f94",
+          subtitle: "特殊符號",
+          title: "濁音與半濁音",
+          topic_id: "bb1372fe-3cd1-40bc-b72a-5c0a79ddc5ad",
         },
         {
-          expanded_subtitle: "Aquí vamos falar sobre as vogais longas.",
-          expanded_title: "Informação",
+          expanded_subtitle: "這裡將為您介紹長母音。",
+          expanded_title: "資訊",
           icon: "https://nihongo.khvat.app/chapter3/LongVowels.jpg",
-          id: "5e456974-8890-479b-a92e-ff3db89b5c77",
-          last_updated: "2026-03-26T17:43:20.226Z",
+          id: "f3422126-ab7e-49f7-b97b-6e522a0949ef",
+          last_updated: "2026-09-08T13:12:16.095Z",
           lesson_key: "alphabet/hiragana&longVowels",
           lesson_order: 23,
           minimum_version: "2.4.1",
@@ -8954,95 +8950,95 @@ export const dumpPt = {
                 {
                   block_order: 1,
                   content: {
-                    text: "Anteriormente, abordamos a questão dos sinais especiais em hiragana. Hoje vamos nos aprofundar no estudo das vogais longas. Vamos começar com o básico — revisar as cinco vogais básicas.",
+                    text: "先前我們曾提到平假名中的特殊符號。今天我們將更深入學習長母音。先從基礎開始——複習五個基本母音。",
                   },
-                  id: "d5a259e6-701f-43d4-92f3-bd2b1963eb44",
+                  id: "1234c1d9-7303-5797-8724-5595abc638ea",
                   type: "text",
                 },
                 {
                   block_order: 2,
                   content: {
                     table: [
-                      ["Romaji", "tr:あ", "tr:い", "tr:う", "tr:え", "tr:お"],
-                      ["Hiragana", "あ", "い", "う", "え", "お"],
+                      ["羅馬字", "tr:あ", "tr:い", "tr:う", "tr:え", "tr:お"],
+                      ["平假名", "あ", "い", "う", "え", "お"],
                     ],
                   },
-                  id: "c3b1c8cd-0f4d-4e74-9b49-e3503eabb38f",
+                  id: "ff014c47-f865-5ab7-a217-092235490364",
                   type: "table",
                 },
               ],
-              id: "a58c4a37-aa3c-46a5-9e1b-28d0a493568a",
+              id: "e3b20736-61f1-597f-814e-2b2dad8ad49e",
               screen_order: 1,
-              title: "Vogais Longas.",
+              title: "長母音。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "Vamos ver como as vogais longas podem mudar o significado das palavras. Isso é criticamente importante para a compreensão correta e para evitar confusões.",
+                    text: "讓我們看看長母音如何改變詞語的意思。這對於正確理解並避免混淆至關重要。",
                   },
-                  id: "65811fae-a96f-477b-9aa6-16416631f24d",
+                  id: "a5857797-05ad-5a44-923f-ad9cdb70db71",
                   type: "text",
                 },
                 {
                   block_order: 2,
                   content: {
                     rules: [
-                      "おばさん (tr(おばさん)) - tia; mulher de meia-idade",
-                      "おばあさん (tr(おばあさん)) - avó",
+                      "おばさん (tr(おばさん)) - 阿姨；中年女性",
+                      "おばあさん (tr(おばあさん)) - 祖母",
                     ],
                   },
-                  id: "b909052b-0046-43f7-966c-0d9800081144",
+                  id: "f3fa14c1-502e-53d0-979f-85dffcec4684",
                   type: "rule",
                 },
               ],
-              id: "e208a621-866a-4c23-b4ca-e72ef3997ad2",
+              id: "2f98d3f7-c63d-592e-86e4-b8fb77501bb3",
               screen_order: 2,
-              title: "Dica!",
+              title: "提示！",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "あ (tr:あ) torna qualquer sílaba de hiragana terminada em «tr:あ» longa (por exemplo, かあ - tr(かあ)).",
+                    text: "あ (tr:あ) 會將任何以「tr:あ」結尾的平假名音節變為長音（例如，かあ - tr(かあ)）。",
                   },
-                  id: "7167adef-13ec-4046-812d-08a0f771559c",
+                  id: "82123a07-af50-55db-8803-4fcfdefac939",
                   type: "text",
                 },
                 {
                   block_order: 2,
                   content: {
-                    text: "い (tr:い) torna qualquer sílaba de hiragana terminada em «tr:い» longa (por exemplo, にい - tr(にい)).",
+                    text: "い (tr:い) 會將任何以「tr:い」結尾的平假名音節變為長音（例如，にい - tr(にい)）。",
                   },
-                  id: "38a9dff6-fc93-47f8-a068-caebe38fd0a9",
+                  id: "28754178-8521-5be3-a0c6-fe0f0d7c8ba3",
                   type: "text",
                 },
                 {
                   block_order: 3,
                   content: {
-                    text: "う (tr:う) torna qualquer sílaba de hiragana terminada em «tr:う» longa (por exemplo, くう - tr(くう)).",
+                    text: "う (tr:う) 會將任何以「tr:う」結尾的平假名音節變為長音（例如，くう - tr(くう)）。",
                   },
-                  id: "f2b01f2f-6b4d-4562-b016-5bd3530634c2",
+                  id: "2556c412-9849-5526-a762-45d775e76a51",
                   type: "text",
                 },
                 {
                   block_order: 4,
                   content: {
                     rules: [
-                      "おかあさん (tr(おかあさん)) - mãe",
-                      "おにいさん (tr(おにいさん)) - irmão mais velho",
-                      "くうき (tr(くうき)) - ar",
+                      "おかあさん (tr(おかあさん)) - 母親",
+                      "おにいさん (tr(おにいさん)) - 哥哥",
+                      "くうき (tr(くうき)) - 空氣",
                     ],
                   },
-                  id: "4f4a0976-2193-4fd6-bf56-c48bd8bf5b74",
+                  id: "b1e21540-2c72-519c-bea5-665869107746",
                   type: "rule",
                 },
               ],
-              id: "7c9901da-8745-4083-8ecd-b2391812b1e7",
+              id: "b09245eb-c67d-50d1-b340-5ef203e16db8",
               screen_order: 3,
-              title: "Lembre-se da regra!",
+              title: "記住規則！",
             },
             {
               blocks: [
@@ -9050,52 +9046,49 @@ export const dumpPt = {
                   block_order: 1,
                   content: {
                     pairs: [
-                      ["おじいさん", "tr(おじいさん) (avô)"],
-                      ["おばあさん", "tr(おばあさん) (avó)"],
-                      ["すうじ", "tr(すうじ) (número)"],
+                      ["おじいさん", "tr(おじいさん) (祖父)"],
+                      ["おばあさん", "tr(おばあさん) (祖母)"],
+                      ["すうじ", "tr(すうじ) (數字)"],
                     ],
                   },
-                  id: "6c322040-4297-4552-8353-bbbd9c425351",
+                  id: "069bf5f4-b4c1-51b6-b2e9-85d674911c3c",
                   type: "matching",
                 },
               ],
-              id: "6dee9017-2cff-4b35-80a7-df6742abb192",
+              id: "4d75e5bb-fad9-5778-884f-5a27f872c4d4",
               screen_order: 4,
-              title: "Associe o hiragana ao romaji.",
+              title: "將平假名與羅馬字配對。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "い (tr:い) torna qualquer sílaba de hiragana terminada em (tr:え) longa (por exemplo, せい - tr(せい)).",
+                    text: "い (tr:い) 會將任何以 (tr:え) 結尾的平假名音節變為長音（例如，せい - tr(せい)）。",
                   },
-                  id: "db9ab99f-a670-4d4e-b931-c234603b73ab",
+                  id: "c356208c-ecb3-5318-b6f6-ae3936247d83",
                   type: "text",
                 },
                 {
                   block_order: 2,
                   content: {
-                    text: "う (tr:う) torna qualquer sílaba de hiragana terminada em (tr:お) longa (por exemplo, こう - tr(こう)).",
+                    text: "う (tr:う) 會將任何以 (tr:お) 結尾的平假名音節變為長音（例如，こう - tr(こう)）。",
                   },
-                  id: "b6960762-3cc6-42eb-986b-0afc7515ca76",
+                  id: "48a3e257-e43d-5b5f-b434-c94b3c31d338",
                   type: "text",
                 },
                 {
                   block_order: 3,
                   content: {
-                    rules: [
-                      "がくせい (tr(がくせい)) - estudante; aluno",
-                      "こうこう (tr(こうこう)) - ensino médio",
-                    ],
+                    rules: ["がくせい (tr(がくせい)) - 學生", "こうこう (tr(こうこう)) - 高中"],
                   },
-                  id: "d75cdec6-7815-4f2b-8489-323b2efd1acb",
+                  id: "e85a2776-88b4-5a2d-a260-c2f62499d5f1",
                   type: "rule",
                 },
               ],
-              id: "db3a7432-a59d-4edc-aa00-1e78ff35f2de",
+              id: "0eebca3f-abe8-5d44-ba86-973ed34a8151",
               screen_order: 5,
-              title: "Lembre-se da regra!",
+              title: "記住規則！",
             },
             {
               blocks: [
@@ -9103,55 +9096,55 @@ export const dumpPt = {
                   block_order: 1,
                   content: {
                     pairs: [
-                      ["せんせい", "tr(せんせい) (professor)"],
-                      ["がくせい", "tr(がくせい) (estudante)"],
-                      ["ほうりつ", "tr(ほうりつ) (lei)"],
+                      ["せんせい", "tr(せんせい) (老師)"],
+                      ["がくせい", "tr(がくせい) (學生)"],
+                      ["ほうりつ", "tr(ほうりつ) (法律)"],
                     ],
                   },
-                  id: "52bc9e0c-730d-4402-ab00-7df17f2a3621",
+                  id: "300af767-9775-5880-b23d-26e70d0798dc",
                   type: "matching",
                 },
               ],
-              id: "6d4451f7-307b-467e-ba60-faa6d14fe5d7",
+              id: "452909ff-60a4-5c11-8fcc-b694bf526870",
               screen_order: 6,
-              title: "Associe o hiragana ao romaji.",
+              title: "將平假名與羅馬字配對。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "A partícula **は** (tr:は), que cumpre a função de sujeito, é escrita como hiragana は, mas pronunciada como (tr:わ).",
+                    text: "作為主題助詞的 **は** (tr:は)，寫作平假名 は，但讀作 (tr:わ)。",
                   },
-                  id: "d3517f08-a0c7-42e4-9bc1-ab8e4ecf9851",
+                  id: "64b3883d-0b5f-5e98-93c0-38b9eccca387",
                   type: "text",
                 },
                 {
                   block_order: 2,
                   content: {
                     rules: [
-                      "わたしは がくせい です (tr(わたしは) tr(がくせい) tr((です)) - Eu sou estudante.",
+                      "わたしは がくせい です (tr(わたしは) tr(がくせい) tr(です)) - 我是學生。",
                     ],
                   },
-                  id: "9d43c72f-74a3-451a-915e-766131a24de7",
+                  id: "a8f15364-d327-5885-8a4e-fd788df4ed3c",
                   type: "rule",
                 },
               ],
-              id: "fea7ad27-62ab-42e4-8f0b-7dd0d8be09e9",
+              id: "6104a938-2e7f-5fe0-82e1-64401bf605a9",
               screen_order: 7,
-              title: "Lembre-se!",
+              title: "記住！",
             },
           ],
           subtitle: "ああ, いい, うう",
-          title: "Vogais Longas",
-          topic_id: "05afe72f-3479-47dc-a4c4-12b41a9c4f94",
+          title: "長母音",
+          topic_id: "bb1372fe-3cd1-40bc-b72a-5c0a79ddc5ad",
         },
         {
-          expanded_subtitle: "Aqui vamos explicar sobre consoantes longas.",
-          expanded_title: "Informações",
+          expanded_subtitle: "在這裡，我們將向您介紹長輔音。",
+          expanded_title: "資訊",
           icon: "https://nihongo.khvat.app/chapter3/LongConsonants.jpg",
-          id: "9b598bb1-1f31-4128-a762-a3467411f59a",
-          last_updated: "2026-03-26T17:43:20.226Z",
+          id: "a719bb99-a785-479d-9b80-acaffdbb2f44",
+          last_updated: "2026-09-08T13:12:16.096Z",
           lesson_key: "alphabet/hiragana&longConsonants",
           lesson_order: 24,
           minimum_version: "2.4.1",
@@ -9161,43 +9154,43 @@ export const dumpPt = {
                 {
                   block_order: 1,
                   content: {
-                    text: "Na lição anterior, vimos as vogais longas. Agora, vamos nos concentrar nas consoantes longas no idioma japonês, que desempenham um papel igualmente importante.",
+                    text: "在上一課中，我們學習了長母音。現在讓我們來看看日語中的長輔音，它們同樣重要。",
                   },
-                  id: "635db7ef-a5a3-40dd-bae5-b2805e1fe2b2",
+                  id: "1c9a1f0d-4f89-52cc-b98e-2afece5f8d06",
                   type: "text",
                 },
                 {
                   block_order: 2,
                   content: {
-                    text: "A duplicação de consoantes é indicada pelo pequeno símbolo (っ), que é colocado antes da consoante. O próprio (っ) não é pronunciado.",
+                    text: "輔音的雙寫以置於輔音前的小符號（っ）表示。っ本身不發音。",
                   },
-                  id: "046ff411-3ca7-4f94-8d4e-a22a6c63c34a",
+                  id: "5ebd5a77-d7c3-5dd6-b0c9-ec4f7b758f20",
                   type: "text",
                 },
                 {
                   block_order: 3,
                   content: {
-                    text: "Confira exemplos do uso do padrão (tr:つ) e do reduzido (tr:つ):",
+                    text: "請查看標準（tr:つ）與縮小（tr:つ）的使用範例：",
                   },
-                  id: "129e76e0-e6dd-4c56-90f0-d7e14c13a179",
+                  id: "7ee3991a-7d36-5654-8dac-a85eff6ddced",
                   type: "text",
                 },
                 {
                   block_order: 4,
                   content: {
                     rules: [
-                      "かた (tr(かた)) - ombro",
-                      "かつた (tr(かつた)) - nome",
-                      "かった (tr(かった)) - venceu",
+                      "かた (tr(かた)) - 肩膀",
+                      "かつた (tr(かつた)) - 名字",
+                      "かった (tr(かった)) - 贏了",
                     ],
                   },
-                  id: "69917590-f0c0-434f-b74f-3e663d62b1ce",
+                  id: "44494924-2978-5686-94b1-cc71e8374904",
                   type: "rule",
                 },
               ],
-              id: "d3f5f974-23e9-4d4f-9e7b-3f72b6a12352",
+              id: "673d64c9-5668-55e1-b1dc-31d49e7beb8e",
               screen_order: 1,
-              title: "Consoantes Longas.",
+              title: "長輔音。",
             },
             {
               blocks: [
@@ -9205,54 +9198,54 @@ export const dumpPt = {
                   block_order: 1,
                   content: {
                     pairs: [
-                      ["かった", "tr(かった) (venceu)"],
-                      ["にっき", "tr(にっき) (diário)"],
-                      ["きって", "tr(きって) (selo)"],
+                      ["かった", "tr(かった)（贏了）"],
+                      ["にっき", "tr(にっき)（日記）"],
+                      ["きって", "tr(きって)（郵票）"],
                     ],
                   },
-                  id: "a5d4b9fd-a8e4-448d-b4d6-30c244629507",
+                  id: "5fc79855-bf92-534f-bb7b-fe3796fc0e6c",
                   type: "matching",
                 },
               ],
-              id: "0c933c33-0068-412c-a773-5e0cf50531b7",
+              id: "e0c93694-89eb-5d72-9dc2-940bdb41108d",
               screen_order: 2,
-              title: "Combine Hiragana com Romaji.",
+              title: "將平假名與羅馬字配對。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "É importante saber que o pequeno símbolo «tr:つ» (っ) não pode ser usado antes das letras hiragana な (tr:な), に (tr:に), ぬ (tr:ぬ), ね (tr:ね) e の (tr:の). Nestes casos, para a extensão dos sons, utiliza-se o símbolo **ん** (tr:ん).",
+                    text: "請注意，小符號「tr:つ」（っ）不能用於平假名 な (tr:な)、に (tr:に)、ぬ (tr:ぬ)、ね (tr:ね) 和 の (tr:の) 之前。在這些情況下，請使用符號 **ん** (tr:ん) 來延長音。",
                   },
-                  id: "485d81af-8ac2-48c1-9b9c-d16b08a42b20",
+                  id: "426789f7-2ce6-5bea-abf0-82dc64a6585f",
                   type: "text",
                 },
                 {
                   block_order: 2,
                   content: {
                     rules: [
-                      "ごめんなさい (tr(ごめんなさい)) - desculpe",
-                      "おんな (tr(おんな)) - mulher",
+                      "ごめんなさい (tr(ごめんなさい)) - 對不起",
+                      "おんな (tr(おんな)) - 女人",
                     ],
                   },
-                  id: "e2edaed6-8fe6-4f00-bcec-edc10e8b3529",
+                  id: "6d0a5619-2f94-51a5-bb5a-44fd40d08491",
                   type: "rule",
                 },
               ],
-              id: "b40b1a5d-0060-4326-b9c4-a8f4ad02d92c",
+              id: "f553fa37-6ccf-5eee-91d9-c0e1a37163da",
               screen_order: 3,
-              title: "Exceção!",
+              title: "例外！",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Desculpe",
+                    sub_title: "對不起",
                     title: "tr(ごめんなさい)",
                   },
-                  id: "186f536d-1472-4489-abcc-ac575e62ef17",
+                  id: "f0d84b71-e2ca-596c-a7b0-cc67d9a7b650",
                   type: "title",
                 },
                 {
@@ -9260,59 +9253,59 @@ export const dumpPt = {
                   content: {
                     sequence: ["ご", "め", "ん", "な", "さ", "い"],
                   },
-                  id: "c65ba93b-490e-4758-8d38-90b82f8d6337",
+                  id: "a2f5b359-b218-55d9-93a6-05a9ff7c58a3",
                   type: "sequence",
                 },
               ],
-              id: "133940d2-472b-4389-a2f6-40fb56a21dc8",
+              id: "9ade6872-4bdb-5760-b305-c64e867f1849",
               screen_order: 4,
-              title: "Escolha a Hiragana para:",
+              title: "請選擇對應的平假名：",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "A palavra «olá» é escrita como こんにちは, onde o último símbolo é **は** (tr:は), não **わ**. Isso ocorre porque a frase originalmente era mais longa e usava a partícula de sujeito は (tr:は).",
+                    text: "「你好」這個詞寫作 こんにちは，其中最後一個符號是 **は** (tr:は)，而不是 **わ**。這是因為這個片語原本更長，並使用了主格助詞 は (tr:は)。",
                   },
-                  id: "37206478-dd62-4787-a7de-67d299cc2124",
+                  id: "b016cd1d-95f0-5d64-b0b6-8c58e18cc653",
                   type: "text",
                 },
                 {
                   block_order: 2,
                   content: {
-                    text: "Como já mencionamos, a partícula de sujeito é escrita como は (tr:は), mas pronunciada como tr:わ.",
+                    text: "如同我們先前所說，主格助詞寫作 は (tr:は)，但發音為 tr:わ。",
                   },
-                  id: "37fd7307-4664-4c68-a696-b094af3593f0",
+                  id: "c8390aec-ca56-588e-a782-386d3746d5ec",
                   type: "text",
                 },
                 {
                   block_order: 3,
                   content: {
                     rules: [
-                      "こんにちは (tr(こんにちは)) - boa tarde",
-                      "こんばんは (tr(こんばんは)) - boa noite",
+                      "こんにちは (tr(こんにちは)) - 你好",
+                      "こんばんは (tr(こんばんは)) - 晚上好",
                     ],
                   },
-                  id: "fb94e483-941c-46c4-a371-13740f5cdcf1",
+                  id: "74b4ead4-2226-5ad1-bc41-f6e74a78daf8",
                   type: "rule",
                 },
               ],
-              id: "39820d8e-8da2-40cd-bd9b-92359f0cc4fb",
+              id: "c7989e78-bfe7-5a14-8f79-fd76aab6254c",
               screen_order: 5,
-              title: "Lembre-se!",
+              title: "請記住！",
             },
           ],
-          subtitle: "Pequeno 「っ」",
-          title: "Consoantes Longas",
-          topic_id: "05afe72f-3479-47dc-a4c4-12b41a9c4f94",
+          subtitle: "小「っ」",
+          title: "長輔音",
+          topic_id: "bb1372fe-3cd1-40bc-b72a-5c0a79ddc5ad",
         },
         {
-          expanded_subtitle: "Aqui vamos falar sobre o yoon.",
-          expanded_title: "Informação",
+          expanded_subtitle: "這裡將為您介紹拗音。",
+          expanded_title: "資訊",
           icon: "https://nihongo.khvat.app/chapter3/Yoon.jpg",
-          id: "e3434b1c-883c-4694-85af-42b17841feb9",
-          last_updated: "2026-03-26T17:43:20.226Z",
+          id: "cdce3ea5-d0f2-4641-9742-a8ab03cc34a9",
+          last_updated: "2026-09-08T13:12:16.096Z",
           lesson_key: "alphabet/hiragana&yoon",
           lesson_order: 25,
           minimum_version: "2.4.1",
@@ -9322,9 +9315,9 @@ export const dumpPt = {
                 {
                   block_order: 1,
                   content: {
-                    text: "Hoje vamos nos aprofundar no estudo da última regra do hiragana, mas primeiro vamos relembrar essas três letras especiais:",
+                    text: "今天我們將深入學習平假名的最後一項規則，但在此之前，先來複習這三個特殊字母：",
                   },
-                  id: "67faf015-d3c1-4a69-97c8-1c281b06cc4f",
+                  id: "65dc1089-41ac-512d-80c1-87824911cf7c",
                   type: "text",
                 },
                 {
@@ -9332,13 +9325,13 @@ export const dumpPt = {
                   content: {
                     rules: ["や (tr:や)", "ゆ (tr:ゆ)", "よ (tr:よ)"],
                   },
-                  id: "beb21648-0d99-481e-9b48-e5fe42b07cec",
+                  id: "6dc79203-2cdd-53ff-856c-4aa0966780e5",
                   type: "rule",
                 },
               ],
-              id: "b6beab24-af5f-4f60-b962-3df5f8deb834",
+              id: "3b84d6f7-98c2-5ea8-a5db-ccfd48f0a751",
               screen_order: 1,
-              title: "Yoon.",
+              title: "拗音。",
             },
             {
               blocks: [
@@ -9346,27 +9339,27 @@ export const dumpPt = {
                   block_order: 1,
                   content: {
                     pairs: [
-                      ["はやし", "tr(はやし) (bosque)"],
-                      ["ゆき", "tr(ゆき) (neve)"],
-                      ["よきん", "tr(よきん) (depósito)"],
+                      ["はやし", "tr(はやし)（樹林）"],
+                      ["ゆき", "tr(ゆき)（雪）"],
+                      ["よきん", "tr(よきん)（存款）"],
                     ],
                   },
-                  id: "db9b3e82-88d3-41d4-bfb7-b20845c1e572",
+                  id: "ee551ed7-8dfd-5e83-9685-1a7550085426",
                   type: "matching",
                 },
               ],
-              id: "4586f324-de3c-4762-890d-5f36c1cc0015",
+              id: "9acbd470-36f1-581b-8cc5-8f34ac0dc7eb",
               screen_order: 2,
-              title: "Associe o hiragana com o romaji.",
+              title: "將平假名與羅馬字配對。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "Existem versões reduzidas de **や** (tr:や), **ゆ** (tr:ゆ) e **よ** (tr:よ), na pronúncia essas sílabas se fundem com a sílaba hiragana que as precede, formando um único som. Vamos comparar o padrão **や** e o reduzido **ゃ**.",
+                    text: "**や** (tr:や)、**ゆ** (tr:ゆ) 和 **よ** (tr:よ) 都有小寫版本。發音時，這些音節會與其前面的平假名音節合併，形成一個音。讓我們比較標準的 **や** 與小寫的 **ゃ**。",
                   },
-                  id: "672a8e5a-3a8f-4a90-8213-b04f0e48f7e0",
+                  id: "a59f27fe-b516-5219-9fbb-e257e7481b78",
                   type: "text",
                 },
                 {
@@ -9374,22 +9367,22 @@ export const dumpPt = {
                   content: {
                     rules: ["きや (tr:きや)", "きゃ (tr:きゃ)"],
                   },
-                  id: "e6f5767b-5db3-4d12-a2aa-fd812cef798f",
+                  id: "348d9984-4675-5f9e-b329-e77e7d6ad3fb",
                   type: "rule",
                 },
               ],
-              id: "3fc746af-4799-4357-aaae-71cffcad2868",
+              id: "4422e71d-08f1-54b7-8282-db3242a94ffb",
               screen_order: 3,
-              title: "Dica!",
+              title: "提示！",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "Os elementos yoon (や, ゆ, よ) podem se juntar a símbolos que terminam em 'tr:い'. Para começar, vamos considerar as combinações com き (tr:き) e ぎ (tr:ぎ).",
+                    text: "拗音元素（や、ゆ、よ）可以與以「tr:い」結尾的字元結合。首先，讓我們看看與 き (tr:き) 和 ぎ (tr:ぎ) 的組合。",
                   },
-                  id: "7cac3c46-8c94-4d1a-9088-63eff19c3bd6",
+                  id: "b783d07e-03f2-5857-9189-eb22a3ae933b",
                   type: "text",
                 },
                 {
@@ -9400,13 +9393,13 @@ export const dumpPt = {
                       ["ぎ (tr:ぎ)", "ぎゃ (tr:ぎゃ)", "ぎゅ (tr:ぎゅ)", "ぎょ (tr:ぎょ)"],
                     ],
                   },
-                  id: "596960b4-bdad-474c-854c-04141c9fd62b",
+                  id: "71d59085-bfae-5291-a251-3c9a1b977c50",
                   type: "table",
                 },
               ],
-              id: "d218f744-bac0-4f1c-8ced-6086ced599a5",
+              id: "9addc6dc-fab3-55e8-8fec-a5e6d783dfa7",
               screen_order: 4,
-              title: "Yoon tr:き, tr:ぎ.",
+              title: "拗音 tr:き、tr:ぎ。",
             },
             {
               blocks: [
@@ -9414,27 +9407,27 @@ export const dumpPt = {
                   block_order: 1,
                   content: {
                     pairs: [
-                      ["きゅうり", "tr(きゅうり) (pepino)"],
-                      ["ぎゅうにく", "tr(ぎゅうにく) (carne de vaca)"],
-                      ["ぎょうじ", "tr(ぎょうじ) (evento)"],
+                      ["きゅうり", "tr(きゅうり)（黃瓜）"],
+                      ["ぎゅうにく", "tr(ぎゅうにく)（牛肉）"],
+                      ["ぎょうじ", "tr(ぎょうじ)（活動）"],
                     ],
                   },
-                  id: "e83f313d-9ad0-483f-8ce9-431e6f23adc7",
+                  id: "5b362092-980d-5cf1-a5eb-111c687526a2",
                   type: "matching",
                 },
               ],
-              id: "c83e11d2-b092-4fec-ab49-f88d59cba474",
+              id: "827f453c-3613-5a76-9c81-1bca24090e82",
               screen_order: 5,
-              title: "Associe o hiragana com o romaji.",
+              title: "將平假名與羅馬字配對。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "As sílabas し (tr:し) e じ (tr:じ) também podem formar yoon com as letras **ゃ**, **ゅ**, **ょ**, criando os sons tr:しゃ tr:しゅ tr:しょ e tr:じゃ tr:じゅ tr:じょ.",
+                    text: "音節 し (tr:し) 和 じ (tr:じ) 也能與 **ゃ**、**ゅ**、**ょ** 組成拗音，形成 tr:しゃ、tr:しゅ、tr:しょ，以及 tr:じゃ、tr:じゅ、tr:じょ 等音。",
                   },
-                  id: "a1949540-a87f-40b3-b801-4dd32389173c",
+                  id: "82c1a24d-1691-57cb-a350-e2190fa42c47",
                   type: "text",
                 },
                 {
@@ -9445,23 +9438,23 @@ export const dumpPt = {
                       ["じ (tr:じ)", "じゃ (tr:じゃ)", "じゅ (tr:じゅ)", "じょ (tr:じょ)"],
                     ],
                   },
-                  id: "39c9db6d-eacb-472e-9aa1-63329a1d5ca1",
+                  id: "851165a4-fd07-5505-9cc3-b16a311ed9ea",
                   type: "table",
                 },
               ],
-              id: "0aea88f2-2276-48eb-b201-27e86ec962a2",
+              id: "f07e7c85-259c-577e-8a31-7ed78101d378",
               screen_order: 6,
-              title: "Yoon tr:し, tr:じ.",
+              title: "拗音 tr:し、tr:じ。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Funcionário",
+                    sub_title: "員工",
                     title: "tr(じゅうぎょういん)",
                   },
-                  id: "4adf13b8-bd9c-4057-9c4d-87870672a17d",
+                  id: "9013a72b-2cdc-57ba-8bbf-f25b7f6bb993",
                   type: "title",
                 },
                 {
@@ -9482,22 +9475,22 @@ export const dumpPt = {
                       },
                     ],
                   },
-                  id: "6bdc886d-7141-4904-b4a3-2520b31bf357",
+                  id: "b64195fb-b99e-50f0-9181-d230ba08a8cf",
                   type: "choice",
                 },
               ],
-              id: "12de7261-96e9-41f0-91af-f7ac1be41a6a",
+              id: "a16664df-55bc-5091-aa9e-f57e8c8c0688",
               screen_order: 7,
-              title: "Escolha o hiragana para:",
+              title: "選擇對應的平假名：",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "As sílabas **ち** (tr:ち) e **ぢ** (tr:ぢ) podem ser usadas para criar os sons tr:ちゃ tr:ちゅ tr:ちょ e tr:ぢゃ tr:ぢゅ tr:ぢょ. No japonês moderno, a letra **ぢ** é frequentemente substituída por **じ**.",
+                    text: "音節 **ち** (tr:ち) 和 **ぢ** (tr:ぢ) 可用來形成 tr:ちゃ、tr:ちゅ、tr:ちょ，以及 tr:ぢゃ、tr:ぢゅ、tr:ぢょ 等音。在現代日語中，**ぢ** 常被 **じ** 取代。",
                   },
-                  id: "e9736ccd-92ae-4cba-a255-be088023303a",
+                  id: "5f573fc7-48ba-59c5-a13d-e3edf9796202",
                   type: "text",
                 },
                 {
@@ -9508,23 +9501,23 @@ export const dumpPt = {
                       ["ぢ (tr:ぢ)", "ぢゃ (tr:ぢゃ)", "ぢゅ (tr:ぢゅ)", "ぢょ (tr:ぢょ)"],
                     ],
                   },
-                  id: "b78d00b1-9ed0-4037-a3ac-7e9e6f484403",
+                  id: "ce685368-3915-5ad9-a6a6-38ca15325ead",
                   type: "table",
                 },
               ],
-              id: "0b937690-5985-4990-8af4-3c0032fd0d45",
+              id: "2f2a0421-725b-5c9e-9be1-33f7a3a17b33",
               screen_order: 8,
-              title: "Yoon tr:ち, tr:ぢ.",
+              title: "拗音 tr:ち、tr:ぢ。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Caderno",
+                    sub_title: "筆記本",
                     title: "tr(てちょう)",
                   },
-                  id: "57128872-661f-4e58-bbe8-2986b736a3b0",
+                  id: "be0f372f-7ff8-5302-9f66-339c53d32ecb",
                   type: "title",
                 },
                 {
@@ -9532,22 +9525,22 @@ export const dumpPt = {
                   content: {
                     sequence: ["て", "ち", "ょ", "う"],
                   },
-                  id: "0430c50f-22fc-4acc-a628-e9dbf539122a",
+                  id: "58a0e69d-0914-5484-8d06-336ad208778f",
                   type: "sequence",
                 },
               ],
-              id: "1ff7c927-5a4b-4ad3-9de9-91bfc50f25bf",
+              id: "ff6dc090-45c0-5864-b33b-e4fbd49f7732",
               screen_order: 9,
-              title: "Escolha o hiragana para:",
+              title: "選擇對應的平假名：",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "As combinações de に (tr:に) e み (tr:み) com os símbolos reduzidos permitem criar os sons complexos tr:にゃ tr:にゅ tr:にょ e tr:みゃ tr:みゅ tr:みょ.",
+                    text: "に (tr:に) 和 み (tr:み) 與小寫字元的組合，可以形成 tr:にゃ、tr:にゅ、tr:にょ，以及 tr:みゃ、tr:みゅ、tr:みょ 等複合音。",
                   },
-                  id: "01ec8ccb-8c72-4f4e-925a-24e2e27e1ba1",
+                  id: "1666eb75-2f42-5df5-b289-23ea95e3e2f6",
                   type: "text",
                 },
                 {
@@ -9558,23 +9551,23 @@ export const dumpPt = {
                       ["み (tr:み)", "みゃ (tr:みゃ)", "みゅ (tr:みゅ)", "みょ (tr:みょ)"],
                     ],
                   },
-                  id: "97696f17-c657-4b87-8a70-6345259c52b7",
+                  id: "5a5939d8-6ba1-5370-801a-7cc84ee98d29",
                   type: "table",
                 },
               ],
-              id: "843c0fe9-6426-48e5-a31e-f74e124c4190",
+              id: "3a8f1a08-4c36-581b-af5d-86376a256cba",
               screen_order: 10,
-              title: "Yoon tr:に, tr:み.",
+              title: "拗音 tr:に、tr:み。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Leite",
+                    sub_title: "牛奶",
                     title: "tr(ぎゅうにゅう)",
                   },
-                  id: "62cbc270-a807-4f87-95f4-f459544a2187",
+                  id: "754d43d4-d6df-5e4f-9af3-1b7d7a505fa1",
                   type: "title",
                 },
                 {
@@ -9595,22 +9588,22 @@ export const dumpPt = {
                       },
                     ],
                   },
-                  id: "0b9708a8-eab0-4ef8-9aa7-a9e77dd05e95",
+                  id: "46535420-d1db-5489-9af4-9ea3d9badb38",
                   type: "choice",
                 },
               ],
-              id: "5fa055ec-1a5e-4ee0-8746-ed2d238cee8f",
+              id: "3b2048bb-ed5b-5944-9272-083cc421b1f1",
               screen_order: 11,
-              title: "Escolha o hiragana para:",
+              title: "選擇對應的平假名：",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "A sílaba り (tr:り) combina-se com as vogais reduzidas para formar os sons tr:りゃ tr:りゅ tr:りょ.",
+                    text: "音節 り (tr:り) 與小寫母音結合，可形成 tr:りゃ、tr:りゅ、tr:りょ 等音。",
                   },
-                  id: "76def709-48b7-4e69-aaf2-ca0de886164d",
+                  id: "40096a50-c939-5b9c-b9d2-cf5f26599dad",
                   type: "text",
                 },
                 {
@@ -9618,23 +9611,23 @@ export const dumpPt = {
                   content: {
                     rules: ["りゃ (tr:りゃ)", "りゅ (tr:りゅ)", "りょ (tr:りょ)"],
                   },
-                  id: "0457d7f9-1f69-4a97-95f0-2ece08372023",
+                  id: "eeace9f1-e49b-543b-9be4-376e7890811c",
                   type: "rule",
                 },
               ],
-              id: "781e9403-11a3-4ffd-b7d4-8e345b7e43ed",
+              id: "2f563d15-35d4-55a5-bd16-4890bed78360",
               screen_order: 12,
-              title: "Yoon tr:り.",
+              title: "拗音 tr:り。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Cozinheiro-chefe",
+                    sub_title: "主廚",
                     title: "tr(りょうりにん)",
                   },
-                  id: "362826ea-3dc3-496c-bca3-0ffab35d6776",
+                  id: "6368da75-bee3-5fff-a13f-c02c24fe5815",
                   type: "title",
                 },
                 {
@@ -9642,22 +9635,22 @@ export const dumpPt = {
                   content: {
                     sequence: ["り", "ょ", "う", "り", "に", "ん"],
                   },
-                  id: "41c00e5e-e974-47d4-8b15-cdffa2799d4e",
+                  id: "610d1f61-72a8-5757-a2ea-ab7951d5bc9f",
                   type: "sequence",
                 },
               ],
-              id: "218587af-6481-4e08-89cf-0f43e9109cf3",
+              id: "b2a63a15-ea8d-57ae-81a1-342239e399e3",
               screen_order: 13,
-              title: "Escolha o hiragana para:",
+              title: "選擇對應的平假名：",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "Para criar os sons yoon, use as sílabas ひ (tr:ひ), び (tr:び) e ぴ (tr:ぴ) em combinação com as vogais reduzidas.",
+                    text: "要形成拗音，請將音節 ひ (tr:ひ)、び (tr:び) 和 ぴ (tr:ぴ) 與小寫母音結合。",
                   },
-                  id: "f5facf64-c982-4848-9800-9911a04628e4",
+                  id: "6c91b2cc-879e-5d89-9904-56c6762fd1bc",
                   type: "text",
                 },
                 {
@@ -9669,13 +9662,13 @@ export const dumpPt = {
                       ["ぴ (tr:ぴ)", "ぴゃ (tr:ぴゃ)", "ぴゅ (tr:ぴゅ)", "ぴょ (tr:ぴょ)"],
                     ],
                   },
-                  id: "7acbcfca-7760-431d-a272-3216bdb388a5",
+                  id: "674fec65-b22d-5564-b57a-da0da8ed3924",
                   type: "table",
                 },
               ],
-              id: "13496b14-3d95-4379-aa17-be25b9a0d68b",
+              id: "03301ed4-0c2b-5322-b1b5-e151a35726e6",
               screen_order: 14,
-              title: "Yoon tr:ひ, tr:び, tr:ぴ.",
+              title: "拗音 tr:ひ、tr:び、tr:ぴ。",
             },
             {
               blocks: [
@@ -9683,38 +9676,38 @@ export const dumpPt = {
                   block_order: 1,
                   content: {
                     pairs: [
-                      ["ひょう", "tr(ひょう) (granizo)"],
-                      ["びょういん", "tr(びょういん) (hospital)"],
-                      ["じこくひょう", "tr(じこくひょう) (Horário de trens)"],
+                      ["ひょう", "tr(ひょう)（冰雹）"],
+                      ["びょういん", "tr(びょういん)（醫院）"],
+                      ["じこくひょう", "tr(じこくひょう)（列車時刻表）"],
                     ],
                   },
-                  id: "0e6bb4d6-0be5-4171-b73c-6f54d314d57e",
+                  id: "4dd78e2c-a53d-539c-ab69-cb6a1d7582b3",
                   type: "matching",
                 },
               ],
-              id: "d1e4d82d-0f69-4daa-80bf-64f648c3b829",
+              id: "01436329-7b0c-5da0-99f9-a02228f4f42a",
               screen_order: 15,
-              title: "Associe o hiragana com o romaji.",
+              title: "將平假名與羅馬字配對。",
             },
           ],
           subtitle: "や, ゆ, よ",
-          title: "Yoon",
-          topic_id: "05afe72f-3479-47dc-a4c4-12b41a9c4f94",
+          title: "拗音",
+          topic_id: "bb1372fe-3cd1-40bc-b72a-5c0a79ddc5ad",
         },
       ],
-      title: "Seção 3. Hiragana",
+      title: "第3章. 平假名",
       topic_order: 3,
     },
     {
-      id: "879cc30b-005e-4559-ae89-16ed9170de20",
+      id: "18800460-fe6b-4b37-bbb2-259253cdcbbb",
       lessons: [
         {
-          expanded_subtitle: "Aqui vamos falar sobre os sinais especiais do katakana.",
-          expanded_title: "Informação",
+          expanded_subtitle: "在這裡，我們將向你介紹片假名的特殊符號。",
+          expanded_title: "資訊",
           icon: "https://nihongo.khvat.app/chapter4/DakuonAndHandakuon.jpg",
-          id: "76487b41-fb3f-4a91-91e0-702d534ca19b",
-          last_updated: "2026-03-26T17:43:20.226Z",
-          lesson_key: "alfabeto/katakana&dakuonAndHandakuon",
+          id: "6d83f2d8-576d-4b6b-a35b-66b68961207a",
+          last_updated: "2026-09-08T13:12:16.096Z",
+          lesson_key: "alphabet/katakana&dakuonAndHandakuon",
           lesson_order: 26,
           minimum_version: "2.4.1",
           screens: [
@@ -9723,17 +9716,17 @@ export const dumpPt = {
                 {
                   block_order: 1,
                   content: {
-                    text: "Após dominarmos as sílabas básicas do katakana, é hora de conhecer o dakuon e o handakuon — sinais especiais que alteram o som das sílabas.",
+                    text: "在掌握了片假名的基本音節後，現在該來認識濁音與半濁音了——它們是能改變音節發音的特殊符號。",
                   },
-                  id: "c1452280-3ec5-413e-942f-b3397c12842e",
+                  id: "348f1146-5696-5659-b5ab-090e1839613d",
                   type: "text",
                 },
                 {
                   block_order: 2,
                   content: {
-                    text: "Para começar, vamos descobrir com quais sílabas do katakana esses sinais podem ser usados:",
+                    text: "首先，讓我們了解哪些片假名音節可以搭配這些符號：",
                   },
-                  id: "de2d03b2-bc1f-4cce-86f1-5b051c0a423d",
+                  id: "2db32613-09f2-531b-a819-0771ed4c9932",
                   type: "text",
                 },
                 {
@@ -9741,14 +9734,14 @@ export const dumpPt = {
                   content: {
                     table: [
                       [
-                        "Transliteração",
+                        "羅馬字",
                         "tr:カ, tr:キ, tr:ク, tr:ケ, tr:コ",
                         "tr:サ, tr:シ, tr:ス, tr:セ, tr:ソ",
                         "tr:タ, tr:チ, tr:ツ, tr:テ, tr:ト",
                         "tr:ハ, tr:ヒ, tr:フ, tr:ヘ, tr:ホ",
                       ],
                       [
-                        "Katakana",
+                        "片假名",
                         "カ, キ, ク, ケ, コ",
                         "サ, シ, ス, セ, ソ",
                         "タ, チ, ツ, テ, ト",
@@ -9756,13 +9749,13 @@ export const dumpPt = {
                       ],
                     ],
                   },
-                  id: "193e4712-2632-465e-bed7-c927f1fc50c4",
+                  id: "540ae7a4-4d68-5a2f-92ee-1615eb92f600",
                   type: "table",
                 },
               ],
-              id: "7fb57f5c-6f54-48a6-b4f3-81ccc0d54c34",
+              id: "3a50875a-94da-5761-90e8-6e0c45dbdeac",
               screen_order: 1,
-              title: "Dakuon e Handakuon.",
+              title: "濁音與半濁音。",
             },
             {
               blocks: [
@@ -9770,27 +9763,27 @@ export const dumpPt = {
                   block_order: 1,
                   content: {
                     pairs: [
-                      ["タコ", "tr(タコ) (polvo)"],
-                      ["ハト", "tr(ハト) (pombo)"],
-                      ["カキ", "tr(カキ) (caqui)"],
+                      ["タコ", "tr(タコ)（章魚）"],
+                      ["ハト", "tr(ハト)（鴿子）"],
+                      ["カキ", "tr(カキ)（柿子）"],
                     ],
                   },
-                  id: "6cbc0e7a-9a39-4a9f-bf8f-838f6a681532",
+                  id: "9a609c3b-8708-5d9d-b5fd-98fe7deceb30",
                   type: "matching",
                 },
               ],
-              id: "ca843f08-020f-40ea-94a4-a133112dc83c",
+              id: "7b11f8bb-cff3-5fe1-976a-72f16430ac85",
               screen_order: 2,
-              title: "Relacione o katakana com romaji.",
+              title: "將片假名與羅馬字配對。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "Adicionando os sinais especiais dakuten, que são duas pequenas linhas no canto superior direito, às sílabas, formamos novos sons. Veja como isso altera a pronúncia.",
+                    text: "在音節右上角加上由兩條短線組成的特殊符號「濁點」，就能形成新的音。來看看它如何改變發音。",
                   },
-                  id: "f001b79f-7d85-426e-af0e-7d39b50e6899",
+                  id: "cc470aae-a148-597c-b715-1090d514515e",
                   type: "text",
                 },
                 {
@@ -9798,7 +9791,7 @@ export const dumpPt = {
                   content: {
                     table: [
                       [
-                        "Surdas",
+                        "清音",
                         "カ (tr:カ)",
                         "キ (tr:キ)",
                         "ク (tr:ク)",
@@ -9806,7 +9799,7 @@ export const dumpPt = {
                         "コ (tr:コ)",
                       ],
                       [
-                        "Sonoras",
+                        "濁音",
                         "ガ (tr:ガ)",
                         "ギ (tr:ギ)",
                         "グ (tr:グ)",
@@ -9815,23 +9808,23 @@ export const dumpPt = {
                       ],
                     ],
                   },
-                  id: "237f23e1-8fa5-498a-bd54-ffda9ff415d5",
+                  id: "cfbaffc7-278b-54a5-a9d5-6f8eade83950",
                   type: "table",
                 },
               ],
-              id: "b0d196ce-c8c2-45dc-b0cc-70ecc49e9833",
+              id: "4d2eb24a-d672-55b0-b137-dd8518597f1c",
               screen_order: 3,
-              title: "Dakuon tr:ガ tr:ギ tr:グ tr:ゲ tr:ゴ.",
+              title: "濁音 tr:ガ tr:ギ tr:グ tr:ゲ tr:ゴ。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Golfe",
+                    sub_title: "高爾夫",
                     title: "tr(ゴルフ)",
                   },
-                  id: "73f09930-c66e-453e-b8a3-4d37f4346ea4",
+                  id: "a3489bb3-37a7-594f-a1e5-1d5df4eb9597",
                   type: "title",
                 },
                 {
@@ -9852,22 +9845,22 @@ export const dumpPt = {
                       },
                     ],
                   },
-                  id: "4acc7f51-b0b4-4ef9-b8cf-2411a76c921c",
+                  id: "4b93d394-388a-5793-bf9f-55ca4379f4d8",
                   type: "choice",
                 },
               ],
-              id: "f7510879-cf04-45f5-b6f0-b572b966ed22",
+              id: "27591e22-e0fd-51ef-82a3-472fd56787a5",
               screen_order: 4,
-              title: "Escolha o katakana para:",
+              title: "選擇對應的片假名：",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "De maneira semelhante, adicionamos dakuten às sílabas na linha tr:サ, transformando-as em sons sonoros.",
+                    text: "同樣地，我們在 tr:サ 行的音節加上濁點，將它們轉變為濁音。",
                   },
-                  id: "43e76cca-f5a0-4992-b330-6c36b3c6d076",
+                  id: "e9b2718a-068c-57f2-a419-1fa7152f3ecb",
                   type: "text",
                 },
                 {
@@ -9875,7 +9868,7 @@ export const dumpPt = {
                   content: {
                     table: [
                       [
-                        "Surdas",
+                        "清音",
                         "サ (tr:サ)",
                         "シ (tr:シ)",
                         "ス (tr:ス)",
@@ -9883,7 +9876,7 @@ export const dumpPt = {
                         "ソ (tr:ソ)",
                       ],
                       [
-                        "Sonoras",
+                        "濁音",
                         "ザ (tr:ザ)",
                         "ジ (tr:ジ)",
                         "ズ (tr:ズ)",
@@ -9892,23 +9885,23 @@ export const dumpPt = {
                       ],
                     ],
                   },
-                  id: "a8d56d62-e0db-4ccd-b3c6-58a1e433e31a",
+                  id: "abbfea90-e344-5b6b-80e1-eb23ddd0518e",
                   type: "table",
                 },
               ],
-              id: "ba435b0e-2bc8-43ee-9756-20b21df341b4",
+              id: "29586a1e-6f54-5cd8-b549-ec760e59afca",
               screen_order: 5,
-              title: "Dakuon tr:ザ tr:ジ tr:ズ tr:ゼ tr:ゾ.",
+              title: "濁音 tr:ザ tr:ジ tr:ズ tr:ゼ tr:ゾ。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Baleia",
+                    sub_title: "鯨魚",
                     title: "tr(クジラ)",
                   },
-                  id: "b71fe733-e891-467e-8de7-c397cd526c14",
+                  id: "8a06f11a-e516-57fe-9f3e-da6e02fc90e9",
                   type: "title",
                 },
                 {
@@ -9916,22 +9909,22 @@ export const dumpPt = {
                   content: {
                     sequence: ["ク", "ジ", "ラ"],
                   },
-                  id: "1ef60b9d-9cd9-40c8-8af5-b9e4215d1d57",
+                  id: "b61ab34f-de56-5330-8730-da3a15b770a5",
                   type: "sequence",
                 },
               ],
-              id: "9df6b4ed-dbea-44fb-a827-9b0b03107a41",
+              id: "06932ba8-4899-5dda-9f16-1b4127af1160",
               screen_order: 6,
-              title: "Escolha o katakana para:",
+              title: "選擇對應的片假名：",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "Adicionando dakuten às sílabas na linha tr:タ, criamos outro conjunto de sons sonoros.",
+                    text: "在 tr:タ 行的音節加上濁點後，我們會得到另一組濁音。",
                   },
-                  id: "32ae41fa-ba60-4759-890d-464de25e532a",
+                  id: "b4510c32-d1a3-53cd-8fc6-bb6493e5204d",
                   type: "text",
                 },
                 {
@@ -9939,7 +9932,7 @@ export const dumpPt = {
                   content: {
                     table: [
                       [
-                        "Surdas",
+                        "清音",
                         "タ (tr:タ)",
                         "チ (tr:チ)",
                         "ツ (tr:ツ)",
@@ -9947,7 +9940,7 @@ export const dumpPt = {
                         "ト (tr:ト)",
                       ],
                       [
-                        "Sonoras",
+                        "濁音",
                         "ダ (tr:ダ)",
                         "ヂ (tr:ヂ)",
                         "ヅ (tr:ヅ)",
@@ -9956,57 +9949,57 @@ export const dumpPt = {
                       ],
                     ],
                   },
-                  id: "44fc9ea9-2fea-4ee5-8228-eea7d17e0e54",
+                  id: "c1bea9d0-160e-57c1-a373-963a24528788",
                   type: "table",
                 },
               ],
-              id: "65ad095f-ed2e-4e64-a564-dd1c961256ca",
+              id: "057aae4b-a685-55aa-a55e-375e9e5c81a0",
               screen_order: 7,
-              title: "Dakuon tr:ダ tr:ヂ tr:ヅ tr:デ tr:ド.",
+              title: "濁音 tr:ダ tr:ヂ tr:ヅ tr:デ tr:ド。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "As sílabas ジ (tr:ジ) e ヂ (tr:ヂ), assim como ズ (tr:ズ) e ヅ (tr:ヅ), são pronunciadas da mesma forma no japonês moderno. Anteriormente, esses sons eram distintos, mas ao longo do tempo se unificaram.",
+                    text: "在現代日語中，ジ (tr:ジ) 與 ヂ (tr:ヂ)，以及 ズ (tr:ズ) 與 ヅ (tr:ヅ) 的發音相同。這些音原本有所區別，但隨著時間推移而合併了。",
                   },
-                  id: "054ed21d-2831-4dbe-b4dd-029235652e6b",
+                  id: "091901c3-7adc-5757-bf7f-c10ef36a4b5a",
                   type: "text",
                 },
                 {
                   block_order: 2,
                   content: {
-                    text: "Para palavras com «tr:ジ», geralmente se usa ジ, e para palavras com «tr:ズ», geralmente se usa ズ. Apenas em algumas palavras se usa ヂ e ヅ.",
+                    text: "表示「tr:ジ」的詞通常使用 ジ，表示「tr:ズ」的詞通常使用 ズ。只有極少數詞會使用 ヂ 和 ヅ。",
                   },
-                  id: "8e0afd65-2b0c-4be1-88ec-08a416968ee9",
+                  id: "b3e4e55a-a66d-565f-854f-62c0e550bb5c",
                   type: "text",
                 },
                 {
                   block_order: 3,
                   content: {
                     rules: [
-                      "ジ (tr:ジ) e ズ (tr:ズ) são usados mais frequentemente",
-                      "ヂ (tr:ヂ) e ヅ (tr:ヅ) são usados em poucas palavras",
+                      "ジ (tr:ジ) 和 ズ (tr:ズ) 最常使用",
+                      "ヂ (tr:ヂ) 和 ヅ (tr:ヅ) 只用於少數幾個詞",
                     ],
                   },
-                  id: "7c25c020-a226-4dad-87d3-f53a4843da6f",
+                  id: "9d629e07-40d2-59f5-bd11-5cecb1202dd6",
                   type: "rule",
                 },
               ],
-              id: "8adf0439-add0-4684-9431-224cd8567ed9",
+              id: "111daffc-504f-5b05-9d54-e4520b5a4adb",
               screen_order: 8,
-              title: "Atenção!",
+              title: "請注意！",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Centopéia",
+                    sub_title: "蜈蚣",
                     title: "tr(ムカデ)",
                   },
-                  id: "18c8e1b5-1e98-4a8f-9f78-b05eb9913950",
+                  id: "3ccee135-e658-5134-8566-4c54a09d34b2",
                   type: "title",
                 },
                 {
@@ -10027,22 +10020,22 @@ export const dumpPt = {
                       },
                     ],
                   },
-                  id: "3dd4e906-ac99-4fa9-a938-d3505e977114",
+                  id: "7ba49720-d274-5425-b651-b2778a349278",
                   type: "choice",
                 },
               ],
-              id: "974522c2-dedf-42ee-a8b3-b617beb585f7",
+              id: "0dcafb50-6e17-55a6-b097-ea2cdebd9034",
               screen_order: 9,
-              title: "Escolha o katakana para:",
+              title: "選擇對應的片假名：",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "Agora vamos estudar os sinais especiais dakuten para a linha «tr:ハ».",
+                    text: "現在讓我們學習 tr:ハ 行的濁點特殊符號。",
                   },
-                  id: "8c380161-ba64-438f-b816-ccbac6a69941",
+                  id: "4c03853e-816b-526d-82f6-4ded21a12dae",
                   type: "text",
                 },
                 {
@@ -10050,7 +10043,7 @@ export const dumpPt = {
                   content: {
                     table: [
                       [
-                        "Linha «tr:ハ»",
+                        "「tr:ハ」行",
                         "ハ (tr:ハ)",
                         "ヒ (tr:ヒ)",
                         "フ (tr:フ)",
@@ -10058,7 +10051,7 @@ export const dumpPt = {
                         "ホ (tr:ホ)",
                       ],
                       [
-                        "Linha «tr:バ»",
+                        "「tr:バ」行",
                         "バ (tr:バ)",
                         "ビ (tr:ビ)",
                         "ブ (tr:ブ)",
@@ -10067,23 +10060,23 @@ export const dumpPt = {
                       ],
                     ],
                   },
-                  id: "742c4c83-fdf0-4c45-ad27-1f989c68bc11",
+                  id: "9621fe2f-7c0a-5246-b3e0-58711165ab18",
                   type: "table",
                 },
               ],
-              id: "ea838467-ad6c-412c-b8f6-27056489e801",
+              id: "f745bd4f-8f26-545c-9f16-569c7b820b3f",
               screen_order: 10,
-              title: "Dakuon tr:バ tr:ビ tr:ブ tr:ベ tr:ボ.",
+              title: "濁音 tr:バ tr:ビ tr:ブ tr:ベ tr:ボ。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Marrom",
+                    sub_title: "棕色",
                     title: "tr(ブラウン)",
                   },
-                  id: "07bd87d9-557b-4521-a1f9-0f148a3c30a2",
+                  id: "392a2ad4-98a8-58ec-b6eb-217044a10777",
                   type: "title",
                 },
                 {
@@ -10104,22 +10097,22 @@ export const dumpPt = {
                       },
                     ],
                   },
-                  id: "442ba991-f614-4cc4-ace7-744e378a41d4",
+                  id: "250f0257-135e-5dd0-99ca-37abc0fb878e",
                   type: "choice",
                 },
               ],
-              id: "a7383c1a-b766-4dd8-b85b-dd27b220ace0",
+              id: "af5aae1d-b699-5fca-ad48-d8cf4d9dbea2",
               screen_order: 11,
-              title: "Escolha o katakana para:",
+              title: "選擇對應的片假名：",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "A linha do katakana que começa com ハ (tr:ハ) é especial! Podemos adicionar não apenas dakuten, mas também handakuten, um pequeno círculo, que transforma os sons na linha tr:ハ.",
+                    text: "以 ハ (tr:ハ) 開頭的片假名行很特別！除了濁點外，我們還可以加上半濁點——一個小圓圈，它會改變 tr:ハ 行的發音。",
                   },
-                  id: "541abef3-3e34-4331-b0d5-a3fcac1bad4d",
+                  id: "4e4ea30d-8d48-5957-a180-99962fcab9a3",
                   type: "text",
                 },
                 {
@@ -10127,7 +10120,7 @@ export const dumpPt = {
                   content: {
                     table: [
                       [
-                        "Linha «tr:ハ»",
+                        "「tr:ハ」行",
                         "ハ (tr:ハ)",
                         "ヒ (tr:ヒ)",
                         "フ (tr:フ)",
@@ -10135,7 +10128,7 @@ export const dumpPt = {
                         "ホ (tr:ホ)",
                       ],
                       [
-                        "Linha «tr:バ»",
+                        "「tr:バ」行",
                         "バ (tr:バ)",
                         "ビ (tr:ビ)",
                         "ブ (tr:ブ)",
@@ -10143,7 +10136,7 @@ export const dumpPt = {
                         "ボ (tr:ボ)",
                       ],
                       [
-                        "Linha «tr:パ»",
+                        "「tr:パ」行",
                         "パ (tr:パ)",
                         "ピ (tr:ピ)",
                         "プ (tr:プ)",
@@ -10152,23 +10145,23 @@ export const dumpPt = {
                       ],
                     ],
                   },
-                  id: "b12ee98a-58b2-4f99-8bce-ba1510ec5dc6",
+                  id: "ad39a3b5-c3e0-5af3-85a0-596ec26e7ce1",
                   type: "table",
                 },
               ],
-              id: "8e35be20-56ce-4237-8a40-a62dd3ff6f75",
+              id: "76275f8b-3d22-5e77-b86a-c4d2d30dfe5a",
               screen_order: 12,
-              title: "Handakuon tr:ハ tr:ヒ tr:フ tr:ヘ tr:ホ.",
+              title: "半濁音 tr:ハ tr:ヒ tr:フ tr:ヘ tr:ホ。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "(roupas)",
+                    sub_title: "（服裝）",
                     title: "アパレル",
                   },
-                  id: "e85ad48e-64af-4879-8ead-b097442af59e",
+                  id: "87466c00-58ea-5330-88ce-4a29e9d59aef",
                   type: "title",
                 },
                 {
@@ -10189,25 +10182,25 @@ export const dumpPt = {
                       },
                     ],
                   },
-                  id: "9614a312-3209-4303-bb0e-14e215d4507d",
+                  id: "a99221aa-733f-5e6c-b30f-0fcd526271eb",
                   type: "choice",
                 },
               ],
-              id: "27fab7fa-55a6-4d58-871f-1d7730d1acf2",
+              id: "45c2198f-f0d6-545b-8147-c0e8caade4af",
               screen_order: 13,
-              title: "Escolha o romaji para:",
+              title: "選擇對應的羅馬字：",
             },
           ],
-          subtitle: "Sinais especiais",
-          title: "Dakuon e Handakuon",
-          topic_id: "879cc30b-005e-4559-ae89-16ed9170de20",
+          subtitle: "特殊符號",
+          title: "濁音與半濁音",
+          topic_id: "18800460-fe6b-4b37-bbb2-259253cdcbbb",
         },
         {
-          expanded_subtitle: "Aqui vamos explicar sobre vogais longas.",
-          expanded_title: "Informação",
+          expanded_subtitle: "在這裡，我們將向您介紹長母音。",
+          expanded_title: "資訊",
           icon: "https://nihongo.khvat.app/chapter4/LongVowels.jpg",
-          id: "b630132c-8410-47d2-8b7a-82a5423ae81f",
-          last_updated: "2026-03-26T17:43:20.226Z",
+          id: "dab5e1f4-9b11-4de2-9d8b-2c958491a6cc",
+          last_updated: "2026-09-08T13:12:16.096Z",
           lesson_key: "alphabet/katakana&longVowels",
           lesson_order: 27,
           minimum_version: "2.4.1",
@@ -10217,169 +10210,169 @@ export const dumpPt = {
                 {
                   block_order: 1,
                   content: {
-                    text: "O katakana utiliza uma abordagem única para marcar sons vocálicos longos. Nesta lição, aprenderemos como escrevê-los corretamente.",
+                    text: "片假名使用獨特的方法來標示長母音。本課將學習如何正確書寫它們。",
                   },
-                  id: "2dc00888-e5ac-478b-87ed-7789ae6e7bad",
+                  id: "4aa70edb-6c2c-5b52-8576-737bbf3f37bb",
                   type: "text",
                 },
                 {
                   block_order: 2,
                   content: {
-                    text: "No katakana, as vogais longas são indicadas por meio de um traço horizontal 「ー」, diferente do hiragana, onde se usam os símbolos «**あ**», «**い**» e «**う**» para prolongar as vogais.",
+                    text: "在片假名中，長母音以橫線「ー」表示；這與平假名不同，平假名會使用「**あ**」、「**い**」和「**う**」來延長母音。",
                   },
-                  id: "b696c1f2-5eac-4627-8945-9d3ac0c959df",
+                  id: "b6effe7d-2d5c-59bf-ad64-5d5e7781beb7",
                   type: "text",
                 },
                 {
                   block_order: 3,
                   content: {
-                    text: "Confira exemplos do uso de vogais longas no katakana:",
+                    text: "請參考片假名中長母音的使用範例：",
                   },
-                  id: "fe985ac3-d8da-4516-ae44-55f3902009ad",
+                  id: "585726d8-18a2-5ac4-8518-e4a5a09ac36c",
                   type: "text",
                 },
                 {
                   block_order: 4,
                   content: {
                     table: [
-                      ["Romaji", "tr:ア", "tr:イ", "tr:ウ", "tr:エ", "tr:オ"],
-                      ["Katakana", "アー", "イー", "ウー", "エー", "オー"],
+                      ["羅馬字", "tr:ア", "tr:イ", "tr:ウ", "tr:エ", "tr:オ"],
+                      ["片假名", "アー", "イー", "ウー", "エー", "オー"],
                     ],
                   },
-                  id: "c8923690-7d52-4725-9c66-e60e77fe0457",
+                  id: "331fd2f3-9914-5591-8aeb-b270f91d20db",
                   type: "table",
                 },
               ],
-              id: "3b9845aa-b369-4ff5-bd1e-c3afcb3fffd3",
+              id: "dfdfa571-b019-5b04-806e-f78548fe74cd",
               screen_order: 1,
-              title: "Vogais Longas em Katakana",
+              title: "片假名中的長母音",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "Uma vogal longa significa que o som vocálico é prolongado por cerca de 2 vezes mais do que o normal.",
+                    text: "長母音表示該母音的發音時間比平常延長約兩倍。",
                   },
-                  id: "2c2e747b-594b-4cd7-9d67-e76cde0c1629",
+                  id: "3e4026b2-75b4-5f8f-880a-926786b29821",
                   type: "text",
                 },
                 {
                   block_order: 2,
                   content: {
                     rules: [
-                      "Por exemplo, コーヒー (tr(コーヒー)) soa como «koo-hii», com uma longa «tr:コ» e «tr:ヒ».",
+                      "例如，コーヒー (tr(コーヒー)) 的發音為「koo-hii」，其中「tr:コ」和「tr:ヒ」為長音。",
                     ],
                   },
-                  id: "7e587359-5e36-47fa-9801-8d442f663abb",
+                  id: "a8a8b33b-5ee5-5a2f-8844-8087bc18396e",
                   type: "rule",
                 },
                 {
                   block_order: 3,
                   content: {
-                    text: "Se a extensão da vogal não for mantida, o significado da palavra pode mudar. Por exemplo:",
+                    text: "若未正確延長母音，單字的意思可能會改變。例如：",
                   },
-                  id: "81aa4a4f-b53b-43f7-ae03-bc3f0076d187",
+                  id: "93eab32c-3eed-5063-a28a-502447e44eea",
                   type: "text",
                 },
                 {
                   block_order: 4,
                   content: {
-                    rules: ["ビル (tr(ビル)) — prédio.", "ビール (tr(ビール)) — cerveja."],
+                    rules: ["ビル (tr(ビル)) — 大樓。", "ビール (tr(ビール)) — 啤酒。"],
                   },
-                  id: "9a661ea1-d1a5-44fb-a193-805d9988e90f",
+                  id: "4e07931c-ab5f-5d96-b94d-ba857a05c39b",
                   type: "rule",
                 },
               ],
-              id: "08727509-8078-4629-80d2-0f7d840a6293",
+              id: "07e1d05b-39ad-5a75-8460-d39da653e36c",
               screen_order: 2,
-              title: "Pronúncia das Vogais Longas",
+              title: "長母音的發音",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "Em palavras estrangeiras, a pronúncia correta é frequentemente importante para a compreensão. Por exemplo:",
+                    text: "在外來語中，正確的發音往往對理解很重要。例如：",
                   },
-                  id: "2f29926d-10e3-4172-a3b8-7e400a38c4c4",
+                  id: "44934002-b438-5d84-ae0e-9ca1d6559787",
                   type: "text",
                 },
                 {
                   block_order: 2,
                   content: {
                     rules: [
-                      "メートル (tr(メートル)) — metro.",
-                      "メトル (tr(メトル)) — forma incorreta, perda de significado.",
+                      "メートル (tr(メートル)) — 公尺。",
+                      "メトル (tr(メトル)) — 錯誤形式，失去原本意思。",
                     ],
                   },
-                  id: "bd0f1ef9-eb32-4413-b9f5-1a0c638876dd",
+                  id: "4c9a42a0-41a1-590f-ae0b-b56e425dff4c",
                   type: "rule",
                 },
               ],
-              id: "f5223429-2503-4b9b-8477-0478ac3eba10",
+              id: "5304f5f4-f27d-5da6-a314-e5dfb2b86e9a",
               screen_order: 3,
-              title: "Por que é importante usar o traço longo",
+              title: "為什麼使用長音符號很重要",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "O traço 「ー」 não é usado no hiragana ou kanji.",
+                    text: "長音符號「ー」不用於平假名或漢字。",
                   },
-                  id: "76f366fa-994c-46d9-afe8-5ec7d22e5b7c",
+                  id: "7120f0ef-0c60-5ede-aa94-bebf29498903",
                   type: "text",
                 },
                 {
                   block_order: 2,
                   content: {
-                    text: "Para vogais longas no hiragana, são aplicadas outras regras:",
+                    text: "平假名的長母音適用其他規則：",
                   },
-                  id: "16c11ae3-e7e8-4ec1-afa3-0644afe61ee9",
+                  id: "718e21a5-f648-5c5c-ab67-cbc27df78588",
                   type: "text",
                 },
                 {
                   block_order: 3,
                   content: {
                     rules: [
-                      "あ é alongado com 'あ' おかあさん (tr(おかあさん)) — mãe.",
-                      "い é alongado com 'い' おにいさん (tr(おにいさん)) - irmão mais velho.",
+                      "あ使用「あ」延長：おかあさん (tr(おかあさん)) — 媽媽。",
+                      "い使用「い」延長：おにいさん (tr(おにいさん)) — 哥哥。",
                     ],
                   },
-                  id: "5d60d0f4-bc96-40cd-bc90-6fbb7de9a9e5",
+                  id: "f27846b0-5160-5304-a28e-9c959b2a210b",
                   type: "rule",
                 },
               ],
-              id: "527759ef-043c-473c-87a1-05e7ae8a688c",
+              id: "fbe1824b-3b30-58db-8904-89e8c74b2b57",
               screen_order: 4,
-              title: "Onde não se pode usar o traço",
+              title: "不能使用長音符號的地方",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "Às vezes, o alongamento da vogal não é usado em palavras emprestadas das línguas europeias, se elas forem adaptadas às regras tradicionais japonesas. Por exemplo:",
+                    text: "有時候，從歐洲語言借入的單字若依照傳統日語規則調整，便不會使用長母音。例如：",
                   },
-                  id: "ee8807e7-276a-4e4e-ab80-cfb48fe6baaf",
+                  id: "6267dd58-f54c-5638-bfd7-5a1e47f96e87",
                   type: "text",
                 },
                 {
                   block_order: 2,
                   content: {
                     rules: [
-                      "コンピュータ (tr(コンピュータ)) — computador.",
-                      "Em alguns casos, essa palavra é escrita como コンピューター.",
+                      "コンピュータ (tr(コンピュータ)) — 電腦。",
+                      "有些情況下，這個單字會寫成 コンピューター。",
                     ],
                   },
-                  id: "d893a47f-b149-4b00-b63f-f8464fd06b2b",
+                  id: "fa20a733-6e77-5fa5-befd-2dd9a50d12aa",
                   type: "rule",
                 },
               ],
-              id: "202e7a99-fe72-42b4-8134-8714cf2ee555",
+              id: "871295c1-4df6-5d6f-a444-dd066d39bd2a",
               screen_order: 5,
-              title: "Exceções e particularidades",
+              title: "例外與特點",
             },
             {
               blocks: [
@@ -10387,28 +10380,28 @@ export const dumpPt = {
                   block_order: 1,
                   content: {
                     pairs: [
-                      ["チーター", "tr(チーター) (guepardo)"],
-                      ["ローン", "tr(ローン) (empréstimo)"],
-                      ["ユーロ", "tr(ユーロ) (euro)"],
+                      ["チーター", "tr(チーター)（獵豹）"],
+                      ["ローン", "tr(ローン)（貸款）"],
+                      ["ユーロ", "tr(ユーロ)（歐元）"],
                     ],
                   },
-                  id: "26384aaf-b1f1-4ee8-a29d-f5f423f8e797",
+                  id: "3d30459e-ff4a-56b5-a504-9b578b4dd6f8",
                   type: "matching",
                 },
               ],
-              id: "2059ea0d-3451-46c4-bdba-5941a8bb70ba",
+              id: "9980da23-513f-5624-895e-cfca6cabb6c8",
               screen_order: 6,
-              title: "Combine o katakana com o romaji",
+              title: "將片假名與羅馬字配對",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Apartamento",
+                    sub_title: "公寓",
                     title: "tr(アパート)",
                   },
-                  id: "99c3e3e3-461f-4b12-8cec-acada2dd1851",
+                  id: "a5ca3065-3efe-5826-87ec-448f0131f519",
                   type: "title",
                 },
                 {
@@ -10416,25 +10409,25 @@ export const dumpPt = {
                   content: {
                     sequence: ["ア", "パ", "ー", "ト"],
                   },
-                  id: "f1568bd9-6eb6-4f13-91b4-81612f8bd7c7",
+                  id: "b8852c78-2cec-563f-8c82-89be5b964bee",
                   type: "sequence",
                 },
               ],
-              id: "dac5dc1e-6097-466c-af72-fb02f57032a4",
+              id: "fdf7c803-4b98-5295-8a94-a60cb47dc668",
               screen_order: 7,
-              title: "Escolha o katakana para:",
+              title: "選擇對應的片假名：",
             },
           ],
-          subtitle: "Traço Longo 「ー」",
-          title: "Vogais Longas",
-          topic_id: "879cc30b-005e-4559-ae89-16ed9170de20",
+          subtitle: "長音符號「ー」",
+          title: "長母音",
+          topic_id: "18800460-fe6b-4b37-bbb2-259253cdcbbb",
         },
         {
-          expanded_subtitle: "Aqui vamos falar sobre consoantes longas em katakana.",
-          expanded_title: "Informação",
+          expanded_subtitle: "在這裡，我們將為您介紹片假名中的長子音。",
+          expanded_title: "資訊",
           icon: "https://nihongo.khvat.app/chapter4/LongConsonants.jpg",
-          id: "b642cbe4-4388-43fe-ad0e-d20f5319d817",
-          last_updated: "2026-03-26T17:43:20.226Z",
+          id: "c160c076-1f8b-4d52-93ac-40712dc120ce",
+          last_updated: "2026-09-08T13:12:16.096Z",
           lesson_key: "alphabet/katakana&longConsonants",
           lesson_order: 28,
           minimum_version: "2.4.1",
@@ -10444,39 +10437,39 @@ export const dumpPt = {
                 {
                   block_order: 1,
                   content: {
-                    text: "No idioma japonês, as consoantes longas desempenham um papel importante, especialmente em katakana, onde são representadas por um símbolo especial.",
+                    text: "在日語中，長子音扮演重要角色，尤其在片假名中，它們會以特殊符號表示。",
                   },
-                  id: "4c23ba83-6eb8-439f-8988-69ca2c33fe87",
+                  id: "b18920eb-dac1-5888-8434-4230ae40af36",
                   type: "text",
                 },
                 {
                   block_order: 2,
                   content: {
-                    text: 'O pequeno símbolo "tr:ツ" (ッ) é usado em katakana antes de uma consoante para indicar sua duplicação. Este símbolo não é pronunciado.',
+                    text: "小型符號「tr:ツ」(ッ) 會用於片假名中子音之前，以表示該子音加倍。這個符號本身不發音。",
                   },
-                  id: "ed690ddc-e631-4a00-b356-221c4759fbcf",
+                  id: "a922d839-9ba0-5b8a-9815-68e4bfa3b8f3",
                   type: "text",
                 },
                 {
                   block_order: 3,
                   content: {
-                    text: 'Vamos considerar exemplos de uso do "tr:ツ" (tr:ツ) comum e do pequeno "tr:ツ" (ッ):',
+                    text: "讓我們看看普通的「tr:ツ」(tr:ツ) 與小型「tr:ツ」(ッ) 的使用範例：",
                   },
-                  id: "c7aea663-4d20-40dc-a0e4-5f0317e6b174",
+                  id: "a55ec653-82cb-5986-afaa-82c485d12da8",
                   type: "text",
                 },
                 {
                   block_order: 4,
                   content: {
-                    rules: ["カット (tr(カット)) - corte de cabelo", "バッグ (tr(バッグ)) - bolsa"],
+                    rules: ["カット (tr(カット)) - 剪髮", "バッグ (tr(バッグ)) - 包包"],
                   },
-                  id: "c7254ca8-e57f-4449-815e-8cf5816bfe62",
+                  id: "fd333b8d-50bc-56a1-82a0-f6a1bfc028e1",
                   type: "rule",
                 },
               ],
-              id: "42bfa421-0092-46fb-9ce6-da2d45def886",
+              id: "29e34e4b-ab73-550d-a029-cb3941a09f79",
               screen_order: 1,
-              title: "Consoantes Longas em Katakana",
+              title: "片假名中的長子音",
             },
             {
               blocks: [
@@ -10487,50 +10480,50 @@ export const dumpPt = {
                       "カ、キ、ク、ケ、コ",
                       "サ、シ、ス、セ、ソ",
                       "タ、チ、ツ、テ、ト",
-                      "パ、ピ、プ、ペ, ポ",
+                      "パ、ピ、プ、ペ、ポ",
                       "バ、ビ、ブ、ベ、ボ",
                       "ガ、ギ、グ、ゲ、ゴ",
                       "ザ、ジ、ズ、ゼ、ゾ",
                     ],
                   },
-                  id: "10d6845e-8004-4fe1-934e-837f9f515e06",
+                  id: "edc7c58e-cace-54b2-be17-0cb9389344e0",
                   type: "rule",
                 },
               ],
-              id: "4e9289d9-8a01-4d08-ab24-aa30d25780ac",
+              id: "8e74f8d3-9ca0-5e5f-9dea-a05584ecd2e9",
               screen_order: 2,
-              title: "Lista de Consoantes com as Quais o Pequeno 「ッ」 é Usado",
+              title: "使用小「ッ」的子音列表",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "O pequeno 「ッ」 não é usado antes de vogais (ア, イ, ウ, エ, オ) e sons da série ン (tr:ン).",
+                    text: "小「ッ」不會用於母音（ア、イ、ウ、エ、オ）及ン行音（tr:ン）之前。",
                   },
-                  id: "09f84eff-cf22-4ce4-a90c-523f8f6789fa",
+                  id: "a8c664a6-9168-5564-9fd2-2f845bc6ea1b",
                   type: "text",
                 },
                 {
                   block_order: 2,
                   content: {
-                    text: "Na transcrição, o 「ッ」 é geralmente representado pela duplicação da consoante, por exemplo:",
+                    text: "在羅馬字轉寫中，「ッ」通常以子音加倍來表示，例如：",
                   },
-                  id: "ef23a51c-0daf-495a-a715-5cc81c4c2796",
+                  id: "e5f3b9cc-8de5-5d41-96cb-25ecfaf26be3",
                   type: "text",
                 },
                 {
                   block_order: 3,
                   content: {
-                    rules: ["カッコウ (tr(カッコウ)) → cuco"],
+                    rules: ["カッコウ (tr(カッコウ)) → 杜鵑鳥"],
                   },
-                  id: "e38d5764-1b16-4803-baa5-8a03c97b8a52",
+                  id: "89e0d17e-0616-5d8c-9c65-2a79b287c96a",
                   type: "rule",
                 },
               ],
-              id: "740bf2e0-eaa7-4f30-b88d-2cba77e25557",
+              id: "15cc39b8-2b72-5aa2-a885-edbafee6f632",
               screen_order: 3,
-              title: "Preste Atenção!",
+              title: "請注意！",
             },
             {
               blocks: [
@@ -10538,28 +10531,28 @@ export const dumpPt = {
                   block_order: 1,
                   content: {
                     pairs: [
-                      ["ネックレス", "tr(ネックレス) (colar)"],
-                      ["ブラック", "tr(ブラック) (preto)"],
-                      ["ライラック", "tr(ライラック) (lilás)"],
+                      ["ネックレス", "tr(ネックレス)（項鍊）"],
+                      ["ブラック", "tr(ブラック)（黑色）"],
+                      ["ライラック", "tr(ライラック)（丁香）"],
                     ],
                   },
-                  id: "c72e8f0c-7e19-4a06-805f-76403196c51c",
+                  id: "1649e75d-b061-537e-922d-59ac04c7a499",
                   type: "matching",
                 },
               ],
-              id: "37e24925-755d-43dc-8cf8-d6cc3fcbcc8a",
+              id: "ab4a8ce9-397c-57c6-82ae-0de83fc7499f",
               screen_order: 4,
-              title: "Combine Katakana com Romaji.",
+              title: "將片假名與羅馬字配對。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Abacaxi",
+                    sub_title: "鳳梨",
                     title: "tr(パイナップル)",
                   },
-                  id: "5988fc4e-108e-445d-b327-a56e458d3976",
+                  id: "60c2e9d7-2efd-5958-80bd-72ac86e78e36",
                   type: "title",
                 },
                 {
@@ -10567,25 +10560,25 @@ export const dumpPt = {
                   content: {
                     sequence: ["パ", "イ", "ナ", "ッ", "プ", "ル"],
                   },
-                  id: "a5b3d10e-f871-43d5-a645-35020b7276fe",
+                  id: "8e58effa-c6c5-5c91-90ec-f09a9df923de",
                   type: "sequence",
                 },
               ],
-              id: "c22eb8ee-a54d-46a0-a930-5592c72b8492",
+              id: "7b6c40a2-95a7-57f1-ba0e-7adc51ba20ab",
               screen_order: 5,
-              title: "Escolha o Katakana para:",
+              title: "選擇對應的片假名：",
             },
           ],
-          subtitle: "Pequeno 「ッ」",
-          title: "Consoantes Longas",
-          topic_id: "879cc30b-005e-4559-ae89-16ed9170de20",
+          subtitle: "小「ッ」",
+          title: "長子音",
+          topic_id: "18800460-fe6b-4b37-bbb2-259253cdcbbb",
         },
         {
-          expanded_subtitle: "Aqui falaremos sobre os sons adicionais no katakana",
-          expanded_title: "Informação",
+          expanded_subtitle: "在這裡，我們將向您介紹片假名中的附加音",
+          expanded_title: "資訊",
           icon: "https://nihongo.khvat.app/chapter4/AdditionalSounds.jpg",
-          id: "70bfb7e5-31de-41d8-9663-8b4c38fe9eb8",
-          last_updated: "2026-03-26T17:43:20.226Z",
+          id: "d08abf58-0e31-4a3b-b1cf-37cba1916bd0",
+          last_updated: "2026-09-08T13:12:16.097Z",
           lesson_key: "alphabet/katakana&additionalSounds",
           lesson_order: 29,
           minimum_version: "2.4.1",
@@ -10595,34 +10588,34 @@ export const dumpPt = {
                 {
                   block_order: 1,
                   content: {
-                    text: 'No idioma japonês, os sons "r" e "l" são considerados idênticos, assim como os sons "h" e "f". Portanto, em vez do som "l", é utilizada a fileira da sílaba "r", e para o som "f", a fileira da sílaba "h". Para resolver o problema do uso do som "f", foi adotada uma nova forma de escrita, combinando vogais com fonte reduzida.',
+                    text: "在日語中，「r」和「l」音被視為相同，就像「h」和「f」音一樣。因此，會使用「r」行來代替「l」音，並使用「h」行來表示「f」音。為了解決使用「f」音的問題，日語採用了將元音與小寫字體結合的新寫法。",
                   },
-                  id: "3a9e3c33-e61e-40a9-aa5c-ac7abb9da0ce",
+                  id: "8dd6ad7c-8f3c-56a0-9d05-55a87a65fcff",
                   type: "text",
                 },
                 {
                   block_order: 2,
                   content: {
-                    text: 'O som "フ" (tr:フ) pode ser combinado com símbolos de vogais reduzidas para criar os sons "fa", "fi", "fe" e "fo".',
+                    text: "「フ」音（tr:フ）可以與小型元音符號組合，以構成「fa」、「fi」、「fe」和「fo」音。",
                   },
-                  id: "604adc5c-6867-4891-a8bc-61d1482cf1d1",
+                  id: "61c246e9-77f5-5191-b9ed-2af52d87edca",
                   type: "text",
                 },
                 {
                   block_order: 3,
                   content: {
                     table: [
-                      ["Romaji", "fa", "fi", "fu", "fe", "fo"],
-                      ["Katakana", "ファ", "フィ", "フ", "フェ", "フォ"],
+                      ["羅馬字", "fa", "fi", "fu", "fe", "fo"],
+                      ["片假名", "ファ", "フィ", "フ", "フェ", "フォ"],
                     ],
                   },
-                  id: "c2592829-a33f-4c6f-bf7b-38b70274d333",
+                  id: "e3c24e06-23e3-5509-902d-cb4b759f2733",
                   type: "table",
                 },
               ],
-              id: "ebc56565-60f7-4aee-a22a-79b3d95d6ddc",
+              id: "18ce9626-139c-57f4-a025-610dd96acc28",
               screen_order: 1,
-              title: "Adicionando vogais a フ (tr:フ).",
+              title: "在 フ（tr:フ）後加上元音。",
             },
             {
               blocks: [
@@ -10630,101 +10623,101 @@ export const dumpPt = {
                   block_order: 1,
                   content: {
                     pairs: [
-                      ["ファイル", "tr(ファイル) (pasta)"],
-                      ["フィリピン", "tr(フィリピン) (Filipinas)"],
-                      ["フォーク", "tr(フォーク) (garfo)"],
+                      ["ファイル", "tr(ファイル)（資料夾）"],
+                      ["フィリピン", "tr(フィリピン)（菲律賓）"],
+                      ["フォーク", "tr(フォーク)（叉子）"],
                     ],
                   },
-                  id: "d0f8efe7-c129-4a9c-a26f-61abc79b3bf0",
+                  id: "da6a5a66-9780-55d6-bfdf-1ade0c5166ed",
                   type: "matching",
                 },
               ],
-              id: "4e0ff881-386d-47a3-a148-bc998af09b0a",
+              id: "9dca2ba2-c2f3-5e96-8bf8-d66a6eb55b22",
               screen_order: 2,
-              title: "Associe katakana com romaji.",
+              title: "將片假名與羅馬字配對。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: 'Você deve estar se perguntando: se há apenas o katakana "ワ", como se formam outras sílabas com a letra "v", como "vo" ou "ve"? Ou elas nem existem? No idioma japonês, elas realmente não existem (e não se diferenciam do som "b"), mas ainda estão presentes para a escrita de palavras estrangeiras.',
+                    text: "您可能會想：如果只有片假名「ワ」，那麼其他帶有「w」的音節，例如「wo」或「we」，是如何構成的呢？還是它們根本不存在？它們在日語中確實不存在（而且與「b」音沒有區別），但仍會用於書寫外來語。",
                   },
-                  id: "37a86528-6660-40d6-b39a-d3e9ea1f9d3c",
+                  id: "8e5a3d5e-0b51-5d6c-ad77-d4252c921ba8",
                   type: "text",
                 },
                 {
                   block_order: 2,
                   content: {
-                    text: 'Em katakana, existe apenas a sílaba "ワ" (tr:わ), mas para criar sons com "v", usamos vogais com a base "ウ" (tr:う):',
+                    text: "片假名中只有「ワ」音節（tr:わ），但要構成帶有「w」的音，我們會使用以「ウ」（tr:う）為基礎的元音：",
                   },
-                  id: "92016f4c-fa99-4bf8-ba46-6c28672051e9",
+                  id: "4ceba05b-c5e0-5012-94e7-fe2e0f5e41a7",
                   type: "text",
                 },
                 {
                   block_order: 3,
                   content: {
                     table: [
-                      ["Romaji", "wa", "wi", "u", "we", "wo"],
-                      ["Katakana", "ワ", "ウィ", "ウ", "ウェ", "ウォ"],
+                      ["羅馬字", "wa", "wi", "u", "we", "wo"],
+                      ["片假名", "ワ", "ウィ", "ウ", "ウェ", "ウォ"],
                     ],
                   },
-                  id: "c4fae607-1a0b-4f11-9cca-a10580b9e35f",
+                  id: "30812d9d-a4ff-506e-8f15-fc53f6100824",
                   type: "table",
                 },
                 {
                   block_order: 4,
                   content: {
-                    text: "Assim, é possível escrever palavras como:",
+                    text: "因此，可以書寫像這樣的詞：",
                   },
-                  id: "5c55a6ab-19e2-4928-a54d-b942d1e27a5b",
+                  id: "0c60e6d7-5936-5d4c-97ca-2c36c25e86d0",
                   type: "text",
                 },
                 {
                   block_order: 5,
                   content: {
-                    rules: ["«window» (ウィンドウズ)", "«vodka» (ウォッカ)."],
+                    rules: ["「Windows」（ウィンドウズ）", "「伏特加」（ウォッカ）。"],
                   },
-                  id: "99e9205b-5484-40b8-8ed0-f14950fc0c4d",
+                  id: "6f6e14ed-95f1-59ba-be8e-eb22f67b5655",
                   type: "rule",
                 },
               ],
-              id: "f61336ad-6fb7-4af5-a4ff-a209d6c65f06",
+              id: "0f1c9e55-032f-5db2-9ca5-5e0559d77b58",
               screen_order: 3,
-              title: "Adição de sons para «ワ» (tr:ワ).",
+              title: "「ワ」（tr:ワ）的附加音。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: 'Às vezes, você pode encontrar os símbolos de katakana "ヰ", "ヱ" e "ヲ", que não são usados na fala contemporânea.',
+                    text: "有時您可能會看到已過時的片假名符號「ヰ」、「ヱ」和「ヲ」，它們在現代日語中已不再使用。",
                   },
-                  id: "f36bf130-be5a-4e2e-919c-26845ebb6a48",
+                  id: "59b67a70-7388-56f1-8b88-805a000166d9",
                   type: "text",
                 },
                 {
                   block_order: 2,
                   content: {
-                    rules: ["«ヰ» wi (wi)", "«ヱ» we (we)", "«ヲ» wo (wo ou o)"],
+                    rules: ["「ヰ」wi", "「ヱ」we", "「ヲ」wo 或 o"],
                   },
-                  id: "eeda4ece-2dc9-44ca-9a93-ea6e4389ba2b",
+                  id: "3f668af4-0662-5b01-a76b-a750fc4ad4fb",
                   type: "rule",
                 },
               ],
-              id: "4de86784-ef90-4229-8ce2-223c04764fe6",
+              id: "a39b352b-9de3-5f46-a904-2d8a822ab1d2",
               screen_order: 4,
-              title: "Preste atenção!",
+              title: "請注意！",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Halloween",
+                    sub_title: "萬聖節",
                     title: "tr(ハロウィーン)",
                   },
-                  id: "5e4c0c1d-a51b-4f30-a48b-e9a3ee67b6ce",
+                  id: "40445584-6e97-56b1-b694-7bc4852cca9e",
                   type: "title",
                 },
                 {
@@ -10745,57 +10738,57 @@ export const dumpPt = {
                       },
                     ],
                   },
-                  id: "89f273df-782f-408b-ab33-58c36b26290c",
+                  id: "44d55ca0-9af1-53e0-8c78-a902469830ef",
                   type: "choice",
                 },
               ],
-              id: "dcdc68b0-3b8f-4895-b272-3b28f088420e",
+              id: "fd08aefd-9aea-52b7-9e82-cd7afca831b5",
               screen_order: 5,
-              title: "Escolha o katakana para:",
+              title: "選擇對應的片假名：",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "Para criar os sons do grupo «V» em katakana, são utilizados símbolos baseados em «ウ» com a adição de dakuten, que torna o som mais forte:",
+                    text: "要在片假名中構成「V」組音，會使用以「ウ」為基礎並加上濁點的符號，讓發音更濁：",
                   },
-                  id: "3b790082-d95e-44f3-ae1e-797dd4d0940f",
+                  id: "5aa59b6a-adb8-56de-9521-1c3be12151dd",
                   type: "text",
                 },
                 {
                   block_order: 2,
                   content: {
                     table: [
-                      ["Romaji", "wa (va)", "wi (vi)", "wu (vu)", "we (ve)", "wo (vo)"],
-                      ["Katakana", "ヴァ", "ヴィ", "ヴ", "ヴェ", "ヴォ"],
+                      ["羅馬字", "va", "vi", "vu", "ve", "vo"],
+                      ["片假名", "ヴァ", "ヴィ", "ヴ", "ヴェ", "ヴォ"],
                     ],
                   },
-                  id: "224b7ccd-d49a-4da8-8b1b-9fcce9d4606d",
+                  id: "681335f8-6cdf-5002-9258-e3cb90f40d54",
                   type: "table",
                 },
                 {
                   block_order: 3,
                   content: {
-                    text: 'Os japoneses raramente usam os sons fortes "ヴ" devido à dificuldade de pronúncia.',
+                    text: "由於發音困難，日本人很少使用濁的「ヴ」音。",
                   },
-                  id: "7c9a265a-b592-4d76-8173-b93f9f290d64",
+                  id: "8be2782a-ed83-584a-8e40-de4b0a57b989",
                   type: "text",
                 },
               ],
-              id: "dafe4ef5-3678-43f7-9530-3ce78b8b074a",
+              id: "35b4f96d-55b2-54c7-8c78-55ae7d31c3d7",
               screen_order: 6,
-              title: "Sons do grupo «V».",
+              title: "「V」組音。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Vítor",
+                    sub_title: "維克多",
                     title: "tr(ヴィクトル)",
                   },
-                  id: "dc646976-9b66-4175-86a5-e095a186dc62",
+                  id: "49b2c285-9a6d-5c82-8b27-a557000a7a90",
                   type: "title",
                 },
                 {
@@ -10803,38 +10796,38 @@ export const dumpPt = {
                   content: {
                     sequence: ["ヴ", "ィ", "ク", "ト", "ル"],
                   },
-                  id: "ec90ac9d-d031-4cbc-ada5-5ce16bde7a81",
+                  id: "82ed5a9d-ddd9-5a4c-a380-9387424f110d",
                   type: "sequence",
                 },
               ],
-              id: "cbda3076-0146-490c-b4de-34e8aff9bd3c",
+              id: "0b91fbba-e214-5fa0-9b3d-60883d9cd9ef",
               screen_order: 7,
-              title: "Escolha o katakana para:",
+              title: "選擇對應的片假名：",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "Para expressar o som «che» em katakana, use o símbolo «チェ». Isso permite escrever corretamente palavras estrangeiras.",
+                    text: "要在片假名中表達「che」音，請使用「チェ」符號。這能正確書寫外來語。",
                   },
-                  id: "9f72b779-369d-4d8d-bb6c-53827705503f",
+                  id: "ffaf0586-3626-5ff0-ada7-6728dae31a31",
                   type: "text",
                 },
               ],
-              id: "c178d2f2-c7eb-4071-a654-4aa108a48fbe",
+              id: "a8c21137-43ec-56ca-a77d-855ba8b07591",
               screen_order: 8,
-              title: "Sons «チェ».",
+              title: "「チェ」音。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Cereja",
+                    sub_title: "櫻桃",
                     title: "tr(チェリー)",
                   },
-                  id: "9638859e-002f-4183-a182-7e21d51c7823",
+                  id: "e3a4da44-3ac1-5908-95d4-c64a77f578a2",
                   type: "title",
                 },
                 {
@@ -10855,28 +10848,28 @@ export const dumpPt = {
                       },
                     ],
                   },
-                  id: "224e5fc0-4876-48e1-953b-5553dfb5572d",
+                  id: "8fe47f3f-5a42-59fb-9685-ffbf9e9765ea",
                   type: "choice",
                 },
               ],
-              id: "fc86ccc5-bad9-4ca1-a6c3-c4c9bad97b58",
+              id: "bf4c4d58-4855-5879-9e50-1d1f9634ace3",
               screen_order: 9,
-              title: "Escolha o katakana para:",
+              title: "選擇對應的片假名：",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "Para expressar os sons «ti» e «tu», use os símbolos «ティ» e «トゥ».",
+                    text: "要表達「ti」和「tu」音，可使用「ティ」和「トゥ」符號。",
                   },
-                  id: "0f30de3a-b4b9-4485-9d28-c9bb2a638093",
+                  id: "2f3c376d-3a0c-5c33-bac1-e199ffe69fc9",
                   type: "text",
                 },
               ],
-              id: "587a6153-469d-4dd9-bf0e-583bc5c721e6",
+              id: "81f6ee82-97bd-5bb9-822e-20e22527189a",
               screen_order: 10,
-              title: "Sons «ティ», «トゥ».",
+              title: "「ティ」、「トゥ」音。",
             },
             {
               blocks: [
@@ -10884,43 +10877,43 @@ export const dumpPt = {
                   block_order: 1,
                   content: {
                     pairs: [
-                      ["エーティーエム", "tr(エーティーエム) (caixa eletrônico)"],
-                      ["トゥース", "tr(トゥース) (dente)"],
-                      ["ティーポット", "tr(ティーポット) (bule de chá)"],
+                      ["エーティーエム", "tr(エーティーエム)（自動櫃員機）"],
+                      ["トゥース", "tr(トゥース)（牙齒）"],
+                      ["ティーポット", "tr(ティーポット)（茶壺）"],
                     ],
                   },
-                  id: "3985e30c-8f6d-42e5-85b4-2985dc350d79",
+                  id: "4855f985-e827-53a6-b503-31edbbe4cc4e",
                   type: "matching",
                 },
               ],
-              id: "743cdc40-8c51-408f-adf1-c490185ff8c4",
+              id: "342636ca-0483-58df-b21e-d611c1710b74",
               screen_order: 11,
-              title: "Associe katakana com romaji.",
+              title: "將片假名與羅馬字配對。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "Para os sons «di» e «du» em katakana, use os símbolos «ディ» e «ドゥ» respectivamente.",
+                    text: "對於「di」和「du」音，請分別使用片假名「ディ」和「ドゥ」。",
                   },
-                  id: "17c120c1-b466-4cc5-b637-aa570090c35a",
+                  id: "e08035b7-eb04-5b13-bbc9-6f2bdeaf7a48",
                   type: "text",
                 },
               ],
-              id: "db135a13-7896-4209-9c00-9db31b62b8bb",
+              id: "4a59857f-b2a8-53ec-8f7d-cd733b8b3a43",
               screen_order: 12,
-              title: "Sons «ディ», «ドゥ».",
+              title: "「ディ」、「ドゥ」音。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Disneyland",
+                    sub_title: "迪士尼樂園",
                     title: "tr(ディズニーランド)",
                   },
-                  id: "d8e2d22b-62a0-44f9-8e71-31213c3913c0",
+                  id: "2435c35e-ceca-52c8-b046-ef63d8e61f83",
                   type: "title",
                 },
                 {
@@ -10941,38 +10934,38 @@ export const dumpPt = {
                       },
                     ],
                   },
-                  id: "af7d6b0e-3f29-4f8a-a07f-99ed2160f4ad",
+                  id: "02fc6d5a-0b44-50ca-8293-44b1b677343a",
                   type: "choice",
                 },
               ],
-              id: "582c3d41-0a8d-4d59-8387-6f80c51dfca7",
+              id: "d6df0585-e34e-52e5-a957-304d0de24556",
               screen_order: 13,
-              title: "Escolha o katakana para:",
+              title: "選擇對應的片假名：",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "Para escrever o som «she» e «je», use o símbolo «シェ» e «ジェ».",
+                    text: "要書寫「she」和「je」音，可使用「シェ」和「ジェ」符號。",
                   },
-                  id: "657ae0f2-f50d-4532-8471-195ca684261a",
+                  id: "1a869cd5-3c9a-5d2e-a80c-0e091fc1506f",
                   type: "text",
                 },
               ],
-              id: "eb4cc359-8ceb-4c2d-92dd-a95e326989ab",
+              id: "70518fc1-4533-559c-9f89-0a2eeac494a1",
               screen_order: 14,
-              title: "Sons «シェ», «ジェ».",
+              title: "「シェ」、「ジェ」音。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Chef",
+                    sub_title: "廚師",
                     title: "tr(シェフ)",
                   },
-                  id: "04378895-9cda-4d6f-ba14-bb4cc59acdc5",
+                  id: "1d8fefef-9a4a-53f5-973f-d0c4c8f07a78",
                   type: "title",
                 },
                 {
@@ -10980,25 +10973,25 @@ export const dumpPt = {
                   content: {
                     sequence: ["シ", "ェ", "フ"],
                   },
-                  id: "87acb7c1-46c8-45be-888e-b32d336362c3",
+                  id: "36abc679-8b80-56d0-9cac-253e88ff5590",
                   type: "sequence",
                 },
               ],
-              id: "5a5a57ad-fab6-4d0f-bdd7-9b5fdcf720d0",
+              id: "fff1d836-e1b6-57da-afbf-b7781f6b8c6c",
               screen_order: 15,
-              title: "Escolha o katakana para:",
+              title: "選擇對應的片假名：",
             },
           ],
           subtitle: "ァ, ィ, ゥ, ェ, ォ",
-          title: "Sons Adicionais",
-          topic_id: "879cc30b-005e-4559-ae89-16ed9170de20",
+          title: "附加音",
+          topic_id: "18800460-fe6b-4b37-bbb2-259253cdcbbb",
         },
         {
-          expanded_subtitle: "Aqui contaremos sobre youon",
-          expanded_title: "Informação",
+          expanded_subtitle: "這裡將為你介紹拗音",
+          expanded_title: "資訊",
           icon: "https://nihongo.khvat.app/chapter4/Yoon.jpg",
-          id: "f97957e1-322e-43aa-b2e5-32c69c2ef42b",
-          last_updated: "2026-03-26T17:43:20.226Z",
+          id: "2dd6b3e1-5362-4474-961b-7d99fd9beee5",
+          last_updated: "2026-09-08T13:12:16.097Z",
           lesson_key: "alphabet/katakana&yoon",
           lesson_order: 30,
           minimum_version: "2.4.1",
@@ -11008,9 +11001,9 @@ export const dumpPt = {
                 {
                   block_order: 1,
                   content: {
-                    text: "Hoje vamos mergulhar no estudo da última regra do katakana, mas primeiro vamos lembrar dessas três letras especiais:",
+                    text: "今天我們將深入學習片假名的最後一項規則，但在此之前，先來複習這三個特殊字母：",
                   },
-                  id: "c8f323d9-eef4-4d10-9db6-c77a206b3361",
+                  id: "2b4a4fa5-f089-59d3-be22-c4eee58ac360",
                   type: "text",
                 },
                 {
@@ -11018,13 +11011,13 @@ export const dumpPt = {
                   content: {
                     rules: ["ヤ (tr:ヤ)", "ユ (tr:ユ)", "ヨ (tr:ヨ)"],
                   },
-                  id: "738192cc-da59-4b0f-ae63-d5193dc8a55a",
+                  id: "5157cd23-0ac3-524c-8546-59b5acff6e84",
                   type: "rule",
                 },
               ],
-              id: "5a1ef2b1-0ee5-43de-aab4-239185ea2090",
+              id: "804ed63f-dcdf-5a00-a3b0-85e341e9b43d",
               screen_order: 1,
-              title: "Youon",
+              title: "拗音",
             },
             {
               blocks: [
@@ -11032,27 +11025,27 @@ export const dumpPt = {
                   block_order: 1,
                   content: {
                     pairs: [
-                      ["ヤモリ", "tr(ヤモリ) (lagartixa)"],
-                      ["ユーロ", "tr(ユーロ) (euro)"],
-                      ["ヨーロッパ", "tr(ヨーロッパ) (Europa)"],
+                      ["ヤモリ", "tr(ヤモリ)（壁虎）"],
+                      ["ユーロ", "tr(ユーロ)（歐元）"],
+                      ["ヨーロッパ", "tr(ヨーロッパ)（歐洲）"],
                     ],
                   },
-                  id: "22dab4ea-d295-48a4-894a-83bb63d47b48",
+                  id: "1a647c5d-baef-509b-bf3f-44eca93d3873",
                   type: "matching",
                 },
               ],
-              id: "67d056ae-96a8-4b00-b21b-7b4988ae30ec",
+              id: "20c29169-cf18-5025-a7f6-26dedfb7453f",
               screen_order: 2,
-              title: "Combine o katakana com romaji.",
+              title: "將片假名與羅馬字配對。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "Existem versões reduzidas de **ヤ** (tr:ヤ), **ユ** (tr:ユ) e **ヨ** (tr:ヨ), no processo de pronúncia essas sílabas se fundem com a sílaba katakana anterior formando um único som. Vamos comparar o padrão **ヤ** e o reduzido **ャ**.",
+                    text: "**ヤ** (tr:ヤ)、**ユ** (tr:ユ) 和 **ヨ** (tr:ヨ) 都有縮小版。在發音時，這些音節會與前一個片假名音節合併，形成一個音。讓我們比較標準大小的 **ヤ** 與縮小的 **ャ**。",
                   },
-                  id: "407be373-3a69-4958-a41c-e16f860e3274",
+                  id: "de54a8e4-4e6b-5ac1-b7f1-43ba9302966f",
                   type: "text",
                 },
                 {
@@ -11060,22 +11053,22 @@ export const dumpPt = {
                   content: {
                     rules: ["キヤ (tr:キヤ)", "キャ (tr:キャ)"],
                   },
-                  id: "22fe9ca0-263e-41e9-ba8f-b8f4d985cc15",
+                  id: "a00871e5-7472-5b26-85a9-40ce1e17dbb0",
                   type: "rule",
                 },
               ],
-              id: "d56fd624-38cd-44e0-b4aa-b3d9927b88f8",
+              id: "a07f2757-b063-5aa5-a976-323fda810c30",
               screen_order: 3,
-              title: "Dica!",
+              title: "提示！",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "Os elementos youon (ヤ, ユ, ヨ) podem ser combinados com símbolos que terminam em «tr:イ». Para começar, vamos observar combinações com キ (tr:キ) e ギ (tr:ギ).",
+                    text: "拗音元素（ヤ、ユ、ヨ）可以與以「tr:イ」結尾的符號結合。首先，來看看與 キ (tr:キ) 和 ギ (tr:ギ) 的組合。",
                   },
-                  id: "34b15049-4935-4a0d-843e-68ad42c89fec",
+                  id: "d0d0801e-532f-5272-a705-2dd28538e21b",
                   type: "text",
                 },
                 {
@@ -11086,13 +11079,13 @@ export const dumpPt = {
                       ["ギ (tr:ギ)", "ギャ (tr:ギャ)", "ギュ (tr:ギュ)", "ギョ (tr:ギョ)"],
                     ],
                   },
-                  id: "b00891cc-9212-4eff-8371-ce1bf12bc733",
+                  id: "4886d7a6-0478-5291-8dc1-0c6799b09a2d",
                   type: "table",
                 },
               ],
-              id: "0c6257bf-3fae-45db-afea-fd72240970d7",
+              id: "e863b9a9-a794-58b4-a56a-e8a5d74bf2b0",
               screen_order: 4,
-              title: "Youon tr:キ, tr:ギ.",
+              title: "拗音 tr:キ、tr:ギ。",
             },
             {
               blocks: [
@@ -11100,27 +11093,27 @@ export const dumpPt = {
                   block_order: 1,
                   content: {
                     pairs: [
-                      ["キャラバン", "tr(キャラバン) (caravana)"],
-                      ["キューバ", "tr(キューバ) (Cuba)"],
-                      ["ギャング", "tr(ギャング) (gangue)"],
+                      ["キャラバン", "tr(キャラバン)（旅行車）"],
+                      ["キューバ", "tr(キューバ)（古巴）"],
+                      ["ギャング", "tr(ギャング)（幫派）"],
                     ],
                   },
-                  id: "f71025e2-c9cb-42ad-8598-cffbee8d6a8a",
+                  id: "c31cb1ee-331c-52bb-b90e-c00d72e4c8cd",
                   type: "matching",
                 },
               ],
-              id: "81d2f0a1-8e2e-47c4-b94d-b3a1436fcdce",
+              id: "6640acd3-c65e-5f74-8d34-f615eba19f57",
               screen_order: 5,
-              title: "Combine o katakana com romaji.",
+              title: "將片假名與羅馬字配對。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "As sílabas シ (tr:シ) e ジ (tr:ジ) também podem formar youon com as letras **ャ**, **ュ**, **ョ**, criando os sons tr:シャ tr:シュ tr:ショ e tr:ジャ tr:ジュ tr:ジョ.",
+                    text: "音節 シ (tr:シ) 和 ジ (tr:ジ) 也能與 **ャ**、**ュ**、**ョ** 形成拗音，產生 tr:シャ、tr:シュ、tr:ショ，以及 tr:ジャ、tr:ジュ、tr:ジョ 等聲音。",
                   },
-                  id: "85350b0c-0cea-4f88-8b5f-84084d8b8e5a",
+                  id: "7a1b9c6b-397a-5b89-8048-3650a9ea2b6f",
                   type: "text",
                 },
                 {
@@ -11131,23 +11124,23 @@ export const dumpPt = {
                       ["ジ (tr:ジ)", "ジャ (tr:ジャ)", "ジュ (tr:ジュ)", "ジョ (tr:ジョ)"],
                     ],
                   },
-                  id: "4fe71d5c-30e3-4f77-b13b-8ae8c5c2137d",
+                  id: "9f4eee31-7147-5957-a0d1-1c5c3ba7f146",
                   type: "table",
                 },
               ],
-              id: "89cbbc0a-62fd-4eb3-b6be-83cdfd8921a7",
+              id: "14d16ffb-aa0d-56c4-8658-978de481e0a2",
               screen_order: 6,
-              title: "Youon tr:シ, tr:ジ.",
+              title: "拗音 tr:シ、tr:ジ。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Camisa",
+                    sub_title: "襯衫",
                     title: "tr(シャツ)",
                   },
-                  id: "4c072bbf-fdc8-499e-b0c4-ed4673355b69",
+                  id: "df1a884c-6f75-5575-9f5c-f16c9bd06375",
                   type: "title",
                 },
                 {
@@ -11168,22 +11161,22 @@ export const dumpPt = {
                       },
                     ],
                   },
-                  id: "e0a8721f-a0c2-4a59-b6f4-27e5eca51c6a",
+                  id: "973f7606-a7db-5271-9587-454379751db5",
                   type: "choice",
                 },
               ],
-              id: "ffb36fab-6761-460c-ac00-d4c116076136",
+              id: "980b4f76-27eb-55dc-91b9-99da8b841ad7",
               screen_order: 7,
-              title: "Escolha o katakana para:",
+              title: "選擇對應的片假名：",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "As sílabas **チ** (tr:チ) e **ヂ** (tr:ヂ) podem ser usadas para criar os sons tr:チャ tr:チュ tr:チョ e tr:ヂャ tr:ヂュ tr:ヂョ. No japonês moderno, a letra **ヂ** é frequentemente substituída por **ジ**.",
+                    text: "音節 **チ** (tr:チ) 和 **ヂ** (tr:ヂ) 可用來形成 tr:チャ、tr:チュ、tr:チョ，以及 tr:ヂャ、tr:ヂュ、tr:ヂョ 等聲音。在現代日語中，**ヂ** 常被 **ジ** 取代。",
                   },
-                  id: "718d6a99-ba70-4f40-b700-ec7565805c61",
+                  id: "dd2b0be4-1332-587b-a563-fa0d723f1a10",
                   type: "text",
                 },
                 {
@@ -11191,26 +11184,26 @@ export const dumpPt = {
                   content: {
                     table: [
                       ["チ (tr:チ)", "チャ (tr:チャ)", "チュ (tr:チュ)", "チョ (tr:チョ)"],
-                      ["ヂ (tr:ヂ) (antigo)", "ヂャ (tr:ヂャ)", "ヂュ (tr:ヂュ)", "ヂョ (tr:ヂョ)"],
+                      ["ヂ (tr:ヂ)（舊式）", "ヂャ (tr:ヂャ)", "ヂュ (tr:ヂュ)", "ヂョ (tr:ヂョ)"],
                     ],
                   },
-                  id: "184a5df9-b663-479e-bd73-1715ee3b51d1",
+                  id: "c58726e9-ed85-5ea5-8f29-f3a9534dc7d6",
                   type: "table",
                 },
               ],
-              id: "5b44afce-dd54-4b7b-be77-a5d065db3086",
+              id: "275213e5-7813-5150-b487-d53f07db2ad1",
               screen_order: 8,
-              title: "Youon tr:チ, tr:ヂ.",
+              title: "拗音 tr:チ、tr:ヂ。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Chance",
+                    sub_title: "機會",
                     title: "tr(チャンス)",
                   },
-                  id: "62b9c6e2-3a03-4896-b504-663987ab2dab",
+                  id: "813b929d-c5f6-55a7-a119-b2e1dd0e6bfe",
                   type: "title",
                 },
                 {
@@ -11218,22 +11211,22 @@ export const dumpPt = {
                   content: {
                     sequence: ["チ", "ャ", "ン", "ス"],
                   },
-                  id: "e9a8a68b-ec3f-4ff1-8946-93c045560add",
+                  id: "21d3d80d-c18d-5e23-93ad-643dcc12b27a",
                   type: "sequence",
                 },
               ],
-              id: "98d21693-7355-43d0-aec5-afe60a3b3ce6",
+              id: "979eeb21-3baa-5598-b4bb-7b4e97ddf0dc",
               screen_order: 9,
-              title: "Escolha o katakana para:",
+              title: "選擇對應的片假名：",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "As combinações ニ (tr:に) e ミ (tr:み) com símbolos reduzidos permitem criar sons complexos tr:にゃ tr:にゅ tr:にょ e tr:みゃ tr:みゅ tr:みょ",
+                    text: "ニ (tr:に) 和 ミ (tr:み) 與縮小符號結合後，可以形成複合音 tr:にゃ、tr:にゅ、tr:にょ，以及 tr:みゃ、tr:みゅ、tr:みょ。",
                   },
-                  id: "8c3edbc9-0762-4e5d-bd61-7865ed112dd1",
+                  id: "1b0a6872-f69e-53a8-8da1-1bfebf407045",
                   type: "text",
                 },
                 {
@@ -11244,23 +11237,23 @@ export const dumpPt = {
                       ["ミ (tr:み)", "ミャ (tr:みゃ)", "ミュ (tr:みゅ)", "ミョ (tr:みょ)"],
                     ],
                   },
-                  id: "0ba6f9a1-339a-4486-b633-8add2977b7bb",
+                  id: "ea538938-ed9f-554d-9477-532baa5faad1",
                   type: "table",
                 },
               ],
-              id: "52e015ae-a167-413b-95d1-d9588c7d197e",
+              id: "f8019d1c-d020-5a0b-87a8-0d6e3db7ec75",
               screen_order: 10,
-              title: "Youon tr:に, tr:み",
+              title: "拗音 tr:に、tr:み",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Musical",
+                    sub_title: "音樂劇",
                     title: "tr(ミュージカル)",
                   },
-                  id: "86c0d480-bf86-4208-b13b-9a897dd341a3",
+                  id: "f68d62da-781e-5a71-8fc3-8cbab81fe448",
                   type: "title",
                 },
                 {
@@ -11281,22 +11274,22 @@ export const dumpPt = {
                       },
                     ],
                   },
-                  id: "de67cd32-78a4-47b2-ab85-87c9fa349f73",
+                  id: "94f719da-7c70-5287-b9b0-23acf03e7414",
                   type: "choice",
                 },
               ],
-              id: "4e106b29-75c1-4635-89bf-14bd7d15285c",
+              id: "ecb93a12-0e1a-5d13-b456-c00146f512ff",
               screen_order: 11,
-              title: "Escolha o katakana para:",
+              title: "選擇對應的片假名：",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "A sílaba リ (tr:リ) combina-se com vogais reduzidas para formar os sons tr:リャ tr:リュ tr:リョ.",
+                    text: "音節 リ (tr:リ) 與縮小母音結合，可形成 tr:リャ、tr:リュ、tr:リョ 等聲音。",
                   },
-                  id: "61364015-ec84-4cdc-afa6-73b8db44c7aa",
+                  id: "4e5d8c46-af55-52c3-8c75-3cc99f478de6",
                   type: "text",
                 },
                 {
@@ -11304,23 +11297,23 @@ export const dumpPt = {
                   content: {
                     rules: ["リャ (tr:リャ)", "リュ (tr:リュ)", "リョ (tr:リョ)"],
                   },
-                  id: "885367ed-bcbf-4c8d-8a6a-818c05f380a2",
+                  id: "2ba385e9-ad3e-5905-a14b-3558a842bf90",
                   type: "rule",
                 },
               ],
-              id: "1f3cf3ef-0fb7-4ed0-bd92-46562b6a6fee",
+              id: "5297c85b-c7d2-50e8-a54f-302f16d0e9e9",
               screen_order: 12,
-              title: "Youon tr:リ.",
+              title: "拗音 tr:リ。",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Mochila",
+                    sub_title: "背包",
                     title: "tr(リュックサック)",
                   },
-                  id: "fbe27e98-bcfc-4230-890d-a9c1138de84c",
+                  id: "652a8e71-cb94-5218-af2d-8f663f74f764",
                   type: "title",
                 },
                 {
@@ -11328,22 +11321,22 @@ export const dumpPt = {
                   content: {
                     sequence: ["リ", "ュ", "ッ", "ク", "サ", "ッ", "ク"],
                   },
-                  id: "e60faad5-fe19-41b8-9d40-84c79aaab4cd",
+                  id: "38e59be8-5ef2-5485-9fdf-dda76a1b24b2",
                   type: "sequence",
                 },
               ],
-              id: "da408e87-d70c-48df-82e3-74c22599c3cd",
+              id: "672fae26-09ff-5aa1-9aac-0b54ec648310",
               screen_order: 13,
-              title: "Escolha o katakana para:",
+              title: "選擇對應的片假名：",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "Para criar sons youon, use as sílabas ヒ (tr:ヒ), ビ (tr:ビ) e ピ (tr:ピ) em combinação com vogais reduzidas.",
+                    text: "要形成拗音，請將音節 ヒ (tr:ヒ)、ビ (tr:ビ) 和 ピ (tr:ピ) 與縮小母音結合。",
                   },
-                  id: "d92df86f-2eab-4625-ba73-673a648f1706",
+                  id: "6e7b7a1c-a582-54d0-9729-4accf364fb2e",
                   type: "text",
                 },
                 {
@@ -11355,13 +11348,13 @@ export const dumpPt = {
                       ["ピ (tr:ピ)", "ピャ (tr:ピャ)", "ピュ (tr:ピュ)", "ピョ (tr:ピョ)"],
                     ],
                   },
-                  id: "0ac75c05-a2f0-4ba3-b9e2-a076dfea8ad5",
+                  id: "ecdb17ab-611c-52bc-a548-01ce48e2752d",
                   type: "table",
                 },
               ],
-              id: "b0f4c188-ae35-4e56-afee-a39ad8b99d0e",
+              id: "a6ab1b6b-e9a8-5d0b-9dee-e2a36d8394cc",
               screen_order: 14,
-              title: "Youon tr:ヒ, tr:ビ, tr:ピ.",
+              title: "拗音 tr:ヒ、tr:ビ、tr:ピ。",
             },
             {
               blocks: [
@@ -11369,26 +11362,26 @@ export const dumpPt = {
                   block_order: 1,
                   content: {
                     pairs: [
-                      ["ヒューズ", "tr(ヒューズ) (fusível)"],
-                      ["ビューティー", "tr(ビューティー) (beleza)"],
-                      ["ヒョウ", "tr(ヒョウ) (leopardo)"],
+                      ["ヒューズ", "tr(ヒューズ)（保險絲）"],
+                      ["ビューティー", "tr(ビューティー)（美麗）"],
+                      ["ヒョウ", "tr(ヒョウ)（豹）"],
                     ],
                   },
-                  id: "053b26d4-0e86-4e84-b3ae-dae12a732237",
+                  id: "9c1c4509-0ecf-5cbd-8634-5333c788e4f4",
                   type: "matching",
                 },
               ],
-              id: "7ccf90ea-f588-462b-8778-0fe9f199339f",
+              id: "f61932c1-6348-549c-9451-f1441eed38a1",
               screen_order: 15,
-              title: "Combine o katakana com romaji.",
+              title: "將片假名與羅馬字配對。",
             },
           ],
           subtitle: "ヤ, ユ, ヨ",
-          title: "Youon em katakana",
-          topic_id: "879cc30b-005e-4559-ae89-16ed9170de20",
+          title: "片假名中的拗音",
+          topic_id: "18800460-fe6b-4b37-bbb2-259253cdcbbb",
         },
       ],
-      title: "Seção 4. Katakana",
+      title: "第4章. 片假名",
       topic_order: 4,
     },
   ],

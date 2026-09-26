@@ -1,15 +1,14 @@
-export const dumpDe = {
+export const dumpEsMX = {
   data: [
     {
-      id: "5e31453c-3b85-4baa-9581-2771d7dc0ead",
+      id: "18d4916c-1ccf-4cc9-bb2b-9188cdfe601e",
       lessons: [
         {
-          expanded_subtitle:
-            "Hier erzählen wir Ihnen über die Alphabete in der japanischen Sprache.",
-          expanded_title: "Informationen",
+          expanded_subtitle: "Aquí te hablaremos sobre los alfabetos del idioma japonés.",
+          expanded_title: "Información",
           icon: "https://nihongo.khvat.app/chapter1/Introduction.jpg",
-          id: "af20d950-674f-4bb2-9f97-f63a7b2e931b",
-          last_updated: "2026-09-08T13:12:15.998Z",
+          id: "1b14a084-1f8d-4d67-ba3b-a338fe1f71f2",
+          last_updated: "2026-09-08T13:12:16.023Z",
           lesson_key: "alphabet/introduction",
           lesson_order: 1,
           minimum_version: "2.4.1",
@@ -19,94 +18,94 @@ export const dumpDe = {
                 {
                   block_order: 1,
                   content: {
-                    text: "In der japanischen Sprache werden zwei Hauptalphabete verwendet – Hiragana und Katakana, von denen jedes 46 Zeichen enthält.",
+                    text: "En el idioma japonés se utilizan dos alfabetos principales: hiragana y katakana, cada uno de los cuales incluye 46 símbolos.",
                   },
-                  id: "94810c92-7c7e-5983-9fa7-b857bab0bfb2",
+                  id: "bf698f67-2143-5842-a230-e2f885797ee4",
                   type: "text",
                 },
                 {
                   block_order: 2,
                   content: {
-                    text: "Hiragana wird hauptsächlich für die Schreibweise von Wörtern mit japanischem Ursprung verwendet, während Katakana häufiger zur Transkription ausländischer Wörter und Namen benutzt wird.",
+                    text: "El hiragana se utiliza principalmente para escribir palabras de origen japonés, mientras que el katakana se usa con mayor frecuencia para transcribir palabras y nombres extranjeros.",
                   },
-                  id: "1eb576b7-7dcf-50bb-8fa7-99393652ff85",
+                  id: "b8687c9b-025a-5453-acac-c6581754ae88",
                   type: "text",
                 },
                 {
                   block_order: 3,
                   content: {
-                    text: "Darüber hinaus werden in der japanischen Sprache aktiv Kanji-Zeichen verwendet, die etwa zweitausend häufig verwendete Symbole umfassen.",
+                    text: "Además, en el idioma japonés se utilizan activamente los caracteres kanji, que cuentan con alrededor de dos mil símbolos de uso frecuente.",
                   },
-                  id: "4f607560-cd40-528f-9868-be23e31f8a01",
+                  id: "77959e79-8c83-5f84-8858-980abdedb59d",
                   type: "text",
                 },
               ],
-              id: "8d8fef1b-0085-53d7-8102-b51bc54d285b",
+              id: "0d72d83b-bc11-50f3-8097-8f111be3b692",
               screen_order: 1,
-              title: "Wusstest du?",
+              title: "¿Lo sabías?",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "Hiragana und Katakana sind Silbenalphabete, die Laute darstellen, während Kanji Bedeutungen tragen.",
+                    text: "El hiragana y el katakana son alfabetos silábicos que representan sonidos, mientras que los kanji transmiten significado.",
                   },
-                  id: "adbdce1d-23e7-54de-ac9d-f28142fbb8ad",
+                  id: "d9c473c5-1a04-562d-a1a5-c30874df103c",
                   type: "text",
                 },
                 {
                   block_order: 2,
                   content: {
                     table: [
-                      ["Rōmaji", "tr:あ", "tr:い", "tr:う", "tr:え", "tr:お"],
+                      ["Romaji", "tr:あ", "tr:い", "tr:う", "tr:え", "tr:お"],
                       ["Hiragana", "あ", "い", "う", "え", "お"],
                       ["Katakana", "ア", "イ", "ウ", "エ", "オ"],
                     ],
                   },
-                  id: "bc7ec3ae-3b4a-50f7-b6c2-f86fdfdae849",
+                  id: "993167d2-e3a7-5285-86ae-736a9cd46d21",
                   type: "table",
                 },
               ],
-              id: "df874312-5a37-5c22-9a4f-74f7c15121f0",
+              id: "c0e27041-508a-5523-bcb0-869185376805",
               screen_order: 2,
-              title: "Hiragana, Katakana, Kanji – was ist der Unterschied?",
+              title: "Hiragana, katakana, kanji: ¿cuál es la diferencia?",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "Das Lernen der richtigen Strichreihenfolge ist wichtig, um akkurate Kanjis zu schreiben. Hier sind die wichtigsten Regeln:",
+                    text: "Aprender el orden correcto de los trazos es importante para escribir caracteres limpios. Estas son las reglas principales:",
                   },
-                  id: "72b12ef3-ebd3-5959-b34c-a744aac6419c",
+                  id: "d7362c1f-518c-5319-95f2-8c731a09b021",
                   type: "text",
                 },
                 {
                   block_order: 2,
                   content: {
                     rules: [
-                      "Striche werden von links nach rechts geschrieben",
-                      "Striche werden von oben nach unten geschrieben",
-                      "Kurven und Kreise werden im Uhrzeigersinn gezeichnet",
+                      "Los trazos se escriben de izquierda a derecha",
+                      "Los trazos se escriben de arriba hacia abajo",
+                      "Las curvas y los círculos se dibujan en el sentido de las manecillas del reloj",
                     ],
                   },
-                  id: "26d392fd-ea5f-541a-b755-7ae2eb55053b",
+                  id: "cefc988c-1b09-5a3e-a215-ed5f7ca24eae",
                   type: "rule",
                 },
               ],
-              id: "abf59db8-efb5-5133-9ea5-bdfc93a31ddc",
+              id: "15da4b1c-929a-51bf-aaec-85cf9864af67",
               screen_order: 3,
-              title: "Tipp!",
+              title: "¡Consejo!",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "Das Einhalten der richtigen Strichreihenfolge hilft, ordentliche Symbole zu schreiben.",
+                    text: "Seguir el orden correcto de los trazos ayuda a escribir símbolos limpios.",
                   },
-                  id: "4ab8d5d0-d72f-5b0c-8ca0-d0500a683872",
+                  id: "6c20f640-816e-5024-b2e1-3b501b274321",
                   type: "text",
                 },
                 {
@@ -116,13 +115,13 @@ export const dumpDe = {
                     id: "a151eeeb-2537-463c-ae23-d484d1bcb835",
                     kana: "hiragana",
                   },
-                  id: "d63a1e82-bfec-525c-9f27-a3213e04ef7d",
+                  id: "e8eba57a-cb36-5c2b-87e2-18e8978e0f24",
                   type: "letter",
                 },
               ],
-              id: "e7f5d7f5-b734-500a-bac8-09b5c9248ecc",
+              id: "ccddab9a-25cd-5271-80f5-a65bbb75d81b",
               screen_order: 4,
-              title: "Schau dir die Strichreihenfolge an.",
+              title: "Observa el orden de los trazos.",
             },
             {
               blocks: [
@@ -132,50 +131,50 @@ export const dumpDe = {
                     answers: [
                       {
                         isTrue: false,
-                        title: "von rechts nach links",
+                        title: "de derecha a izquierda",
                       },
                       {
                         isTrue: false,
-                        title: "von unten nach oben",
+                        title: "de abajo hacia arriba",
                       },
                       {
                         isTrue: true,
-                        title: "von links nach rechts",
+                        title: "de izquierda a derecha",
                       },
                     ],
                   },
-                  id: "d186f9c4-3a05-591d-bf75-58d130ff61b6",
+                  id: "dc9deb18-d2d6-52b6-9fe9-dea07e739a1a",
                   type: "choice",
                 },
               ],
-              id: "5af59782-3049-5323-999c-dbb7389edc84",
+              id: "34ab4b18-244b-5d1f-a0cb-4d7d6de1d6fa",
               screen_order: 5,
-              title: "Wähle die richtige Schreibrichtung.",
+              title: "Elige la dirección correcta de escritura.",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "Das Beherrschen der Technik des richtigen Strichabschlusses hilft, Ästhetik und Lesbarkeit des Schreibens zu erreichen.",
+                    text: "Dominar la técnica correcta para finalizar los trazos ayuda a lograr una escritura estética y legible.",
                   },
-                  id: "1fce97eb-5781-5dc4-9a2c-38f0af63602d",
+                  id: "bcbfdd22-0e36-5948-8830-65abc26ebe4e",
                   type: "text",
                 },
                 {
                   block_order: 2,
                   content: {
-                    text: "Um einen Strich abzuschließen, stoppen wir abrupt, machen einen Haken oder ziehen den Pinsel allmählich zurück.",
+                    text: "Para finalizar un trazo, nos detenemos bruscamente, hacemos un gancho o retiramos el pincel gradualmente.",
                   },
-                  id: "27b724d8-9a04-55d9-bb95-b229e80fc1de",
+                  id: "4336203b-7614-5a51-ba20-184b077f1f6b",
                   type: "text",
                 },
                 {
                   block_order: 3,
                   content: {
-                    text: "Betrachten wir verschiedene Arten, Striche abzuschließen, am Beispiel, bei dem der erste Strich mit einem Haken endet und der zweite abrupt stoppt.",
+                    text: "Veamos diferentes formas de finalizar los trazos con un ejemplo, donde el primer trazo termina con un gancho y el segundo se detiene bruscamente.",
                   },
-                  id: "a4045833-f3f2-55d3-85fd-2720435630e1",
+                  id: "7a2ecfd3-6752-57e1-afc9-121df0a40c3a",
                   type: "text",
                 },
                 {
@@ -185,25 +184,25 @@ export const dumpDe = {
                     id: "11017078-148a-4a44-b3f7-21d1df02d981",
                     kana: "hiragana",
                   },
-                  id: "df2bf4ed-f8c0-5ae2-a1f3-73be205e9ff8",
+                  id: "9175ac84-af97-59fe-9016-ccb242c20e48",
                   type: "letter",
                 },
               ],
-              id: "0a5ba671-bda2-5b8f-bb0f-6ba6ff79842d",
+              id: "7226aa4d-f452-53f6-a8ac-1ebd589f239b",
               screen_order: 6,
-              title: "Abschluss des Strichs.",
+              title: "Finalización del trazo.",
             },
           ],
-          subtitle: "Hiragana und Katakana",
-          title: "Einführung",
-          topic_id: "5e31453c-3b85-4baa-9581-2771d7dc0ead",
+          subtitle: "Hiragana y katakana",
+          title: "Introducción",
+          topic_id: "18d4916c-1ccf-4cc9-bb2b-9188cdfe601e",
         },
         {
-          expanded_subtitle: "Lernen Sie, die Vokale der Hiragana zu lesen und zu schreiben.",
+          expanded_subtitle: "Aprende a leer y escribir los sonidos vocálicos del hiragana.",
           expanded_title: "Hiragana: tr:あ, tr:い, tr:う, tr:え, tr:お",
           icon: "https://nihongo.khvat.app/chapter1/Lesson1.jpg",
-          id: "6a993b8f-d17d-467b-88ca-d39a4e55edb8",
-          last_updated: "2026-09-08T13:12:15.998Z",
+          id: "5a69e5f6-d394-4583-9054-5dcb8c3bd1cf",
+          last_updated: "2026-09-08T13:12:16.023Z",
           lesson_key: "alphabet/hiragana&a",
           lesson_order: 2,
           minimum_version: "2.4.1",
@@ -217,13 +216,13 @@ export const dumpDe = {
                     id: "a151eeeb-2537-463c-ae23-d484d1bcb835",
                     kana: "hiragana",
                   },
-                  id: "8ddac4d5-0548-57d5-aacc-01d0008c6f2f",
+                  id: "3d3b09ab-ca42-59b2-ad60-d1d8ca8b3802",
                   type: "letter",
                 },
               ],
-              id: "2133ffad-2ea7-523f-8d45-4f4c2d939450",
+              id: "abc12b2b-c86c-5f59-b1f9-b80c1215bcc6",
               screen_order: 1,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -234,13 +233,13 @@ export const dumpDe = {
                     id: "a151eeeb-2537-463c-ae23-d484d1bcb835",
                     kana: "hiragana",
                   },
-                  id: "42c50634-9886-5530-8ccc-5c6a77b2da6e",
+                  id: "7b797af7-8c01-51b4-afdd-22298627a652",
                   type: "letter",
                 },
               ],
-              id: "86ccd991-2c59-5e24-b38c-0dfa17244b27",
+              id: "0caf9ca5-99ab-5376-9111-981f56e959e2",
               screen_order: 2,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -251,13 +250,13 @@ export const dumpDe = {
                     id: "11017078-148a-4a44-b3f7-21d1df02d981",
                     kana: "hiragana",
                   },
-                  id: "73798131-5931-5d54-ae60-6da94126fe98",
+                  id: "75c5070c-ca43-57c6-854f-966f77d0158a",
                   type: "letter",
                 },
               ],
-              id: "1e7ad867-7888-5cf6-b022-97386eae2312",
+              id: "79c50b8a-d2d4-568d-b492-3c2475535882",
               screen_order: 3,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -268,13 +267,13 @@ export const dumpDe = {
                     id: "11017078-148a-4a44-b3f7-21d1df02d981",
                     kana: "hiragana",
                   },
-                  id: "7fc9de40-c38f-5c2a-b860-cb77b39d2fd7",
+                  id: "f1b31235-0d97-5d24-b0cf-542b7d23497c",
                   type: "letter",
                 },
               ],
-              id: "9c34185e-da18-5282-9fc6-b009abd897d5",
+              id: "5a358206-390a-5eac-ab44-f7e66eee6c6a",
               screen_order: 4,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -286,13 +285,13 @@ export const dumpDe = {
                       ["あ", "tr:あ"],
                     ],
                   },
-                  id: "fe7a4dc7-cea5-5fbf-a249-3eb4aa6c4c44",
+                  id: "4f391e3f-7bd1-585f-9356-a9aaed1a6eeb",
                   type: "matching",
                 },
               ],
-              id: "a4f1e1a8-26bf-52f9-8149-b4f4c872c7db",
+              id: "3384aded-1493-586c-af9b-54038cd43fc9",
               screen_order: 5,
-              title: "Ordnen Sie 「Hiragana」 seiner Umschrift zu.",
+              title: "Relaciona 「Hiragana」 con su transliteración.",
             },
             {
               blocks: [
@@ -303,13 +302,13 @@ export const dumpDe = {
                     id: "bcbd90e2-fabc-4dcc-8022-02e5b650c822",
                     kana: "hiragana",
                   },
-                  id: "25c73a78-80de-55ca-9e6b-e4aaa703cd9e",
+                  id: "a42f5a04-d684-57d0-afd5-afdc92d55015",
                   type: "letter",
                 },
               ],
-              id: "4dce859c-79f4-5112-9534-75a542c7221b",
+              id: "7ba26248-9f68-53d0-9693-c1f0e24a641d",
               screen_order: 6,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -320,13 +319,13 @@ export const dumpDe = {
                     id: "bcbd90e2-fabc-4dcc-8022-02e5b650c822",
                     kana: "hiragana",
                   },
-                  id: "9e834a1f-275a-51fb-898c-75ea1cbffe0c",
+                  id: "3fc2e72a-f17c-5e1c-993f-04cb54c37d57",
                   type: "letter",
                 },
               ],
-              id: "3264c9f3-c3b1-5342-9f02-876c50e8a66c",
+              id: "2230202a-71d3-5001-91f3-d48b550a178c",
               screen_order: 7,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -334,9 +333,9 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Hiragana",
-                    title: "tr:あ",
+                    title: "tr:い",
                   },
-                  id: "a0448b88-d1eb-56ae-a424-4c6b37014b04",
+                  id: "02b07edb-af84-5d6a-a635-58fc9b1b091d",
                   type: "title",
                 },
                 {
@@ -344,26 +343,26 @@ export const dumpDe = {
                   content: {
                     answers: [
                       {
-                        isTrue: true,
-                        title: "あ",
-                      },
-                      {
                         isTrue: false,
                         title: "う",
                       },
                       {
-                        isTrue: false,
+                        isTrue: true,
                         title: "い",
+                      },
+                      {
+                        isTrue: false,
+                        title: "あ",
                       },
                     ],
                   },
-                  id: "d6a52f20-a215-534b-a857-cdbbe25fe8c6",
+                  id: "cc400654-1134-534b-9f59-32959b9fa06f",
                   type: "choice",
                 },
               ],
-              id: "78144268-e8cc-50d2-945a-d0c41396e454",
+              id: "e9677d0f-5b0d-53f5-8a23-e20abb0d2375",
               screen_order: 8,
-              title: "Wählen Sie die Silbe aus.",
+              title: "Selecciona la sílaba.",
             },
             {
               blocks: [
@@ -375,13 +374,13 @@ export const dumpDe = {
                       ["い", "tr:い"],
                     ],
                   },
-                  id: "6e0359f5-7b1d-503d-9e53-e90b60659769",
+                  id: "b18e750d-caf7-519d-88a1-1673bf4bbd3a",
                   type: "matching",
                 },
               ],
-              id: "ebe0367e-7e90-5772-b785-9c515978d1e0",
+              id: "025bf870-3023-56ef-ae1f-75e5c456b0ee",
               screen_order: 9,
-              title: "Ordnen Sie 「Hiragana」 seiner Umschrift zu.",
+              title: "Relaciona 「Hiragana」 con su transliteración.",
             },
             {
               blocks: [
@@ -392,13 +391,13 @@ export const dumpDe = {
                     id: "70680d73-c9f9-4b4e-aac4-c82caa49668c",
                     kana: "hiragana",
                   },
-                  id: "1b5f2e79-1f08-5e55-a02c-45aec42c0b2b",
+                  id: "34c108ee-bc67-5bf0-9a99-49408ea916af",
                   type: "letter",
                 },
               ],
-              id: "8d0cbcae-2e83-5093-9d23-d16fc67dbf1a",
+              id: "b7c89e7f-b936-565b-aacb-39bef2921f6f",
               screen_order: 10,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -409,13 +408,13 @@ export const dumpDe = {
                     id: "70680d73-c9f9-4b4e-aac4-c82caa49668c",
                     kana: "hiragana",
                   },
-                  id: "a633e64e-b2a3-55f0-a75b-17f39495c5bb",
+                  id: "38f46d62-3353-592c-8527-ed3f1237d798",
                   type: "letter",
                 },
               ],
-              id: "0d3b03a8-de73-5501-a8be-45c21b5fa99e",
+              id: "38a76e6f-bd3f-5d17-b2c4-cb82ec2385de",
               screen_order: 11,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -427,13 +426,13 @@ export const dumpDe = {
                       ["う", "tr:う"],
                     ],
                   },
-                  id: "e38441dd-a8dc-5d41-a6ad-9816d0ff4807",
+                  id: "34498f5c-f7c2-59e8-bc07-7ee236c7648d",
                   type: "matching",
                 },
               ],
-              id: "152513ca-3f9b-590c-af21-b3799ac97abe",
+              id: "91cb7258-574b-5bad-b17c-4cf4d2b14fc2",
               screen_order: 12,
-              title: "Ordnen Sie 「Hiragana」 seiner Umschrift zu.",
+              title: "Relaciona 「Hiragana」 con su transliteración.",
             },
             {
               blocks: [
@@ -444,13 +443,13 @@ export const dumpDe = {
                     id: "e430643d-5624-432e-b53e-974447baad22",
                     kana: "hiragana",
                   },
-                  id: "7c9b2cea-84d1-5809-9af7-29c85f83ff3a",
+                  id: "06c9d680-ca9c-53b0-b5a2-21be39ea3d41",
                   type: "letter",
                 },
               ],
-              id: "23641689-52ee-5fdf-934b-ea2144d629e9",
+              id: "de1d3935-d242-5d1f-a658-f1db4b138d5c",
               screen_order: 13,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -461,13 +460,13 @@ export const dumpDe = {
                     id: "e430643d-5624-432e-b53e-974447baad22",
                     kana: "hiragana",
                   },
-                  id: "a4ff8bee-499a-54d5-ad12-0a150b08ab9f",
+                  id: "157ba670-2927-5db4-8e9a-4204f80071eb",
                   type: "letter",
                 },
               ],
-              id: "5e474717-9922-5018-afaf-6654f172a172",
+              id: "bad3d0f4-3681-5bbe-b4bc-c29e707d3142",
               screen_order: 14,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -477,34 +476,34 @@ export const dumpDe = {
                     sub_title: "Hiragana",
                     title: "tr:お",
                   },
-                  id: "14c92bea-9833-5420-b965-83e94037e9f9",
+                  id: "0ebcafed-46a6-5633-8f15-da314f237af5",
                   type: "title",
                 },
                 {
                   block_order: 2,
                   content: {
                     answers: [
-                      {
-                        isTrue: false,
-                        title: "え",
-                      },
-                      {
-                        isTrue: false,
-                        title: "う",
-                      },
                       {
                         isTrue: true,
                         title: "お",
                       },
+                      {
+                        isTrue: false,
+                        title: "あ",
+                      },
+                      {
+                        isTrue: false,
+                        title: "え",
+                      },
                     ],
                   },
-                  id: "10353a98-a663-586b-a5bd-dd82a0d86c2b",
+                  id: "2e80d4b9-6f6e-560c-802c-aef055f302a5",
                   type: "choice",
                 },
               ],
-              id: "8e803eb1-4e47-5e96-8aef-2e0d3093f931",
+              id: "6b0c14d1-4864-5cf3-a12d-6ad8b55fe921",
               screen_order: 15,
-              title: "Wählen Sie die Silbe aus.",
+              title: "Selecciona la sílaba.",
             },
             {
               blocks: [
@@ -512,9 +511,9 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Hiragana",
-                    title: "う, お, い, あ, え",
+                    title: "あ, お, い, う, え",
                   },
-                  id: "2b3bb8fb-65ee-5ee6-ba70-23c751b6064e",
+                  id: "f9d52388-eb47-5ef0-ae5b-0061a36f4f63",
                   type: "title",
                 },
                 {
@@ -523,21 +522,21 @@ export const dumpDe = {
                     answers: [
                       {
                         isTrue: true,
-                        title: "tr:う, tr:お, tr:い, tr:あ, tr:え",
+                        title: "tr:あ, tr:お, tr:い, tr:う, tr:え",
                       },
                       {
                         isTrue: false,
-                        title: "tr:え, tr:い, tr:お, tr:う, tr:あ",
+                        title: "tr:う, tr:い, tr:え, tr:あ, tr:お",
                       },
                     ],
                   },
-                  id: "176291aa-39ca-552a-803a-c4b71367355b",
+                  id: "47827648-3215-5e36-9832-ae9263b7cbdc",
                   type: "choice",
                 },
               ],
-              id: "3a07da46-2bb9-5139-9c94-abbac59adf7d",
+              id: "14a4ef07-706c-5520-b377-9cedba2908f7",
               screen_order: 16,
-              title: "Wählen Sie die richtige Reihenfolge.",
+              title: "Elige la secuencia correcta.",
             },
             {
               blocks: [
@@ -545,9 +544,9 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Hiragana",
-                    title: "お, う, い, あ, え",
+                    title: "え, あ, い, う, お",
                   },
-                  id: "38350c09-9095-59ee-b4b0-7b1efcacef48",
+                  id: "07e584ef-b9b6-5326-8c62-4c6f2a8f44d5",
                   type: "title",
                 },
                 {
@@ -556,21 +555,21 @@ export const dumpDe = {
                     answers: [
                       {
                         isTrue: false,
-                        title: "tr:う, tr:い, tr:え, tr:お, tr:あ",
+                        title: "tr:お, tr:い, tr:う, tr:あ, tr:え",
                       },
                       {
                         isTrue: true,
-                        title: "tr:お, tr:う, tr:い, tr:あ, tr:え",
+                        title: "tr:え, tr:あ, tr:い, tr:う, tr:お",
                       },
                     ],
                   },
-                  id: "640cdf39-2f92-5d91-b903-3dd42fcc5cca",
+                  id: "9abed3aa-6963-5ece-8176-9b1cfddf95ef",
                   type: "choice",
                 },
               ],
-              id: "7b50340c-81eb-570a-8918-ba6aa2d0f1cb",
+              id: "d2bf0258-3c4d-56fc-8677-2695d55fdd54",
               screen_order: 17,
-              title: "Wählen Sie die richtige Reihenfolge.",
+              title: "Elige la secuencia correcta.",
             },
             {
               blocks: [
@@ -578,23 +577,23 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Hiragana",
-                    title: "tr:う, tr:お, tr:え, tr:あ, tr:い",
+                    title: "tr:い, tr:う, tr:あ, tr:お, tr:え",
                   },
-                  id: "ccc32575-ce20-5916-915f-181ec89b006b",
+                  id: "0fa77f25-fd1f-5ead-b7e3-b83dd26f37bb",
                   type: "title",
                 },
                 {
                   block_order: 2,
                   content: {
-                    sequence: ["う", "お", "え", "あ", "い"],
+                    sequence: ["い", "う", "あ", "お", "え"],
                   },
-                  id: "a28f0afc-e6a9-5565-a5f5-521cf99ff040",
+                  id: "1ed623c1-7e51-511b-890b-29edad20e7e2",
                   type: "sequence",
                 },
               ],
-              id: "6101c41d-f3e6-5f29-8bf8-c5eb004da97c",
+              id: "d2189a18-4f5b-531b-9164-620c613dc681",
               screen_order: 18,
-              title: "Ordnen Sie die Silben in der richtigen Reihenfolge an.",
+              title: "Acomoda las sílabas en el orden correcto.",
             },
             {
               blocks: [
@@ -602,35 +601,35 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Hiragana",
-                    title: "tr:お, tr:あ, tr:い, tr:え, tr:う",
+                    title: "tr:え, tr:い, tr:お, tr:う, tr:あ",
                   },
-                  id: "383e70a6-7c04-58f1-bf64-d2731634e942",
+                  id: "6feb1b06-60b7-5d5f-8d07-f7744ac61e4c",
                   type: "title",
                 },
                 {
                   block_order: 2,
                   content: {
-                    sequence: ["お", "あ", "い", "え", "う"],
+                    sequence: ["え", "い", "お", "う", "あ"],
                   },
-                  id: "e96d317e-90e9-5687-a34e-df2feed5a69b",
+                  id: "5a90455a-bddb-58ad-b66e-b76cdbf1877f",
                   type: "sequence",
                 },
               ],
-              id: "40fc26fe-3f49-5a10-bfe5-5762504cb2bb",
+              id: "7aec77fb-c386-5a34-b3d8-9122581ceac6",
               screen_order: 19,
-              title: "Ordnen Sie die Silben in der richtigen Reihenfolge an.",
+              title: "Acomoda las sílabas en el orden correcto.",
             },
           ],
-          subtitle: "Silben: あ、い、う、え、お",
-          title: "Lektion 1",
-          topic_id: "5e31453c-3b85-4baa-9581-2771d7dc0ead",
+          subtitle: "Sílabas: あ、い、う、え、お",
+          title: "Lección 1",
+          topic_id: "18d4916c-1ccf-4cc9-bb2b-9188cdfe601e",
         },
         {
-          expanded_subtitle: "Lernen Sie, die Silben in der Reihe tr:か zu lesen und zu schreiben.",
+          expanded_subtitle: "Aprende a leer y escribir las sílabas del renglón tr:か.",
           expanded_title: "Hiragana: tr:か, tr:き, tr:く, tr:け, tr:こ",
           icon: "https://nihongo.khvat.app/chapter1/Lesson2.jpg",
-          id: "17ceea60-0bde-441b-a58c-480496a36c0c",
-          last_updated: "2026-09-08T13:12:15.998Z",
+          id: "22cb2f0a-0e30-4619-a9f8-d05f57a87445",
+          last_updated: "2026-09-08T13:12:16.023Z",
           lesson_key: "alphabet/hiragana&ka",
           lesson_order: 3,
           minimum_version: "2.4.1",
@@ -644,13 +643,13 @@ export const dumpDe = {
                     id: "22350aba-d254-48ba-811a-9d1448761042",
                     kana: "hiragana",
                   },
-                  id: "a9bd6fbd-3424-5162-83ee-4c93a988c682",
+                  id: "ff138cd7-56b9-557b-8b40-8015fba18040",
                   type: "letter",
                 },
               ],
-              id: "261e547a-45b0-5fa4-ab82-14a131243d5c",
+              id: "5cb1dd68-42b5-582e-be8d-536619a6af6e",
               screen_order: 1,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -661,13 +660,13 @@ export const dumpDe = {
                     id: "22350aba-d254-48ba-811a-9d1448761042",
                     kana: "hiragana",
                   },
-                  id: "849bcd52-117b-5ca7-8f9d-472b47404d81",
+                  id: "3ae535d3-c9ff-538a-acbc-a4bb249f0a55",
                   type: "letter",
                 },
               ],
-              id: "cf894ded-602c-53b6-ac46-9bc3db2373cd",
+              id: "2763e9ae-ad81-5b9b-b7b3-e39d6eb3deb3",
               screen_order: 2,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -678,13 +677,13 @@ export const dumpDe = {
                     id: "a1d45e3b-a1c9-4409-8d39-725a0a35899d",
                     kana: "hiragana",
                   },
-                  id: "6c85b3bb-5ff4-5f94-9d6b-3cba59af359a",
+                  id: "f1556b15-e13d-5cb2-a287-5fa7f097577d",
                   type: "letter",
                 },
               ],
-              id: "6c0438e6-145c-5300-beed-73f0bc694159",
+              id: "a3498440-5b70-5929-9894-8cafbfe62b11",
               screen_order: 3,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -695,13 +694,13 @@ export const dumpDe = {
                     id: "a1d45e3b-a1c9-4409-8d39-725a0a35899d",
                     kana: "hiragana",
                   },
-                  id: "2b8b1905-bf9b-56ca-a572-aa0b48e32a86",
+                  id: "86121864-6b2e-556d-9b06-bc91578bc4d8",
                   type: "letter",
                 },
               ],
-              id: "52c15b20-7434-56b8-a035-9b1d79841004",
+              id: "2a35803e-5de4-53b6-b286-169c994422a9",
               screen_order: 4,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -713,13 +712,13 @@ export const dumpDe = {
                       ["か", "tr:か"],
                     ],
                   },
-                  id: "e84f520d-7d93-5278-83c6-ebdc6b358a00",
+                  id: "eceb4a32-5559-5a8d-93a7-97527cd41057",
                   type: "matching",
                 },
               ],
-              id: "6f3ee881-df45-5c96-ab19-7939c403393d",
+              id: "ca0c0020-2667-5ac7-9d44-ac217543064e",
               screen_order: 5,
-              title: "Ordnen Sie 「Hiragana」 seiner Umschrift zu.",
+              title: "Relaciona 「Hiragana」 con su transliteración.",
             },
             {
               blocks: [
@@ -730,13 +729,13 @@ export const dumpDe = {
                     id: "51cd83e5-6167-4bcc-a3e6-6b246f2ca2d1",
                     kana: "hiragana",
                   },
-                  id: "2d589f34-cb60-5fb5-8b62-a5fb1cfc75ef",
+                  id: "b7ba1792-452c-5796-9cef-8cdf7a832aa5",
                   type: "letter",
                 },
               ],
-              id: "542017ef-be70-5e22-85e7-a220a15738ce",
+              id: "896c852f-2c99-5be9-a88c-dc529fca1c08",
               screen_order: 6,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -747,13 +746,13 @@ export const dumpDe = {
                     id: "51cd83e5-6167-4bcc-a3e6-6b246f2ca2d1",
                     kana: "hiragana",
                   },
-                  id: "9b54da88-e433-5898-9dce-ad5b7b97bacd",
+                  id: "7e6dc1e7-5746-5dd0-84cf-474878eba3f1",
                   type: "letter",
                 },
               ],
-              id: "f1709cc9-2c9c-5a3e-a1f2-60b633e13e7b",
+              id: "9d8bb739-4342-523e-98fa-15bff01d728a",
               screen_order: 7,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -761,9 +760,9 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Hiragana",
-                    title: "tr:か",
+                    title: "tr:き",
                   },
-                  id: "022fb18b-652a-5287-ab60-eb362ef4dc56",
+                  id: "8e7c752a-3512-56f9-a657-11281be0a62b",
                   type: "title",
                 },
                 {
@@ -775,22 +774,22 @@ export const dumpDe = {
                         title: "く",
                       },
                       {
-                        isTrue: false,
+                        isTrue: true,
                         title: "き",
                       },
                       {
-                        isTrue: true,
+                        isTrue: false,
                         title: "か",
                       },
                     ],
                   },
-                  id: "12559808-3746-5d7e-bb5b-cf9ca1f40826",
+                  id: "7c4a7ea2-bd4e-5332-b3c8-d794948b0d28",
                   type: "choice",
                 },
               ],
-              id: "52d56c2d-254a-5cdf-a743-15fbaa565ec1",
+              id: "866183f6-f374-5d18-b205-0b7897e76e8d",
               screen_order: 8,
-              title: "Wählen Sie die Silbe aus.",
+              title: "Selecciona la sílaba.",
             },
             {
               blocks: [
@@ -802,13 +801,13 @@ export const dumpDe = {
                       ["き", "tr:き"],
                     ],
                   },
-                  id: "a5b7ee0b-dc17-5f5c-be72-eddb76c5774e",
+                  id: "18093c1f-2435-5d21-a926-bce6e6502323",
                   type: "matching",
                 },
               ],
-              id: "211b30d8-576b-551d-9038-a9570b4819f2",
+              id: "e27dd3de-e855-5305-8f45-01d118a512c9",
               screen_order: 9,
-              title: "Ordnen Sie 「Hiragana」 seiner Umschrift zu.",
+              title: "Relaciona 「Hiragana」 con su transliteración.",
             },
             {
               blocks: [
@@ -819,13 +818,13 @@ export const dumpDe = {
                     id: "9a84b07b-696a-4abd-83f2-70ff8ec66a66",
                     kana: "hiragana",
                   },
-                  id: "3b398c98-d2ba-508b-be52-aa74dd1dc072",
+                  id: "2f165578-7303-5f44-8e7c-b5d0932acb0c",
                   type: "letter",
                 },
               ],
-              id: "c3a9104a-418f-5aa5-852e-c02b46396402",
+              id: "664d17f5-eed6-5edc-8e9e-928147354dde",
               screen_order: 10,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -836,13 +835,13 @@ export const dumpDe = {
                     id: "9a84b07b-696a-4abd-83f2-70ff8ec66a66",
                     kana: "hiragana",
                   },
-                  id: "02468526-ae98-54d6-87e9-e8a4044bc610",
+                  id: "f8664b8b-0504-5ab4-85f4-179d12cdd57a",
                   type: "letter",
                 },
               ],
-              id: "b69fbcb5-71c3-5ae5-bb50-66ce289eae76",
+              id: "19a86acd-07a2-59b2-9f35-fa87e5bbad03",
               screen_order: 11,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -854,13 +853,13 @@ export const dumpDe = {
                       ["く", "tr:く"],
                     ],
                   },
-                  id: "e35f8ac5-b492-54df-bcbf-36561351ffc2",
+                  id: "cacd5cbe-219d-5ad9-904b-bfe806ef6dd4",
                   type: "matching",
                 },
               ],
-              id: "566f59e1-c5e0-5118-bd88-82b4d4223180",
+              id: "f396ce88-df54-5941-b4d5-cd8b4a95bb45",
               screen_order: 12,
-              title: "Ordnen Sie 「Hiragana」 seiner Umschrift zu.",
+              title: "Relaciona 「Hiragana」 con su transliteración.",
             },
             {
               blocks: [
@@ -871,13 +870,13 @@ export const dumpDe = {
                     id: "8a2655c3-4553-4f58-83db-069439b11154",
                     kana: "hiragana",
                   },
-                  id: "ef7bd11d-7616-5822-912f-8612c28eb5f5",
+                  id: "d58841c6-0664-512c-bee8-309ce7440983",
                   type: "letter",
                 },
               ],
-              id: "388859e1-5338-543d-af14-1beb5cd00f18",
+              id: "3aa9960c-9c15-55e8-b7c5-a32e0fddfed3",
               screen_order: 13,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -888,13 +887,13 @@ export const dumpDe = {
                     id: "8a2655c3-4553-4f58-83db-069439b11154",
                     kana: "hiragana",
                   },
-                  id: "0363ee0c-0b1e-517d-b100-cd0ce5f904d2",
+                  id: "a082e321-ffd8-5d60-b704-9ca2998abed2",
                   type: "letter",
                 },
               ],
-              id: "414473a3-30d0-5b7c-9176-77ef922ae293",
+              id: "0c8416b5-a56f-5ef2-bc25-606dfa2981cf",
               screen_order: 14,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -904,7 +903,7 @@ export const dumpDe = {
                     sub_title: "Hiragana",
                     title: "tr:き",
                   },
-                  id: "299c976a-75be-579d-bc17-be527d6ce288",
+                  id: "c488e8aa-9dc7-57d8-b93b-344ddb81da60",
                   type: "title",
                 },
                 {
@@ -917,7 +916,7 @@ export const dumpDe = {
                       },
                       {
                         isTrue: false,
-                        title: "け",
+                        title: "か",
                       },
                       {
                         isTrue: false,
@@ -925,13 +924,13 @@ export const dumpDe = {
                       },
                     ],
                   },
-                  id: "d615d4bc-4973-5e1e-8400-77b8e8eb2e13",
+                  id: "9c8b67b1-7e02-5050-82ef-b4521521b303",
                   type: "choice",
                 },
               ],
-              id: "8b0239c8-5925-502a-b133-3ddc04de6a73",
+              id: "6b1a32f0-70ae-52ac-bc42-1609da99bbb4",
               screen_order: 15,
-              title: "Wählen Sie die Silbe aus.",
+              title: "Selecciona la sílaba.",
             },
             {
               blocks: [
@@ -939,9 +938,9 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Hiragana",
-                    title: "か, こ, く, き, け",
+                    title: "け, か, き, く, こ",
                   },
-                  id: "1c462eec-c860-5c95-b9f9-93c29af7300a",
+                  id: "4c55021c-6439-56ef-9595-1405312fbe2e",
                   type: "title",
                 },
                 {
@@ -949,22 +948,22 @@ export const dumpDe = {
                   content: {
                     answers: [
                       {
-                        isTrue: true,
-                        title: "tr:か, tr:こ, tr:く, tr:き, tr:け",
+                        isTrue: false,
+                        title: "tr:き, tr:か, tr:く, tr:こ, tr:け",
                       },
                       {
-                        isTrue: false,
-                        title: "tr:こ, tr:く, tr:け, tr:か, tr:き",
+                        isTrue: true,
+                        title: "tr:け, tr:か, tr:き, tr:く, tr:こ",
                       },
                     ],
                   },
-                  id: "20d4ff91-6c1c-52d8-8b6a-6a8f5a2a1e79",
+                  id: "c9e49877-d931-5a23-a701-a78836fd5fc4",
                   type: "choice",
                 },
               ],
-              id: "c9f24f37-3a72-50a7-acf8-93e979ce6882",
+              id: "6b2d8b8c-4026-5937-ae89-eb0f0b646773",
               screen_order: 16,
-              title: "Wählen Sie die richtige Reihenfolge.",
+              title: "Elige la secuencia correcta.",
             },
             {
               blocks: [
@@ -972,9 +971,9 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Hiragana",
-                    title: "か, く, き, こ, け",
+                    title: "く, こ, き, け, か",
                   },
-                  id: "83877361-4fb8-5ae0-8e65-40f657c58807",
+                  id: "b8dbe17f-8b66-5cfb-94e6-14322af8ebf1",
                   type: "title",
                 },
                 {
@@ -983,45 +982,21 @@ export const dumpDe = {
                     answers: [
                       {
                         isTrue: false,
-                        title: "tr:け, tr:か, tr:こ, tr:き, tr:く",
+                        title: "tr:く, tr:か, tr:け, tr:き, tr:こ",
                       },
                       {
                         isTrue: true,
-                        title: "tr:か, tr:く, tr:き, tr:こ, tr:け",
+                        title: "tr:く, tr:こ, tr:き, tr:け, tr:か",
                       },
                     ],
                   },
-                  id: "2cf4510a-911e-546e-9874-892b6bef936f",
+                  id: "e93b8318-6957-5c97-a7b1-3cc864fb6a7b",
                   type: "choice",
                 },
               ],
-              id: "e01244c1-62df-57da-b42e-8118f462be9b",
+              id: "07b40594-6885-53bb-9198-a740c489672a",
               screen_order: 17,
-              title: "Wählen Sie die richtige Reihenfolge.",
-            },
-            {
-              blocks: [
-                {
-                  block_order: 1,
-                  content: {
-                    sub_title: "Hiragana",
-                    title: "tr:か, tr:く, tr:き, tr:こ, tr:け",
-                  },
-                  id: "9a4718cd-8aff-5e9d-8ba0-8dd95dfdfbce",
-                  type: "title",
-                },
-                {
-                  block_order: 2,
-                  content: {
-                    sequence: ["か", "く", "き", "こ", "け"],
-                  },
-                  id: "bbc51bf4-d7f1-5e10-bf48-1a7689d55887",
-                  type: "sequence",
-                },
-              ],
-              id: "c7a5a21f-7282-5abe-9a2c-6cb0a2875df6",
-              screen_order: 18,
-              title: "Ordnen Sie die Silben in der richtigen Reihenfolge an.",
+              title: "Elige la secuencia correcta.",
             },
             {
               blocks: [
@@ -1031,7 +1006,7 @@ export const dumpDe = {
                     sub_title: "Hiragana",
                     title: "tr:く, tr:け, tr:か, tr:こ, tr:き",
                   },
-                  id: "e93af121-2e25-575d-9bcf-e77f3553b16d",
+                  id: "06e68fc8-95d6-5fb2-8154-8bdb8fbf88c3",
                   type: "title",
                 },
                 {
@@ -1039,25 +1014,49 @@ export const dumpDe = {
                   content: {
                     sequence: ["く", "け", "か", "こ", "き"],
                   },
-                  id: "cb661a9f-3966-5490-8eb4-267f29756bdd",
+                  id: "b0dfabd1-2487-5216-a9e0-2e705063e431",
                   type: "sequence",
                 },
               ],
-              id: "12d64fa9-4e10-544f-844c-59a7d107f91e",
+              id: "db020020-df47-5c48-a886-ba1b9a18582c",
+              screen_order: 18,
+              title: "Acomoda las sílabas en el orden correcto.",
+            },
+            {
+              blocks: [
+                {
+                  block_order: 1,
+                  content: {
+                    sub_title: "Hiragana",
+                    title: "tr:き, tr:こ, tr:か, tr:け, tr:く",
+                  },
+                  id: "96288ccf-61a4-59a4-9121-d57a9f2efa7c",
+                  type: "title",
+                },
+                {
+                  block_order: 2,
+                  content: {
+                    sequence: ["き", "こ", "か", "け", "く"],
+                  },
+                  id: "7db3c8b9-f91a-58ea-a11a-647a6e2c706c",
+                  type: "sequence",
+                },
+              ],
+              id: "c1074210-614b-5c79-baca-696495733815",
               screen_order: 19,
-              title: "Ordnen Sie die Silben in der richtigen Reihenfolge an.",
+              title: "Acomoda las sílabas en el orden correcto.",
             },
           ],
-          subtitle: "Silben: か、き、く、け、こ",
-          title: "Lektion 2",
-          topic_id: "5e31453c-3b85-4baa-9581-2771d7dc0ead",
+          subtitle: "Sílabas: か、き、く、け、こ",
+          title: "Lección 2",
+          topic_id: "18d4916c-1ccf-4cc9-bb2b-9188cdfe601e",
         },
         {
-          expanded_subtitle: "Lernen Sie, die Silben in der Reihe tr:さ zu lesen und zu schreiben.",
+          expanded_subtitle: "Aprende a leer y escribir las sílabas del renglón tr:さ.",
           expanded_title: "Hiragana: tr:さ, tr:し, tr:す, tr:せ, tr:そ",
           icon: "https://nihongo.khvat.app/chapter1/Lesson3.jpg",
-          id: "a85d0fc1-ced3-4785-8d89-b0127bafd34d",
-          last_updated: "2026-09-08T13:12:15.999Z",
+          id: "3a8c50b5-8fe0-4d22-90a1-47f23b0c0448",
+          last_updated: "2026-09-08T13:12:16.023Z",
           lesson_key: "alphabet/hiragana&sa",
           lesson_order: 4,
           minimum_version: "2.4.1",
@@ -1071,13 +1070,13 @@ export const dumpDe = {
                     id: "5bc17c31-0c79-45dd-be5c-41cf67a5baf0",
                     kana: "hiragana",
                   },
-                  id: "9fbff0ee-448e-5b41-ac6e-65e7cbc1d4a6",
+                  id: "23612638-df3b-5f7f-b8d5-89353049475a",
                   type: "letter",
                 },
               ],
-              id: "d487a27e-1d19-554e-a304-f54b14859b36",
+              id: "42c45e95-76a7-5498-ade7-b5b94e940dd2",
               screen_order: 1,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -1088,13 +1087,13 @@ export const dumpDe = {
                     id: "5bc17c31-0c79-45dd-be5c-41cf67a5baf0",
                     kana: "hiragana",
                   },
-                  id: "18197d98-a814-55ac-9775-86d18ca612e0",
+                  id: "dd82e203-89f5-5930-819d-075da4d5b37c",
                   type: "letter",
                 },
               ],
-              id: "3877ed76-9cd5-560f-916a-4b5639af676e",
+              id: "df8f75f1-fb47-5c53-bbbd-b39632c7063e",
               screen_order: 2,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -1105,13 +1104,13 @@ export const dumpDe = {
                     id: "0d44c671-edf2-4c9d-b62d-e3f5ae8ea7b2",
                     kana: "hiragana",
                   },
-                  id: "bdec9db2-e3da-5acb-a9ce-9701e7cd56f1",
+                  id: "fe7e7704-013a-517c-bb64-604e81e64379",
                   type: "letter",
                 },
               ],
-              id: "3dd184c9-89ed-55db-b487-f465fe48b5f0",
+              id: "e61fb4c3-0e4a-5eca-8820-0cfa6e17f5d3",
               screen_order: 3,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -1122,13 +1121,13 @@ export const dumpDe = {
                     id: "0d44c671-edf2-4c9d-b62d-e3f5ae8ea7b2",
                     kana: "hiragana",
                   },
-                  id: "db8d09ed-3793-5714-8cea-07bb1139cec6",
+                  id: "80c4e085-83c3-5e2f-9af2-295e4659054a",
                   type: "letter",
                 },
               ],
-              id: "d78cc412-5b57-5922-a37f-e94b4998fa78",
+              id: "58408e7e-2b7e-5b17-91a8-8d152c450e58",
               screen_order: 4,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -1140,13 +1139,13 @@ export const dumpDe = {
                       ["さ", "tr:さ"],
                     ],
                   },
-                  id: "fcdc08a2-8f4b-5554-9b63-9ca669812d06",
+                  id: "0fd09974-9ecd-50af-9887-52419860a19b",
                   type: "matching",
                 },
               ],
-              id: "f7007bff-d43c-57b8-8d82-2daf24ccd5d2",
+              id: "b7976e2d-c037-5c43-a108-f566c012bc20",
               screen_order: 5,
-              title: "Ordnen Sie 「Hiragana」 seiner Umschrift zu.",
+              title: "Relaciona 「Hiragana」 con su transliteración.",
             },
             {
               blocks: [
@@ -1157,13 +1156,13 @@ export const dumpDe = {
                     id: "c495772d-7048-4423-a993-60ce5ce325a2",
                     kana: "hiragana",
                   },
-                  id: "28a6aaad-e808-5c7c-aa72-9e9ea90aaa48",
+                  id: "f25ffbaa-8d28-5a87-a579-779c6da8d2f4",
                   type: "letter",
                 },
               ],
-              id: "9577868a-954a-519d-99ac-1af4bd2ac79a",
+              id: "34d75761-f95f-5ca3-a62f-4663ba55fb96",
               screen_order: 6,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -1174,13 +1173,13 @@ export const dumpDe = {
                     id: "c495772d-7048-4423-a993-60ce5ce325a2",
                     kana: "hiragana",
                   },
-                  id: "aecf9a06-25ad-5dbb-af00-1b414f771ebc",
+                  id: "99e756c7-d2c3-5d4c-89ae-290c81b8dcfe",
                   type: "letter",
                 },
               ],
-              id: "9013e4d1-b690-50f0-a8e7-7bbc1ef4ceba",
+              id: "d4ff5aa8-cd8c-5788-8788-11080250eb78",
               screen_order: 7,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -1188,9 +1187,9 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Hiragana",
-                    title: "tr:す",
+                    title: "tr:し",
                   },
-                  id: "d7e1776d-38da-5245-95d0-cb2efe4a7995",
+                  id: "e9e47ab6-9bc8-5a87-b42f-5f57b6d808db",
                   type: "title",
                 },
                 {
@@ -1198,26 +1197,26 @@ export const dumpDe = {
                   content: {
                     answers: [
                       {
-                        isTrue: true,
-                        title: "す",
-                      },
-                      {
                         isTrue: false,
                         title: "さ",
                       },
                       {
-                        isTrue: false,
+                        isTrue: true,
                         title: "し",
+                      },
+                      {
+                        isTrue: false,
+                        title: "す",
                       },
                     ],
                   },
-                  id: "19c4d488-ae9d-5c30-84d9-a10b39c629d5",
+                  id: "99945dc7-24e3-5487-b1f2-0bfd8423aacf",
                   type: "choice",
                 },
               ],
-              id: "c6fd8feb-d040-5104-b263-2bb21b261c4a",
+              id: "2d071b2e-2e61-5467-b847-4a2d76d4d0cc",
               screen_order: 8,
-              title: "Wählen Sie die Silbe aus.",
+              title: "Selecciona la sílaba.",
             },
             {
               blocks: [
@@ -1229,13 +1228,13 @@ export const dumpDe = {
                       ["し", "tr:し"],
                     ],
                   },
-                  id: "96ef624f-d334-5336-b0e3-a8285e564f76",
+                  id: "e2fcc9a5-604f-5e51-aa2d-d0c80a006658",
                   type: "matching",
                 },
               ],
-              id: "8fbe691e-4ebc-5aa2-9637-4eae0e336d55",
+              id: "f85c2bce-6d6d-5509-b69f-3aed2cd96323",
               screen_order: 9,
-              title: "Ordnen Sie 「Hiragana」 seiner Umschrift zu.",
+              title: "Relaciona 「Hiragana」 con su transliteración.",
             },
             {
               blocks: [
@@ -1246,13 +1245,13 @@ export const dumpDe = {
                     id: "0106956a-9090-4599-93a2-0be363bcf7bf",
                     kana: "hiragana",
                   },
-                  id: "2a953088-6b2a-51c1-87c6-4c6e6c2767fe",
+                  id: "dfa42c8f-5c7e-52fe-8be0-e368ce7bb5cb",
                   type: "letter",
                 },
               ],
-              id: "4314d8f7-e7b2-5a34-916b-1467ea0fdd01",
+              id: "3bc01007-d9e6-56ee-aa6e-c56d2c287349",
               screen_order: 10,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -1263,13 +1262,13 @@ export const dumpDe = {
                     id: "0106956a-9090-4599-93a2-0be363bcf7bf",
                     kana: "hiragana",
                   },
-                  id: "accbf94b-c5ef-53f4-87c0-66af2abd8256",
+                  id: "3029cf14-fc9d-59ce-8ea0-20def730cfba",
                   type: "letter",
                 },
               ],
-              id: "e8b9dd50-b23d-58a1-88a3-f7a28af2d06a",
+              id: "820c2a39-65c2-574d-8efe-b003eb50510f",
               screen_order: 11,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -1281,13 +1280,13 @@ export const dumpDe = {
                       ["す", "tr:す"],
                     ],
                   },
-                  id: "03afae6c-7051-537f-ab54-aa9710f2ca49",
+                  id: "a7af703b-de64-5cec-a6c5-8ec7b1352f89",
                   type: "matching",
                 },
               ],
-              id: "efc4f040-a328-54f9-ad3c-168dd98c15ab",
+              id: "269997b3-1c31-5063-8970-18637e18d87e",
               screen_order: 12,
-              title: "Ordnen Sie 「Hiragana」 seiner Umschrift zu.",
+              title: "Relaciona 「Hiragana」 con su transliteración.",
             },
             {
               blocks: [
@@ -1298,13 +1297,13 @@ export const dumpDe = {
                     id: "3108807a-1d5e-47b3-9f06-514bc8096102",
                     kana: "hiragana",
                   },
-                  id: "db6b9786-95a8-5525-92a0-dffebd9bd57b",
+                  id: "fae63d0b-3ea8-5668-9117-4420d65bed96",
                   type: "letter",
                 },
               ],
-              id: "f6ee25cb-61fb-5f7c-ab5f-719c68873069",
+              id: "a9d82081-c16d-5381-ba17-d711b033c1e4",
               screen_order: 13,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -1315,13 +1314,13 @@ export const dumpDe = {
                     id: "3108807a-1d5e-47b3-9f06-514bc8096102",
                     kana: "hiragana",
                   },
-                  id: "3efb09d8-39e9-5737-9f9f-3bd54a0b8b5c",
+                  id: "8e8470b1-e075-58e1-a675-2ccc2d5b7426",
                   type: "letter",
                 },
               ],
-              id: "a690b708-c7e3-5160-95ee-6e636a24dc71",
+              id: "160c342a-3e6e-5742-b65c-6eff68d67e4c",
               screen_order: 14,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -1329,9 +1328,9 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Hiragana",
-                    title: "tr:し",
+                    title: "tr:そ",
                   },
-                  id: "65d0f4e5-7338-5f62-a0f4-f89b37b2b64d",
+                  id: "1b48531a-f94d-5f2c-b19a-feb6c897a8ea",
                   type: "title",
                 },
                 {
@@ -1339,59 +1338,26 @@ export const dumpDe = {
                   content: {
                     answers: [
                       {
-                        isTrue: false,
-                        title: "す",
-                      },
-                      {
                         isTrue: true,
-                        title: "し",
-                      },
-                      {
-                        isTrue: false,
                         title: "そ",
                       },
-                    ],
-                  },
-                  id: "13d4e73b-07f6-514a-bc5b-d7a3389f6e11",
-                  type: "choice",
-                },
-              ],
-              id: "1d6b6ae6-9e16-5cc5-b677-6624b397e46e",
-              screen_order: 15,
-              title: "Wählen Sie die Silbe aus.",
-            },
-            {
-              blocks: [
-                {
-                  block_order: 1,
-                  content: {
-                    sub_title: "Hiragana",
-                    title: "し, す, せ, さ, そ",
-                  },
-                  id: "35700ffd-19a2-5520-b111-afd7a25e7ca6",
-                  type: "title",
-                },
-                {
-                  block_order: 2,
-                  content: {
-                    answers: [
                       {
-                        isTrue: true,
-                        title: "tr:し, tr:す, tr:せ, tr:さ, tr:そ",
+                        isTrue: false,
+                        title: "さ",
                       },
                       {
                         isTrue: false,
-                        title: "tr:そ, tr:し, tr:さ, tr:す, tr:せ",
+                        title: "せ",
                       },
                     ],
                   },
-                  id: "caa070b0-8a0a-56f3-b4d4-265cc26a325b",
+                  id: "ad3b306c-0789-53be-b8cc-0dac3110651d",
                   type: "choice",
                 },
               ],
-              id: "434b55aa-b5b4-5704-a23a-1cdb98e50624",
-              screen_order: 16,
-              title: "Wählen Sie die richtige Reihenfolge.",
+              id: "10cfb9ff-423d-5f5e-bca3-e3cdf8a35761",
+              screen_order: 15,
+              title: "Selecciona la sílaba.",
             },
             {
               blocks: [
@@ -1399,9 +1365,9 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Hiragana",
-                    title: "さ, そ, せ, し, す",
+                    title: "せ, そ, し, さ, す",
                   },
-                  id: "42461935-cea7-5d70-8940-7c47d97536f3",
+                  id: "8545ebc5-7e91-585a-bcdf-49d4d7dfb8d1",
                   type: "title",
                 },
                 {
@@ -1410,21 +1376,54 @@ export const dumpDe = {
                     answers: [
                       {
                         isTrue: true,
+                        title: "tr:せ, tr:そ, tr:し, tr:さ, tr:す",
+                      },
+                      {
+                        isTrue: false,
+                        title: "tr:し, tr:さ, tr:せ, tr:そ, tr:す",
+                      },
+                    ],
+                  },
+                  id: "e21777f5-ef11-5bdc-a7cc-85bbd8360788",
+                  type: "choice",
+                },
+              ],
+              id: "29363079-0ee3-5426-afb5-6f5368f22e35",
+              screen_order: 16,
+              title: "Elige la secuencia correcta.",
+            },
+            {
+              blocks: [
+                {
+                  block_order: 1,
+                  content: {
+                    sub_title: "Hiragana",
+                    title: "す, そ, さ, し, せ",
+                  },
+                  id: "f078de84-7290-502d-927e-4411e1de0a14",
+                  type: "title",
+                },
+                {
+                  block_order: 2,
+                  content: {
+                    answers: [
+                      {
+                        isTrue: true,
+                        title: "tr:す, tr:そ, tr:さ, tr:し, tr:せ",
+                      },
+                      {
+                        isTrue: false,
                         title: "tr:さ, tr:そ, tr:せ, tr:し, tr:す",
                       },
-                      {
-                        isTrue: false,
-                        title: "tr:そ, tr:さ, tr:せ, tr:し, tr:す",
-                      },
                     ],
                   },
-                  id: "7ae07ca4-d1a3-54a1-8317-1518076b4102",
+                  id: "f51cbd01-90d9-5ec8-ba39-b05a3948a738",
                   type: "choice",
                 },
               ],
-              id: "84010fea-c517-56a6-99b0-f779f960a0e6",
+              id: "b01954be-1bb6-55f8-b746-a463622cd0d3",
               screen_order: 17,
-              title: "Wählen Sie die richtige Reihenfolge.",
+              title: "Elige la secuencia correcta.",
             },
             {
               blocks: [
@@ -1432,23 +1431,23 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Hiragana",
-                    title: "tr:そ, tr:す, tr:さ, tr:せ, tr:し",
+                    title: "tr:せ, tr:し, tr:さ, tr:そ, tr:す",
                   },
-                  id: "c5c26b87-28b6-57ea-897f-930894d2968d",
+                  id: "687609ad-652a-5f2a-a291-84f8ce6f0e8d",
                   type: "title",
                 },
                 {
                   block_order: 2,
                   content: {
-                    sequence: ["そ", "す", "さ", "せ", "し"],
+                    sequence: ["せ", "し", "さ", "そ", "す"],
                   },
-                  id: "02de1e10-04cd-5f92-8824-f1c30f50a7f8",
+                  id: "7cac777f-5343-5344-b41b-bfb2d609b677",
                   type: "sequence",
                 },
               ],
-              id: "710ff671-78b2-59f2-8658-e52a6d06304d",
+              id: "b1e01427-5f2c-5f3c-a159-a1ff93b68994",
               screen_order: 18,
-              title: "Ordnen Sie die Silben in der richtigen Reihenfolge an.",
+              title: "Acomoda las sílabas en el orden correcto.",
             },
             {
               blocks: [
@@ -1456,35 +1455,35 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Hiragana",
-                    title: "tr:し, tr:そ, tr:さ, tr:せ, tr:す",
+                    title: "tr:そ, tr:す, tr:し, tr:せ, tr:さ",
                   },
-                  id: "8d01aac9-2da1-5c67-a211-849ce7d588b0",
+                  id: "795fd29d-5525-5cdf-be39-28a95af3852b",
                   type: "title",
                 },
                 {
                   block_order: 2,
                   content: {
-                    sequence: ["し", "そ", "さ", "せ", "す"],
+                    sequence: ["そ", "す", "し", "せ", "さ"],
                   },
-                  id: "720f9838-46c9-5aae-a0c5-c6a7b7cf620c",
+                  id: "ddcd9789-4937-5b35-987f-dd175d4ddd86",
                   type: "sequence",
                 },
               ],
-              id: "63d385c5-bf70-5476-9a4a-72877851a220",
+              id: "c105d5b6-50d3-5137-bc64-80ec6bb88634",
               screen_order: 19,
-              title: "Ordnen Sie die Silben in der richtigen Reihenfolge an.",
+              title: "Acomoda las sílabas en el orden correcto.",
             },
           ],
-          subtitle: "Silben: さ、し、す、せ、そ",
-          title: "Lektion 3",
-          topic_id: "5e31453c-3b85-4baa-9581-2771d7dc0ead",
+          subtitle: "Sílabas: さ、し、す、せ、そ",
+          title: "Lección 3",
+          topic_id: "18d4916c-1ccf-4cc9-bb2b-9188cdfe601e",
         },
         {
-          expanded_subtitle: "Lernen Sie, die Silben in der Reihe tr:た zu lesen und zu schreiben.",
+          expanded_subtitle: "Aprende a leer y escribir las sílabas del renglón tr:た.",
           expanded_title: "Hiragana: tr:た, tr:ち, tr:つ, tr:て, tr:と",
           icon: "https://nihongo.khvat.app/chapter1/Lesson4.jpg",
-          id: "754d71bf-b893-4a45-8584-4ca5cb7c4e16",
-          last_updated: "2026-09-08T13:12:15.999Z",
+          id: "d61459bd-6545-4640-af39-b7c2932257f6",
+          last_updated: "2026-09-08T13:12:16.024Z",
           lesson_key: "alphabet/hiragana&ta",
           lesson_order: 5,
           minimum_version: "2.4.1",
@@ -1498,13 +1497,13 @@ export const dumpDe = {
                     id: "36b4894e-19d1-4efe-961d-d9dbc6284757",
                     kana: "hiragana",
                   },
-                  id: "0fbdbbca-f2f4-5382-b475-15791a8bbd29",
+                  id: "0223b798-d70e-5d69-aebc-18fd2e4a06d0",
                   type: "letter",
                 },
               ],
-              id: "1b956270-b928-51da-b712-8171f763b3ed",
+              id: "f5d4c1f8-7331-539d-be89-b984fd7bea06",
               screen_order: 1,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -1515,13 +1514,13 @@ export const dumpDe = {
                     id: "36b4894e-19d1-4efe-961d-d9dbc6284757",
                     kana: "hiragana",
                   },
-                  id: "2e1cfefc-cf89-508b-affb-bc7fcc9115d9",
+                  id: "8a5f1424-a6e1-52a5-8b52-dfd2547a3a52",
                   type: "letter",
                 },
               ],
-              id: "77e36298-fdde-57cf-99c1-dd973b914e4e",
+              id: "f98705df-6594-5508-a414-eb71cca37f83",
               screen_order: 2,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -1532,13 +1531,13 @@ export const dumpDe = {
                     id: "f17698db-0da4-4c09-ba3b-9d10e3c7aa4d",
                     kana: "hiragana",
                   },
-                  id: "7cd4c996-9387-5c17-8f69-b033219a5b20",
+                  id: "3ea2a82e-5479-5113-9868-4bf94f8f2fe9",
                   type: "letter",
                 },
               ],
-              id: "9c2d827c-2979-51b1-8657-d08895804cce",
+              id: "373f7f9f-913c-59e3-bf2a-78ba9732b64a",
               screen_order: 3,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -1549,13 +1548,13 @@ export const dumpDe = {
                     id: "f17698db-0da4-4c09-ba3b-9d10e3c7aa4d",
                     kana: "hiragana",
                   },
-                  id: "14a58e19-501c-5a22-923d-7c91a34916ab",
+                  id: "21235f36-9447-581b-85a4-6a2eac08f902",
                   type: "letter",
                 },
               ],
-              id: "7f3b836f-dee0-59c6-aea4-bc02d92711d8",
+              id: "094151da-1bcf-556c-a78b-b79530f89276",
               screen_order: 4,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -1567,13 +1566,13 @@ export const dumpDe = {
                       ["た", "tr:た"],
                     ],
                   },
-                  id: "bf0f1fd8-7b7f-50a9-ab65-a775a784285a",
+                  id: "fa5cdf20-b056-520e-aa3c-d824dbe6ed19",
                   type: "matching",
                 },
               ],
-              id: "f4da678c-69ad-525a-a949-b413abea11da",
+              id: "f4af55ed-e2b6-5653-b932-aa7a4ab69384",
               screen_order: 5,
-              title: "Ordnen Sie 「Hiragana」 seiner Umschrift zu.",
+              title: "Relaciona 「Hiragana」 con su transliteración.",
             },
             {
               blocks: [
@@ -1584,13 +1583,13 @@ export const dumpDe = {
                     id: "08123485-a3d0-461e-8af3-bf6708b74d90",
                     kana: "hiragana",
                   },
-                  id: "b7cb6646-d6f1-5d70-85f6-a3b9d4edb2e5",
+                  id: "96b3a15d-850c-59dd-93cf-01ee650d1bf8",
                   type: "letter",
                 },
               ],
-              id: "b8c98a62-47df-576a-b1bc-08d03af612c6",
+              id: "269edd19-27ba-56b8-a737-b33040cc55f3",
               screen_order: 6,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -1601,13 +1600,13 @@ export const dumpDe = {
                     id: "08123485-a3d0-461e-8af3-bf6708b74d90",
                     kana: "hiragana",
                   },
-                  id: "3dcec8ee-ff9d-5c25-9ff9-c24f1d4106ee",
+                  id: "3005ee7d-39e6-575b-9c6d-ff6f0b5cea9a",
                   type: "letter",
                 },
               ],
-              id: "55a76210-3aa1-548a-9783-4e0ba21f51f0",
+              id: "ca79df50-07d1-5d05-85e8-abec3579bd66",
               screen_order: 7,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -1615,9 +1614,9 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Hiragana",
-                    title: "tr:ち",
+                    title: "tr:た",
                   },
-                  id: "c2019889-1d3e-5861-9fe4-6870e5739b44",
+                  id: "e794cd85-aa9e-5790-a364-21a7894d94bc",
                   type: "title",
                 },
                 {
@@ -1625,26 +1624,26 @@ export const dumpDe = {
                   content: {
                     answers: [
                       {
-                        isTrue: false,
-                        title: "た",
-                      },
-                      {
                         isTrue: true,
-                        title: "ち",
+                        title: "た",
                       },
                       {
                         isTrue: false,
                         title: "つ",
                       },
+                      {
+                        isTrue: false,
+                        title: "ち",
+                      },
                     ],
                   },
-                  id: "fd1e9442-0825-5a6d-a3c9-dbbf4fffce64",
+                  id: "d978c13d-d574-5a76-9945-8fe82d44db05",
                   type: "choice",
                 },
               ],
-              id: "ae08100e-3658-551e-a395-840e32b9319b",
+              id: "ac5f18b1-6c60-5359-9d0f-19cc33f5de95",
               screen_order: 8,
-              title: "Wählen Sie die Silbe aus.",
+              title: "Selecciona la sílaba.",
             },
             {
               blocks: [
@@ -1656,13 +1655,13 @@ export const dumpDe = {
                       ["ち", "tr:ち"],
                     ],
                   },
-                  id: "57238a4a-5a2e-5bf1-aaa0-bf861586a0ef",
+                  id: "846461e7-4d87-5c7b-a814-58163486a7ea",
                   type: "matching",
                 },
               ],
-              id: "63f5e0ab-f4a9-5138-a18b-cce50b8cb489",
+              id: "b986a174-f1eb-526a-97ed-df6543bdda00",
               screen_order: 9,
-              title: "Ordnen Sie 「Hiragana」 seiner Umschrift zu.",
+              title: "Relaciona 「Hiragana」 con su transliteración.",
             },
             {
               blocks: [
@@ -1673,13 +1672,13 @@ export const dumpDe = {
                     id: "45870b67-8005-4ee1-a79c-a239289ef9b6",
                     kana: "hiragana",
                   },
-                  id: "3b67e776-ee80-5f0f-9120-f191929f25ae",
+                  id: "07b6850e-1f46-5274-8bbb-e05a58b19ebc",
                   type: "letter",
                 },
               ],
-              id: "e9012d08-7705-5b9a-869b-224e0a1459a8",
+              id: "4432488a-5acf-55e4-b614-e4e5d5305788",
               screen_order: 10,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -1690,13 +1689,13 @@ export const dumpDe = {
                     id: "45870b67-8005-4ee1-a79c-a239289ef9b6",
                     kana: "hiragana",
                   },
-                  id: "87a52e5f-9002-5d82-b43b-1b053a71b04b",
+                  id: "1fc4feb1-490d-5388-a8cf-10d735a5393d",
                   type: "letter",
                 },
               ],
-              id: "c7d25596-44ca-5fc7-8eb5-c656f19dfdba",
+              id: "27089794-84b6-50ba-9f87-de071207c419",
               screen_order: 11,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -1708,13 +1707,13 @@ export const dumpDe = {
                       ["つ", "tr:つ"],
                     ],
                   },
-                  id: "e852a858-5441-592a-b3a0-bcd643b449e8",
+                  id: "3041bffd-576b-5785-92cf-16eee84a9a9d",
                   type: "matching",
                 },
               ],
-              id: "bbf67c70-b311-5863-be97-eafa556f720b",
+              id: "3b56385c-f020-56fe-8e37-4a18ed09eb8a",
               screen_order: 12,
-              title: "Ordnen Sie 「Hiragana」 seiner Umschrift zu.",
+              title: "Relaciona 「Hiragana」 con su transliteración.",
             },
             {
               blocks: [
@@ -1725,13 +1724,13 @@ export const dumpDe = {
                     id: "bfd720a3-aaaa-4ce1-a88b-ce4866b0351f",
                     kana: "hiragana",
                   },
-                  id: "2ded7e05-966c-5de1-b5ea-a7b17001c248",
+                  id: "ec3e64ef-b327-52c8-a28e-9ec74f4a3396",
                   type: "letter",
                 },
               ],
-              id: "9e83a712-c3b3-59a9-b2f0-d1f035895c42",
+              id: "f691c242-7741-580b-90eb-ed35f8d79365",
               screen_order: 13,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -1742,13 +1741,13 @@ export const dumpDe = {
                     id: "bfd720a3-aaaa-4ce1-a88b-ce4866b0351f",
                     kana: "hiragana",
                   },
-                  id: "da7b2b70-cd53-576f-887c-f0f4e3f207b1",
+                  id: "44ae59f8-4bc4-5848-a635-1ec39cc8dd0e",
                   type: "letter",
                 },
               ],
-              id: "8910cca3-a174-573e-830f-36db71d06b3b",
+              id: "d14e93e7-9444-5b58-8d95-1586a1592307",
               screen_order: 14,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -1758,34 +1757,34 @@ export const dumpDe = {
                     sub_title: "Hiragana",
                     title: "tr:つ",
                   },
-                  id: "263620fd-3247-5b9c-a3fe-7e5cd8a7c66f",
+                  id: "e6831dd0-3449-546e-aa01-7856fa673534",
                   type: "title",
                 },
                 {
                   block_order: 2,
                   content: {
                     answers: [
-                      {
-                        isTrue: false,
-                        title: "て",
-                      },
                       {
                         isTrue: true,
                         title: "つ",
                       },
                       {
                         isTrue: false,
-                        title: "と",
+                        title: "て",
+                      },
+                      {
+                        isTrue: false,
+                        title: "た",
                       },
                     ],
                   },
-                  id: "e4feedb5-5b1b-50e0-9e3e-213007e43f9e",
+                  id: "e0478d33-5296-55ce-97c5-24c809afe8cb",
                   type: "choice",
                 },
               ],
-              id: "de661d80-4851-55ba-8d06-85d82ac16d43",
+              id: "b365bbcd-2bf7-5069-bc28-6a1e62a836ee",
               screen_order: 15,
-              title: "Wählen Sie die Silbe aus.",
+              title: "Selecciona la sílaba.",
             },
             {
               blocks: [
@@ -1793,9 +1792,9 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Hiragana",
-                    title: "た, て, ち, つ, と",
+                    title: "て, た, ち, と, つ",
                   },
-                  id: "4236be5e-9f29-52ad-b24a-120da502b428",
+                  id: "5c757347-e82b-54d8-a063-49aa0f41b391",
                   type: "title",
                 },
                 {
@@ -1804,54 +1803,54 @@ export const dumpDe = {
                     answers: [
                       {
                         isTrue: true,
-                        title: "tr:た, tr:て, tr:ち, tr:つ, tr:と",
-                      },
-                      {
-                        isTrue: false,
-                        title: "tr:た, tr:ち, tr:と, tr:て, tr:つ",
-                      },
-                    ],
-                  },
-                  id: "bdb96605-5a7b-59f4-b3d4-5fd6513844e6",
-                  type: "choice",
-                },
-              ],
-              id: "b8ea6b87-aedf-53bc-b10e-ff0f2adc7de5",
-              screen_order: 16,
-              title: "Wählen Sie die richtige Reihenfolge.",
-            },
-            {
-              blocks: [
-                {
-                  block_order: 1,
-                  content: {
-                    sub_title: "Hiragana",
-                    title: "ち, た, つ, と, て",
-                  },
-                  id: "e4d967c4-422b-5d49-9e58-149634653799",
-                  type: "title",
-                },
-                {
-                  block_order: 2,
-                  content: {
-                    answers: [
-                      {
-                        isTrue: false,
                         title: "tr:て, tr:た, tr:ち, tr:と, tr:つ",
                       },
                       {
-                        isTrue: true,
-                        title: "tr:ち, tr:た, tr:つ, tr:と, tr:て",
+                        isTrue: false,
+                        title: "tr:つ, tr:ち, tr:と, tr:た, tr:て",
                       },
                     ],
                   },
-                  id: "eb43b115-6013-5a57-9b33-aeb144118473",
+                  id: "9e5f4a5f-ba81-50fa-9dc3-77ca719d8c69",
                   type: "choice",
                 },
               ],
-              id: "7264b7ed-3c02-51e6-93bb-ea9a0ccd584c",
+              id: "14d89d31-4857-56ff-969d-0201315fe3d9",
+              screen_order: 16,
+              title: "Elige la secuencia correcta.",
+            },
+            {
+              blocks: [
+                {
+                  block_order: 1,
+                  content: {
+                    sub_title: "Hiragana",
+                    title: "つ, て, た, と, ち",
+                  },
+                  id: "4f271bf7-6249-521a-a300-45837c99aa7b",
+                  type: "title",
+                },
+                {
+                  block_order: 2,
+                  content: {
+                    answers: [
+                      {
+                        isTrue: true,
+                        title: "tr:つ, tr:て, tr:た, tr:と, tr:ち",
+                      },
+                      {
+                        isTrue: false,
+                        title: "tr:た, tr:つ, tr:て, tr:ち, tr:と",
+                      },
+                    ],
+                  },
+                  id: "ce6f1308-91f2-5724-adac-dbdd043621e4",
+                  type: "choice",
+                },
+              ],
+              id: "be5e01d7-ec3a-57c4-821e-87f4ae2232b3",
               screen_order: 17,
-              title: "Wählen Sie die richtige Reihenfolge.",
+              title: "Elige la secuencia correcta.",
             },
             {
               blocks: [
@@ -1859,23 +1858,23 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Hiragana",
-                    title: "tr:と, tr:ち, tr:つ, tr:て, tr:た",
+                    title: "tr:と, tr:つ, tr:た, tr:て, tr:ち",
                   },
-                  id: "01636402-df73-5807-8e9d-e50dbde00479",
+                  id: "8d0aff0e-64c3-50d6-bbcc-466ae210ac1e",
                   type: "title",
                 },
                 {
                   block_order: 2,
                   content: {
-                    sequence: ["と", "ち", "つ", "て", "た"],
+                    sequence: ["と", "つ", "た", "て", "ち"],
                   },
-                  id: "18e3535d-1243-5760-bf26-2a0138e265b1",
+                  id: "9c706fa4-7223-5464-8e36-abd85962d13e",
                   type: "sequence",
                 },
               ],
-              id: "65c92ac6-1357-5543-b54a-2d1cf821b103",
+              id: "c350d877-06f0-5c89-9166-38ad28137e08",
               screen_order: 18,
-              title: "Ordnen Sie die Silben in der richtigen Reihenfolge an.",
+              title: "Acomoda las sílabas en el orden correcto.",
             },
             {
               blocks: [
@@ -1883,35 +1882,35 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Hiragana",
-                    title: "tr:つ, tr:て, tr:と, tr:た, tr:ち",
+                    title: "tr:つ, tr:ち, tr:た, tr:と, tr:て",
                   },
-                  id: "e330d710-2e5d-54d4-9bc4-72f7f71ab4a5",
+                  id: "63964f3a-3a50-5120-bc0b-10b123559b85",
                   type: "title",
                 },
                 {
                   block_order: 2,
                   content: {
-                    sequence: ["つ", "て", "と", "た", "ち"],
+                    sequence: ["つ", "ち", "た", "と", "て"],
                   },
-                  id: "5a205275-a5eb-5016-8a9b-3197377b7cec",
+                  id: "09ece228-b29a-581e-906c-422e91b21ede",
                   type: "sequence",
                 },
               ],
-              id: "668b9608-faf2-56de-ae06-62763f1b5570",
+              id: "aac9afac-861e-539f-9476-4ac04f81f1a0",
               screen_order: 19,
-              title: "Ordnen Sie die Silben in der richtigen Reihenfolge an.",
+              title: "Acomoda las sílabas en el orden correcto.",
             },
           ],
-          subtitle: "Silben: た、ち、つ、て、と",
-          title: "Lektion 4",
-          topic_id: "5e31453c-3b85-4baa-9581-2771d7dc0ead",
+          subtitle: "Sílabas: た、ち、つ、て、と",
+          title: "Lección 4",
+          topic_id: "18d4916c-1ccf-4cc9-bb2b-9188cdfe601e",
         },
         {
-          expanded_subtitle: "Lernen Sie, die Silben in der Reihe tr:な zu lesen und zu schreiben.",
+          expanded_subtitle: "Aprende a leer y escribir las sílabas del renglón tr:な.",
           expanded_title: "Hiragana: tr:な, tr:に, tr:ぬ, tr:ね, tr:の",
           icon: "https://nihongo.khvat.app/chapter1/Lesson5.jpg",
-          id: "39c7b705-fafe-4260-8745-cb0203381446",
-          last_updated: "2026-09-08T13:12:15.999Z",
+          id: "83ec2129-4324-4d3f-b25d-8caf7f60fcef",
+          last_updated: "2026-09-08T13:12:16.024Z",
           lesson_key: "alphabet/hiragana&na",
           lesson_order: 6,
           minimum_version: "2.4.1",
@@ -1925,13 +1924,13 @@ export const dumpDe = {
                     id: "426cc9fd-4eeb-4914-9484-e87f922365fe",
                     kana: "hiragana",
                   },
-                  id: "58953e23-1505-52db-bd81-bb48410ac18f",
+                  id: "733128bf-e146-5e82-b7b3-4ac579c2c763",
                   type: "letter",
                 },
               ],
-              id: "33c80e1d-20b4-5009-924d-8d5bc0357351",
+              id: "80417ca8-a72b-5061-9344-a5224ef52f1e",
               screen_order: 1,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -1942,13 +1941,13 @@ export const dumpDe = {
                     id: "426cc9fd-4eeb-4914-9484-e87f922365fe",
                     kana: "hiragana",
                   },
-                  id: "1f3582a2-19d1-5157-8f75-6c5af5097833",
+                  id: "e412edf1-0978-5ac1-b5f0-849d9a3cabb7",
                   type: "letter",
                 },
               ],
-              id: "abcf0a8f-0101-5cad-a9b8-c03653172502",
+              id: "d9c304e2-d376-587d-9d9d-e1de1ed95f07",
               screen_order: 2,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -1959,13 +1958,13 @@ export const dumpDe = {
                     id: "16c7e660-5f2f-44bb-82aa-72722e944126",
                     kana: "hiragana",
                   },
-                  id: "855a3496-dbd3-5329-a670-281bcc75b3d6",
+                  id: "f5fa17d7-4527-5d37-a8da-4d8d3909d77f",
                   type: "letter",
                 },
               ],
-              id: "b8e29c4a-89c6-55e8-9ff2-3dc810ca9446",
+              id: "3c00efc3-b8a8-59af-a1ab-ad8ea463a57c",
               screen_order: 3,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -1976,13 +1975,13 @@ export const dumpDe = {
                     id: "16c7e660-5f2f-44bb-82aa-72722e944126",
                     kana: "hiragana",
                   },
-                  id: "552fcd32-ad2c-5400-b29e-ea6784814f2f",
+                  id: "4af7f79b-5d29-5993-8815-9a409057936f",
                   type: "letter",
                 },
               ],
-              id: "7ef5a947-a4fa-54b3-90c8-f074ce547754",
+              id: "aaafee90-add9-5b68-b0b1-5f81c59d2b7c",
               screen_order: 4,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -1994,13 +1993,13 @@ export const dumpDe = {
                       ["な", "tr:な"],
                     ],
                   },
-                  id: "e588cdc2-2352-5e82-b45c-bc95a0d0aa7e",
+                  id: "5629b968-8cf1-5603-a525-1d64fa4e7b4a",
                   type: "matching",
                 },
               ],
-              id: "5b5a1dd6-f120-59d8-bbd2-ffda9e98b37e",
+              id: "4ff3a355-6a79-5ebb-a1e2-a2e59647123e",
               screen_order: 5,
-              title: "Ordnen Sie 「Hiragana」 seiner Umschrift zu.",
+              title: "Relaciona 「Hiragana」 con su transliteración.",
             },
             {
               blocks: [
@@ -2011,13 +2010,13 @@ export const dumpDe = {
                     id: "6a1e5aa1-6978-4f46-bd78-1310607d9018",
                     kana: "hiragana",
                   },
-                  id: "c9406c03-ced9-5edf-834a-b4c5c651c212",
+                  id: "5120c437-9735-5203-81a3-c658c507f03a",
                   type: "letter",
                 },
               ],
-              id: "5ad5d250-da5b-589b-bebc-b5b859f3ab1b",
+              id: "c152fde1-f589-5912-9ae3-911250ff572a",
               screen_order: 6,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -2028,13 +2027,13 @@ export const dumpDe = {
                     id: "6a1e5aa1-6978-4f46-bd78-1310607d9018",
                     kana: "hiragana",
                   },
-                  id: "d8c3dbb2-acc6-517f-a83d-ac8774f7a241",
+                  id: "54e9ccdb-d0e0-5d2c-84f3-7e60a9dd4364",
                   type: "letter",
                 },
               ],
-              id: "05033f07-c49c-53a9-82dc-ff1870c31d23",
+              id: "ef6c33dc-8dc6-58d3-8d9d-748b1b641cf4",
               screen_order: 7,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -2044,7 +2043,7 @@ export const dumpDe = {
                     sub_title: "Hiragana",
                     title: "tr:な",
                   },
-                  id: "ae2b2e75-6d52-5be3-bca9-28a3e9e97039",
+                  id: "2906612d-cfb4-594e-bd5f-1c22a8b97ba0",
                   type: "title",
                 },
                 {
@@ -2052,12 +2051,12 @@ export const dumpDe = {
                   content: {
                     answers: [
                       {
-                        isTrue: true,
-                        title: "な",
-                      },
-                      {
                         isTrue: false,
                         title: "に",
+                      },
+                      {
+                        isTrue: true,
+                        title: "な",
                       },
                       {
                         isTrue: false,
@@ -2065,13 +2064,13 @@ export const dumpDe = {
                       },
                     ],
                   },
-                  id: "4613398f-0897-50d7-8b22-89fd3e443b23",
+                  id: "f8d0e8fb-d463-5b90-ac04-0f73ecbb7274",
                   type: "choice",
                 },
               ],
-              id: "71873d09-4ec4-51f1-a455-03d3dd710c2e",
+              id: "40508ea5-e905-5dd2-a6e7-edb59b477e2d",
               screen_order: 8,
-              title: "Wählen Sie die Silbe aus.",
+              title: "Selecciona la sílaba.",
             },
             {
               blocks: [
@@ -2083,13 +2082,13 @@ export const dumpDe = {
                       ["に", "tr:に"],
                     ],
                   },
-                  id: "f6474a97-d3dc-5017-ae5f-5c4baeb192ec",
+                  id: "94ed8a19-488d-5cd5-afdf-5348cbff6911",
                   type: "matching",
                 },
               ],
-              id: "69676836-97aa-57b7-aacd-76721ff4c4e8",
+              id: "074e075f-f145-5985-b0d5-a78b4380b1fd",
               screen_order: 9,
-              title: "Ordnen Sie 「Hiragana」 seiner Umschrift zu.",
+              title: "Relaciona 「Hiragana」 con su transliteración.",
             },
             {
               blocks: [
@@ -2100,13 +2099,13 @@ export const dumpDe = {
                     id: "78f412ca-a2fc-4319-9444-288363407b45",
                     kana: "hiragana",
                   },
-                  id: "8bf04168-07ce-555b-b0ab-9f21d9208038",
+                  id: "f637337f-5061-52a2-aec9-0028774c815b",
                   type: "letter",
                 },
               ],
-              id: "343d62a5-c0b1-567f-bcad-a12db0460e50",
+              id: "a1a97bf8-dd27-5ebd-9a17-067be9d171a3",
               screen_order: 10,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -2117,13 +2116,13 @@ export const dumpDe = {
                     id: "78f412ca-a2fc-4319-9444-288363407b45",
                     kana: "hiragana",
                   },
-                  id: "bf148148-69aa-5bac-8633-ce7453b5dcb7",
+                  id: "6a49c35d-dbdb-59bc-9d11-4ba5b592abdf",
                   type: "letter",
                 },
               ],
-              id: "57797879-bf37-52b5-b1bf-40daf8d84f09",
+              id: "bc0c4fa9-663b-5e80-8092-e914d4f58a89",
               screen_order: 11,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -2135,13 +2134,13 @@ export const dumpDe = {
                       ["ぬ", "tr:ぬ"],
                     ],
                   },
-                  id: "79fddb4f-2bce-5474-adeb-c0895dda2f33",
+                  id: "17e35462-3e9f-5975-a6fe-05413e9e554d",
                   type: "matching",
                 },
               ],
-              id: "7dd6e8c9-e29a-507b-8ad8-5114cdca7bbd",
+              id: "c799a125-cb9d-5c03-bf18-78c269893bac",
               screen_order: 12,
-              title: "Ordnen Sie 「Hiragana」 seiner Umschrift zu.",
+              title: "Relaciona 「Hiragana」 con su transliteración.",
             },
             {
               blocks: [
@@ -2152,13 +2151,13 @@ export const dumpDe = {
                     id: "8b140c48-5818-4a3b-b8fe-0ddc49852778",
                     kana: "hiragana",
                   },
-                  id: "0937d7bc-03bb-56d8-bc9d-8eaa13aa9360",
+                  id: "eca53839-0c55-548e-ae25-e7c551ced9f9",
                   type: "letter",
                 },
               ],
-              id: "4592f8a4-32c2-545e-b514-8cff3e3cf232",
+              id: "725e1e57-cff4-53bd-bbac-26c7d48887ea",
               screen_order: 13,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -2169,13 +2168,13 @@ export const dumpDe = {
                     id: "8b140c48-5818-4a3b-b8fe-0ddc49852778",
                     kana: "hiragana",
                   },
-                  id: "9244d215-e1d2-540a-b6ae-f7317ae4503b",
+                  id: "3e93131b-4f4d-5901-8552-432f29c3f64b",
                   type: "letter",
                 },
               ],
-              id: "c993931c-d8f0-502b-b23c-827f534ad63f",
+              id: "49622ac0-c405-5c7f-b4b5-36356c909fbf",
               screen_order: 14,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -2185,7 +2184,7 @@ export const dumpDe = {
                     sub_title: "Hiragana",
                     title: "tr:な",
                   },
-                  id: "f69b52d3-d533-56b1-aa10-8afe3a464c74",
+                  id: "070c24eb-ffdd-5d72-b9a0-209dad64fd2a",
                   type: "title",
                 },
                 {
@@ -2198,21 +2197,21 @@ export const dumpDe = {
                       },
                       {
                         isTrue: false,
-                        title: "ぬ",
+                        title: "ね",
                       },
                       {
                         isTrue: false,
-                        title: "の",
+                        title: "に",
                       },
                     ],
                   },
-                  id: "93dc40d3-4508-583c-a245-8e3746ea8679",
+                  id: "6b11b5db-cb8c-5a3f-8a27-eaa1c3f63d6a",
                   type: "choice",
                 },
               ],
-              id: "a6c801f5-1e8a-5a25-98f2-2377eb45c533",
+              id: "1f83aaf9-68c3-5771-b5c3-b9c0efe00c55",
               screen_order: 15,
-              title: "Wählen Sie die Silbe aus.",
+              title: "Selecciona la sílaba.",
             },
             {
               blocks: [
@@ -2220,9 +2219,9 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Hiragana",
-                    title: "の, ね, ぬ, に, な",
+                    title: "に, の, ぬ, な, ね",
                   },
-                  id: "d63d5093-4c4e-5502-825b-1cd32ffe6696",
+                  id: "4a8e45dc-fe51-5cd5-bd94-bf3527e05395",
                   type: "title",
                 },
                 {
@@ -2230,22 +2229,22 @@ export const dumpDe = {
                   content: {
                     answers: [
                       {
-                        isTrue: true,
-                        title: "tr:の, tr:ね, tr:ぬ, tr:に, tr:な",
+                        isTrue: false,
+                        title: "tr:の, tr:に, tr:ね, tr:な, tr:ぬ",
                       },
                       {
-                        isTrue: false,
-                        title: "tr:ね, tr:に, tr:ぬ, tr:な, tr:の",
+                        isTrue: true,
+                        title: "tr:に, tr:の, tr:ぬ, tr:な, tr:ね",
                       },
                     ],
                   },
-                  id: "7420b705-96da-5844-b9ef-74c61f5c370f",
+                  id: "ccbe39fd-5559-5736-9c8c-e82ef3ae9cc8",
                   type: "choice",
                 },
               ],
-              id: "e7b3319c-fe13-5e2f-bb5d-d1095892d275",
+              id: "0b0a69ea-13ff-5d55-8d3f-b6091f5acd5c",
               screen_order: 16,
-              title: "Wählen Sie die richtige Reihenfolge.",
+              title: "Elige la secuencia correcta.",
             },
             {
               blocks: [
@@ -2253,9 +2252,9 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Hiragana",
-                    title: "ね, な, の, に, ぬ",
+                    title: "ぬ, ね, に, の, な",
                   },
-                  id: "4e8f8d2a-9b5a-5ccf-849b-a136f78151eb",
+                  id: "0f58518b-43ea-59c6-afa2-b4753270a1ac",
                   type: "title",
                 },
                 {
@@ -2264,21 +2263,21 @@ export const dumpDe = {
                     answers: [
                       {
                         isTrue: false,
-                        title: "tr:ね, tr:な, tr:ぬ, tr:に, tr:の",
+                        title: "tr:に, tr:の, tr:ね, tr:な, tr:ぬ",
                       },
                       {
                         isTrue: true,
-                        title: "tr:ね, tr:な, tr:の, tr:に, tr:ぬ",
+                        title: "tr:ぬ, tr:ね, tr:に, tr:の, tr:な",
                       },
                     ],
                   },
-                  id: "a899de57-15d5-5ccf-9602-65af432586e1",
+                  id: "0fbf1ac6-d408-577b-8aa9-d731e8a8beae",
                   type: "choice",
                 },
               ],
-              id: "467918b9-c0e9-5748-b1e8-09eb018d1bf9",
+              id: "3e50baaa-dfa9-52d5-ab36-0d6ae4c45478",
               screen_order: 17,
-              title: "Wählen Sie die richtige Reihenfolge.",
+              title: "Elige la secuencia correcta.",
             },
             {
               blocks: [
@@ -2286,23 +2285,23 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Hiragana",
-                    title: "tr:に, tr:の, tr:ね, tr:な, tr:ぬ",
+                    title: "tr:に, tr:の, tr:ね, tr:ぬ, tr:な",
                   },
-                  id: "9366e6ed-115d-51df-88ff-891970c82c59",
+                  id: "b85023a0-e53c-560d-ada2-731751adca14",
                   type: "title",
                 },
                 {
                   block_order: 2,
                   content: {
-                    sequence: ["に", "の", "ね", "な", "ぬ"],
+                    sequence: ["に", "の", "ね", "ぬ", "な"],
                   },
-                  id: "65716345-ae3b-50ac-bd3e-ab65df5d2846",
+                  id: "801b43ad-7d57-507a-9ea4-908bb22b20af",
                   type: "sequence",
                 },
               ],
-              id: "eae84184-d1ec-5a4f-96db-780074522542",
+              id: "156796d8-26dd-51a0-a793-20d76c6afb8c",
               screen_order: 18,
-              title: "Ordnen Sie die Silben in der richtigen Reihenfolge an.",
+              title: "Acomoda las sílabas en el orden correcto.",
             },
             {
               blocks: [
@@ -2310,35 +2309,35 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Hiragana",
-                    title: "tr:に, tr:ぬ, tr:ね, tr:の, tr:な",
+                    title: "tr:ぬ, tr:な, tr:に, tr:ね, tr:の",
                   },
-                  id: "f5bc0036-18b3-596c-b457-c27e3172070f",
+                  id: "3be5279a-cafa-5ff6-a02d-8656af06c6bb",
                   type: "title",
                 },
                 {
                   block_order: 2,
                   content: {
-                    sequence: ["に", "ぬ", "ね", "の", "な"],
+                    sequence: ["ぬ", "な", "に", "ね", "の"],
                   },
-                  id: "95ba318a-effd-5991-a5c3-4ea2acfa2052",
+                  id: "2c32a933-4c70-52b8-88e6-4974638e97a9",
                   type: "sequence",
                 },
               ],
-              id: "1fb4c0cd-23d5-5d86-8548-97515b36c3eb",
+              id: "d9fa7656-ec8b-5b51-8439-a280acdee0d2",
               screen_order: 19,
-              title: "Ordnen Sie die Silben in der richtigen Reihenfolge an.",
+              title: "Acomoda las sílabas en el orden correcto.",
             },
           ],
-          subtitle: "Silben: な、に、ぬ、ね、の",
-          title: "Lektion 5",
-          topic_id: "5e31453c-3b85-4baa-9581-2771d7dc0ead",
+          subtitle: "Sílabas: な、に、ぬ、ね、の",
+          title: "Lección 5",
+          topic_id: "18d4916c-1ccf-4cc9-bb2b-9188cdfe601e",
         },
         {
-          expanded_subtitle: "Lernen Sie, die Silben in der Reihe tr:は zu lesen und zu schreiben.",
+          expanded_subtitle: "Aprende a leer y escribir las sílabas del renglón tr:は.",
           expanded_title: "Hiragana: tr:は, tr:ひ, tr:ふ, tr:へ, tr:ほ",
           icon: "https://nihongo.khvat.app/chapter1/Lesson6.jpg",
-          id: "4f7e49b9-50e9-4a38-9b42-4277d7b047a5",
-          last_updated: "2026-09-08T13:12:15.999Z",
+          id: "ac923ac8-51c1-45bf-be2b-a85fc55a019f",
+          last_updated: "2026-09-08T13:12:16.024Z",
           lesson_key: "alphabet/hiragana&ha",
           lesson_order: 7,
           minimum_version: "2.4.1",
@@ -2352,13 +2351,13 @@ export const dumpDe = {
                     id: "98db662b-5ca1-47cd-9026-735c762c76f6",
                     kana: "hiragana",
                   },
-                  id: "b4a5e665-d26c-5de8-8912-3009e67b9b1c",
+                  id: "d1c6ebf1-d7a1-5523-b5f1-b4c99368839a",
                   type: "letter",
                 },
               ],
-              id: "a89ee88f-9f22-5f9a-9a4a-021348516d99",
+              id: "cc497d1c-f2df-557e-b569-8e75358ed33f",
               screen_order: 1,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -2369,13 +2368,13 @@ export const dumpDe = {
                     id: "98db662b-5ca1-47cd-9026-735c762c76f6",
                     kana: "hiragana",
                   },
-                  id: "7471119d-82a1-537a-90b2-8779bfd8ff5f",
+                  id: "59a8cae2-ace9-556b-840b-aa7d684ee474",
                   type: "letter",
                 },
               ],
-              id: "67a9f051-ee28-5cd6-a8d5-02c78f0657dd",
+              id: "33a539e5-2df5-5e0e-8bda-9922462df719",
               screen_order: 2,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -2386,13 +2385,13 @@ export const dumpDe = {
                     id: "458fcd0d-1f08-4222-99c7-e17000999ccf",
                     kana: "hiragana",
                   },
-                  id: "0d5b69ea-a30c-534c-bb4f-560d2dfa47c9",
+                  id: "69fbbc54-225d-59f9-ac4f-dd1ac1147921",
                   type: "letter",
                 },
               ],
-              id: "14186a5c-63b3-541f-a5d3-f978493123e2",
+              id: "bea47ada-227d-50de-a841-d56a2d9960a6",
               screen_order: 3,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -2403,13 +2402,13 @@ export const dumpDe = {
                     id: "458fcd0d-1f08-4222-99c7-e17000999ccf",
                     kana: "hiragana",
                   },
-                  id: "d594692e-181b-5b32-898a-8f80e2544405",
+                  id: "849f6b0f-c4f3-5593-9678-bb4bd9cb1406",
                   type: "letter",
                 },
               ],
-              id: "f2b5d5b5-573e-5c6a-89a2-ca356750c4b3",
+              id: "45de35c7-27cb-56ca-b68d-76726966b270",
               screen_order: 4,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -2421,13 +2420,13 @@ export const dumpDe = {
                       ["は", "tr:は"],
                     ],
                   },
-                  id: "b1353d64-df52-5f50-bceb-af13e7b553fb",
+                  id: "c0bb2103-1ad4-52ea-82d2-3c440642ff87",
                   type: "matching",
                 },
               ],
-              id: "3fd77c62-e369-5976-96b4-1d6667baf800",
+              id: "0175c44b-4945-5ba5-a01c-90de7087efc5",
               screen_order: 5,
-              title: "Ordnen Sie 「Hiragana」 seiner Umschrift zu.",
+              title: "Relaciona 「Hiragana」 con su transliteración.",
             },
             {
               blocks: [
@@ -2438,13 +2437,13 @@ export const dumpDe = {
                     id: "6ee7807e-278a-4652-8445-f3062e026891",
                     kana: "hiragana",
                   },
-                  id: "1014f051-6d26-536a-b650-373d377b31b6",
+                  id: "62b80c43-5462-5408-9062-daa8a6e7c585",
                   type: "letter",
                 },
               ],
-              id: "f19e6714-18b0-5989-ad41-f7323b12fae0",
+              id: "82af41cf-0236-5393-929a-9f48c62f2ea1",
               screen_order: 6,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -2455,13 +2454,13 @@ export const dumpDe = {
                     id: "6ee7807e-278a-4652-8445-f3062e026891",
                     kana: "hiragana",
                   },
-                  id: "056fff84-a6de-5d28-b1f8-07765055a0f5",
+                  id: "2d6510bb-6a70-5488-975f-d515b726a4a0",
                   type: "letter",
                 },
               ],
-              id: "9caf157a-ccff-50bd-a303-9a618a4bcb9c",
+              id: "e6ad7c1b-e876-5b17-87c0-471f0a8ab694",
               screen_order: 7,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -2469,9 +2468,9 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Hiragana",
-                    title: "tr:は",
+                    title: "tr:ふ",
                   },
-                  id: "09bc58e4-e22e-5430-8d8c-595a17a27c8b",
+                  id: "b1a35f69-b94f-5230-8a3c-347d42dfaf77",
                   type: "title",
                 },
                 {
@@ -2480,7 +2479,7 @@ export const dumpDe = {
                     answers: [
                       {
                         isTrue: true,
-                        title: "は",
+                        title: "ふ",
                       },
                       {
                         isTrue: false,
@@ -2488,17 +2487,17 @@ export const dumpDe = {
                       },
                       {
                         isTrue: false,
-                        title: "ふ",
+                        title: "は",
                       },
                     ],
                   },
-                  id: "c80484f6-96f4-5b03-90a6-f72448830a1c",
+                  id: "cc37c6e6-afdc-5a29-a6a7-fc2471d01669",
                   type: "choice",
                 },
               ],
-              id: "06385ce8-c14e-58fa-9cb7-b3b707bd738d",
+              id: "93ebb5c9-e2cd-54d9-bdd3-103fe7ba595a",
               screen_order: 8,
-              title: "Wählen Sie die Silbe aus.",
+              title: "Selecciona la sílaba.",
             },
             {
               blocks: [
@@ -2510,13 +2509,13 @@ export const dumpDe = {
                       ["ひ", "tr:ひ"],
                     ],
                   },
-                  id: "a87c349f-fc3b-5dbb-b924-25461ef67d93",
+                  id: "ed91e38a-41a3-5b37-8a07-3416bf9fb462",
                   type: "matching",
                 },
               ],
-              id: "6fa2b076-fa16-563c-a9c1-ef01996d7c46",
+              id: "6682c0dd-3545-5ce2-b99a-3cec47d9c8a4",
               screen_order: 9,
-              title: "Ordnen Sie 「Hiragana」 seiner Umschrift zu.",
+              title: "Relaciona 「Hiragana」 con su transliteración.",
             },
             {
               blocks: [
@@ -2527,13 +2526,13 @@ export const dumpDe = {
                     id: "1014abd7-deb5-4c6b-a1dc-27543817c9fe",
                     kana: "hiragana",
                   },
-                  id: "1bddfe6a-0868-58b4-be64-7f1973e0205c",
+                  id: "4573ed77-6d28-564e-b20c-dec792ca5513",
                   type: "letter",
                 },
               ],
-              id: "30812070-85a9-5612-a7c2-548d42608a5a",
+              id: "6aa18fee-d34f-549a-8b9b-6c5de214b52c",
               screen_order: 10,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -2544,13 +2543,13 @@ export const dumpDe = {
                     id: "1014abd7-deb5-4c6b-a1dc-27543817c9fe",
                     kana: "hiragana",
                   },
-                  id: "82a4f369-cc1f-58d0-a43f-ac6c1cd1c5ae",
+                  id: "25c1c5d2-d107-5aa6-873c-36b66cf14c86",
                   type: "letter",
                 },
               ],
-              id: "e1024ec8-7974-59fa-ae2c-008bafcc8e2b",
+              id: "1e7bde69-591c-5e87-92ab-e4cd16200b7d",
               screen_order: 11,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -2562,13 +2561,13 @@ export const dumpDe = {
                       ["ふ", "tr:ふ"],
                     ],
                   },
-                  id: "2393fe95-7f36-517e-a5cf-39a5b50bab1d",
+                  id: "622bb4f0-81b9-52d1-af71-4c61b0dcad83",
                   type: "matching",
                 },
               ],
-              id: "1abd899b-2b77-534a-b0cb-ba76931eb67e",
+              id: "fec57287-dec7-5912-a4a1-9a699d499170",
               screen_order: 12,
-              title: "Ordnen Sie 「Hiragana」 seiner Umschrift zu.",
+              title: "Relaciona 「Hiragana」 con su transliteración.",
             },
             {
               blocks: [
@@ -2579,13 +2578,13 @@ export const dumpDe = {
                     id: "d80bf13e-66cd-4cf9-93e7-09cb2f435ead",
                     kana: "hiragana",
                   },
-                  id: "bff7e8a6-df4b-558e-868b-f211ef7b25dc",
+                  id: "8379e262-da6b-5bf4-9dee-229667b8a514",
                   type: "letter",
                 },
               ],
-              id: "ae67a5d5-30f1-5ec9-bf7d-6e8c2fed341a",
+              id: "bfa10368-ed40-5ab9-82f7-651158ecba5d",
               screen_order: 13,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -2596,13 +2595,13 @@ export const dumpDe = {
                     id: "d80bf13e-66cd-4cf9-93e7-09cb2f435ead",
                     kana: "hiragana",
                   },
-                  id: "874b3ce0-6202-55ba-a6ab-08854d243df2",
+                  id: "319c1d84-3a89-5bf2-93b2-f7e6b409f7ef",
                   type: "letter",
                 },
               ],
-              id: "4d4d4e29-f51a-5a77-9d0e-ef98e4a7a0ec",
+              id: "5b9b25e7-0695-5f41-8561-d14158379e78",
               screen_order: 14,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -2610,9 +2609,9 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Hiragana",
-                    title: "tr:は",
+                    title: "tr:へ",
                   },
-                  id: "a41db536-b891-5647-9e69-ffd330719236",
+                  id: "f2997e6e-9a2b-5cf4-8006-41ecf50c9ecf",
                   type: "title",
                 },
                 {
@@ -2621,25 +2620,25 @@ export const dumpDe = {
                     answers: [
                       {
                         isTrue: false,
-                        title: "へ",
-                      },
-                      {
-                        isTrue: true,
                         title: "は",
                       },
                       {
                         isTrue: false,
-                        title: "ほ",
+                        title: "ひ",
+                      },
+                      {
+                        isTrue: true,
+                        title: "へ",
                       },
                     ],
                   },
-                  id: "23ebdcad-507b-5e00-aa39-cfd7441fe96c",
+                  id: "72e2726c-bca9-5769-963a-f909126197dd",
                   type: "choice",
                 },
               ],
-              id: "276603da-4d85-520c-ba45-15ce8661e9f7",
+              id: "f2d41a58-6b17-5f93-8e4a-72583545b31b",
               screen_order: 15,
-              title: "Wählen Sie die Silbe aus.",
+              title: "Selecciona la sílaba.",
             },
             {
               blocks: [
@@ -2647,9 +2646,9 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Hiragana",
-                    title: "ひ, ふ, へ, ほ, は",
+                    title: "ひ, ふ, は, ほ, へ",
                   },
-                  id: "91ec6b1c-d536-5ed6-a4fd-31944462e868",
+                  id: "107304dd-11f6-5f71-bfc3-288a2fd74617",
                   type: "title",
                 },
                 {
@@ -2657,22 +2656,22 @@ export const dumpDe = {
                   content: {
                     answers: [
                       {
-                        isTrue: true,
-                        title: "tr:ひ, tr:ふ, tr:へ, tr:ほ, tr:は",
+                        isTrue: false,
+                        title: "tr:ひ, tr:へ, tr:は, tr:ほ, tr:ふ",
                       },
                       {
-                        isTrue: false,
-                        title: "tr:ひ, tr:は, tr:ふ, tr:へ, tr:ほ",
+                        isTrue: true,
+                        title: "tr:ひ, tr:ふ, tr:は, tr:ほ, tr:へ",
                       },
                     ],
                   },
-                  id: "ffb88a20-0e8d-5617-8416-b6e4d7d1bd5e",
+                  id: "9d9fd9cc-e53a-58ef-bd2a-32408a8fe0e7",
                   type: "choice",
                 },
               ],
-              id: "36b34ddb-595c-5549-8687-633962eb98cf",
+              id: "cde45c68-e7eb-5631-bdb0-b4761efb9df8",
               screen_order: 16,
-              title: "Wählen Sie die richtige Reihenfolge.",
+              title: "Elige la secuencia correcta.",
             },
             {
               blocks: [
@@ -2680,9 +2679,9 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Hiragana",
-                    title: "ふ, ほ, へ, ひ, は",
+                    title: "へ, ほ, は, ひ, ふ",
                   },
-                  id: "d7c2cba8-7f72-5138-b7e9-a9ea26951329",
+                  id: "9a3ff922-0111-523d-b82f-7bbe7cb83373",
                   type: "title",
                 },
                 {
@@ -2690,22 +2689,22 @@ export const dumpDe = {
                   content: {
                     answers: [
                       {
-                        isTrue: false,
-                        title: "tr:ほ, tr:ひ, tr:ふ, tr:へ, tr:は",
+                        isTrue: true,
+                        title: "tr:へ, tr:ほ, tr:は, tr:ひ, tr:ふ",
                       },
                       {
-                        isTrue: true,
-                        title: "tr:ふ, tr:ほ, tr:へ, tr:ひ, tr:は",
+                        isTrue: false,
+                        title: "tr:ふ, tr:ひ, tr:ほ, tr:は, tr:へ",
                       },
                     ],
                   },
-                  id: "8d621e4a-6a08-5f25-9390-51f5e424aa27",
+                  id: "3b11839d-38bc-5bcd-b673-dfe4fbc439a3",
                   type: "choice",
                 },
               ],
-              id: "96230f5e-7cf5-56e0-a522-a73cd1dbca87",
+              id: "38489935-cf20-51fa-b74f-875673afdc67",
               screen_order: 17,
-              title: "Wählen Sie die richtige Reihenfolge.",
+              title: "Elige la secuencia correcta.",
             },
             {
               blocks: [
@@ -2713,23 +2712,23 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Hiragana",
-                    title: "tr:へ, tr:ふ, tr:は, tr:ひ, tr:ほ",
+                    title: "tr:は, tr:ふ, tr:ひ, tr:ほ, tr:へ",
                   },
-                  id: "8d304552-c1e2-5953-8cb2-9191eaee3c66",
+                  id: "632cba57-3c9a-52b7-b3ed-f681c0a12ad3",
                   type: "title",
                 },
                 {
                   block_order: 2,
                   content: {
-                    sequence: ["へ", "ふ", "は", "ひ", "ほ"],
+                    sequence: ["は", "ふ", "ひ", "ほ", "へ"],
                   },
-                  id: "02c2b910-f42b-5e7f-8e9e-2405bdf80315",
+                  id: "f596a15e-2380-5bde-a4a7-9b2d4ded4023",
                   type: "sequence",
                 },
               ],
-              id: "6bc2b4ba-eeb5-590e-a69d-61548450b656",
+              id: "e2b94704-84ba-5624-bceb-0d3971dfecdc",
               screen_order: 18,
-              title: "Ordnen Sie die Silben in der richtigen Reihenfolge an.",
+              title: "Acomoda las sílabas en el orden correcto.",
             },
             {
               blocks: [
@@ -2737,35 +2736,35 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Hiragana",
-                    title: "tr:へ, tr:ほ, tr:は, tr:ひ, tr:ふ",
+                    title: "tr:ふ, tr:へ, tr:ひ, tr:は, tr:ほ",
                   },
-                  id: "739729cc-7985-5bda-b092-385d4f44554f",
+                  id: "67b6d1e0-d12d-5b43-b6cc-7b4a51eb856d",
                   type: "title",
                 },
                 {
                   block_order: 2,
                   content: {
-                    sequence: ["へ", "ほ", "は", "ひ", "ふ"],
+                    sequence: ["ふ", "へ", "ひ", "は", "ほ"],
                   },
-                  id: "38fd978f-b4f7-5fb4-9258-5a2863164088",
+                  id: "ba1e02b7-0609-532f-ba50-04571274dce1",
                   type: "sequence",
                 },
               ],
-              id: "4e462376-8897-58ee-a4ee-ec0fb222b53d",
+              id: "bc93f0ae-b8eb-523c-87a4-d24a6d496502",
               screen_order: 19,
-              title: "Ordnen Sie die Silben in der richtigen Reihenfolge an.",
+              title: "Acomoda las sílabas en el orden correcto.",
             },
           ],
-          subtitle: "Silben: は、ひ、ふ、へ、ほ",
-          title: "Lektion 6",
-          topic_id: "5e31453c-3b85-4baa-9581-2771d7dc0ead",
+          subtitle: "Sílabas: は、ひ、ふ、へ、ほ",
+          title: "Lección 6",
+          topic_id: "18d4916c-1ccf-4cc9-bb2b-9188cdfe601e",
         },
         {
-          expanded_subtitle: "Lernen Sie, die Silben in der Reihe tr:ま zu lesen und zu schreiben.",
+          expanded_subtitle: "Aprende a leer y escribir las sílabas del renglón tr:ま.",
           expanded_title: "Hiragana: tr:ま, tr:み, tr:む, tr:め, tr:も",
           icon: "https://nihongo.khvat.app/chapter1/Lesson7.jpg",
-          id: "dd257e1c-0177-4d2b-9b5d-ba127ac8ddb7",
-          last_updated: "2026-09-08T13:12:15.999Z",
+          id: "44f7aa6b-ced8-40a7-bf62-b33dcb46113d",
+          last_updated: "2026-09-08T13:12:16.024Z",
           lesson_key: "alphabet/hiragana&ma",
           lesson_order: 8,
           minimum_version: "2.4.1",
@@ -2779,13 +2778,13 @@ export const dumpDe = {
                     id: "827078b5-74f9-499b-a523-0fea2020a5af",
                     kana: "hiragana",
                   },
-                  id: "de125709-fd6c-5e6d-b415-47681604db76",
+                  id: "7fec1991-c15c-5661-bf4a-ab05f9263237",
                   type: "letter",
                 },
               ],
-              id: "e3b8fb37-c3a7-53c9-8673-eaf1920dcd27",
+              id: "d2e24811-45b9-58b3-9233-555385586991",
               screen_order: 1,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -2796,13 +2795,13 @@ export const dumpDe = {
                     id: "827078b5-74f9-499b-a523-0fea2020a5af",
                     kana: "hiragana",
                   },
-                  id: "fe5738e8-2fb3-580b-9d63-11ca276f0232",
+                  id: "0cae69dc-ecb2-50d5-8c37-fb9dbde79da2",
                   type: "letter",
                 },
               ],
-              id: "a186eeb2-9a7e-5be7-8d71-36025b91d8a8",
+              id: "332d08bf-b29e-5eb9-8428-1fec0324cb41",
               screen_order: 2,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -2813,13 +2812,13 @@ export const dumpDe = {
                     id: "b131b9f3-d6fd-48e6-b0cc-32831ea4b3f9",
                     kana: "hiragana",
                   },
-                  id: "ef6e9b33-71dc-5c49-8fea-776d87736134",
+                  id: "d7261ada-665b-5670-9201-18281a5b537b",
                   type: "letter",
                 },
               ],
-              id: "2edf42c3-d62e-590e-8a05-bb01db058943",
+              id: "7ca2040c-5b9f-58d5-be6e-0d1f7cc367fe",
               screen_order: 3,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -2830,13 +2829,13 @@ export const dumpDe = {
                     id: "b131b9f3-d6fd-48e6-b0cc-32831ea4b3f9",
                     kana: "hiragana",
                   },
-                  id: "cb61b5e3-318f-55e7-b257-fd9bae2176bb",
+                  id: "f0d51dc1-a365-54a7-afa9-728cb89bc3a6",
                   type: "letter",
                 },
               ],
-              id: "2b86c9a9-83ae-5c9d-95a9-e861575ed834",
+              id: "660fd331-5b79-5303-ac3f-9f0a51db73c0",
               screen_order: 4,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -2848,13 +2847,13 @@ export const dumpDe = {
                       ["ま", "tr:ま"],
                     ],
                   },
-                  id: "27468efb-ccb3-5c66-905f-df29aa0de87b",
+                  id: "07322bb5-2bd2-5494-be57-2546b7bebdca",
                   type: "matching",
                 },
               ],
-              id: "30d0db3b-a63a-5fa4-8cc3-4210fed8cd29",
+              id: "7773f38d-8c03-58b1-8904-18d7145a48f4",
               screen_order: 5,
-              title: "Ordnen Sie 「Hiragana」 seiner Umschrift zu.",
+              title: "Relaciona 「Hiragana」 con su transliteración.",
             },
             {
               blocks: [
@@ -2865,13 +2864,13 @@ export const dumpDe = {
                     id: "4d81e8f2-0e6b-475f-bd08-c6b03d20ae69",
                     kana: "hiragana",
                   },
-                  id: "28ecbf4c-0763-5d4a-ac39-df1837f1b209",
+                  id: "bfef7e39-c44a-5c3e-8627-b8e9476bcdb3",
                   type: "letter",
                 },
               ],
-              id: "72202fb6-afe5-5915-b23f-bf491208d592",
+              id: "11b214ff-f153-53fe-b200-a4e9080ef9cc",
               screen_order: 6,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -2882,13 +2881,13 @@ export const dumpDe = {
                     id: "4d81e8f2-0e6b-475f-bd08-c6b03d20ae69",
                     kana: "hiragana",
                   },
-                  id: "af8a67b1-bc01-52b4-9f11-067512d8d3fc",
+                  id: "3cec35d7-130b-5431-a6b7-732bf0ac3eec",
                   type: "letter",
                 },
               ],
-              id: "d2260057-65cd-54e4-8251-725bb4be744c",
+              id: "7581fc36-0f2b-523e-88c1-775634902f02",
               screen_order: 7,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -2898,7 +2897,7 @@ export const dumpDe = {
                     sub_title: "Hiragana",
                     title: "tr:む",
                   },
-                  id: "cc907cef-237b-5888-9303-d9f858b800f8",
+                  id: "644068cf-0a2e-52cf-b9e4-2af2132f532b",
                   type: "title",
                 },
                 {
@@ -2907,25 +2906,25 @@ export const dumpDe = {
                     answers: [
                       {
                         isTrue: false,
+                        title: "ま",
+                      },
+                      {
+                        isTrue: false,
                         title: "み",
                       },
                       {
                         isTrue: true,
                         title: "む",
                       },
-                      {
-                        isTrue: false,
-                        title: "ま",
-                      },
                     ],
                   },
-                  id: "672f2efd-e477-50ec-b720-cfe14f8580c2",
+                  id: "51ebdcf2-dfea-534c-ae1d-ba769416c018",
                   type: "choice",
                 },
               ],
-              id: "0535284f-29ce-59e5-bce5-8cc02dd7aa8f",
+              id: "4a03b419-b6da-5e9d-9f88-c7066a600b5d",
               screen_order: 8,
-              title: "Wählen Sie die Silbe aus.",
+              title: "Selecciona la sílaba.",
             },
             {
               blocks: [
@@ -2937,13 +2936,13 @@ export const dumpDe = {
                       ["み", "tr:み"],
                     ],
                   },
-                  id: "ef078367-9ccf-5fe8-8037-b4050ad9ceb3",
+                  id: "444e54d2-044a-5ff4-90d7-d7ebf3a07005",
                   type: "matching",
                 },
               ],
-              id: "6448344c-25a6-511b-aeb1-1f234526414f",
+              id: "f4a43de4-4d93-5b5d-9a1a-4d55ef451153",
               screen_order: 9,
-              title: "Ordnen Sie 「Hiragana」 seiner Umschrift zu.",
+              title: "Relaciona 「Hiragana」 con su transliteración.",
             },
             {
               blocks: [
@@ -2954,13 +2953,13 @@ export const dumpDe = {
                     id: "3037e1df-8072-4273-abf1-664b500613af",
                     kana: "hiragana",
                   },
-                  id: "aaae8009-0f69-56bd-9550-ff6fe5e15957",
+                  id: "78d29ea7-06db-587c-8c9c-22928fe80681",
                   type: "letter",
                 },
               ],
-              id: "38ea13ab-4641-5be3-8f37-9420ba745f38",
+              id: "b6d50f1f-0c59-5ee2-9098-45bc23b279d8",
               screen_order: 10,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -2971,13 +2970,13 @@ export const dumpDe = {
                     id: "3037e1df-8072-4273-abf1-664b500613af",
                     kana: "hiragana",
                   },
-                  id: "5ff3605b-a43b-5661-a5db-03c969a26071",
+                  id: "ffc1f0a8-17d4-580b-9bb6-cfd975a1493e",
                   type: "letter",
                 },
               ],
-              id: "13c5a5fe-eeae-5ca1-95a1-99a8b3df738d",
+              id: "05688aa7-9314-50ed-9421-bc8820a3e65d",
               screen_order: 11,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -2989,13 +2988,13 @@ export const dumpDe = {
                       ["む", "tr:む"],
                     ],
                   },
-                  id: "d9cae9e2-44b0-5b37-a353-da91bff11064",
+                  id: "5061224c-ccf4-5040-949b-334cdf8e43ee",
                   type: "matching",
                 },
               ],
-              id: "985fe52f-2986-588c-86f0-b7aa6eb59a56",
+              id: "39963c32-541c-501b-8077-64a993905c9a",
               screen_order: 12,
-              title: "Ordnen Sie 「Hiragana」 seiner Umschrift zu.",
+              title: "Relaciona 「Hiragana」 con su transliteración.",
             },
             {
               blocks: [
@@ -3006,13 +3005,13 @@ export const dumpDe = {
                     id: "54a8b634-b713-4652-957e-fffa3b3319cc",
                     kana: "hiragana",
                   },
-                  id: "aeffbec1-cac6-5425-a05d-e1a2b1c304df",
+                  id: "4093ce1e-dd6e-55af-be7b-e463f6c68ef1",
                   type: "letter",
                 },
               ],
-              id: "f09fe612-9200-58df-80ce-57550f90cfe8",
+              id: "763e2772-9af4-58a1-b18c-d97784ae6061",
               screen_order: 13,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -3023,13 +3022,13 @@ export const dumpDe = {
                     id: "54a8b634-b713-4652-957e-fffa3b3319cc",
                     kana: "hiragana",
                   },
-                  id: "30375594-bc31-52ce-b0d4-f3ca7112e16b",
+                  id: "a249bbb4-beeb-54ee-81d6-3c3528ec470a",
                   type: "letter",
                 },
               ],
-              id: "51f6bf2b-e1b4-592e-9d40-69e4f063de77",
+              id: "46442202-936c-5a03-96ad-fb34c16610c0",
               screen_order: 14,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -3037,9 +3036,9 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Hiragana",
-                    title: "tr:も",
+                    title: "tr:む",
                   },
-                  id: "7fda2171-1e13-5418-afb9-d95c7c47f69a",
+                  id: "a046c662-bcd2-50f0-8a0a-5de550816d31",
                   type: "title",
                 },
                 {
@@ -3047,26 +3046,26 @@ export const dumpDe = {
                   content: {
                     answers: [
                       {
-                        isTrue: false,
-                        title: "む",
-                      },
-                      {
                         isTrue: true,
-                        title: "も",
+                        title: "む",
                       },
                       {
                         isTrue: false,
                         title: "み",
                       },
+                      {
+                        isTrue: false,
+                        title: "も",
+                      },
                     ],
                   },
-                  id: "0ee5a08f-b1a1-59e3-8731-4a75a008bfdd",
+                  id: "d86502fa-f806-5e9f-bbcb-74e98777819e",
                   type: "choice",
                 },
               ],
-              id: "5aa248d8-7c2d-5a2e-a3c0-a54ec3fa949f",
+              id: "adb4f405-9a1c-54ef-a348-9fe0e861b8f2",
               screen_order: 15,
-              title: "Wählen Sie die Silbe aus.",
+              title: "Selecciona la sílaba.",
             },
             {
               blocks: [
@@ -3074,9 +3073,9 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Hiragana",
-                    title: "み, む, も, め, ま",
+                    title: "も, め, む, み, ま",
                   },
-                  id: "3575fedd-608b-5323-923a-e3b606d966f7",
+                  id: "037bbfe7-718e-51d0-b6d9-07395c0de86c",
                   type: "title",
                 },
                 {
@@ -3084,22 +3083,22 @@ export const dumpDe = {
                   content: {
                     answers: [
                       {
-                        isTrue: true,
-                        title: "tr:み, tr:む, tr:も, tr:め, tr:ま",
+                        isTrue: false,
+                        title: "tr:む, tr:も, tr:め, tr:ま, tr:み",
                       },
                       {
-                        isTrue: false,
-                        title: "tr:も, tr:め, tr:ま, tr:む, tr:み",
+                        isTrue: true,
+                        title: "tr:も, tr:め, tr:む, tr:み, tr:ま",
                       },
                     ],
                   },
-                  id: "2f21bbda-6bf7-5e70-aca4-af5689017e8f",
+                  id: "da7eb71b-d1c3-5bee-9336-ac533c071324",
                   type: "choice",
                 },
               ],
-              id: "33c820ef-d82a-5944-a003-e0a8a89f82f6",
+              id: "5c958d71-c6c0-554e-be55-9eeaad42781f",
               screen_order: 16,
-              title: "Wählen Sie die richtige Reihenfolge.",
+              title: "Elige la secuencia correcta.",
             },
             {
               blocks: [
@@ -3107,9 +3106,9 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Hiragana",
-                    title: "み, む, ま, め, も",
+                    title: "め, も, み, む, ま",
                   },
-                  id: "00257dbd-4bf9-553e-bc87-ac51a0148f31",
+                  id: "f46fb71e-f3fc-5d98-adbd-74c8c2198b63",
                   type: "title",
                 },
                 {
@@ -3117,22 +3116,22 @@ export const dumpDe = {
                   content: {
                     answers: [
                       {
-                        isTrue: false,
-                        title: "tr:み, tr:む, tr:め, tr:ま, tr:も",
+                        isTrue: true,
+                        title: "tr:め, tr:も, tr:み, tr:む, tr:ま",
                       },
                       {
-                        isTrue: true,
-                        title: "tr:み, tr:む, tr:ま, tr:め, tr:も",
+                        isTrue: false,
+                        title: "tr:も, tr:む, tr:ま, tr:み, tr:め",
                       },
                     ],
                   },
-                  id: "f5722f1f-9798-55b5-b769-d3b35578507a",
+                  id: "049fbc3d-03f7-5563-b26d-1e2b299efb4f",
                   type: "choice",
                 },
               ],
-              id: "3bdc24fe-bcfb-5025-a555-a24d0c340e1c",
+              id: "158ee041-e166-5c8b-b775-df103fed0162",
               screen_order: 17,
-              title: "Wählen Sie die richtige Reihenfolge.",
+              title: "Elige la secuencia correcta.",
             },
             {
               blocks: [
@@ -3140,23 +3139,23 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Hiragana",
-                    title: "tr:め, tr:も, tr:ま, tr:む, tr:み",
+                    title: "tr:み, tr:め, tr:む, tr:ま, tr:も",
                   },
-                  id: "89cce6d4-d036-56fd-9c73-595134b53b42",
+                  id: "36b6ff9f-ddb2-5871-b5a6-a62826604c83",
                   type: "title",
                 },
                 {
                   block_order: 2,
                   content: {
-                    sequence: ["め", "も", "ま", "む", "み"],
+                    sequence: ["み", "め", "む", "ま", "も"],
                   },
-                  id: "ad749645-1774-5a91-b264-9a92e48e9891",
+                  id: "21d04102-dfc4-50df-917f-795462cf2bf6",
                   type: "sequence",
                 },
               ],
-              id: "5a5cae61-8815-59f4-b0ff-af9a8131f2c7",
+              id: "9f014b16-0f41-5082-bfb2-7ac15db3dc52",
               screen_order: 18,
-              title: "Ordnen Sie die Silben in der richtigen Reihenfolge an.",
+              title: "Acomoda las sílabas en el orden correcto.",
             },
             {
               blocks: [
@@ -3166,7 +3165,7 @@ export const dumpDe = {
                     sub_title: "Hiragana",
                     title: "tr:む, tr:め, tr:み, tr:ま, tr:も",
                   },
-                  id: "b5f87140-db6d-5d61-84df-a1c4a4c2f180",
+                  id: "f71b1dce-0783-5055-b99b-b82099fb79ed",
                   type: "title",
                 },
                 {
@@ -3174,25 +3173,25 @@ export const dumpDe = {
                   content: {
                     sequence: ["む", "め", "み", "ま", "も"],
                   },
-                  id: "ba021341-bc7c-5834-984f-efaf687978b1",
+                  id: "618563de-2b21-52bb-b2c9-1dbc673f0919",
                   type: "sequence",
                 },
               ],
-              id: "bebdfd3d-462d-572e-8a4f-00e97d66697e",
+              id: "90fd1ba5-3c6a-5704-8b97-9ac22c682282",
               screen_order: 19,
-              title: "Ordnen Sie die Silben in der richtigen Reihenfolge an.",
+              title: "Acomoda las sílabas en el orden correcto.",
             },
           ],
-          subtitle: "Silben: ま、み、む、め、も",
-          title: "Lektion 7",
-          topic_id: "5e31453c-3b85-4baa-9581-2771d7dc0ead",
+          subtitle: "Sílabas: ま、み、む、め、も",
+          title: "Lección 7",
+          topic_id: "18d4916c-1ccf-4cc9-bb2b-9188cdfe601e",
         },
         {
-          expanded_subtitle: "Lernen Sie, die Silben in der Reihe tr:や zu lesen und zu schreiben.",
+          expanded_subtitle: "Aprende a leer y escribir las sílabas del renglón tr:や.",
           expanded_title: "Hiragana: tr:や, tr:ゆ, tr:よ",
           icon: "https://nihongo.khvat.app/chapter1/Lesson9.jpg",
-          id: "e0511979-6635-41d9-b1e5-deccc81e5b52",
-          last_updated: "2026-09-08T13:12:16Z",
+          id: "0a3a502f-979c-4ed1-a6b0-d5c08e570113",
+          last_updated: "2026-09-08T13:12:16.024Z",
           lesson_key: "alphabet/hiragana&ya",
           lesson_order: 9,
           minimum_version: "2.4.1",
@@ -3206,13 +3205,13 @@ export const dumpDe = {
                     id: "9e4e7b1b-2b3c-467d-8c24-be83a4ae5a89",
                     kana: "hiragana",
                   },
-                  id: "91fac595-e51e-5540-9646-91095d2dea6a",
+                  id: "9f34cca6-0c71-589e-a532-58b76dfd9d68",
                   type: "letter",
                 },
               ],
-              id: "4c9d4f4e-86e9-59f8-880e-e7d918435b15",
+              id: "7eaba409-9b23-5c65-afd7-5bfeb038f5e8",
               screen_order: 1,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -3223,13 +3222,13 @@ export const dumpDe = {
                     id: "9e4e7b1b-2b3c-467d-8c24-be83a4ae5a89",
                     kana: "hiragana",
                   },
-                  id: "68e0f2ef-5de5-51dd-b37f-bd25be3995a3",
+                  id: "78c1ffc3-f55d-5662-a693-98facb05f287",
                   type: "letter",
                 },
               ],
-              id: "d0ac80ec-b41d-5be2-8d82-784d988e4432",
+              id: "93998e5a-6330-50cc-b21d-9f2cba698f3f",
               screen_order: 2,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -3240,13 +3239,13 @@ export const dumpDe = {
                     id: "e3c281bb-31aa-4fab-8b83-1daca7c6bdd5",
                     kana: "hiragana",
                   },
-                  id: "aa341879-9c18-54ed-915d-7cbb8b4fc2b7",
+                  id: "fe95b4d3-7031-5d3c-98ca-5e913b8bf1d2",
                   type: "letter",
                 },
               ],
-              id: "20c22ec0-f17e-54fe-a47e-cfb8ab708fde",
+              id: "0c98935b-0dc9-5398-8515-f072bd323003",
               screen_order: 3,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -3257,13 +3256,13 @@ export const dumpDe = {
                     id: "e3c281bb-31aa-4fab-8b83-1daca7c6bdd5",
                     kana: "hiragana",
                   },
-                  id: "dbc4ee0c-0dff-56ac-9a46-d9e082b8c72f",
+                  id: "c547aea9-36c5-5aef-bee2-51525d827afd",
                   type: "letter",
                 },
               ],
-              id: "2a507b55-ad36-518a-87fb-10ecb4f1c463",
+              id: "ce711565-43c3-51ba-8dee-490d4860c18b",
               screen_order: 4,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -3275,13 +3274,13 @@ export const dumpDe = {
                       ["や", "tr:や"],
                     ],
                   },
-                  id: "595ff21e-c84b-587e-ab48-661170fc539c",
+                  id: "e4f0f45f-5da3-57ad-b401-f2f6a231e20d",
                   type: "matching",
                 },
               ],
-              id: "031d2723-67a7-55aa-88e5-ec17674401c2",
+              id: "91173dd5-f752-51e2-bc1f-9743c825cc84",
               screen_order: 5,
-              title: "Ordnen Sie 「Hiragana」 seiner Umschrift zu.",
+              title: "Relaciona 「Hiragana」 con su transliteración.",
             },
             {
               blocks: [
@@ -3292,13 +3291,13 @@ export const dumpDe = {
                     id: "5b7da1eb-3e8c-418f-bcb5-ea8551c77706",
                     kana: "hiragana",
                   },
-                  id: "4e02b120-6b9a-52ae-a371-d189bd520fba",
+                  id: "ae7d95ca-1433-5735-8e54-018da5fbb93c",
                   type: "letter",
                 },
               ],
-              id: "e496836a-7564-536d-a342-3eb32372ca6c",
+              id: "08e8026a-9ad4-5603-bd18-85b6cefa7233",
               screen_order: 6,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -3309,13 +3308,13 @@ export const dumpDe = {
                     id: "5b7da1eb-3e8c-418f-bcb5-ea8551c77706",
                     kana: "hiragana",
                   },
-                  id: "4527ae2b-b159-5769-9d05-660df8378dfe",
+                  id: "9df50c63-acab-531e-a45c-cd22cf21348e",
                   type: "letter",
                 },
               ],
-              id: "4f301547-8ff7-5124-acc3-ae724dd1e9c1",
+              id: "37ab2d71-dc47-5946-b41c-f6a02ee443cb",
               screen_order: 7,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -3323,9 +3322,9 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Hiragana",
-                    title: "tr:よ",
+                    title: "tr:ゆ",
                   },
-                  id: "1b51c7f7-008d-59ea-83f8-5c9cf08364f3",
+                  id: "db7255c3-40f5-5bab-947e-e7e231239b31",
                   type: "title",
                 },
                 {
@@ -3334,7 +3333,7 @@ export const dumpDe = {
                     answers: [
                       {
                         isTrue: false,
-                        title: "ゆ",
+                        title: "よ",
                       },
                       {
                         isTrue: false,
@@ -3342,17 +3341,17 @@ export const dumpDe = {
                       },
                       {
                         isTrue: true,
-                        title: "よ",
+                        title: "ゆ",
                       },
                     ],
                   },
-                  id: "a40afede-e76c-588b-ab28-9b080c2f0a21",
+                  id: "bcdb1532-73c7-569e-a955-cdd640542f03",
                   type: "choice",
                 },
               ],
-              id: "e06e4e24-585b-572b-8c4e-48cef72b1a3e",
+              id: "9b106bc9-7de4-5663-a82d-1d14a6f63914",
               screen_order: 8,
-              title: "Wählen Sie die Silbe aus.",
+              title: "Selecciona la sílaba.",
             },
             {
               blocks: [
@@ -3364,13 +3363,13 @@ export const dumpDe = {
                       ["ゆ", "tr:ゆ"],
                     ],
                   },
-                  id: "6195e6f7-c679-5908-926d-67f25a743753",
+                  id: "43d08b05-ac24-5170-83db-3af2c6c66982",
                   type: "matching",
                 },
               ],
-              id: "877d457a-0236-5e14-a5cd-f4083a8f5242",
+              id: "604e5004-09fe-5b6b-b28a-a545b4be5658",
               screen_order: 9,
-              title: "Ordnen Sie 「Hiragana」 seiner Umschrift zu.",
+              title: "Relaciona 「Hiragana」 con su transliteración.",
             },
             {
               blocks: [
@@ -3378,9 +3377,46 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Hiragana",
-                    title: "tr:よ",
+                    title: "tr:ゆ",
                   },
-                  id: "f6ff99b1-53c8-5c66-968a-d5a8bc24d625",
+                  id: "18d08f29-17f7-53f6-8cc8-046e20152e72",
+                  type: "title",
+                },
+                {
+                  block_order: 2,
+                  content: {
+                    answers: [
+                      {
+                        isTrue: true,
+                        title: "ゆ",
+                      },
+                      {
+                        isTrue: false,
+                        title: "や",
+                      },
+                      {
+                        isTrue: false,
+                        title: "よ",
+                      },
+                    ],
+                  },
+                  id: "de7a0475-c032-594c-a0fc-aae874cec4da",
+                  type: "choice",
+                },
+              ],
+              id: "3ff76628-5a4d-5296-9aeb-5c8afef6e874",
+              screen_order: 10,
+              title: "Selecciona la sílaba.",
+            },
+            {
+              blocks: [
+                {
+                  block_order: 1,
+                  content: {
+                    sub_title: "Hiragana",
+                    title: "や, ゆ, よ",
+                  },
+                  id: "896f8e6e-c541-572c-a610-5bc7cc49fe6c",
                   type: "title",
                 },
                 {
@@ -3389,25 +3425,21 @@ export const dumpDe = {
                     answers: [
                       {
                         isTrue: false,
-                        title: "ゆ",
-                      },
-                      {
-                        isTrue: false,
-                        title: "や",
+                        title: "tr:や, tr:よ, tr:ゆ",
                       },
                       {
                         isTrue: true,
-                        title: "よ",
+                        title: "tr:や, tr:ゆ, tr:よ",
                       },
                     ],
                   },
-                  id: "183189d8-2f9c-5f93-8cc1-ad97d52bb998",
+                  id: "42a3789b-1926-5562-b955-73f12d4c02d6",
                   type: "choice",
                 },
               ],
-              id: "8de42a32-59f2-59f2-8388-391244bcf465",
-              screen_order: 10,
-              title: "Wählen Sie die Silbe aus.",
+              id: "c64c4e1c-bfc3-5705-ae01-e5848fe8ec19",
+              screen_order: 11,
+              title: "Elige la secuencia correcta.",
             },
             {
               blocks: [
@@ -3417,63 +3449,30 @@ export const dumpDe = {
                     sub_title: "Hiragana",
                     title: "よ, ゆ, や",
                   },
-                  id: "d7457c7c-bf73-54c0-bce2-e871c6d0499a",
+                  id: "97a669c3-3bf1-5eaf-9ea1-07a26f6f6c06",
                   type: "title",
                 },
                 {
                   block_order: 2,
                   content: {
                     answers: [
-                      {
-                        isTrue: false,
-                        title: "tr:や, tr:ゆ, tr:よ",
-                      },
                       {
                         isTrue: true,
                         title: "tr:よ, tr:ゆ, tr:や",
                       },
-                    ],
-                  },
-                  id: "b08c5209-43d4-515c-897c-14bdb3fef490",
-                  type: "choice",
-                },
-              ],
-              id: "ab4895c5-ee3e-52c7-a6a6-faa0ddb6894f",
-              screen_order: 11,
-              title: "Wählen Sie die richtige Reihenfolge.",
-            },
-            {
-              blocks: [
-                {
-                  block_order: 1,
-                  content: {
-                    sub_title: "Hiragana",
-                    title: "や, よ, ゆ",
-                  },
-                  id: "7dd2b6d8-977c-575d-98c6-cd489f382e9e",
-                  type: "title",
-                },
-                {
-                  block_order: 2,
-                  content: {
-                    answers: [
                       {
                         isTrue: false,
-                        title: "tr:や, tr:ゆ, tr:よ",
-                      },
-                      {
-                        isTrue: true,
-                        title: "tr:や, tr:よ, tr:ゆ",
+                        title: "tr:ゆ, tr:よ, tr:や",
                       },
                     ],
                   },
-                  id: "aa458350-2e5f-5527-8e9e-cefde6a09990",
+                  id: "358d8391-6d7c-5cec-bef0-999e8c40985f",
                   type: "choice",
                 },
               ],
-              id: "c3016753-fc92-56c9-84d7-97147dc32734",
+              id: "288717b7-3118-5365-bfff-dfe2ec2c4471",
               screen_order: 12,
-              title: "Wählen Sie die richtige Reihenfolge.",
+              title: "Elige la secuencia correcta.",
             },
             {
               blocks: [
@@ -3481,23 +3480,23 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Hiragana",
-                    title: "tr:ゆ, tr:よ, tr:や",
+                    title: "tr:よ, tr:ゆ, tr:や",
                   },
-                  id: "80635d36-56b4-5d3b-ad4f-0593913493dc",
+                  id: "eeab4176-6b6c-5ae2-a713-0cd8b1e618a2",
                   type: "title",
                 },
                 {
                   block_order: 2,
                   content: {
-                    sequence: ["ゆ", "よ", "や"],
+                    sequence: ["よ", "ゆ", "や"],
                   },
-                  id: "5e1b06de-e26a-5592-b427-12ba26706d10",
+                  id: "7f7ae6d2-f244-525e-96c4-949bb61c1133",
                   type: "sequence",
                 },
               ],
-              id: "c965f96b-efc7-501e-96e2-4651abf6f4b4",
+              id: "5dc724d2-0d41-587b-a6de-15d1a5ba1639",
               screen_order: 13,
-              title: "Ordnen Sie die Silben in der richtigen Reihenfolge an.",
+              title: "Acomoda las sílabas en el orden correcto.",
             },
             {
               blocks: [
@@ -3505,35 +3504,35 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Hiragana",
-                    title: "tr:ゆ, tr:や, tr:よ",
+                    title: "tr:よ, tr:や, tr:ゆ",
                   },
-                  id: "3b75153f-a5a0-5b5c-ba34-3ac77bcca437",
+                  id: "1b015a60-5666-59b5-9b8b-d3cf7410e517",
                   type: "title",
                 },
                 {
                   block_order: 2,
                   content: {
-                    sequence: ["ゆ", "や", "よ"],
+                    sequence: ["よ", "や", "ゆ"],
                   },
-                  id: "f2b30ff1-3288-5aae-bb1b-a331f1dcf3fa",
+                  id: "b5e012ae-73f7-53dd-88e8-5d4abcb52184",
                   type: "sequence",
                 },
               ],
-              id: "3d728dac-9862-5aab-a0d0-f2da7f3690c2",
+              id: "dfc38083-52d8-5991-8ef4-b674334e03da",
               screen_order: 14,
-              title: "Ordnen Sie die Silben in der richtigen Reihenfolge an.",
+              title: "Acomoda las sílabas en el orden correcto.",
             },
           ],
-          subtitle: "Silben: や、ゆ、よ",
-          title: "Lektion 8",
-          topic_id: "5e31453c-3b85-4baa-9581-2771d7dc0ead",
+          subtitle: "Sílabas: や、ゆ、よ",
+          title: "Lección 8",
+          topic_id: "18d4916c-1ccf-4cc9-bb2b-9188cdfe601e",
         },
         {
-          expanded_subtitle: "Lernen Sie, die Silben in der Reihe tr:ら zu lesen und zu schreiben.",
+          expanded_subtitle: "Aprende a leer y escribir las sílabas del renglón tr:ら.",
           expanded_title: "Hiragana: tr:ら, tr:り, tr:る, tr:れ, tr:ろ",
           icon: "https://nihongo.khvat.app/chapter1/Lesson10.jpg",
-          id: "0d9228dc-3eda-49e4-b8ad-5550f152e561",
-          last_updated: "2026-09-08T13:12:16Z",
+          id: "76ecc302-6ded-453b-9c99-cde51cad2842",
+          last_updated: "2026-09-08T13:12:16.025Z",
           lesson_key: "alphabet/hiragana&ra",
           lesson_order: 10,
           minimum_version: "2.4.1",
@@ -3547,13 +3546,13 @@ export const dumpDe = {
                     id: "859472d4-50b2-4574-adcf-65b301aa916e",
                     kana: "hiragana",
                   },
-                  id: "521d8a90-5f9c-50dc-a77f-0d545064ccb2",
+                  id: "447bf94c-e755-5bc0-a90d-ac51395bc66e",
                   type: "letter",
                 },
               ],
-              id: "51a86bc4-010e-5e95-bd67-d20cfbb742f4",
+              id: "ab933ba4-72fa-55a1-afbd-7646e3ac0957",
               screen_order: 1,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -3564,13 +3563,13 @@ export const dumpDe = {
                     id: "859472d4-50b2-4574-adcf-65b301aa916e",
                     kana: "hiragana",
                   },
-                  id: "bb338afd-6370-5309-ab4f-24061aeb3775",
+                  id: "a0daef66-b959-5cc8-9232-7a578e647c5c",
                   type: "letter",
                 },
               ],
-              id: "f2c4d792-c041-5e54-8600-cc7dc4de42fd",
+              id: "77b9dc47-c74c-5e26-9900-b3c95748cbf7",
               screen_order: 2,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -3581,13 +3580,13 @@ export const dumpDe = {
                     id: "6e0e6570-0e60-46e4-8735-40ad423daec2",
                     kana: "hiragana",
                   },
-                  id: "743bc0ef-2fdc-54de-9881-5e58c3eb7415",
+                  id: "9e364975-90e0-5f59-8394-52790b048d8a",
                   type: "letter",
                 },
               ],
-              id: "9007f190-e6ca-5c1e-abf6-89d0902c8a6d",
+              id: "7a8c75e8-6606-5f26-bda9-37fa87799e3a",
               screen_order: 3,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -3598,13 +3597,13 @@ export const dumpDe = {
                     id: "6e0e6570-0e60-46e4-8735-40ad423daec2",
                     kana: "hiragana",
                   },
-                  id: "48886a20-307e-55e3-9c9f-9632884dc923",
+                  id: "4b6779ee-4d23-575d-99b7-3849dd247698",
                   type: "letter",
                 },
               ],
-              id: "3b40bb44-92d1-5ca8-aff6-02431f441bc1",
+              id: "8015fa9c-445e-571f-b0e6-7e5df76a87e4",
               screen_order: 4,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -3616,13 +3615,13 @@ export const dumpDe = {
                       ["ら", "tr:ら"],
                     ],
                   },
-                  id: "6dcfdc15-1f43-5c40-b76b-a328bffed91d",
+                  id: "2eb6ea15-6f37-51ab-a063-8846b99e8223",
                   type: "matching",
                 },
               ],
-              id: "59e60366-d8fa-5d1f-abe8-091c5405f08e",
+              id: "d42ec2ac-289a-56df-a324-3f637d820bb2",
               screen_order: 5,
-              title: "Ordnen Sie 「Hiragana」 seiner Umschrift zu.",
+              title: "Relaciona 「Hiragana」 con su transliteración.",
             },
             {
               blocks: [
@@ -3633,13 +3632,13 @@ export const dumpDe = {
                     id: "1a43007b-1cfb-49a0-baea-02fe8d7cd78a",
                     kana: "hiragana",
                   },
-                  id: "eb28961e-e704-55d5-8323-f6ee4d2de3f7",
+                  id: "97758df2-d459-522b-9a38-f35985b77fd4",
                   type: "letter",
                 },
               ],
-              id: "03eecd22-3838-5413-9d7b-fa752c6b5505",
+              id: "9117e551-a982-5ac2-838a-33c599098809",
               screen_order: 6,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -3650,13 +3649,13 @@ export const dumpDe = {
                     id: "1a43007b-1cfb-49a0-baea-02fe8d7cd78a",
                     kana: "hiragana",
                   },
-                  id: "2ade456e-345d-57ae-979e-d72f0284f82c",
+                  id: "b06efa07-c7c4-5c1d-a954-b0592d9fab89",
                   type: "letter",
                 },
               ],
-              id: "8261a013-bd1c-5e5c-b948-2f0fcb2da705",
+              id: "61f24405-9c8d-580f-b6ca-0bf0a0b36f02",
               screen_order: 7,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -3664,9 +3663,9 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Hiragana",
-                    title: "tr:ら",
+                    title: "tr:り",
                   },
-                  id: "6ed8a879-4f3f-593a-85b5-54fb010b5df8",
+                  id: "0bfe82b0-3667-5345-af8f-d4f1e42db51f",
                   type: "title",
                 },
                 {
@@ -3679,21 +3678,21 @@ export const dumpDe = {
                       },
                       {
                         isTrue: true,
-                        title: "ら",
+                        title: "り",
                       },
                       {
                         isTrue: false,
-                        title: "り",
+                        title: "ら",
                       },
                     ],
                   },
-                  id: "6b728db6-ac1b-5de5-ada3-8377860eb6a5",
+                  id: "6672a6fd-bc15-59c2-bbf6-800bd09fa137",
                   type: "choice",
                 },
               ],
-              id: "5f556b90-f8d7-5788-bd0a-75e6ccf58cce",
+              id: "e8bc60a4-d569-5255-b0e1-f23a66921ea7",
               screen_order: 8,
-              title: "Wählen Sie die Silbe aus.",
+              title: "Selecciona la sílaba.",
             },
             {
               blocks: [
@@ -3705,13 +3704,13 @@ export const dumpDe = {
                       ["り", "tr:り"],
                     ],
                   },
-                  id: "b0aaf2a2-01de-5b6b-8b0b-7a9360f7baba",
+                  id: "170a307e-6db8-55db-b5d2-2c8b2bd5b5e8",
                   type: "matching",
                 },
               ],
-              id: "a8871038-aad1-5ebd-abd0-59213c2497d6",
+              id: "96c8a0d4-c19b-5ac7-8886-343c7556d61f",
               screen_order: 9,
-              title: "Ordnen Sie 「Hiragana」 seiner Umschrift zu.",
+              title: "Relaciona 「Hiragana」 con su transliteración.",
             },
             {
               blocks: [
@@ -3722,13 +3721,13 @@ export const dumpDe = {
                     id: "e53fdab4-2d04-452d-a635-d2ac728c6a32",
                     kana: "hiragana",
                   },
-                  id: "ce350041-f3a1-5779-9c5c-ab32546bee68",
+                  id: "409153f7-8724-58d0-a3c2-727e10a66a47",
                   type: "letter",
                 },
               ],
-              id: "a0ffeb0e-143e-5333-8cdd-012c6968424e",
+              id: "76b8f532-331c-5a93-9ea4-8d2a9e21a779",
               screen_order: 10,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -3739,13 +3738,13 @@ export const dumpDe = {
                     id: "e53fdab4-2d04-452d-a635-d2ac728c6a32",
                     kana: "hiragana",
                   },
-                  id: "a65f5298-f3b3-5081-8ed2-be44a7ee1d8f",
+                  id: "22c8dc81-1e2a-5e59-8990-6cbd08480cf2",
                   type: "letter",
                 },
               ],
-              id: "6dbccb00-7300-5c1d-bdc8-1d9c93f6e69a",
+              id: "53857903-b78d-5294-ad78-6f8c00bc7d60",
               screen_order: 11,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -3757,13 +3756,13 @@ export const dumpDe = {
                       ["る", "tr:る"],
                     ],
                   },
-                  id: "a59a0141-a212-5b59-9e05-47938af002a6",
+                  id: "a51da73b-96c8-5887-bd65-63acb4ca4b61",
                   type: "matching",
                 },
               ],
-              id: "5efbd395-a840-5965-bc8e-313d408ec5ac",
+              id: "69239ed0-b7d9-5eb2-a852-a192cbe7c7c7",
               screen_order: 12,
-              title: "Ordnen Sie 「Hiragana」 seiner Umschrift zu.",
+              title: "Relaciona 「Hiragana」 con su transliteración.",
             },
             {
               blocks: [
@@ -3774,13 +3773,13 @@ export const dumpDe = {
                     id: "6ba2a0b0-d443-4323-a382-c8144cd996d3",
                     kana: "hiragana",
                   },
-                  id: "f2f5be68-f9dd-54d5-94a7-c9ae9d604f8c",
+                  id: "ac560bd7-3dd9-556f-890c-d0fdfb3c349f",
                   type: "letter",
                 },
               ],
-              id: "9701e6ab-5c2e-5e61-bf23-ff261f11a594",
+              id: "d60bbac5-11c2-5a4d-be7b-31052ca3ed38",
               screen_order: 13,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -3791,13 +3790,13 @@ export const dumpDe = {
                     id: "6ba2a0b0-d443-4323-a382-c8144cd996d3",
                     kana: "hiragana",
                   },
-                  id: "2f62a282-5b86-5a11-b4ed-a7142b1fc0fe",
+                  id: "cbf7a8e3-2004-5135-b039-bbdb8fb3020d",
                   type: "letter",
                 },
               ],
-              id: "2acf8cef-81ac-5119-bc23-d939a975d7be",
+              id: "81c606eb-061b-51bd-a500-b96a1b06f4f3",
               screen_order: 14,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -3805,9 +3804,9 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Hiragana",
-                    title: "tr:ろ",
+                    title: "tr:ら",
                   },
-                  id: "92e687e7-d868-5f21-b20c-552489b34950",
+                  id: "8e935eda-88a7-5c39-b954-81e656a7dd80",
                   type: "title",
                 },
                 {
@@ -3816,25 +3815,25 @@ export const dumpDe = {
                     answers: [
                       {
                         isTrue: true,
-                        title: "ろ",
-                      },
-                      {
-                        isTrue: false,
-                        title: "る",
+                        title: "ら",
                       },
                       {
                         isTrue: false,
                         title: "り",
                       },
+                      {
+                        isTrue: false,
+                        title: "ろ",
+                      },
                     ],
                   },
-                  id: "fe1b62c2-a9a2-56c2-9437-71b901235754",
+                  id: "43fec9d9-60f8-5239-9426-8de1228d8c28",
                   type: "choice",
                 },
               ],
-              id: "c86821e5-1a11-5c90-8783-1b70dbc6a883",
+              id: "43bffaef-f9f1-5d12-932a-e166bd4cd722",
               screen_order: 15,
-              title: "Wählen Sie die Silbe aus.",
+              title: "Selecciona la sílaba.",
             },
             {
               blocks: [
@@ -3842,9 +3841,9 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Hiragana",
-                    title: "れ, ろ, る, ら, り",
+                    title: "り, ら, れ, ろ, る",
                   },
-                  id: "2f100aab-86c8-5f02-8d13-b5db1f9c20a5",
+                  id: "00281717-0b46-5a30-8872-485ded83d82a",
                   type: "title",
                 },
                 {
@@ -3852,22 +3851,22 @@ export const dumpDe = {
                   content: {
                     answers: [
                       {
-                        isTrue: false,
-                        title: "tr:ら, tr:り, tr:る, tr:ろ, tr:れ",
+                        isTrue: true,
+                        title: "tr:り, tr:ら, tr:れ, tr:ろ, tr:る",
                       },
                       {
-                        isTrue: true,
-                        title: "tr:れ, tr:ろ, tr:る, tr:ら, tr:り",
+                        isTrue: false,
+                        title: "tr:り, tr:ら, tr:る, tr:ろ, tr:れ",
                       },
                     ],
                   },
-                  id: "b73713e0-20bf-5eb0-9f55-a665a69e4628",
+                  id: "93a6a44e-c20f-53f1-8d31-567eb34341e8",
                   type: "choice",
                 },
               ],
-              id: "df635e79-d53b-5946-a6b0-a02e120295a2",
+              id: "a186452d-f2f2-5836-8484-efde41cf60e4",
               screen_order: 16,
-              title: "Wählen Sie die richtige Reihenfolge.",
+              title: "Elige la secuencia correcta.",
             },
             {
               blocks: [
@@ -3875,9 +3874,9 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Hiragana",
-                    title: "ろ, る, り, ら, れ",
+                    title: "る, れ, り, ら, ろ",
                   },
-                  id: "080896dc-37a4-5122-a873-be5846bce95f",
+                  id: "a9dc2c5c-8386-5626-808d-e47a95af1a59",
                   type: "title",
                 },
                 {
@@ -3885,46 +3884,22 @@ export const dumpDe = {
                   content: {
                     answers: [
                       {
-                        isTrue: true,
-                        title: "tr:ろ, tr:る, tr:り, tr:ら, tr:れ",
+                        isTrue: false,
+                        title: "tr:ろ, tr:り, tr:れ, tr:ら, tr:る",
                       },
                       {
-                        isTrue: false,
-                        title: "tr:ら, tr:る, tr:れ, tr:ろ, tr:り",
+                        isTrue: true,
+                        title: "tr:る, tr:れ, tr:り, tr:ら, tr:ろ",
                       },
                     ],
                   },
-                  id: "3a126806-501f-55a9-ab64-c752bbe1375b",
+                  id: "d793e570-d097-5ca3-b3fa-5a7243b607d0",
                   type: "choice",
                 },
               ],
-              id: "24679973-c038-5a53-b6b4-6f2974a40ac8",
+              id: "e98b38e5-5237-5c09-81dd-71dd1d52e556",
               screen_order: 17,
-              title: "Wählen Sie die richtige Reihenfolge.",
-            },
-            {
-              blocks: [
-                {
-                  block_order: 1,
-                  content: {
-                    sub_title: "Hiragana",
-                    title: "tr:り, tr:ろ, tr:れ, tr:ら, tr:る",
-                  },
-                  id: "8075254f-040d-5bc5-8c58-5bd287e20ffa",
-                  type: "title",
-                },
-                {
-                  block_order: 2,
-                  content: {
-                    sequence: ["り", "ろ", "れ", "ら", "る"],
-                  },
-                  id: "72e37101-4c68-5783-b3f5-aa3314c2b3c3",
-                  type: "sequence",
-                },
-              ],
-              id: "ddb1ce93-194f-5eb2-bbb1-52277890a278",
-              screen_order: 18,
-              title: "Ordnen Sie die Silben in der richtigen Reihenfolge an.",
+              title: "Elige la secuencia correcta.",
             },
             {
               blocks: [
@@ -3934,7 +3909,7 @@ export const dumpDe = {
                     sub_title: "Hiragana",
                     title: "tr:る, tr:れ, tr:り, tr:ろ, tr:ら",
                   },
-                  id: "f9eeef74-f829-59e1-9d31-bf2150690a70",
+                  id: "572fbdb6-61ce-5571-84e9-a330350536ef",
                   type: "title",
                 },
                 {
@@ -3942,26 +3917,49 @@ export const dumpDe = {
                   content: {
                     sequence: ["る", "れ", "り", "ろ", "ら"],
                   },
-                  id: "b489fb43-41a6-5235-ae1c-30c4f373e02a",
+                  id: "ab958adc-c41b-51e5-aaed-9729bbf2694f",
                   type: "sequence",
                 },
               ],
-              id: "5ae31fe4-cda2-508f-b9c1-73b1b31aae89",
+              id: "de555f50-5c3f-521b-a1b9-1a19b3ab386a",
+              screen_order: 18,
+              title: "Acomoda las sílabas en el orden correcto.",
+            },
+            {
+              blocks: [
+                {
+                  block_order: 1,
+                  content: {
+                    sub_title: "Hiragana",
+                    title: "tr:ろ, tr:り, tr:れ, tr:る, tr:ら",
+                  },
+                  id: "0d09fb8e-2b49-59c2-bb45-253e828591f6",
+                  type: "title",
+                },
+                {
+                  block_order: 2,
+                  content: {
+                    sequence: ["ろ", "り", "れ", "る", "ら"],
+                  },
+                  id: "088a4700-e3fe-57a4-adad-ad78d6f7bee7",
+                  type: "sequence",
+                },
+              ],
+              id: "8e5963aa-a57a-54b9-ae1b-2ccde695e764",
               screen_order: 19,
-              title: "Ordnen Sie die Silben in der richtigen Reihenfolge an.",
+              title: "Acomoda las sílabas en el orden correcto.",
             },
           ],
-          subtitle: "Silben: ら、り、る、れ、ろ",
-          title: "Lektion 9",
-          topic_id: "5e31453c-3b85-4baa-9581-2771d7dc0ead",
+          subtitle: "Sílabas: ら、り、る、れ、ろ",
+          title: "Lección 9",
+          topic_id: "18d4916c-1ccf-4cc9-bb2b-9188cdfe601e",
         },
         {
-          expanded_subtitle:
-            "Lernen Sie, die Silben zu lesen und zu schreiben: tr:わ, tr:を, tr:ん.",
+          expanded_subtitle: "Aprende a leer y escribir las sílabas: tr:わ, tr:を, tr:ん.",
           expanded_title: "Hiragana: tr:わ, tr:を, tr:ん",
           icon: "https://nihongo.khvat.app/chapter1/Lesson8.jpg",
-          id: "e2256c89-10c6-4eac-aae7-07692db5028c",
-          last_updated: "2026-09-08T13:12:16Z",
+          id: "9b91c039-fee0-4ab2-a5cb-78e183bd7c32",
+          last_updated: "2026-09-08T13:12:16.025Z",
           lesson_key: "alphabet/hiragana&wa",
           lesson_order: 11,
           minimum_version: "2.4.1",
@@ -3975,13 +3973,13 @@ export const dumpDe = {
                     id: "a53d8501-373d-4944-a76b-657f672162f9",
                     kana: "hiragana",
                   },
-                  id: "e716782d-7321-5e82-92b5-c8b77a1f76a0",
+                  id: "5ff9139e-8958-56e7-a39b-e9b15ea70d8f",
                   type: "letter",
                 },
               ],
-              id: "7d023ae3-237a-5709-9ec2-2462472517f5",
+              id: "4dc5955e-02f0-5f87-ade7-7847b8d48741",
               screen_order: 1,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -3992,13 +3990,13 @@ export const dumpDe = {
                     id: "a53d8501-373d-4944-a76b-657f672162f9",
                     kana: "hiragana",
                   },
-                  id: "d4ee052a-aad9-561e-9e56-f5d08ef0024a",
+                  id: "283d4f65-ef26-55be-a8ad-bdc2c580bd36",
                   type: "letter",
                 },
               ],
-              id: "b9d83c96-3e1f-5d90-9165-7934ffdf1915",
+              id: "2e34ce32-721f-5170-aade-a7677880e2e8",
               screen_order: 2,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -4009,13 +4007,13 @@ export const dumpDe = {
                     id: "858b53e1-af17-45d5-8fc2-330121eab5c4",
                     kana: "hiragana",
                   },
-                  id: "c7877b05-ffda-5d5e-9a1c-47a9277a3f3b",
+                  id: "9331faf0-e4b6-5b11-abbe-c5e5a7cbc532",
                   type: "letter",
                 },
               ],
-              id: "6b7eb3c3-0515-5417-8f28-5a6af7fe5c70",
+              id: "10b64c53-5d61-5e3f-acbc-6066d7c18bc9",
               screen_order: 3,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -4026,13 +4024,13 @@ export const dumpDe = {
                     id: "858b53e1-af17-45d5-8fc2-330121eab5c4",
                     kana: "hiragana",
                   },
-                  id: "ccc79dcd-2cf8-5187-8edf-86bcf0e20617",
+                  id: "f966bc0f-8308-531a-a1b5-ccb182c398f0",
                   type: "letter",
                 },
               ],
-              id: "2d93711a-363c-52d4-bcdc-7ca31f5cc6a6",
+              id: "5dcb9c7a-1ab3-57fe-a5b2-b985ff054448",
               screen_order: 4,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -4044,13 +4042,13 @@ export const dumpDe = {
                       ["わ", "tr:わ"],
                     ],
                   },
-                  id: "91e37b5f-9546-5fa1-925c-255bd5922085",
+                  id: "cdf98d11-1eaf-5777-8d3c-348c1c536efd",
                   type: "matching",
                 },
               ],
-              id: "938dde70-431d-53d2-8b9e-36b403db7b58",
+              id: "0e559e1a-1e0f-5be1-8fd7-790d0ccc4433",
               screen_order: 5,
-              title: "Ordnen Sie 「Hiragana」 seiner Umschrift zu.",
+              title: "Relaciona 「Hiragana」 con su transliteración.",
             },
             {
               blocks: [
@@ -4061,13 +4059,13 @@ export const dumpDe = {
                     id: "2a481d17-0d7c-492a-85fc-cab60e9fb6df",
                     kana: "hiragana",
                   },
-                  id: "bad766ec-ccf8-565e-bece-c97b24c94169",
+                  id: "591d7506-8de7-55d7-9fcc-ba00eb62c856",
                   type: "letter",
                 },
               ],
-              id: "8e5fd263-d905-5c65-97d9-66b91bfcecbe",
+              id: "6ffcca82-349e-5d01-817b-36e41dd1a8f5",
               screen_order: 6,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -4078,13 +4076,13 @@ export const dumpDe = {
                     id: "2a481d17-0d7c-492a-85fc-cab60e9fb6df",
                     kana: "hiragana",
                   },
-                  id: "69fbce2e-630e-5448-a5ec-a9c39784fe76",
+                  id: "ee39f225-c41c-5ee2-9cb8-c91b5e630012",
                   type: "letter",
                 },
               ],
-              id: "317bae76-9d7e-526c-975f-6d0aa208f3c8",
+              id: "1e4dc108-c27f-56d1-b262-1c4ae5f89e81",
               screen_order: 7,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -4094,7 +4092,7 @@ export const dumpDe = {
                     sub_title: "Hiragana",
                     title: "tr:ん",
                   },
-                  id: "c5f1d8c3-d71e-58c9-9da6-a3bbf8448109",
+                  id: "13448f20-c97a-5e43-afa6-52a6aaaf41b5",
                   type: "title",
                 },
                 {
@@ -4115,13 +4113,13 @@ export const dumpDe = {
                       },
                     ],
                   },
-                  id: "f810c6d2-b7b1-5144-9596-26d9f0a6422d",
+                  id: "b41e562e-6451-590f-9ddb-6162dcbae8de",
                   type: "choice",
                 },
               ],
-              id: "1e2ab05a-e556-582f-8494-708775196d17",
+              id: "b99cc5dc-ab75-5994-b87a-fc4d9706537d",
               screen_order: 8,
-              title: "Wählen Sie die Silbe aus.",
+              title: "Selecciona la sílaba.",
             },
             {
               blocks: [
@@ -4133,13 +4131,13 @@ export const dumpDe = {
                       ["を", "tr:を"],
                     ],
                   },
-                  id: "fce411d6-cb41-5a2b-91c6-ec59fe4e36e4",
+                  id: "55a60cc6-7977-5844-bcdd-013e78789271",
                   type: "matching",
                 },
               ],
-              id: "40f9fd42-4132-5397-8dba-203c8454e835",
+              id: "01e4299a-c748-52e2-b462-3373c30269ae",
               screen_order: 9,
-              title: "Ordnen Sie 「Hiragana」 seiner Umschrift zu.",
+              title: "Relaciona 「Hiragana」 con su transliteración.",
             },
             {
               blocks: [
@@ -4149,7 +4147,7 @@ export const dumpDe = {
                     sub_title: "Hiragana",
                     title: "tr:を",
                   },
-                  id: "9e99b1ba-0a72-5c90-bb0e-e7cb37324f4c",
+                  id: "ae55d29d-1e10-5aef-b7e0-d0a1a5235ea1",
                   type: "title",
                 },
                 {
@@ -4162,21 +4160,21 @@ export const dumpDe = {
                       },
                       {
                         isTrue: false,
-                        title: "ん",
+                        title: "わ",
                       },
                       {
                         isTrue: false,
-                        title: "わ",
+                        title: "ん",
                       },
                     ],
                   },
-                  id: "6562c39a-0550-5514-a867-b17af86cfd4c",
+                  id: "9c0dfedb-b447-58af-b99b-e9477a8311be",
                   type: "choice",
                 },
               ],
-              id: "50171366-39dc-5420-b832-b1ddfedb16e5",
+              id: "0a1de7cc-a54d-5f8e-a0f3-6212166cfa18",
               screen_order: 10,
-              title: "Wählen Sie die Silbe aus.",
+              title: "Selecciona la sílaba.",
             },
             {
               blocks: [
@@ -4184,9 +4182,9 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Hiragana",
-                    title: "を, ん, わ",
+                    title: "を, わ, ん",
                   },
-                  id: "547ba9ae-d1fb-5c8d-b82c-72c3a6bbe63c",
+                  id: "ecb9546a-5365-58a0-a6bd-7c459c765645",
                   type: "title",
                 },
                 {
@@ -4194,55 +4192,55 @@ export const dumpDe = {
                   content: {
                     answers: [
                       {
-                        isTrue: false,
+                        isTrue: true,
                         title: "tr:を, tr:わ, tr:ん",
                       },
                       {
-                        isTrue: true,
-                        title: "tr:を, tr:ん, tr:わ",
-                      },
-                    ],
-                  },
-                  id: "1702f855-fb7e-5c93-8b70-2e08ef76df50",
-                  type: "choice",
-                },
-              ],
-              id: "ccb1288d-c590-5d29-9705-99f9b77be2dc",
-              screen_order: 11,
-              title: "Wählen Sie die richtige Reihenfolge.",
-            },
-            {
-              blocks: [
-                {
-                  block_order: 1,
-                  content: {
-                    sub_title: "Hiragana",
-                    title: "わ, を, ん",
-                  },
-                  id: "552f671a-0dba-5204-ac0e-96cbe17b3f5c",
-                  type: "title",
-                },
-                {
-                  block_order: 2,
-                  content: {
-                    answers: [
-                      {
                         isTrue: false,
-                        title: "tr:ん, tr:わ, tr:を",
-                      },
-                      {
-                        isTrue: true,
                         title: "tr:わ, tr:を, tr:ん",
                       },
                     ],
                   },
-                  id: "f080e780-8dac-5b1e-a30c-00e3ce92a131",
+                  id: "f6fbafbc-2683-53a0-addf-e728288a9575",
                   type: "choice",
                 },
               ],
-              id: "44b5e188-730e-5bcb-b8d5-0c9c9b9d7289",
+              id: "29063c9e-b85f-539e-978c-3003968e863d",
+              screen_order: 11,
+              title: "Elige la secuencia correcta.",
+            },
+            {
+              blocks: [
+                {
+                  block_order: 1,
+                  content: {
+                    sub_title: "Hiragana",
+                    title: "ん, を, わ",
+                  },
+                  id: "1e5351ea-8dc1-5000-abc8-831892a62962",
+                  type: "title",
+                },
+                {
+                  block_order: 2,
+                  content: {
+                    answers: [
+                      {
+                        isTrue: false,
+                        title: "tr:わ, tr:ん, tr:を",
+                      },
+                      {
+                        isTrue: true,
+                        title: "tr:ん, tr:を, tr:わ",
+                      },
+                    ],
+                  },
+                  id: "c5763b13-e4d8-516a-80d2-a0655fafd405",
+                  type: "choice",
+                },
+              ],
+              id: "f33ebda4-b434-512b-84ae-c14b77b276c2",
               screen_order: 12,
-              title: "Wählen Sie die richtige Reihenfolge.",
+              title: "Elige la secuencia correcta.",
             },
             {
               blocks: [
@@ -4250,23 +4248,23 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Hiragana",
-                    title: "tr:わ, tr:を, tr:ん",
+                    title: "tr:ん, tr:を, tr:わ",
                   },
-                  id: "c6ac051a-f5b9-54d1-beaa-468b391f11c1",
+                  id: "e21eae2d-7bf3-5541-a777-bd342b23f016",
                   type: "title",
                 },
                 {
                   block_order: 2,
                   content: {
-                    sequence: ["わ", "を", "ん"],
+                    sequence: ["ん", "を", "わ"],
                   },
-                  id: "daaea0c9-b980-5036-9ab5-f1edbcd0c1cf",
+                  id: "ebd69fb7-78b2-54eb-8b40-fd33f8a16e04",
                   type: "sequence",
                 },
               ],
-              id: "d2e200f6-ee31-515f-b864-85e6d1fa02f3",
+              id: "d671e573-d353-5160-a19c-150f6b43f6e4",
               screen_order: 13,
-              title: "Ordnen Sie die Silben in der richtigen Reihenfolge an.",
+              title: "Acomoda las sílabas en el orden correcto.",
             },
             {
               blocks: [
@@ -4274,42 +4272,42 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Hiragana",
-                    title: "tr:を, tr:ん, tr:わ",
+                    title: "tr:を, tr:わ, tr:ん",
                   },
-                  id: "b47edab1-1600-5222-8501-9aba84a08aac",
+                  id: "fd42ec81-8bc5-5520-b685-d2aeb30b1d0c",
                   type: "title",
                 },
                 {
                   block_order: 2,
                   content: {
-                    sequence: ["を", "ん", "わ"],
+                    sequence: ["を", "わ", "ん"],
                   },
-                  id: "23cbce97-6398-5bb2-b99c-601963e301a9",
+                  id: "941addf4-c562-5daa-8f03-c856405fd33c",
                   type: "sequence",
                 },
               ],
-              id: "b426032d-954b-5810-b6cd-30c35f40d039",
+              id: "0c1df59b-01a4-5309-808b-19aa7ac316db",
               screen_order: 14,
-              title: "Ordnen Sie die Silben in der richtigen Reihenfolge an.",
+              title: "Acomoda las sílabas en el orden correcto.",
             },
           ],
-          subtitle: "Silben: わ、を、ん",
-          title: "Lektion 10",
-          topic_id: "5e31453c-3b85-4baa-9581-2771d7dc0ead",
+          subtitle: "Sílabas: わ、を、ん",
+          title: "Lección 10",
+          topic_id: "18d4916c-1ccf-4cc9-bb2b-9188cdfe601e",
         },
       ],
-      title: "Abschnitt 1. Hiragana",
+      title: "Sección 1. Hiragana",
       topic_order: 1,
     },
     {
-      id: "cf72c46a-ab31-4724-adf6-7d827a9a8d73",
+      id: "db0183e1-1a54-4f44-a18a-2020f6b6987b",
       lessons: [
         {
-          expanded_subtitle: "Lernen Sie, die Vokale der Katakana zu lesen und zu schreiben.",
+          expanded_subtitle: "Aprende a leer y escribir los sonidos vocálicos del katakana.",
           expanded_title: "Katakana: tr:あ, tr:い, tr:う, tr:え, tr:お",
           icon: "https://nihongo.khvat.app/chapter2/Lesson11.jpg",
-          id: "683cd8da-4a7c-46ab-b263-513850699b92",
-          last_updated: "2026-09-08T13:12:16Z",
+          id: "30bf1430-3614-4f16-af58-52bdc98ad9fe",
+          last_updated: "2026-09-08T13:12:16.025Z",
           lesson_key: "alphabet/katakana&a",
           lesson_order: 12,
           minimum_version: "2.4.1",
@@ -4323,13 +4321,13 @@ export const dumpDe = {
                     id: "a151eeeb-2537-463c-ae23-d484d1bcb835",
                     kana: "katakana",
                   },
-                  id: "5acc2aea-c634-598c-9b78-c69cd2ed2f9d",
+                  id: "d687c9bc-b856-502a-82b3-14c5268fde00",
                   type: "letter",
                 },
               ],
-              id: "2720cda7-d26d-546e-8b63-a35e5bc0022c",
+              id: "d367eeac-1344-5981-af8f-a26babb83bd3",
               screen_order: 1,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -4340,13 +4338,13 @@ export const dumpDe = {
                     id: "a151eeeb-2537-463c-ae23-d484d1bcb835",
                     kana: "katakana",
                   },
-                  id: "2e63dc3b-b8a0-54fb-851d-fb8d53c9aeda",
+                  id: "52431523-2f96-550a-91ff-c30544b84d11",
                   type: "letter",
                 },
               ],
-              id: "7c8999f2-eb51-5216-aa72-194fee327685",
+              id: "48fc446a-2618-501b-803d-1477e892f77d",
               screen_order: 2,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -4357,13 +4355,13 @@ export const dumpDe = {
                     id: "11017078-148a-4a44-b3f7-21d1df02d981",
                     kana: "katakana",
                   },
-                  id: "209cbc83-b136-528d-8d57-8653e2520e0a",
+                  id: "d516aee3-9756-5dc2-948b-33ccafcc10d7",
                   type: "letter",
                 },
               ],
-              id: "17d383de-95c6-5eb5-87a8-2dd5534d465d",
+              id: "2c3aa234-d72e-50e7-b64d-9e66a200d9cb",
               screen_order: 3,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -4374,13 +4372,13 @@ export const dumpDe = {
                     id: "11017078-148a-4a44-b3f7-21d1df02d981",
                     kana: "katakana",
                   },
-                  id: "f36fcac7-0d4f-549e-80ab-adc68a967878",
+                  id: "a36e224c-905b-5e76-9ca9-e5ae503a87f5",
                   type: "letter",
                 },
               ],
-              id: "102afa2c-a0dd-59ab-9b98-3155f9758d4f",
+              id: "088cbe52-307c-5e23-8f15-acebc7f62868",
               screen_order: 4,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -4392,13 +4390,13 @@ export const dumpDe = {
                       ["ア", "tr:ア"],
                     ],
                   },
-                  id: "a662879f-577e-54a4-8bbb-7cf8a9888f58",
+                  id: "5e24a0c5-ecc6-5c77-859a-7a7387da057a",
                   type: "matching",
                 },
               ],
-              id: "f0701064-db16-5993-ba42-357eebd34a31",
+              id: "1ace653a-9980-517c-a270-8e794c1cc889",
               screen_order: 5,
-              title: "Ordnen Sie 「Katakana」 seiner Umschrift zu.",
+              title: "Relaciona 「Katakana」 con su transliteración.",
             },
             {
               blocks: [
@@ -4409,13 +4407,13 @@ export const dumpDe = {
                     id: "bcbd90e2-fabc-4dcc-8022-02e5b650c822",
                     kana: "katakana",
                   },
-                  id: "788db2d3-ec44-5b75-8b1d-f5774f54b9e0",
+                  id: "274c7db2-d0a3-52fb-813e-7a4e77dd2ec5",
                   type: "letter",
                 },
               ],
-              id: "4135e09f-d51a-5b43-88b6-6a294d6ebc99",
+              id: "84ab947f-0f1e-557f-b093-eb3db8e04e98",
               screen_order: 6,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -4426,13 +4424,13 @@ export const dumpDe = {
                     id: "bcbd90e2-fabc-4dcc-8022-02e5b650c822",
                     kana: "katakana",
                   },
-                  id: "c888874a-4e9c-5a5c-b016-e0212f977041",
+                  id: "e5ef790c-7148-5eb7-9c53-65766040d1b4",
                   type: "letter",
                 },
               ],
-              id: "dc75ddea-ffb6-5827-b8b3-098b203e37da",
+              id: "9bfe2e32-0eba-5480-a414-cd244b739666",
               screen_order: 7,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -4440,9 +4438,9 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Katakana",
-                    title: "tr:ウ",
+                    title: "tr:ア",
                   },
-                  id: "d21b6d17-e9f0-5273-8c2a-248289889b53",
+                  id: "283fc1b5-07d7-5402-99e6-175838f60919",
                   type: "title",
                 },
                 {
@@ -4450,26 +4448,26 @@ export const dumpDe = {
                   content: {
                     answers: [
                       {
-                        isTrue: true,
-                        title: "ウ",
-                      },
-                      {
-                        isTrue: false,
-                        title: "ア",
-                      },
-                      {
                         isTrue: false,
                         title: "イ",
                       },
+                      {
+                        isTrue: false,
+                        title: "ウ",
+                      },
+                      {
+                        isTrue: true,
+                        title: "ア",
+                      },
                     ],
                   },
-                  id: "b460156b-a599-5530-8ebe-b7d33b8d9b5a",
+                  id: "e298ea6e-cf9a-59ce-9b7c-39fbefa07513",
                   type: "choice",
                 },
               ],
-              id: "84afc94e-2d30-5c7f-ba0e-f522c2bd3c71",
+              id: "efe49d48-373f-58b2-a74f-1bce76af0e2d",
               screen_order: 8,
-              title: "Wählen Sie die Silbe aus.",
+              title: "Selecciona la sílaba.",
             },
             {
               blocks: [
@@ -4481,13 +4479,13 @@ export const dumpDe = {
                       ["イ", "tr:イ"],
                     ],
                   },
-                  id: "1cb4979d-49af-5f93-852a-96bd53a79554",
+                  id: "bcc2dd91-3a58-5e35-9cd9-844ccbe68b09",
                   type: "matching",
                 },
               ],
-              id: "1b69ada7-3204-5ab8-ab43-926eb793f455",
+              id: "9da5d624-e25c-507b-8a21-bd6321c598a5",
               screen_order: 9,
-              title: "Ordnen Sie 「Katakana」 seiner Umschrift zu.",
+              title: "Relaciona 「Katakana」 con su transliteración.",
             },
             {
               blocks: [
@@ -4498,13 +4496,13 @@ export const dumpDe = {
                     id: "70680d73-c9f9-4b4e-aac4-c82caa49668c",
                     kana: "katakana",
                   },
-                  id: "f57ad966-7d78-547c-b04b-168a95e674d4",
+                  id: "434c4eee-09a1-557b-acd0-e8364908e81c",
                   type: "letter",
                 },
               ],
-              id: "c0773f44-7b2b-5cf2-b084-9d4c9fa8ddf3",
+              id: "7e6a826f-3995-5a5b-a02a-e4c6dafc686e",
               screen_order: 10,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -4515,13 +4513,13 @@ export const dumpDe = {
                     id: "70680d73-c9f9-4b4e-aac4-c82caa49668c",
                     kana: "katakana",
                   },
-                  id: "8d8ee5f9-34dc-53be-8fee-d3607f0c4131",
+                  id: "216e7f47-67ea-5a08-9657-47bdc2e354ac",
                   type: "letter",
                 },
               ],
-              id: "a646db17-6fee-528f-a202-e4a593ddda51",
+              id: "19c9cdb4-d5b9-5605-8dbf-5dcf41707da6",
               screen_order: 11,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -4533,13 +4531,13 @@ export const dumpDe = {
                       ["ウ", "tr:ウ"],
                     ],
                   },
-                  id: "9ccef5d5-5b63-5280-bb47-ad47ee4a3a92",
+                  id: "0e8be77f-9078-54f8-90b6-28a51a986b48",
                   type: "matching",
                 },
               ],
-              id: "f16520bb-35f8-58c6-9bed-bf4ad3c2cbf8",
+              id: "a18b4c26-060c-5975-b1a5-91fbe0a7acde",
               screen_order: 12,
-              title: "Ordnen Sie 「Katakana」 seiner Umschrift zu.",
+              title: "Relaciona 「Katakana」 con su transliteración.",
             },
             {
               blocks: [
@@ -4550,13 +4548,13 @@ export const dumpDe = {
                     id: "e430643d-5624-432e-b53e-974447baad22",
                     kana: "katakana",
                   },
-                  id: "881db7f3-dc48-567a-875b-59ed7c1f96c3",
+                  id: "b2899043-e42d-5d47-af26-3e2fcbfdced5",
                   type: "letter",
                 },
               ],
-              id: "abf17664-8676-5854-b986-b9a7471f6841",
+              id: "2da0de59-d614-5442-8de8-0ed40ee4e6a6",
               screen_order: 13,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -4567,13 +4565,13 @@ export const dumpDe = {
                     id: "e430643d-5624-432e-b53e-974447baad22",
                     kana: "katakana",
                   },
-                  id: "0cf4140a-053b-5ac3-8b99-dfdd9416a295",
+                  id: "72279e0f-1139-5814-9d8a-b66cacee54db",
                   type: "letter",
                 },
               ],
-              id: "b2d29a87-62fb-510b-8de6-8965f9c5104d",
+              id: "f59b9d5e-5ee1-5dd5-abad-1e0dbaff8a48",
               screen_order: 14,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -4583,7 +4581,7 @@ export const dumpDe = {
                     sub_title: "Katakana",
                     title: "tr:オ",
                   },
-                  id: "680501fa-3fad-5851-82da-6f646f1afa3b",
+                  id: "721c708c-8ffd-5613-9cc5-cc38e965abe2",
                   type: "title",
                 },
                 {
@@ -4592,11 +4590,11 @@ export const dumpDe = {
                     answers: [
                       {
                         isTrue: false,
-                        title: "ウ",
+                        title: "ア",
                       },
                       {
                         isTrue: false,
-                        title: "ア",
+                        title: "イ",
                       },
                       {
                         isTrue: true,
@@ -4604,13 +4602,13 @@ export const dumpDe = {
                       },
                     ],
                   },
-                  id: "93a0b6aa-aced-5fbd-b5df-9e96d4dbaa14",
+                  id: "4e150955-c13e-5896-b2c8-fd6303e0827b",
                   type: "choice",
                 },
               ],
-              id: "1488fbd8-3c8d-5f98-8092-97f1b721724a",
+              id: "da1528cd-6a6b-5670-ae19-cb42d2076c9b",
               screen_order: 15,
-              title: "Wählen Sie die Silbe aus.",
+              title: "Selecciona la sílaba.",
             },
             {
               blocks: [
@@ -4618,9 +4616,9 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Katakana",
-                    title: "オ, ウ, イ, ア, エ",
+                    title: "ウ, イ, ア, オ, エ",
                   },
-                  id: "2f72a28d-9205-5d40-b5ef-7eeae66b07fd",
+                  id: "dbcd84e1-2923-5980-82d6-0642a6d21dc4",
                   type: "title",
                 },
                 {
@@ -4628,55 +4626,55 @@ export const dumpDe = {
                   content: {
                     answers: [
                       {
-                        isTrue: false,
-                        title: "tr:エ, tr:ア, tr:イ, tr:ウ, tr:オ",
+                        isTrue: true,
+                        title: "tr:ウ, tr:イ, tr:ア, tr:オ, tr:エ",
                       },
                       {
+                        isTrue: false,
+                        title: "tr:イ, tr:オ, tr:エ, tr:ア, tr:ウ",
+                      },
+                    ],
+                  },
+                  id: "c17a53ac-82c0-52d2-96b6-37fe81c273dc",
+                  type: "choice",
+                },
+              ],
+              id: "f6d7e527-de52-58b5-be51-08eaa41eab36",
+              screen_order: 16,
+              title: "Elige la secuencia correcta.",
+            },
+            {
+              blocks: [
+                {
+                  block_order: 1,
+                  content: {
+                    sub_title: "Katakana",
+                    title: "ウ, オ, ア, イ, エ",
+                  },
+                  id: "85709cd2-c2cd-5fac-991f-008056c5fbd8",
+                  type: "title",
+                },
+                {
+                  block_order: 2,
+                  content: {
+                    answers: [
+                      {
                         isTrue: true,
+                        title: "tr:ウ, tr:オ, tr:ア, tr:イ, tr:エ",
+                      },
+                      {
+                        isTrue: false,
                         title: "tr:オ, tr:ウ, tr:イ, tr:ア, tr:エ",
                       },
                     ],
                   },
-                  id: "cdd10f09-d0c7-534c-91ce-bfbf16651005",
+                  id: "e159b089-c7c3-5157-910c-1a84ee514b74",
                   type: "choice",
                 },
               ],
-              id: "a1fa00f6-143e-5c67-bef6-cab194eca1a8",
-              screen_order: 16,
-              title: "Wählen Sie die richtige Reihenfolge.",
-            },
-            {
-              blocks: [
-                {
-                  block_order: 1,
-                  content: {
-                    sub_title: "Katakana",
-                    title: "イ, エ, オ, ウ, ア",
-                  },
-                  id: "f262f475-580f-5eb2-ada2-db2082f773b5",
-                  type: "title",
-                },
-                {
-                  block_order: 2,
-                  content: {
-                    answers: [
-                      {
-                        isTrue: false,
-                        title: "tr:エ, tr:イ, tr:ア, tr:オ, tr:ウ",
-                      },
-                      {
-                        isTrue: true,
-                        title: "tr:イ, tr:エ, tr:オ, tr:ウ, tr:ア",
-                      },
-                    ],
-                  },
-                  id: "d5dc2046-3d45-598c-87d2-397afd95efc2",
-                  type: "choice",
-                },
-              ],
-              id: "365fde69-4a39-59aa-aee1-720301b2440e",
+              id: "4573e6fd-15f5-5cf4-b616-a028289d02d1",
               screen_order: 17,
-              title: "Wählen Sie die richtige Reihenfolge.",
+              title: "Elige la secuencia correcta.",
             },
             {
               blocks: [
@@ -4684,23 +4682,23 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Katakana",
-                    title: "tr:ウ, tr:イ, tr:オ, tr:ア, tr:エ",
+                    title: "tr:エ, tr:イ, tr:オ, tr:ア, tr:ウ",
                   },
-                  id: "45a2561f-caa4-556a-9220-0aedb1588be9",
+                  id: "e66e7e69-b407-5578-bc03-5574ba3ee68f",
                   type: "title",
                 },
                 {
                   block_order: 2,
                   content: {
-                    sequence: ["ウ", "イ", "オ", "ア", "エ"],
+                    sequence: ["エ", "イ", "オ", "ア", "ウ"],
                   },
-                  id: "975205eb-5a70-574a-91b1-c335c134b79f",
+                  id: "3faa7792-73e0-5478-bb75-bf54256f48dc",
                   type: "sequence",
                 },
               ],
-              id: "ab14f5e3-42a9-56de-9d29-65f485e3c375",
+              id: "18bb1bc9-8e66-5c1b-9ae2-a384e5b70799",
               screen_order: 18,
-              title: "Ordnen Sie die Silben in der richtigen Reihenfolge an.",
+              title: "Acomoda las sílabas en el orden correcto.",
             },
             {
               blocks: [
@@ -4708,35 +4706,35 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Katakana",
-                    title: "tr:ウ, tr:ア, tr:オ, tr:エ, tr:イ",
+                    title: "tr:ウ, tr:エ, tr:ア, tr:イ, tr:オ",
                   },
-                  id: "b1b475f5-7cef-530f-99e8-5f649103ce51",
+                  id: "e2ce207c-9955-5390-9029-033b04ef1d01",
                   type: "title",
                 },
                 {
                   block_order: 2,
                   content: {
-                    sequence: ["ウ", "ア", "オ", "エ", "イ"],
+                    sequence: ["ウ", "エ", "ア", "イ", "オ"],
                   },
-                  id: "bb21a059-32ee-5496-bb03-2b920cc95347",
+                  id: "fed072f0-0d2c-5daf-84bd-55ea536a233f",
                   type: "sequence",
                 },
               ],
-              id: "6ab23cfa-5892-5b86-9642-d534aae2d066",
+              id: "5a2a4f8e-a59f-5afa-9d35-81377cd794e3",
               screen_order: 19,
-              title: "Ordnen Sie die Silben in der richtigen Reihenfolge an.",
+              title: "Acomoda las sílabas en el orden correcto.",
             },
           ],
-          subtitle: "Silben: ア、イ、ウ、エ、オ",
-          title: "Lektion 11",
-          topic_id: "cf72c46a-ab31-4724-adf6-7d827a9a8d73",
+          subtitle: "Sílabas: ア、イ、ウ、エ、オ",
+          title: "Lección 11",
+          topic_id: "db0183e1-1a54-4f44-a18a-2020f6b6987b",
         },
         {
-          expanded_subtitle: "Lernen Sie, die Silben in der Reihe tr:か zu lesen und zu schreiben.",
+          expanded_subtitle: "Aprende a leer y escribir las sílabas del renglón tr:か.",
           expanded_title: "Katakana: tr:か, tr:き, tr:く, tr:け, tr:こ",
           icon: "https://nihongo.khvat.app/chapter2/Lesson12.jpg",
-          id: "4adc1703-9d73-4686-80d5-405604c9e342",
-          last_updated: "2026-09-08T13:12:16.001Z",
+          id: "fa99d539-63ce-435c-b816-3ac1ec867ff4",
+          last_updated: "2026-09-08T13:12:16.025Z",
           lesson_key: "alphabet/katakana&ka",
           lesson_order: 13,
           minimum_version: "2.4.1",
@@ -4750,13 +4748,13 @@ export const dumpDe = {
                     id: "22350aba-d254-48ba-811a-9d1448761042",
                     kana: "katakana",
                   },
-                  id: "50115c69-55b8-53f7-ac1d-a2fc4a0c3090",
+                  id: "b4ecfe22-54d3-5fe3-bb5b-555c0d065d74",
                   type: "letter",
                 },
               ],
-              id: "43b9b75a-cfeb-5a0f-8af5-f135c4a8e31f",
+              id: "73a47a7a-1081-5e93-915b-3ba6e91c8d43",
               screen_order: 1,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -4767,13 +4765,13 @@ export const dumpDe = {
                     id: "22350aba-d254-48ba-811a-9d1448761042",
                     kana: "katakana",
                   },
-                  id: "69eec0b4-8a1c-573e-875f-d5a66a2800be",
+                  id: "de819dbf-9207-52d2-b877-c786b029dad4",
                   type: "letter",
                 },
               ],
-              id: "00eca053-2f7c-5019-b322-3436d20cf071",
+              id: "aa79e584-b6e3-5dc8-96b0-4cbf0844f33c",
               screen_order: 2,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -4784,13 +4782,13 @@ export const dumpDe = {
                     id: "a1d45e3b-a1c9-4409-8d39-725a0a35899d",
                     kana: "katakana",
                   },
-                  id: "cd6b2a3b-1981-5624-9756-22ddb139ceff",
+                  id: "f5f99011-130e-5e1c-95bc-d74a8e2b1cb2",
                   type: "letter",
                 },
               ],
-              id: "ad6d797e-e31e-5356-86bf-6d141c8bb3c1",
+              id: "ea3c24f0-097b-57f0-9c70-75d0be6f6d20",
               screen_order: 3,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -4801,13 +4799,13 @@ export const dumpDe = {
                     id: "a1d45e3b-a1c9-4409-8d39-725a0a35899d",
                     kana: "katakana",
                   },
-                  id: "95a5defb-aa86-5710-bb86-e2dfd9a48185",
+                  id: "f3ff33be-03eb-55e2-8fd5-9417375a539e",
                   type: "letter",
                 },
               ],
-              id: "ef48d581-c69b-5eef-864d-fca2d3c5a5dd",
+              id: "4f6d50bc-3073-5a9e-8902-36e6b339e11b",
               screen_order: 4,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -4819,13 +4817,13 @@ export const dumpDe = {
                       ["カ", "tr:カ"],
                     ],
                   },
-                  id: "3074a264-a868-5f37-9d74-8fe4122e346a",
+                  id: "49dacae6-f1bb-51c9-93dc-0f1c908ed234",
                   type: "matching",
                 },
               ],
-              id: "36ab6047-7984-567f-b4eb-50ea2b212f59",
+              id: "676c8a77-2ebb-592b-9293-d085ee7d511a",
               screen_order: 5,
-              title: "Ordnen Sie 「Katakana」 seiner Umschrift zu.",
+              title: "Relaciona 「Katakana」 con su transliteración.",
             },
             {
               blocks: [
@@ -4836,13 +4834,13 @@ export const dumpDe = {
                     id: "51cd83e5-6167-4bcc-a3e6-6b246f2ca2d1",
                     kana: "katakana",
                   },
-                  id: "aae45b2f-97db-5ed8-8863-f5a723fc01fa",
+                  id: "73fbd6b4-01bf-5a16-9dc6-a81d30ec06ba",
                   type: "letter",
                 },
               ],
-              id: "7f8935ee-c446-551d-abb2-a10a7594d921",
+              id: "52f51a41-3eee-5755-beda-ae2016cce53d",
               screen_order: 6,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -4853,13 +4851,13 @@ export const dumpDe = {
                     id: "51cd83e5-6167-4bcc-a3e6-6b246f2ca2d1",
                     kana: "katakana",
                   },
-                  id: "540294fa-8b27-5f68-afb4-19aee64ad059",
+                  id: "d984db84-cb06-51e8-8833-891c0a7504b5",
                   type: "letter",
                 },
               ],
-              id: "39551409-44a0-5eae-8919-28a2b7fd731a",
+              id: "60a7cf2e-66d3-541a-9409-c51c072cc81b",
               screen_order: 7,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -4869,7 +4867,148 @@ export const dumpDe = {
                     sub_title: "Katakana",
                     title: "tr:キ",
                   },
-                  id: "51c19581-f236-57d7-b158-bffd64bd13c9",
+                  id: "63965a3f-7aa2-5616-9976-e88e8458befc",
+                  type: "title",
+                },
+                {
+                  block_order: 2,
+                  content: {
+                    answers: [
+                      {
+                        isTrue: true,
+                        title: "キ",
+                      },
+                      {
+                        isTrue: false,
+                        title: "ク",
+                      },
+                      {
+                        isTrue: false,
+                        title: "カ",
+                      },
+                    ],
+                  },
+                  id: "ecf85276-2feb-5d52-b1b2-4c8bb2d3da8b",
+                  type: "choice",
+                },
+              ],
+              id: "0cb5a50b-03cc-5593-9ba9-5e3045b0ce3c",
+              screen_order: 8,
+              title: "Selecciona la sílaba.",
+            },
+            {
+              blocks: [
+                {
+                  block_order: 1,
+                  content: {
+                    pairs: [
+                      ["ク", "tr:ク"],
+                      ["キ", "tr:キ"],
+                    ],
+                  },
+                  id: "bdaa69d5-735a-5dba-afad-cbb33a84e38e",
+                  type: "matching",
+                },
+              ],
+              id: "e155051c-0c01-5bb8-9c72-c9114079f345",
+              screen_order: 9,
+              title: "Relaciona 「Katakana」 con su transliteración.",
+            },
+            {
+              blocks: [
+                {
+                  block_order: 1,
+                  content: {
+                    exercise: false,
+                    id: "9a84b07b-696a-4abd-83f2-70ff8ec66a66",
+                    kana: "katakana",
+                  },
+                  id: "c6b6a684-74d1-591e-afee-0ecdf99c3e92",
+                  type: "letter",
+                },
+              ],
+              id: "d6b0f3a3-b8fb-578c-bec6-bc57b2f0568b",
+              screen_order: 10,
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+            },
+            {
+              blocks: [
+                {
+                  block_order: 1,
+                  content: {
+                    exercise: true,
+                    id: "9a84b07b-696a-4abd-83f2-70ff8ec66a66",
+                    kana: "katakana",
+                  },
+                  id: "27a5dd3c-6679-52e5-90f1-7b12af1332d8",
+                  type: "letter",
+                },
+              ],
+              id: "8cd5cfff-777e-57e5-bf2a-8cdaf7516471",
+              screen_order: 11,
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
+            },
+            {
+              blocks: [
+                {
+                  block_order: 1,
+                  content: {
+                    pairs: [
+                      ["ケ", "tr:ケ"],
+                      ["ク", "tr:ク"],
+                    ],
+                  },
+                  id: "ea76ca4a-17fa-5542-99f0-3f865e56682a",
+                  type: "matching",
+                },
+              ],
+              id: "cb91ddd5-38af-5903-90ed-6efca0f0474f",
+              screen_order: 12,
+              title: "Relaciona 「Katakana」 con su transliteración.",
+            },
+            {
+              blocks: [
+                {
+                  block_order: 1,
+                  content: {
+                    exercise: false,
+                    id: "8a2655c3-4553-4f58-83db-069439b11154",
+                    kana: "katakana",
+                  },
+                  id: "f6719e67-5874-5d8d-af05-69500e3b8fd1",
+                  type: "letter",
+                },
+              ],
+              id: "ccd12fd5-3f5e-568c-966d-68c242ede091",
+              screen_order: 13,
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+            },
+            {
+              blocks: [
+                {
+                  block_order: 1,
+                  content: {
+                    exercise: true,
+                    id: "8a2655c3-4553-4f58-83db-069439b11154",
+                    kana: "katakana",
+                  },
+                  id: "c7a0d9f7-3ea9-5e7d-9d3a-6d6857d211d2",
+                  type: "letter",
+                },
+              ],
+              id: "b05a9705-190b-5e33-aa81-563615a7a690",
+              screen_order: 14,
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
+            },
+            {
+              blocks: [
+                {
+                  block_order: 1,
+                  content: {
+                    sub_title: "Katakana",
+                    title: "tr:カ",
+                  },
+                  id: "4939c19d-bf62-5d3c-a2e4-42105c73471f",
                   type: "title",
                 },
                 {
@@ -4882,162 +5021,21 @@ export const dumpDe = {
                       },
                       {
                         isTrue: true,
-                        title: "キ",
-                      },
-                      {
-                        isTrue: false,
                         title: "カ",
                       },
-                    ],
-                  },
-                  id: "3e0a4ff1-a266-5e0e-a29a-330355423655",
-                  type: "choice",
-                },
-              ],
-              id: "2b83fab6-e64c-5ccb-9906-5387ba3cd614",
-              screen_order: 8,
-              title: "Wählen Sie die Silbe aus.",
-            },
-            {
-              blocks: [
-                {
-                  block_order: 1,
-                  content: {
-                    pairs: [
-                      ["ク", "tr:ク"],
-                      ["キ", "tr:キ"],
-                    ],
-                  },
-                  id: "c478d05e-aba4-5bd8-9fba-35834a9746a2",
-                  type: "matching",
-                },
-              ],
-              id: "d2c72597-36e6-57fb-814d-45a45f39e59a",
-              screen_order: 9,
-              title: "Ordnen Sie 「Katakana」 seiner Umschrift zu.",
-            },
-            {
-              blocks: [
-                {
-                  block_order: 1,
-                  content: {
-                    exercise: false,
-                    id: "9a84b07b-696a-4abd-83f2-70ff8ec66a66",
-                    kana: "katakana",
-                  },
-                  id: "9434262d-ab12-550b-8185-1e8b3926c5d7",
-                  type: "letter",
-                },
-              ],
-              id: "b617fab4-e61f-5b08-828c-b9dec6c3a49d",
-              screen_order: 10,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
-            },
-            {
-              blocks: [
-                {
-                  block_order: 1,
-                  content: {
-                    exercise: true,
-                    id: "9a84b07b-696a-4abd-83f2-70ff8ec66a66",
-                    kana: "katakana",
-                  },
-                  id: "07971e88-e933-5376-ac17-6309ce8addca",
-                  type: "letter",
-                },
-              ],
-              id: "c2759f96-eda0-52c7-83af-214508b77176",
-              screen_order: 11,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
-            },
-            {
-              blocks: [
-                {
-                  block_order: 1,
-                  content: {
-                    pairs: [
-                      ["ケ", "tr:ケ"],
-                      ["ク", "tr:ク"],
-                    ],
-                  },
-                  id: "53cf761c-ed48-5f05-8eaa-a802c1855c97",
-                  type: "matching",
-                },
-              ],
-              id: "626025a3-7d6f-52bf-95d7-e5c94c81becb",
-              screen_order: 12,
-              title: "Ordnen Sie 「Katakana」 seiner Umschrift zu.",
-            },
-            {
-              blocks: [
-                {
-                  block_order: 1,
-                  content: {
-                    exercise: false,
-                    id: "8a2655c3-4553-4f58-83db-069439b11154",
-                    kana: "katakana",
-                  },
-                  id: "ef605da1-f25f-5516-8058-73ccf4f62e3f",
-                  type: "letter",
-                },
-              ],
-              id: "04ce585e-3815-54ab-9ea9-a3ebdc81ffb2",
-              screen_order: 13,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
-            },
-            {
-              blocks: [
-                {
-                  block_order: 1,
-                  content: {
-                    exercise: true,
-                    id: "8a2655c3-4553-4f58-83db-069439b11154",
-                    kana: "katakana",
-                  },
-                  id: "c4a394b2-d7bc-5630-bf1b-7027180dfa6d",
-                  type: "letter",
-                },
-              ],
-              id: "a58c749c-0bb8-5131-8733-67f99f570cf8",
-              screen_order: 14,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
-            },
-            {
-              blocks: [
-                {
-                  block_order: 1,
-                  content: {
-                    sub_title: "Katakana",
-                    title: "tr:キ",
-                  },
-                  id: "d2abc7fa-3637-5c4f-b943-455bdffb2ccb",
-                  type: "title",
-                },
-                {
-                  block_order: 2,
-                  content: {
-                    answers: [
                       {
-                        isTrue: true,
+                        isTrue: false,
                         title: "キ",
                       },
-                      {
-                        isTrue: false,
-                        title: "コ",
-                      },
-                      {
-                        isTrue: false,
-                        title: "ケ",
-                      },
                     ],
                   },
-                  id: "f554a810-cf0d-563e-b19d-a0238251c489",
+                  id: "7e440a68-ebaa-53d4-993e-b4f53b6a3c04",
                   type: "choice",
                 },
               ],
-              id: "0eb59d0e-3ba6-56d9-8d54-baa1c28317a5",
+              id: "8f287f98-1125-5fce-934d-9d1164234d14",
               screen_order: 15,
-              title: "Wählen Sie die Silbe aus.",
+              title: "Selecciona la sílaba.",
             },
             {
               blocks: [
@@ -5045,9 +5043,9 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Katakana",
-                    title: "カ, ク, ケ, キ, コ",
+                    title: "ケ, コ, キ, ク, カ",
                   },
-                  id: "9c7b8d3d-746b-5ec3-a01f-162f2fc9ccdf",
+                  id: "0df76854-cedf-5db1-b46b-1f80d9ff9b56",
                   type: "title",
                 },
                 {
@@ -5056,21 +5054,21 @@ export const dumpDe = {
                     answers: [
                       {
                         isTrue: false,
-                        title: "tr:カ, tr:ク, tr:ケ, tr:コ, tr:キ",
+                        title: "tr:カ, tr:ケ, tr:ク, tr:コ, tr:キ",
                       },
                       {
                         isTrue: true,
-                        title: "tr:カ, tr:ク, tr:ケ, tr:キ, tr:コ",
+                        title: "tr:ケ, tr:コ, tr:キ, tr:ク, tr:カ",
                       },
                     ],
                   },
-                  id: "19e6555c-5223-5f83-aba9-7a72b833367f",
+                  id: "6ecea016-6f2d-5ab4-af70-3b159ad1b141",
                   type: "choice",
                 },
               ],
-              id: "86ab33a4-a5e3-57d1-9aa4-db5d99ee76e5",
+              id: "54229fd1-7dcc-5dd6-98b6-3a82207630ab",
               screen_order: 16,
-              title: "Wählen Sie die richtige Reihenfolge.",
+              title: "Elige la secuencia correcta.",
             },
             {
               blocks: [
@@ -5078,9 +5076,9 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Katakana",
-                    title: "ケ, ク, キ, カ, コ",
+                    title: "カ, キ, ク, コ, ケ",
                   },
-                  id: "289bcf2e-b5fc-5f16-84b9-beeefc0d1ff5",
+                  id: "30a3492a-526d-5a42-b1ae-8e0682dca6d6",
                   type: "title",
                 },
                 {
@@ -5089,21 +5087,21 @@ export const dumpDe = {
                     answers: [
                       {
                         isTrue: true,
-                        title: "tr:ケ, tr:ク, tr:キ, tr:カ, tr:コ",
+                        title: "tr:カ, tr:キ, tr:ク, tr:コ, tr:ケ",
                       },
                       {
                         isTrue: false,
-                        title: "tr:コ, tr:ク, tr:カ, tr:キ, tr:ケ",
+                        title: "tr:コ, tr:ク, tr:キ, tr:ケ, tr:カ",
                       },
                     ],
                   },
-                  id: "a411c6b9-5f56-55d3-a8f9-9b985dd2475b",
+                  id: "0f0ee5c7-b789-5ec6-9223-5372d427d507",
                   type: "choice",
                 },
               ],
-              id: "127b190f-dcdc-5321-afdc-371c2d8f0f0f",
+              id: "59448353-96d0-5812-9e0d-676668fac0d8",
               screen_order: 17,
-              title: "Wählen Sie die richtige Reihenfolge.",
+              title: "Elige la secuencia correcta.",
             },
             {
               blocks: [
@@ -5111,23 +5109,23 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Katakana",
-                    title: "tr:ケ, tr:ク, tr:カ, tr:キ, tr:コ",
+                    title: "tr:コ, tr:ク, tr:キ, tr:カ, tr:ケ",
                   },
-                  id: "720db77b-73c3-52bd-b266-09f3c66116cb",
+                  id: "f52bceb9-4806-53a9-927b-22b77e032113",
                   type: "title",
                 },
                 {
                   block_order: 2,
                   content: {
-                    sequence: ["ケ", "ク", "カ", "キ", "コ"],
+                    sequence: ["コ", "ク", "キ", "カ", "ケ"],
                   },
-                  id: "7e8c2bdf-ec6b-5c9a-af49-da0c27034b01",
+                  id: "b571134f-bcdd-55fd-9642-be2920930464",
                   type: "sequence",
                 },
               ],
-              id: "9bf28511-69f5-52b4-b9a7-8608407c906f",
+              id: "d0b0aa1b-6beb-5261-a359-1db9b7cef03c",
               screen_order: 18,
-              title: "Ordnen Sie die Silben in der richtigen Reihenfolge an.",
+              title: "Acomoda las sílabas en el orden correcto.",
             },
             {
               blocks: [
@@ -5135,35 +5133,35 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Katakana",
-                    title: "tr:キ, tr:ケ, tr:ク, tr:カ, tr:コ",
+                    title: "tr:ク, tr:キ, tr:カ, tr:ケ, tr:コ",
                   },
-                  id: "99f372f4-2b78-5d3a-99a8-cba2c8892342",
+                  id: "867a29ae-c167-58d8-abba-46899b322741",
                   type: "title",
                 },
                 {
                   block_order: 2,
                   content: {
-                    sequence: ["キ", "ケ", "ク", "カ", "コ"],
+                    sequence: ["ク", "キ", "カ", "ケ", "コ"],
                   },
-                  id: "ee61ec63-c5bd-59ce-b322-3a72205edd2c",
+                  id: "7853a203-791c-5290-a816-0db9d97f3447",
                   type: "sequence",
                 },
               ],
-              id: "e9570c2d-5b3a-55b4-bdc1-ca9fa7046088",
+              id: "21fb5c53-1006-514b-ae11-9eafdc32c114",
               screen_order: 19,
-              title: "Ordnen Sie die Silben in der richtigen Reihenfolge an.",
+              title: "Acomoda las sílabas en el orden correcto.",
             },
           ],
-          subtitle: "Silben: カ、キ、ク、ケ、コ",
-          title: "Lektion 12",
-          topic_id: "cf72c46a-ab31-4724-adf6-7d827a9a8d73",
+          subtitle: "Sílabas: カ、キ、ク、ケ、コ",
+          title: "Lección 12",
+          topic_id: "db0183e1-1a54-4f44-a18a-2020f6b6987b",
         },
         {
-          expanded_subtitle: "Lernen Sie, die Silben in der Reihe tr:さ zu lesen und zu schreiben.",
+          expanded_subtitle: "Aprende a leer y escribir las sílabas del renglón tr:さ.",
           expanded_title: "Katakana: tr:さ, tr:し, tr:す, tr:せ, tr:そ",
           icon: "https://nihongo.khvat.app/chapter2/Lesson13.jpg",
-          id: "f9bbc311-dcc6-4a10-973e-4fbea708f2ea",
-          last_updated: "2026-09-08T13:12:16.001Z",
+          id: "c83779d6-4bf6-4294-8005-9ad11eb75251",
+          last_updated: "2026-09-08T13:12:16.025Z",
           lesson_key: "alphabet/katakana&sa",
           lesson_order: 14,
           minimum_version: "2.4.1",
@@ -5177,13 +5175,13 @@ export const dumpDe = {
                     id: "5bc17c31-0c79-45dd-be5c-41cf67a5baf0",
                     kana: "katakana",
                   },
-                  id: "0f464bc7-ca6f-57bd-af62-3e94d74a9ccd",
+                  id: "2b86ba97-7303-5c8b-9107-1bdf8507cc22",
                   type: "letter",
                 },
               ],
-              id: "981d05aa-2964-59e6-8709-9129d30cb9f9",
+              id: "7f78eab3-d228-5481-b69f-407193cb9d10",
               screen_order: 1,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -5194,13 +5192,13 @@ export const dumpDe = {
                     id: "5bc17c31-0c79-45dd-be5c-41cf67a5baf0",
                     kana: "katakana",
                   },
-                  id: "c78a6c35-ee50-5246-9798-f39fa43fecf2",
+                  id: "fa1ada3c-8ef9-5427-b14b-4b125986571c",
                   type: "letter",
                 },
               ],
-              id: "6352e983-3378-5978-9245-06783ab4bb71",
+              id: "58847236-581f-5ecd-924e-926c3654d2bd",
               screen_order: 2,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -5211,13 +5209,13 @@ export const dumpDe = {
                     id: "0d44c671-edf2-4c9d-b62d-e3f5ae8ea7b2",
                     kana: "katakana",
                   },
-                  id: "7d63c2e1-f93f-5338-9a37-55bb902f7036",
+                  id: "14c55cc6-18bc-5727-baf1-57516c5ec7e6",
                   type: "letter",
                 },
               ],
-              id: "11360db9-a3e0-5b72-bc60-76ac1dfea18a",
+              id: "dc0c5911-46ee-589d-a94b-a111b9a99fa2",
               screen_order: 3,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -5228,13 +5226,13 @@ export const dumpDe = {
                     id: "0d44c671-edf2-4c9d-b62d-e3f5ae8ea7b2",
                     kana: "katakana",
                   },
-                  id: "47fb6326-306f-5405-a6d8-e1e104f46f27",
+                  id: "70f1b828-fa49-5b15-8bf1-5527a17c6e5a",
                   type: "letter",
                 },
               ],
-              id: "b0a26db4-db0e-5d64-a522-b2c3743062d3",
+              id: "b1a938d5-0a37-59de-9033-fc9ccf2c8340",
               screen_order: 4,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -5246,13 +5244,13 @@ export const dumpDe = {
                       ["サ", "tr:サ"],
                     ],
                   },
-                  id: "b72f400d-f9b8-5cb4-858c-84b444597a16",
+                  id: "2da5a24b-4a42-5bad-9f97-597f43d7f74c",
                   type: "matching",
                 },
               ],
-              id: "7947c7a5-543d-57e3-8982-b35244ec9279",
+              id: "a94033eb-b189-5e78-b6d7-c1760396fcfa",
               screen_order: 5,
-              title: "Ordnen Sie 「Katakana」 seiner Umschrift zu.",
+              title: "Relaciona 「Katakana」 con su transliteración.",
             },
             {
               blocks: [
@@ -5263,13 +5261,13 @@ export const dumpDe = {
                     id: "c495772d-7048-4423-a993-60ce5ce325a2",
                     kana: "katakana",
                   },
-                  id: "716b1969-1b7b-5e7e-8da3-8b7ff19352cf",
+                  id: "ebf04889-9476-5639-a888-45b5521f7631",
                   type: "letter",
                 },
               ],
-              id: "774c907e-3440-50f0-aff5-eb81dbd2ce1f",
+              id: "bb22fed9-e831-56a4-817e-f75b14c75d5b",
               screen_order: 6,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -5280,13 +5278,13 @@ export const dumpDe = {
                     id: "c495772d-7048-4423-a993-60ce5ce325a2",
                     kana: "katakana",
                   },
-                  id: "fc58f921-2cec-548d-b6bb-862c94ca893d",
+                  id: "4b3972e3-f320-504a-8040-07a0b9bdd51c",
                   type: "letter",
                 },
               ],
-              id: "367d6412-61f2-54b3-81f8-a35305c8bbd6",
+              id: "51d1200e-5932-503f-9d6f-e5b2993dbfa0",
               screen_order: 7,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -5296,17 +5294,13 @@ export const dumpDe = {
                     sub_title: "Katakana",
                     title: "tr:シ",
                   },
-                  id: "77d6949f-a8e7-5fb0-bf65-d1b90e03fe02",
+                  id: "b3218be7-179f-5ea3-808f-49ccfbd7b0cc",
                   type: "title",
                 },
                 {
                   block_order: 2,
                   content: {
                     answers: [
-                      {
-                        isTrue: true,
-                        title: "シ",
-                      },
                       {
                         isTrue: false,
                         title: "ス",
@@ -5315,15 +5309,19 @@ export const dumpDe = {
                         isTrue: false,
                         title: "サ",
                       },
+                      {
+                        isTrue: true,
+                        title: "シ",
+                      },
                     ],
                   },
-                  id: "349e8699-2230-594e-8c36-b8fcecbe8b35",
+                  id: "879d3d2b-0dcb-51dd-b327-07774c26d79c",
                   type: "choice",
                 },
               ],
-              id: "3e374c33-1af6-5ae8-a30e-238d253f90ae",
+              id: "5be23eaf-c871-5c99-8fd3-4ca05d76df72",
               screen_order: 8,
-              title: "Wählen Sie die Silbe aus.",
+              title: "Selecciona la sílaba.",
             },
             {
               blocks: [
@@ -5335,13 +5333,13 @@ export const dumpDe = {
                       ["シ", "tr:シ"],
                     ],
                   },
-                  id: "aa73dce1-4976-514f-98f7-bfd4a0d761c7",
+                  id: "1c40ffcc-fee9-5adb-8a6b-bb3e162f48fd",
                   type: "matching",
                 },
               ],
-              id: "98ad5765-31fc-58d6-850f-0234ec252502",
+              id: "0e778fec-e5f9-5cf9-9aaf-c5a59e806ebf",
               screen_order: 9,
-              title: "Ordnen Sie 「Katakana」 seiner Umschrift zu.",
+              title: "Relaciona 「Katakana」 con su transliteración.",
             },
             {
               blocks: [
@@ -5352,13 +5350,13 @@ export const dumpDe = {
                     id: "0106956a-9090-4599-93a2-0be363bcf7bf",
                     kana: "katakana",
                   },
-                  id: "1039812d-47ea-5491-86ac-03834bd1633d",
+                  id: "0c8060ce-099a-5297-a99a-e1251f9b79d0",
                   type: "letter",
                 },
               ],
-              id: "b16839ff-dca3-5e7f-97b5-7ce9db6904a4",
+              id: "82d602d3-b227-59b1-ab2e-08d09ebf7bd9",
               screen_order: 10,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -5369,13 +5367,13 @@ export const dumpDe = {
                     id: "0106956a-9090-4599-93a2-0be363bcf7bf",
                     kana: "katakana",
                   },
-                  id: "376d25e4-1d6a-5dff-a9a2-f88ac1bf9c15",
+                  id: "da2d661d-5e96-5678-9205-b2d6910dafc6",
                   type: "letter",
                 },
               ],
-              id: "ebaff0fb-276d-5006-b3d7-5d20484f49ca",
+              id: "e6a60392-bff0-5deb-a441-81a94d249e40",
               screen_order: 11,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -5387,13 +5385,13 @@ export const dumpDe = {
                       ["ス", "tr:ス"],
                     ],
                   },
-                  id: "9a214c36-dad9-5978-99e2-6ef4767d5380",
+                  id: "1fe34b8d-ac78-5564-8065-19909fbb0151",
                   type: "matching",
                 },
               ],
-              id: "15423cb9-d708-5ca8-a86e-d7029355544f",
+              id: "83843222-5c7b-5861-9937-539ded1fc2b7",
               screen_order: 12,
-              title: "Ordnen Sie 「Katakana」 seiner Umschrift zu.",
+              title: "Relaciona 「Katakana」 con su transliteración.",
             },
             {
               blocks: [
@@ -5404,13 +5402,13 @@ export const dumpDe = {
                     id: "3108807a-1d5e-47b3-9f06-514bc8096102",
                     kana: "katakana",
                   },
-                  id: "ce6ccdcc-1da8-5496-b9cc-1a4cd445fd6a",
+                  id: "5ab2422d-bf18-5b59-a812-13962e5f36cd",
                   type: "letter",
                 },
               ],
-              id: "16f97b7d-eaff-5388-ac0d-5181f6807546",
+              id: "df885de5-7919-5dcb-a17f-5a59bdd6a3ba",
               screen_order: 13,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -5421,13 +5419,13 @@ export const dumpDe = {
                     id: "3108807a-1d5e-47b3-9f06-514bc8096102",
                     kana: "katakana",
                   },
-                  id: "3219c671-4eee-54c8-b029-a4dd8ffed856",
+                  id: "8bd0d232-016a-5b3c-b69f-55af1b1e3077",
                   type: "letter",
                 },
               ],
-              id: "88a481a0-37d0-5a9d-854b-2eb4c766f673",
+              id: "840b4df5-6afa-51c8-aa57-42c96db7c6f4",
               screen_order: 14,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -5435,9 +5433,9 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Katakana",
-                    title: "tr:ソ",
+                    title: "tr:セ",
                   },
-                  id: "85f71e0f-8d5e-5cac-a3c4-bfa8c05de403",
+                  id: "444d3d6b-f776-52d8-b7bb-08f7cff6c8cb",
                   type: "title",
                 },
                 {
@@ -5446,25 +5444,25 @@ export const dumpDe = {
                     answers: [
                       {
                         isTrue: true,
+                        title: "セ",
+                      },
+                      {
+                        isTrue: false,
                         title: "ソ",
                       },
                       {
                         isTrue: false,
-                        title: "シ",
-                      },
-                      {
-                        isTrue: false,
-                        title: "サ",
+                        title: "ス",
                       },
                     ],
                   },
-                  id: "08319834-de40-535a-867a-dc84b2978d68",
+                  id: "256cb439-3b86-5266-a4ab-6381dccfff9a",
                   type: "choice",
                 },
               ],
-              id: "1524a650-32dd-53cc-980b-286b28aeb72c",
+              id: "2837ee4a-5154-544c-84a2-065fbff3b7e8",
               screen_order: 15,
-              title: "Wählen Sie die Silbe aus.",
+              title: "Selecciona la sílaba.",
             },
             {
               blocks: [
@@ -5472,9 +5470,9 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Katakana",
-                    title: "ス, サ, セ, ソ, シ",
+                    title: "セ, シ, サ, ス, ソ",
                   },
-                  id: "cf94f6da-e19e-5533-b678-aa15f84000af",
+                  id: "c3018334-3406-59fb-b26e-1b5563b7139d",
                   type: "title",
                 },
                 {
@@ -5483,21 +5481,21 @@ export const dumpDe = {
                     answers: [
                       {
                         isTrue: false,
-                        title: "tr:シ, tr:ス, tr:ソ, tr:サ, tr:セ",
+                        title: "tr:ソ, tr:サ, tr:シ, tr:セ, tr:ス",
                       },
                       {
                         isTrue: true,
-                        title: "tr:ス, tr:サ, tr:セ, tr:ソ, tr:シ",
+                        title: "tr:セ, tr:シ, tr:サ, tr:ス, tr:ソ",
                       },
                     ],
                   },
-                  id: "82c34fbe-282f-5720-b740-f899c6553da2",
+                  id: "4b3e9a4a-2090-5c11-b3d4-c6e3e3856021",
                   type: "choice",
                 },
               ],
-              id: "da1b66bc-3e77-59f1-b6ce-a87bfd716e62",
+              id: "232e0293-a20c-5a1c-b25f-a809c26d07cb",
               screen_order: 16,
-              title: "Wählen Sie die richtige Reihenfolge.",
+              title: "Elige la secuencia correcta.",
             },
             {
               blocks: [
@@ -5505,9 +5503,9 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Katakana",
-                    title: "ソ, シ, ス, サ, セ",
+                    title: "シ, ソ, サ, セ, ス",
                   },
-                  id: "12508fbe-2ff8-537e-9503-4fbca922b446",
+                  id: "2e75fcce-4700-5eb2-9553-c5b804d52906",
                   type: "title",
                 },
                 {
@@ -5515,22 +5513,22 @@ export const dumpDe = {
                   content: {
                     answers: [
                       {
-                        isTrue: true,
-                        title: "tr:ソ, tr:シ, tr:ス, tr:サ, tr:セ",
+                        isTrue: false,
+                        title: "tr:ソ, tr:セ, tr:シ, tr:ス, tr:サ",
                       },
                       {
-                        isTrue: false,
-                        title: "tr:ス, tr:ソ, tr:セ, tr:シ, tr:サ",
+                        isTrue: true,
+                        title: "tr:シ, tr:ソ, tr:サ, tr:セ, tr:ス",
                       },
                     ],
                   },
-                  id: "d354c72c-3468-534d-8497-8e7a9d7a6bb6",
+                  id: "bba8ff80-1722-5749-a5bb-bdd35c75fc2e",
                   type: "choice",
                 },
               ],
-              id: "329560d8-fef7-5ce7-b8d9-bf4a19617bac",
+              id: "f2430075-cd16-592e-88c0-3dc02082cb43",
               screen_order: 17,
-              title: "Wählen Sie die richtige Reihenfolge.",
+              title: "Elige la secuencia correcta.",
             },
             {
               blocks: [
@@ -5538,23 +5536,23 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Katakana",
-                    title: "tr:サ, tr:ソ, tr:セ, tr:ス, tr:シ",
+                    title: "tr:ス, tr:ソ, tr:シ, tr:セ, tr:サ",
                   },
-                  id: "5455d687-3bef-5e73-8092-87d4610af46c",
+                  id: "9cd6667a-762d-5b40-a995-411325f0f1bc",
                   type: "title",
                 },
                 {
                   block_order: 2,
                   content: {
-                    sequence: ["サ", "ソ", "セ", "ス", "シ"],
+                    sequence: ["ス", "ソ", "シ", "セ", "サ"],
                   },
-                  id: "a2c6c39f-2701-5919-99a5-84a0a5c243b9",
+                  id: "5f9cc0d6-b9e3-5b00-98cf-94233622a186",
                   type: "sequence",
                 },
               ],
-              id: "5b34f113-39ad-5308-a303-22700a1ac0c8",
+              id: "79577369-ed22-5e0b-bb46-d7ed67aacd46",
               screen_order: 18,
-              title: "Ordnen Sie die Silben in der richtigen Reihenfolge an.",
+              title: "Acomoda las sílabas en el orden correcto.",
             },
             {
               blocks: [
@@ -5562,35 +5560,35 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Katakana",
-                    title: "tr:シ, tr:サ, tr:セ, tr:ス, tr:ソ",
+                    title: "tr:サ, tr:ソ, tr:ス, tr:セ, tr:シ",
                   },
-                  id: "f34934fe-02ae-577c-99d0-8ae45bc423a4",
+                  id: "f8987365-193f-54a5-a7af-68bd2c4b30e4",
                   type: "title",
                 },
                 {
                   block_order: 2,
                   content: {
-                    sequence: ["シ", "サ", "セ", "ス", "ソ"],
+                    sequence: ["サ", "ソ", "ス", "セ", "シ"],
                   },
-                  id: "68a8dd75-28f5-5902-a57c-32cbf3e1a060",
+                  id: "da3beb9e-f15d-5a0c-b891-20d2b2807cd5",
                   type: "sequence",
                 },
               ],
-              id: "81521bd6-aae6-5f7c-a964-373a5bb33eb3",
+              id: "93f34b09-b39a-54d8-94d4-472b98f09d5e",
               screen_order: 19,
-              title: "Ordnen Sie die Silben in der richtigen Reihenfolge an.",
+              title: "Acomoda las sílabas en el orden correcto.",
             },
           ],
-          subtitle: "Silben: サ、シ、ス、セ、ソ",
-          title: "Lektion 13",
-          topic_id: "cf72c46a-ab31-4724-adf6-7d827a9a8d73",
+          subtitle: "Sílabas: サ、シ、ス、セ、ソ",
+          title: "Lección 13",
+          topic_id: "db0183e1-1a54-4f44-a18a-2020f6b6987b",
         },
         {
-          expanded_subtitle: "Lernen Sie, die Silben in der Reihe tr:た zu lesen und zu schreiben.",
+          expanded_subtitle: "Aprende a leer y escribir las sílabas del renglón tr:た.",
           expanded_title: "Katakana: tr:た, tr:ち, tr:つ, tr:て, tr:と",
           icon: "https://nihongo.khvat.app/chapter2/Lesson14.jpg",
-          id: "16a77c35-e0ab-4db1-9b97-957313478bc8",
-          last_updated: "2026-09-08T13:12:16.001Z",
+          id: "77785c2b-e70a-4687-baf3-1e08d888832e",
+          last_updated: "2026-09-08T13:12:16.026Z",
           lesson_key: "alphabet/katakana&ta",
           lesson_order: 15,
           minimum_version: "2.4.1",
@@ -5604,13 +5602,13 @@ export const dumpDe = {
                     id: "36b4894e-19d1-4efe-961d-d9dbc6284757",
                     kana: "katakana",
                   },
-                  id: "abb00828-6ee7-56a6-919d-8f21cd49cca4",
+                  id: "472fc5d4-e801-58c5-bb28-cbf4a948572e",
                   type: "letter",
                 },
               ],
-              id: "aa6e5214-926f-5344-8d65-6cadb885c6c4",
+              id: "888e9bc9-0dd9-57d2-9944-8f068814ccf5",
               screen_order: 1,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -5621,13 +5619,13 @@ export const dumpDe = {
                     id: "36b4894e-19d1-4efe-961d-d9dbc6284757",
                     kana: "katakana",
                   },
-                  id: "d7765e81-3c5e-5eb9-bc39-f470f51f38a7",
+                  id: "e548b526-4d10-573d-a548-7aa19c3fdb6f",
                   type: "letter",
                 },
               ],
-              id: "fb00376a-21bc-512a-b906-062a134c15f6",
+              id: "2a80a229-f4f3-5316-9807-52a3b809477b",
               screen_order: 2,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -5638,13 +5636,13 @@ export const dumpDe = {
                     id: "f17698db-0da4-4c09-ba3b-9d10e3c7aa4d",
                     kana: "katakana",
                   },
-                  id: "20a931c4-e94f-542b-917e-42f370380a22",
+                  id: "4e0e62c0-d8ce-5f61-adae-ddeb23f3866a",
                   type: "letter",
                 },
               ],
-              id: "8e5c1f90-1253-5da5-a666-ab9183ca0fbc",
+              id: "e0cdcec3-0c90-5af8-8f75-e5fde100807e",
               screen_order: 3,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -5655,13 +5653,13 @@ export const dumpDe = {
                     id: "f17698db-0da4-4c09-ba3b-9d10e3c7aa4d",
                     kana: "katakana",
                   },
-                  id: "b857aea1-5a9d-568b-85a0-0a90f12158a4",
+                  id: "84439d13-4593-5604-884e-b6d534210f52",
                   type: "letter",
                 },
               ],
-              id: "07f6157a-7aa9-501c-bb64-5424a349dd94",
+              id: "babab437-efc7-5904-b46a-50b401de6b04",
               screen_order: 4,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -5673,13 +5671,13 @@ export const dumpDe = {
                       ["タ", "tr:タ"],
                     ],
                   },
-                  id: "d7fe8c20-b716-5eef-ba32-de29e5bc9159",
+                  id: "2f33575b-a3d0-5cef-98a3-4ece52efd600",
                   type: "matching",
                 },
               ],
-              id: "f16501d9-5a63-5816-90eb-f54af089ad47",
+              id: "c0b1c8d9-17b4-532e-874b-4a4aa2eb3030",
               screen_order: 5,
-              title: "Ordnen Sie 「Katakana」 seiner Umschrift zu.",
+              title: "Relaciona 「Katakana」 con su transliteración.",
             },
             {
               blocks: [
@@ -5690,13 +5688,13 @@ export const dumpDe = {
                     id: "08123485-a3d0-461e-8af3-bf6708b74d90",
                     kana: "katakana",
                   },
-                  id: "13afc704-e2cb-58f2-a33a-eaf6d37da6c8",
+                  id: "d65d34f2-0af8-5275-926f-a10791fdfa35",
                   type: "letter",
                 },
               ],
-              id: "7d54c94e-d2bc-5621-8e1a-a931516623be",
+              id: "a87beae6-5a1b-544e-a325-2fa52ed0e9fc",
               screen_order: 6,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -5707,13 +5705,13 @@ export const dumpDe = {
                     id: "08123485-a3d0-461e-8af3-bf6708b74d90",
                     kana: "katakana",
                   },
-                  id: "96d8f04f-b642-5037-bc95-7d6bb0729d50",
+                  id: "424aad9d-fe60-5991-bd91-90ac492e1f6a",
                   type: "letter",
                 },
               ],
-              id: "dd8344b5-d7d2-5d3e-8d16-173615019573",
+              id: "878e9a1f-7c5b-509e-9f0e-9af10d7e889f",
               screen_order: 7,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -5721,9 +5719,9 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Katakana",
-                    title: "tr:チ",
+                    title: "tr:タ",
                   },
-                  id: "72b42026-738a-5e57-a6fb-b47265593805",
+                  id: "df04dfd3-1f6f-5655-baed-7f65b356f1e7",
                   type: "title",
                 },
                 {
@@ -5732,25 +5730,25 @@ export const dumpDe = {
                     answers: [
                       {
                         isTrue: true,
-                        title: "チ",
-                      },
-                      {
-                        isTrue: false,
                         title: "タ",
                       },
                       {
                         isTrue: false,
                         title: "ツ",
                       },
+                      {
+                        isTrue: false,
+                        title: "チ",
+                      },
                     ],
                   },
-                  id: "ca00a946-4a50-5f03-bd61-9f16754dd546",
+                  id: "c51c18e4-e9be-50fe-8977-fd46c2e0234c",
                   type: "choice",
                 },
               ],
-              id: "4f3dca43-ff4a-5925-9b50-f8b5744ef731",
+              id: "4fedf359-5c76-559e-beef-22de5ee287c1",
               screen_order: 8,
-              title: "Wählen Sie die Silbe aus.",
+              title: "Selecciona la sílaba.",
             },
             {
               blocks: [
@@ -5762,13 +5760,13 @@ export const dumpDe = {
                       ["チ", "tr:チ"],
                     ],
                   },
-                  id: "6016617b-9b2e-5e5d-bc12-279fe60725f5",
+                  id: "5761f6d2-679e-552d-90af-ca7746f2d635",
                   type: "matching",
                 },
               ],
-              id: "1722eead-4344-5107-9400-05e42a855802",
+              id: "699eb70b-6ae8-5be3-80f3-11925edca4ea",
               screen_order: 9,
-              title: "Ordnen Sie 「Katakana」 seiner Umschrift zu.",
+              title: "Relaciona 「Katakana」 con su transliteración.",
             },
             {
               blocks: [
@@ -5779,13 +5777,13 @@ export const dumpDe = {
                     id: "45870b67-8005-4ee1-a79c-a239289ef9b6",
                     kana: "katakana",
                   },
-                  id: "3bc06825-c1d2-5977-a870-4519d5efc6a3",
+                  id: "0a65c442-f95e-5ef8-bf4a-7709754ad9bd",
                   type: "letter",
                 },
               ],
-              id: "4774e08a-ed5d-5657-bb01-8e562f214cd5",
+              id: "21befef9-1aed-53f2-8cfa-b596075af60b",
               screen_order: 10,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -5796,13 +5794,13 @@ export const dumpDe = {
                     id: "45870b67-8005-4ee1-a79c-a239289ef9b6",
                     kana: "katakana",
                   },
-                  id: "5ee0bc35-f163-59cb-bfb0-a8acadfdc0bc",
+                  id: "d500529d-7662-537f-8ff8-03526cac6cbf",
                   type: "letter",
                 },
               ],
-              id: "1826e5b4-b9f1-50b3-bf88-9979964fe122",
+              id: "5b56a50f-6309-5928-91b9-57790a570d05",
               screen_order: 11,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -5814,13 +5812,13 @@ export const dumpDe = {
                       ["ツ", "tr:ツ"],
                     ],
                   },
-                  id: "b868e2a6-3091-571f-8079-5128cbb7d214",
+                  id: "d2fcb4a0-a946-5c4e-bfa4-91a63bedac53",
                   type: "matching",
                 },
               ],
-              id: "83039a0d-be51-560b-8a2b-4330cb5185a4",
+              id: "a4529b05-4a61-5598-a8fb-c3bb60c76709",
               screen_order: 12,
-              title: "Ordnen Sie 「Katakana」 seiner Umschrift zu.",
+              title: "Relaciona 「Katakana」 con su transliteración.",
             },
             {
               blocks: [
@@ -5831,13 +5829,13 @@ export const dumpDe = {
                     id: "bfd720a3-aaaa-4ce1-a88b-ce4866b0351f",
                     kana: "katakana",
                   },
-                  id: "86aed0aa-3604-5b18-9b14-2a2a2c0d5b9c",
+                  id: "78d46c14-b654-500e-9d96-ebcf3d6743ef",
                   type: "letter",
                 },
               ],
-              id: "2c46ae54-1957-5267-bcb1-a8c3babe840d",
+              id: "431bd64f-c306-59f2-b982-607af5cecadc",
               screen_order: 13,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -5848,13 +5846,13 @@ export const dumpDe = {
                     id: "bfd720a3-aaaa-4ce1-a88b-ce4866b0351f",
                     kana: "katakana",
                   },
-                  id: "75c94e0c-3683-5243-9e38-e81dfd9206de",
+                  id: "a3d3aaef-9047-51a1-9394-44d2c01c1f9e",
                   type: "letter",
                 },
               ],
-              id: "3176d3d0-4934-5c54-81e8-f6189c4d5c6c",
+              id: "dc3f01b4-efd5-5af9-a959-554b9a3747b6",
               screen_order: 14,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -5862,9 +5860,9 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Katakana",
-                    title: "tr:ツ",
+                    title: "tr:チ",
                   },
-                  id: "976d136e-c1cf-5b88-94dc-4e37069edfb0",
+                  id: "752b2e70-cbe2-5682-8633-a0ba4606cc96",
                   type: "title",
                 },
                 {
@@ -5873,7 +5871,7 @@ export const dumpDe = {
                     answers: [
                       {
                         isTrue: true,
-                        title: "ツ",
+                        title: "チ",
                       },
                       {
                         isTrue: false,
@@ -5881,17 +5879,17 @@ export const dumpDe = {
                       },
                       {
                         isTrue: false,
-                        title: "チ",
+                        title: "タ",
                       },
                     ],
                   },
-                  id: "52531bef-2046-5458-98c2-e34461437342",
+                  id: "b99c9001-37cc-5836-851f-b8c11215c5f2",
                   type: "choice",
                 },
               ],
-              id: "95b83148-c06a-5cbe-a1a4-b970c426a4bc",
+              id: "e13c647e-3a2f-5723-a10a-9215b5baa98f",
               screen_order: 15,
-              title: "Wählen Sie die Silbe aus.",
+              title: "Selecciona la sílaba.",
             },
             {
               blocks: [
@@ -5899,9 +5897,9 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Katakana",
-                    title: "ト, テ, ツ, チ, タ",
+                    title: "テ, ト, タ, ツ, チ",
                   },
-                  id: "65f8f314-55dd-54a3-a8f8-1a26b49094e0",
+                  id: "5fb9c742-220f-59bc-88e2-e4f5c9bf35e7",
                   type: "title",
                 },
                 {
@@ -5909,22 +5907,22 @@ export const dumpDe = {
                   content: {
                     answers: [
                       {
-                        isTrue: false,
-                        title: "tr:ト, tr:ツ, tr:チ, tr:テ, tr:タ",
+                        isTrue: true,
+                        title: "tr:テ, tr:ト, tr:タ, tr:ツ, tr:チ",
                       },
                       {
-                        isTrue: true,
-                        title: "tr:ト, tr:テ, tr:ツ, tr:チ, tr:タ",
+                        isTrue: false,
+                        title: "tr:タ, tr:チ, tr:ツ, tr:テ, tr:ト",
                       },
                     ],
                   },
-                  id: "976c575c-d5f5-5a05-a6b9-0987319446cd",
+                  id: "55b6372b-4426-5679-94d9-8bc2ef0166ed",
                   type: "choice",
                 },
               ],
-              id: "ec1eabaa-9cca-5fc4-90c4-df8498f5dca1",
+              id: "61994e9a-3176-5239-bcf5-62b027d99564",
               screen_order: 16,
-              title: "Wählen Sie die richtige Reihenfolge.",
+              title: "Elige la secuencia correcta.",
             },
             {
               blocks: [
@@ -5932,9 +5930,9 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Katakana",
-                    title: "ト, テ, ツ, チ, タ",
+                    title: "タ, ト, ツ, チ, テ",
                   },
-                  id: "426a1680-fcf8-5405-a0b5-d7e7ae28c0e2",
+                  id: "c6dd6520-ce96-58a1-8bbc-20f3b57d737e",
                   type: "title",
                 },
                 {
@@ -5942,22 +5940,22 @@ export const dumpDe = {
                   content: {
                     answers: [
                       {
-                        isTrue: true,
-                        title: "tr:ト, tr:テ, tr:ツ, tr:チ, tr:タ",
+                        isTrue: false,
+                        title: "tr:テ, tr:ツ, tr:ト, tr:タ, tr:チ",
                       },
                       {
-                        isTrue: false,
-                        title: "tr:ト, tr:テ, tr:タ, tr:ツ, tr:チ",
+                        isTrue: true,
+                        title: "tr:タ, tr:ト, tr:ツ, tr:チ, tr:テ",
                       },
                     ],
                   },
-                  id: "362b7e6e-e3c9-58d3-a23a-ec83944dda67",
+                  id: "9207f506-a049-5f8c-8cbf-28892a50483e",
                   type: "choice",
                 },
               ],
-              id: "7b66fbe4-362d-5ed2-b049-eb50c5e6952c",
+              id: "45f7c13d-c758-5f1d-ad09-a09a9959bad5",
               screen_order: 17,
-              title: "Wählen Sie die richtige Reihenfolge.",
+              title: "Elige la secuencia correcta.",
             },
             {
               blocks: [
@@ -5965,23 +5963,23 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Katakana",
-                    title: "tr:ト, tr:テ, tr:タ, tr:チ, tr:ツ",
+                    title: "tr:タ, tr:チ, tr:テ, tr:ト, tr:ツ",
                   },
-                  id: "a0ee9273-7485-55a4-a1b3-1364a881c588",
+                  id: "9d5a3772-f05a-5bbd-aa35-1f7f7afe2e58",
                   type: "title",
                 },
                 {
                   block_order: 2,
                   content: {
-                    sequence: ["ト", "テ", "タ", "チ", "ツ"],
+                    sequence: ["タ", "チ", "テ", "ト", "ツ"],
                   },
-                  id: "e93b78c8-fd59-5772-b162-0c925cd9a71a",
+                  id: "18bd3da4-6fdd-5efb-b0f0-6ac6ae187428",
                   type: "sequence",
                 },
               ],
-              id: "2379b8ed-dee3-500c-8bb8-43e62e4d8859",
+              id: "17ae4db2-0fc9-5a7d-b431-4987e92a9949",
               screen_order: 18,
-              title: "Ordnen Sie die Silben in der richtigen Reihenfolge an.",
+              title: "Acomoda las sílabas en el orden correcto.",
             },
             {
               blocks: [
@@ -5989,35 +5987,35 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Katakana",
-                    title: "tr:ツ, tr:チ, tr:ト, tr:テ, tr:タ",
+                    title: "tr:チ, tr:テ, tr:ト, tr:ツ, tr:タ",
                   },
-                  id: "eac56247-1678-52bf-8f11-38971374bb57",
+                  id: "e503c911-940e-5c59-8b63-5fd62b18e94a",
                   type: "title",
                 },
                 {
                   block_order: 2,
                   content: {
-                    sequence: ["ツ", "チ", "ト", "テ", "タ"],
+                    sequence: ["チ", "テ", "ト", "ツ", "タ"],
                   },
-                  id: "2be6336b-660c-514c-8518-044c50d963d9",
+                  id: "f605f9f7-340b-580d-9bfa-0d783e9f6ac5",
                   type: "sequence",
                 },
               ],
-              id: "834cd521-85bb-5a07-ac4c-c6660fee0298",
+              id: "f719bc31-cc37-5a38-b621-e9045b1dd5a3",
               screen_order: 19,
-              title: "Ordnen Sie die Silben in der richtigen Reihenfolge an.",
+              title: "Acomoda las sílabas en el orden correcto.",
             },
           ],
-          subtitle: "Silben: タ、チ、ツ、テ、ト",
-          title: "Lektion 14",
-          topic_id: "cf72c46a-ab31-4724-adf6-7d827a9a8d73",
+          subtitle: "Sílabas: タ、チ、ツ、テ、ト",
+          title: "Lección 14",
+          topic_id: "db0183e1-1a54-4f44-a18a-2020f6b6987b",
         },
         {
-          expanded_subtitle: "Lernen Sie, die Silben in der Reihe tr:な zu lesen und zu schreiben.",
+          expanded_subtitle: "Aprende a leer y escribir las sílabas del renglón tr:な.",
           expanded_title: "Katakana: tr:な, tr:に, tr:ぬ, tr:ね, tr:の",
           icon: "https://nihongo.khvat.app/chapter2/Lesson15.jpg",
-          id: "66ad874d-11f8-40e8-8473-2b6d6d5e20fb",
-          last_updated: "2026-09-08T13:12:16.001Z",
+          id: "7b5cd6e3-b6f9-433b-a4bd-74de5a13186a",
+          last_updated: "2026-09-08T13:12:16.026Z",
           lesson_key: "alphabet/katakana&na",
           lesson_order: 16,
           minimum_version: "2.4.1",
@@ -6031,13 +6029,13 @@ export const dumpDe = {
                     id: "426cc9fd-4eeb-4914-9484-e87f922365fe",
                     kana: "katakana",
                   },
-                  id: "bb6513eb-0c23-56b6-b0ff-dabb166d65df",
+                  id: "622e5fb6-a547-5e86-a3a0-9fb0fdea546c",
                   type: "letter",
                 },
               ],
-              id: "a5bf57f4-fa26-57f6-8051-08bb1b8fc8af",
+              id: "e426ecbc-7f49-590c-a7b0-bcf3c9df002e",
               screen_order: 1,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -6048,13 +6046,13 @@ export const dumpDe = {
                     id: "426cc9fd-4eeb-4914-9484-e87f922365fe",
                     kana: "katakana",
                   },
-                  id: "464ab010-0185-5a9f-8a89-9e2d49b264be",
+                  id: "d3144a85-c32f-5a0d-afac-ebe58632390c",
                   type: "letter",
                 },
               ],
-              id: "bd9083af-63b1-5545-b8f6-c7ace4eb899b",
+              id: "9cf715fc-d131-5669-844e-3c03eb072309",
               screen_order: 2,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -6065,13 +6063,13 @@ export const dumpDe = {
                     id: "16c7e660-5f2f-44bb-82aa-72722e944126",
                     kana: "katakana",
                   },
-                  id: "e5c5c4bf-9468-5366-a810-8febd3ee2890",
+                  id: "594ac751-9275-50b8-899a-72d99095e2f9",
                   type: "letter",
                 },
               ],
-              id: "5ef404e6-81b6-531f-a536-b99ec8f90a07",
+              id: "75381b75-c699-5638-b265-6d798fb5bec8",
               screen_order: 3,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -6082,13 +6080,13 @@ export const dumpDe = {
                     id: "16c7e660-5f2f-44bb-82aa-72722e944126",
                     kana: "katakana",
                   },
-                  id: "2ed760bb-d2f3-533d-9fac-284fd23d54c1",
+                  id: "3de5a424-8087-5f9a-8723-bbf5a6cdfc91",
                   type: "letter",
                 },
               ],
-              id: "22fc8b9d-9369-553d-9214-b4c6da3b6008",
+              id: "0fdf9dab-32f2-5ff0-b7d9-69062298da85",
               screen_order: 4,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -6100,13 +6098,13 @@ export const dumpDe = {
                       ["ナ", "tr:ナ"],
                     ],
                   },
-                  id: "8463ab19-c027-5153-83d3-e857e7208812",
+                  id: "52cf3c34-8685-5382-9ab9-a6de1c5b7d77",
                   type: "matching",
                 },
               ],
-              id: "5b4304df-d016-51cb-b300-3541752e5eda",
+              id: "335e44ad-4216-5e8a-aa07-ce41c7d6a83c",
               screen_order: 5,
-              title: "Ordnen Sie 「Katakana」 seiner Umschrift zu.",
+              title: "Relaciona 「Katakana」 con su transliteración.",
             },
             {
               blocks: [
@@ -6117,13 +6115,13 @@ export const dumpDe = {
                     id: "6a1e5aa1-6978-4f46-bd78-1310607d9018",
                     kana: "katakana",
                   },
-                  id: "f4839294-e203-54c2-8d39-35edb5eb74b7",
+                  id: "ee7cb9e3-d6e2-5731-a451-5e4efd894f5d",
                   type: "letter",
                 },
               ],
-              id: "dedc2d84-8e34-57eb-b629-379f3f1a0cdc",
+              id: "3b0da60f-4c44-500c-ba0c-31a899d61ac1",
               screen_order: 6,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -6134,13 +6132,13 @@ export const dumpDe = {
                     id: "6a1e5aa1-6978-4f46-bd78-1310607d9018",
                     kana: "katakana",
                   },
-                  id: "5637c515-bb3c-572e-bafc-eabbfde53d28",
+                  id: "bf575c14-ad14-525c-8ef9-9df2d3ab884f",
                   type: "letter",
                 },
               ],
-              id: "d81a6222-3b2e-57fc-871c-b27c475b60e1",
+              id: "006c88e4-5d90-5736-a04e-f20508c606be",
               screen_order: 7,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -6148,9 +6146,150 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Katakana",
-                    title: "tr:ナ",
+                    title: "tr:ヌ",
                   },
-                  id: "951eedc7-3651-5cae-acff-c188b6da82f2",
+                  id: "a53a9b07-71f9-5abf-943d-ec3d72b02b28",
+                  type: "title",
+                },
+                {
+                  block_order: 2,
+                  content: {
+                    answers: [
+                      {
+                        isTrue: true,
+                        title: "ヌ",
+                      },
+                      {
+                        isTrue: false,
+                        title: "ナ",
+                      },
+                      {
+                        isTrue: false,
+                        title: "ニ",
+                      },
+                    ],
+                  },
+                  id: "452435e9-9fe8-5274-a58e-1b6d2d0ec142",
+                  type: "choice",
+                },
+              ],
+              id: "d19d4c74-b919-51e0-be36-9f4858cfd026",
+              screen_order: 8,
+              title: "Selecciona la sílaba.",
+            },
+            {
+              blocks: [
+                {
+                  block_order: 1,
+                  content: {
+                    pairs: [
+                      ["ヌ", "tr:ヌ"],
+                      ["ニ", "tr:ニ"],
+                    ],
+                  },
+                  id: "a79f4fb0-c4dc-5c75-a2dc-8993b92de93a",
+                  type: "matching",
+                },
+              ],
+              id: "3fef0004-613a-5416-a388-2fbf4bcddc70",
+              screen_order: 9,
+              title: "Relaciona 「Katakana」 con su transliteración.",
+            },
+            {
+              blocks: [
+                {
+                  block_order: 1,
+                  content: {
+                    exercise: false,
+                    id: "78f412ca-a2fc-4319-9444-288363407b45",
+                    kana: "katakana",
+                  },
+                  id: "e1ff3d48-0a71-55e2-a767-8c5e1247d4c4",
+                  type: "letter",
+                },
+              ],
+              id: "f197db7c-d4b7-5dc6-86c0-14f069b8d814",
+              screen_order: 10,
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+            },
+            {
+              blocks: [
+                {
+                  block_order: 1,
+                  content: {
+                    exercise: true,
+                    id: "78f412ca-a2fc-4319-9444-288363407b45",
+                    kana: "katakana",
+                  },
+                  id: "e6296957-048e-527a-af90-41c35a7abca8",
+                  type: "letter",
+                },
+              ],
+              id: "0d248376-260b-5b4f-a980-1002d000d2a7",
+              screen_order: 11,
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
+            },
+            {
+              blocks: [
+                {
+                  block_order: 1,
+                  content: {
+                    pairs: [
+                      ["ネ", "tr:ネ"],
+                      ["ヌ", "tr:ヌ"],
+                    ],
+                  },
+                  id: "81cf94f2-7a50-50e6-8e97-1fab310027f5",
+                  type: "matching",
+                },
+              ],
+              id: "aa4ab86e-ae2e-5ae5-9fad-e30a1ac8dd94",
+              screen_order: 12,
+              title: "Relaciona 「Katakana」 con su transliteración.",
+            },
+            {
+              blocks: [
+                {
+                  block_order: 1,
+                  content: {
+                    exercise: false,
+                    id: "8b140c48-5818-4a3b-b8fe-0ddc49852778",
+                    kana: "katakana",
+                  },
+                  id: "f7656cd5-7c4d-5371-a2a7-55d9b717ca02",
+                  type: "letter",
+                },
+              ],
+              id: "b52817e1-a7f9-5bbc-976f-18d2d21527c4",
+              screen_order: 13,
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+            },
+            {
+              blocks: [
+                {
+                  block_order: 1,
+                  content: {
+                    exercise: true,
+                    id: "8b140c48-5818-4a3b-b8fe-0ddc49852778",
+                    kana: "katakana",
+                  },
+                  id: "065aad45-5e18-59db-9c0e-0b39f17640f8",
+                  type: "letter",
+                },
+              ],
+              id: "3b65ccb0-02c6-5ea0-8862-a1162cc67619",
+              screen_order: 14,
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
+            },
+            {
+              blocks: [
+                {
+                  block_order: 1,
+                  content: {
+                    sub_title: "Katakana",
+                    title: "tr:ノ",
+                  },
+                  id: "084e282b-3058-5e1e-9d68-23d8eca9c079",
                   type: "title",
                 },
                 {
@@ -6163,162 +6302,21 @@ export const dumpDe = {
                       },
                       {
                         isTrue: false,
-                        title: "ヌ",
-                      },
-                      {
-                        isTrue: true,
                         title: "ナ",
-                      },
-                    ],
-                  },
-                  id: "431f4b9f-fa25-5903-9325-7c369467f851",
-                  type: "choice",
-                },
-              ],
-              id: "f54086eb-7099-5d27-b805-27710cac1ebd",
-              screen_order: 8,
-              title: "Wählen Sie die Silbe aus.",
-            },
-            {
-              blocks: [
-                {
-                  block_order: 1,
-                  content: {
-                    pairs: [
-                      ["ヌ", "tr:ヌ"],
-                      ["ニ", "tr:ニ"],
-                    ],
-                  },
-                  id: "f7c3e021-5b8d-5681-8746-c77cb551d6b7",
-                  type: "matching",
-                },
-              ],
-              id: "c71afa69-3a6a-5af3-a7bf-dd49e1647c05",
-              screen_order: 9,
-              title: "Ordnen Sie 「Katakana」 seiner Umschrift zu.",
-            },
-            {
-              blocks: [
-                {
-                  block_order: 1,
-                  content: {
-                    exercise: false,
-                    id: "78f412ca-a2fc-4319-9444-288363407b45",
-                    kana: "katakana",
-                  },
-                  id: "cc1d430e-b20b-5a75-92b4-13bf488b7024",
-                  type: "letter",
-                },
-              ],
-              id: "67d4e211-cb86-5e89-b929-fc067e8673eb",
-              screen_order: 10,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
-            },
-            {
-              blocks: [
-                {
-                  block_order: 1,
-                  content: {
-                    exercise: true,
-                    id: "78f412ca-a2fc-4319-9444-288363407b45",
-                    kana: "katakana",
-                  },
-                  id: "1618e78d-dda2-50db-adb0-4dc21beccab1",
-                  type: "letter",
-                },
-              ],
-              id: "b9a7eb14-6078-5cc7-902d-a6dcd52c604f",
-              screen_order: 11,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
-            },
-            {
-              blocks: [
-                {
-                  block_order: 1,
-                  content: {
-                    pairs: [
-                      ["ネ", "tr:ネ"],
-                      ["ヌ", "tr:ヌ"],
-                    ],
-                  },
-                  id: "a9608d55-83eb-5c3e-bf0d-032080d467c7",
-                  type: "matching",
-                },
-              ],
-              id: "d3c66b0a-8738-5eda-bd21-e122ecd42b40",
-              screen_order: 12,
-              title: "Ordnen Sie 「Katakana」 seiner Umschrift zu.",
-            },
-            {
-              blocks: [
-                {
-                  block_order: 1,
-                  content: {
-                    exercise: false,
-                    id: "8b140c48-5818-4a3b-b8fe-0ddc49852778",
-                    kana: "katakana",
-                  },
-                  id: "52124ac6-fb91-5bfc-b8a8-11f950de587e",
-                  type: "letter",
-                },
-              ],
-              id: "459da8cd-052a-5410-b77a-c8898f484114",
-              screen_order: 13,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
-            },
-            {
-              blocks: [
-                {
-                  block_order: 1,
-                  content: {
-                    exercise: true,
-                    id: "8b140c48-5818-4a3b-b8fe-0ddc49852778",
-                    kana: "katakana",
-                  },
-                  id: "03cd17cc-a6bb-5374-96e2-b6318de3f640",
-                  type: "letter",
-                },
-              ],
-              id: "eba7a040-50a0-5b89-bf61-2b1c1e95c976",
-              screen_order: 14,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
-            },
-            {
-              blocks: [
-                {
-                  block_order: 1,
-                  content: {
-                    sub_title: "Katakana",
-                    title: "tr:ノ",
-                  },
-                  id: "86d77b3c-9d28-5059-94ee-46be38690431",
-                  type: "title",
-                },
-                {
-                  block_order: 2,
-                  content: {
-                    answers: [
-                      {
-                        isTrue: false,
-                        title: "ネ",
                       },
                       {
                         isTrue: true,
                         title: "ノ",
                       },
-                      {
-                        isTrue: false,
-                        title: "ナ",
-                      },
                     ],
                   },
-                  id: "62b900d1-3d4b-5753-b0b8-248527b7e68b",
+                  id: "219af9d5-434a-5b3c-8c63-588850c335b2",
                   type: "choice",
                 },
               ],
-              id: "e8eb6ae6-8414-5e72-921f-5d81a399752f",
+              id: "5150491f-a910-54f8-8aa5-21887b710453",
               screen_order: 15,
-              title: "Wählen Sie die Silbe aus.",
+              title: "Selecciona la sílaba.",
             },
             {
               blocks: [
@@ -6326,9 +6324,9 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Katakana",
-                    title: "ノ, ニ, ヌ, ネ, ナ",
+                    title: "ナ, ニ, ノ, ネ, ヌ",
                   },
-                  id: "2ffda556-191d-5d82-93b6-cc3714d89308",
+                  id: "6c5740d5-06a6-5f9c-8e06-c9931c6ea8ea",
                   type: "title",
                 },
                 {
@@ -6336,22 +6334,22 @@ export const dumpDe = {
                   content: {
                     answers: [
                       {
-                        isTrue: true,
-                        title: "tr:ノ, tr:ニ, tr:ヌ, tr:ネ, tr:ナ",
+                        isTrue: false,
+                        title: "tr:ニ, tr:ネ, tr:ヌ, tr:ナ, tr:ノ",
                       },
                       {
-                        isTrue: false,
-                        title: "tr:ヌ, tr:ニ, tr:ノ, tr:ネ, tr:ナ",
+                        isTrue: true,
+                        title: "tr:ナ, tr:ニ, tr:ノ, tr:ネ, tr:ヌ",
                       },
                     ],
                   },
-                  id: "470cc689-6ce1-5768-ac1c-88fcd4ab8578",
+                  id: "c2dffca3-7cf7-516e-aaea-b0b7d3e4a168",
                   type: "choice",
                 },
               ],
-              id: "f44470cb-68eb-5ef8-8d7d-1eb0dd03fe35",
+              id: "2c2b884d-4940-5716-9735-f17eeece3176",
               screen_order: 16,
-              title: "Wählen Sie die richtige Reihenfolge.",
+              title: "Elige la secuencia correcta.",
             },
             {
               blocks: [
@@ -6359,9 +6357,9 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Katakana",
-                    title: "ネ, ナ, ヌ, ノ, ニ",
+                    title: "ナ, ネ, ヌ, ノ, ニ",
                   },
-                  id: "3f546c6e-d938-521e-80e5-b7b66f37cb2c",
+                  id: "cc52c65d-47db-5911-9a59-64faf7fef047",
                   type: "title",
                 },
                 {
@@ -6369,22 +6367,22 @@ export const dumpDe = {
                   content: {
                     answers: [
                       {
-                        isTrue: true,
-                        title: "tr:ネ, tr:ナ, tr:ヌ, tr:ノ, tr:ニ",
+                        isTrue: false,
+                        title: "tr:ノ, tr:ネ, tr:ヌ, tr:ニ, tr:ナ",
                       },
                       {
-                        isTrue: false,
-                        title: "tr:ナ, tr:ネ, tr:ノ, tr:ヌ, tr:ニ",
+                        isTrue: true,
+                        title: "tr:ナ, tr:ネ, tr:ヌ, tr:ノ, tr:ニ",
                       },
                     ],
                   },
-                  id: "2e4540d3-6ace-57b1-8336-e6398bace24f",
+                  id: "a250c60d-a06c-51cf-990a-c865a06e2929",
                   type: "choice",
                 },
               ],
-              id: "86af3566-416e-5835-af47-bfe1277ba5ed",
+              id: "06d7473f-810a-51e0-a8c5-dda942e82b5c",
               screen_order: 17,
-              title: "Wählen Sie die richtige Reihenfolge.",
+              title: "Elige la secuencia correcta.",
             },
             {
               blocks: [
@@ -6392,23 +6390,23 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Katakana",
-                    title: "tr:ナ, tr:ニ, tr:ノ, tr:ネ, tr:ヌ",
+                    title: "tr:ヌ, tr:ナ, tr:ノ, tr:ニ, tr:ネ",
                   },
-                  id: "0562db02-2164-5163-a525-6775dfb0a15a",
+                  id: "337f3668-ed30-562a-a5d2-760be99eec2b",
                   type: "title",
                 },
                 {
                   block_order: 2,
                   content: {
-                    sequence: ["ナ", "ニ", "ノ", "ネ", "ヌ"],
+                    sequence: ["ヌ", "ナ", "ノ", "ニ", "ネ"],
                   },
-                  id: "cd3820a4-a080-5e03-a229-ff48ecf19522",
+                  id: "bbc30ec2-5ba7-520b-9df7-4c56cad72f07",
                   type: "sequence",
                 },
               ],
-              id: "c0335988-56b0-5be2-8c01-f8b6d4cc0cf8",
+              id: "cb76aead-c01e-5ede-b0c4-71dbf2c79914",
               screen_order: 18,
-              title: "Ordnen Sie die Silben in der richtigen Reihenfolge an.",
+              title: "Acomoda las sílabas en el orden correcto.",
             },
             {
               blocks: [
@@ -6416,35 +6414,35 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Katakana",
-                    title: "tr:ナ, tr:ネ, tr:ノ, tr:ニ, tr:ヌ",
+                    title: "tr:ニ, tr:ノ, tr:ナ, tr:ネ, tr:ヌ",
                   },
-                  id: "af7a0606-061a-5484-8bbd-1395da3c576d",
+                  id: "104e688f-51e1-55df-ac8b-0569badf68cf",
                   type: "title",
                 },
                 {
                   block_order: 2,
                   content: {
-                    sequence: ["ナ", "ネ", "ノ", "ニ", "ヌ"],
+                    sequence: ["ニ", "ノ", "ナ", "ネ", "ヌ"],
                   },
-                  id: "c6a33417-8919-58d3-a594-0c597160045d",
+                  id: "75f12ed0-c18e-5555-a9f5-685a3eea149d",
                   type: "sequence",
                 },
               ],
-              id: "df5c6adb-fd22-5211-a12b-6a163767e363",
+              id: "802cd6e4-a92d-5eef-afee-4229024f4921",
               screen_order: 19,
-              title: "Ordnen Sie die Silben in der richtigen Reihenfolge an.",
+              title: "Acomoda las sílabas en el orden correcto.",
             },
           ],
-          subtitle: "Silben: ナ、ニ、ヌ、ネ、ノ",
-          title: "Lektion 15",
-          topic_id: "cf72c46a-ab31-4724-adf6-7d827a9a8d73",
+          subtitle: "Sílabas: ナ、ニ、ヌ、ネ、ノ",
+          title: "Lección 15",
+          topic_id: "db0183e1-1a54-4f44-a18a-2020f6b6987b",
         },
         {
-          expanded_subtitle: "Lernen Sie, die Silben in der Reihe tr:は zu lesen und zu schreiben.",
+          expanded_subtitle: "Aprende a leer y escribir las sílabas del renglón tr:は.",
           expanded_title: "Katakana: tr:は, tr:ひ, tr:ふ, tr:へ, tr:ほ",
           icon: "https://nihongo.khvat.app/chapter2/Lesson16.jpg",
-          id: "98a5083f-ca0a-4fa0-8176-7b248dc47c18",
-          last_updated: "2026-09-08T13:12:16.001Z",
+          id: "b9235e61-db0d-436b-bfd2-a8c23586cebd",
+          last_updated: "2026-09-08T13:12:16.026Z",
           lesson_key: "alphabet/katakana&ha",
           lesson_order: 17,
           minimum_version: "2.4.1",
@@ -6458,13 +6456,13 @@ export const dumpDe = {
                     id: "98db662b-5ca1-47cd-9026-735c762c76f6",
                     kana: "katakana",
                   },
-                  id: "2b43eed2-1292-5ee1-a8ed-970f48519e8e",
+                  id: "57a7bac8-c369-5149-ac9e-fba247c86d7c",
                   type: "letter",
                 },
               ],
-              id: "2bd35a19-6cd0-5f23-b447-c7b1dd046f61",
+              id: "85f78eca-d8e7-5687-836f-a76062bfe505",
               screen_order: 1,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -6475,13 +6473,13 @@ export const dumpDe = {
                     id: "98db662b-5ca1-47cd-9026-735c762c76f6",
                     kana: "katakana",
                   },
-                  id: "a4d62d83-3f31-50d9-936d-2773d4afcb3a",
+                  id: "5d3fb7d5-b4a6-5e14-9fad-589ae73ea51c",
                   type: "letter",
                 },
               ],
-              id: "f1e62ff2-fb8e-5eca-abe1-9b17b87a784f",
+              id: "48e7ee93-3e30-52cd-bc9a-c5f5d32aa54a",
               screen_order: 2,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -6492,13 +6490,13 @@ export const dumpDe = {
                     id: "458fcd0d-1f08-4222-99c7-e17000999ccf",
                     kana: "katakana",
                   },
-                  id: "4b668f3b-ee80-53a0-977d-f02be8b664e4",
+                  id: "5438080b-a18d-5b8d-bdc3-c9ec567a8173",
                   type: "letter",
                 },
               ],
-              id: "da50c82d-5bc3-525e-81c5-cbb622f3cdc9",
+              id: "3e1e85c8-4f23-5626-9aa1-21e794a6503a",
               screen_order: 3,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -6509,13 +6507,13 @@ export const dumpDe = {
                     id: "458fcd0d-1f08-4222-99c7-e17000999ccf",
                     kana: "katakana",
                   },
-                  id: "991b2c59-d43c-5893-9e72-4b08cc34e3ed",
+                  id: "2b89f5b3-2206-5bb6-b3f1-8794ea587091",
                   type: "letter",
                 },
               ],
-              id: "9b470fc2-a914-5388-88e9-919c6907d686",
+              id: "945d961f-38ef-578c-bde6-b497429d93d7",
               screen_order: 4,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -6527,13 +6525,13 @@ export const dumpDe = {
                       ["ハ", "tr:ハ"],
                     ],
                   },
-                  id: "f1829101-2811-5f75-81b3-cadcb18c54a8",
+                  id: "fff22074-9644-555f-8500-97d9a11e3a46",
                   type: "matching",
                 },
               ],
-              id: "699cce6a-f347-54f6-bffa-5488933b0642",
+              id: "a78e3248-a679-5643-8e01-8e47b24499cc",
               screen_order: 5,
-              title: "Ordnen Sie 「Katakana」 seiner Umschrift zu.",
+              title: "Relaciona 「Katakana」 con su transliteración.",
             },
             {
               blocks: [
@@ -6544,13 +6542,13 @@ export const dumpDe = {
                     id: "6ee7807e-278a-4652-8445-f3062e026891",
                     kana: "katakana",
                   },
-                  id: "e9269b4b-8eba-566a-9a10-36096bf6fa82",
+                  id: "2a576e1f-a8c5-50fa-a3bf-a92b193b11d7",
                   type: "letter",
                 },
               ],
-              id: "8f38e234-2984-51e6-acfd-fa8feb7e2460",
+              id: "0f4c0271-0fb5-56b3-aefd-adc2702208d0",
               screen_order: 6,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -6561,13 +6559,13 @@ export const dumpDe = {
                     id: "6ee7807e-278a-4652-8445-f3062e026891",
                     kana: "katakana",
                   },
-                  id: "f837e52b-2239-53be-8318-2d5ab12d6947",
+                  id: "105a80fa-db21-58e5-be8a-a7ca0cd52fc7",
                   type: "letter",
                 },
               ],
-              id: "fab8328e-8c01-54ae-a46e-c48f9e264d1b",
+              id: "10e84436-ad17-5128-87a4-ab7cc3110067",
               screen_order: 7,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -6577,7 +6575,7 @@ export const dumpDe = {
                     sub_title: "Katakana",
                     title: "tr:フ",
                   },
-                  id: "c5be6cee-4b99-560b-a388-1662d1922d30",
+                  id: "f26872e3-c220-59cd-85e4-ac7ffc1128ca",
                   type: "title",
                 },
                 {
@@ -6589,22 +6587,22 @@ export const dumpDe = {
                         title: "ヒ",
                       },
                       {
-                        isTrue: false,
-                        title: "ハ",
-                      },
-                      {
                         isTrue: true,
                         title: "フ",
                       },
+                      {
+                        isTrue: false,
+                        title: "ハ",
+                      },
                     ],
                   },
-                  id: "4a8064d9-4faf-5054-826c-0ca89fa2ef5a",
+                  id: "bb795d62-02bb-5c35-8175-6bc0408e4f4a",
                   type: "choice",
                 },
               ],
-              id: "3cac85d7-9b04-5c3d-bd46-e4fbfad22a52",
+              id: "c37277cb-ba17-5769-8d28-0e708e1d53a4",
               screen_order: 8,
-              title: "Wählen Sie die Silbe aus.",
+              title: "Selecciona la sílaba.",
             },
             {
               blocks: [
@@ -6616,13 +6614,13 @@ export const dumpDe = {
                       ["ヒ", "tr:ヒ"],
                     ],
                   },
-                  id: "460ad466-4a20-54fa-9027-948ebd15fd03",
+                  id: "8394552f-c7cc-5b6f-99b7-90f1371be2fb",
                   type: "matching",
                 },
               ],
-              id: "87d2a972-e3db-5c77-9168-f836252cafea",
+              id: "f1357090-03c3-5b53-b89a-3aad737e75b8",
               screen_order: 9,
-              title: "Ordnen Sie 「Katakana」 seiner Umschrift zu.",
+              title: "Relaciona 「Katakana」 con su transliteración.",
             },
             {
               blocks: [
@@ -6633,13 +6631,13 @@ export const dumpDe = {
                     id: "1014abd7-deb5-4c6b-a1dc-27543817c9fe",
                     kana: "katakana",
                   },
-                  id: "8566d218-1829-524a-9ffa-e56e4ae4a2ae",
+                  id: "050fc34a-1c98-507c-9f3b-6dcc54b21f6e",
                   type: "letter",
                 },
               ],
-              id: "5ec2d944-eef3-5023-97cf-b8ad00c5d4ca",
+              id: "77380f2a-92ec-54c1-a97f-8e3a8ef2271e",
               screen_order: 10,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -6650,13 +6648,13 @@ export const dumpDe = {
                     id: "1014abd7-deb5-4c6b-a1dc-27543817c9fe",
                     kana: "katakana",
                   },
-                  id: "ba40568a-ba23-5aa9-9911-ac0c245372c2",
+                  id: "e83ec93a-219d-5f98-b807-8c830d8b50fe",
                   type: "letter",
                 },
               ],
-              id: "b6e75f55-6b1f-58d7-a217-38a74204cc82",
+              id: "f24db3de-b504-5fcd-89a7-09b5cb5b1ee7",
               screen_order: 11,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -6668,13 +6666,13 @@ export const dumpDe = {
                       ["フ", "tr:フ"],
                     ],
                   },
-                  id: "8024c51b-81ef-588c-8268-9b93ae5c890d",
+                  id: "d326cd3f-55d7-519f-8a2d-53fd5f8841c0",
                   type: "matching",
                 },
               ],
-              id: "48c0308d-7d23-5060-be43-4ba00eaeb85e",
+              id: "5504d092-8973-59b8-aebb-1127c79c37ed",
               screen_order: 12,
-              title: "Ordnen Sie 「Katakana」 seiner Umschrift zu.",
+              title: "Relaciona 「Katakana」 con su transliteración.",
             },
             {
               blocks: [
@@ -6685,13 +6683,13 @@ export const dumpDe = {
                     id: "d80bf13e-66cd-4cf9-93e7-09cb2f435ead",
                     kana: "katakana",
                   },
-                  id: "7048c5fd-dd15-54a4-9f18-985144059dbd",
+                  id: "90c72313-1e83-5fde-a78e-3f3637f307eb",
                   type: "letter",
                 },
               ],
-              id: "88920d3a-f47e-51d9-a6fa-dacf802245c5",
+              id: "119dd0a1-0fb1-53a3-b3c3-1624fec940ec",
               screen_order: 13,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -6702,13 +6700,13 @@ export const dumpDe = {
                     id: "d80bf13e-66cd-4cf9-93e7-09cb2f435ead",
                     kana: "katakana",
                   },
-                  id: "947cf37e-dd22-5106-95ed-a06aedadba15",
+                  id: "3e16b7cd-1eec-5721-bb9c-932a563105c6",
                   type: "letter",
                 },
               ],
-              id: "0ddeed09-13a6-5505-9f46-abaae04ffea0",
+              id: "56b8afa8-daba-5104-973b-0a29ca13b84f",
               screen_order: 14,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -6718,7 +6716,7 @@ export const dumpDe = {
                     sub_title: "Katakana",
                     title: "tr:ハ",
                   },
-                  id: "e358bd86-4567-59ac-bdfe-60131124225d",
+                  id: "66011c26-ed47-5c77-b369-3af17c10c4f2",
                   type: "title",
                 },
                 {
@@ -6727,11 +6725,11 @@ export const dumpDe = {
                     answers: [
                       {
                         isTrue: false,
-                        title: "フ",
+                        title: "ホ",
                       },
                       {
                         isTrue: false,
-                        title: "ホ",
+                        title: "ヘ",
                       },
                       {
                         isTrue: true,
@@ -6739,13 +6737,13 @@ export const dumpDe = {
                       },
                     ],
                   },
-                  id: "f5345eff-762b-5d59-ac1f-43d3de89161f",
+                  id: "cde9b21d-76ea-5a7a-8b7a-10c19e10415f",
                   type: "choice",
                 },
               ],
-              id: "f2760697-e8ba-5888-88fe-e274fc382ee3",
+              id: "08520471-2088-58a8-b1e3-c39537daf8c3",
               screen_order: 15,
-              title: "Wählen Sie die Silbe aus.",
+              title: "Selecciona la sílaba.",
             },
             {
               blocks: [
@@ -6753,9 +6751,9 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Katakana",
-                    title: "ホ, ヒ, ヘ, フ, ハ",
+                    title: "ホ, ヘ, ヒ, フ, ハ",
                   },
-                  id: "ec9b9166-0dcf-5398-90dd-a2d6be06825d",
+                  id: "b2c07b58-eaf0-5c0e-9e18-ac6522b720dd",
                   type: "title",
                 },
                 {
@@ -6763,22 +6761,22 @@ export const dumpDe = {
                   content: {
                     answers: [
                       {
-                        isTrue: false,
-                        title: "tr:ホ, tr:ヘ, tr:ハ, tr:ヒ, tr:フ",
+                        isTrue: true,
+                        title: "tr:ホ, tr:ヘ, tr:ヒ, tr:フ, tr:ハ",
                       },
                       {
-                        isTrue: true,
-                        title: "tr:ホ, tr:ヒ, tr:ヘ, tr:フ, tr:ハ",
+                        isTrue: false,
+                        title: "tr:ヒ, tr:ヘ, tr:フ, tr:ハ, tr:ホ",
                       },
                     ],
                   },
-                  id: "eea3c706-9e29-5b74-815c-fc36f39a10c4",
+                  id: "685a19bd-97b5-5878-9110-d8995ed6bd25",
                   type: "choice",
                 },
               ],
-              id: "5f3801e6-ed4f-5418-a7ec-8cc405609ce6",
+              id: "aacd9190-6be3-58d5-96d9-bf4b6f5ca3e9",
               screen_order: 16,
-              title: "Wählen Sie die richtige Reihenfolge.",
+              title: "Elige la secuencia correcta.",
             },
             {
               blocks: [
@@ -6786,9 +6784,9 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Katakana",
-                    title: "ホ, ヘ, ヒ, ハ, フ",
+                    title: "ヘ, フ, ホ, ハ, ヒ",
                   },
-                  id: "4b70ed96-b14f-5509-984c-f53043845d0f",
+                  id: "ec3688c5-08a9-5337-8f3c-1a7d94915725",
                   type: "title",
                 },
                 {
@@ -6797,21 +6795,21 @@ export const dumpDe = {
                     answers: [
                       {
                         isTrue: true,
-                        title: "tr:ホ, tr:ヘ, tr:ヒ, tr:ハ, tr:フ",
+                        title: "tr:ヘ, tr:フ, tr:ホ, tr:ハ, tr:ヒ",
                       },
                       {
                         isTrue: false,
-                        title: "tr:ホ, tr:フ, tr:ハ, tr:ヒ, tr:ヘ",
+                        title: "tr:ヒ, tr:フ, tr:ヘ, tr:ホ, tr:ハ",
                       },
                     ],
                   },
-                  id: "d8e61e42-0598-570e-9bbc-8f6b3c751e3f",
+                  id: "16c28751-f51e-55c7-8b79-9ba06f4839fb",
                   type: "choice",
                 },
               ],
-              id: "2ce7719a-d9c7-51e4-9703-9a5f58d8d4ee",
+              id: "b51aa392-89be-547f-9add-1d08bc1f0502",
               screen_order: 17,
-              title: "Wählen Sie die richtige Reihenfolge.",
+              title: "Elige la secuencia correcta.",
             },
             {
               blocks: [
@@ -6819,23 +6817,23 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Katakana",
-                    title: "tr:フ, tr:ヘ, tr:ハ, tr:ホ, tr:ヒ",
+                    title: "tr:ヘ, tr:フ, tr:ヒ, tr:ハ, tr:ホ",
                   },
-                  id: "441d1239-d45f-55f8-a402-3df79dbb2ff5",
+                  id: "f787a489-e72e-5279-b67a-79967c88ae17",
                   type: "title",
                 },
                 {
                   block_order: 2,
                   content: {
-                    sequence: ["フ", "ヘ", "ハ", "ホ", "ヒ"],
+                    sequence: ["ヘ", "フ", "ヒ", "ハ", "ホ"],
                   },
-                  id: "862bc336-6c18-58f2-b677-b24ef5c72d3e",
+                  id: "cd627937-e7a1-5382-8e7a-864482a27f91",
                   type: "sequence",
                 },
               ],
-              id: "7f08b7c5-f2c4-59f2-afdf-87f87b718715",
+              id: "fa547e50-f0d2-518b-9cc3-c888aa0a4553",
               screen_order: 18,
-              title: "Ordnen Sie die Silben in der richtigen Reihenfolge an.",
+              title: "Acomoda las sílabas en el orden correcto.",
             },
             {
               blocks: [
@@ -6843,35 +6841,35 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Katakana",
-                    title: "tr:フ, tr:ハ, tr:ホ, tr:ヘ, tr:ヒ",
+                    title: "tr:ヒ, tr:ヘ, tr:フ, tr:ホ, tr:ハ",
                   },
-                  id: "88b37969-e19d-5007-a2a6-7764c636c872",
+                  id: "1d44e147-963d-5577-9125-56fd5ec64994",
                   type: "title",
                 },
                 {
                   block_order: 2,
                   content: {
-                    sequence: ["フ", "ハ", "ホ", "ヘ", "ヒ"],
+                    sequence: ["ヒ", "ヘ", "フ", "ホ", "ハ"],
                   },
-                  id: "a84644e9-041e-5369-808e-2de1cdff942f",
+                  id: "7ecb75e2-61c1-569b-870a-21572d586b0e",
                   type: "sequence",
                 },
               ],
-              id: "8fd52291-0d8c-51f3-8faa-ac1962c45313",
+              id: "9263bcae-3e6a-533c-b173-2c128bbf5062",
               screen_order: 19,
-              title: "Ordnen Sie die Silben in der richtigen Reihenfolge an.",
+              title: "Acomoda las sílabas en el orden correcto.",
             },
           ],
-          subtitle: "Silben: ハ、ヒ、フ、ヘ、ホ",
-          title: "Lektion 16",
-          topic_id: "cf72c46a-ab31-4724-adf6-7d827a9a8d73",
+          subtitle: "Sílabas: ハ、ヒ、フ、ヘ、ホ",
+          title: "Lección 16",
+          topic_id: "db0183e1-1a54-4f44-a18a-2020f6b6987b",
         },
         {
-          expanded_subtitle: "Lernen Sie, die Silben in der Reihe tr:ま zu lesen und zu schreiben.",
+          expanded_subtitle: "Aprende a leer y escribir las sílabas del renglón tr:ま.",
           expanded_title: "Katakana: tr:ま, tr:み, tr:む, tr:め, tr:も",
           icon: "https://nihongo.khvat.app/chapter2/Lesson17.jpg",
-          id: "bac1acbe-74ed-45a0-8782-1c732496a635",
-          last_updated: "2026-09-08T13:12:16.002Z",
+          id: "45b3d1a9-0aa8-41f8-8845-5d6d4cbcaf25",
+          last_updated: "2026-09-08T13:12:16.026Z",
           lesson_key: "alphabet/katakana&ma",
           lesson_order: 18,
           minimum_version: "2.4.1",
@@ -6885,13 +6883,13 @@ export const dumpDe = {
                     id: "827078b5-74f9-499b-a523-0fea2020a5af",
                     kana: "katakana",
                   },
-                  id: "f8733625-fc35-5375-b4b7-d940755d8c7c",
+                  id: "8dd177cb-2545-5e93-8c73-f7dd0fea1ba2",
                   type: "letter",
                 },
               ],
-              id: "a107f4fc-4832-50e4-8ed9-903b540e1f90",
+              id: "6d504fa1-fc87-5103-a942-ced397233652",
               screen_order: 1,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -6902,13 +6900,13 @@ export const dumpDe = {
                     id: "827078b5-74f9-499b-a523-0fea2020a5af",
                     kana: "katakana",
                   },
-                  id: "5df0c482-daf0-5789-a404-ec65f69aaf49",
+                  id: "fa4d2412-2705-50fd-a5fa-1f3b5a15319a",
                   type: "letter",
                 },
               ],
-              id: "66677763-2f36-52a6-85e0-d5d1e7e36411",
+              id: "b5a83884-af57-5a56-a7ac-885d602be686",
               screen_order: 2,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -6919,13 +6917,13 @@ export const dumpDe = {
                     id: "b131b9f3-d6fd-48e6-b0cc-32831ea4b3f9",
                     kana: "katakana",
                   },
-                  id: "28d038ee-3f38-5a94-8823-6ca574fb8fa9",
+                  id: "72a13ca1-240a-5c0c-abcf-e8193ca76101",
                   type: "letter",
                 },
               ],
-              id: "6b2502bc-be91-5968-81a3-3ffdc169d885",
+              id: "c5b4d552-7b9c-5b42-9927-6124a6d0f3f4",
               screen_order: 3,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -6936,13 +6934,13 @@ export const dumpDe = {
                     id: "b131b9f3-d6fd-48e6-b0cc-32831ea4b3f9",
                     kana: "katakana",
                   },
-                  id: "ed37ac3b-fd10-51a3-bf01-9616de4c384d",
+                  id: "5c2c4a3b-a4fe-5e16-936a-008f5def0743",
                   type: "letter",
                 },
               ],
-              id: "6811b346-3bba-5cd8-824a-d3d1bfc5939d",
+              id: "8c2acb98-0a86-5d1c-9a6f-a34e11dba4fe",
               screen_order: 4,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -6954,13 +6952,13 @@ export const dumpDe = {
                       ["マ", "tr:マ"],
                     ],
                   },
-                  id: "e0703dc2-39b7-5803-aaa3-2eac43840a98",
+                  id: "b98f841b-bef2-5daa-9f6c-f86ed7a83287",
                   type: "matching",
                 },
               ],
-              id: "603b3ff3-6cce-586b-8773-bd12ce6725a4",
+              id: "e6cf1f19-7371-559e-a525-32449b596c94",
               screen_order: 5,
-              title: "Ordnen Sie 「Katakana」 seiner Umschrift zu.",
+              title: "Relaciona 「Katakana」 con su transliteración.",
             },
             {
               blocks: [
@@ -6971,13 +6969,13 @@ export const dumpDe = {
                     id: "4d81e8f2-0e6b-475f-bd08-c6b03d20ae69",
                     kana: "katakana",
                   },
-                  id: "5938087e-3b2e-5cba-94ac-7156d257c29e",
+                  id: "f482d232-ef3d-50f2-b6b7-5982702d27b1",
                   type: "letter",
                 },
               ],
-              id: "ca2daa76-b4d6-5222-8bca-b81e6de0658f",
+              id: "260af4c7-982d-57e5-b200-c42dd47dce59",
               screen_order: 6,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -6988,13 +6986,13 @@ export const dumpDe = {
                     id: "4d81e8f2-0e6b-475f-bd08-c6b03d20ae69",
                     kana: "katakana",
                   },
-                  id: "b40978e4-5b04-561f-87db-4fac5dd815bf",
+                  id: "65f0ea75-aa11-556d-a380-5f20f90a0071",
                   type: "letter",
                 },
               ],
-              id: "d19533b6-2dcb-5a13-a7d2-ae60b86cdf76",
+              id: "686f50ed-faf8-5d3b-ad88-5a59e67f1146",
               screen_order: 7,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -7002,9 +7000,9 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Katakana",
-                    title: "tr:ミ",
+                    title: "tr:ム",
                   },
-                  id: "ae226486-535d-53bf-bafb-e1539eb752da",
+                  id: "c0498721-7ebe-5663-af12-113607723b6f",
                   type: "title",
                 },
                 {
@@ -7013,25 +7011,25 @@ export const dumpDe = {
                     answers: [
                       {
                         isTrue: false,
-                        title: "ム",
-                      },
-                      {
-                        isTrue: false,
                         title: "マ",
                       },
                       {
                         isTrue: true,
+                        title: "ム",
+                      },
+                      {
+                        isTrue: false,
                         title: "ミ",
                       },
                     ],
                   },
-                  id: "d0a6fd78-0a61-59c6-9409-41a5adab8b42",
+                  id: "dd396cec-ee9c-5d13-8dc3-0bfe38bb75b5",
                   type: "choice",
                 },
               ],
-              id: "052ba006-905f-5f64-ac57-61d1267614c9",
+              id: "1a11c0cf-3fbd-54b6-a06a-1def7659ca17",
               screen_order: 8,
-              title: "Wählen Sie die Silbe aus.",
+              title: "Selecciona la sílaba.",
             },
             {
               blocks: [
@@ -7043,13 +7041,13 @@ export const dumpDe = {
                       ["ミ", "tr:ミ"],
                     ],
                   },
-                  id: "6da52055-83c1-5c5f-ac35-048b021d98dc",
+                  id: "bf552398-76c4-5a90-9037-5b6f12c35087",
                   type: "matching",
                 },
               ],
-              id: "29639c17-455f-503e-b6dc-5ada42b480a4",
+              id: "95aee3e6-ad0c-5b39-b1cd-4aae458305a5",
               screen_order: 9,
-              title: "Ordnen Sie 「Katakana」 seiner Umschrift zu.",
+              title: "Relaciona 「Katakana」 con su transliteración.",
             },
             {
               blocks: [
@@ -7060,13 +7058,13 @@ export const dumpDe = {
                     id: "3037e1df-8072-4273-abf1-664b500613af",
                     kana: "katakana",
                   },
-                  id: "b5898996-dacb-5d18-a3a5-31ee406b83cd",
+                  id: "cda5af51-02ef-52b6-8c84-e562995bacbf",
                   type: "letter",
                 },
               ],
-              id: "6ed517f9-cead-596b-8656-84cca612127e",
+              id: "ecbcbead-c517-56c5-a8bc-6aacfc69d725",
               screen_order: 10,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -7077,13 +7075,13 @@ export const dumpDe = {
                     id: "3037e1df-8072-4273-abf1-664b500613af",
                     kana: "katakana",
                   },
-                  id: "e03beca9-88c9-52cb-8cd6-0a290100d45a",
+                  id: "6b10825b-e7b7-5faf-9967-cd68a022c1ea",
                   type: "letter",
                 },
               ],
-              id: "2b51b903-9628-548c-9564-4b6b5dc13b3b",
+              id: "f1f59d90-f935-55cd-87fa-9b4035e645f9",
               screen_order: 11,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -7095,13 +7093,13 @@ export const dumpDe = {
                       ["ム", "tr:ム"],
                     ],
                   },
-                  id: "cc58b725-42d2-5273-9a22-c2ad791387c3",
+                  id: "6bc82c21-7738-5758-961f-09f0f3e7fa16",
                   type: "matching",
                 },
               ],
-              id: "52417bbe-0d9c-59f3-a813-69e51bb2af7c",
+              id: "b8e88b79-2189-5d1e-94ca-2e9ff80287e9",
               screen_order: 12,
-              title: "Ordnen Sie 「Katakana」 seiner Umschrift zu.",
+              title: "Relaciona 「Katakana」 con su transliteración.",
             },
             {
               blocks: [
@@ -7112,13 +7110,13 @@ export const dumpDe = {
                     id: "54a8b634-b713-4652-957e-fffa3b3319cc",
                     kana: "katakana",
                   },
-                  id: "ee989164-1d46-5736-b9a0-67e4a839f6a5",
+                  id: "f61d0c72-0baa-5a78-ba5c-decdad5449a1",
                   type: "letter",
                 },
               ],
-              id: "ab1bef30-0327-5631-9bec-9f4aa629a063",
+              id: "5798a1ee-6d0f-50df-b04b-b01fa8634f4b",
               screen_order: 13,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -7129,13 +7127,13 @@ export const dumpDe = {
                     id: "54a8b634-b713-4652-957e-fffa3b3319cc",
                     kana: "katakana",
                   },
-                  id: "6e06fff9-f608-56ad-a244-90eac80f1b17",
+                  id: "038d13e3-247d-5205-8ccf-cd2702a5cff6",
                   type: "letter",
                 },
               ],
-              id: "d2ff59de-9b04-554f-8789-54cb5a976187",
+              id: "d3f3a055-e9c3-54e2-9410-8ae7fd8848fd",
               screen_order: 14,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -7145,7 +7143,7 @@ export const dumpDe = {
                     sub_title: "Katakana",
                     title: "tr:ム",
                   },
-                  id: "db4fa283-2e29-5d37-b95c-706d5ae70a50",
+                  id: "8fe82716-4c13-53f5-a7c7-c3b0495c0e2b",
                   type: "title",
                 },
                 {
@@ -7162,17 +7160,17 @@ export const dumpDe = {
                       },
                       {
                         isTrue: false,
-                        title: "マ",
+                        title: "モ",
                       },
                     ],
                   },
-                  id: "030b77ab-8c26-51eb-9b8a-dba92c8337bd",
+                  id: "bfe9024d-be2e-5561-9e0e-3931d9a796c0",
                   type: "choice",
                 },
               ],
-              id: "917a1c61-54e5-5731-bcc5-7ac35e0d53e5",
+              id: "a9871947-1345-53b7-aaa0-9d016cd9b9d4",
               screen_order: 15,
-              title: "Wählen Sie die Silbe aus.",
+              title: "Selecciona la sílaba.",
             },
             {
               blocks: [
@@ -7180,9 +7178,9 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Katakana",
-                    title: "ミ, ム, モ, メ, マ",
+                    title: "メ, ミ, モ, マ, ム",
                   },
-                  id: "d18722e1-39da-59e1-934e-8600975ea8c7",
+                  id: "90191593-b0be-5089-bb1d-689233fab8c0",
                   type: "title",
                 },
                 {
@@ -7190,22 +7188,22 @@ export const dumpDe = {
                   content: {
                     answers: [
                       {
-                        isTrue: false,
-                        title: "tr:ム, tr:ミ, tr:メ, tr:モ, tr:マ",
+                        isTrue: true,
+                        title: "tr:メ, tr:ミ, tr:モ, tr:マ, tr:ム",
                       },
                       {
-                        isTrue: true,
-                        title: "tr:ミ, tr:ム, tr:モ, tr:メ, tr:マ",
+                        isTrue: false,
+                        title: "tr:ミ, tr:メ, tr:モ, tr:マ, tr:ム",
                       },
                     ],
                   },
-                  id: "64b39468-7bd1-543e-831a-5ad3b13d95bf",
+                  id: "8b80480b-cdcd-5928-8217-3a347e43ccb2",
                   type: "choice",
                 },
               ],
-              id: "b52cfc4e-00fb-5067-98a0-aabbdd7c8ce9",
+              id: "fd3473a0-ad8a-55ba-be48-9efc80dec99d",
               screen_order: 16,
-              title: "Wählen Sie die richtige Reihenfolge.",
+              title: "Elige la secuencia correcta.",
             },
             {
               blocks: [
@@ -7213,9 +7211,9 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Katakana",
-                    title: "マ, ミ, ム, モ, メ",
+                    title: "ム, マ, モ, ミ, メ",
                   },
-                  id: "05dbfc3e-f9a5-5b7c-878a-f2204dcb73db",
+                  id: "7ca0bc39-0e0d-577b-a6be-d7afd5b0aaa3",
                   type: "title",
                 },
                 {
@@ -7224,21 +7222,21 @@ export const dumpDe = {
                     answers: [
                       {
                         isTrue: true,
-                        title: "tr:マ, tr:ミ, tr:ム, tr:モ, tr:メ",
+                        title: "tr:ム, tr:マ, tr:モ, tr:ミ, tr:メ",
                       },
                       {
                         isTrue: false,
-                        title: "tr:モ, tr:ミ, tr:マ, tr:メ, tr:ム",
+                        title: "tr:ム, tr:メ, tr:マ, tr:モ, tr:ミ",
                       },
                     ],
                   },
-                  id: "64f4e77b-e671-50c4-b599-0fdb26f6b495",
+                  id: "da406222-864c-54f0-94af-930677d3e48e",
                   type: "choice",
                 },
               ],
-              id: "ad0701c0-1799-5a82-9f20-6325c3fb5360",
+              id: "32044992-23db-5bdc-ad47-e8e39ffabcb6",
               screen_order: 17,
-              title: "Wählen Sie die richtige Reihenfolge.",
+              title: "Elige la secuencia correcta.",
             },
             {
               blocks: [
@@ -7246,23 +7244,23 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Katakana",
-                    title: "tr:ム, tr:メ, tr:マ, tr:ミ, tr:モ",
+                    title: "tr:マ, tr:モ, tr:メ, tr:ミ, tr:ム",
                   },
-                  id: "fca58643-7b42-5033-baec-f7148f949d0b",
+                  id: "d9a664c4-f721-5c2e-83c7-76644b10e798",
                   type: "title",
                 },
                 {
                   block_order: 2,
                   content: {
-                    sequence: ["ム", "メ", "マ", "ミ", "モ"],
+                    sequence: ["マ", "モ", "メ", "ミ", "ム"],
                   },
-                  id: "923bdcdc-8623-5338-aacd-d053bb5f9d24",
+                  id: "817a5cba-790a-537e-a484-c4b59fd69989",
                   type: "sequence",
                 },
               ],
-              id: "588dea52-c148-5584-a407-753a53a5378c",
+              id: "ee8bec3f-b2f0-5ca5-9b5c-f8f058738f61",
               screen_order: 18,
-              title: "Ordnen Sie die Silben in der richtigen Reihenfolge an.",
+              title: "Acomoda las sílabas en el orden correcto.",
             },
             {
               blocks: [
@@ -7270,35 +7268,35 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Katakana",
-                    title: "tr:マ, tr:ミ, tr:メ, tr:ム, tr:モ",
+                    title: "tr:マ, tr:ミ, tr:モ, tr:メ, tr:ム",
                   },
-                  id: "b1125bdb-4f18-57e8-bbff-b7a1b7e310d5",
+                  id: "ec5710cd-9eb2-5a7f-8fb9-f77296619308",
                   type: "title",
                 },
                 {
                   block_order: 2,
                   content: {
-                    sequence: ["マ", "ミ", "メ", "ム", "モ"],
+                    sequence: ["マ", "ミ", "モ", "メ", "ム"],
                   },
-                  id: "0b492717-8bc9-53a8-8a99-e169471e62a2",
+                  id: "e0c12afa-4522-5b0d-a7e4-94f882903701",
                   type: "sequence",
                 },
               ],
-              id: "f48d2ce3-1ccd-5d67-a377-fc221a38fa0b",
+              id: "9bb6698c-d02b-5747-801d-cad326f2fb1c",
               screen_order: 19,
-              title: "Ordnen Sie die Silben in der richtigen Reihenfolge an.",
+              title: "Acomoda las sílabas en el orden correcto.",
             },
           ],
-          subtitle: "Silben: マ、ミ、ム、メ、モ",
-          title: "Lektion 17",
-          topic_id: "cf72c46a-ab31-4724-adf6-7d827a9a8d73",
+          subtitle: "Sílabas: マ、ミ、ム、メ、モ",
+          title: "Lección 17",
+          topic_id: "db0183e1-1a54-4f44-a18a-2020f6b6987b",
         },
         {
-          expanded_subtitle: "Lernen Sie, die Silben in der Reihe tr:や zu lesen und zu schreiben.",
+          expanded_subtitle: "Aprende a leer y escribir las sílabas del renglón tr:や.",
           expanded_title: "Katakana: tr:や, tr:ゆ, tr:よ",
           icon: "https://nihongo.khvat.app/chapter2/Lesson18.jpg",
-          id: "ce7fcd71-814c-4f1b-bbbf-55256b717654",
-          last_updated: "2026-09-08T13:12:16.002Z",
+          id: "0ca04769-e97d-484f-98cf-da891b259cb0",
+          last_updated: "2026-09-08T13:12:16.026Z",
           lesson_key: "alphabet/katakana&ya",
           lesson_order: 19,
           minimum_version: "2.4.1",
@@ -7312,13 +7310,13 @@ export const dumpDe = {
                     id: "9e4e7b1b-2b3c-467d-8c24-be83a4ae5a89",
                     kana: "katakana",
                   },
-                  id: "f78a31f1-6c12-5139-8f65-ccd922d73525",
+                  id: "0db4634d-53dd-564b-a37d-4bbb75a04c0c",
                   type: "letter",
                 },
               ],
-              id: "99805d0a-4d2c-571e-b7e4-5232eaf3d442",
+              id: "7185edcd-e99d-5b78-86c8-3b84a719c62c",
               screen_order: 1,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -7329,13 +7327,13 @@ export const dumpDe = {
                     id: "9e4e7b1b-2b3c-467d-8c24-be83a4ae5a89",
                     kana: "katakana",
                   },
-                  id: "f9c2ea87-91c5-5cb1-945f-20882e541700",
+                  id: "ef3dba7b-a89d-5ab6-889a-68c1ed2d3c01",
                   type: "letter",
                 },
               ],
-              id: "4a1b62a3-fbd5-57b4-906c-d602aff0f68c",
+              id: "13e2607d-bb9d-5698-8f17-c26f2dd20982",
               screen_order: 2,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -7346,13 +7344,13 @@ export const dumpDe = {
                     id: "e3c281bb-31aa-4fab-8b83-1daca7c6bdd5",
                     kana: "katakana",
                   },
-                  id: "1ca92e19-de03-5e6d-87b7-1827e7210e27",
+                  id: "3bf5ebc9-5ecd-5c4d-8647-f2fee9e72637",
                   type: "letter",
                 },
               ],
-              id: "c5165d61-f9c2-5323-b4c9-6e75e2cd14c9",
+              id: "9dbc9340-b918-5cd7-942b-011e0eb159d1",
               screen_order: 3,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -7363,13 +7361,13 @@ export const dumpDe = {
                     id: "e3c281bb-31aa-4fab-8b83-1daca7c6bdd5",
                     kana: "katakana",
                   },
-                  id: "273ade7a-e6c8-5067-97d1-3f274a9614d1",
+                  id: "7894b215-b0a9-5c65-93c2-af42a4410850",
                   type: "letter",
                 },
               ],
-              id: "5b27ca90-ffad-5aeb-a583-9499c7bf4960",
+              id: "f9d03c84-90a4-5de7-9c50-28b08d828268",
               screen_order: 4,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -7381,13 +7379,13 @@ export const dumpDe = {
                       ["ヤ", "tr:ヤ"],
                     ],
                   },
-                  id: "f444003f-f7e5-580d-bc9e-e343eb30e22e",
+                  id: "5622b25a-1ac5-50df-a509-e010277f6dfb",
                   type: "matching",
                 },
               ],
-              id: "9afc179e-b6c2-543a-a439-b5cc9a0adc18",
+              id: "26d30ea5-25fb-5ff5-bf31-55e48cc1038f",
               screen_order: 5,
-              title: "Ordnen Sie 「Katakana」 seiner Umschrift zu.",
+              title: "Relaciona 「Katakana」 con su transliteración.",
             },
             {
               blocks: [
@@ -7398,13 +7396,13 @@ export const dumpDe = {
                     id: "5b7da1eb-3e8c-418f-bcb5-ea8551c77706",
                     kana: "katakana",
                   },
-                  id: "294f7d40-f55c-57ae-af90-4455877bf839",
+                  id: "660b073d-f4a0-518b-a5f4-5b7be6c1dc33",
                   type: "letter",
                 },
               ],
-              id: "d0315ebb-f613-5cfe-9b80-9ce39f90a39c",
+              id: "22c8e94c-8009-5d37-a64d-f08cc560dce4",
               screen_order: 6,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -7415,13 +7413,13 @@ export const dumpDe = {
                     id: "5b7da1eb-3e8c-418f-bcb5-ea8551c77706",
                     kana: "katakana",
                   },
-                  id: "decd1229-1c0f-5ea4-a9e6-f0d22397c1a3",
+                  id: "377a0a88-2007-5347-8116-799319453189",
                   type: "letter",
                 },
               ],
-              id: "91f09a8a-f4f4-57e4-8b13-4cfda6017838",
+              id: "8da8ff55-ab0c-5a82-968e-5f1af850906b",
               screen_order: 7,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -7431,7 +7429,7 @@ export const dumpDe = {
                     sub_title: "Katakana",
                     title: "tr:ヨ",
                   },
-                  id: "ac51a88d-f848-53b7-a91e-2e98ab57ee93",
+                  id: "73a3ab07-6b0c-57df-bd87-068b29bb59db",
                   type: "title",
                 },
                 {
@@ -7439,12 +7437,12 @@ export const dumpDe = {
                   content: {
                     answers: [
                       {
-                        isTrue: true,
-                        title: "ヨ",
-                      },
-                      {
                         isTrue: false,
                         title: "ヤ",
+                      },
+                      {
+                        isTrue: true,
+                        title: "ヨ",
                       },
                       {
                         isTrue: false,
@@ -7452,13 +7450,13 @@ export const dumpDe = {
                       },
                     ],
                   },
-                  id: "0a68a9fa-9af9-5da3-bf62-75bdaec2dae8",
+                  id: "95de654a-65d2-55d7-892c-7cf59907c1cd",
                   type: "choice",
                 },
               ],
-              id: "ac2a4ef9-9083-509e-bfde-77e6013fafa8",
+              id: "7ecfa1fe-b857-554e-bd26-d0c9b82a88ab",
               screen_order: 8,
-              title: "Wählen Sie die Silbe aus.",
+              title: "Selecciona la sílaba.",
             },
             {
               blocks: [
@@ -7470,13 +7468,13 @@ export const dumpDe = {
                       ["ユ", "tr:ユ"],
                     ],
                   },
-                  id: "c7b33457-b4b0-536a-bf8b-616050096ab9",
+                  id: "bd762f1a-c945-5517-8262-21ec84d23f10",
                   type: "matching",
                 },
               ],
-              id: "942f0976-7d79-5d34-a4c5-d73cbbd82822",
+              id: "8a7362e3-8e10-5307-9296-125a79c5fd3c",
               screen_order: 9,
-              title: "Ordnen Sie 「Katakana」 seiner Umschrift zu.",
+              title: "Relaciona 「Katakana」 con su transliteración.",
             },
             {
               blocks: [
@@ -7484,9 +7482,9 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Katakana",
-                    title: "tr:ヨ",
+                    title: "tr:ヤ",
                   },
-                  id: "552fd44e-4875-5d38-93b1-bef5a69bfca9",
+                  id: "5784c62b-e3cd-5a09-8e74-5b6726e42136",
                   type: "title",
                 },
                 {
@@ -7499,21 +7497,21 @@ export const dumpDe = {
                       },
                       {
                         isTrue: true,
-                        title: "ヨ",
-                      },
-                      {
-                        isTrue: false,
                         title: "ヤ",
                       },
+                      {
+                        isTrue: false,
+                        title: "ヨ",
+                      },
                     ],
                   },
-                  id: "dfef0d82-0ac1-566b-8ba5-12257ef5aba6",
+                  id: "5db22816-9219-55b1-88fd-bbdf88248106",
                   type: "choice",
                 },
               ],
-              id: "4f2285cc-2c9c-503d-b513-4bbcf2c3c9f3",
+              id: "74ea514f-4bb6-5cab-86c3-23d33f5868ca",
               screen_order: 10,
-              title: "Wählen Sie die Silbe aus.",
+              title: "Selecciona la sílaba.",
             },
             {
               blocks: [
@@ -7521,65 +7519,32 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Katakana",
-                    title: "ヨ, ユ, ヤ",
+                    title: "ユ, ヤ, ヨ",
                   },
-                  id: "f8689e26-6dd7-5650-8b71-2f44157e00c5",
+                  id: "c7506688-b412-5a7a-88d3-20072ce14837",
                   type: "title",
                 },
                 {
                   block_order: 2,
                   content: {
                     answers: [
+                      {
+                        isTrue: false,
+                        title: "tr:ヨ, tr:ヤ, tr:ユ",
+                      },
                       {
                         isTrue: true,
-                        title: "tr:ヨ, tr:ユ, tr:ヤ",
-                      },
-                      {
-                        isTrue: false,
-                        title: "tr:ヤ, tr:ヨ, tr:ユ",
-                      },
-                    ],
-                  },
-                  id: "12de9815-8dcb-5969-bf53-645643afd096",
-                  type: "choice",
-                },
-              ],
-              id: "479cebcd-cde6-506e-abd8-ad31d0133e45",
-              screen_order: 11,
-              title: "Wählen Sie die richtige Reihenfolge.",
-            },
-            {
-              blocks: [
-                {
-                  block_order: 1,
-                  content: {
-                    sub_title: "Katakana",
-                    title: "ユ, ヨ, ヤ",
-                  },
-                  id: "2cd65e41-bd8a-5aa8-a2b7-d74047a26932",
-                  type: "title",
-                },
-                {
-                  block_order: 2,
-                  content: {
-                    answers: [
-                      {
-                        isTrue: false,
                         title: "tr:ユ, tr:ヤ, tr:ヨ",
                       },
-                      {
-                        isTrue: true,
-                        title: "tr:ユ, tr:ヨ, tr:ヤ",
-                      },
                     ],
                   },
-                  id: "1114cc76-d3f8-5bbf-91b6-452052e85521",
+                  id: "9fad9fd0-3328-53ee-89d9-51e0993d7ab7",
                   type: "choice",
                 },
               ],
-              id: "efe71062-b9f0-5a9f-8e70-cace32368eb6",
-              screen_order: 12,
-              title: "Wählen Sie die richtige Reihenfolge.",
+              id: "e18cc3ec-936d-532a-aa35-5f0ea90d57d7",
+              screen_order: 11,
+              title: "Elige la secuencia correcta.",
             },
             {
               blocks: [
@@ -7587,23 +7552,56 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Katakana",
-                    title: "tr:ユ, tr:ヨ, tr:ヤ",
+                    title: "ヨ, ヤ, ユ",
                   },
-                  id: "ccf03063-3eef-52a7-ba03-dad441737577",
+                  id: "8ccdb922-2ea0-528e-b8d1-7584c2de0a93",
                   type: "title",
                 },
                 {
                   block_order: 2,
                   content: {
-                    sequence: ["ユ", "ヨ", "ヤ"],
+                    answers: [
+                      {
+                        isTrue: false,
+                        title: "tr:ユ, tr:ヨ, tr:ヤ",
+                      },
+                      {
+                        isTrue: true,
+                        title: "tr:ヨ, tr:ヤ, tr:ユ",
+                      },
+                    ],
                   },
-                  id: "485921b0-4dce-5b1e-ab4c-6aeb74857ad7",
+                  id: "33a8b0c6-98d9-5554-9398-0a4b7feffbdf",
+                  type: "choice",
+                },
+              ],
+              id: "0e8c8033-908b-5d05-b846-b588cc1d0595",
+              screen_order: 12,
+              title: "Elige la secuencia correcta.",
+            },
+            {
+              blocks: [
+                {
+                  block_order: 1,
+                  content: {
+                    sub_title: "Katakana",
+                    title: "tr:ヨ, tr:ユ, tr:ヤ",
+                  },
+                  id: "29c54e97-1504-5bbf-a216-effd184385e3",
+                  type: "title",
+                },
+                {
+                  block_order: 2,
+                  content: {
+                    sequence: ["ヨ", "ユ", "ヤ"],
+                  },
+                  id: "c1318dfd-8317-5a0a-b741-627d7812aded",
                   type: "sequence",
                 },
               ],
-              id: "6e9c305b-8dea-5f06-8488-2e06c21b6a3c",
+              id: "fd100497-dc0f-597b-8049-35e1c07fb45b",
               screen_order: 13,
-              title: "Ordnen Sie die Silben in der richtigen Reihenfolge an.",
+              title: "Acomoda las sílabas en el orden correcto.",
             },
             {
               blocks: [
@@ -7613,7 +7611,7 @@ export const dumpDe = {
                     sub_title: "Katakana",
                     title: "tr:ヤ, tr:ヨ, tr:ユ",
                   },
-                  id: "72dc2cbe-dc6a-55b9-b031-d04a36dad8c1",
+                  id: "7b6880bf-fee9-5418-b54c-2f9279fbde1d",
                   type: "title",
                 },
                 {
@@ -7621,25 +7619,25 @@ export const dumpDe = {
                   content: {
                     sequence: ["ヤ", "ヨ", "ユ"],
                   },
-                  id: "e9912668-a08c-5ac2-8ac1-45fefc04dc77",
+                  id: "de680013-56fa-50aa-8884-fcb521b01f00",
                   type: "sequence",
                 },
               ],
-              id: "8f091d40-a5c3-534b-9fd1-e876569cfcf5",
+              id: "afd31a48-54c4-5c84-bcaa-f53c676ceecf",
               screen_order: 14,
-              title: "Ordnen Sie die Silben in der richtigen Reihenfolge an.",
+              title: "Acomoda las sílabas en el orden correcto.",
             },
           ],
-          subtitle: "Silben: ヤ、ユ、ヨ",
-          title: "Lektion 18",
-          topic_id: "cf72c46a-ab31-4724-adf6-7d827a9a8d73",
+          subtitle: "Sílabas: ヤ、ユ、ヨ",
+          title: "Lección 18",
+          topic_id: "db0183e1-1a54-4f44-a18a-2020f6b6987b",
         },
         {
-          expanded_subtitle: "Lernen Sie, die Silben in der Reihe tr:ら zu lesen und zu schreiben.",
+          expanded_subtitle: "Aprende a leer y escribir las sílabas del renglón tr:ら.",
           expanded_title: "Katakana: tr:ら, tr:り, tr:る, tr:れ, tr:ろ",
           icon: "https://nihongo.khvat.app/chapter2/Lesson19.jpg",
-          id: "402ac82c-eb91-48bc-a2a1-998465e1e0b2",
-          last_updated: "2026-09-08T13:12:16.002Z",
+          id: "2c42f768-404c-47f0-99be-a14014e7776a",
+          last_updated: "2026-09-08T13:12:16.027Z",
           lesson_key: "alphabet/katakana&ra",
           lesson_order: 20,
           minimum_version: "2.4.1",
@@ -7653,13 +7651,13 @@ export const dumpDe = {
                     id: "859472d4-50b2-4574-adcf-65b301aa916e",
                     kana: "katakana",
                   },
-                  id: "4c901ebd-07f1-5491-ac3e-7b63388e383b",
+                  id: "49642063-1fa6-53a3-8f4a-19bc2b2b97c1",
                   type: "letter",
                 },
               ],
-              id: "3ded22a1-badd-59db-8d2f-c21dd33f466c",
+              id: "803cddf8-be87-51fd-9d63-fc4d8d7ce8ab",
               screen_order: 1,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -7670,13 +7668,13 @@ export const dumpDe = {
                     id: "859472d4-50b2-4574-adcf-65b301aa916e",
                     kana: "katakana",
                   },
-                  id: "afe9ff95-5d45-532c-8775-6b3e0d528578",
+                  id: "fb6d55ef-fa7f-5ea1-98c9-1ffff2c5bb19",
                   type: "letter",
                 },
               ],
-              id: "afb76720-374c-526e-aac8-ebf7a7a452dc",
+              id: "7c5c3d37-e38f-54f7-a675-6078be56a48e",
               screen_order: 2,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -7687,13 +7685,13 @@ export const dumpDe = {
                     id: "6e0e6570-0e60-46e4-8735-40ad423daec2",
                     kana: "katakana",
                   },
-                  id: "cf3086df-a674-5586-8150-464fc4d4c5df",
+                  id: "fe18e5d5-48c4-5f16-864c-cc54a21897a2",
                   type: "letter",
                 },
               ],
-              id: "dacd6d97-7fff-574e-abfa-ba07ff7d44fc",
+              id: "8d996c51-e932-5e46-9f66-c90351e1470e",
               screen_order: 3,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -7704,13 +7702,13 @@ export const dumpDe = {
                     id: "6e0e6570-0e60-46e4-8735-40ad423daec2",
                     kana: "katakana",
                   },
-                  id: "45d53806-1395-5424-a497-7c2fd1fa31a0",
+                  id: "39be0e96-9347-5e5e-9273-9d9d2710c809",
                   type: "letter",
                 },
               ],
-              id: "bbbb49d8-e16b-55c5-81be-6dce89395c4d",
+              id: "cecb43b5-8deb-567d-b3a2-d75b939ebb23",
               screen_order: 4,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -7722,13 +7720,13 @@ export const dumpDe = {
                       ["ラ", "tr:ラ"],
                     ],
                   },
-                  id: "5d67c0f3-a0f1-5d54-a1cb-c71eaddd1e90",
+                  id: "c11a9d73-b78a-5d49-a306-e7ed6e24fca9",
                   type: "matching",
                 },
               ],
-              id: "36d59679-efef-503b-9e18-71fa7db55d0d",
+              id: "d34cb90e-1f05-52e6-b383-fb6b6f181ffb",
               screen_order: 5,
-              title: "Ordnen Sie 「Katakana」 seiner Umschrift zu.",
+              title: "Relaciona 「Katakana」 con su transliteración.",
             },
             {
               blocks: [
@@ -7739,13 +7737,13 @@ export const dumpDe = {
                     id: "1a43007b-1cfb-49a0-baea-02fe8d7cd78a",
                     kana: "katakana",
                   },
-                  id: "572d8576-58ee-5528-b3ea-aec4d91e135d",
+                  id: "3cdbc4a3-957d-57c8-9241-a7ea74ab0c1a",
                   type: "letter",
                 },
               ],
-              id: "1a5f184b-5446-52b7-a95e-4ec7bfb18ec7",
+              id: "4e14bb9a-5c55-57f2-b16a-bc48c6df4223",
               screen_order: 6,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -7756,13 +7754,13 @@ export const dumpDe = {
                     id: "1a43007b-1cfb-49a0-baea-02fe8d7cd78a",
                     kana: "katakana",
                   },
-                  id: "7733f9b5-2453-5a87-9233-5a5eb9cb54a4",
+                  id: "d9dc1d5b-0b64-5137-95be-9f06aa925083",
                   type: "letter",
                 },
               ],
-              id: "e32b1aae-6197-504a-b236-14c16e1996a4",
+              id: "910e07f6-3a5d-549f-bf27-949974c7d435",
               screen_order: 7,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -7770,9 +7768,9 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Katakana",
-                    title: "tr:ル",
+                    title: "tr:リ",
                   },
-                  id: "db1dea8c-af52-5a6c-b592-17bd3af81c7f",
+                  id: "58e87fd6-5332-529f-80e7-d9b165b2d030",
                   type: "title",
                 },
                 {
@@ -7781,7 +7779,7 @@ export const dumpDe = {
                     answers: [
                       {
                         isTrue: true,
-                        title: "ル",
+                        title: "リ",
                       },
                       {
                         isTrue: false,
@@ -7789,17 +7787,17 @@ export const dumpDe = {
                       },
                       {
                         isTrue: false,
-                        title: "リ",
+                        title: "ル",
                       },
                     ],
                   },
-                  id: "167303d0-4d4f-5322-b0b8-4beb1212273c",
+                  id: "ad5fba0d-0f2f-5864-902b-9ffc241596a6",
                   type: "choice",
                 },
               ],
-              id: "79652705-f349-5a79-a7fd-17f21e833d06",
+              id: "ba3e4c6a-24ed-5978-a060-34155547938d",
               screen_order: 8,
-              title: "Wählen Sie die Silbe aus.",
+              title: "Selecciona la sílaba.",
             },
             {
               blocks: [
@@ -7811,13 +7809,13 @@ export const dumpDe = {
                       ["リ", "tr:リ"],
                     ],
                   },
-                  id: "f9fd0fd2-ac17-5071-b56a-4bb25a5bd630",
+                  id: "21ec95a1-de46-5d30-89f2-25b37aecc7c8",
                   type: "matching",
                 },
               ],
-              id: "2a1018c0-1445-50ba-a4b6-996c67c09eeb",
+              id: "e171c356-2b32-5d91-a293-733c961b1d95",
               screen_order: 9,
-              title: "Ordnen Sie 「Katakana」 seiner Umschrift zu.",
+              title: "Relaciona 「Katakana」 con su transliteración.",
             },
             {
               blocks: [
@@ -7828,13 +7826,13 @@ export const dumpDe = {
                     id: "e53fdab4-2d04-452d-a635-d2ac728c6a32",
                     kana: "katakana",
                   },
-                  id: "009fe7bb-9d4e-5ecb-bc3f-8c6f847dcb24",
+                  id: "b34c4127-a013-52b8-905c-1b3152b806a8",
                   type: "letter",
                 },
               ],
-              id: "b6e43919-a99c-5c33-9fa3-1237c5934529",
+              id: "5c2dc4f7-afd1-5048-aac8-a002138cdfbe",
               screen_order: 10,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -7845,13 +7843,13 @@ export const dumpDe = {
                     id: "e53fdab4-2d04-452d-a635-d2ac728c6a32",
                     kana: "katakana",
                   },
-                  id: "47fac3ea-fdc9-5cf2-b588-6ff3cfad7e3b",
+                  id: "79d5d93c-7798-5e09-82f9-77ec7692f9c8",
                   type: "letter",
                 },
               ],
-              id: "a84306db-dde9-5d02-8712-c9b1db4f20ad",
+              id: "c44f0e50-3ff3-5e8c-8615-1c4c9a9e1b0e",
               screen_order: 11,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -7863,13 +7861,13 @@ export const dumpDe = {
                       ["ル", "tr:ル"],
                     ],
                   },
-                  id: "23f7b6a2-d350-51aa-9254-f84f4a422c2a",
+                  id: "ff392417-f1d7-5c3a-9d3f-7302f1b19508",
                   type: "matching",
                 },
               ],
-              id: "0392dca2-c91b-581f-89c1-c0856dc1a392",
+              id: "de2e0256-02d3-54e4-b086-20228d79345f",
               screen_order: 12,
-              title: "Ordnen Sie 「Katakana」 seiner Umschrift zu.",
+              title: "Relaciona 「Katakana」 con su transliteración.",
             },
             {
               blocks: [
@@ -7880,13 +7878,13 @@ export const dumpDe = {
                     id: "6ba2a0b0-d443-4323-a382-c8144cd996d3",
                     kana: "katakana",
                   },
-                  id: "a677650d-eddc-54eb-a8b2-c0565c2280ff",
+                  id: "e7ba8482-6367-5705-99a8-4b7fbaa48f53",
                   type: "letter",
                 },
               ],
-              id: "4d70b3b2-d9f5-54f3-ad82-296bd5d17af6",
+              id: "2807a09f-1dce-55e5-9c02-31dfcfec1f2f",
               screen_order: 13,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -7897,13 +7895,13 @@ export const dumpDe = {
                     id: "6ba2a0b0-d443-4323-a382-c8144cd996d3",
                     kana: "katakana",
                   },
-                  id: "ad24d66b-6d7c-5b59-9bae-3471ac4b1e28",
+                  id: "be3e9f58-3e37-5661-b38e-896eb4ef1ae6",
                   type: "letter",
                 },
               ],
-              id: "21272492-df62-5cc5-b775-0dbb21c0b50d",
+              id: "463a1007-2348-5db4-bdb1-0ae7cb099f67",
               screen_order: 14,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -7911,36 +7909,36 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Katakana",
-                    title: "tr:ロ",
+                    title: "tr:ル",
                   },
-                  id: "c1988a36-f2dc-5ee2-a250-7f0ab172ba2b",
+                  id: "eeaf0494-bfa9-5ee2-af18-b153bdf6c5a5",
                   type: "title",
                 },
                 {
                   block_order: 2,
                   content: {
                     answers: [
-                      {
-                        isTrue: false,
-                        title: "レ",
-                      },
                       {
                         isTrue: false,
                         title: "リ",
                       },
                       {
+                        isTrue: false,
+                        title: "レ",
+                      },
+                      {
                         isTrue: true,
-                        title: "ロ",
+                        title: "ル",
                       },
                     ],
                   },
-                  id: "2682d060-1d33-5f8c-b178-d66ada9212bf",
+                  id: "3b5d5374-ec52-5d5f-b6e9-cfad6c9634eb",
                   type: "choice",
                 },
               ],
-              id: "d8c85614-18d3-5c1e-b233-cefccecf1385",
+              id: "31514ae9-df42-5229-8bb9-491c6b7a9155",
               screen_order: 15,
-              title: "Wählen Sie die Silbe aus.",
+              title: "Selecciona la sílaba.",
             },
             {
               blocks: [
@@ -7948,9 +7946,9 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Katakana",
-                    title: "ラ, ル, リ, ロ, レ",
+                    title: "ル, ロ, リ, ラ, レ",
                   },
-                  id: "5e03f1aa-5fbb-5dba-9072-0c373eac5cfd",
+                  id: "5b154c2c-f70d-5a04-93f4-cad0e06f81f4",
                   type: "title",
                 },
                 {
@@ -7959,21 +7957,21 @@ export const dumpDe = {
                     answers: [
                       {
                         isTrue: true,
-                        title: "tr:ラ, tr:ル, tr:リ, tr:ロ, tr:レ",
+                        title: "tr:ル, tr:ロ, tr:リ, tr:ラ, tr:レ",
                       },
                       {
                         isTrue: false,
-                        title: "tr:ル, tr:レ, tr:ラ, tr:リ, tr:ロ",
+                        title: "tr:ル, tr:ロ, tr:リ, tr:レ, tr:ラ",
                       },
                     ],
                   },
-                  id: "169c96af-79d3-5147-a90c-378a68ae25c0",
+                  id: "4d274564-c7c3-572a-9010-9ffc3e4650c9",
                   type: "choice",
                 },
               ],
-              id: "bd22bd29-f140-5de0-b8b9-9402d9a5de3e",
+              id: "8f24e9f1-8be3-581e-9f44-dcd635df2792",
               screen_order: 16,
-              title: "Wählen Sie die richtige Reihenfolge.",
+              title: "Elige la secuencia correcta.",
             },
             {
               blocks: [
@@ -7981,9 +7979,9 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Katakana",
-                    title: "ル, ロ, ラ, レ, リ",
+                    title: "レ, ロ, ル, ラ, リ",
                   },
-                  id: "712d9c05-b8a2-580a-8071-dc6e7d039087",
+                  id: "c3a6ee6d-2c2c-57ec-ae2a-4c35661f3d4c",
                   type: "title",
                 },
                 {
@@ -7991,22 +7989,22 @@ export const dumpDe = {
                   content: {
                     answers: [
                       {
-                        isTrue: true,
-                        title: "tr:ル, tr:ロ, tr:ラ, tr:レ, tr:リ",
+                        isTrue: false,
+                        title: "tr:ラ, tr:ル, tr:レ, tr:リ, tr:ロ",
                       },
                       {
-                        isTrue: false,
-                        title: "tr:ロ, tr:ル, tr:ラ, tr:リ, tr:レ",
+                        isTrue: true,
+                        title: "tr:レ, tr:ロ, tr:ル, tr:ラ, tr:リ",
                       },
                     ],
                   },
-                  id: "81e22197-6fe8-50e7-ae8d-70ddcb03928f",
+                  id: "15e0a9e1-8da2-56f1-9119-af3069c9b49b",
                   type: "choice",
                 },
               ],
-              id: "f46b76a3-2abb-5552-aaff-117d71fec6e9",
+              id: "88bc57f0-e287-55bb-82b1-ef04f6a3a9a8",
               screen_order: 17,
-              title: "Wählen Sie die richtige Reihenfolge.",
+              title: "Elige la secuencia correcta.",
             },
             {
               blocks: [
@@ -8014,23 +8012,23 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Katakana",
-                    title: "tr:レ, tr:ラ, tr:リ, tr:ル, tr:ロ",
+                    title: "tr:ロ, tr:リ, tr:レ, tr:ラ, tr:ル",
                   },
-                  id: "4d526a2b-9b63-5b9c-b182-b312d22000d4",
+                  id: "ecffa5a3-f457-517a-8ca3-6013c8d82d63",
                   type: "title",
                 },
                 {
                   block_order: 2,
                   content: {
-                    sequence: ["レ", "ラ", "リ", "ル", "ロ"],
+                    sequence: ["ロ", "リ", "レ", "ラ", "ル"],
                   },
-                  id: "b535ab62-6511-5aa3-b308-decbfd1ad9ea",
+                  id: "ceaff4f5-1b70-5c0e-9acc-fb2db31ade0c",
                   type: "sequence",
                 },
               ],
-              id: "1c17c6ce-d2d3-5f52-83b6-2ef45928e569",
+              id: "882da743-875c-5585-82d5-b9761425be73",
               screen_order: 18,
-              title: "Ordnen Sie die Silben in der richtigen Reihenfolge an.",
+              title: "Acomoda las sílabas en el orden correcto.",
             },
             {
               blocks: [
@@ -8038,35 +8036,35 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Katakana",
-                    title: "tr:ル, tr:ロ, tr:レ, tr:ラ, tr:リ",
+                    title: "tr:ロ, tr:ラ, tr:リ, tr:ル, tr:レ",
                   },
-                  id: "dfd1199b-2763-547a-bea5-4b56a32afff2",
+                  id: "28d00017-5a86-5f0c-a27e-7b7d4e1de752",
                   type: "title",
                 },
                 {
                   block_order: 2,
                   content: {
-                    sequence: ["ル", "ロ", "レ", "ラ", "リ"],
+                    sequence: ["ロ", "ラ", "リ", "ル", "レ"],
                   },
-                  id: "2f542d64-b534-59fc-bdcc-7f37b87df4a2",
+                  id: "f2f3428e-b64c-53e8-93e7-f8860f3f0ba5",
                   type: "sequence",
                 },
               ],
-              id: "a75558c0-5709-59c2-a3d8-7bfe0f91bcd2",
+              id: "50d37ac0-b9e8-56c4-906d-e62e68d9b1b7",
               screen_order: 19,
-              title: "Ordnen Sie die Silben in der richtigen Reihenfolge an.",
+              title: "Acomoda las sílabas en el orden correcto.",
             },
           ],
-          subtitle: "Silben: ラ、リ、ル、レ、ロ",
-          title: "Lektion 19",
-          topic_id: "cf72c46a-ab31-4724-adf6-7d827a9a8d73",
+          subtitle: "Sílabas: ラ、リ、ル、レ、ロ",
+          title: "Lección 19",
+          topic_id: "db0183e1-1a54-4f44-a18a-2020f6b6987b",
         },
         {
-          expanded_subtitle: "Lernen Sie, die Silben in der Reihe tr:わ zu lesen und zu schreiben.",
+          expanded_subtitle: "Aprende a leer y escribir las sílabas del renglón tr:わ.",
           expanded_title: "Katakana: tr:わ, tr:を, tr:ん",
           icon: "https://nihongo.khvat.app/chapter2/Lesson20.jpg",
-          id: "30ea0de4-742f-48d9-90c0-29135c7e4266",
-          last_updated: "2026-09-08T13:12:16.002Z",
+          id: "964c8250-13ef-4b1c-8b76-80c4bed4de0b",
+          last_updated: "2026-09-08T13:12:16.027Z",
           lesson_key: "alphabet/katakana&wa",
           lesson_order: 21,
           minimum_version: "2.4.1",
@@ -8080,13 +8078,13 @@ export const dumpDe = {
                     id: "a53d8501-373d-4944-a76b-657f672162f9",
                     kana: "katakana",
                   },
-                  id: "a7c0bb56-4054-5150-ba27-53bc49069a6f",
+                  id: "b9d5c6e5-1b1c-5dbc-aad4-420725bf947c",
                   type: "letter",
                 },
               ],
-              id: "703bf84e-acb7-5d46-b35a-b31eb820cf8b",
+              id: "7f29bb9c-1233-5509-9de7-6422843c0fdc",
               screen_order: 1,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -8097,13 +8095,13 @@ export const dumpDe = {
                     id: "a53d8501-373d-4944-a76b-657f672162f9",
                     kana: "katakana",
                   },
-                  id: "02360160-0a04-5604-b693-402374fc625e",
+                  id: "b233a458-20d2-5c72-8341-fcab18daf8d4",
                   type: "letter",
                 },
               ],
-              id: "c05dc465-405d-500c-9490-f8bf40694c35",
+              id: "249bcb56-b630-5604-9240-3ba82b538620",
               screen_order: 2,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -8114,13 +8112,13 @@ export const dumpDe = {
                     id: "858b53e1-af17-45d5-8fc2-330121eab5c4",
                     kana: "katakana",
                   },
-                  id: "80077dba-4471-5601-9371-0929572edaf0",
+                  id: "b17e2252-e70e-5409-9455-b8c078edeac2",
                   type: "letter",
                 },
               ],
-              id: "ba4db49d-fb72-5a6c-85a3-6838d9de0a02",
+              id: "6d60265a-3034-56a6-8a74-7540e6a7cc4c",
               screen_order: 3,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -8131,13 +8129,13 @@ export const dumpDe = {
                     id: "858b53e1-af17-45d5-8fc2-330121eab5c4",
                     kana: "katakana",
                   },
-                  id: "89928458-44d6-5f6b-a302-1afba1343e31",
+                  id: "a8d7a9e3-3570-51ca-8ab1-734930326c9f",
                   type: "letter",
                 },
               ],
-              id: "d3ad314c-8a2b-5cd0-a818-8cdd8abae4e2",
+              id: "b0ab223b-64e9-5920-9872-e64a67dbd248",
               screen_order: 4,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -8149,13 +8147,13 @@ export const dumpDe = {
                       ["ワ", "tr:ワ"],
                     ],
                   },
-                  id: "333f2d42-3e20-5de5-ad6c-3a340ef1bdc5",
+                  id: "88291f33-c4eb-5a92-9aea-df201d4a2466",
                   type: "matching",
                 },
               ],
-              id: "3c051730-796e-55bf-b3c4-99e176ecb1ba",
+              id: "cc947860-bdd2-5503-a2bc-29c833b75033",
               screen_order: 5,
-              title: "Ordnen Sie 「Katakana」 seiner Umschrift zu.",
+              title: "Relaciona 「Katakana」 con su transliteración.",
             },
             {
               blocks: [
@@ -8166,13 +8164,13 @@ export const dumpDe = {
                     id: "2a481d17-0d7c-492a-85fc-cab60e9fb6df",
                     kana: "katakana",
                   },
-                  id: "47d1d24b-534c-5bcb-a283-d7e542aac2d3",
+                  id: "56f6baf5-275a-501e-add8-2ff8534ffcd1",
                   type: "letter",
                 },
               ],
-              id: "49920b6f-c860-5c27-b3c4-67d91c7b11ae",
+              id: "1589df43-9883-5aa2-985e-2200982874f7",
               screen_order: 6,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
             },
             {
               blocks: [
@@ -8183,13 +8181,13 @@ export const dumpDe = {
                     id: "2a481d17-0d7c-492a-85fc-cab60e9fb6df",
                     kana: "katakana",
                   },
-                  id: "4b248323-8b8b-56fa-9ae1-27078209d35e",
+                  id: "2594049d-8ff6-502d-8537-229028424061",
                   type: "letter",
                 },
               ],
-              id: "74d65b09-ae4b-50c6-ab44-090d53ab7c5e",
+              id: "a7d8e1a0-b745-5f81-88ac-f706738c923a",
               screen_order: 7,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Escribe la sílaba en el orden correcto de los trazos.",
             },
             {
               blocks: [
@@ -8197,9 +8195,9 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Katakana",
-                    title: "tr:ン",
+                    title: "tr:ヲ",
                   },
-                  id: "61f0633d-a597-52d9-8340-146453baa81a",
+                  id: "3a17820c-736b-587f-a469-4dd7842d81f3",
                   type: "title",
                 },
                 {
@@ -8207,26 +8205,26 @@ export const dumpDe = {
                   content: {
                     answers: [
                       {
+                        isTrue: true,
+                        title: "ヲ",
+                      },
+                      {
                         isTrue: false,
                         title: "ワ",
                       },
                       {
-                        isTrue: true,
-                        title: "ン",
-                      },
-                      {
                         isTrue: false,
-                        title: "ヲ",
+                        title: "ン",
                       },
                     ],
                   },
-                  id: "aa734607-12d7-5157-95fb-24745130b767",
+                  id: "9dea8784-ea4f-536c-a793-c3dc70d7c97e",
                   type: "choice",
                 },
               ],
-              id: "ed33f736-7011-5399-b94a-24a305e37122",
+              id: "f0d3bfa0-664f-5c69-a858-55f73f6baf44",
               screen_order: 8,
-              title: "Wählen Sie die Silbe aus.",
+              title: "Selecciona la sílaba.",
             },
             {
               blocks: [
@@ -8238,13 +8236,13 @@ export const dumpDe = {
                       ["ヲ", "tr:ヲ"],
                     ],
                   },
-                  id: "8f013d08-929b-54fc-a621-6891fa35d365",
+                  id: "20a9afe0-8f17-5ad0-8bac-ffc5d37a7fc2",
                   type: "matching",
                 },
               ],
-              id: "474a43f2-5871-5f00-b6d7-bbd2c51c60f4",
+              id: "59f5f35d-a21a-5f48-a502-492136a23d27",
               screen_order: 9,
-              title: "Ordnen Sie 「Katakana」 seiner Umschrift zu.",
+              title: "Relaciona 「Katakana」 con su transliteración.",
             },
             {
               blocks: [
@@ -8252,69 +8250,36 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Katakana",
-                    title: "tr:ワ",
+                    title: "tr:ン",
                   },
-                  id: "a4d3bed3-d3a7-5d5a-a3d0-356654c46a85",
+                  id: "75196e3b-f2c6-53bb-af99-5aed56d69a66",
                   type: "title",
                 },
                 {
                   block_order: 2,
                   content: {
                     answers: [
+                      {
+                        isTrue: true,
+                        title: "ン",
+                      },
                       {
                         isTrue: false,
                         title: "ヲ",
                       },
                       {
                         isTrue: false,
-                        title: "ン",
-                      },
-                      {
-                        isTrue: true,
                         title: "ワ",
                       },
                     ],
                   },
-                  id: "88834898-f33c-56de-af56-5f5312f265ee",
+                  id: "bb3a112f-7f16-526b-b9be-722c321f7c55",
                   type: "choice",
                 },
               ],
-              id: "af561a38-6a17-5d68-9d15-46c26fb572d0",
+              id: "5159d86e-cc7b-5656-8f65-05600ea8b270",
               screen_order: 10,
-              title: "Wählen Sie die Silbe aus.",
-            },
-            {
-              blocks: [
-                {
-                  block_order: 1,
-                  content: {
-                    sub_title: "Katakana",
-                    title: "ン, ヲ, ワ",
-                  },
-                  id: "79882882-35db-5a5a-8501-29a311b2b3a8",
-                  type: "title",
-                },
-                {
-                  block_order: 2,
-                  content: {
-                    answers: [
-                      {
-                        isTrue: true,
-                        title: "tr:ン, tr:ヲ, tr:ワ",
-                      },
-                      {
-                        isTrue: false,
-                        title: "tr:ヲ, tr:ン, tr:ワ",
-                      },
-                    ],
-                  },
-                  id: "59bf6308-a702-5c9b-87f4-7dcdedc26013",
-                  type: "choice",
-                },
-              ],
-              id: "0a1dc670-086c-5855-9c57-4946f128edf7",
-              screen_order: 11,
-              title: "Wählen Sie die richtige Reihenfolge.",
+              title: "Selecciona la sílaba.",
             },
             {
               blocks: [
@@ -8324,7 +8289,7 @@ export const dumpDe = {
                     sub_title: "Katakana",
                     title: "ワ, ン, ヲ",
                   },
-                  id: "4bc4a451-e2fe-5ba6-8d2d-f44d15a31ce0",
+                  id: "c1db23c3-f56a-5224-9893-884517f26c4f",
                   type: "title",
                 },
                 {
@@ -8341,13 +8306,13 @@ export const dumpDe = {
                       },
                     ],
                   },
-                  id: "10910a33-2d40-5bb0-ab8b-35bcdbbfdfd3",
+                  id: "07851823-2bff-5127-91e6-4b445c059ced",
                   type: "choice",
                 },
               ],
-              id: "23ce8e22-c132-5c98-ac2d-7e29dea5666c",
-              screen_order: 12,
-              title: "Wählen Sie die richtige Reihenfolge.",
+              id: "d2a424c1-a891-568c-b953-2fa29de532c8",
+              screen_order: 11,
+              title: "Elige la secuencia correcta.",
             },
             {
               blocks: [
@@ -8355,23 +8320,32 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     sub_title: "Katakana",
-                    title: "tr:ン, tr:ワ, tr:ヲ",
+                    title: "ワ, ヲ, ン",
                   },
-                  id: "d88c76bd-9f4a-5d8a-bbd6-061af6ebdde7",
+                  id: "f850dd71-62f4-580f-97f5-48e8eefc2b0c",
                   type: "title",
                 },
                 {
                   block_order: 2,
                   content: {
-                    sequence: ["ン", "ワ", "ヲ"],
+                    answers: [
+                      {
+                        isTrue: true,
+                        title: "tr:ワ, tr:ヲ, tr:ン",
+                      },
+                      {
+                        isTrue: false,
+                        title: "tr:ヲ, tr:ン, tr:ワ",
+                      },
+                    ],
                   },
-                  id: "2fef807a-89f3-571a-b1f7-f975afaf590f",
-                  type: "sequence",
+                  id: "cafbe66e-1d47-56d4-a489-4874828a5f7d",
+                  type: "choice",
                 },
               ],
-              id: "5fcfa56b-193a-510c-8b26-c3e3f890e4b2",
-              screen_order: 13,
-              title: "Ordnen Sie die Silben in der richtigen Reihenfolge an.",
+              id: "58588f01-75fa-5f64-8390-768042fad4ac",
+              screen_order: 12,
+              title: "Elige la secuencia correcta.",
             },
             {
               blocks: [
@@ -8381,7 +8355,7 @@ export const dumpDe = {
                     sub_title: "Katakana",
                     title: "tr:ヲ, tr:ン, tr:ワ",
                   },
-                  id: "055dda9e-8b2c-5e1a-8b45-63da0c3f663e",
+                  id: "704dfe35-c49d-5020-84e3-7b9d9550e845",
                   type: "title",
                 },
                 {
@@ -8389,32 +8363,56 @@ export const dumpDe = {
                   content: {
                     sequence: ["ヲ", "ン", "ワ"],
                   },
-                  id: "62b47bfd-b4f2-5529-9e12-5f91b5c0d2f6",
+                  id: "e1ed2ebc-f994-5015-8593-f1edac2c0f9d",
                   type: "sequence",
                 },
               ],
-              id: "4464d7de-3293-50bf-b836-2e5e91f2b2c5",
+              id: "fd6419fa-ddeb-5029-bd8d-4ea9d9e2f774",
+              screen_order: 13,
+              title: "Acomoda las sílabas en el orden correcto.",
+            },
+            {
+              blocks: [
+                {
+                  block_order: 1,
+                  content: {
+                    sub_title: "Katakana",
+                    title: "tr:ヲ, tr:ン, tr:ワ",
+                  },
+                  id: "f29d6883-5b6b-5709-b670-6a51bddb4300",
+                  type: "title",
+                },
+                {
+                  block_order: 2,
+                  content: {
+                    sequence: ["ワ", "ン", "ヲ"],
+                  },
+                  id: "0f73578e-bd81-544a-b906-2ae06a75ddeb",
+                  type: "sequence",
+                },
+              ],
+              id: "a9a0e25e-ef0e-5967-a55e-7ef06827db15",
               screen_order: 14,
-              title: "Ordnen Sie die Silben in der richtigen Reihenfolge an.",
+              title: "Acomoda las sílabas en el orden correcto.",
             },
           ],
-          subtitle: "Silben: ワ、ヲ、ン",
-          title: "Lektion 20",
-          topic_id: "cf72c46a-ab31-4724-adf6-7d827a9a8d73",
+          subtitle: "Sílabas: ワ、ヲ、ン",
+          title: "Lección 20",
+          topic_id: "db0183e1-1a54-4f44-a18a-2020f6b6987b",
         },
       ],
-      title: "Abschnitt 2. Katakana",
+      title: "Sección 2. Katakana",
       topic_order: 2,
     },
     {
-      id: "39cd47aa-0237-4efe-b098-429ee3b7eb87",
+      id: "03231c39-a726-4e58-acf4-d8d912627e9e",
       lessons: [
         {
-          expanded_subtitle: "Hier erzählen wir Ihnen über die speziellen Zeichen der Hiragana.",
-          expanded_title: "Information",
+          expanded_subtitle: "Aquí te hablaremos sobre los signos especiales de hiragana.",
+          expanded_title: "Información",
           icon: "https://nihongo.khvat.app/chapter3/DakuonAndHandakuon.jpg",
-          id: "d8a72b96-2e28-442b-824c-c5c414bf647f",
-          last_updated: "2026-09-08T13:12:16.002Z",
+          id: "0933dc3f-8669-4c01-b515-d185d8a87e8b",
+          last_updated: "2026-09-08T13:12:16.027Z",
           lesson_key: "alphabet/hiragana&dakuon",
           lesson_order: 22,
           minimum_version: "2.4.1",
@@ -8424,17 +8422,17 @@ export const dumpDe = {
                 {
                   block_order: 1,
                   content: {
-                    text: "Nachdem wir die grundlegenden Silben der Hiragana gelernt haben, ist es an der Zeit, sich mit Dakuon und Handakuon vertraut zu machen - besonderen Zeichen, die die Aussprache der Silben verändern.",
+                    text: "Después de dominar las sílabas básicas del hiragana, es momento de conocer los dakuon y handakuon: signos especiales que cambian el sonido de las sílabas.",
                   },
-                  id: "f9baeee7-b8c7-59c3-ae4f-1d03cd0ec690",
+                  id: "45fc379b-3b44-5833-af3b-d9d67de66385",
                   type: "text",
                 },
                 {
                   block_order: 2,
                   content: {
-                    text: "Zuerst wollen wir herausfinden, mit welchen Silben der Hiragana diese Zeichen verwendet werden können:",
+                    text: "Primero, veamos con qué sílabas de hiragana se pueden usar estos signos:",
                   },
-                  id: "2a924d94-cad2-5f2a-ab46-b585adda006f",
+                  id: "fbbdbfa0-c6c6-56b9-95c6-39f10265d201",
                   type: "text",
                 },
                 {
@@ -8442,7 +8440,7 @@ export const dumpDe = {
                   content: {
                     table: [
                       [
-                        "Romaji",
+                        "Rōmaji",
                         "tr:か, tr:き, tr:く, tr:け, tr:こ",
                         "tr:さ, tr:し, tr:す, tr:せ, tr:そ",
                         "tr:た, tr:ち, tr:つ, tr:て, tr:と",
@@ -8457,13 +8455,13 @@ export const dumpDe = {
                       ],
                     ],
                   },
-                  id: "3955c78b-6f49-5577-ac74-3fc134899fdb",
+                  id: "2c424bca-6533-5eb7-90de-6605f7620427",
                   type: "table",
                 },
               ],
-              id: "8c319f4f-8d68-5958-8321-26ffe4dbdd1d",
+              id: "6bd48a65-10c4-5544-b81a-ec40fa018018",
               screen_order: 1,
-              title: "Dakuon und Handakuon.",
+              title: "Dakuon y handakuon.",
             },
             {
               blocks: [
@@ -8471,27 +8469,27 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     pairs: [
-                      ["きく", "tr(きく) (hören)"],
-                      ["つち", "tr(つち) (Erde)"],
-                      ["ほし", "tr(ほし) (Stern)"],
+                      ["きく", "tr(きく) (escuchar)"],
+                      ["つち", "tr(つち) (tierra)"],
+                      ["ほし", "tr(ほし) (estrella)"],
                     ],
                   },
-                  id: "bfd959e2-d3af-51e9-8cbb-c2ad1c58c83f",
+                  id: "19d7fe71-f058-5b79-8723-80e097f05c97",
                   type: "matching",
                 },
               ],
-              id: "d5556cd4-5390-59f1-aab2-35cd4db7553c",
+              id: "5a8e8c50-71dd-5e6d-8d10-beac0fe084b6",
               screen_order: 2,
-              title: "Ordne die Hiragana den Romaji zu.",
+              title: "Relaciona el hiragana con el rōmaji.",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "Indem wir spezielle Dakuon-Zeichen hinzufügen, die aus zwei kurzen Strichen in der oberen rechten Ecke bestehen, formen wir aus den Silben neue Klänge. Sehen Sie, wie dies die Aussprache verändert.",
+                    text: "Al agregar a las sílabas los signos especiales dakuten, que son dos pequeñas líneas en la esquina superior derecha, formamos nuevos sonidos. Observa cómo cambia la pronunciación.",
                   },
-                  id: "037b81f7-2b0b-5258-a316-80f646e0b76b",
+                  id: "d57c95b7-0a41-566e-b6e6-9f89de35b779",
                   type: "text",
                 },
                 {
@@ -8499,7 +8497,7 @@ export const dumpDe = {
                   content: {
                     table: [
                       [
-                        "Stimmlose",
+                        "Sordas",
                         "か (tr:か)",
                         "き (tr:き)",
                         "く (tr:く)",
@@ -8507,7 +8505,7 @@ export const dumpDe = {
                         "こ (tr:こ)",
                       ],
                       [
-                        "Stimmhaft",
+                        "Sonoras",
                         "が (tr:が)",
                         "ぎ (tr:ぎ)",
                         "ぐ (tr:ぐ)",
@@ -8516,11 +8514,11 @@ export const dumpDe = {
                       ],
                     ],
                   },
-                  id: "c62f8be7-27fe-5b27-9068-a5ad58ef9b8f",
+                  id: "e1cc3231-fcab-5ef8-ac36-c0d3fc214900",
                   type: "table",
                 },
               ],
-              id: "2bf1ed83-7e24-52a2-8314-f035c164d904",
+              id: "42417a27-deb2-529a-9ca2-e66b7799b1e6",
               screen_order: 3,
               title: "Dakuon tr:が, tr:ぎ, tr:ぐ, tr:げ, tr:ご.",
             },
@@ -8529,10 +8527,10 @@ export const dumpDe = {
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Schlüssel",
+                    sub_title: "Llave",
                     title: "tr(かぎ)",
                   },
-                  id: "c119276d-578d-5f48-960a-337114c85cf4",
+                  id: "af36695f-2b54-583b-b4db-594c627e70db",
                   type: "title",
                 },
                 {
@@ -8553,22 +8551,22 @@ export const dumpDe = {
                       },
                     ],
                   },
-                  id: "f99676a9-09df-539c-8af7-414962c103f0",
+                  id: "7b7eb9ae-c77d-57b0-bc80-a0a4bd4dc7c4",
                   type: "choice",
                 },
               ],
-              id: "84bcd016-75dc-5cfe-acf1-7f8f9c85838f",
+              id: "294f6e46-1863-534d-9324-b29f8b6dc83f",
               screen_order: 4,
-              title: "Wähle die Hiragana für:",
+              title: "Elige el hiragana para:",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "Auf ähnliche Weise fügen wir Dakuon zu den Silben der Reihe 'tr:さ' hinzu und verwandeln sie in stimmhafte Klänge.",
+                    text: "De manera similar, agregamos dakuten a las sílabas de la fila 'tr:さ', transformándolas en sonidos sonoros.",
                   },
-                  id: "b3fdd031-0b54-5010-a739-32426ba3a222",
+                  id: "d923a827-250b-54ae-93b9-926ac8b89624",
                   type: "text",
                 },
                 {
@@ -8576,7 +8574,7 @@ export const dumpDe = {
                   content: {
                     table: [
                       [
-                        "Stimmlose",
+                        "Sordas",
                         "さ (tr:さ)",
                         "し (tr:し)",
                         "す (tr:す)",
@@ -8584,7 +8582,7 @@ export const dumpDe = {
                         "そ (tr:そ)",
                       ],
                       [
-                        "Stimmhaft",
+                        "Sonoras",
                         "ざ (tr:ざ)",
                         "じ (tr:じ)",
                         "ず (tr:ず)",
@@ -8593,11 +8591,11 @@ export const dumpDe = {
                       ],
                     ],
                   },
-                  id: "b924f61d-a5c5-54f9-bd1a-9adcc0f5ba8e",
+                  id: "7738a214-e9fa-5ee7-8106-3ace02fe3311",
                   type: "table",
                 },
               ],
-              id: "f404c633-809d-5cdd-9d3f-ca4fb7453841",
+              id: "8b31ed51-f7c8-53e9-988b-4a2a542972e7",
               screen_order: 5,
               title: "Dakuon tr:ざ, tr:じ, tr:ず, tr:ぜ, tr:ぞ.",
             },
@@ -8606,10 +8604,10 @@ export const dumpDe = {
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Maiglöckchen",
+                    sub_title: "Lirio de los valles",
                     title: "tr(すずらん)",
                   },
-                  id: "8d1666c7-185e-523d-b7ef-958524d039bb",
+                  id: "a9a0146f-9593-5789-8868-6b45215afb88",
                   type: "title",
                 },
                 {
@@ -8617,22 +8615,22 @@ export const dumpDe = {
                   content: {
                     sequence: ["す", "ず", "ら", "ん"],
                   },
-                  id: "dbb438c9-46c3-53a6-87da-869037bd9519",
+                  id: "fbf8985b-e292-5cf5-bd11-2c135a45fb47",
                   type: "sequence",
                 },
               ],
-              id: "31643613-5c9a-59f8-a1e9-128fa7477542",
+              id: "bf5baedf-a41a-5041-8fca-1db60f0ea71a",
               screen_order: 6,
-              title: "Wähle die Hiragana für:",
+              title: "Elige el hiragana para:",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "Durch das Hinzufügen von Dakuon zu den Silben der Reihe 'tr:た' erstellen wir eine andere Reihe stimmhafter Klänge.",
+                    text: "Al agregar dakuten a las sílabas de la fila 'tr:た', creamos otro conjunto de sonidos sonoros.",
                   },
-                  id: "39cb5a5c-6b03-5ce9-8a96-bf9ec68d406b",
+                  id: "53ace7bf-5d82-51d5-b64a-4d0ca090a945",
                   type: "text",
                 },
                 {
@@ -8640,7 +8638,7 @@ export const dumpDe = {
                   content: {
                     table: [
                       [
-                        "Stimmlose",
+                        "Sordas",
                         "た (tr:た)",
                         "ち (tr:ち)",
                         "つ (tr:つ)",
@@ -8648,7 +8646,7 @@ export const dumpDe = {
                         "と (tr:と)",
                       ],
                       [
-                        "Stimmhaft",
+                        "Sonoras",
                         "だ (tr:だ)",
                         "ぢ (tr:ぢ)",
                         "づ (tr:づ)",
@@ -8657,11 +8655,11 @@ export const dumpDe = {
                       ],
                     ],
                   },
-                  id: "df3f4591-4358-540f-a93b-c7a94979910f",
+                  id: "175ce486-81bf-54ed-b4fd-a662adaa5e12",
                   type: "table",
                 },
               ],
-              id: "82dbad13-3a36-5cea-92d0-4c95281776c4",
+              id: "9bd692e5-3e43-5239-b50b-70b15fd843e1",
               screen_order: 7,
               title: "Dakuon tr:だ, tr:ぢ, tr:づ, tr:で, tr:ど.",
             },
@@ -8670,44 +8668,44 @@ export const dumpDe = {
                 {
                   block_order: 1,
                   content: {
-                    text: "Die Silben じ (tr:じ) und ぢ (tr:ぢ) sowie ず (tr:ず) und づ (tr:づ) werden im modernen Japanisch gleich ausgesprochen. Früher unterschieden sich diese Klänge, aber mit der Zeit haben sie sich zusammengelegt.",
+                    text: "Las sílabas じ (tr:じ) y ぢ (tr:ぢ), así como ず (tr:ず) y づ (tr:づ), se pronuncian igual en el japonés moderno. Antes estos sonidos eran distintos, pero con el tiempo se unificaron.",
                   },
-                  id: "ac40122c-50b4-57af-b36f-717052e04e32",
+                  id: "14b972d8-bfb1-5268-b8e5-8eec38c4e774",
                   type: "text",
                 },
                 {
                   block_order: 2,
                   content: {
-                    text: "Beachten Sie, dass für Wörter mit 'tr:じ' meistens じ verwendet wird und für Wörter mit 'tr:ず' - ず. Nur sehr wenige Wörter verwenden ぢ und づ.",
+                    text: "Ten en cuenta que para las palabras con 'tr:じ' se usa con mayor frecuencia じ, y para las palabras con 'tr:ず', ず. Solo en muy pocas palabras se usan ぢ y づ.",
                   },
-                  id: "c7ab402b-853b-5e74-ab08-f8d06f1e525f",
+                  id: "17d3011a-fbc5-52b0-a5ad-1c6798c21061",
                   type: "text",
                 },
                 {
                   block_order: 3,
                   content: {
                     rules: [
-                      "じ(tr:じ), ず(tr:ず) - werden in den meisten Fällen verwendet",
-                      "ぢ(tr:ぢ), づ(tr:づ) - werden nur in einigen wenigen Wörtern verwendet",
+                      "じ(tr:じ), ず(tr:ず) - se usan en la mayoría de los casos",
+                      "ぢ(tr:ぢ), づ(tr:づ) - se usan solo en algunas palabras",
                     ],
                   },
-                  id: "a77bbe85-6740-5c45-8a31-5d8be833c459",
+                  id: "0823b67f-b90b-5c7c-ae69-3e85691e51f0",
                   type: "rule",
                 },
               ],
-              id: "e48df3ad-02fb-5163-88ae-dfa4e206046f",
+              id: "84b2b042-18e0-53b9-a7d4-6e48245cf5d7",
               screen_order: 8,
-              title: "Achte darauf!",
+              title: "¡Presta atención!",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Japanische Brühe",
+                    sub_title: "Caldo japonés",
                     title: "tr(だし)",
                   },
-                  id: "665548b8-f4e1-5caa-a97e-dda3e0d1a3b9",
+                  id: "4d3f21be-a618-566e-bd92-06152b23cf69",
                   type: "title",
                 },
                 {
@@ -8728,22 +8726,22 @@ export const dumpDe = {
                       },
                     ],
                   },
-                  id: "f519dd8d-f62c-53a7-9d68-bea23918b64a",
+                  id: "1117d293-d539-5871-9036-67b0106ff2af",
                   type: "choice",
                 },
               ],
-              id: "d62c5629-9f50-577e-80ef-f20c0cb31c06",
+              id: "e0efa404-2340-5508-8021-5d6382c07011",
               screen_order: 9,
-              title: "Wähle die Hiragana für:",
+              title: "Elige el hiragana para:",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "Jetzt lass uns die speziellen Dakuon-Zeichen für die Reihe 'tr:は' lernen",
+                    text: "Ahora estudiemos los signos especiales dakuten para la fila 'tr:は'",
                   },
-                  id: "85493ce0-25b3-5e02-be72-f61e541a953c",
+                  id: "21614887-fd6d-557e-b14e-c0388bd6ea5e",
                   type: "text",
                 },
                 {
@@ -8751,7 +8749,7 @@ export const dumpDe = {
                   content: {
                     table: [
                       [
-                        "Reihe 'tr:は'",
+                        "Fila 'tr:は'",
                         "は (tr:は)",
                         "ひ (tr:ひ)",
                         "ふ (tr:ふ)",
@@ -8759,7 +8757,7 @@ export const dumpDe = {
                         "ほ (tr:ほ)",
                       ],
                       [
-                        "Reihe 'tr:ば'",
+                        "Fila 'tr:ば'",
                         "ば (tr:ば)",
                         "び (tr:び)",
                         "ぶ (tr:ぶ)",
@@ -8768,11 +8766,11 @@ export const dumpDe = {
                       ],
                     ],
                   },
-                  id: "0ceff9c7-bd20-51df-b5cb-f6d9175635b6",
+                  id: "9f4d5f08-761c-5c6b-a6c4-33c705f75f67",
                   type: "table",
                 },
               ],
-              id: "eee1dcdd-8425-50ec-b982-c9c3ca25d4ac",
+              id: "89103a5b-076d-5122-bbce-aa02194e1284",
               screen_order: 10,
               title: "Dakuon tr:ば, tr:び, tr:ぶ, tr:べ, tr:ぼ.",
             },
@@ -8781,10 +8779,10 @@ export const dumpDe = {
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Japanisches Theater",
+                    sub_title: "Teatro japonés",
                     title: "tr(かぶき)",
                   },
-                  id: "92bad1b5-9273-5bae-bf4d-39cddb8e1611",
+                  id: "ca36f1d5-e1f3-5bb8-ae2c-9e3e2a172d33",
                   type: "title",
                 },
                 {
@@ -8805,22 +8803,22 @@ export const dumpDe = {
                       },
                     ],
                   },
-                  id: "f5f98807-ab96-5f85-bb61-3d7ef477af99",
+                  id: "39884af9-cf02-5ca9-ae47-996d944f9c60",
                   type: "choice",
                 },
               ],
-              id: "44c462e3-f2e0-5ce9-a282-8f4aaed18d71",
+              id: "ff4eb3cf-0620-5f9f-b3ee-f9a30b0296a7",
               screen_order: 11,
-              title: "Wähle die Hiragana für:",
+              title: "Elige el hiragana para:",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "Die Hiragana-Reihe, die mit は (tr:は) beginnt, ist etwas Besonderes! Zu ihr können wir nicht nur Dakuon, sondern auch Handakuon hinzufügen, einen kleinen Kreis, der den Klang von は in ぱ (tr:ぱ) verwandelt.",
+                    text: "¡La fila de hiragana que comienza con は (tr:は) es especial! Podemos agregarle no solo dakuten, sino también handakuten, un pequeño círculo que transforma el sonido は en ぱ (tr:ぱ).",
                   },
-                  id: "c6810af7-e752-5830-b1f5-82051ffc75a8",
+                  id: "9ec06902-b9b3-5441-b3bb-f4c1c68386d8",
                   type: "text",
                 },
                 {
@@ -8828,7 +8826,7 @@ export const dumpDe = {
                   content: {
                     table: [
                       [
-                        "Reihe 'tr:は'",
+                        "Fila 'tr:は'",
                         "は (tr:は)",
                         "ひ (tr:ひ)",
                         "ふ (tr:ふ)",
@@ -8836,7 +8834,7 @@ export const dumpDe = {
                         "ほ (tr:ほ)",
                       ],
                       [
-                        "Reihe 'tr:ば'",
+                        "Fila 'tr:ば'",
                         "ば (tr:ば)",
                         "び (tr:び)",
                         "ぶ (tr:ぶ)",
@@ -8844,7 +8842,7 @@ export const dumpDe = {
                         "ぼ (tr:ぼ)",
                       ],
                       [
-                        "Reihe 'tr:ぱ'",
+                        "Fila 'tr:ぱ'",
                         "ぱ (tr:ぱ)",
                         "ぴ (tr:ぴ)",
                         "ぷ (tr:ぷ)",
@@ -8853,11 +8851,11 @@ export const dumpDe = {
                       ],
                     ],
                   },
-                  id: "344497e9-10eb-5965-9496-70fa2f2c6fa0",
+                  id: "326423bd-910b-5435-8a87-0dad45989efa",
                   type: "table",
                 },
               ],
-              id: "8afd3cef-4447-5c7e-9298-7ddff28d8775",
+              id: "e1acbf43-cdb8-5f69-bf94-3f41afa1ec23",
               screen_order: 12,
               title: "Handakuon tr:ぱ, tr:ぴ, tr:ぷ, tr:ぺ, tr:ぽ.",
             },
@@ -8881,41 +8879,41 @@ export const dumpDe = {
                       },
                     ],
                   },
-                  id: "7d2239ca-7409-5fc5-96de-650e0d8eda4e",
+                  id: "7abb8909-5284-54dd-948c-ac478f94c596",
                   type: "choice",
                 },
               ],
-              id: "f2161fec-a6e1-5f4e-92f6-3117ca909d31",
+              id: "4dde2811-e17c-5ddf-aa54-92fc5386a88f",
               screen_order: 13,
-              title: "Wähle die Romaji für ぱくぱく (mit Appetit essen).",
+              title: "Elige el rōmaji para ぱくぱく (comer con apetito).",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "Der Gebrauch von speziellen Zeichen verändert die Bedeutungen von Wörtern erheblich und unterstreicht ihre Bedeutung in der japanischen Sprache.",
+                    text: "El uso de los signos especiales cambia considerablemente el significado de las palabras, lo que destaca su importancia en el japonés.",
                   },
-                  id: "e4f087b6-dc9e-5667-97dc-208224ecdcd9",
+                  id: "f1b11223-a4f9-589a-a822-670c509a2e66",
                   type: "text",
                 },
                 {
                   block_order: 2,
                   content: {
                     rules: [
-                      "はか (tr(はか)) - Grab",
-                      "ばか (tr(ばか)) - Idiot",
-                      "かき (tr(かき)) - Kaki",
-                      "かぎ (tr(かぎ)) - Schlüssel",
+                      "はか (tr(はか)) - tumba",
+                      "ばか (tr(ばか)) - tonto",
+                      "かき (tr(かき)) - caqui",
+                      "かぎ (tr(かぎ)) - llave",
                     ],
                   },
-                  id: "f315c9d1-9845-534e-bac5-c7cc2577662c",
+                  id: "46538068-aca0-58b2-a802-a4ac3dd44954",
                   type: "rule",
                 },
               ],
-              id: "85501377-a6fd-5da2-a3a8-25fa96a35943",
+              id: "0337e52b-b854-5b90-b120-61ca6be7a58b",
               screen_order: 14,
-              title: "Hinweis!",
+              title: "¡Consejo!",
             },
             {
               blocks: [
@@ -8923,30 +8921,30 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     pairs: [
-                      ["ここ", "tr(ここ) (hier)"],
-                      ["ごこ", "tr(ごこ) (5 Stücke)"],
-                      ["ごご", "tr(ごご) (nachmittags)"],
+                      ["ここ", "tr(ここ) (aquí)"],
+                      ["ごこ", "tr(ごこ) (5 piezas)"],
+                      ["ごご", "tr(ごご) (por la tarde)"],
                     ],
                   },
-                  id: "d45d0981-5ccf-59cc-9ce8-09a74c75b885",
+                  id: "f274f1b0-d25a-5c3f-9aa6-f8ba2b388812",
                   type: "matching",
                 },
               ],
-              id: "a52bf9f5-62f7-5083-bc9b-169771f49206",
+              id: "d71e910e-b2bc-5711-b3ea-662f14226eb2",
               screen_order: 15,
-              title: "Ordne die Hiragana den Romaji zu.",
+              title: "Relaciona el hiragana con el rōmaji.",
             },
           ],
-          subtitle: "Spezielle Zeichen",
-          title: "Dakuon und Handakuon",
-          topic_id: "39cd47aa-0237-4efe-b098-429ee3b7eb87",
+          subtitle: "Signos especiales",
+          title: "Dakuon y handakuon",
+          topic_id: "03231c39-a726-4e58-acf4-d8d912627e9e",
         },
         {
-          expanded_subtitle: "Hier erklären wir Ihnen über lange Vokale.",
-          expanded_title: "Information",
+          expanded_subtitle: "Aquí te hablaremos sobre las vocales largas.",
+          expanded_title: "Información",
           icon: "https://nihongo.khvat.app/chapter3/LongVowels.jpg",
-          id: "8eb64282-cd6b-4ae6-80e5-cca45aa16470",
-          last_updated: "2026-09-08T13:12:16.003Z",
+          id: "a986b021-8a22-4ef3-a38b-054eb98df9fe",
+          last_updated: "2026-09-08T13:12:16.027Z",
           lesson_key: "alphabet/hiragana&longVowels",
           lesson_order: 23,
           minimum_version: "2.4.1",
@@ -8956,9 +8954,9 @@ export const dumpDe = {
                 {
                   block_order: 1,
                   content: {
-                    text: "Zuvor haben wir das Thema der speziellen Zeichen in Hiragana behandelt. Heute vertiefen wir uns in das Studium der langen Vokale. Beginnen wir mit den Grundlagen - wir wiederholen die fünf grundlegenden Vokale.",
+                    text: "Anteriormente abordamos el tema de los signos especiales en hiragana. Hoy profundizaremos en el estudio de las vocales largas. Empecemos por lo básico: repasemos las cinco vocales básicas.",
                   },
-                  id: "acfce5f5-5693-560c-a846-dc986a61c05e",
+                  id: "c47f9221-fb64-55a7-9742-927475936dff",
                   type: "text",
                 },
                 {
@@ -8969,82 +8967,82 @@ export const dumpDe = {
                       ["Hiragana", "あ", "い", "う", "え", "お"],
                     ],
                   },
-                  id: "c569cedd-e373-50a4-8fb1-f6c8ae9f1743",
+                  id: "154d624f-6918-517a-9df2-b4f4be24ebc8",
                   type: "table",
                 },
               ],
-              id: "02151ebc-6df2-5346-bf10-f09be5714612",
+              id: "05a3b3aa-4d4e-557d-be18-02b9fbb31966",
               screen_order: 1,
-              title: "Lange Vokale.",
+              title: "Vocales largas.",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "Schauen wir uns an, wie lange Vokale die Bedeutung von Wörtern ändern können. Dies ist äußerst wichtig für das richtige Verständnis und zur Vermeidung von Verwirrung.",
+                    text: "Veamos cómo las vocales largas pueden cambiar el significado de las palabras. Esto es fundamental para comprender correctamente y evitar confusiones.",
                   },
-                  id: "376bf5fa-3484-536e-8d58-f0c494fa490d",
+                  id: "55111770-2169-54a1-9081-23eb92f0c586",
                   type: "text",
                 },
                 {
                   block_order: 2,
                   content: {
                     rules: [
-                      "おばさん (tr(おばさん)) - Tante; Frau mittleren Alters",
-                      "おばあさん (tr(おばあさん)) - Großmutter",
+                      "おばさん (tr(おばさん)) - tía; mujer de mediana edad",
+                      "おばあさん (tr(おばあさん)) - abuela",
                     ],
                   },
-                  id: "1bf23ca5-3b6c-5b7a-9697-7dbe43334a99",
+                  id: "048a2642-de9b-57bc-bfbc-1e7260f0755d",
                   type: "rule",
                 },
               ],
-              id: "30cbc87a-6f2c-5862-bcfc-8056ab2aeb0a",
+              id: "c7cf2d0c-ec52-5d6c-bfdb-3a7b99aac48f",
               screen_order: 2,
-              title: "Tipp!",
+              title: "¡Consejo!",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "あ (tr:あ) macht jede Hiragana-Silbe, die auf „tr:あ“ endet, lang (zum Beispiel かあ - tr(かあ)).",
+                    text: "あ (tr:あ) alarga cualquier sílaba de hiragana que termine en «tr:あ» (por ejemplo, かあ - tr(かあ)).",
                   },
-                  id: "e48098b0-f630-54b7-a510-5735397b4a8c",
+                  id: "e9bd4a09-4401-51d2-93e9-b0e8ccdaacc8",
                   type: "text",
                 },
                 {
                   block_order: 2,
                   content: {
-                    text: "い (tr:い) macht jede Hiragana-Silbe, die auf „tr:い“ endet, lang (zum Beispiel にい - tr(にい)).",
+                    text: "い (tr:い) alarga cualquier sílaba de hiragana que termine en «tr:い» (por ejemplo, にい - tr(にい)).",
                   },
-                  id: "0fd6fc4b-baeb-5c83-a32f-d2a7f46ed5dc",
+                  id: "df3d1448-458d-5f7b-a323-8e255e88365d",
                   type: "text",
                 },
                 {
                   block_order: 3,
                   content: {
-                    text: "う (tr:う) macht jede Hiragana-Silbe, die auf „tr:う“ endet, lang (zum Beispiel くう - tr(くう)).",
+                    text: "う (tr:う) alarga cualquier sílaba de hiragana que termine en «tr:う» (por ejemplo, くう - tr(くう)).",
                   },
-                  id: "19e8a217-bc08-500f-8b92-143881db7c6c",
+                  id: "9badf71c-8cc7-5e3c-98ed-48551257d1f0",
                   type: "text",
                 },
                 {
                   block_order: 4,
                   content: {
                     rules: [
-                      "おかあさん (tr(おかあさん)) - Mutter",
-                      "おにいさん (tr(おにいさん)) - älterer Bruder",
-                      "くうき (tr(くうき)) - Luft",
+                      "おかあさん (tr(おかあさん)) - madre",
+                      "おにいさん (tr(おにいさん)) - hermano mayor",
+                      "くうき (tr(くうき)) - aire",
                     ],
                   },
-                  id: "f45a4d65-26f5-53f6-9bd5-c8e59561d658",
+                  id: "9bb2edae-02b9-5f3a-ab43-878c0010f9de",
                   type: "rule",
                 },
               ],
-              id: "1625dae4-cd09-5fec-980e-bf395e0979d8",
+              id: "6edab065-7be5-5d33-90f9-338f9ab09301",
               screen_order: 3,
-              title: "Merke dir die Regel!",
+              title: "¡Recuerda la regla!",
             },
             {
               blocks: [
@@ -9052,52 +9050,52 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     pairs: [
-                      ["おじいさん", "tr(おじいさん) (Großvater)"],
-                      ["おばあさん", "tr(おばあさん) (Großmutter)"],
-                      ["すうじ", "tr(すうじ) (Zahl)"],
+                      ["おじいさん", "tr(おじいさん) (abuelo)"],
+                      ["おばあさん", "tr(おばあさん) (abuela)"],
+                      ["すうじ", "tr(すうじ) (número)"],
                     ],
                   },
-                  id: "780d2081-439e-5465-9b1d-b04fbac8c04e",
+                  id: "19d88638-9661-599b-b636-735a0ec5286d",
                   type: "matching",
                 },
               ],
-              id: "bfad1bcb-89c2-5e61-8505-a37ba7b9d304",
+              id: "d00c7ec7-8422-5cb6-a579-57a7c3a1ed5c",
               screen_order: 4,
-              title: "Ordne Hiragana den Romaji zu.",
+              title: "Relaciona el hiragana con el romaji.",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "い (tr:い) macht jede Hiragana-Silbe, die auf (tr:え) endet, lang (zum Beispiel せい - tr(せい)).",
+                    text: "い (tr:い) alarga cualquier sílaba de hiragana que termine en (tr:え) (por ejemplo, せい - tr(せい)).",
                   },
-                  id: "84e447f5-8ba3-5cf7-a927-36bdfbb6787f",
+                  id: "64c88dd1-3c28-5712-9791-630d1d88ae3f",
                   type: "text",
                 },
                 {
                   block_order: 2,
                   content: {
-                    text: "う (tr:う) macht jede Hiragana-Silbe, die auf (tr:お) endet, lang (zum Beispiel こう - tr(こう)).",
+                    text: "う (tr:う) alarga cualquier sílaba de hiragana que termine en (tr:お) (por ejemplo, こう - tr(こう)).",
                   },
-                  id: "75132be1-9f6a-5fda-9de7-8d4da3abad6a",
+                  id: "958761d5-0dd6-59b0-a883-b465e2578b25",
                   type: "text",
                 },
                 {
                   block_order: 3,
                   content: {
                     rules: [
-                      "がくせい (tr(がくせい)) - Schüler; Schülerin",
-                      "こうこう (tr(こうこう)) - Oberschule",
+                      "がくせい (tr(がくせい)) - estudiante",
+                      "こうこう (tr(こうこう)) - preparatoria",
                     ],
                   },
-                  id: "991e65c6-ebc3-5147-8dba-6ed73a83797f",
+                  id: "6fe9d3fb-9af6-557e-bb79-5233f7f03dcd",
                   type: "rule",
                 },
               ],
-              id: "44576053-85ac-56e6-924b-7f33113068f7",
+              id: "23a36b50-5137-53ee-bd22-4123e0d3f83b",
               screen_order: 5,
-              title: "Merke dir die Regel!",
+              title: "¡Recuerda la regla!",
             },
             {
               blocks: [
@@ -9105,55 +9103,55 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     pairs: [
-                      ["せんせい", "tr(せんせい) (Lehrer)"],
-                      ["がくせい", "tr(がくせい) (Schüler)"],
-                      ["ほうりつ", "tr(ほうりつ) (Gesetz)"],
+                      ["せんせい", "tr(せんせい) (maestro)"],
+                      ["がくせい", "tr(がくせい) (estudiante)"],
+                      ["ほうりつ", "tr(ほうりつ) (ley)"],
                     ],
                   },
-                  id: "5cdf5077-5f05-5ba7-b01e-23a4c16bf518",
+                  id: "de93ff4a-79d4-5e77-83c4-43f547d16473",
                   type: "matching",
                 },
               ],
-              id: "d84e3c52-8dc3-5163-90f1-a25a775166e6",
+              id: "d85a4171-3e9c-55e7-b78b-07d8eac7c3f4",
               screen_order: 6,
-              title: "Ordne Hiragana den Romaji zu.",
+              title: "Relaciona el hiragana con el romaji.",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "Das Partikel **は** (tr:は), das als Subjekt fungiert, wird als Hiragana は geschrieben, aber als (tr:わ) ausgesprochen.",
+                    text: "La partícula **は** (tr:は), que funciona como marcador de tema, se escribe en hiragana como は, pero se pronuncia como (tr:わ).",
                   },
-                  id: "7535b339-dd26-5c01-b960-01f2af748f32",
+                  id: "98d923e1-ecd3-58a6-a3e6-de6f4c290034",
                   type: "text",
                 },
                 {
                   block_order: 2,
                   content: {
                     rules: [
-                      "わたしは がくせい です (tr(わたしは) tr(がくせい) tr(です)) - Ich bin eine Studentin.",
+                      "わたしは がくせい です (tr(わたしは) tr(がくせい) tr(です)) - Soy estudiante.",
                     ],
                   },
-                  id: "69fca04b-8338-588c-85a3-893e04c52b29",
+                  id: "97eb1547-5a60-580d-b4cb-ca9e843664a7",
                   type: "rule",
                 },
               ],
-              id: "350e9db1-498f-5ed9-ab68-fca0be74561b",
+              id: "a93ca460-c82e-5cce-ba93-4b9305bf5d36",
               screen_order: 7,
-              title: "Merke!",
+              title: "¡Recuerda!",
             },
           ],
           subtitle: "ああ, いい, うう",
-          title: "Lange Vokale",
-          topic_id: "39cd47aa-0237-4efe-b098-429ee3b7eb87",
+          title: "Vocales largas",
+          topic_id: "03231c39-a726-4e58-acf4-d8d912627e9e",
         },
         {
-          expanded_subtitle: "Hier erzählen wir Ihnen über lange Konsonanten.",
-          expanded_title: "Information",
+          expanded_subtitle: "Aquí te contaremos sobre las consonantes largas.",
+          expanded_title: "Información",
           icon: "https://nihongo.khvat.app/chapter3/LongConsonants.jpg",
-          id: "2cd43441-15ce-4b04-ad4b-862a9d43ae1c",
-          last_updated: "2026-09-08T13:12:16.003Z",
+          id: "5ec5b3ab-5ea2-433c-8b7d-01e635757840",
+          last_updated: "2026-09-08T13:12:16.027Z",
           lesson_key: "alphabet/hiragana&longConsonants",
           lesson_order: 24,
           minimum_version: "2.4.1",
@@ -9163,43 +9161,43 @@ export const dumpDe = {
                 {
                   block_order: 1,
                   content: {
-                    text: "Im vorherigen Unterricht haben wir lange Vokale behandelt. Jetzt wenden wir uns langen Konsonanten im Japanischen zu, die ebenfalls eine wichtige Rolle spielen.",
+                    text: "En la lección anterior vimos las vocales largas. Ahora prestemos atención a las consonantes largas en japonés, que desempeñan un papel igual de importante.",
                   },
-                  id: "0e2659a4-b2a1-5cdb-8adc-57a445712e45",
+                  id: "40f62122-fb01-5456-a0b1-894fb3ffa93f",
                   type: "text",
                 },
                 {
                   block_order: 2,
                   content: {
-                    text: "Die Verdoppelung von Konsonanten wird durch ein kleines Symbol (っ) angezeigt, das vor dem Konsonanten steht. Das (っ) selbst wird nicht ausgesprochen.",
+                    text: "La duplicación de consonantes se indica con el símbolo pequeño (っ), que se coloca antes de la consonante. La (っ) en sí no se pronuncia.",
                   },
-                  id: "fdf467b1-ce71-546e-aff6-2cf2d03f4020",
+                  id: "6bbb6172-54e8-5d83-966b-4f66ba19861b",
                   type: "text",
                 },
                 {
                   block_order: 3,
                   content: {
-                    text: "Schauen Sie sich Beispiele für die Verwendung des Standard- (tr:つ) und des verkleinerten (tr:つ) an:",
+                    text: "Consulta los ejemplos del uso de la (tr:つ) estándar y la (tr:つ) pequeña:",
                   },
-                  id: "faea65f0-d8a8-51cb-bfe7-8a9adc1377e0",
+                  id: "375f6016-b00d-5843-8efd-e3da0da916d8",
                   type: "text",
                 },
                 {
                   block_order: 4,
                   content: {
                     rules: [
-                      "かた (tr(かた)) - Schulter",
-                      "かつた (tr(かつた)) - Name",
-                      "かった (tr(かった)) - gewann",
+                      "かた (tr(かた)) - hombro",
+                      "かつた (tr(かつた)) - nombre",
+                      "かった (tr(かった)) - ganó",
                     ],
                   },
-                  id: "6a690e4b-f339-5d5e-9c19-2e704782e0c5",
+                  id: "e11c6fd4-0bfd-50a7-94ae-d90079c9d8e7",
                   type: "rule",
                 },
               ],
-              id: "f9b1bdf8-07ae-5409-b2a1-381e9d99b092",
+              id: "c67eea6a-9a2b-5b1d-9a9f-e27e60f1ce6f",
               screen_order: 1,
-              title: "Lange Konsonanten.",
+              title: "Consonantes largas.",
             },
             {
               blocks: [
@@ -9207,54 +9205,54 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     pairs: [
-                      ["かった", "tr(かった) (gewann)"],
-                      ["にっき", "tr(にっき) (Tagebuch)"],
-                      ["きって", "tr(きって) (Briefmarke)"],
+                      ["かった", "tr(かった) (ganó)"],
+                      ["にっき", "tr(にっき) (diario)"],
+                      ["きって", "tr(きって) (sello postal)"],
                     ],
                   },
-                  id: "f83ee8a5-42cd-52a8-8545-0e5f67e3fadd",
+                  id: "aef8ef9a-f018-5c23-bd1e-1b61bb13ad56",
                   type: "matching",
                 },
               ],
-              id: "96c3b56c-2c9e-5d95-a4d0-d1f432979fe7",
+              id: "5f1a91c9-452a-5fa1-80d5-8c531778d462",
               screen_order: 2,
-              title: "Ordne Hiragana den Romaji zu.",
+              title: "Relaciona el hiragana con el romaji.",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "Es ist wichtig zu wissen, dass das kleine Symbol „tr:つ“ (っ) nicht vor den Hiragana-Buchstaben な (tr:な), に (tr:に), ぬ (tr:ぬ), ね (tr:ね) und の (tr:の) verwendet werden kann. In diesen Fällen wird zur Verlängerung der Laute das Symbol **ん** (tr:ん) verwendet.",
+                    text: "Debes saber que el símbolo pequeño «tr:つ» (っ) no puede usarse antes de las letras hiragana な (tr:な), に (tr:に), ぬ (tr:ぬ), ね (tr:ね) y の (tr:の). En estos casos, se usa el símbolo **ん** (tr:ん) para alargar los sonidos.",
                   },
-                  id: "2fc97884-2da1-5102-a11e-bf0d0812d927",
+                  id: "0f295554-7d41-5135-83fc-21f03345a7a1",
                   type: "text",
                 },
                 {
                   block_order: 2,
                   content: {
                     rules: [
-                      "ごめんなさい (tr(ごめんなさい)) - Entschuldigung",
-                      "おんな (tr(おんな)) - Frau",
+                      "ごめんなさい (tr(ごめんなさい)) - perdón",
+                      "おんな (tr(おんな)) - mujer",
                     ],
                   },
-                  id: "17053c9a-0488-5db3-b112-2db89c7ef86b",
+                  id: "d5a932bb-1787-5ce2-99a2-28a7ec19ef1f",
                   type: "rule",
                 },
               ],
-              id: "7df9346d-aaa7-5f14-9569-e9b0f8d96560",
+              id: "266357d3-e485-5ca0-a4ad-101752c7ca26",
               screen_order: 3,
-              title: "Ausnahme!",
+              title: "¡Excepción!",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Entschuldigung",
+                    sub_title: "Perdón",
                     title: "tr(ごめんなさい)",
                   },
-                  id: "fe80650c-a6da-5636-a361-1f54f62e47b9",
+                  id: "3a8f2f4c-0633-5b93-ba3a-48460593ae2e",
                   type: "title",
                 },
                 {
@@ -9262,59 +9260,59 @@ export const dumpDe = {
                   content: {
                     sequence: ["ご", "め", "ん", "な", "さ", "い"],
                   },
-                  id: "8d2349ee-972a-5e32-a8a8-1581e87a3bb1",
+                  id: "087669d4-790f-584e-8bec-c2a152c35762",
                   type: "sequence",
                 },
               ],
-              id: "f2e1f8e0-4c40-5f2a-880e-00be729ab6b2",
+              id: "e6044101-c436-5d41-9b9b-e53a676d0639",
               screen_order: 4,
-              title: "Wähle Hiragana für:",
+              title: "Elige el hiragana para:",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "Das Wort „Hallo“ wird als こんにちは geschrieben, wobei das letzte Symbol **は** (tr:は) und nicht **わ** ist. Dies liegt daran, dass ursprünglich der Satz länger war und das Subjekt-Partikel は (tr:は) verwendet wurde.",
+                    text: "La palabra «hola» se escribe como こんにちは, donde el último símbolo es **は** (tr:は), y no **わ**. Esto se debe a que originalmente la frase era más larga y se usaba la partícula de sujeto は (tr:は).",
                   },
-                  id: "ea800bf8-335c-530f-9285-40a1b2c5e4d6",
+                  id: "31f1bae7-4986-5d72-84d6-2a6bc39c9627",
                   type: "text",
                 },
                 {
                   block_order: 2,
                   content: {
-                    text: "Wie wir bereits erklärt haben, wird das Subjekt-Partikel als は (tr:は) geschrieben, aber als tr:わ ausgesprochen.",
+                    text: "Como ya te contamos, la partícula de sujeto se escribe como は (tr:は), pero se pronuncia como tr:わ.",
                   },
-                  id: "da2a56e5-4283-5c04-905d-e9a04a541cdc",
+                  id: "2404d779-a17c-58b3-99d2-29aab2bb0544",
                   type: "text",
                 },
                 {
                   block_order: 3,
                   content: {
                     rules: [
-                      "こんにちは (tr(こんにちは)) - Guten Tag",
-                      "こんばんは (tr(こんばんは)) - Guten Abend",
+                      "こんにちは (tr(こんにちは)) - buenas tardes",
+                      "こんばんは (tr(こんばんは)) - buenas noches",
                     ],
                   },
-                  id: "9bdae3c4-3177-57a0-91f2-621a1de08beb",
+                  id: "1a7d46af-2cdc-5d7f-8b92-376ff1a6cc12",
                   type: "rule",
                 },
               ],
-              id: "36a058fa-7040-5496-984e-ac005ee01993",
+              id: "a1f25896-6a6c-5283-a35e-48b72835258f",
               screen_order: 5,
-              title: "Merken!",
+              title: "¡Recuerda!",
             },
           ],
-          subtitle: "Kleines 「っ」",
-          title: "Lange Konsonanten",
-          topic_id: "39cd47aa-0237-4efe-b098-429ee3b7eb87",
+          subtitle: "「っ」 pequeña",
+          title: "Consonantes largas",
+          topic_id: "03231c39-a726-4e58-acf4-d8d912627e9e",
         },
         {
-          expanded_subtitle: "Hier erzählen wir Ihnen über Yoon.",
-          expanded_title: "Information",
+          expanded_subtitle: "Aquí te hablaremos sobre el yōon.",
+          expanded_title: "Información",
           icon: "https://nihongo.khvat.app/chapter3/Yoon.jpg",
-          id: "e9aca9a2-cc52-4ad1-9ba8-245c701131ee",
-          last_updated: "2026-09-08T13:12:16.003Z",
+          id: "9b513ccc-93d2-4ea6-a41a-838fba0f464e",
+          last_updated: "2026-09-08T13:12:16.027Z",
           lesson_key: "alphabet/hiragana&yoon",
           lesson_order: 25,
           minimum_version: "2.4.1",
@@ -9324,9 +9322,9 @@ export const dumpDe = {
                 {
                   block_order: 1,
                   content: {
-                    text: "Heute werden wir die letzte Regel der Hiragana studieren, aber zuerst erinnern wir uns an diese drei besonderen Buchstaben:",
+                    text: "Hoy profundizaremos en el estudio de la última regla del hiragana, pero antes recordemos estas tres letras especiales:",
                   },
-                  id: "443ac869-90e1-5d24-adf5-ec2b824e0073",
+                  id: "64b09915-3aaf-5b16-bdd9-39cff7059596",
                   type: "text",
                 },
                 {
@@ -9334,13 +9332,13 @@ export const dumpDe = {
                   content: {
                     rules: ["や (tr:や)", "ゆ (tr:ゆ)", "よ (tr:よ)"],
                   },
-                  id: "34db897b-0a8a-58b2-b761-81584027f923",
+                  id: "da18aff3-3e28-56d9-9dc0-fcf8f6123570",
                   type: "rule",
                 },
               ],
-              id: "63b664ae-368d-5bb1-84d2-6394e9135d4f",
+              id: "4a14c4b9-b20b-5135-9d2c-b4099b44559f",
               screen_order: 1,
-              title: "Yoon.",
+              title: "Yōon.",
             },
             {
               blocks: [
@@ -9348,27 +9346,27 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     pairs: [
-                      ["はやし", "tr(はやし) (Hain)"],
-                      ["ゆき", "tr(ゆき) (Schnee)"],
-                      ["よきん", "tr(よきん) (Einzahlung)"],
+                      ["はやし", "tr(はやし) (arboleda)"],
+                      ["ゆき", "tr(ゆき) (nieve)"],
+                      ["よきん", "tr(よきん) (depósito)"],
                     ],
                   },
-                  id: "80ff9999-a6be-56b1-b390-dd09ce41fab6",
+                  id: "566dc18d-2e97-5c41-b895-a8c6bacb56a9",
                   type: "matching",
                 },
               ],
-              id: "6b275cb9-a273-5af1-b23c-ee6e3a8fbbb3",
+              id: "4c0d1c1a-cf00-5912-acce-80785ed5eb4d",
               screen_order: 2,
-              title: "Ordne Hiragana zu Romaji.",
+              title: "Relaciona el hiragana con el rōmaji.",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "Es gibt verkleinerte Versionen von **や** (tr:や), **ゆ** (tr:ゆ) und **よ** (tr:よ), und bei der Aussprache verschmelzen diese Silben mit der vorangehenden Hiragana-Silbe zu einem Laut. Vergleichen wir das Standard-**や** und das verkleinerte **ゃ**.",
+                    text: "Existen versiones pequeñas de **や** (tr:や), **ゆ** (tr:ゆ) y **よ** (tr:よ). Al pronunciarlas, estas sílabas se fusionan con la sílaba de hiragana que las precede y forman un solo sonido. Comparemos la **や** estándar con la **ゃ** pequeña.",
                   },
-                  id: "ea0daaed-3d44-5e2e-bf7b-724f877dbb76",
+                  id: "e6205d00-5be4-58ec-8d09-c4af230129fe",
                   type: "text",
                 },
                 {
@@ -9376,22 +9374,22 @@ export const dumpDe = {
                   content: {
                     rules: ["きや (tr:きや)", "きゃ (tr:きゃ)"],
                   },
-                  id: "093b8df1-2016-58ba-99fa-c2cc526a2204",
+                  id: "6f475ff5-a009-554f-8c1e-e7edb09669e9",
                   type: "rule",
                 },
               ],
-              id: "766510bb-b12d-523d-a28a-9c16e88a4e87",
+              id: "17ff0953-d905-59fc-a5a8-baa85dc7a11e",
               screen_order: 3,
-              title: "Hinweis!",
+              title: "¡Pista!",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "Die Yoon-Elemente (や, ゆ, よ) können mit Zeichen kombiniert werden, die auf 'tr:い' enden. Zunächst betrachten wir die Kombinationen mit き (tr:き) und ぎ (tr:ぎ).",
+                    text: "Los elementos de yōon (や, ゆ, よ) pueden combinarse con caracteres que terminan en «tr:い». Para comenzar, veamos las combinaciones con き (tr:き) y ぎ (tr:ぎ).",
                   },
-                  id: "2cf687d0-fbb8-586c-a2a2-7570635aedac",
+                  id: "6dbb3d78-c6c7-5665-802c-1a067d0ccc72",
                   type: "text",
                 },
                 {
@@ -9402,13 +9400,13 @@ export const dumpDe = {
                       ["ぎ (tr:ぎ)", "ぎゃ (tr:ぎゃ)", "ぎゅ (tr:ぎゅ)", "ぎょ (tr:ぎょ)"],
                     ],
                   },
-                  id: "36ca1565-3147-5967-a597-a514be128231",
+                  id: "07626fba-eb0c-52f4-9d22-ea7774dfa7ef",
                   type: "table",
                 },
               ],
-              id: "97fd4aee-6901-5cc7-b8cd-4b26b2d3d148",
+              id: "bf13c942-a0f1-5c1c-90f6-ae7ef435ff8a",
               screen_order: 4,
-              title: "Yoon tr:き, tr:ぎ.",
+              title: "Yōon tr:き, tr:ぎ.",
             },
             {
               blocks: [
@@ -9416,27 +9414,27 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     pairs: [
-                      ["きゅうり", "tr(きゅうり) (Gurke)"],
-                      ["ぎゅうにく", "tr(ぎゅうにく) (Rindfleisch)"],
-                      ["ぎょうじ", "tr(ぎょうじ) (Veranstaltung)"],
+                      ["きゅうり", "tr(きゅうり) (pepino)"],
+                      ["ぎゅうにく", "tr(ぎゅうにく) (carne de res)"],
+                      ["ぎょうじ", "tr(ぎょうじ) (evento)"],
                     ],
                   },
-                  id: "143f9160-eb14-5170-93d8-5b8fde6093cd",
+                  id: "e6484fc3-8a58-5cde-a0e5-667466a5f23b",
                   type: "matching",
                 },
               ],
-              id: "3b49849d-2342-5a80-90e4-b645d3c0c892",
+              id: "3879e874-d534-595f-b498-488a5f83918d",
               screen_order: 5,
-              title: "Ordne Hiragana zu Romaji.",
+              title: "Relaciona el hiragana con el rōmaji.",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "Die Silben し (tr:し) und じ (tr:じ) können ebenfalls Yoon mit den Buchstaben **ゃ**, **ゅ**, **ょ** bilden und daraus die Laute tr:しゃ tr:しゅ tr:しょ und tr:じゃ tr:じゅ tr:じょ erzeugen.",
+                    text: "Las sílabas し (tr:し) y じ (tr:じ) también pueden formar yōon con las letras **ゃ**, **ゅ**, **ょ**, creando los sonidos tr:しゃ tr:しゅ tr:しょ y tr:じゃ tr:じゅ tr:じょ.",
                   },
-                  id: "60481595-70c3-5892-8683-7f9ab53417ba",
+                  id: "20fbd86e-de75-5062-8c4f-e94d812a54c0",
                   type: "text",
                 },
                 {
@@ -9447,23 +9445,23 @@ export const dumpDe = {
                       ["じ (tr:じ)", "じゃ (tr:じゃ)", "じゅ (tr:じゅ)", "じょ (tr:じょ)"],
                     ],
                   },
-                  id: "ea3137ec-8554-5439-b550-3f6c6b9291bf",
+                  id: "9d1102df-b66d-5593-804e-68a2ef95ebfd",
                   type: "table",
                 },
               ],
-              id: "ba6ef537-8443-5c3d-9aa0-2b781795c6c9",
+              id: "ed55ee0b-3f85-50a3-bab2-6f560fa4ef09",
               screen_order: 6,
-              title: "Yoon tr:し, tr:じ.",
+              title: "Yōon tr:し, tr:じ.",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Mitarbeiter",
+                    sub_title: "Empleado",
                     title: "tr(じゅうぎょういん)",
                   },
-                  id: "e52344a1-3ab2-55c9-b6aa-c484e055c5ac",
+                  id: "ce049e4a-a0da-5de0-bf85-481e14ba8271",
                   type: "title",
                 },
                 {
@@ -9484,22 +9482,22 @@ export const dumpDe = {
                       },
                     ],
                   },
-                  id: "fcb3062d-8486-521b-a2ed-c7fc67754674",
+                  id: "ab6efdec-ed7b-5564-86d1-abd2e65170ee",
                   type: "choice",
                 },
               ],
-              id: "5e244560-c3a2-5676-addb-6ced9b701042",
+              id: "3c4a8d69-490d-597b-b253-35ccb5a04c6d",
               screen_order: 7,
-              title: "Wähle die Hiragana für:",
+              title: "Elige el hiragana para:",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "Die Silben **ち** (tr:ち) und **ぢ** (tr:ぢ) können verwendet werden, um die Laute tr:ちゃ tr:ちゅ tr:ちょ und tr:ぢゃ tr:ぢゅ tr:ぢょ zu erzeugen. Im modernen Japanisch wird der Buchstabe **ぢ** häufig durch **じ** ersetzt.",
+                    text: "Las sílabas **ち** (tr:ち) y **ぢ** (tr:ぢ) pueden usarse para crear los sonidos tr:ちゃ tr:ちゅ tr:ちょ y tr:ぢゃ tr:ぢゅ tr:ぢょ. En el japonés moderno, la letra **ぢ** suele sustituirse por **じ**.",
                   },
-                  id: "b5f9c0eb-3dd9-5dbd-89f6-8f68c4a63989",
+                  id: "22442c18-163a-5121-9ba7-f3bea5e7913f",
                   type: "text",
                 },
                 {
@@ -9510,23 +9508,23 @@ export const dumpDe = {
                       ["ぢ (tr:ぢ)", "ぢゃ (tr:ぢゃ)", "ぢゅ (tr:ぢゅ)", "ぢょ (tr:ぢょ)"],
                     ],
                   },
-                  id: "60435e15-a5a8-5554-a962-9f0071e9bea6",
+                  id: "ee7e3256-fd54-5d0b-8de0-798ebe10b6f7",
                   type: "table",
                 },
               ],
-              id: "60bf331a-b7f9-5e01-8d0d-64a758c051e4",
+              id: "a2d64dbb-91bf-5de6-ac20-c0ab2df6289b",
               screen_order: 8,
-              title: "Yoon tr:ち, tr:ぢ.",
+              title: "Yōon tr:ち, tr:ぢ.",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Notizbuch",
+                    sub_title: "Libreta",
                     title: "tr(てちょう)",
                   },
-                  id: "cf00f114-b791-5a28-9d64-ce29849ebab2",
+                  id: "09d8fc0f-3c7a-53f2-bba7-fd3dd5e6dc69",
                   type: "title",
                 },
                 {
@@ -9534,22 +9532,22 @@ export const dumpDe = {
                   content: {
                     sequence: ["て", "ち", "ょ", "う"],
                   },
-                  id: "a43c40dd-540d-5165-804e-c2f0ee7fbf88",
+                  id: "e0f78b56-6f94-5a96-b452-66cd6c45ca93",
                   type: "sequence",
                 },
               ],
-              id: "95da248e-3631-5642-a8e1-bd5206b97c99",
+              id: "620b231c-6a7a-544a-ab18-141cf33eae33",
               screen_order: 9,
-              title: "Wähle die Hiragana für:",
+              title: "Elige el hiragana para:",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "Die Kombinationen に (tr:に) und み (tr:み) mit verkleinerten Zeichen erlauben es, komplexe Laute tr:にゃ tr:にゅ tr:にょ und tr:みゃ tr:みゅ tr:みょ zu schaffen.",
+                    text: "Las combinaciones de に (tr:に) y み (tr:み) con caracteres pequeños permiten crear los sonidos compuestos tr:にゃ tr:にゅ tr:にょ y tr:みゃ tr:みゅ tr:みょ.",
                   },
-                  id: "60aab0db-a030-51e9-818b-f8a474202385",
+                  id: "c2660a83-9bdb-533b-9246-a98037faecf9",
                   type: "text",
                 },
                 {
@@ -9560,23 +9558,23 @@ export const dumpDe = {
                       ["み (tr:み)", "みゃ (tr:みゃ)", "みゅ (tr:みゅ)", "みょ (tr:みょ)"],
                     ],
                   },
-                  id: "f84b35ad-872f-518b-a20a-a209bd646a92",
+                  id: "706ca8c1-6733-5b69-84cf-8c05781b0a29",
                   type: "table",
                 },
               ],
-              id: "fe5385b4-0153-5353-84ff-e77dd253c2ea",
+              id: "628def42-cc5c-59f4-8581-f119d6568427",
               screen_order: 10,
-              title: "Yoon tr:に, tr:み.",
+              title: "Yōon tr:に, tr:み.",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Milch",
+                    sub_title: "Leche",
                     title: "tr(ぎゅうにゅう)",
                   },
-                  id: "90b97f3e-f31b-57eb-b3a5-c93aaf92b2a4",
+                  id: "1e8fa88b-2834-5f96-a868-b78e2801b32f",
                   type: "title",
                 },
                 {
@@ -9597,22 +9595,22 @@ export const dumpDe = {
                       },
                     ],
                   },
-                  id: "ec87b61f-9d8a-5530-85ee-4fbd01d5798f",
+                  id: "ae20d6c3-a17f-5c94-9a8c-39070c3367ab",
                   type: "choice",
                 },
               ],
-              id: "01d3b30c-07ba-5d2a-b7e5-eab848873fc4",
+              id: "92d84b85-e9a8-5e73-8424-dc16017f59a7",
               screen_order: 11,
-              title: "Wähle die Hiragana für:",
+              title: "Elige el hiragana para:",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "Die Silbe り (tr:り) kombiniert sich mit verkleinerten Vokalen, um die Laute tr:りゃ tr:りゅ tr:りょ zu formen.",
+                    text: "La sílaba り (tr:り) se combina con vocales pequeñas para formar los sonidos tr:りゃ tr:りゅ tr:りょ.",
                   },
-                  id: "9ee2e90f-dc5d-5d17-a00b-c28fef9abf64",
+                  id: "c48c05ee-23e3-5ee7-95a3-11f3ba7d1e49",
                   type: "text",
                 },
                 {
@@ -9620,23 +9618,23 @@ export const dumpDe = {
                   content: {
                     rules: ["りゃ (tr:りゃ)", "りゅ (tr:りゅ)", "りょ (tr:りょ)"],
                   },
-                  id: "5f321deb-b662-558f-b8c1-41bd3c82c76c",
+                  id: "3c5b096a-6290-5bb9-8b59-09ff6bc4bd50",
                   type: "rule",
                 },
               ],
-              id: "917c0bbd-7d2f-5413-aafd-c82a65ec8c42",
+              id: "ab1a57f8-c7d0-5a4e-b840-c758e0b583dd",
               screen_order: 12,
-              title: "Yoon tr:り.",
+              title: "Yōon tr:り.",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Koch",
+                    sub_title: "Chef",
                     title: "tr(りょうりにん)",
                   },
-                  id: "ca980301-93bc-5296-ab04-25e0ceded385",
+                  id: "fcf6f0d3-e05b-5df7-846a-6990ef396688",
                   type: "title",
                 },
                 {
@@ -9644,22 +9642,22 @@ export const dumpDe = {
                   content: {
                     sequence: ["り", "ょ", "う", "り", "に", "ん"],
                   },
-                  id: "2af25ef2-09ab-5b01-975a-23a7b4c7c2df",
+                  id: "c4af4f84-f912-5258-b036-08e10760f80b",
                   type: "sequence",
                 },
               ],
-              id: "e777ada3-a056-50f4-ad13-6dd29b85bdc6",
+              id: "0c9d7555-52cc-5de7-b651-f6900f7c241a",
               screen_order: 13,
-              title: "Wähle die Hiragana für:",
+              title: "Elige el hiragana para:",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "Um Yoon-Laute zu erzeugen, verwenden Sie die Silben ひ (tr:ひ), び (tr:び) und ぴ (tr:ぴ) in Kombination mit verkleinerten Vokalen.",
+                    text: "Para crear sonidos yōon, usa las sílabas ひ (tr:ひ), び (tr:び) y ぴ (tr:ぴ) en combinación con vocales pequeñas.",
                   },
-                  id: "f7f9908c-32b1-5622-a169-35fd9af38589",
+                  id: "ec7c4aed-536e-514f-abae-9baa6c983011",
                   type: "text",
                 },
                 {
@@ -9671,13 +9669,13 @@ export const dumpDe = {
                       ["ぴ (tr:ぴ)", "ぴゃ (tr:ぴゃ)", "ぴゅ (tr:ぴゅ)", "ぴょ (tr:ぴょ)"],
                     ],
                   },
-                  id: "640c1e5b-4983-5b58-a7bd-53a5a6c533d8",
+                  id: "eb42b74a-ed4c-5ccc-8f10-9fb00fddac44",
                   type: "table",
                 },
               ],
-              id: "3d6d2b3c-7246-542a-b531-d4a32e2d527d",
+              id: "bd995a1a-5dae-5268-adaa-563e35542c8d",
               screen_order: 14,
-              title: "Yoon tr:ひ, tr:び, tr:ぴ.",
+              title: "Yōon tr:ひ, tr:び, tr:ぴ.",
             },
             {
               blocks: [
@@ -9685,37 +9683,37 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     pairs: [
-                      ["ひょう", "tr(ひょう) (Hagel)"],
-                      ["びょういん", "tr(びょういん) (Krankenhaus)"],
-                      ["じこくひょう", "tr(じこくひょう) (Fahrplan)"],
+                      ["ひょう", "tr(ひょう) (granizo)"],
+                      ["びょういん", "tr(びょういん) (hospital)"],
+                      ["じこくひょう", "tr(じこくひょう) (horario de trenes)"],
                     ],
                   },
-                  id: "7e0e363d-d47b-59a6-9ff8-ef9f7867499b",
+                  id: "026dbfb3-96f7-5e6c-861e-bbae92783398",
                   type: "matching",
                 },
               ],
-              id: "134e95c3-1a4e-560f-bcea-90f7d1b02f63",
+              id: "fcd94c9e-b304-590d-bf68-dc569a508f6e",
               screen_order: 15,
-              title: "Ordne Hiragana zu Romaji.",
+              title: "Relaciona el hiragana con el rōmaji.",
             },
           ],
           subtitle: "や, ゆ, よ",
-          title: "Yoon",
-          topic_id: "39cd47aa-0237-4efe-b098-429ee3b7eb87",
+          title: "Yōon",
+          topic_id: "03231c39-a726-4e58-acf4-d8d912627e9e",
         },
       ],
-      title: "Abschnitt 3. Hiragana",
+      title: "Sección 3. Hiragana",
       topic_order: 3,
     },
     {
-      id: "f0ce3abb-3ec6-428c-87b8-5f9dcc72509a",
+      id: "0dfff8dd-b2b5-4658-bcd7-03a4de0e0718",
       lessons: [
         {
-          expanded_subtitle: "Hier erzählen wir Ihnen über die speziellen Katakana-Zeichen.",
-          expanded_title: "Information",
+          expanded_subtitle: "Aquí te hablaremos sobre los signos especiales del katakana.",
+          expanded_title: "Información",
           icon: "https://nihongo.khvat.app/chapter4/DakuonAndHandakuon.jpg",
-          id: "710f90ca-e97e-41f3-a77e-3af01b0704ab",
-          last_updated: "2026-09-08T13:12:16.003Z",
+          id: "e52fbbf9-7f28-404f-8168-eb4c8062eb08",
+          last_updated: "2026-09-08T13:12:16.028Z",
           lesson_key: "alphabet/katakana&dakuonAndHandakuon",
           lesson_order: 26,
           minimum_version: "2.4.1",
@@ -9725,17 +9723,17 @@ export const dumpDe = {
                 {
                   block_order: 1,
                   content: {
-                    text: "Nachdem wir die grundlegenden Katakana-Silben beherrscht haben, ist es an der Zeit, sich mit den Dakuon und Handakuon vertraut zu machen – speziellen Zeichen, die den Klang der Silben verändern.",
+                    text: "Después de dominar las sílabas básicas del katakana, es momento de conocer los dakuon y handakuon, signos especiales que cambian el sonido de las sílabas.",
                   },
-                  id: "e89d2362-1d32-5e8a-9b2e-a23570da2d3b",
+                  id: "cf0fb315-3edd-5f00-8c29-451a2350eb1a",
                   type: "text",
                 },
                 {
                   block_order: 2,
                   content: {
-                    text: "Lass uns zuerst herausfinden, mit welchen Katakana-Silben diese Zeichen verwendet werden können:",
+                    text: "Primero, veamos con qué sílabas de katakana se pueden usar estos signos:",
                   },
-                  id: "5872b4bf-797b-5bcc-ac30-7a33cc0c1c29",
+                  id: "60d9c459-b625-5d0d-85ac-91a42d66a5ce",
                   type: "text",
                 },
                 {
@@ -9743,7 +9741,7 @@ export const dumpDe = {
                   content: {
                     table: [
                       [
-                        "Transliteration",
+                        "Transliteración",
                         "tr:カ, tr:キ, tr:ク, tr:ケ, tr:コ",
                         "tr:サ, tr:シ, tr:ス, tr:セ, tr:ソ",
                         "tr:タ, tr:チ, tr:ツ, tr:テ, tr:ト",
@@ -9758,13 +9756,13 @@ export const dumpDe = {
                       ],
                     ],
                   },
-                  id: "86433162-8976-532d-858d-1bc6435cea4c",
+                  id: "9d755b29-2726-54a6-b325-66c57039295d",
                   type: "table",
                 },
               ],
-              id: "c7408079-ca33-578a-babe-aca41eeb00d5",
+              id: "a43784f8-a273-50da-b2d3-c8c7e6280906",
               screen_order: 1,
-              title: "Dakuon und Handakuon.",
+              title: "Dakuon y handakuon.",
             },
             {
               blocks: [
@@ -9772,27 +9770,27 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     pairs: [
-                      ["タコ", "tr(タコ) (Krake)"],
-                      ["ハト", "tr(ハト) (Taube)"],
-                      ["カキ", "tr(カキ) (Persimone)"],
+                      ["タコ", "tr(タコ) (pulpo)"],
+                      ["ハト", "tr(ハト) (paloma)"],
+                      ["カキ", "tr(カキ) (caqui)"],
                     ],
                   },
-                  id: "a8b20db3-15b0-523b-adca-8a9cd5f0b627",
+                  id: "78d14bb8-f431-5b5e-92aa-365b7a810e3a",
                   type: "matching",
                 },
               ],
-              id: "5966fab9-4085-5e83-beb3-edf98228885d",
+              id: "54898cee-f593-5496-bc7a-e0c8d3e5d511",
               screen_order: 2,
-              title: "Passe Katakana an Romaji an.",
+              title: "Relaciona el katakana con el rōmaji.",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "Durch Hinzufügen der speziellen Dakuten-Zeichen, die zwei kurze Striche in der oberen rechten Ecke darstellen, bilden wir neue Klänge. Sehen Sie, wie dies die Aussprache verändert.",
+                    text: "Al añadir a las sílabas los signos especiales llamados dakuten, que son dos pequeñas rayas en la esquina superior derecha, formamos nuevos sonidos. Observa cómo cambia la pronunciación.",
                   },
-                  id: "37bd4ef7-8ab0-5abf-bcf0-2fc4f8e005d0",
+                  id: "7274ad4c-3f26-5aaa-90a9-7bb7989edf87",
                   type: "text",
                 },
                 {
@@ -9800,7 +9798,7 @@ export const dumpDe = {
                   content: {
                     table: [
                       [
-                        "Stimmlos",
+                        "Sordos",
                         "カ (tr:カ)",
                         "キ (tr:キ)",
                         "ク (tr:ク)",
@@ -9808,7 +9806,7 @@ export const dumpDe = {
                         "コ (tr:コ)",
                       ],
                       [
-                        "Stimmhaft",
+                        "Sonoros",
                         "ガ (tr:ガ)",
                         "ギ (tr:ギ)",
                         "グ (tr:グ)",
@@ -9817,11 +9815,11 @@ export const dumpDe = {
                       ],
                     ],
                   },
-                  id: "ff1a327d-e144-5824-a05d-bb043b043c5d",
+                  id: "0c8c69d6-72ee-5e90-aaa1-cd587fee0d8e",
                   type: "table",
                 },
               ],
-              id: "a5235464-f4b4-5202-b6d3-eedd2c847286",
+              id: "4090fa0b-cf00-57a7-b4fe-95e161589065",
               screen_order: 3,
               title: "Dakuon tr:ガ tr:ギ tr:グ tr:ゲ tr:ゴ.",
             },
@@ -9833,7 +9831,7 @@ export const dumpDe = {
                     sub_title: "Golf",
                     title: "tr(ゴルフ)",
                   },
-                  id: "71137ee0-cf30-5581-b754-a98da7542603",
+                  id: "a213a63e-455f-5765-94a5-a05ef11a6c48",
                   type: "title",
                 },
                 {
@@ -9854,22 +9852,22 @@ export const dumpDe = {
                       },
                     ],
                   },
-                  id: "a9a1b5bc-be72-5709-bb98-efe347712659",
+                  id: "e69e11fd-cac9-5b5b-b300-e16e80c300fc",
                   type: "choice",
                 },
               ],
-              id: "5191f57f-4c45-5191-a318-ec1dfb15f243",
+              id: "bdfed4cc-351e-56eb-9e5b-1790b580930f",
               screen_order: 4,
-              title: "Wähle das Katakana für:",
+              title: "Elige el katakana para:",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "In ähnlicher Weise fügen wir Dakuten zu den Silben in der Reihe tr:サ hinzu, um sie in stimmhafte Töne zu verwandeln.",
+                    text: "De manera similar, añadimos dakuten a las sílabas de la fila tr:サ, transformándolas en sonidos sonoros.",
                   },
-                  id: "eee78438-0dc3-5c7a-9896-133c907a452e",
+                  id: "62d4c938-6e86-5b4c-b0ea-432a0bf91d48",
                   type: "text",
                 },
                 {
@@ -9877,7 +9875,7 @@ export const dumpDe = {
                   content: {
                     table: [
                       [
-                        "Stimmlos",
+                        "Sordos",
                         "サ (tr:サ)",
                         "シ (tr:シ)",
                         "ス (tr:ス)",
@@ -9885,7 +9883,7 @@ export const dumpDe = {
                         "ソ (tr:ソ)",
                       ],
                       [
-                        "Stimmhaft",
+                        "Sonoros",
                         "ザ (tr:ザ)",
                         "ジ (tr:ジ)",
                         "ズ (tr:ズ)",
@@ -9894,11 +9892,11 @@ export const dumpDe = {
                       ],
                     ],
                   },
-                  id: "0b78ec05-7386-5bcb-bde2-7d880b8fd81e",
+                  id: "2d0d933a-dd3d-5a7c-a5c7-32aa9ca23b67",
                   type: "table",
                 },
               ],
-              id: "fb6e20c3-a817-58e5-bde8-7f7a3a70a2a6",
+              id: "fa41507a-b8bd-59b1-b820-de541173aae5",
               screen_order: 5,
               title: "Dakuon tr:ザ tr:ジ tr:ズ tr:ゼ tr:ゾ.",
             },
@@ -9907,10 +9905,10 @@ export const dumpDe = {
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Wal",
+                    sub_title: "Ballena",
                     title: "tr(クジラ)",
                   },
-                  id: "d6bd6ebd-8e91-5df0-9d91-469b2fa3d361",
+                  id: "3c52e721-6116-5b8a-9ebc-1f3af5981798",
                   type: "title",
                 },
                 {
@@ -9918,22 +9916,22 @@ export const dumpDe = {
                   content: {
                     sequence: ["ク", "ジ", "ラ"],
                   },
-                  id: "ec63545e-22b2-5dae-8e77-1ccae856766c",
+                  id: "1ed8f61f-2676-5389-bcd8-97ff06b6243f",
                   type: "sequence",
                 },
               ],
-              id: "5f1755fc-e5ac-5174-adf5-683ab32b91e0",
+              id: "6cb80846-573b-5641-b040-4cc119fcea6a",
               screen_order: 6,
-              title: "Wähle das Katakana für:",
+              title: "Elige el katakana para:",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "Durch Hinzufügen von Dakuten zu den Silben in der Reihe tr:タ erschaffen wir eine andere Gruppe von stimmhaften Tönen.",
+                    text: "Al añadir dakuten a las sílabas de la fila tr:タ, creamos otro conjunto de sonidos sonoros.",
                   },
-                  id: "70b1dd10-e8f5-51d2-ab3f-f4ed19ba4f82",
+                  id: "178d5dd9-c553-5317-be17-381cf84edf14",
                   type: "text",
                 },
                 {
@@ -9941,7 +9939,7 @@ export const dumpDe = {
                   content: {
                     table: [
                       [
-                        "Stimmlos",
+                        "Sordos",
                         "タ (tr:タ)",
                         "チ (tr:チ)",
                         "ツ (tr:ツ)",
@@ -9949,7 +9947,7 @@ export const dumpDe = {
                         "ト (tr:ト)",
                       ],
                       [
-                        "Stimmhaft",
+                        "Sonoros",
                         "ダ (tr:ダ)",
                         "ヂ (tr:ヂ)",
                         "ヅ (tr:ヅ)",
@@ -9958,11 +9956,11 @@ export const dumpDe = {
                       ],
                     ],
                   },
-                  id: "1fcd9a10-4a1f-53a5-a964-e30087c3dc64",
+                  id: "f6e7032e-3250-53c8-b587-fd926386dd14",
                   type: "table",
                 },
               ],
-              id: "ab9e6687-3553-557c-ba8f-65cf8f2d68c0",
+              id: "b27e07ab-5b53-5d0d-a33d-9ebe16e6582e",
               screen_order: 7,
               title: "Dakuon tr:ダ tr:ヂ tr:ヅ tr:デ tr:ド.",
             },
@@ -9971,44 +9969,44 @@ export const dumpDe = {
                 {
                   block_order: 1,
                   content: {
-                    text: "Die Silben ジ (tr:ジ) und ヂ (tr:ヂ), sowie ズ (tr:ズ) und ヅ (tr:ヅ) werden im modernen Japanisch gleich ausgesprochen. Früher wurden diese Laute unterschieden, aber im Laufe der Zeit sind sie zusammengefallen.",
+                    text: "Las sílabas ジ (tr:ジ) y ヂ (tr:ヂ), así como ズ (tr:ズ) y ヅ (tr:ヅ), se pronuncian igual en el japonés moderno. Antes estos sonidos eran diferentes, pero con el tiempo se fusionaron.",
                   },
-                  id: "ac7c76b1-4167-5a47-b7ab-3f0ea5016ba9",
+                  id: "630eb1c2-179d-5c4a-a0ea-404e7c0275a3",
                   type: "text",
                 },
                 {
                   block_order: 2,
                   content: {
-                    text: "Für Wörter mit „tr:ジ“ wird meist ジ verwendet, und für Wörter mit „tr:ズ“ – ズ. Nur mit sehr wenigen Wörtern wird ヂ und ヅ verwendet.",
+                    text: "Para las palabras con «tr:ジ» se usa con mayor frecuencia ジ, y para las palabras con «tr:ズ», ズ. Solo en muy pocas palabras se usan ヂ y ヅ.",
                   },
-                  id: "9f6d6b28-1660-5d84-bfbe-ac0e540af27a",
+                  id: "5f1f9d08-5aa9-516a-9849-2e4dda7d7534",
                   type: "text",
                 },
                 {
                   block_order: 3,
                   content: {
                     rules: [
-                      "ジ (tr:ジ) und ズ (tr:ズ) werden meistens verwendet",
-                      "ヂ (tr:ヂ) und ヅ (tr:ヅ) werden nur in wenigen Wörtern verwendet",
+                      "ジ (tr:ジ) y ズ (tr:ズ) se usan con mayor frecuencia",
+                      "ヂ (tr:ヂ) y ヅ (tr:ヅ) se usan solo en algunas palabras",
                     ],
                   },
-                  id: "2c4a8370-450f-500d-8d3c-d67d5d4aaf2d",
+                  id: "cd3cc69d-f64a-54c9-add1-7e38b02714d0",
                   type: "rule",
                 },
               ],
-              id: "a7c4e7f2-fe29-556a-8121-cbedf8e47ff2",
+              id: "1d68da26-f5b4-56ef-9b47-7e838e489f23",
               screen_order: 8,
-              title: "Achte darauf!",
+              title: "¡Presta atención!",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Tausendfüßler",
+                    sub_title: "Ciempiés",
                     title: "tr(ムカデ)",
                   },
-                  id: "6eb3e4e5-f16b-52c6-9b67-1249e14152da",
+                  id: "6d0a4ce6-aaf3-5f8f-ab0f-888ee4961b82",
                   type: "title",
                 },
                 {
@@ -10029,22 +10027,22 @@ export const dumpDe = {
                       },
                     ],
                   },
-                  id: "3d766ac6-136e-57a1-870a-e6ee548aaed5",
+                  id: "ea208cf5-98ee-578c-8009-99a2f013cae4",
                   type: "choice",
                 },
               ],
-              id: "8dfcaf0e-95e2-540e-aa37-17add119743e",
+              id: "7142484f-f6e3-565f-a83f-4da09fbb84e9",
               screen_order: 9,
-              title: "Wähle das Katakana für:",
+              title: "Elige el katakana para:",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "Lass uns nun die speziellen Dakuten-Zeichen für die Reihe in «tr:ハ» lernen.",
+                    text: "Ahora estudiemos los signos especiales dakuten para la fila tr:ハ.",
                   },
-                  id: "6a137dbd-0b2a-5ac8-a91b-1f37b03278e9",
+                  id: "cdf42804-4ac8-5234-88c1-48e0fd0dfb7e",
                   type: "text",
                 },
                 {
@@ -10052,7 +10050,7 @@ export const dumpDe = {
                   content: {
                     table: [
                       [
-                        "Reihe «tr:ハ»",
+                        "Fila «tr:ハ»",
                         "ハ (tr:ハ)",
                         "ヒ (tr:ヒ)",
                         "フ (tr:フ)",
@@ -10060,7 +10058,7 @@ export const dumpDe = {
                         "ホ (tr:ホ)",
                       ],
                       [
-                        "Reihe «tr:バ»",
+                        "Fila «tr:バ»",
                         "バ (tr:バ)",
                         "ビ (tr:ビ)",
                         "ブ (tr:ブ)",
@@ -10069,11 +10067,11 @@ export const dumpDe = {
                       ],
                     ],
                   },
-                  id: "12390a3f-c7a0-50f9-9527-e6072b3e7745",
+                  id: "9573bca6-def9-52d6-8956-973281608666",
                   type: "table",
                 },
               ],
-              id: "072a4c2a-9e16-53d8-9b5e-7af6f5ebc77e",
+              id: "f9d46b21-8f78-5fe3-867f-ce1b02f3b923",
               screen_order: 10,
               title: "Dakuon tr:バ tr:ビ tr:ブ tr:ベ tr:ボ.",
             },
@@ -10082,10 +10080,10 @@ export const dumpDe = {
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Braun",
+                    sub_title: "Café",
                     title: "tr(ブラウン)",
                   },
-                  id: "10853afd-fe43-5bf0-b3b9-97f89f197ae6",
+                  id: "e9db6457-bc39-572a-9691-8febdc2bc478",
                   type: "title",
                 },
                 {
@@ -10106,22 +10104,22 @@ export const dumpDe = {
                       },
                     ],
                   },
-                  id: "727dad91-9f76-50a0-8c9b-02ce8bfefeb9",
+                  id: "0cd5ec88-b108-585e-b947-685fd16d7f4f",
                   type: "choice",
                 },
               ],
-              id: "7b66e6cd-d2bc-585a-ac93-80f6fbe6e6d8",
+              id: "f2650a4d-6d17-55ec-8a72-f50f38b6bc7d",
               screen_order: 11,
-              title: "Wähle das Katakana für:",
+              title: "Elige el katakana para:",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "Die Katakana-Reihe beginnend mit ハ (tr:ハ) ist besonders! Zu ihr können wir nicht nur Dakuten, sondern auch Handakuten hinzufügen - einen kleinen Kreis, der die Laute in der Reihe tr:ハ umwandelt.",
+                    text: "¡La fila de katakana que comienza con ハ (tr:ハ) es especial! Podemos añadirle no solo dakuten, sino también handakuten, un pequeño círculo que transforma los sonidos de la fila tr:ハ.",
                   },
-                  id: "98e2f807-c447-572c-80ce-17959c77224e",
+                  id: "5ec8480d-436b-5028-afd8-545322e798e9",
                   type: "text",
                 },
                 {
@@ -10129,7 +10127,7 @@ export const dumpDe = {
                   content: {
                     table: [
                       [
-                        "Reihe «tr:ハ»",
+                        "Fila «tr:ハ»",
                         "ハ (tr:ハ)",
                         "ヒ (tr:ヒ)",
                         "フ (tr:フ)",
@@ -10137,7 +10135,7 @@ export const dumpDe = {
                         "ホ (tr:ホ)",
                       ],
                       [
-                        "Reihe «tr:バ»",
+                        "Fila «tr:バ»",
                         "バ (tr:バ)",
                         "ビ (tr:ビ)",
                         "ブ (tr:ブ)",
@@ -10145,7 +10143,7 @@ export const dumpDe = {
                         "ボ (tr:ボ)",
                       ],
                       [
-                        "Reihe «tr:パ»",
+                        "Fila «tr:パ»",
                         "パ (tr:パ)",
                         "ピ (tr:ピ)",
                         "プ (tr:プ)",
@@ -10154,11 +10152,11 @@ export const dumpDe = {
                       ],
                     ],
                   },
-                  id: "5a9bb186-d56c-585b-a221-b373b6c014c1",
+                  id: "6d88bacc-0cf5-55fd-babb-1a90675fc643",
                   type: "table",
                 },
               ],
-              id: "5a7c89c5-007d-5720-b168-223e2c2c5808",
+              id: "92f1f86b-4a8a-50c5-a1f7-99f9f148c5a6",
               screen_order: 12,
               title: "Handakuon tr:ハ tr:ヒ tr:フ tr:ヘ tr:ホ.",
             },
@@ -10167,10 +10165,10 @@ export const dumpDe = {
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "(Kleidung)",
+                    sub_title: "(ropa)",
                     title: "アパレル",
                   },
-                  id: "49e564fd-2ee8-5ca2-ae4b-a007c237a930",
+                  id: "74f2cd66-2d1d-5efe-a982-2f1e0226a28c",
                   type: "title",
                 },
                 {
@@ -10191,25 +10189,25 @@ export const dumpDe = {
                       },
                     ],
                   },
-                  id: "20582c73-fb33-5029-8900-d7403ceef1a6",
+                  id: "74f8a910-efa1-5063-88bc-a4f7f09308ff",
                   type: "choice",
                 },
               ],
-              id: "c77d0cb3-f556-5cb4-82cc-9435befa4bcd",
+              id: "790488f3-7c4e-511e-9888-06b80e7f4e74",
               screen_order: 13,
-              title: "Wähle das Romaji für:",
+              title: "Elige el rōmaji para:",
             },
           ],
-          subtitle: "Spezielle Zeichen",
-          title: "Dakuon und Handakuon",
-          topic_id: "f0ce3abb-3ec6-428c-87b8-5f9dcc72509a",
+          subtitle: "Signos especiales",
+          title: "Dakuon y handakuon",
+          topic_id: "0dfff8dd-b2b5-4658-bcd7-03a4de0e0718",
         },
         {
-          expanded_subtitle: "Hier erzählen wir Ihnen etwas über lange Vokale.",
-          expanded_title: "Information",
+          expanded_subtitle: "Aquí te explicaremos las vocales largas.",
+          expanded_title: "Información",
           icon: "https://nihongo.khvat.app/chapter4/LongVowels.jpg",
-          id: "22564cf4-be29-4a76-8202-c96d53fe9a72",
-          last_updated: "2026-09-08T13:12:16.003Z",
+          id: "5f399d35-ce60-47b3-b077-eb34aaf6e863",
+          last_updated: "2026-09-08T13:12:16.028Z",
           lesson_key: "alphabet/katakana&longVowels",
           lesson_order: 27,
           minimum_version: "2.4.1",
@@ -10219,169 +10217,169 @@ export const dumpDe = {
                 {
                   block_order: 1,
                   content: {
-                    text: "Katakana verwendet einen einzigartigen Ansatz zur Darstellung langer Vokallaute. In dieser Lektion lernen wir, wie man sie richtig schreibt.",
+                    text: "El katakana utiliza un método único para indicar sonidos vocálicos largos. En esta lección aprenderemos a escribirlos correctamente.",
                   },
-                  id: "f8f5ee58-4f1b-5633-8ba5-dba3499b630c",
+                  id: "4baf9f1a-398e-5f5c-ab9a-520d3ebc8d1f",
                   type: "text",
                 },
                 {
                   block_order: 2,
                   content: {
-                    text: "In Katakana werden lange Vokale mit einem horizontalen Strich 「ー」 dargestellt, was sich von Hiragana unterscheidet, wo die Zeichen „**あ**“, „**い**“ und „**う**“ zur Verlängerung der Vokale verwendet werden.",
+                    text: "En katakana, las vocales largas se indican con una raya horizontal 「ー」, a diferencia del hiragana, donde se usan los símbolos «**あ**», «**い**» y «**う**» para alargar las vocales.",
                   },
-                  id: "016fba35-675a-568c-8041-95db4c63912c",
+                  id: "6b686b0e-28de-5d86-a4d9-2336535b8049",
                   type: "text",
                 },
                 {
                   block_order: 3,
                   content: {
-                    text: "Sehen Sie sich Beispiele zur Verwendung von langen Vokalen in Katakana an:",
+                    text: "Revisa los ejemplos de uso de las vocales largas en katakana:",
                   },
-                  id: "f6e4c069-a4c5-53dd-9abb-ab0a142e4da4",
+                  id: "6cf82b3c-e851-5f9b-9535-03010fe7156c",
                   type: "text",
                 },
                 {
                   block_order: 4,
                   content: {
                     table: [
-                      ["Romaji", "tr:ア", "tr:イ", "tr:ウ", "tr:エ", "tr:オ"],
+                      ["Rōmaji", "tr:ア", "tr:イ", "tr:ウ", "tr:エ", "tr:オ"],
                       ["Katakana", "アー", "イー", "ウー", "エー", "オー"],
                     ],
                   },
-                  id: "ef960930-4838-529a-9a8e-9fff01a6014a",
+                  id: "74e8a2fd-2230-5a63-af4d-98382193bf92",
                   type: "table",
                 },
               ],
-              id: "095da32f-b8e1-5030-a0e0-bfc33a761f33",
+              id: "d2f6782e-3041-56ab-9ef6-cc8bd7d5cc2e",
               screen_order: 1,
-              title: "Lange Vokale in Katakana",
+              title: "Vocales largas en katakana",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "Ein langer Vokal bedeutet, dass der Vokallaut etwa doppelt so lange gedehnt wird wie üblich.",
+                    text: "Una vocal larga indica que el sonido vocálico se prolonga aproximadamente el doble de lo normal.",
                   },
-                  id: "ab952f96-b78b-5831-8986-62a6fc42ade0",
+                  id: "c3505ceb-89d6-5ba0-a7e4-41cc489eb801",
                   type: "text",
                 },
                 {
                   block_order: 2,
                   content: {
                     rules: [
-                      "Beispielsweise wird コーヒー (tr(コーヒー)) wie „koo-hii“ ausgesprochen, mit langem „tr:コ“ und „tr:ヒ“.",
+                      "Por ejemplo, コーヒー (tr(コーヒー)) suena como «koo-hii», con una «tr:コ» y una «tr:ヒ» largas.",
                     ],
                   },
-                  id: "343160fb-20b3-599d-8451-e2aadaa41014",
+                  id: "702e3709-ce40-52c5-b6f1-e559be8de835",
                   type: "rule",
                 },
                 {
                   block_order: 3,
                   content: {
-                    text: "Wird die Länge des Vokals nicht eingehalten, kann sich der Wortsinn ändern. Zum Beispiel:",
+                    text: "Si no se respeta la duración de la vocal, el significado de la palabra puede cambiar. Por ejemplo:",
                   },
-                  id: "b94d667a-1863-5e5b-8064-58a8e3ee264f",
+                  id: "764f9b1b-9914-51e4-9614-272ebc99a25e",
                   type: "text",
                 },
                 {
                   block_order: 4,
                   content: {
-                    rules: ["ビル (tr(ビル)) — Gebäude.", "ビール (tr(ビール)) — Bier."],
+                    rules: ["ビル (tr(ビル)) — edificio.", "ビール (tr(ビール)) — cerveza."],
                   },
-                  id: "791dfe37-b3f2-5c1e-90c5-9aae219befc4",
+                  id: "d6a8f4d4-c543-5484-a373-6bf8b5b67477",
                   type: "rule",
                 },
               ],
-              id: "6aa5ae13-3575-502a-b50f-5b83d92a9c31",
+              id: "92541ce9-6cde-571a-80f6-2e14b95b67e5",
               screen_order: 2,
-              title: "Aussprache langer Vokale",
+              title: "Pronunciación de las vocales largas",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "Bei Lehnwörtern ist die genaue Aussprache oft wichtig für das Verständnis. Zum Beispiel:",
+                    text: "En las palabras prestadas, la pronunciación precisa suele ser importante para comprenderlas. Por ejemplo:",
                   },
-                  id: "8975b615-2ec9-558c-81b4-69191a262d39",
+                  id: "04865050-ede2-50e4-aea3-a062e820363f",
                   type: "text",
                 },
                 {
                   block_order: 2,
                   content: {
                     rules: [
-                      "メートル (tr(メートル)) — Meter.",
-                      "メトル (tr(メトル)) — falsche Form, Verlust des Sinns.",
+                      "メートル (tr(メートル)) — metro.",
+                      "メトル (tr(メトル)) — forma incorrecta, pérdida de significado.",
                     ],
                   },
-                  id: "8198fc44-745a-53c7-a300-08d1c472f6b1",
+                  id: "cf6d9a8c-94b0-5653-a568-01a13b7e20bc",
                   type: "rule",
                 },
               ],
-              id: "f9f26379-1991-5ff8-bc48-de7de52503e9",
+              id: "041f989a-112b-523f-8990-63330b6dcbe2",
               screen_order: 3,
-              title: "Warum es wichtig ist, den langen Strich zu verwenden",
+              title: "Por qué es importante usar la raya larga",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "Der Strich 「ー」 wird nicht in Hiragana oder Kanji verwendet.",
+                    text: "La raya 「ー」 no se usa en hiragana ni en kanji.",
                   },
-                  id: "c869577a-7947-5f3e-8601-2017881ba970",
+                  id: "6589299e-97d9-5dd1-88a9-125cdd704471",
                   type: "text",
                 },
                 {
                   block_order: 2,
                   content: {
-                    text: "Für lange Vokale in Hiragana gelten andere Regeln:",
+                    text: "Para las vocales largas en hiragana se aplican otras reglas:",
                   },
-                  id: "0511ad78-be72-5b2b-bd6b-9dcbffdd0e3d",
+                  id: "785b40a3-5640-5ee1-8e37-7d407340a3c7",
                   type: "text",
                 },
                 {
                   block_order: 3,
                   content: {
                     rules: [
-                      "あ wird mit 'あ' verlängert おかあさん (tr(おかあさん)) — Mutter.",
-                      "い wird mit 'い' verlängert おにいさん (tr(おにいさん)) - älterer Bruder.",
+                      "あ se alarga con 'あ': おかあさん (tr(おかあさん)) — mamá.",
+                      "い se alarga con 'い': おにいさん (tr(おにいさん)) — hermano mayor.",
                     ],
                   },
-                  id: "118d26d2-c4d3-5bf1-b09a-94947f18ef31",
+                  id: "6870b3b9-6aa0-5ea9-a65e-d5c9522bd4b8",
                   type: "rule",
                 },
               ],
-              id: "0a31c360-2db2-54cc-9a97-05e1546ce744",
+              id: "0c095bbd-56f8-583d-93a7-81e0b59114a6",
               screen_order: 4,
-              title: "Wo der Strich nicht verwendet werden kann",
+              title: "Dónde no se puede usar la raya",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "Manchmal wird die Länge des Vokals in aus europäischen Sprachen entlehnten Wörtern nicht verwendet, wenn sie an traditionelle japanische Regeln angepasst sind. Zum Beispiel:",
+                    text: "A veces, la longitud vocálica no se indica en palabras prestadas de idiomas europeos si se han adaptado a las reglas tradicionales del japonés. Por ejemplo:",
                   },
-                  id: "7c2442fb-c245-5f1f-b179-d0c2cc0e3275",
+                  id: "1fb6591b-cddf-556b-b09c-2fcb6e4cbe56",
                   type: "text",
                 },
                 {
                   block_order: 2,
                   content: {
                     rules: [
-                      "コンピュータ (tr(コンピュータ)) — Computer.",
-                      "In einigen Fällen wird dieses Wort als コンピューター geschrieben.",
+                      "コンピュータ (tr(コンピュータ)) — computadora.",
+                      "En algunos casos, esta palabra se escribe como コンピューター.",
                     ],
                   },
-                  id: "4e3371c1-e565-5a2e-9686-2e40ba355c5a",
+                  id: "0218e4f8-de0f-5c93-a1a2-fa0f77d8b719",
                   type: "rule",
                 },
               ],
-              id: "eb8ebe3c-9701-5d5d-8d9c-f6291bc8e374",
+              id: "7b2a5ff6-4f4c-54bb-b724-9e5b3cbcb207",
               screen_order: 5,
-              title: "Ausnahmen und Besonderheiten",
+              title: "Excepciones y particularidades",
             },
             {
               blocks: [
@@ -10389,28 +10387,28 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     pairs: [
-                      ["チーター", "tr(チーター) (Gepard)"],
-                      ["ローン", "tr(ローン) (Darlehen)"],
-                      ["ユーロ", "tr(ユーロ) (Euro)"],
+                      ["チーター", "tr(チーター) (guepardo)"],
+                      ["ローン", "tr(ローン) (préstamo)"],
+                      ["ユーロ", "tr(ユーロ) (euro)"],
                     ],
                   },
-                  id: "92cfa2d8-b48d-57e1-8b55-4e2f9abcc7d4",
+                  id: "ddc70f5c-ccab-5ce9-a3e4-55ab04500a47",
                   type: "matching",
                 },
               ],
-              id: "495d79fa-6f44-59d5-a82e-0a6111b022ad",
+              id: "2732e1c1-926b-5a2b-a9a7-b7a245899923",
               screen_order: 6,
-              title: "Vergleiche Katakana mit Romaji",
+              title: "Relaciona el katakana con el rōmaji",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Wohnung",
+                    sub_title: "Departamento",
                     title: "tr(アパート)",
                   },
-                  id: "c28ec4d5-977e-56f8-9611-fbb0a5bd39b5",
+                  id: "73d1fe6b-8978-50ce-a97b-8cdc34f0f9f3",
                   type: "title",
                 },
                 {
@@ -10418,25 +10416,25 @@ export const dumpDe = {
                   content: {
                     sequence: ["ア", "パ", "ー", "ト"],
                   },
-                  id: "396307f1-e3d6-5ae6-965a-95d21d5a8e25",
+                  id: "1e8d56a2-27e4-5d00-9e16-cf40df94e755",
                   type: "sequence",
                 },
               ],
-              id: "3ad88d6c-315b-537d-8348-91bed9bff5e2",
+              id: "b53ffd4e-6f8f-5a75-8857-5f4122289ad1",
               screen_order: 7,
-              title: "Wähle Katakana für:",
+              title: "Elige el katakana para:",
             },
           ],
-          subtitle: "Langer Strich「ー」",
-          title: "Lange Vokale",
-          topic_id: "f0ce3abb-3ec6-428c-87b8-5f9dcc72509a",
+          subtitle: "Raya larga 「ー」",
+          title: "Vocales largas",
+          topic_id: "0dfff8dd-b2b5-4658-bcd7-03a4de0e0718",
         },
         {
-          expanded_subtitle: "Hier erzählen wir Ihnen über lange Konsonanten in Katakana.",
-          expanded_title: "Informationen",
+          expanded_subtitle: "Aquí te explicaremos las consonantes largas en katakana.",
+          expanded_title: "Información",
           icon: "https://nihongo.khvat.app/chapter4/LongConsonants.jpg",
-          id: "bf7fe68b-503d-47a2-8de4-4c9ebebbe634",
-          last_updated: "2026-09-08T13:12:16.003Z",
+          id: "a96df6f5-b65e-4151-8566-f3d534c73b8b",
+          last_updated: "2026-09-08T13:12:16.028Z",
           lesson_key: "alphabet/katakana&longConsonants",
           lesson_order: 28,
           minimum_version: "2.4.1",
@@ -10446,39 +10444,42 @@ export const dumpDe = {
                 {
                   block_order: 1,
                   content: {
-                    text: "In der japanischen Sprache spielen lange Konsonanten eine wichtige Rolle, besonders in Katakana, wo sie durch ein besonderes Symbol dargestellt werden.",
+                    text: "En japonés, las consonantes largas desempeñan un papel importante, especialmente en katakana, donde se indican con un símbolo especial.",
                   },
-                  id: "44135ea6-3610-5cb0-8e13-9c497bf15ae7",
+                  id: "53dac0fa-2b08-50d5-a59e-a009e67d7d2d",
                   type: "text",
                 },
                 {
                   block_order: 2,
                   content: {
-                    text: "Das kleine Symbol „tr:ツ“ (ッ) wird in Katakana vor einem Konsonanten verwendet, um dessen Verdoppelung anzuzeigen. Dieses Symbol wird nicht ausgesprochen.",
+                    text: "El símbolo pequeño «tr:ツ» (ッ) se usa en katakana antes de una consonante para indicar su duplicación. Este símbolo no se pronuncia.",
                   },
-                  id: "092f1dc9-d382-51b6-8d81-dd27bf71af88",
+                  id: "d126433a-89d5-57df-bdfe-8e4931c7d243",
                   type: "text",
                 },
                 {
                   block_order: 3,
                   content: {
-                    text: "Lassen Sie uns Beispiele für die Verwendung des normalen „tr:ツ“ (tr:ツ) und des kleinen „tr:ツ“ (ッ) betrachten:",
+                    text: "Veamos ejemplos del uso de «tr:ツ» (tr:ツ) normal y «tr:ツ» (ッ) pequeña:",
                   },
-                  id: "434b7bb6-e9e4-5d69-b768-18cf0e423ba8",
+                  id: "2d3dd2c9-3b63-5d8e-a4a1-3c4ccff009f7",
                   type: "text",
                 },
                 {
                   block_order: 4,
                   content: {
-                    rules: ["カット (tr(カット)) - Haarschnitt", "バッグ (tr(バッグ)) - Tasche"],
+                    rules: [
+                      "カット (tr(カット)) - corte de cabello",
+                      "バッグ (tr(バッグ)) - bolso",
+                    ],
                   },
-                  id: "b223ff40-e74b-58c3-aa7f-237099b3fa3d",
+                  id: "45993bea-2a6e-5840-b06d-b5a5a1db44b1",
                   type: "rule",
                 },
               ],
-              id: "4015e740-9fe0-5744-bc91-501f8598655e",
+              id: "082e2677-984e-5cc3-a5b9-1b1f35dd5c3e",
               screen_order: 1,
-              title: "Lange Konsonanten in Katakana",
+              title: "Consonantes largas en katakana",
             },
             {
               blocks: [
@@ -10489,50 +10490,50 @@ export const dumpDe = {
                       "カ、キ、ク、ケ、コ",
                       "サ、シ、ス、セ、ソ",
                       "タ、チ、ツ、テ、ト",
-                      "パ、ピ、プ、ペ, ポ",
+                      "パ、ピ、プ、ペ、ポ",
                       "バ、ビ、ブ、ベ、ボ",
                       "ガ、ギ、グ、ゲ、ゴ",
                       "ザ、ジ、ズ、ゼ、ゾ",
                     ],
                   },
-                  id: "dd4a0cbd-8864-5777-ae9f-77edf0aab228",
+                  id: "ebc9d1b6-d4e7-5f9c-a926-cbc7017762f0",
                   type: "rule",
                 },
               ],
-              id: "6d33dc27-c7b5-5142-a46b-9a10756a4d5a",
+              id: "eb874850-cc4a-5310-99a8-4686289a9d8f",
               screen_order: 2,
-              title: "Liste der Konsonanten, mit denen das kleine 「ッ」 verwendet wird",
+              title: "Lista de consonantes con las que se usa la 「ッ」 pequeña",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "Das kleine 「ッ」 wird nicht vor Vokalen (ア, イ, ウ, エ, オ) und Lauten der Reihe ン (tr:ン) verwendet.",
+                    text: "La 「ッ」 pequeña no se usa antes de las vocales (ア, イ, ウ, エ, オ) ni de los sonidos de la fila ン (tr:ン).",
                   },
-                  id: "0d4d5c59-ea8c-5e4d-bbae-24e1b192596c",
+                  id: "a67980eb-379c-5ac0-80e5-d83f360c3145",
                   type: "text",
                 },
                 {
                   block_order: 2,
                   content: {
-                    text: "In der Transkription wird 「ッ」 normalerweise durch Verdopplung des Konsonanten wiedergegeben, zum Beispiel:",
+                    text: "En la transcripción, 「ッ」 normalmente se representa duplicando la consonante, por ejemplo:",
                   },
-                  id: "85ef5c72-852c-50d1-9b19-e46c5f5b1d11",
+                  id: "6b0d7a30-c374-58bc-8c59-8280b1b79054",
                   type: "text",
                 },
                 {
                   block_order: 3,
                   content: {
-                    rules: ["カッコウ (tr(カッコウ)) → Kuckuck"],
+                    rules: ["カッコウ (tr(カッコウ)) → cucú"],
                   },
-                  id: "8c88d57b-898c-5c5e-ba52-f93c111c7d58",
+                  id: "311c221b-9c94-57f2-a4a8-6852a72d284a",
                   type: "rule",
                 },
               ],
-              id: "68a46c3b-1e96-5421-b36b-d23be18e4286",
+              id: "1a0ce1f3-e7ff-5fb0-80e9-043e84e1429e",
               screen_order: 3,
-              title: "Beachten Sie!",
+              title: "¡Presta atención!",
             },
             {
               blocks: [
@@ -10540,28 +10541,28 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     pairs: [
-                      ["ネックレス", "tr(ネックレス) (Halskette)"],
-                      ["ブラック", "tr(ブラック) (schwarz)"],
-                      ["ライラック", "tr(ライラック) (Flieder)"],
+                      ["ネックレス", "tr(ネックレス) (collar)"],
+                      ["ブラック", "tr(ブラック) (negro)"],
+                      ["ライラック", "tr(ライラック) (lila)"],
                     ],
                   },
-                  id: "dbe2afd0-96df-55ce-af4b-7c7dd1929a37",
+                  id: "55972015-ff25-5655-b1dd-a585e7038173",
                   type: "matching",
                 },
               ],
-              id: "c809d8bd-0e00-5116-9c05-30544a221524",
+              id: "7beadc3c-5a64-531a-ab98-8f2ef3d9af36",
               screen_order: 4,
-              title: "Ordnen Sie Katakana mit Romaji zu.",
+              title: "Relaciona el katakana con el romaji.",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Ananas",
+                    sub_title: "Piña",
                     title: "tr(パイナップル)",
                   },
-                  id: "547c8bde-0bc0-5933-9f23-36e724c88d23",
+                  id: "26924893-3698-5820-bf49-e6970347a227",
                   type: "title",
                 },
                 {
@@ -10569,25 +10570,25 @@ export const dumpDe = {
                   content: {
                     sequence: ["パ", "イ", "ナ", "ッ", "プ", "ル"],
                   },
-                  id: "73b423cf-65df-53f1-bc28-0e46d41558ff",
+                  id: "6276c1cf-7452-51c9-9ae9-c5338a488d31",
                   type: "sequence",
                 },
               ],
-              id: "6488b6a2-13de-51e3-9a9e-51ab5cc8509b",
+              id: "fe83c188-1134-52a0-b8b9-d3380f9d4865",
               screen_order: 5,
-              title: "Wählen Sie Katakana für:",
+              title: "Elige el katakana para:",
             },
           ],
-          subtitle: "Kleines 「ッ」",
-          title: "Lange Konsonanten",
-          topic_id: "f0ce3abb-3ec6-428c-87b8-5f9dcc72509a",
+          subtitle: "「ッ」 pequeña",
+          title: "Consonantes largas",
+          topic_id: "0dfff8dd-b2b5-4658-bcd7-03a4de0e0718",
         },
         {
-          expanded_subtitle: "Hier erzählen wir Ihnen über die zusätzlichen Klänge in Katakana",
-          expanded_title: "Information",
+          expanded_subtitle: "Aquí te explicaremos los sonidos adicionales en katakana",
+          expanded_title: "Información",
           icon: "https://nihongo.khvat.app/chapter4/AdditionalSounds.jpg",
-          id: "bb884d2e-5aa6-460c-8cf4-dbe906b8f2a9",
-          last_updated: "2026-09-08T13:12:16.004Z",
+          id: "c46afdc2-b403-4e09-a593-2097e72ebcd5",
+          last_updated: "2026-09-08T13:12:16.028Z",
           lesson_key: "alphabet/katakana&additionalSounds",
           lesson_order: 29,
           minimum_version: "2.4.1",
@@ -10597,17 +10598,17 @@ export const dumpDe = {
                 {
                   block_order: 1,
                   content: {
-                    text: "Im Japanischen gelten die Klänge „r“ und „l“ als identisch, ebenso wie die Klänge „h“ und „f“. Daher wird statt des Klangs „l“ die Silbenreihe „r“ verwendet, und für den Klang „f“ die Silbenreihe „h“. Um das Problem der Verwendung des Klangs „f“ zu lösen, wurde eine neue Schreibweise eingeführt, die Vokale mit kleinerer Schrift kombiniert.",
+                    text: "En japonés, los sonidos «r» y «l» se consideran idénticos, al igual que los sonidos «h» y «f». Por eso, en lugar del sonido «l» se utiliza la fila de sílabas «r», y para el sonido «f», la fila de sílabas «h». Para resolver el problema de usar el sonido «f», se adoptó una nueva forma de escritura que combina vocales en tamaño reducido.",
                   },
-                  id: "4b9116a4-c20d-5d5d-9b8b-26a02d8a315b",
+                  id: "ec961049-6fbf-5f64-94b0-d34212d2c79f",
                   type: "text",
                 },
                 {
                   block_order: 2,
                   content: {
-                    text: "Der Klang „フ“ (tr:フ) kann mit verkleinerten Vokalsymbolen kombiniert werden, um die Klänge „fa“, „fi“, „fe“ und „fo“ zu erzeugen.",
+                    text: "El sonido «フ» (tr:フ) se puede combinar con símbolos vocálicos pequeños para crear los sonidos «fa», «fi», «fe» y «fo».",
                   },
-                  id: "c68a8d08-0d57-5a4d-94b9-c74d2945827f",
+                  id: "952af4b2-416f-59d1-aa40-32b370c1b040",
                   type: "text",
                 },
                 {
@@ -10618,13 +10619,13 @@ export const dumpDe = {
                       ["Katakana", "ファ", "フィ", "フ", "フェ", "フォ"],
                     ],
                   },
-                  id: "6c35579e-a056-559d-b129-bb46a631b36f",
+                  id: "ef6c3231-e4db-5e1f-bcff-4862b699326e",
                   type: "table",
                 },
               ],
-              id: "f8e92aae-4864-59fa-a918-35c6aad075d9",
+              id: "afd7d0b6-29ef-5074-b0a0-8e109154ad15",
               screen_order: 1,
-              title: "Hinzufügen von Vokalen zu フ (tr:フ).",
+              title: "Añadir vocales a フ (tr:フ).",
             },
             {
               blocks: [
@@ -10632,91 +10633,91 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     pairs: [
-                      ["ファイル", "tr(ファイル) (Ordner)"],
-                      ["フィリピン", "tr(フィリピン) (Philippinen)"],
-                      ["フォーク", "tr(フォーク) (Gabel)"],
+                      ["ファイル", "tr(ファイル) (carpeta)"],
+                      ["フィリピン", "tr(フィリピン) (Filipinas)"],
+                      ["フォーク", "tr(フォーク) (tenedor)"],
                     ],
                   },
-                  id: "9cd6b050-7933-55d0-929c-90375a3fdb0f",
+                  id: "29766585-34de-5bd0-9282-e528bf636f24",
                   type: "matching",
                 },
               ],
-              id: "339d4249-3052-5c1b-b041-6a340b512501",
+              id: "d5238e11-2e4a-5ae6-b11e-a077d3d8c147",
               screen_order: 2,
-              title: "Ordne Katakana zu Romaji zu.",
+              title: "Relaciona el katakana con el romaji.",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "Vielleicht fragen Sie sich: Wenn es nur das Katakana „ワ“ gibt, wie werden dann andere Silben mit dem Buchstaben „v“ gebildet, wie „vo“ oder „ve“? Oder existieren sie überhaupt nicht? Im Japanischen existieren sie tatsächlich nicht (und unterscheiden sich nicht von dem Klang „b“), sind jedoch zur Schreibung von Fremdwörtern vorhanden.",
+                    text: "Probablemente te preguntes: si solo existe el katakana «ワ», ¿cómo se forman las demás sílabas con la letra «v», como «vo» o «ve»? ¿O acaso no existen? En japonés realmente no existen (y no se distinguen del sonido «b»), pero aun así se usan para escribir palabras extranjeras.",
                   },
-                  id: "7db10108-602f-5be2-aaec-dc5b580e3047",
+                  id: "26362570-348c-5b5b-9095-fccb4f80d3dc",
                   type: "text",
                 },
                 {
                   block_order: 2,
                   content: {
-                    text: "Im Katakana gibt es nur die Silbe „ワ“ (tr:わ), aber um die Klänge mit „v“ zu erzeugen, verwenden wir die Vokale auf der Grundlage von „ウ“ (tr:う):",
+                    text: "En katakana solo existe la sílaba «ワ» (tr:わ), pero para crear sonidos con «v», usamos vocales basadas en «ウ» (tr:う):",
                   },
-                  id: "c37ced02-37c7-5a75-8d7d-456d4549de5e",
+                  id: "a8906d41-8468-5c9a-a425-9c949ff6cace",
                   type: "text",
                 },
                 {
                   block_order: 3,
                   content: {
                     table: [
-                      ["Romaji", "wa", "wi", "u", "we", "wo"],
+                      ["Romaji", "va", "vi", "u", "ve", "vo"],
                       ["Katakana", "ワ", "ウィ", "ウ", "ウェ", "ウォ"],
                     ],
                   },
-                  id: "92f1e6f6-4006-53bd-a065-987814108077",
+                  id: "578574c8-871f-5301-9fd2-0edf310db602",
                   type: "table",
                 },
                 {
                   block_order: 4,
                   content: {
-                    text: "So können Wörter wie folgt geschrieben werden:",
+                    text: "Así, se pueden escribir palabras como:",
                   },
-                  id: "009323fe-3e53-57b8-981a-ebaa57b9c6f4",
+                  id: "e1e041c0-2741-5a10-bde1-6475b7ed1ddc",
                   type: "text",
                 },
                 {
                   block_order: 5,
                   content: {
-                    rules: ["„window“ (ウィンドウズ)", "„vodka“ (ウォッカ)."],
+                    rules: ["«Windows» (ウィンドウズ)", "«vodka» (ウォッカ)."],
                   },
-                  id: "58c01abf-8ff8-53d8-b978-61672fc5569d",
+                  id: "4dcc0e03-daf1-5be3-9af0-e3de2868af83",
                   type: "rule",
                 },
               ],
-              id: "7c9c509e-de0a-527e-adde-a1fd4a0dadd0",
+              id: "f46e16f7-5f70-5ecd-81ff-4aaa597d3fb3",
               screen_order: 3,
-              title: "Zusätzliche Klänge für «ワ» (tr:ワ).",
+              title: "Sonidos adicionales para «ワ» (tr:ワ).",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "Manchmal kann man veraltete Katakana-Symbole „ヰ“, „ヱ“ und „ヲ“ sehen, die in der modernen Sprache nicht verwendet werden.",
+                    text: "A veces puedes encontrar los símbolos obsoletos de katakana «ヰ», «ヱ» y «ヲ», que no se usan en el habla moderna.",
                   },
-                  id: "e8ad9386-0d6b-5608-a259-3d9f1b4c0563",
+                  id: "484a3934-4cc9-5d62-aa91-6e661fbc3c33",
                   type: "text",
                 },
                 {
                   block_order: 2,
                   content: {
-                    rules: ["„ヰ“ wi (wi)", "„ヱ“ we (we)", "„ヲ“ wo (wo oder o)"],
+                    rules: ["«ヰ» vi (wi)", "«ヱ» ve (we)", "«ヲ» vo (wo u o)"],
                   },
-                  id: "91623cd7-15e1-5b06-9581-866741935bd7",
+                  id: "02b1ed1d-7382-5086-8d8b-80ea63addbb2",
                   type: "rule",
                 },
               ],
-              id: "f80d71a9-85ef-5fc9-bf67-7f4ef501f2d1",
+              id: "e8139fe1-cd8d-50b7-b56c-dc21b7163bba",
               screen_order: 4,
-              title: "Achten Sie darauf!",
+              title: "¡Presta atención!",
             },
             {
               blocks: [
@@ -10726,7 +10727,7 @@ export const dumpDe = {
                     sub_title: "Halloween",
                     title: "tr(ハロウィーン)",
                   },
-                  id: "1f17a7b6-2656-59b1-bcd9-911dba5272f7",
+                  id: "3d624a74-e34a-5ef2-ad89-52de01bc3e39",
                   type: "title",
                 },
                 {
@@ -10747,57 +10748,57 @@ export const dumpDe = {
                       },
                     ],
                   },
-                  id: "b903c7c9-ad56-5cd9-8ff9-8aa97aaa87ba",
+                  id: "8fd71263-0b34-5288-b4ec-e319d7f29c7d",
                   type: "choice",
                 },
               ],
-              id: "ebc174c6-d295-568a-8dd1-2733cbe69879",
+              id: "05168897-48e3-523a-b3fc-ecff42c5dd24",
               screen_order: 5,
-              title: "Wähle Katakana für:",
+              title: "Elige el katakana para:",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "Um Klänge der «V»-Gruppe in Katakana zu erzeugen, werden Symbole auf der Grundlage von „ウ“ mit hinzugefügtem Dakuon verwendet, was den Klang härter macht:",
+                    text: "Para crear los sonidos del grupo «V» en katakana, se usan símbolos basados en «ウ» con dakuten añadido, lo que hace que el sonido sea más fuerte:",
                   },
-                  id: "34a2124c-b0bd-5786-b9c0-60d42a2f643f",
+                  id: "79922d26-df2f-5c6c-845c-c358fd38a41e",
                   type: "text",
                 },
                 {
                   block_order: 2,
                   content: {
                     table: [
-                      ["Romaji", "wa (va)", "wi (vi)", "wu (vu)", "we (ve)", "wo (vo)"],
+                      ["Romaji", "va (va)", "vi (vi)", "vu (vu)", "ve (ve)", "vo (vo)"],
                       ["Katakana", "ヴァ", "ヴィ", "ヴ", "ヴェ", "ヴォ"],
                     ],
                   },
-                  id: "88e519fa-cb8b-5273-a8a5-97af159dd142",
+                  id: "eb6081c8-90b2-5204-bf99-ddd4547eba60",
                   type: "table",
                 },
                 {
                   block_order: 3,
                   content: {
-                    text: "Japaner verwenden selten harte Klänge „ヴ“ aufgrund der Komplexität der Aussprache.",
+                    text: "Los japoneses rara vez usan los sonidos fuertes «ヴ» debido a la dificultad de pronunciarlos.",
                   },
-                  id: "440e70f7-3ea1-531e-afb1-fd055f01d517",
+                  id: "4c485b58-ebf6-591d-b9ec-7cedc742d2cd",
                   type: "text",
                 },
               ],
-              id: "7f5f90e5-f4a8-50b7-a573-14cff6ae21ce",
+              id: "8561402d-3915-51e9-8af9-6ab9edb1ce89",
               screen_order: 6,
-              title: "Klänge der «V»-Gruppe.",
+              title: "Sonidos del grupo «V».",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Viktor",
+                    sub_title: "Víctor",
                     title: "tr(ヴィクトル)",
                   },
-                  id: "6c809b44-325c-540e-9dc9-eb20ca8a7339",
+                  id: "ea09eb5b-5343-57ad-ac69-f8108cbdece7",
                   type: "title",
                 },
                 {
@@ -10805,38 +10806,38 @@ export const dumpDe = {
                   content: {
                     sequence: ["ヴ", "ィ", "ク", "ト", "ル"],
                   },
-                  id: "36efa901-f601-5b88-9c71-f71257810755",
+                  id: "59d897dc-8d6a-545b-bba7-31b3692005f8",
                   type: "sequence",
                 },
               ],
-              id: "f73fa84f-1906-542c-8018-232b76e4600b",
+              id: "32fee412-2cbd-5df1-bb7c-f4b27e3958b7",
               screen_order: 7,
-              title: "Wähle Katakana für:",
+              title: "Elige el katakana para:",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "Um den Klang „che“ in Katakana auszudrücken, verwenden Sie das Symbol „チェ“. Dies ermöglicht die korrekte Schreibung von Fremdwörtern.",
+                    text: "Para expresar el sonido «che» en katakana, usa el símbolo «チェ». Esto permite escribir correctamente palabras extranjeras.",
                   },
-                  id: "c2a4b9ca-dd9b-5f4f-b7ac-7eb2e6da9999",
+                  id: "11c6f769-f546-5b12-9200-149079bd2382",
                   type: "text",
                 },
               ],
-              id: "655025fe-9af1-5439-8923-9939e0078790",
+              id: "d277587f-929f-55e7-8851-d7d9e1878f1e",
               screen_order: 8,
-              title: "Klänge „チェ“.",
+              title: "Sonidos «チェ».",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Kirsche",
+                    sub_title: "Cereza",
                     title: "tr(チェリー)",
                   },
-                  id: "496f3c40-4c10-5066-9ace-78d64bb5c91b",
+                  id: "9854b1bd-c619-5b1e-b71c-dc7301ddc261",
                   type: "title",
                 },
                 {
@@ -10857,28 +10858,28 @@ export const dumpDe = {
                       },
                     ],
                   },
-                  id: "0be4f9f2-b042-5cb7-8fc3-516096ce41fa",
+                  id: "8bfa4945-f6a5-5110-916b-7e76c360f6a4",
                   type: "choice",
                 },
               ],
-              id: "3519dbbe-1b2f-57fd-8afd-79beba6306ed",
+              id: "e1642887-ca4d-5585-bab1-8d9df840cad9",
               screen_order: 9,
-              title: "Wähle Katakana für:",
+              title: "Elige el katakana para:",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "Um die Klänge „ti“ und „tu“ zu erzeugen, werden die Symbole „ティ“ und „トゥ“ verwendet.",
+                    text: "Para expresar los sonidos «ti» y «tu» se usan los símbolos «ティ» y «トゥ».",
                   },
-                  id: "15159819-dcd7-579a-8225-5fc2afda18b6",
+                  id: "9880a538-61a9-54d8-9564-e2358607e15b",
                   type: "text",
                 },
               ],
-              id: "c10e8259-8af2-59bf-a579-86f6694e4466",
+              id: "b5a67b7f-8855-550c-a3dc-8cfcc4fbc6b6",
               screen_order: 10,
-              title: "Klänge „ティ“, „トゥ“.",
+              title: "Sonidos «ティ», «トゥ».",
             },
             {
               blocks: [
@@ -10886,43 +10887,43 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     pairs: [
-                      ["エーティーエム", "tr(エーティーエム) (Geldautomat)"],
-                      ["トゥース", "tr(トゥース) (Zahn)"],
-                      ["ティーポット", "tr(ティーポット) (Teekanne)"],
+                      ["エーティーエム", "tr(エーティーエム) (cajero automático)"],
+                      ["トゥース", "tr(トゥース) (diente)"],
+                      ["ティーポット", "tr(ティーポット) (tetera)"],
                     ],
                   },
-                  id: "92a1b7b8-e94d-56c9-a430-dce68e5a1d41",
+                  id: "54140a65-a71a-5b45-8198-09c489ba7c10",
                   type: "matching",
                 },
               ],
-              id: "2e60f3f3-3e9f-574d-8e73-175b9b3acce3",
+              id: "246abc78-3a72-5d23-9df7-adbd53c6cec8",
               screen_order: 11,
-              title: "Ordne Katakana zu Romaji zu.",
+              title: "Relaciona el katakana con el romaji.",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "Für die Klänge „di“ und „du“ in Katakana werden die Symbole „ディ“ und „ドゥ“ verwendet.",
+                    text: "Para los sonidos «di» y «du» en katakana, usa los símbolos «ディ» y «ドゥ», respectivamente.",
                   },
-                  id: "7c34f911-992d-5321-b1ed-29e6f899d3be",
+                  id: "fd54c8cf-85f2-5a5b-8b10-35ef0d9e473b",
                   type: "text",
                 },
               ],
-              id: "4d884fd4-158f-58dc-ae2b-cb9b49c72761",
+              id: "7b11915e-e8f9-523d-959e-d0270723bd8a",
               screen_order: 12,
-              title: "Klänge „ディ“, „ドゥ“.",
+              title: "Sonidos «ディ», «ドゥ».",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Disneyland",
+                    sub_title: "Disneylandia",
                     title: "tr(ディズニーランド)",
                   },
-                  id: "b84f5ff3-fa56-59b2-bba4-f2bcff276cc6",
+                  id: "f5ba7867-df15-5f17-999f-251a9d4cfe11",
                   type: "title",
                 },
                 {
@@ -10943,38 +10944,38 @@ export const dumpDe = {
                       },
                     ],
                   },
-                  id: "f326477d-3359-563c-9806-b89198fd19e1",
+                  id: "2ade1cd2-5d4a-5bf4-826d-78aa2324dc2e",
                   type: "choice",
                 },
               ],
-              id: "8d62f081-f6bf-5464-96ff-aad92e5c15f0",
+              id: "ef85b8d2-f04e-5c13-95ab-818a21d06a1c",
               screen_order: 13,
-              title: "Wähle Katakana für:",
+              title: "Elige el katakana para:",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "Um den Klang „she“ und „je“ aufzuschreiben, wird das Symbol „シェ“ und „ジェ“ verwendet.",
+                    text: "Para escribir los sonidos «she» y «je», se usan los símbolos «シェ» y «ジェ».",
                   },
-                  id: "07daa691-ce7c-5a14-af62-50136664967c",
+                  id: "7b9090a7-5f6b-57b5-a1dd-051bfdb22aaf",
                   type: "text",
                 },
               ],
-              id: "6d2358b7-69d2-5e37-bb0c-dc053f2e5012",
+              id: "b9c26a95-abef-5da6-b225-7bd3151453fa",
               screen_order: 14,
-              title: "Klänge „シェ“, „ジェ“.",
+              title: "Sonidos «シェ», «ジェ».",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Koch",
+                    sub_title: "Chef",
                     title: "tr(シェフ)",
                   },
-                  id: "d12e9005-285d-5e9b-9812-0202476ebe92",
+                  id: "e4d1f81e-756c-5ad4-8fe6-002e5866457e",
                   type: "title",
                 },
                 {
@@ -10982,25 +10983,25 @@ export const dumpDe = {
                   content: {
                     sequence: ["シ", "ェ", "フ"],
                   },
-                  id: "0bf8f83c-5e7b-550b-acab-d3da8237680e",
+                  id: "5a58eca9-6ed2-50fb-821b-e51e98e89875",
                   type: "sequence",
                 },
               ],
-              id: "61409fd0-a0b1-546b-bfc5-aa8fb87f7b6b",
+              id: "c4edb503-8d85-5cec-b62f-8e4d0f403616",
               screen_order: 15,
-              title: "Wähle Katakana für:",
+              title: "Elige el katakana para:",
             },
           ],
           subtitle: "ァ, ィ, ゥ, ェ, ォ",
-          title: "Zusätzliche Klänge",
-          topic_id: "f0ce3abb-3ec6-428c-87b8-5f9dcc72509a",
+          title: "Sonidos adicionales",
+          topic_id: "0dfff8dd-b2b5-4658-bcd7-03a4de0e0718",
         },
         {
-          expanded_subtitle: "Hier erzählen wir Ihnen über Yoon",
-          expanded_title: "Informationen",
+          expanded_subtitle: "Aquí te hablaremos sobre el yōon",
+          expanded_title: "Información",
           icon: "https://nihongo.khvat.app/chapter4/Yoon.jpg",
-          id: "84c69199-5b45-43f3-b50b-051d2c75ff6b",
-          last_updated: "2026-09-08T13:12:16.004Z",
+          id: "0b1b461b-be40-43dc-84fb-76a0e52e1149",
+          last_updated: "2026-09-08T13:12:16.028Z",
           lesson_key: "alphabet/katakana&yoon",
           lesson_order: 30,
           minimum_version: "2.4.1",
@@ -11010,9 +11011,9 @@ export const dumpDe = {
                 {
                   block_order: 1,
                   content: {
-                    text: "Heute tauchen wir in die letzte Regel der Katakana ein, aber vorher erinnern wir uns an diese drei besonderen Buchstaben:",
+                    text: "Hoy profundizaremos en el estudio de la última regla del katakana, pero antes recordemos estas tres letras especiales:",
                   },
-                  id: "49cdd084-d418-5883-95ce-2e5f36f91496",
+                  id: "d26dbb0b-d9cc-585a-a690-785169190da6",
                   type: "text",
                 },
                 {
@@ -11020,13 +11021,13 @@ export const dumpDe = {
                   content: {
                     rules: ["ヤ (tr:ヤ)", "ユ (tr:ユ)", "ヨ (tr:ヨ)"],
                   },
-                  id: "7174b296-9bd7-51c0-a101-7e7f843c5e96",
+                  id: "83166c75-4876-51a2-b8b9-8716dd87a594",
                   type: "rule",
                 },
               ],
-              id: "5f89caff-6ace-5a9b-aade-167c4ecf6e37",
+              id: "1f383c8d-9040-5515-b7f6-e1e50271b953",
               screen_order: 1,
-              title: "Yoon",
+              title: "Yōon",
             },
             {
               blocks: [
@@ -11034,27 +11035,27 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     pairs: [
-                      ["ヤモリ", "tr(ヤモリ) (Gecko)"],
-                      ["ユーロ", "tr(ユーロ) (Euro)"],
+                      ["ヤモリ", "tr(ヤモリ) (geco)"],
+                      ["ユーロ", "tr(ユーロ) (euro)"],
                       ["ヨーロッパ", "tr(ヨーロッパ) (Europa)"],
                     ],
                   },
-                  id: "a047dd2b-9360-504e-bbfb-7d9c6647dfed",
+                  id: "6dd5869a-1e04-5b3d-8354-cb5efbeb3f84",
                   type: "matching",
                 },
               ],
-              id: "1502c099-78c7-5c77-a692-6e6797127d31",
+              id: "1d003d46-cd74-577d-ad26-9df339d23282",
               screen_order: 2,
-              title: "Ordne Katakana der Romaji zu.",
+              title: "Relaciona el katakana con el rōmaji.",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "Es gibt verkleinerte Versionen von **ヤ** (tr:ヤ), **ユ** (tr:ユ) und **ヨ** (tr:ヨ). Beim Aussprechen verschmelzen diese Silben mit der vorhergehenden Katakana-Silbe zu einem Ton. Vergleichen Sie das Standard-**ヤ** mit dem verkleinerten **ャ**.",
+                    text: "Existen versiones pequeñas de **ヤ** (tr:ヤ), **ユ** (tr:ユ) y **ヨ** (tr:ヨ). Al pronunciarlas, estas sílabas se unen con la sílaba de katakana anterior y forman un solo sonido. Comparemos la **ヤ** normal con la **ャ** pequeña.",
                   },
-                  id: "5f4f472e-1b17-536e-bc11-91f42c528a42",
+                  id: "741d0661-33b8-5dd9-b51f-91990f513b7c",
                   type: "text",
                 },
                 {
@@ -11062,22 +11063,22 @@ export const dumpDe = {
                   content: {
                     rules: ["キヤ (tr:キヤ)", "キャ (tr:キャ)"],
                   },
-                  id: "7561ee9b-bf71-5f7f-bd90-fe986bf8053e",
+                  id: "365bd914-b854-52e8-887f-f584015cc256",
                   type: "rule",
                 },
               ],
-              id: "b58b5787-7e61-5489-900e-df2e6c285a97",
+              id: "c14ca2de-70db-540e-8cdb-ec141e375cc1",
               screen_order: 3,
-              title: "Hinweis!",
+              title: "¡Pista!",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "Die Yoon-Elemente (ヤ, ユ, ヨ) können mit Symbolen kombiniert werden, die auf „tr:イ“ enden. Zunächst betrachten wir die Kombinationen mit キ (tr:キ) und ギ (tr:ギ).",
+                    text: "Los elementos de yōon (ヤ, ユ, ヨ) pueden combinarse con los símbolos que terminan en «tr:イ». Para empezar, veamos las combinaciones con キ (tr:キ) y ギ (tr:ギ).",
                   },
-                  id: "1f483b1d-b519-5b5e-90b9-e4a2d7aef4f8",
+                  id: "1a10b84b-e6e1-59c0-84e1-08342f784ef7",
                   type: "text",
                 },
                 {
@@ -11088,13 +11089,13 @@ export const dumpDe = {
                       ["ギ (tr:ギ)", "ギャ (tr:ギャ)", "ギュ (tr:ギュ)", "ギョ (tr:ギョ)"],
                     ],
                   },
-                  id: "a083c0b2-cf2c-5038-8336-fc9cca3c2fba",
+                  id: "64250acb-27b6-5878-8189-be939c8121bf",
                   type: "table",
                 },
               ],
-              id: "db13a8a4-5ae3-524f-a5b1-1b80881ac5b7",
+              id: "ceafe725-37e0-52ff-976b-87035382235a",
               screen_order: 4,
-              title: "Yoon tr:キ, tr:ギ.",
+              title: "Yōon tr:キ, tr:ギ.",
             },
             {
               blocks: [
@@ -11102,27 +11103,27 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     pairs: [
-                      ["キャラバン", "tr(キャラバン) (Karawane)"],
-                      ["キューバ", "tr(キューバ) (Kuba)"],
-                      ["ギャング", "tr(ギャング) (Bande)"],
+                      ["キャラバン", "tr(キャラバン) (caravana)"],
+                      ["キューバ", "tr(キューバ) (Cuba)"],
+                      ["ギャング", "tr(ギャング) (pandilla)"],
                     ],
                   },
-                  id: "3bf21403-6124-55b6-a5e7-56df3425942a",
+                  id: "dbc7d023-1343-53ce-af2e-5095cd890f5c",
                   type: "matching",
                 },
               ],
-              id: "179674c1-a45e-5a34-a19d-5ea897bcb59d",
+              id: "a05adf0f-bba6-5e7c-b506-e60aa83d1613",
               screen_order: 5,
-              title: "Ordne Katakana der Romaji zu.",
+              title: "Relaciona el katakana con el rōmaji.",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "Die Silben シ (tr:シ) und ジ (tr:ジ) können ebenfalls Yoon mit den Buchstaben **ャ**, **ュ**, **ョ** bilden und die Töne tr:シャ tr:シュ tr:ショ und tr:ジャ tr:ジュ tr:ジョ erzeugen.",
+                    text: "Las sílabas シ (tr:シ) y ジ (tr:ジ) también pueden formar yōon con las letras **ャ**, **ュ**, **ョ**, creando los sonidos tr:シャ tr:シュ tr:ショ y tr:ジャ tr:ジュ tr:ジョ.",
                   },
-                  id: "8c41a1c8-39eb-53b6-ab7d-fb844572fa87",
+                  id: "4074369e-af38-5480-a236-7078fcada3a5",
                   type: "text",
                 },
                 {
@@ -11133,23 +11134,23 @@ export const dumpDe = {
                       ["ジ (tr:ジ)", "ジャ (tr:ジャ)", "ジュ (tr:ジュ)", "ジョ (tr:ジョ)"],
                     ],
                   },
-                  id: "26e77eb4-5b8e-5027-9170-341a45458ded",
+                  id: "5ca46654-686a-54b9-b2b7-807a2debfe85",
                   type: "table",
                 },
               ],
-              id: "be73dac7-41e9-5c85-b783-51fde993ca6d",
+              id: "b182fead-8267-52a0-bd29-a05ecca82e00",
               screen_order: 6,
-              title: "Yoon tr:シ, tr:ジ.",
+              title: "Yōon tr:シ, tr:ジ.",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Hemd",
+                    sub_title: "Camisa",
                     title: "tr(シャツ)",
                   },
-                  id: "184d7974-620f-5ba1-be7f-e5eb91eb7fb7",
+                  id: "db5f0b5c-8c90-5ce5-b3c1-63d86d36e778",
                   type: "title",
                 },
                 {
@@ -11170,22 +11171,22 @@ export const dumpDe = {
                       },
                     ],
                   },
-                  id: "a3dc0ec9-44bc-519c-b392-c26f3b4e9ebc",
+                  id: "efe7bfab-0502-520d-ab5d-bdac2fdde0ff",
                   type: "choice",
                 },
               ],
-              id: "19e39a1c-d711-5072-9146-2c6500ef8976",
+              id: "c888adf6-cb11-53a6-af26-170ca5d5612a",
               screen_order: 7,
-              title: "Wähle Katakana für:",
+              title: "Elige el katakana para:",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "Die Silben **チ** (tr:チ) und **ヂ** (tr:ヂ) können verwendet werden, um die Töne tr:チャ tr:チュ tr:チョ und tr:ヂャ tr:ヂュ tr:ヂョ zu erzeugen. Im modernen Japanisch wird der Buchstabe **ヂ** oft durch **ジ** ersetzt.",
+                    text: "Las sílabas **チ** (tr:チ) y **ヂ** (tr:ヂ) pueden usarse para crear los sonidos tr:チャ tr:チュ tr:チョ y tr:ヂャ tr:ヂュ tr:ヂョ. En el japonés moderno, la letra **ヂ** a menudo se reemplaza por **ジ**.",
                   },
-                  id: "05cbd2f3-904d-57f7-926f-870cf447c7fb",
+                  id: "8e9805ee-f975-5b7b-934a-45c21550b275",
                   type: "text",
                 },
                 {
@@ -11193,26 +11194,31 @@ export const dumpDe = {
                   content: {
                     table: [
                       ["チ (tr:チ)", "チャ (tr:チャ)", "チュ (tr:チュ)", "チョ (tr:チョ)"],
-                      ["ヂ (tr:ヂ) (antik)", "ヂャ (tr:ヂャ)", "ヂュ (tr:ヂュ)", "ヂョ (tr:ヂョ)"],
+                      [
+                        "ヂ (tr:ヂ) (obsoleto)",
+                        "ヂャ (tr:ヂャ)",
+                        "ヂュ (tr:ヂュ)",
+                        "ヂョ (tr:ヂョ)",
+                      ],
                     ],
                   },
-                  id: "a0d91071-0e72-5200-bf1e-5427cb274b92",
+                  id: "b4f4560a-e375-5623-9e1e-d4d846bb6116",
                   type: "table",
                 },
               ],
-              id: "de0966d6-aa75-57cf-bbac-7b8a5317c09d",
+              id: "4dd0e5d7-03d9-5ffc-a18a-05ad426937bf",
               screen_order: 8,
-              title: "Yoon tr:チ, tr:ヂ.",
+              title: "Yōon tr:チ, tr:ヂ.",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Chance",
+                    sub_title: "Oportunidad",
                     title: "tr(チャンス)",
                   },
-                  id: "3d19d317-7a26-511e-8461-6c842265fbfb",
+                  id: "fe06adc8-eaa7-5dd3-8053-0d325641052b",
                   type: "title",
                 },
                 {
@@ -11220,22 +11226,22 @@ export const dumpDe = {
                   content: {
                     sequence: ["チ", "ャ", "ン", "ス"],
                   },
-                  id: "49fac6b5-fcad-57f5-9d3d-29de2129c43b",
+                  id: "fe1db969-d96e-5529-8bd7-bd3961181201",
                   type: "sequence",
                 },
               ],
-              id: "6c6c4ec9-dfdc-5f35-9fb9-63c9634c9115",
+              id: "18d584d7-e070-5c38-8974-4a430496aeeb",
               screen_order: 9,
-              title: "Wähle Katakana für:",
+              title: "Elige el katakana para:",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "Kombinationen von ニ (tr:に) und ミ (tr:み) mit verkleinerten Symbolen ermöglichen die Bildung komplizierter Töne tr:にゃ tr:にゅ tr:にょ und tr:みゃ tr:みゅ tr:みょ",
+                    text: "Las combinaciones de ニ (tr:に) y ミ (tr:み) con símbolos pequeños permiten crear los sonidos compuestos tr:にゃ tr:にゅ tr:にょ y tr:みゃ tr:みゅ tr:みょ",
                   },
-                  id: "6b06070d-4e1c-5b2c-99e4-eda5ee4ee76d",
+                  id: "34dcbeb2-9003-5d9c-9dab-bcac8f7e6691",
                   type: "text",
                 },
                 {
@@ -11246,13 +11252,13 @@ export const dumpDe = {
                       ["ミ (tr:み)", "ミャ (tr:みゃ)", "ミュ (tr:みゅ)", "ミョ (tr:みょ)"],
                     ],
                   },
-                  id: "f842fc20-3ded-59b1-95c5-6dc94cd39bd2",
+                  id: "15169585-3fb5-531b-8b04-71e860b392af",
                   type: "table",
                 },
               ],
-              id: "1efc3f27-0082-55ee-bda9-8622cac914a4",
+              id: "9d1041cf-34c6-5327-a973-09096248341f",
               screen_order: 10,
-              title: "Yoon tr:に, tr:み",
+              title: "Yōon tr:に, tr:み",
             },
             {
               blocks: [
@@ -11262,7 +11268,7 @@ export const dumpDe = {
                     sub_title: "Musical",
                     title: "tr(ミュージカル)",
                   },
-                  id: "61d6168b-56a2-5706-807b-94973c34a26d",
+                  id: "dc3179ac-d240-5bed-bb9d-7c3b5afccb64",
                   type: "title",
                 },
                 {
@@ -11283,22 +11289,22 @@ export const dumpDe = {
                       },
                     ],
                   },
-                  id: "eb24c85a-6acb-54bd-84b1-9dad518b8f75",
+                  id: "97bf3bdb-120a-5340-b9bc-28f4b9903b74",
                   type: "choice",
                 },
               ],
-              id: "803bbd1a-a53d-55e4-a728-99795d0b6680",
+              id: "f963e3ee-dfb4-5857-b9b2-dbcbbe0ece17",
               screen_order: 11,
-              title: "Wähle Katakana für:",
+              title: "Elige el katakana para:",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "Die Silbe リ (tr:リ) kombiniert mit verkleinerten Vokalen zur Bildung der Töne tr:リャ tr:リュ tr:リョ.",
+                    text: "La sílaba リ (tr:リ) se combina con vocales pequeñas para formar los sonidos tr:リャ tr:リュ tr:リョ.",
                   },
-                  id: "c3d2b7cf-6c9a-5858-b95d-22cce72b65c0",
+                  id: "d3d206a0-1e76-56fa-acd9-9c32f33b2d0e",
                   type: "text",
                 },
                 {
@@ -11306,23 +11312,23 @@ export const dumpDe = {
                   content: {
                     rules: ["リャ (tr:リャ)", "リュ (tr:リュ)", "リョ (tr:リョ)"],
                   },
-                  id: "cb201ca3-59d9-5dca-922e-08dcfd1472cb",
+                  id: "44680eda-3a1f-5cce-ac7f-a8127f577726",
                   type: "rule",
                 },
               ],
-              id: "94cf8e21-4de0-5d6f-a71c-016d5fa83706",
+              id: "7af0e50f-b88b-5b5c-8f81-8d94981c1916",
               screen_order: 12,
-              title: "Yoon tr:リ.",
+              title: "Yōon tr:リ.",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    sub_title: "Rucksack",
+                    sub_title: "Mochila",
                     title: "tr(リュックサック)",
                   },
-                  id: "49e246da-c0f5-5e2e-9372-76b094e725fb",
+                  id: "3d710d08-5d47-524d-9d91-cb9c51fdeb88",
                   type: "title",
                 },
                 {
@@ -11330,22 +11336,22 @@ export const dumpDe = {
                   content: {
                     sequence: ["リ", "ュ", "ッ", "ク", "サ", "ッ", "ク"],
                   },
-                  id: "f66e8bb2-deda-59bf-82d0-fae64864e440",
+                  id: "b34a6f7c-71d9-5d5f-b681-672db334ef17",
                   type: "sequence",
                 },
               ],
-              id: "4e7f4152-f64a-50e2-b65c-50de2c4e2ad5",
+              id: "bbe2300e-af37-5b78-9438-c07b2424c437",
               screen_order: 13,
-              title: "Wähle Katakana für:",
+              title: "Elige el katakana para:",
             },
             {
               blocks: [
                 {
                   block_order: 1,
                   content: {
-                    text: "Um Yoon-Töne zu erzeugen, verwenden Sie die Silben ヒ (tr:ヒ), ビ (tr:ビ) und ピ (tr:ピ) in Kombination mit verkleinerten Vokalen.",
+                    text: "Para crear sonidos yōon, usa las sílabas ヒ (tr:ヒ), ビ (tr:ビ) y ピ (tr:ピ) en combinación con vocales pequeñas.",
                   },
-                  id: "b0359aca-2a2a-5fff-ab14-27e4fb13ec4f",
+                  id: "a03cb4a7-c011-5765-9a5d-4f0edbbd9b36",
                   type: "text",
                 },
                 {
@@ -11357,13 +11363,13 @@ export const dumpDe = {
                       ["ピ (tr:ピ)", "ピャ (tr:ピャ)", "ピュ (tr:ピュ)", "ピョ (tr:ピョ)"],
                     ],
                   },
-                  id: "028b9f8a-96ac-5160-8e28-670674de8f6c",
+                  id: "042e0abc-723c-5307-af15-3fd8473da13d",
                   type: "table",
                 },
               ],
-              id: "58295649-c6aa-5a66-8e29-5b156a4cb2a3",
+              id: "efa4f79c-1501-5ac5-a656-8abf18431cb8",
               screen_order: 14,
-              title: "Yoon tr:ヒ, tr:ビ, tr:ピ.",
+              title: "Yōon tr:ヒ, tr:ビ, tr:ピ.",
             },
             {
               blocks: [
@@ -11371,26 +11377,26 @@ export const dumpDe = {
                   block_order: 1,
                   content: {
                     pairs: [
-                      ["ヒューズ", "tr(ヒューズ) (Sicherung)"],
-                      ["ビューティー", "tr(ビューティー) (Schönheit)"],
-                      ["ヒョウ", "tr(ヒョウ) (Leopard)"],
+                      ["ヒューズ", "tr(ヒューズ) (fusible)"],
+                      ["ビューティー", "tr(ビューティー) (belleza)"],
+                      ["ヒョウ", "tr(ヒョウ) (leopardo)"],
                     ],
                   },
-                  id: "98234c46-de68-542c-a3a4-6644f8e7be76",
+                  id: "8304d825-bea4-5bdc-8043-a20db3c63a40",
                   type: "matching",
                 },
               ],
-              id: "56e65cf4-ba80-5889-9a5f-331a73fcaabb",
+              id: "daa22be5-7c81-5720-ad69-84bc5b8602a3",
               screen_order: 15,
-              title: "Ordne Katakana der Romaji zu.",
+              title: "Relaciona el katakana con el rōmaji.",
             },
           ],
           subtitle: "ヤ, ユ, ヨ",
-          title: "Yoon in Katakana",
-          topic_id: "f0ce3abb-3ec6-428c-87b8-5f9dcc72509a",
+          title: "Yōon en katakana",
+          topic_id: "0dfff8dd-b2b5-4658-bcd7-03a4de0e0718",
         },
       ],
-      title: "Abschnitt 4. Katakana",
+      title: "Sección 4. Katakana",
       topic_order: 4,
     },
   ],
