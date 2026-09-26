@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 import { isAndroid, isIOS } from "@nihongo/core/shared/constants/platformUtil";
-import { APP_LANG, IS_WELCOME_PAGE } from "@nihongo/core/shared/constants/storageKeys";
+import { IS_WELCOME_PAGE } from "@nihongo/core/shared/constants/storageKeys";
 import { ResetContext } from "@nihongo/core/shared/contexts/reset-context/reset-context";
 import { useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
 import { initTransliterationMap } from "@nihongo/core/shared/data/lettersTable";
@@ -10,7 +10,6 @@ import { fonts } from "@nihongo/core/shared/typography";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import Constants from "expo-constants";
 import * as SplashScreen from "expo-splash-screen";
-import { useTranslation } from "react-i18next";
 import { StatusBar, View } from "react-native";
 
 import {
@@ -39,22 +38,6 @@ const Layout: React.FC = () => {
   const [appIsReady, setAppIsReady] = useState(false);
 
   const { colors } = useThemeContext();
-  const { i18n } = useTranslation();
-
-  useEffect(() => {
-    const loadLang = async () => {
-      try {
-        const savedLang = await AsyncStorage.getItem(APP_LANG);
-        if (savedLang) {
-          i18n.changeLanguage(savedLang);
-        }
-      } catch (error) {
-        return error;
-      }
-    };
-
-    loadLang();
-  }, [i18n]);
 
   const [isAuthorization, setIsAuthorization] = useState<boolean>(false);
 

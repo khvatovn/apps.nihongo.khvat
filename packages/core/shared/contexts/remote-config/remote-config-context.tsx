@@ -33,6 +33,7 @@ export const RemoteConfigProvider: FunctionComponent<{ children: ReactNode }> = 
   useEffect(() => {
     setIsReady(false);
     let cancelled = false;
+    const controller = new AbortController();
 
     (async () => {
       if (isFirstRun.current) {
@@ -51,7 +52,7 @@ export const RemoteConfigProvider: FunctionComponent<{ children: ReactNode }> = 
         }
       }
 
-      const fresh = await fetchRemoteConfig(i18n.language);
+      const fresh = await fetchRemoteConfig(i18n.language, controller.signal);
 
       if (cancelled) return;
 
@@ -65,6 +66,7 @@ export const RemoteConfigProvider: FunctionComponent<{ children: ReactNode }> = 
 
     return () => {
       cancelled = true;
+      controller.abort();
     };
   }, [i18n.language]);
 
